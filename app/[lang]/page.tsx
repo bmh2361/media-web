@@ -1,202 +1,135 @@
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { MediaPlaceholder } from "@/components/media/MediaPlaceholder";
+import { notFound } from "next/navigation";
+import { MediaSlot } from "@/components/media/MediaSlot";
+import { StickyStory } from "@/components/motion/StickyStory";
 import { Hero } from "@/components/sections/Hero";
-import { ProcessTimeline } from "@/components/sections/ProcessTimeline";
-import { Reveal } from "@/components/Reveal";
-import { ButtonLink } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import type { MediaId } from "@/content/media";
-import { home } from "@/content/site";
-import type { Language } from "@/lib/i18n";
-import { withLanguage } from "@/lib/i18n";
-import { buildMetadata, seoDescriptions } from "@/lib/seo";
+import { featuredCaseStudies, getCaseDisclosureLabel, serviceLabels } from "@/content/cases";
+import { homeContent } from "@/content/pages/home";
+import { isSupportedLocale, type Language, withLanguage } from "@/lib/i18n";
+import { buildMetadata } from "@/lib/seo";
 
-const featuredWorkMedia: MediaId[] = [
-  "case-london-celebrity-hero",
-  "case-fashion-campaign-hero",
-  "case-ai-product-hero"
-];
-
-export async function generateMetadata({ params }: { params: Promise<{ lang: Language }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-
+  if (!isSupportedLocale(lang)) return {};
+  const copy = homeContent[lang];
   return buildMetadata({
     lang,
     path: "/",
-    title: "FrameBridge Studio | UK Creative Production for Chinese Brands",
-    description: lang === "zh" ? seoDescriptions.zh : seoDescriptions.en,
-    keywords: [
-      "UK creative production",
-      "Chinese brands overseas content",
-      "London commercial photography",
-      "UK brand video",
-      "Chinese creator campaigns"
-    ]
+    title:
+      lang === "zh"
+        ? "镜桥创意 | 英国制作、人才与创新活动"
+        : "FrameBridge Studio | UK Production, Talent & Innovation",
+    description: copy.intro
   });
 }
 
-export default async function HomePage({
-  params
-}: {
-  params: Promise<{ lang: Language }>;
-}) {
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  const copy = home[lang];
+  if (!isSupportedLocale(lang)) notFound();
+  const language: Language = lang;
+  const copy = homeContent[language];
+  const zh = language === "zh";
 
   return (
     <>
-      <Hero language={lang} />
-
-      <section className="bg-ink pb-20 text-pearl">
-        <div className="container-x">
-          <div className="rounded-lg border border-pearl/12 bg-pearl/[0.04] p-6 shadow-cinematic md:p-8">
-            <p className="mb-6 text-xs font-semibold uppercase tracking-editorial text-champagne">{copy.proofTitle}</p>
-            <div className="grid gap-4 md:grid-cols-5">
-              {copy.proofPoints.map((point) => (
-                <div key={point} className="border-t border-pearl/16 pt-4 text-sm leading-6 text-pearl/72">
-                  {point}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="section-y bg-porcelain">
-        <div className="container-x">
-          <SectionHeading
-            eyebrow={copy.sections.scenariosEyebrow}
-            title={copy.sections.scenariosTitle}
-            intro={copy.sections.scenariosIntro}
-          />
-          <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {copy.scenarioCards.map((item, index) => (
-              <Reveal key={item} delay={index * 0.03}>
-                <article className="group min-h-48 rounded-lg border border-ink/10 bg-pearl p-5 shadow-soft transition duration-500 hover:-translate-y-1 hover:border-blue/40 hover:shadow-cinematic">
-                  <span className="text-xs font-semibold text-slate">0{index + 1}</span>
-                  <h3 className="mt-16 text-2xl font-semibold leading-tight text-ink">{item}</h3>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-y bg-ink text-pearl">
-        <div className="container-x">
-          <SectionHeading
-            eyebrow={copy.sections.capabilitiesEyebrow}
-            title={copy.sections.capabilitiesTitle}
-            theme="dark"
-          />
-          <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {copy.capabilityCards.map((card, index) => (
-              <Reveal key={card.title} delay={index * 0.04}>
-                <article className="min-h-72 rounded-lg border border-pearl/12 bg-pearl/[0.04] p-7 transition duration-500 hover:-translate-y-1 hover:border-champagne/60">
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm font-semibold text-champagne">0{index + 1}</span>
-                    <span className="h-px w-12 bg-pearl/24" />
-                  </div>
-                  <h3 className="mt-16 text-3xl font-semibold leading-tight">{card.title}</h3>
-                  <p className="mt-5 text-sm leading-6 text-pearl/64">{card.text}</p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      <Hero language={language} />
       <section className="section-y bg-pearl">
         <div className="container-x">
-          <SectionHeading eyebrow={copy.sections.industriesEyebrow} title={copy.sections.industriesTitle} />
-          <div className="mt-12 grid gap-px overflow-hidden rounded-lg border border-ink/10 bg-ink/10 sm:grid-cols-2 lg:grid-cols-5">
-            {copy.industries.map((industry) => (
-              <div key={industry} className="bg-pearl p-5 text-lg font-semibold text-ink transition hover:bg-porcelain">
-                {industry}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-y bg-porcelain">
-        <div className="container-x">
-          <SectionHeading eyebrow={copy.sections.workEyebrow} title={copy.sections.workTitle} />
-          <div className="mt-12 grid gap-5 lg:grid-cols-3">
-            {copy.featuredWork.map((work, index) => (
-              <Reveal key={work.title} delay={index * 0.05}>
-                <article className="group overflow-hidden rounded-lg border border-ink/10 bg-pearl shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-cinematic">
-                  <MediaPlaceholder
-                    id={featuredWorkMedia[index] ?? "case-supporting-1"}
-                    language={lang}
-                    className="aspect-[16/10] rounded-none"
-                    captionClassName="bottom-auto top-4 border-b border-t-0 pb-3 pt-0"
-                    sizes="(min-width: 1024px) 33vw, 100vw"
-                  />
-                  <div className="p-6">
-                    <p className="text-xs font-semibold uppercase tracking-editorial text-slate">{work.industry}</p>
-                    <h3 className="mt-5 text-3xl font-semibold leading-tight text-ink">{work.title}</h3>
-                    <div className="mt-6 grid gap-5 text-sm leading-6 text-ink/64">
-                      <p>
-                        <span className="block font-semibold text-ink">{copy.caseLabels.challenge}</span>
-                        {work.challenge}
-                      </p>
-                      <p>
-                        <span className="block font-semibold text-ink">{copy.caseLabels.delivered}</span>
-                        {work.delivered}
-                      </p>
-                    </div>
-                    <Link href={withLanguage("/work", lang)} className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-ink transition hover:text-blue">
-                      {work.cta}
-                      <ArrowRight size={16} />
-                    </Link>
-                  </div>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-y bg-ink text-pearl">
-        <div className="container-x grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <SectionHeading
-            eyebrow={copy.sections.talentEyebrow}
-            title={copy.sections.talentTitle}
-            intro={copy.sections.talentText}
-            theme="dark"
+            eyebrow={zh ? "核心能力" : "Core capabilities"}
+            title={zh ? "从项目需求到英国本地执行。" : "From the brief to local UK execution."}
           />
-          <div className="grid gap-3 sm:grid-cols-2">
-            {copy.talentNetwork.map((item) => (
-              <div key={item} className="rounded-lg border border-pearl/12 bg-pearl/[0.04] p-5 text-sm font-semibold text-pearl/76">
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-y bg-pearl">
-        <div className="container-x">
-          <SectionHeading eyebrow={copy.sections.processEyebrow} title={copy.sections.processTitle} />
-          <div className="mt-12">
-            <ProcessTimeline steps={copy.process} />
-          </div>
-        </div>
-      </section>
-
-      <section className="section-y bg-ink text-pearl">
-        <div className="container-x text-center">
-          <h2 className="mx-auto max-w-5xl text-balance text-5xl font-semibold leading-tight tracking-[-0.03em] md:text-7xl">
-            {copy.sections.finalTitle}
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-pearl/68">{copy.sections.finalText}</p>
           <div className="mt-10">
-            <ButtonLink href={withLanguage("/contact", lang)} showArrow className="bg-pearl text-ink hover:bg-champagne">
-              {copy.finalCta}
-            </ButtonLink>
+            <StickyStory
+              items={copy.actions.map((item) => ({ ...item, href: withLanguage(item.href, language) }))}
+              linkLabel={zh ? "查看服务" : "Explore service"}
+              language={language}
+            />
           </div>
+        </div>
+      </section>
+      <section className="section-y bg-porcelain">
+        <div className="container-x">
+          <SectionHeading
+            eyebrow={zh ? "项目模式示例" : "Illustrative project models"}
+            title={
+              zh
+                ? "以下内容用于说明 FrameBridge 可如何组织不同类型的英国制作与资源协调项目。"
+                : "These examples show how FrameBridge can structure different UK production and coordination briefs."
+            }
+          />
+          <p className="mt-5 max-w-3xl text-sm leading-6 text-ink/60">
+            {zh ? "不作为已完成客户项目展示。" : "They are not presented as completed client projects."}
+          </p>
+          <div className="mt-12 grid gap-5 lg:grid-cols-3">
+            {featuredCaseStudies.map((caseStudy, index) => (
+              <article
+                key={caseStudy.slug}
+                className={`border border-ink/10 bg-white ${index === 0 ? "lg:col-span-2" : ""}`}
+              >
+                <MediaSlot
+                  id={
+                    (["home-featured-case", "home-supporting-case-01", "home-supporting-case-02"] as const)[
+                      index
+                    ]
+                  }
+                  language={language}
+                  sizes={index === 0 ? "(min-width:1024px) 66vw, 100vw" : "(min-width:1024px) 33vw, 100vw"}
+                  className="aspect-[16/10]"
+                  showCaption={false}
+                />
+                <div className="p-6">
+                  <p className="text-xs uppercase tracking-editorial text-slate">
+                    {caseStudy.industry[language]}
+                  </p>
+                  <h2 className="mt-3 text-2xl font-semibold">{caseStudy.title[language]}</h2>
+                  <p className="mt-4 text-sm leading-6 text-ink/60">
+                    <strong>{zh ? "可承担角色：" : "Potential FrameBridge role: "}</strong>
+                    {caseStudy.frameBridgeRole[language]}
+                  </p>
+                  <p className="mt-3 text-xs text-slate">
+                    {getCaseDisclosureLabel(caseStudy, language)} ·{" "}
+                    {caseStudy.servicePillars.map((pillar) => serviceLabels[pillar][language]).join(" / ")}
+                  </p>
+                  <Link
+                    href={withLanguage(`/work/${caseStudy.slug}`, language)}
+                    className="mt-6 inline-block text-sm font-semibold text-blue"
+                  >
+                    {zh ? "查看示例" : "View example"} →
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section-y bg-ink text-pearl">
+        <div className="container-x grid gap-px bg-pearl/10 md:grid-cols-3">
+          {copy.routes.map((route) => (
+            <article key={route.title} className="bg-night p-7">
+              <h2 className="text-2xl font-semibold">{route.title}</h2>
+              <p className="mt-4 text-sm leading-6 text-pearl/70">{route.text}</p>
+              <Link
+                href={withLanguage(route.href, language)}
+                className="mt-7 inline-block text-sm font-semibold text-champagne"
+              >
+                {route.cta} →
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="section-y bg-pearl">
+        <div className="container-x max-w-4xl text-center">
+          <h2 className="text-4xl font-semibold md:text-6xl">{copy.finalTitle}</h2>
+          <p className="mt-6 text-lg leading-8 text-ink/70">{copy.finalText}</p>
+          <Link
+            href={withLanguage("/contact", language)}
+            className="mt-8 inline-block bg-ink px-6 py-3 text-sm font-semibold text-pearl"
+          >
+            {copy.finalCta}
+          </Link>
         </div>
       </section>
     </>

@@ -6,6 +6,13 @@
   color-scheme: light;
   scroll-behavior: smooth;
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --surface-dark: #0b0d10;
+  --surface-dark-elevated: #14171c;
+  --surface-light: #fbfaf7;
+  --border-dark-subtle: rgba(251, 250, 247, 0.1);
+  --border-light-subtle: rgba(11, 13, 16, 0.1);
+  --text-dark-muted: rgba(11, 13, 16, 0.6);
+  --text-light-muted: rgba(251, 250, 247, 0.7);
 }
 
 * {
@@ -24,6 +31,46 @@ body {
     linear-gradient(180deg, #fbfaf7 0%, #f7f3ec 48%, #ece7dd 100%);
   font-feature-settings: "kern", "liga", "calt";
   text-rendering: optimizeLegibility;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  transform: translateY(-200%);
+  background: var(--surface-light);
+  color: var(--surface-dark);
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@layer utilities {
+  .surface-dark {
+    background: var(--surface-dark);
+  }
+  .surface-dark-elevated {
+    background: var(--surface-dark-elevated);
+  }
+  .surface-light {
+    background: var(--surface-light);
+  }
+  .border-dark-subtle {
+    border-color: var(--border-dark-subtle);
+  }
+  .border-light-subtle {
+    border-color: var(--border-light-subtle);
+  }
+  .text-dark-muted {
+    color: var(--text-dark-muted);
+  }
+  .text-light-muted {
+    color: var(--text-light-muted);
+  }
 }
 
 ::selection {
@@ -69,6 +116,59 @@ body {
 .zh-copy {
   line-height: 1.85;
   letter-spacing: 0;
+}
+
+.technical-grid {
+  background-image:
+    linear-gradient(rgba(111, 183, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(111, 183, 255, 0.1) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black, transparent 90%);
+}
+.frame-lines {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0,
+    transparent calc(12.5% - 1px),
+    rgba(216, 199, 162, 0.12) 12.5%
+  );
+}
+.contact-strip {
+  background-color: #0b0d10;
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 2%,
+      #d8c7a2 2% 2.15%,
+      transparent 2.15% 25%,
+      #6fb7ff 25% 25.15%,
+      transparent 25.15%
+    ),
+    repeating-linear-gradient(90deg, rgba(251, 250, 247, 0.08) 0 11%, transparent 11% 12%);
+}
+.event-plan {
+  background-color: #14171c;
+  background-image:
+    linear-gradient(
+      90deg,
+      transparent 8%,
+      rgba(111, 183, 255, 0.5) 8% 8.1%,
+      transparent 8.1% 65%,
+      rgba(216, 199, 162, 0.5) 65% 65.1%,
+      transparent 65.1%
+    ),
+    linear-gradient(0deg, transparent 35%, rgba(251, 250, 247, 0.12) 35% 35.5%, transparent 35.5%);
+}
+
+@media (max-height: 700px) and (min-width: 1024px) {
+  .lg\:sticky {
+    position: relative !important;
+    top: auto !important;
+  }
+}
+
+body {
+  overflow-x: clip;
 }
 
 :lang(zh) {

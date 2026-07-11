@@ -4,13 +4,7 @@ import { motion } from "framer-motion";
 import { useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
 
-export function Reveal({
-  children,
-  delay = 0
-}: {
-  children: ReactNode;
-  delay?: number;
-}) {
+export function Reveal({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
   const prefersReducedMotion = useReducedMotion();
 
   return (

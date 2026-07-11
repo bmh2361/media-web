@@ -12,15 +12,22 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Lan
   return buildMetadata({
     lang,
     path: "/contact",
-    title: `${copy.title} | Contact`,
+    title: lang === "zh" ? `${copy.title} | 联系` : `${copy.title} | Contact`,
     description: copy.intro,
     keywords: ["UK production brief", "London production partner", "Chinese brand UK shoot"]
   });
 }
 
-export default async function ContactPage({ params }: { params: Promise<{ lang: Language }> }) {
+export default async function ContactPage({
+  params,
+  searchParams
+}: {
+  params: Promise<{ lang: Language }>;
+  searchParams: Promise<{ project?: string }>;
+}) {
   const { lang } = await params;
   const copy = pageCopy.contact[lang];
+  const { project } = await searchParams;
 
   return (
     <>
@@ -39,7 +46,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
             {ui[lang].contactLocation}
           </div>
         </div>
-        <ContactForm language={lang} />
+        <ContactForm language={lang} initialProject={project} />
       </section>
     </>
   );

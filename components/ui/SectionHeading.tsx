@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+﻿import { cn } from "@/lib/utils";
 
 export function SectionHeading({
   eyebrow,
@@ -27,14 +27,19 @@ export function SectionHeading({
       ) : null}
       <h2
         className={cn(
-          "editorial-heading mt-4 font-semibold text-balance",
+          "editorial-heading mt-4 text-balance font-semibold",
           theme === "dark" ? "text-pearl" : "text-ink"
         )}
       >
         {title}
       </h2>
       {intro ? (
-        <p className={cn("mt-6 max-w-2xl text-lg leading-8", theme === "dark" ? "text-pearl/68" : "text-ink/64")}>
+        <p
+          className={cn(
+            "mt-6 max-w-2xl text-lg leading-8",
+            theme === "dark" ? "text-pearl/70" : "text-ink/60"
+          )}
+        >
           {intro}
         </p>
       ) : null}

@@ -1,101 +1,90 @@
 "use client";
-
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { MediaPlaceholder } from "@/components/media/MediaPlaceholder";
-import { caseHeroMediaBySlug } from "@/content/media";
-import type { workPage } from "@/content/site";
+import { MediaSlot } from "@/components/media/MediaSlot";
+import { caseStudies, disclosureLabel, isPortfolioEligible, serviceLabels } from "@/content/cases";
+import type { ServicePillar } from "@/content/types";
 import type { Language } from "@/lib/i18n";
 import { withLanguage } from "@/lib/i18n";
-import { cn } from "@/lib/utils";
-
-type WorkCopy = (typeof workPage)["en"];
-
 export function WorkFilterGrid({
   language,
-  copy
+  mode
 }: {
   language: Language;
-  copy: WorkCopy;
+  mode: "concept-models" | "portfolio";
 }) {
-  const [activeFilter, setActiveFilter] = useState(copy.filters[0]);
-  const prefersReducedMotion = useReducedMotion();
-  const allLabel = copy.filters[0];
-
-  const cases = useMemo(() => {
-    if (activeFilter === allLabel) {
-      return copy.cases;
-    }
-
-    return copy.cases.filter((item) => item.filters.includes(activeFilter));
-  }, [activeFilter, allLabel, copy.cases]);
-
+  const [active, setActive] = useState<"all" | ServicePillar>("all"),
+    reduced = useReducedMotion();
+  const records = mode === "portfolio" ? caseStudies.filter(isPortfolioEligible) : caseStudies;
+  const available = useMemo(
+    () =>
+      Object.keys(serviceLabels).filter((k) =>
+        records.some((c) => c.servicePillars.includes(k as ServicePillar))
+      ) as ServicePillar[],
+    [records]
+  );
+  const shown = active === "all" ? records : records.filter((c) => c.servicePillars.includes(active));
   return (
     <>
-      <div className="flex gap-2 overflow-x-auto pb-3">
-        {copy.filters.map((filter) => (
-          <button
-            key={filter}
-            type="button"
-            onClick={() => setActiveFilter(filter)}
-            className={cn(
-              "shrink-0 rounded-full border px-4 py-2 text-sm font-medium transition",
-              activeFilter === filter
-                ? "border-ink bg-ink text-pearl"
-                : "border-ink/10 bg-white/70 text-ink/64 hover:border-blue hover:text-ink"
-            )}
-          >
-            {filter}
-          </button>
+      <div
+        className="flex gap-2 overflow-x-auto pb-3"
+        aria-label={language === "zh" ? "按服务筛选案例" : "Filter work by service"}
+      >
+        <Filter active={active === "all"} onClick={() => setActive("all")}>
+          {language === "zh" ? "全部" : "All"}
+        </Filter>
+        {available.map((key) => (
+          <Filter key={key} active={active === key} onClick={() => setActive(key)}>
+            {serviceLabels[key][language]}
+          </Filter>
         ))}
       </div>
-
+      <p className="sr-only" aria-live="polite">
+        {language === "zh" ? `显示 ${shown.length} 个项目模式` : `Showing ${shown.length} project models`}
+      </p>
+      {mode === "portfolio" && !records.length ? (
+        <p className="mt-8 max-w-xl text-sm leading-6 text-slate">
+          {language === "zh"
+            ? "尚无符合公开作品集证据要求的项目。概念项目模式不会被混入作品集。"
+            : "No work currently meets the public portfolio evidence requirement. Concept project models are not mixed into the portfolio."}
+        </p>
+      ) : null}
       <motion.div layout className="mt-8 grid gap-5 lg:grid-cols-3">
         <AnimatePresence mode="popLayout">
-          {cases.map((item, index) => (
+          {shown.map((item) => (
             <motion.article
               layout
               key={item.slug}
-              initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 18 }}
+              initial={reduced ? false : { opacity: 0, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 18 }}
-              transition={{ duration: prefersReducedMotion ? 0 : 0.35, delay: prefersReducedMotion ? 0 : index * 0.03 }}
-              className="group overflow-hidden rounded-lg border border-ink/10 bg-pearl shadow-soft transition duration-500 hover:-translate-y-1 hover:shadow-cinematic focus-within:shadow-cinematic"
+              exit={reduced ? undefined : { opacity: 0, y: 14 }}
+              className="group overflow-hidden border border-ink/10 bg-pearl"
             >
-              <div className="relative aspect-[16/11] overflow-hidden">
-                <MediaPlaceholder
-                  id={caseHeroMediaBySlug[item.slug] ?? "case-supporting-1"}
-                  language={language}
-                  className="absolute inset-0 rounded-none"
-                  captionClassName="bottom-auto top-4 border-b border-t-0 pb-3 pt-0"
-                  sizes="(min-width: 1024px) 33vw, 100vw"
-                />
-                <div className="absolute inset-0 bg-ink/0 transition duration-500 group-hover:bg-ink/24" />
-                <div className="absolute bottom-4 left-4 right-4 translate-y-2 border-t border-pearl/0 pt-3 text-sm font-semibold text-pearl opacity-0 transition duration-500 group-hover:translate-y-0 group-hover:border-pearl/24 group-hover:opacity-100">
-                  {copy.labels.viewCase}
-                </div>
-              </div>
+              <MediaSlot
+                id={item.heroMediaId}
+                language={language}
+                className="aspect-[16/11]"
+                sizes="(min-width:1024px) 33vw,100vw"
+                showCaption={false}
+              />
               <div className="p-6">
-                <p className="text-xs font-semibold uppercase tracking-editorial text-slate">{item.industry}</p>
-                <h2 className="mt-5 text-3xl font-semibold leading-tight text-ink">{item.title}</h2>
-                <div className="mt-6 grid gap-5 text-sm leading-6 text-ink/64">
-                  <p>
-                    <span className="block font-semibold text-ink">{copy.labels.challenge}</span>
-                    {item.challenge}
-                  </p>
-                  <p>
-                    <span className="block font-semibold text-ink">{copy.labels.delivered}</span>
-                    {item.delivered}
-                  </p>
-                </div>
+                <p className="inline-flex border border-blue/30 px-2 py-1 text-[10px] font-semibold uppercase tracking-editorial text-blue">
+                  {disclosureLabel(item.status, item.disclosureLevel, language)}
+                </p>
+                <p className="mt-5 text-xs uppercase tracking-editorial text-slate">
+                  {item.servicePillars.map((p) => serviceLabels[p][language]).join(" · ")} ·{" "}
+                  {item.industry[language]}
+                </p>
+                <h2 className="mt-4 text-3xl font-semibold">{item.title[language]}</h2>
+                <p className="mt-5 text-sm leading-6 text-ink/70">{item.frameBridgeRole[language]}</p>
                 <Link
                   href={withLanguage(`/work/${item.slug}`, language)}
-                  className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-ink transition hover:text-blue focus:outline-none focus-visible:ring-2 focus-visible:ring-blue/45"
+                  className="mt-7 inline-flex items-center gap-2 text-sm font-semibold focus-visible:ring-2 focus-visible:ring-blue"
                 >
-                  {copy.labels.viewCase}
-                  <ArrowRight size={16} className="transition duration-300 group-hover:translate-x-1" />
+                  {language === "zh" ? "查看案例" : "View case"}
+                  <ArrowRight size={16} />
                 </Link>
               </div>
             </motion.article>
@@ -103,5 +92,25 @@ export function WorkFilterGrid({
         </AnimatePresence>
       </motion.div>
     </>
+  );
+}
+function Filter({
+  active,
+  onClick,
+  children
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      aria-pressed={active}
+      onClick={onClick}
+      className={`shrink-0 rounded-full border px-4 py-2 text-sm font-medium focus-visible:ring-2 focus-visible:ring-blue ${active ? "border-ink bg-ink text-pearl" : "border-ink/10 bg-white text-ink"}`}
+    >
+      {children}
+    </button>
   );
 }

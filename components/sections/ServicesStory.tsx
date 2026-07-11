@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, useReducedMotion } from "framer-motion";
 import { useState } from "react";
@@ -11,13 +11,7 @@ import { withLanguage } from "@/lib/i18n";
 
 type ServicesCopy = (typeof servicesPage)["en"];
 
-export function ServicesStory({
-  language,
-  copy
-}: {
-  language: Language;
-  copy: ServicesCopy;
-}) {
+export function ServicesStory({ language, copy }: { language: Language; copy: ServicesCopy }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const prefersReducedMotion = useReducedMotion();
   const activeService = copy.services[activeIndex] ?? copy.services[0];
@@ -46,14 +40,14 @@ export function ServicesStory({
             <div className="relative flex min-h-[34rem] flex-col justify-between">
               <span className="text-sm font-semibold text-champagne">0{activeIndex + 1}</span>
               <div>
-                <p className="mb-4 text-xs font-semibold uppercase tracking-editorial text-pearl/52">
+                <p className="mb-4 text-xs font-semibold uppercase tracking-editorial text-pearl/50">
                   FrameBridge service
                 </p>
                 <h2 className="text-5xl font-semibold leading-tight tracking-[-0.03em]">
                   {activeService.name}
                 </h2>
-                <p className="mt-5 max-w-sm border-t border-pearl/20 pt-4 text-sm leading-6 text-pearl/66">
-                  {media[activeMediaId].replacementNote[language]}
+                <p className="mt-5 max-w-sm border-t border-pearl/20 pt-4 text-sm leading-6 text-pearl/70">
+                  {media[activeMediaId].replacementNote?.[language]}
                 </p>
                 <div className="mt-8 grid grid-cols-3 gap-2">
                   {copy.services.slice(0, 9).map((service, index) => (
@@ -121,7 +115,10 @@ function InfoGroup({ title, items }: { title: string; items: string[] }) {
       <p className="text-xs font-semibold uppercase tracking-editorial text-slate">{title}</p>
       <div className="mt-4 flex flex-wrap gap-2">
         {items.map((item) => (
-          <span key={item} className="rounded-full border border-ink/10 bg-white/70 px-3 py-2 text-sm text-ink/68">
+          <span
+            key={item}
+            className="rounded-full border border-ink/10 bg-white/70 px-3 py-2 text-sm text-ink/70"
+          >
             {item}
           </span>
         ))}

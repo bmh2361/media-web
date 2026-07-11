@@ -1,7 +1,12 @@
+.playwright/
+playwright-report/
+test-results/
+blob-report/
 .next/
 node_modules/
 out/
 dist/
+coverage/
 .env*
 !.env.example
 npm-debug.log*
@@ -9,3 +14,7 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 *.tsbuildinfo
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

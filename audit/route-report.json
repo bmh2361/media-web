@@ -1,0 +1,1146 @@
+{
+  "generatedAt": "2026-07-11T14:52:23.946Z",
+  "baseUrl": "http://localhost:3000",
+  "sitemap": {
+    "status": 200,
+    "hasApiRoute": false,
+    "hasInvalidLocale": false,
+    "urls": 38,
+    "hasLastModified": false
+  },
+  "valid": [
+    {
+      "route": "/",
+      "status": 307,
+      "redirectLocation": "/en",
+      "h1Count": 0,
+      "mainCount": 0,
+      "htmlLang": null,
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "hreflangs": {},
+      "ogImage": null,
+      "jsonLd": [],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "FrameBridge Studio | UK Production, Talent &amp; Innovation",
+      "description": "From models, campaign photography and brand films to research collaboration, technology showcases and exhibition delivery, we coordinate the people, production and on-the-ground execution in the UK.",
+      "canonical": "https://framebridge.studio/en",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en",
+        "zh-CN": "https://framebridge.studio/zh",
+        "x-default": "https://framebridge.studio/en"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "镜桥创意 | 英国制作、人才与创新活动",
+      "description": "从海外模特、商业摄影和品牌视频，到科研资源协作、科技展会与媒体传播，由中英双语团队统筹英国本地执行。",
+      "canonical": "https://framebridge.studio/zh",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en",
+        "zh-CN": "https://framebridge.studio/zh",
+        "x-default": "https://framebridge.studio/en"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/services",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Services | FrameBridge Studio",
+      "description": "Start with the business pillar, then define the specialist capabilities required by the brief.",
+      "canonical": "https://framebridge.studio/en/services",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/services",
+        "zh-CN": "https://framebridge.studio/zh/services",
+        "x-default": "https://framebridge.studio/en/services"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/services",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "服务能力 | 镜桥创意",
+      "description": "先明确业务支柱，再根据项目需求组合具体专业能力。",
+      "canonical": "https://framebridge.studio/zh/services",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/services",
+        "zh-CN": "https://framebridge.studio/zh/services",
+        "x-default": "https://framebridge.studio/en/services"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/services/commercial-production",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Commercial production built around the campaign objective. | FrameBridge Studio",
+      "description": "We coordinate UK shoots from creative interpretation and casting through production, rights planning and final asset handoff.",
+      "canonical": "https://framebridge.studio/en/services/commercial-production",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/services/commercial-production",
+        "zh-CN": "https://framebridge.studio/zh/services/commercial-production",
+        "x-default": "https://framebridge.studio/en/services/commercial-production"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        },
+        {
+          "valid": true,
+          "type": "Service"
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/services/commercial-production",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "围绕传播目标统筹英国商业内容制作。 | FrameBridge Studio",
+      "description": "从创意理解、选角与现场制作，到使用权规划及成片交付，统一管理英国拍摄流程。",
+      "canonical": "https://framebridge.studio/zh/services/commercial-production",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/services/commercial-production",
+        "zh-CN": "https://framebridge.studio/zh/services/commercial-production",
+        "x-default": "https://framebridge.studio/en/services/commercial-production"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        },
+        {
+          "valid": true,
+          "type": "Service"
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/talent",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Local talent, creators and production resources in the UK. | Talent &amp; Creators",
+      "description": "We help brands build the right team for each shoot, campaign, event or video production.",
+      "canonical": "https://framebridge.studio/en/talent",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/talent",
+        "zh-CN": "https://framebridge.studio/zh/talent",
+        "x-default": "https://framebridge.studio/en/talent"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/talent",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "英国本地模特、达人与内容制作资源。 | 人才与创作者",
+      "description": "我们根据品牌项目需求，匹配适合的模特、演员、主持人、达人、妆造师、摄影摄像与制作团队。",
+      "canonical": "https://framebridge.studio/zh/talent",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/talent",
+        "zh-CN": "https://framebridge.studio/zh/talent",
+        "x-default": "https://framebridge.studio/en/talent"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/services/research-innovation",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Research and innovation collaboration, coordinated with professional care. | FrameBridge Studio",
+      "description": "We identify and coordinate relevant academic, technical and innovation resources, subject to institutional approval, availability and project requirements.",
+      "canonical": "https://framebridge.studio/en/services/research-innovation",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/services/research-innovation",
+        "zh-CN": "https://framebridge.studio/zh/services/research-innovation",
+        "x-default": "https://framebridge.studio/en/services/research-innovation"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        },
+        {
+          "valid": true,
+          "type": "Service"
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/services/research-innovation",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "以专业、合规的方式协调英国科研与创新资源。 | FrameBridge Studio",
+      "description": "我们根据项目目标识别并协调相关科研人员、学术嘉宾与创新资源，具体合作受机构审批、档期与项目合规要求约束。",
+      "canonical": "https://framebridge.studio/zh/services/research-innovation",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/services/research-innovation",
+        "zh-CN": "https://framebridge.studio/zh/services/research-innovation",
+        "x-default": "https://framebridge.studio/en/services/research-innovation"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        },
+        {
+          "valid": true,
+          "type": "Service"
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/services/events-exhibitions",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Technology events and exhibitions designed for credible UK execution. | FrameBridge Studio",
+      "description": "We coordinate the format, contributors, venue production and communication assets—not simply event photography.",
+      "canonical": "https://framebridge.studio/en/services/events-exhibitions",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/services/events-exhibitions",
+        "zh-CN": "https://framebridge.studio/zh/services/events-exhibitions",
+        "x-default": "https://framebridge.studio/en/services/events-exhibitions"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        },
+        {
+          "valid": true,
+          "type": "Service"
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/services/events-exhibitions",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "从活动形式到现场执行，统筹英国科技展会与品牌活动。 | FrameBridge Studio",
+      "description": "服务范围不仅是活动摄影，还包括形式策划、嘉宾、场地制作、舞台视听、现场流程与会后传播。",
+      "canonical": "https://framebridge.studio/zh/services/events-exhibitions",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/services/events-exhibitions",
+        "zh-CN": "https://framebridge.studio/zh/services/events-exhibitions",
+        "x-default": "https://framebridge.studio/en/services/events-exhibitions"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        },
+        {
+          "valid": true,
+          "type": "Service"
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/for-agencies",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Your UK production partner for brand, media and PR projects. | For Agencies",
+      "description": "We support agencies with local production, talent, styling, photography, video, event coverage and bilingual coordination across the UK.",
+      "canonical": "https://framebridge.studio/en/for-agencies",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/for-agencies",
+        "zh-CN": "https://framebridge.studio/zh/for-agencies",
+        "x-default": "https://framebridge.studio/en/for-agencies"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/for-agencies",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "媒体、广告与PR公司的英国本地制作伙伴。 | 代理支持",
+      "description": "我们为媒体、广告、公关和MCN团队提供英国本地拍摄、模特达人、妆造造型、摄影摄像、活动内容和中英双语执行支持。",
+      "canonical": "https://framebridge.studio/zh/for-agencies",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/for-agencies",
+        "zh-CN": "https://framebridge.studio/zh/for-agencies",
+        "x-default": "https://framebridge.studio/en/for-agencies"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/industries",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Six sectors. One UK execution partner. | FrameBridge Studio",
+      "description": "Production, talent and activation shaped around the commercial reality of each category.",
+      "canonical": "https://framebridge.studio/en/industries",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/industries",
+        "zh-CN": "https://framebridge.studio/zh/industries",
+        "x-default": "https://framebridge.studio/en/industries"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/industries",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "六大行业方向，一套英国本地执行体系。 | FrameBridge Studio",
+      "description": "根据不同品类的商业场景，组合制作、人才与活动落地能力。",
+      "canonical": "https://framebridge.studio/zh/industries",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/industries",
+        "zh-CN": "https://framebridge.studio/zh/industries",
+        "x-default": "https://framebridge.studio/en/industries"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/work",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Concept Project Models | FrameBridge Studio",
+      "description": "These concept project models show possible coordination routes. They are not presented as completed client projects.",
+      "canonical": "https://framebridge.studio/en/work",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work",
+        "zh-CN": "https://framebridge.studio/zh/work",
+        "x-default": "https://framebridge.studio/en/work"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/work",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "概念项目模式｜FrameBridge Studio",
+      "description": "这些概念项目模式展示可能的统筹路径，不作为已完成客户项目展示。",
+      "canonical": "https://framebridge.studio/zh/work",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work",
+        "zh-CN": "https://framebridge.studio/zh/work",
+        "x-default": "https://framebridge.studio/en/work"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/about",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "About FrameBridge Studio",
+      "description": "FrameBridge helps brands, agencies and innovation teams turn an overseas brief into a clear UK delivery route.",
+      "canonical": "https://framebridge.studio/en/about",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/about",
+        "zh-CN": "https://framebridge.studio/zh/about",
+        "x-default": "https://framebridge.studio/en/about"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/about",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "关于镜桥创意",
+      "description": "FrameBridge 帮助品牌、代理与创新团队将海外项目需求转化为清晰的英国执行路径。",
+      "canonical": "https://framebridge.studio/zh/about",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/about",
+        "zh-CN": "https://framebridge.studio/zh/about",
+        "x-default": "https://framebridge.studio/en/about"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/contact",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Tell us what you need to create in the UK. | Contact",
+      "description": "Share your timeline, market, content formats, talent needs and any reference direction. We will shape a practical production route.",
+      "canonical": "https://framebridge.studio/en/contact",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/contact",
+        "zh-CN": "https://framebridge.studio/zh/contact",
+        "x-default": "https://framebridge.studio/en/contact"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/contact",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "告诉我们你希望在英国完成什么内容。 | 联系",
+      "description": "请提供时间节点、目标市场、内容形式、人才需求与参考方向，我们会协助梳理可执行的制作路径。",
+      "canonical": "https://framebridge.studio/zh/contact",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/contact",
+        "zh-CN": "https://framebridge.studio/zh/contact",
+        "x-default": "https://framebridge.studio/en/contact"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/privacy",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Privacy Notice | FrameBridge Studio",
+      "description": "How project-enquiry information is collected and used.",
+      "canonical": "https://framebridge.studio/en/privacy",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/privacy",
+        "zh-CN": "https://framebridge.studio/zh/privacy",
+        "x-default": "https://framebridge.studio/en/privacy"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/privacy",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "隐私说明 | 镜桥创意",
+      "description": "了解项目咨询信息的收集与使用方式。",
+      "canonical": "https://framebridge.studio/zh/privacy",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/privacy",
+        "zh-CN": "https://framebridge.studio/zh/privacy",
+        "x-default": "https://framebridge.studio/en/privacy"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/terms",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Website Terms | FrameBridge Studio",
+      "description": "FrameBridge Studio website-use terms.",
+      "canonical": "https://framebridge.studio/en/terms",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/terms",
+        "zh-CN": "https://framebridge.studio/zh/terms",
+        "x-default": "https://framebridge.studio/en/terms"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/terms",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "网站条款 | 镜桥创意",
+      "description": "镜桥创意网站使用说明。",
+      "canonical": "https://framebridge.studio/zh/terms",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/terms",
+        "zh-CN": "https://framebridge.studio/zh/terms",
+        "x-default": "https://framebridge.studio/en/terms"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/work/london-celebrity-event-coverage",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "London entertainment event media plan | Concept Project Model | FrameBridge Studio",
+      "description": "An illustrative event model for coordinating a guest-facing programme, press moments and post-event assets in London.",
+      "canonical": "https://framebridge.studio/en/work/london-celebrity-event-coverage",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/london-celebrity-event-coverage",
+        "zh-CN": "https://framebridge.studio/zh/work/london-celebrity-event-coverage",
+        "x-default": "https://framebridge.studio/en/work/london-celebrity-event-coverage"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/work/london-celebrity-event-coverage",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "伦敦娱乐活动传播执行方案｜概念项目模式｜FrameBridge Studio",
+      "description": "用于说明如何在伦敦统筹嘉宾活动、媒体环节与会后素材的概念项目模式。",
+      "canonical": "https://framebridge.studio/zh/work/london-celebrity-event-coverage",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/london-celebrity-event-coverage",
+        "zh-CN": "https://framebridge.studio/zh/work/london-celebrity-event-coverage",
+        "x-default": "https://framebridge.studio/en/work/london-celebrity-event-coverage"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/work/fashion-campaign-production-london",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "London fashion seasonal campaign | Concept Project Model | FrameBridge Studio",
+      "description": "An illustrative campaign model for aligning casting, styling, stills and motion with channel-specific usage.",
+      "canonical": "https://framebridge.studio/en/work/fashion-campaign-production-london",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/fashion-campaign-production-london",
+        "zh-CN": "https://framebridge.studio/zh/work/fashion-campaign-production-london",
+        "x-default": "https://framebridge.studio/en/work/fashion-campaign-production-london"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/work/fashion-campaign-production-london",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "伦敦时尚季节广告制作方案｜概念项目模式｜FrameBridge Studio",
+      "description": "用于说明如何将选角、造型、图片与视频和渠道使用要求对齐的概念项目模式。",
+      "canonical": "https://framebridge.studio/zh/work/fashion-campaign-production-london",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/fashion-campaign-production-london",
+        "zh-CN": "https://framebridge.studio/zh/work/fashion-campaign-production-london",
+        "x-default": "https://framebridge.studio/en/work/fashion-campaign-production-london"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/work/ai-product-video-uk-market",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "AI product explanation for a UK audience | Concept Project Model | FrameBridge Studio",
+      "description": "An illustrative product-story model for turning a technical use case into reviewed interview, demo and short-form assets.",
+      "canonical": "https://framebridge.studio/en/work/ai-product-video-uk-market",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/ai-product-video-uk-market",
+        "zh-CN": "https://framebridge.studio/zh/work/ai-product-video-uk-market",
+        "x-default": "https://framebridge.studio/en/work/ai-product-video-uk-market"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/work/ai-product-video-uk-market",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "面向英国受众的 AI 产品说明内容｜概念项目模式｜FrameBridge Studio",
+      "description": "用于说明如何将技术使用场景转化为经审核的访谈、演示与短内容的概念项目模式。",
+      "canonical": "https://framebridge.studio/zh/work/ai-product-video-uk-market",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/ai-product-video-uk-market",
+        "zh-CN": "https://framebridge.studio/zh/work/ai-product-video-uk-market",
+        "x-default": "https://framebridge.studio/en/work/ai-product-video-uk-market"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/work/beauty-creator-content-sprint",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Beauty creator content sprint | Concept Project Model | FrameBridge Studio",
+      "description": "An illustrative creator-content model for matching product claims, creator briefs and review windows within a short launch schedule.",
+      "canonical": "https://framebridge.studio/en/work/beauty-creator-content-sprint",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/beauty-creator-content-sprint",
+        "zh-CN": "https://framebridge.studio/zh/work/beauty-creator-content-sprint",
+        "x-default": "https://framebridge.studio/en/work/beauty-creator-content-sprint"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/work/beauty-creator-content-sprint",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "美妆创作者内容短周期方案｜概念项目模式｜FrameBridge Studio",
+      "description": "用于说明如何在短发布周期内匹配产品表述、创作者简报与审核窗口的概念项目模式。",
+      "canonical": "https://framebridge.studio/zh/work/beauty-creator-content-sprint",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/beauty-creator-content-sprint",
+        "zh-CN": "https://framebridge.studio/zh/work/beauty-creator-content-sprint",
+        "x-default": "https://framebridge.studio/en/work/beauty-creator-content-sprint"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/work/automotive-event-presenter-support",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Automotive launch and presenter support | Concept Project Model | FrameBridge Studio",
+      "description": "An illustrative launch model for integrating vehicle access, presenter preparation, moving coverage and weather contingency.",
+      "canonical": "https://framebridge.studio/en/work/automotive-event-presenter-support",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/automotive-event-presenter-support",
+        "zh-CN": "https://framebridge.studio/zh/work/automotive-event-presenter-support",
+        "x-default": "https://framebridge.studio/en/work/automotive-event-presenter-support"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/work/automotive-event-presenter-support",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "汽车发布与主持人支持方案｜概念项目模式｜FrameBridge Studio",
+      "description": "用于说明如何整合车辆进场、主持人准备、动态拍摄与天气预案的概念项目模式。",
+      "canonical": "https://framebridge.studio/zh/work/automotive-event-presenter-support",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/automotive-event-presenter-support",
+        "zh-CN": "https://framebridge.studio/zh/work/automotive-event-presenter-support",
+        "x-default": "https://framebridge.studio/en/work/automotive-event-presenter-support"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/work/jewellery-editorial-shoot",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "en-GB",
+      "title": "Jewellery editorial production | Concept Project Model | FrameBridge Studio",
+      "description": "An illustrative editorial model for planning product detail, model wearing shots and rights-aware launch assets.",
+      "canonical": "https://framebridge.studio/en/work/jewellery-editorial-shoot",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/jewellery-editorial-shoot",
+        "zh-CN": "https://framebridge.studio/zh/work/jewellery-editorial-shoot",
+        "x-default": "https://framebridge.studio/en/work/jewellery-editorial-shoot"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/work/jewellery-editorial-shoot",
+      "status": 200,
+      "redirectLocation": null,
+      "h1Count": 1,
+      "mainCount": 1,
+      "htmlLang": "zh-CN",
+      "title": "珠宝编辑式内容制作方案｜概念项目模式｜FrameBridge Studio",
+      "description": "用于说明如何规划产品细节、模特佩戴画面与使用权意识下的发布素材的概念项目模式。",
+      "canonical": "https://framebridge.studio/zh/work/jewellery-editorial-shoot",
+      "hreflangs": {
+        "en-GB": "https://framebridge.studio/en/work/jewellery-editorial-shoot",
+        "zh-CN": "https://framebridge.studio/zh/work/jewellery-editorial-shoot",
+        "x-default": "https://framebridge.studio/en/work/jewellery-editorial-shoot"
+      },
+      "ogImage": "https://framebridge.studio/images/framebridge-og.jpg",
+      "jsonLd": [
+        {
+          "valid": true,
+          "type": ["Organization", "ProfessionalService"]
+        }
+      ],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    }
+  ],
+  "invalid": [
+    {
+      "route": "/fr",
+      "status": 404,
+      "redirectLocation": null,
+      "h1Count": 0,
+      "mainCount": 0,
+      "htmlLang": null,
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "hreflangs": {},
+      "ogImage": null,
+      "jsonLd": [],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/fr/about",
+      "status": 404,
+      "redirectLocation": null,
+      "h1Count": 0,
+      "mainCount": 0,
+      "htmlLang": null,
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "hreflangs": {},
+      "ogImage": null,
+      "jsonLd": [],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/fr/work",
+      "status": 404,
+      "redirectLocation": null,
+      "h1Count": 0,
+      "mainCount": 0,
+      "htmlLang": null,
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "hreflangs": {},
+      "ogImage": null,
+      "jsonLd": [],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/fr/work/example",
+      "status": 404,
+      "redirectLocation": null,
+      "h1Count": 0,
+      "mainCount": 0,
+      "htmlLang": null,
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "hreflangs": {},
+      "ogImage": null,
+      "jsonLd": [],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/en/work/nonexistent",
+      "status": 404,
+      "redirectLocation": null,
+      "h1Count": 0,
+      "mainCount": 0,
+      "htmlLang": null,
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "hreflangs": {},
+      "ogImage": null,
+      "jsonLd": [],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    },
+    {
+      "route": "/zh/work/nonexistent",
+      "status": 404,
+      "redirectLocation": null,
+      "h1Count": 0,
+      "mainCount": 0,
+      "htmlLang": null,
+      "title": null,
+      "description": null,
+      "canonical": null,
+      "hreflangs": {},
+      "ogImage": null,
+      "jsonLd": [],
+      "internalEditorialMarker": false,
+      "unexpectedChineseUi": false,
+      "developmentGuide": false
+    }
+  ]
+}

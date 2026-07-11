@@ -63,7 +63,8 @@ export const home = {
     sections: {
       scenariosEyebrow: "What we create",
       scenariosTitle: "Campaign assets with a clear commercial job.",
-      scenariosIntro: "One brief can become a complete UK content package for launch, social, PR, retail and agency handoff.",
+      scenariosIntro:
+        "One brief can become a complete UK content package for launch, social, PR, retail and agency handoff.",
       capabilitiesEyebrow: "Core capabilities",
       capabilitiesTitle: "Production depth, without the overseas friction.",
       industriesEyebrow: "Industries",
@@ -77,7 +78,8 @@ export const home = {
       processEyebrow: "How we work",
       processTitle: "A calm route from brief to campaign-ready assets.",
       finalTitle: "Planning a brand shoot, campaign or event in the UK?",
-      finalText: "Send the brief, timeline and reference direction. We will map the production route and the team you need."
+      finalText:
+        "Send the brief, timeline and reference direction. We will map the production route and the team you need."
     },
     caseLabels: {
       challenge: "Challenge",
@@ -135,22 +137,28 @@ export const home = {
       {
         title: "London Celebrity Event Coverage",
         industry: "Entertainment / PR",
-        challenge: "A China-facing team needed premium event coverage in London with fast editorial turnaround.",
-        delivered: "Red-carpet photo coverage, short video clips, bilingual coordination and PR-ready assets.",
+        challenge:
+          "A China-facing team needed premium event coverage in London with fast editorial turnaround.",
+        delivered:
+          "Red-carpet photo coverage, short video clips, bilingual coordination and PR-ready assets.",
         cta: "View case"
       },
       {
         title: "Fashion Campaign Production",
         industry: "Fashion",
-        challenge: "A fashion brand needed UK campaign visuals that felt editorial, premium and usable across channels.",
-        delivered: "Creative production, model casting, styling, location planning, campaign stills and social cuts.",
+        challenge:
+          "A fashion brand needed UK campaign visuals that felt editorial, premium and usable across channels.",
+        delivered:
+          "Creative production, model casting, styling, location planning, campaign stills and social cuts.",
         cta: "View case"
       },
       {
         title: "AI Product Video for UK Market",
         industry: "AI / Technology",
-        challenge: "A technology company needed human-facing product content for a UK audience and Chinese stakeholders.",
-        delivered: "Presenter casting, product video, clean interface visuals and bilingual production management.",
+        challenge:
+          "A technology company needed human-facing product content for a UK audience and Chinese stakeholders.",
+        delivered:
+          "Presenter casting, product video, clean interface visuals and bilingual production management.",
         cta: "View case"
       }
     ],
@@ -177,8 +185,7 @@ export const home = {
   zh: {
     eyebrow: "服务面向中国市场的英国本地制作团队",
     title: "为中国品牌打造英国本地商业内容资产",
-    intro:
-      "我们帮助品牌在英国完成商业拍摄、短视频、模特达人、妆造造型、活动内容和海外传播素材交付。",
+    intro: "我们帮助品牌在英国完成商业拍摄、短视频、模特达人、妆造造型、活动内容和海外传播素材交付。",
     ctaPrimary: "开始品牌项目",
     ctaSecondary: "查看案例",
     proofTitle: "为真正需要海外传播落地的项目而建",
@@ -291,16 +298,7 @@ export const home = {
       "在英国完成拍摄",
       "交付可投放素材"
     ],
-    talentNetwork: [
-      "模特",
-      "演员",
-      "主持人",
-      "华人创作者",
-      "造型师",
-      "化妆师",
-      "摄影师",
-      "摄像师"
-    ],
+    talentNetwork: ["模特", "演员", "主持人", "华人创作者", "造型师", "化妆师", "摄影师", "摄像师"],
     finalCta: "提交项目需求"
   }
 } satisfies Localized<{
@@ -435,7 +433,10 @@ export const caseStudies = [
   },
   {
     category: { en: "Beauty product film", zh: "美妆产品影片" },
-    title: { en: "Controlled light, refined styling, fast campaign edits", zh: "可控光线、精致造型与高效广告剪辑" },
+    title: {
+      en: "Controlled light, refined styling, fast campaign edits",
+      zh: "可控光线、精致造型与高效广告剪辑"
+    },
     text: {
       en: "Product-led stills and short-form edits shaped around ingredient cues, texture and channel-specific ratios.",
       zh: "围绕成分卖点、质地表现与不同渠道比例制作产品静物与短视频剪辑。"
@@ -538,7 +539,8 @@ export const pageCopy = {
     en: {
       eyebrow: "Services",
       title: "Production services that make UK content creation feel close.",
-      intro: "A flexible production partner for brands and agencies that need polished assets, reliable talent and bilingual control."
+      intro:
+        "A flexible production partner for brands and agencies that need polished assets, reliable talent and bilingual control."
     },
     zh: {
       eyebrow: "服务",
@@ -550,7 +552,8 @@ export const pageCopy = {
     en: {
       eyebrow: "Industries",
       title: "Category fluency for brands with overseas ambition.",
-      intro: "We support fashion, beauty, technology, automotive and agency teams that need UK-based assets with a China-facing sensibility."
+      intro:
+        "We support fashion, beauty, technology, automotive and agency teams that need UK-based assets with a China-facing sensibility."
     },
     zh: {
       eyebrow: "行业",
@@ -562,7 +565,8 @@ export const pageCopy = {
     en: {
       eyebrow: "Talent & Creators",
       title: "Talent, creators and on-camera specialists.",
-      intro: "From models and actors to bilingual presenters and UK-based Chinese creators, we source people who can carry the campaign."
+      intro:
+        "From models and actors to bilingual presenters and UK-based Chinese creators, we source people who can carry the campaign."
     },
     zh: {
       eyebrow: "人才与创作者",
@@ -574,7 +578,8 @@ export const pageCopy = {
     en: {
       eyebrow: "Work",
       title: "Work shaped for campaign use.",
-      intro: "A curated portfolio area for commercial photography, brand film, social video, event coverage and creator-led content."
+      intro:
+        "A curated portfolio area for commercial photography, brand film, social video, event coverage and creator-led content."
     },
     zh: {
       eyebrow: "案例作品",
@@ -586,7 +591,8 @@ export const pageCopy = {
     en: {
       eyebrow: "For Agencies",
       title: "A quiet production desk for agencies.",
-      intro: "We help advertising, PR, media and MCN teams deliver UK shoots, local talent and creator projects without building a local office."
+      intro:
+        "We help advertising, PR, media and MCN teams deliver UK shoots, local talent and creator projects without building a local office."
     },
     zh: {
       eyebrow: "代理合作",
@@ -598,7 +604,8 @@ export const pageCopy = {
     en: {
       eyebrow: "About",
       title: "A bridge between UK production craft and Chinese brand momentum.",
-      intro: "FrameBridge Studio was built for teams that care about image quality, speed, cultural nuance and calm project communication."
+      intro:
+        "FrameBridge Studio was built for teams that care about image quality, speed, cultural nuance and calm project communication."
     },
     zh: {
       eyebrow: "关于",
@@ -610,7 +617,8 @@ export const pageCopy = {
     en: {
       eyebrow: "Contact",
       title: "Tell us what you need to create in the UK.",
-      intro: "Share your timeline, market, content formats, talent needs and any reference direction. We will shape a practical production route."
+      intro:
+        "Share your timeline, market, content formats, talent needs and any reference direction. We will shape a practical production route."
     },
     zh: {
       eyebrow: "联系",
@@ -639,22 +647,30 @@ export const servicesPage = {
       cta: "Plan this service",
       packagesEyebrow: "Packages",
       packagesTitle: "Production shapes built around the job.",
-      packagesIntro: "No fixed public pricing. Each package is scoped around schedule, format, crew, talent, usage and delivery requirements.",
+      packagesIntro:
+        "No fixed public pricing. Each package is scoped around schedule, format, crew, talent, usage and delivery requirements.",
       finalTitle: "Send us your brief and we’ll build the right production plan.",
       finalCta: "Send Brief"
     },
     services: [
       {
         name: "Creative Production",
-        explanation: "A joined-up production layer for brand campaigns, product launches, storytelling and social content.",
+        explanation:
+          "A joined-up production layer for brand campaigns, product launches, storytelling and social content.",
         usefulFor: ["Brand campaigns", "Product launches", "Storytelling", "Social content"],
-        deliverables: ["Creative route", "Production plan", "Crew and schedule", "Location and shoot management"],
+        deliverables: [
+          "Creative route",
+          "Production plan",
+          "Crew and schedule",
+          "Location and shoot management"
+        ],
         industries: ["Fashion", "Beauty", "Technology", "Automotive", "Agencies"],
         caseStudy: "Fashion Campaign Production"
       },
       {
         name: "Commercial Photography",
-        explanation: "Premium stills for campaign visuals, lookbooks, product lifestyle images, e-commerce and PR assets.",
+        explanation:
+          "Premium stills for campaign visuals, lookbooks, product lifestyle images, e-commerce and PR assets.",
         usefulFor: ["Campaign visuals", "Lookbooks", "Product lifestyle", "E-commerce", "PR assets"],
         deliverables: ["Shot list", "Art direction", "Retouched stills", "Channel-ready exports"],
         industries: ["Fashion", "Jewellery", "Beauty", "Lifestyle", "E-commerce"],
@@ -662,7 +678,8 @@ export const servicesPage = {
       },
       {
         name: "Video & Brand Films",
-        explanation: "Film and motion content for product explainers, founder videos, brand films, event videos and social edits.",
+        explanation:
+          "Film and motion content for product explainers, founder videos, brand films, event videos and social edits.",
         usefulFor: ["Product explainers", "Founder videos", "Brand films", "Event videos", "Social edits"],
         deliverables: ["Script or treatment", "Production crew", "Edited hero film", "Short cutdowns"],
         industries: ["AI", "Technology", "Beauty", "Automotive", "Education"],
@@ -670,7 +687,8 @@ export const servicesPage = {
       },
       {
         name: "Short-form Video & Short Drama",
-        explanation: "Fast, story-led content for TikTok, Douyin, Xiaohongshu, Instagram Reels, product placement and brand narratives.",
+        explanation:
+          "Fast, story-led content for TikTok, Douyin, Xiaohongshu, Instagram Reels, product placement and brand narratives.",
         usefulFor: ["TikTok", "Douyin", "Xiaohongshu", "Instagram Reels", "Product placement"],
         deliverables: ["Concept hooks", "Episode plan", "Cast and crew", "Vertical edits"],
         industries: ["Beauty", "Fashion", "Entertainment", "Consumer tech", "Lifestyle"],
@@ -678,15 +696,23 @@ export const servicesPage = {
       },
       {
         name: "Model, Actor & Presenter Casting",
-        explanation: "Casting support for fashion shoots, automotive explainers, beauty campaigns, AI demos and event hosting.",
-        usefulFor: ["Fashion shoots", "Automotive explainers", "Beauty campaigns", "AI product demos", "Event hosting"],
+        explanation:
+          "Casting support for fashion shoots, automotive explainers, beauty campaigns, AI demos and event hosting.",
+        usefulFor: [
+          "Fashion shoots",
+          "Automotive explainers",
+          "Beauty campaigns",
+          "AI product demos",
+          "Event hosting"
+        ],
         deliverables: ["Talent shortlist", "Usage guidance", "Booking coordination", "On-set talent support"],
         industries: ["Fashion", "Automotive", "Beauty", "AI", "Events"],
         caseStudy: "Presenter-led AI product video"
       },
       {
         name: "Creator & Influencer Coordination",
-        explanation: "Coordination for UK-based Chinese creators, local creators and social-first campaign assets.",
+        explanation:
+          "Coordination for UK-based Chinese creators, local creators and social-first campaign assets.",
         usefulFor: ["Creator seeding", "Social-first assets", "Launch awareness", "UK location value"],
         deliverables: ["Creator shortlist", "Briefing notes", "Content coordination", "Usage-ready assets"],
         industries: ["Beauty", "Lifestyle", "Food & Beverage", "Education", "E-commerce"],
@@ -694,7 +720,8 @@ export const servicesPage = {
       },
       {
         name: "On-camera Makeup & Styling",
-        explanation: "Camera-ready makeup, wardrobe, product styling and image direction for commercial shoots and events.",
+        explanation:
+          "Camera-ready makeup, wardrobe, product styling and image direction for commercial shoots and events.",
         usefulFor: ["Commercial shoots", "Campaign visuals", "Artists", "Presenters", "Models", "Events"],
         deliverables: ["Makeup plan", "Wardrobe styling", "Product styling", "On-set touch-ups"],
         industries: ["Fashion", "Beauty", "Entertainment", "Jewellery", "Events"],
@@ -702,7 +729,8 @@ export const servicesPage = {
       },
       {
         name: "Event, PR & Exhibition Coverage",
-        explanation: "Photo and video content for launches, dinners, trade shows, concerts, brand activations and press moments.",
+        explanation:
+          "Photo and video content for launches, dinners, trade shows, concerts, brand activations and press moments.",
         usefulFor: ["Launches", "Dinners", "Trade shows", "Concerts", "Brand activations", "Press moments"],
         deliverables: ["Event photography", "Highlight clips", "PR selects", "Fast social edits"],
         industries: ["PR", "Entertainment", "Automotive", "Fashion", "Lifestyle"],
@@ -710,9 +738,21 @@ export const servicesPage = {
       },
       {
         name: "UK Production Consulting",
-        explanation: "Local guidance for Chinese brands navigating content strategy, logistics, casting, locations and execution in the UK.",
-        usefulFor: ["Local strategy", "Production feasibility", "Casting guidance", "Location planning", "Execution support"],
-        deliverables: ["Production route", "Budget guidance", "Local resource map", "Risk and logistics notes"],
+        explanation:
+          "Local guidance for Chinese brands navigating content strategy, logistics, casting, locations and execution in the UK.",
+        usefulFor: [
+          "Local strategy",
+          "Production feasibility",
+          "Casting guidance",
+          "Location planning",
+          "Execution support"
+        ],
+        deliverables: [
+          "Production route",
+          "Budget guidance",
+          "Local resource map",
+          "Risk and logistics notes"
+        ],
         industries: ["Chinese brands", "Agencies", "Technology", "Consumer goods", "E-commerce"],
         caseStudy: "UK Launch Production"
       }
@@ -729,8 +769,7 @@ export const servicesPage = {
   zh: {
     eyebrow: "服务",
     title: "从项目需求到可投放的海外内容资产。",
-    intro:
-      "我们整合策划、制作、模特达人、妆造造型、摄影摄像与英国本地执行，帮助品牌高效完成商业内容交付。",
+    intro: "我们整合策划、制作、模特达人、妆造造型、摄影摄像与英国本地执行，帮助品牌高效完成商业内容交付。",
     labels: {
       usefulFor: "适用于",
       deliverables: "交付内容",
@@ -739,7 +778,8 @@ export const servicesPage = {
       cta: "规划此服务",
       packagesEyebrow: "服务组合",
       packagesTitle: "根据项目目标搭建制作组合。",
-      packagesIntro: "不展示固定公开价格。每个组合都会根据时间、内容形式、团队、人才、使用范围与交付要求进行定制。",
+      packagesIntro:
+        "不展示固定公开价格。每个组合都会根据时间、内容形式、团队、人才、使用范围与交付要求进行定制。",
       finalTitle: "把项目需求发给我们，我们会为你搭建合适的制作方案。",
       finalCta: "提交需求"
     },
@@ -817,14 +857,7 @@ export const servicesPage = {
         caseStudy: "英国上市制作支持"
       }
     ],
-    packages: [
-      "品牌广告拍摄日",
-      "产品内容冲刺",
-      "活动内容记录",
-      "达人广告组合",
-      "英国上市制作",
-      "短剧制作"
-    ]
+    packages: ["品牌广告拍摄日", "产品内容冲刺", "活动内容记录", "达人广告组合", "英国上市制作", "短剧制作"]
   }
 } satisfies Localized<{
   eyebrow: string;
@@ -861,71 +894,176 @@ export const industriesPage = {
         name: "Fashion",
         insight:
           "Fashion brands need a visual world that feels current in London while still working for Chinese e-commerce, social and campaign channels.",
-        needs: ["Lookbook", "Campaign visuals", "Model try-on content", "Street style", "London editorial shoots", "Short-form social videos"],
+        needs: [
+          "Lookbook",
+          "Campaign visuals",
+          "Model try-on content",
+          "Street style",
+          "London editorial shoots",
+          "Short-form social videos"
+        ],
         delivers:
           "We combine casting, styling, locations, art direction, photography and motion to produce assets that can move from campaign launch to social proof.",
-        examples: ["Editorial stills", "Model try-on reels", "Street-style sets", "Lookbook selects", "Paid social crops"],
-        relatedServices: ["Creative Production", "Commercial Photography", "Talent Casting", "Makeup & Styling"]
+        examples: [
+          "Editorial stills",
+          "Model try-on reels",
+          "Street-style sets",
+          "Lookbook selects",
+          "Paid social crops"
+        ],
+        relatedServices: [
+          "Creative Production",
+          "Commercial Photography",
+          "Talent Casting",
+          "Makeup & Styling"
+        ]
       },
       {
         name: "Jewellery & Accessories",
         insight:
           "Luxury accessories depend on close detail, believable wearing moments and a restrained sense of lifestyle.",
-        needs: ["Editorial model images", "Wearing shots", "Product close-ups", "Luxury lifestyle scenes", "Detail-focused photography", "Short visual stories"],
+        needs: [
+          "Editorial model images",
+          "Wearing shots",
+          "Product close-ups",
+          "Luxury lifestyle scenes",
+          "Detail-focused photography",
+          "Short visual stories"
+        ],
         delivers:
           "We build controlled image environments with model casting, product handling, styling and precise stills or short motion assets.",
-        examples: ["Macro detail images", "Model wearing sets", "Lifestyle stills", "Short product story", "PR image selects"],
+        examples: [
+          "Macro detail images",
+          "Model wearing sets",
+          "Lifestyle stills",
+          "Short product story",
+          "PR image selects"
+        ],
         relatedServices: ["Commercial Photography", "Video & Brand Films", "On-camera Makeup & Styling"]
       },
       {
         name: "Beauty & Skincare",
         insight:
           "Beauty content has to prove texture, finish, credibility and social relevance across multiple platforms.",
-        needs: ["Makeup looks", "Before-after content", "Product trials", "Creator videos", "Model skin and beauty visuals", "Xiaohongshu, Douyin, TikTok and Instagram content"],
+        needs: [
+          "Makeup looks",
+          "Before-after content",
+          "Product trials",
+          "Creator videos",
+          "Model skin and beauty visuals",
+          "Xiaohongshu, Douyin, TikTok and Instagram content"
+        ],
         delivers:
           "We coordinate models, makeup artists, creators, product styling and fast social formats for campaign and platform-specific use.",
-        examples: ["Beauty stills", "Routine videos", "Creator-led trials", "Before-after assets", "Vertical short edits"],
-        relatedServices: ["Creator Coordination", "Makeup & Styling", "Commercial Photography", "Short-form Video"]
+        examples: [
+          "Beauty stills",
+          "Routine videos",
+          "Creator-led trials",
+          "Before-after assets",
+          "Vertical short edits"
+        ],
+        relatedServices: [
+          "Creator Coordination",
+          "Makeup & Styling",
+          "Commercial Photography",
+          "Short-form Video"
+        ]
       },
       {
         name: "AI & Technology",
         insight:
           "Technology brands need content that makes abstract products feel clear, useful and credible to buyers and stakeholders.",
-        needs: ["Product demo videos", "Founder interviews", "Office and user scenarios", "B2B explainers", "Event coverage", "LinkedIn and website content"],
+        needs: [
+          "Product demo videos",
+          "Founder interviews",
+          "Office and user scenarios",
+          "B2B explainers",
+          "Event coverage",
+          "LinkedIn and website content"
+        ],
         delivers:
           "We create presenter-led, founder-led and product-led assets with clean visuals, bilingual coordination and UK-context production support.",
-        examples: ["Demo film", "Founder interview", "Website hero video", "LinkedIn cuts", "Event highlight clips"],
+        examples: [
+          "Demo film",
+          "Founder interview",
+          "Website hero video",
+          "LinkedIn cuts",
+          "Event highlight clips"
+        ],
         relatedServices: ["Video & Brand Films", "Presenter Casting", "UK Production Consulting"]
       },
       {
         name: "Automotive",
         insight:
           "Automotive content needs confidence, clear product explanation and a sense of place, whether for launches, showrooms or events.",
-        needs: ["Presenter-led car videos", "Product walkaround", "Event and exhibition coverage", "Lifestyle driving visuals", "Creator attendance", "Brand launch assets"],
+        needs: [
+          "Presenter-led car videos",
+          "Product walkaround",
+          "Event and exhibition coverage",
+          "Lifestyle driving visuals",
+          "Creator attendance",
+          "Brand launch assets"
+        ],
         delivers:
           "We coordinate presenters, creators, locations, event coverage and polished photo-video capture for UK-facing automotive moments.",
-        examples: ["Walkaround video", "Launch event content", "Lifestyle stills", "Creator attendance clips", "Exhibition coverage"],
+        examples: [
+          "Walkaround video",
+          "Launch event content",
+          "Lifestyle stills",
+          "Creator attendance clips",
+          "Exhibition coverage"
+        ],
         relatedServices: ["Video & Brand Films", "Talent Casting", "Event & PR Coverage"]
       },
       {
         name: "Lifestyle & Consumer Products",
         insight:
           "Consumer products need believable usage scenes that show how the product fits into everyday UK life.",
-        needs: ["Product lifestyle imagery", "Social media content", "User scenario videos", "Creator-led content", "UK location-based visual assets"],
+        needs: [
+          "Product lifestyle imagery",
+          "Social media content",
+          "User scenario videos",
+          "Creator-led content",
+          "UK location-based visual assets"
+        ],
         delivers:
           "We produce location-based image and video sets with models, creators and product styling that feel natural, premium and useful across channels.",
-        examples: ["Lifestyle image sets", "Usage videos", "Creator posts", "Retail crops", "Product-in-location assets"],
+        examples: [
+          "Lifestyle image sets",
+          "Usage videos",
+          "Creator posts",
+          "Retail crops",
+          "Product-in-location assets"
+        ],
         relatedServices: ["Creative Production", "Commercial Photography", "Creator Coordination"]
       },
       {
         name: "Media, Advertising & PR Agencies",
         insight:
           "Agency teams need a UK partner that can move quickly, communicate clearly and protect the creative standard on the ground.",
-        needs: ["Reliable UK execution partner", "Local talent and crew", "Styling and makeup", "Event coverage", "Fast content delivery", "Bilingual production coordination"],
+        needs: [
+          "Reliable UK execution partner",
+          "Local talent and crew",
+          "Styling and makeup",
+          "Event coverage",
+          "Fast content delivery",
+          "Bilingual production coordination"
+        ],
         delivers:
           "We operate as a quiet local production desk for agency teams, handling UK execution, talent, crew, styling, content capture and bilingual updates.",
-        examples: ["Local crew sourcing", "Talent shortlist", "Event same-day selects", "Bilingual production notes", "Agency handoff assets"],
-        relatedServices: ["UK Production Consulting", "Event & PR Coverage", "Talent Casting", "Creative Production"]
+        examples: [
+          "Local crew sourcing",
+          "Talent shortlist",
+          "Event same-day selects",
+          "Bilingual production notes",
+          "Agency handoff assets"
+        ],
+        relatedServices: [
+          "UK Production Consulting",
+          "Event & PR Coverage",
+          "Talent Casting",
+          "Creative Production"
+        ]
       }
     ]
   },
@@ -962,7 +1100,14 @@ export const industriesPage = {
       {
         name: "美妆护肤",
         insight: "美妆内容需要证明质地、妆效、可信度与平台适配能力。",
-        needs: ["妆容视觉", "前后对比内容", "产品试用", "达人视频", "模特皮肤与美妆视觉", "小红书、抖音、TikTok 与 Instagram 内容"],
+        needs: [
+          "妆容视觉",
+          "前后对比内容",
+          "产品试用",
+          "达人视频",
+          "模特皮肤与美妆视觉",
+          "小红书、抖音、TikTok 与 Instagram 内容"
+        ],
         delivers: "我们协调模特、化妆师、创作者、产品造型与短视频流程，为广告与平台内容提供素材。",
         examples: ["美妆静态图", "护肤流程视频", "达人试用内容", "前后对比素材", "竖屏短视频"],
         relatedServices: ["创作者协调", "妆造与造型", "商业摄影", "短视频制作"]
@@ -970,7 +1115,14 @@ export const industriesPage = {
       {
         name: "AI 与科技",
         insight: "科技品牌需要把抽象产品讲清楚，让买家、用户和内部团队都能快速理解其价值。",
-        needs: ["产品演示视频", "创始人访谈", "办公室与用户场景", "B2B 讲解", "活动记录", "LinkedIn 与官网内容"],
+        needs: [
+          "产品演示视频",
+          "创始人访谈",
+          "办公室与用户场景",
+          "B2B 讲解",
+          "活动记录",
+          "LinkedIn 与官网内容"
+        ],
         delivers: "我们制作出镜讲解、创始人访谈与产品演示内容，并提供清晰视觉与中英双语制作协调。",
         examples: ["产品演示影片", "创始人访谈", "官网主视觉视频", "LinkedIn 短版", "活动高光视频"],
         relatedServices: ["视频与品牌影片", "主持人选角", "英国制作咨询"]
@@ -978,7 +1130,14 @@ export const industriesPage = {
       {
         name: "汽车",
         insight: "汽车内容需要清晰讲解、品牌信心和场景感，适用于上市、展会、试驾与传播节点。",
-        needs: ["主持人讲车视频", "产品 walkaround", "活动与展会记录", "生活方式驾驶视觉", "达人出席", "品牌上市素材"],
+        needs: [
+          "主持人讲车视频",
+          "产品 walkaround",
+          "活动与展会记录",
+          "生活方式驾驶视觉",
+          "达人出席",
+          "品牌上市素材"
+        ],
         delivers: "我们协调主持人、创作者、场地、活动记录与高质感影像团队，支持英国本地汽车传播场景。",
         examples: ["讲车视频", "上市活动内容", "生活方式图片", "达人出席短片", "展会记录"],
         relatedServices: ["视频与品牌影片", "人才选角", "活动与公关记录"]
@@ -994,7 +1153,14 @@ export const industriesPage = {
       {
         name: "媒体、广告与公关代理",
         insight: "代理团队需要一个可靠的英国本地执行伙伴，既能快速响应，也能守住创意与交付标准。",
-        needs: ["可靠英国执行伙伴", "本地人才与团队", "造型与妆造", "活动记录", "快速内容交付", "中英双语制作协调"],
+        needs: [
+          "可靠英国执行伙伴",
+          "本地人才与团队",
+          "造型与妆造",
+          "活动记录",
+          "快速内容交付",
+          "中英双语制作协调"
+        ],
         delivers: "我们作为代理团队的英国本地制作台，处理执行、人才、团队、造型、内容采集与双语进度沟通。",
         examples: ["本地团队协调", "人才 shortlist", "活动当日精选", "双语制作记录", "代理交付素材"],
         relatedServices: ["英国制作咨询", "活动与公关记录", "人才选角", "创意制作"]
@@ -1020,10 +1186,9 @@ export const talentPage = {
   en: {
     eyebrow: "Talent & Creators",
     title: "Local talent, creators and production resources in the UK.",
-    intro:
-      "We help brands build the right team for each shoot, campaign, event or video production.",
+    intro: "We help brands build the right team for each shoot, campaign, event or video production.",
     privateNote:
-      "We do not publish private talent names, contact details or personal information. Curated profiles are shared after a project brief.",
+      "We do not publish private talent names, contact details or personal information. A relevant shortlist is shared after a project brief.",
     labels: {
       suitableFor: "Suitable for",
       useCases: "Example use cases",
@@ -1037,19 +1202,31 @@ export const talentPage = {
       {
         name: "British Models",
         suitableFor: "Campaign imagery, lifestyle shoots and brand content that needs a UK-facing look.",
-        useCases: ["Fashion lookbooks", "Lifestyle product shoots", "Automotive content", "Brand launch visuals"],
+        useCases: [
+          "Fashion lookbooks",
+          "Lifestyle product shoots",
+          "Automotive content",
+          "Brand launch visuals"
+        ],
         industries: ["Fashion", "Lifestyle", "Automotive", "Jewellery"]
       },
       {
         name: "Asian & Chinese Models",
-        suitableFor: "China-facing campaigns that need culturally relevant faces and premium on-camera presence.",
+        suitableFor:
+          "China-facing campaigns that need culturally relevant faces and clear on-camera communication.",
         useCases: ["Beauty campaigns", "E-commerce content", "Try-on videos", "Editorial shoots"],
         industries: ["Beauty", "Fashion", "Jewellery", "Consumer products"]
       },
       {
         name: "UK-based Chinese Creators",
-        suitableFor: "Social-first campaigns that need UK context, Chinese-language fluency and audience trust.",
-        useCases: ["Xiaohongshu content", "Douyin/TikTok videos", "Launch seeding", "Creator-led product trials"],
+        suitableFor:
+          "Social-first campaigns that need UK context, Chinese-language fluency and audience trust.",
+        useCases: [
+          "Xiaohongshu content",
+          "Douyin/TikTok videos",
+          "Launch seeding",
+          "Creator-led product trials"
+        ],
         industries: ["Beauty", "Lifestyle", "Education", "E-commerce"]
       },
       {
@@ -1060,7 +1237,8 @@ export const talentPage = {
       },
       {
         name: "Presenters and Event Hosts",
-        suitableFor: "Product explainers, automotive walkarounds, launch events, interviews and bilingual hosting.",
+        suitableFor:
+          "Product explainers, automotive walkarounds, launch events, interviews and bilingual hosting.",
         useCases: ["AI product demos", "Car videos", "Event hosting", "Founder interviews"],
         industries: ["AI & Technology", "Automotive", "Education", "Events"]
       },
@@ -1078,13 +1256,15 @@ export const talentPage = {
       },
       {
         name: "Photographers and Videographers",
-        suitableFor: "Specialist image and video capture across campaigns, events, products and social content.",
+        suitableFor:
+          "Specialist image and video capture across campaigns, events, products and social content.",
         useCases: ["Campaign stills", "Event coverage", "Product videos", "Short-form social edits"],
         industries: ["Fashion", "PR", "Technology", "Consumer products"]
       },
       {
         name: "Directors, Producers and Editors",
-        suitableFor: "Higher-complexity productions that need creative direction, coordination and post-production control.",
+        suitableFor:
+          "Higher-complexity productions that need creative direction, coordination and post-production control.",
         useCases: ["Brand films", "Short drama", "Launch videos", "Multi-location productions"],
         industries: ["Technology", "Automotive", "Entertainment", "Agencies"]
       }
@@ -1102,10 +1282,8 @@ export const talentPage = {
   zh: {
     eyebrow: "人才与创作者",
     title: "英国本地模特、达人与内容制作资源。",
-    intro:
-      "我们根据品牌项目需求，匹配适合的模特、演员、主持人、达人、妆造师、摄影摄像与制作团队。",
-    privateNote:
-      "我们不会公开真实人才姓名、联系方式或私人信息。具体人选资料会在了解项目需求后定向提供。",
+    intro: "我们根据品牌项目需求，匹配适合的模特、演员、主持人、达人、妆造师、摄影摄像与制作团队。",
+    privateNote: "我们不会公开真实人才姓名、联系方式或私人信息。具体人选资料会在了解项目需求后定向提供。",
     labels: {
       suitableFor: "适合",
       useCases: "示例用途",
@@ -1124,7 +1302,7 @@ export const talentPage = {
       },
       {
         name: "亚洲与华人模特",
-        suitableFor: "适合面向中国市场、需要文化相关性与高级镜头表现的品牌项目。",
+        suitableFor: "适合面向中国市场、需要文化相关性与清晰镜头表达的品牌项目。",
         useCases: ["美妆广告", "电商内容", "试穿视频", "编辑式拍摄"],
         industries: ["美妆", "时尚", "珠宝", "消费品"]
       },
@@ -1178,8 +1356,7 @@ export const talentPage = {
       "确认档期与使用范围",
       "协调拍摄与交付"
     ],
-    disclaimer:
-      "具体人选、档期、报价和肖像使用范围会根据项目需求确认。我们会在了解项目后提供匹配方案。"
+    disclaimer: "具体人选、档期、报价和肖像使用范围会根据项目需求确认。我们会在了解项目后提供匹配方案。"
   }
 } satisfies Localized<{
   eyebrow: string;
@@ -1204,7 +1381,17 @@ export const workPage = {
     intro:
       "Structured examples of how FrameBridge Studio supports Chinese brands and agencies with UK-based creative production.",
     confidentialNote: "Some client names are kept confidential due to project agreements.",
-    filters: ["All", "Fashion", "Beauty", "Technology", "Automotive", "Events", "Creator Campaigns", "Short Drama", "Product Content"],
+    filters: [
+      "All",
+      "Fashion",
+      "Beauty",
+      "Technology",
+      "Automotive",
+      "Events",
+      "Creator Campaigns",
+      "Short Drama",
+      "Product Content"
+    ],
     labels: {
       industry: "Industry",
       challenge: "Challenge",
@@ -1226,14 +1413,30 @@ export const workPage = {
         title: "London Celebrity Event Coverage",
         industry: "Entertainment / Event",
         filters: ["Events"],
-        challenge: "A live entertainment project needed polished visual coverage and social-ready assets in London.",
+        challenge:
+          "A live entertainment project needed polished visual coverage and social-ready assets in London.",
         delivered: "Event photography, backstage content, highlight visuals, social media assets.",
-        overview: "A fast-moving London event required premium coverage that could serve PR, social and stakeholder reporting without disrupting the live environment.",
-        clientNeed: "The team needed a discreet local production partner able to capture talent moments, atmosphere, backstage detail and audience-facing highlights.",
-        ourRole: "FrameBridge coordinated event content capture, shot priorities, backstage access needs and delivery formats for social and PR use.",
-        productionScope: ["Pre-event shot planning", "Event photography", "Backstage content", "Highlight visual capture", "Social-ready asset selection"],
-        deliverables: ["Edited event photo selects", "Backstage content set", "Highlight visuals", "Social media crops"],
-        visualDirection: "Cinematic event reportage with polished lighting, clean composition and a sense of occasion.",
+        overview:
+          "A fast-moving London event required premium coverage that could serve PR, social and stakeholder reporting without disrupting the live environment.",
+        clientNeed:
+          "The team needed a discreet local production partner able to capture talent moments, atmosphere, backstage detail and audience-facing highlights.",
+        ourRole:
+          "FrameBridge coordinated event content capture, shot priorities, backstage access needs and delivery formats for social and PR use.",
+        productionScope: [
+          "Pre-event shot planning",
+          "Event photography",
+          "Backstage content",
+          "Highlight visual capture",
+          "Social-ready asset selection"
+        ],
+        deliverables: [
+          "Edited event photo selects",
+          "Backstage content set",
+          "Highlight visuals",
+          "Social media crops"
+        ],
+        visualDirection:
+          "Cinematic event reportage with polished lighting, clean composition and a sense of occasion.",
         relatedServices: ["Event & PR Coverage", "Commercial Photography", "Video & Brand Films"]
       },
       {
@@ -1242,14 +1445,30 @@ export const workPage = {
         industry: "Fashion",
         filters: ["Fashion"],
         challenge: "A Chinese fashion brand needed overseas campaign visuals with UK-based models.",
-        delivered: "Model casting, styling, makeup, photography, short-form video and London location production.",
-        overview: "A fashion campaign was built around London location value, editorial styling and a modular asset set for launch, social and retail use.",
-        clientNeed: "The brand needed UK-based faces, styling control, location planning and a production rhythm that could serve multiple channels.",
-        ourRole: "FrameBridge managed model casting, styling coordination, shoot planning, crew and campaign asset delivery.",
-        productionScope: ["Creative production", "Model casting", "Wardrobe and makeup", "London location planning", "Photography and short-form capture"],
+        delivered:
+          "Model casting, styling, makeup, photography, short-form video and London location production.",
+        overview:
+          "A fashion campaign was built around London location value, editorial styling and a modular asset set for launch, social and retail use.",
+        clientNeed:
+          "The brand needed UK-based faces, styling control, location planning and a production rhythm that could serve multiple channels.",
+        ourRole:
+          "FrameBridge managed model casting, styling coordination, shoot planning, crew and campaign asset delivery.",
+        productionScope: [
+          "Creative production",
+          "Model casting",
+          "Wardrobe and makeup",
+          "London location planning",
+          "Photography and short-form capture"
+        ],
         deliverables: ["Campaign stills", "Lookbook selects", "Short-form video cuts", "Social crops"],
-        visualDirection: "Premium London editorial with confident styling, clean movement and refined brand presence.",
-        relatedServices: ["Creative Production", "Commercial Photography", "Talent Casting", "Makeup & Styling"]
+        visualDirection:
+          "Premium London editorial with confident styling, clean movement and refined brand presence.",
+        relatedServices: [
+          "Creative Production",
+          "Commercial Photography",
+          "Talent Casting",
+          "Makeup & Styling"
+        ]
       },
       {
         slug: "ai-product-video-uk-market",
@@ -1257,13 +1476,29 @@ export const workPage = {
         industry: "AI / Technology",
         filters: ["Technology", "Product Content"],
         challenge: "A technology product needed English-facing demo content and overseas usage scenarios.",
-        delivered: "Presenter-led product video, user scenario footage, office-style visuals and social edits.",
-        overview: "A technology product needed to become easier to understand for international users, partners and internal stakeholders.",
-        clientNeed: "The team needed clear English-facing content, credible usage environments and short assets for website and social deployment.",
-        ourRole: "FrameBridge coordinated presenter casting, office-style scenarios, product demo capture and bilingual production management.",
-        productionScope: ["Presenter casting", "Demo planning", "Office and user scenarios", "Video production", "Social cutdowns"],
-        deliverables: ["Presenter-led product video", "Scenario footage", "Website video assets", "Short social edits"],
-        visualDirection: "Clean, intelligent and human-facing, with restrained technology cues and practical product clarity.",
+        delivered:
+          "Presenter-led product video, user scenario footage, office-style visuals and social edits.",
+        overview:
+          "A technology product needed to become easier to understand for international users, partners and internal stakeholders.",
+        clientNeed:
+          "The team needed clear English-facing content, credible usage environments and short assets for website and social deployment.",
+        ourRole:
+          "FrameBridge coordinated presenter casting, office-style scenarios, product demo capture and bilingual production management.",
+        productionScope: [
+          "Presenter casting",
+          "Demo planning",
+          "Office and user scenarios",
+          "Video production",
+          "Social cutdowns"
+        ],
+        deliverables: [
+          "Presenter-led product video",
+          "Scenario footage",
+          "Website video assets",
+          "Short social edits"
+        ],
+        visualDirection:
+          "Clean, intelligent and human-facing, with restrained technology cues and practical product clarity.",
         relatedServices: ["Video & Brand Films", "Presenter Casting", "UK Production Consulting"]
       },
       {
@@ -1273,12 +1508,27 @@ export const workPage = {
         filters: ["Beauty", "Creator Campaigns"],
         challenge: "A beauty brand needed authentic social content with UK-based Chinese creators.",
         delivered: "Creator coordination, makeup looks, product trial videos and vertical social assets.",
-        overview: "A beauty content sprint focused on credible creator-led product use, platform-native rhythm and fast vertical delivery.",
-        clientNeed: "The brand needed UK-based Chinese creators who could demonstrate product texture, routine and results for social platforms.",
-        ourRole: "FrameBridge shortlisted creators, coordinated makeup looks, production support and content delivery formats.",
-        productionScope: ["Creator shortlist", "Product trial setup", "Makeup direction", "Vertical video capture", "Social asset coordination"],
-        deliverables: ["Creator trial videos", "Makeup look clips", "Vertical edits", "Product social assets"],
-        visualDirection: "Authentic, bright and platform-native while keeping the finish premium and brand-safe.",
+        overview:
+          "A beauty content sprint focused on credible creator-led product use, platform-native rhythm and fast vertical delivery.",
+        clientNeed:
+          "The brand needed UK-based Chinese creators who could demonstrate product texture, routine and results for social platforms.",
+        ourRole:
+          "FrameBridge shortlisted creators, coordinated makeup looks, production support and content delivery formats.",
+        productionScope: [
+          "Creator shortlist",
+          "Product trial setup",
+          "Makeup direction",
+          "Vertical video capture",
+          "Social asset coordination"
+        ],
+        deliverables: [
+          "Creator trial videos",
+          "Makeup look clips",
+          "Vertical edits",
+          "Product social assets"
+        ],
+        visualDirection:
+          "Authentic, bright and platform-native while keeping the finish premium and brand-safe.",
         relatedServices: ["Creator Coordination", "Makeup & Styling", "Short-form Video"]
       },
       {
@@ -1288,10 +1538,19 @@ export const workPage = {
         filters: ["Automotive", "Events"],
         challenge: "A car brand needed on-camera talent and event content support for a UK activation.",
         delivered: "Presenter shortlist, event coverage, short-form clips and product walkaround content.",
-        overview: "An automotive activation required confident on-camera explanation, local event capture and fast content for post-event communication.",
-        clientNeed: "The team needed presenter options, product walkaround support and content coverage that could work for both social and internal recap.",
-        ourRole: "FrameBridge supported presenter sourcing, shoot flow, on-site capture priorities and short-form delivery.",
-        productionScope: ["Presenter shortlist", "Event capture", "Walkaround planning", "Short-form video capture", "Asset handoff"],
+        overview:
+          "An automotive activation required confident on-camera explanation, local event capture and fast content for post-event communication.",
+        clientNeed:
+          "The team needed presenter options, product walkaround support and content coverage that could work for both social and internal recap.",
+        ourRole:
+          "FrameBridge supported presenter sourcing, shoot flow, on-site capture priorities and short-form delivery.",
+        productionScope: [
+          "Presenter shortlist",
+          "Event capture",
+          "Walkaround planning",
+          "Short-form video capture",
+          "Asset handoff"
+        ],
         deliverables: ["Presenter options", "Walkaround clips", "Event coverage", "Short-form edits"],
         visualDirection: "Confident, clear and premium, balancing product detail with event energy.",
         relatedServices: ["Talent Casting", "Event & PR Coverage", "Video & Brand Films"]
@@ -1303,12 +1562,27 @@ export const workPage = {
         filters: ["Product Content", "Fashion"],
         challenge: "A jewellery brand needed premium overseas visual assets with model wearing shots.",
         delivered: "Model styling, makeup, editorial photography, close-ups and social media crops.",
-        overview: "A jewellery shoot required detail-led imagery, elegant wearing shots and a premium visual atmosphere suitable for launch and PR.",
-        clientNeed: "The brand needed a controlled UK shoot with model styling, product close-ups and social-ready adaptations.",
-        ourRole: "FrameBridge coordinated model styling, makeup, photography direction, close-up capture and export formats.",
-        productionScope: ["Model and styling coordination", "Product handling", "Editorial photography", "Detail close-ups", "Social crop delivery"],
-        deliverables: ["Model wearing shots", "Jewellery close-ups", "Editorial stills", "Social media crops"],
-        visualDirection: "Refined, tactile and quiet-luxury inspired, with close attention to material, skin and silhouette.",
+        overview:
+          "A jewellery shoot required detail-led imagery, elegant wearing shots and a premium visual atmosphere suitable for launch and PR.",
+        clientNeed:
+          "The brand needed a controlled UK shoot with model styling, product close-ups and social-ready adaptations.",
+        ourRole:
+          "FrameBridge coordinated model styling, makeup, photography direction, close-up capture and export formats.",
+        productionScope: [
+          "Model and styling coordination",
+          "Product handling",
+          "Editorial photography",
+          "Detail close-ups",
+          "Social crop delivery"
+        ],
+        deliverables: [
+          "Model wearing shots",
+          "Jewellery close-ups",
+          "Editorial stills",
+          "Social media crops"
+        ],
+        visualDirection:
+          "Refined, tactile and quiet-luxury inspired, with close attention to material, skin and silhouette.",
         relatedServices: ["Commercial Photography", "Makeup & Styling", "Creative Production"]
       }
     ]
@@ -1316,8 +1590,7 @@ export const workPage = {
   zh: {
     eyebrow: "案例作品",
     title: "覆盖品牌拍摄、活动内容、产品宣传与达人模特项目的精选案例。",
-    intro:
-      "通过结构化案例展示镜桥创意如何为中国品牌与代理团队提供英国本地创意制作支持。",
+    intro: "通过结构化案例展示镜桥创意如何为中国品牌与代理团队提供英国本地创意制作支持。",
     confidentialNote: "部分项目因客户协议不公开品牌名称。",
     filters: ["全部", "时尚", "美妆", "科技", "汽车", "活动", "达人广告", "短剧", "产品内容"],
     labels: {
@@ -1358,7 +1631,8 @@ export const workPage = {
         filters: ["时尚"],
         challenge: "一个中国时尚品牌需要使用英国本地模特完成海外广告视觉。",
         delivered: "模特选角、造型、妆造、摄影、短视频与伦敦场地制作。",
-        overview: "项目围绕伦敦场景价值、编辑式造型与多渠道资产交付，搭建一组可用于上市与社媒传播的广告内容。",
+        overview:
+          "项目围绕伦敦场景价值、编辑式造型与多渠道资产交付，搭建一组可用于上市与社媒传播的广告内容。",
         clientNeed: "品牌需要英国本地面孔、造型把控、场地规划与适配多个渠道的制作节奏。",
         ourRole: "镜桥创意统筹模特选角、造型协调、拍摄规划、团队搭建与广告素材交付。",
         productionScope: ["创意制作", "模特选角", "服装与妆造", "伦敦场地规划", "图片与短视频采集"],
@@ -1467,7 +1741,7 @@ export const agenciesPage = {
       supportEyebrow: "What we support",
       supportTitle: "Local execution across the production stack.",
       whyEyebrow: "Why agencies work with us",
-      whyTitle: "Built for clear handoffs, fast response and discreet delivery.",
+      whyTitle: "Built for clear handoffs, approval checkpoints and discreet delivery.",
       whiteLabelEyebrow: "White-label / partner support",
       whiteLabelTitle: "Support the project without competing for the client relationship.",
       requestsEyebrow: "Typical agency requests",
@@ -1493,7 +1767,7 @@ export const agenciesPage = {
       "Local UK execution",
       "Flexible production team",
       "Bilingual communication",
-      "Fast response",
+      "Clear communication checkpoints",
       "Discreet white-label support available",
       "Familiar with Chinese brand expectations",
       "Familiar with UK production realities"
@@ -1525,7 +1799,7 @@ export const agenciesPage = {
       supportEyebrow: "支持范围",
       supportTitle: "覆盖制作链路的英国本地执行支持。",
       whyEyebrow: "为什么代理团队选择我们",
-      whyTitle: "适合清晰交接、快速响应与低调交付的合作方式。",
+      whyTitle: "适合清晰交接、明确审核节点与低调交付的合作方式。",
       whiteLabelEyebrow: "白标 / 合作伙伴支持",
       whiteLabelTitle: "支持项目落地，不介入贵司客户关系。",
       requestsEyebrow: "常见代理需求",
@@ -1551,13 +1825,12 @@ export const agenciesPage = {
       "英国本地执行能力",
       "灵活制作团队",
       "中英双语沟通",
-      "响应速度快",
+      "清晰的沟通与审核节点",
       "可提供低调白标支持",
       "理解中国品牌预期",
       "熟悉英国制作现实条件"
     ],
-    whiteLabel:
-      "如果项目由贵司主导客户关系，我们也可以作为英国本地执行伙伴，在幕后提供制作支持。",
+    whiteLabel: "如果项目由贵司主导客户关系，我们也可以作为英国本地执行伙伴，在幕后提供制作支持。",
     requests: [
       "我们需要在伦敦为时尚广告匹配模特。",
       "我们需要一个双语团队在英国拍产品视频。",

@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+﻿import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/utils";
@@ -6,10 +6,9 @@ import { cn } from "@/lib/utils";
 type ButtonVariant = "primary" | "secondary" | "ghost";
 
 const variants: Record<ButtonVariant, string> = {
-  primary:
-    "bg-ink text-pearl shadow-soft hover:-translate-y-0.5 hover:bg-graphite hover:shadow-cinematic",
+  primary: "bg-ink text-pearl shadow-soft hover:-translate-y-0.5 hover:bg-graphite hover:shadow-cinematic",
   secondary:
-    "border border-ink/15 bg-pearl/70 text-ink hover:-translate-y-0.5 hover:border-champagne hover:bg-white",
+    "border border-ink/20 bg-pearl/70 text-ink hover:-translate-y-0.5 hover:border-champagne hover:bg-white",
   ghost: "text-ink hover:text-blue"
 };
 

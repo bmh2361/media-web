@@ -18,27 +18,20 @@ const config: Config = {
         pearl: "#fbfaf7",
         porcelain: "#f7f3ec",
         mist: "#ece7dd",
-        blue: "#6fb7ff"
+        blue: "#1467a9",
+        blueBright: "#6fb7ff"
       },
       fontFamily: {
         sans: [
-          "var(--font-geist-sans)",
-          "Inter",
           "ui-sans-serif",
           "system-ui",
           "-apple-system",
           "BlinkMacSystemFont",
-          "\"PingFang SC\"",
-          "\"Microsoft YaHei\"",
+          '"PingFang SC"',
+          '"Microsoft YaHei"',
           "sans-serif"
         ],
-        serif: [
-          "var(--font-newsreader)",
-          "Georgia",
-          "\"Noto Serif SC\"",
-          "\"Songti SC\"",
-          "serif"
-        ]
+        serif: ["Georgia", '"Noto Serif SC"', '"Songti SC"', "serif"]
       },
       boxShadow: {
         soft: "0 24px 80px rgba(11, 13, 16, 0.12)",

@@ -1,0 +1,32 @@
+name: Production readiness
+
+on:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run validate:content
+      - run: npm test
+      - run: npm run build
+      - run: npm run validate:release:production
+        env:
+          RELEASE_PROFILE: production
+          PUBLIC_WORK_MODE: ${{ vars.PUBLIC_WORK_MODE }}
+          LEGAL_REVIEW_CONFIRMED: ${{ vars.LEGAL_REVIEW_CONFIRMED }}
+          PUBLIC_COMPANY_DETAILS_CONFIRMED: ${{ vars.PUBLIC_COMPANY_DETAILS_CONFIRMED }}
+          CONTACT_DELIVERY_VERIFIED: ${{ vars.CONTACT_DELIVERY_VERIFIED }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
+          CONTACT_WEBHOOK_URL: ${{ secrets.CONTACT_WEBHOOK_URL }}
+          CONTACT_ALLOWED_ORIGINS: ${{ vars.CONTACT_ALLOWED_ORIGINS }}

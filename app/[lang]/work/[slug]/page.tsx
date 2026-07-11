@@ -1,164 +1,155 @@
-import { ArrowLeft } from "lucide-react";
+﻿import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MediaPlaceholder } from "@/components/media/MediaPlaceholder";
+import { MediaSlot } from "@/components/media/MediaSlot";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { ButtonLink } from "@/components/ui/Button";
-import { caseHeroMediaBySlug } from "@/content/media";
-import { workPage } from "@/content/site";
-import { languages, type Language, withLanguage } from "@/lib/i18n";
+import { caseStudies, getCaseDisclosureLabel, getCaseProjectType, serviceLabels } from "@/content/cases";
+import { isSupportedLocale, languages, type Language, withLanguage } from "@/lib/i18n";
 import { buildMetadata } from "@/lib/seo";
-
+import { breadcrumbJsonLd } from "@/lib/structured-data";
 export function generateStaticParams() {
-  return languages.flatMap((lang) =>
-    workPage[lang].cases.map((item) => ({
-      lang,
-      slug: item.slug
-    }))
-  );
+  return languages.flatMap((lang) => caseStudies.map((c) => ({ lang, slug: c.slug })));
 }
-
-export async function generateMetadata({
-  params
-}: {
-  params: Promise<{ lang: Language; slug: string }>;
-}) {
-  const { lang, slug } = await params;
-  const copy = workPage[lang];
-  const study = copy.cases.find((item) => item.slug === slug);
-
-  if (!study) {
-    return {};
-  }
-
+export async function generateMetadata({ params }: { params: Promise<{ lang: string; slug: string }> }) {
+  const { lang, slug } = await params,
+    c = caseStudies.find((x) => x.slug === slug);
+  if (!isSupportedLocale(lang) || !c) return {};
   return buildMetadata({
     lang,
     path: `/work/${slug}`,
-    title: `${study.title} | Case Study`,
-    description: study.overview,
-    keywords: [study.industry, "UK production case study", "Chinese brand overseas content", ...study.relatedServices]
+    title:
+      lang === "zh"
+        ? `${c.title.zh}｜概念项目模式｜FrameBridge Studio`
+        : `${c.title.en} | Concept Project Model | FrameBridge Studio`,
+    description: c.summary[lang]
   });
 }
-
-export default async function CaseStudyPage({
-  params
-}: {
-  params: Promise<{ lang: Language; slug: string }>;
-}) {
-  const { lang, slug } = await params;
-  const copy = workPage[lang];
-  const study = copy.cases.find((item) => item.slug === slug);
-
-  if (!study) {
-    notFound();
-  }
-
-  const heroMediaId = caseHeroMediaBySlug[slug] ?? "case-supporting-1";
-
+export default async function Page({ params }: { params: Promise<{ lang: string; slug: string }> }) {
+  const { lang, slug } = await params,
+    c = caseStudies.find((x) => x.slug === slug);
+  if (!isSupportedLocale(lang) || !c) notFound();
+  const language: Language = lang;
+  const zh = language === "zh";
+  const facts = [
+    [zh ? "项目类型" : "Project type", c.projectType[language]],
+    [zh ? "行业" : "Industry", c.industry[language]],
+    [zh ? "地点" : "Location", c.location?.[language]],
+    [zh ? "市场" : "Market", c.market?.[language]],
+    [zh ? "形式" : "Formats", c.formats.map((x) => x[language]).join(", ")],
+    [zh ? "披露" : "Disclosure", getCaseDisclosureLabel(c, language)],
+    [zh ? "服务" : "Services", c.servicePillars.map((x) => serviceLabels[x][language]).join(", ")]
+  ].filter((x): x is string[] => Boolean(x[1]));
   return (
     <>
-      <section className="relative overflow-hidden bg-ink pt-36 text-pearl">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_8%,rgba(111,183,255,0.22),transparent_26rem),radial-gradient(circle_at_20%_0%,rgba(216,199,162,0.18),transparent_28rem)]" />
-        <div className="container-x relative pb-20">
+      <JsonLd
+        data={breadcrumbJsonLd({
+          lang,
+          items: [
+            { name: "FrameBridge Studio", path: "/" },
+            { name: zh ? "概念项目模式" : "Concept Project Models", path: "/work" },
+            { name: c.title[lang], path: `/work/${c.slug}` }
+          ]
+        })}
+      />
+      <section className="bg-ink pt-36 text-pearl">
+        <div className="container-x pb-16">
           <Link
             href={withLanguage("/work", lang)}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-pearl/64 transition hover:text-champagne"
+            className="inline-flex items-center gap-2 text-sm text-pearl/70"
           >
             <ArrowLeft size={16} />
-            {copy.labels.back}
+            {zh ? "返回案例" : "Back to work"}
           </Link>
-          <p className="mt-10 text-xs font-semibold uppercase tracking-editorial text-champagne">{study.industry}</p>
-          <h1 className="editorial-heading mt-5 max-w-5xl font-semibold text-balance">{study.title}</h1>
-          <p className="mt-7 max-w-3xl text-xl leading-8 text-pearl/72">{study.overview}</p>
+          <p className="mt-10 inline-flex border border-blueBright/40 px-3 py-2 text-xs font-semibold uppercase tracking-editorial text-blueBright">
+            {getCaseDisclosureLabel(c, lang)}
+          </p>
+          <h1 className="editorial-heading mt-5 max-w-5xl font-semibold">{c.title[lang]}</h1>
+          <p className="mt-7 max-w-3xl text-xl leading-8 text-pearl/70">{c.summary[lang]}</p>
         </div>
+        <MediaSlot
+          id={c.heroMediaId}
+          language={lang}
+          className="container-x aspect-[16/7]"
+          priority
+          showCaption={false}
+        />
       </section>
-
-      <section className="bg-porcelain">
-        <div className="container-x grid gap-10 py-20 lg:grid-cols-[0.85fr_1.15fr] lg:py-28">
-          <aside className="lg:sticky lg:top-28 lg:self-start">
-            <div className="relative overflow-hidden rounded-lg bg-ink p-6 text-pearl shadow-cinematic">
-              <MediaPlaceholder
-                id={heroMediaId}
-                language={lang}
-                className="absolute inset-0 rounded-none opacity-80"
-                imageClassName="group-hover:scale-100"
-                sizes="40vw"
-                showCaption={false}
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(145deg,rgba(11,13,16,0.9),rgba(11,13,16,0.28))]" />
-              <div className="relative flex min-h-[30rem] flex-col justify-between">
-                <span className="text-sm font-semibold text-champagne">{copy.labels.industry}</span>
-                <div>
-                  <p className="mb-4 text-xs font-semibold uppercase tracking-editorial text-pearl/52">
-                    {copy.labels.visualDirection}
-                  </p>
-                  <p className="text-3xl font-semibold leading-tight">{study.visualDirection}</p>
-                </div>
+      <section className="section-y bg-porcelain">
+        <div className="container-x">
+          <div className="grid gap-px border border-ink/10 bg-ink/10 md:grid-cols-3 lg:grid-cols-7">
+            {facts.map(([k, v]) => (
+              <div key={k} className="bg-pearl p-4">
+                <p className="text-[10px] uppercase tracking-editorial text-slate">{k}</p>
+                <p className="mt-3 text-sm leading-5">{v}</p>
               </div>
-            </div>
-          </aside>
-
-          <div className="grid gap-5">
-            <TextPanel title={copy.labels.clientNeed} text={study.clientNeed} />
-            <TextPanel title={copy.labels.ourRole} text={study.ourRole} />
-            <ListPanel title={copy.labels.productionScope} items={study.productionScope} />
-            <ListPanel title={copy.labels.deliverables} items={study.deliverables} />
-            <section className="rounded-lg border border-ink/10 bg-pearl p-7 shadow-soft">
-              <p className="text-xs font-semibold uppercase tracking-editorial text-slate">
-                {lang === "zh" ? "媒体槽位" : "Media slots"}
-              </p>
-              <div className="mt-5 grid gap-4 md:grid-cols-3">
-                {(["case-supporting-1", "case-supporting-2", "case-supporting-3"] as const).map((mediaId) => (
-                  <MediaPlaceholder
-                    key={mediaId}
-                    id={mediaId}
-                    language={lang}
-                    className="aspect-[4/3]"
-                    captionClassName="bottom-3 left-3 right-3"
-                    sizes="(min-width: 1024px) 18vw, 100vw"
-                  />
-                ))}
-              </div>
-              <MediaPlaceholder
-                id="case-video"
+            ))}
+          </div>
+          <div className="mt-16 grid gap-5 lg:grid-cols-2">
+            <Text title={zh ? "示例背景" : "Illustrative context"} value={c.challenge[lang]} />
+            <Text title={zh ? "示例需求" : "Example brief"} value={c.clientNeed[lang]} />
+            <Text title={zh ? "可承担角色" : "Potential FrameBridge role"} value={c.frameBridgeRole[lang]} />
+            <Text title={zh ? "预期目标" : "Intended outcome"} value={c.objective[lang]} />
+            <List
+              title={zh ? "示意范围" : "Illustrative scope"}
+              values={c.productionScope.map((x) => x[lang])}
+            />
+            <List
+              title={zh ? "潜在交付内容" : "Potential deliverables"}
+              values={c.deliverables.map((x) => x[lang])}
+            />
+            <List
+              title={zh ? "限制与审批" : "Constraints and approvals"}
+              values={c.constraints.map((x) => x[lang])}
+            />
+            <Text title={zh ? "视觉方向" : "Visual direction"} value={c.visualDirection[lang]} />
+          </div>
+          <div className="mt-16 grid gap-4 md:grid-cols-3">
+            {c.mediaIds.map((id, i) => (
+              <MediaSlot
+                key={id}
+                id={id}
                 language={lang}
-                className="mt-4 aspect-video"
-                sizes="(min-width: 1024px) 60vw, 100vw"
+                className={i === 1 ? "aspect-[4/5]" : "aspect-[4/3]"}
               />
-            </section>
-            <ListPanel title={copy.labels.relatedServices} items={study.relatedServices} />
-            <div className="rounded-lg border border-ink/10 bg-pearl p-7 shadow-soft">
-              <p className="text-sm leading-6 text-ink/62">{copy.confidentialNote}</p>
-              <ButtonLink href={withLanguage("/contact", lang)} showArrow className="mt-8">
-                {copy.labels.cta}
-              </ButtonLink>
-            </div>
+            ))}
+          </div>
+          <div className="mt-16 border-t border-ink/10 pt-10">
+            <p className="text-sm text-slate">
+              {c.servicePillars.map((x) => serviceLabels[x][lang]).join(" · ")}
+            </p>
+            <ButtonLink
+              href={`${withLanguage("/contact", lang)}?project=${getCaseProjectType(c)}`}
+              showArrow
+              className="mt-6"
+            >
+              {c.cta[lang]}
+            </ButtonLink>
           </div>
         </div>
       </section>
     </>
   );
 }
-
-function TextPanel({ title, text }: { title: string; text: string }) {
+function Text({ title, value }: { title: string; value: string }) {
   return (
-    <section className="rounded-lg border border-ink/10 bg-pearl p-7 shadow-soft">
-      <p className="text-xs font-semibold uppercase tracking-editorial text-slate">{title}</p>
-      <p className="mt-5 text-2xl leading-snug text-ink">{text}</p>
+    <section className="border-t border-ink/10 pt-5">
+      <h2 className="text-xs uppercase tracking-editorial text-slate">{title}</h2>
+      <p className="mt-5 text-xl leading-8">{value}</p>
     </section>
   );
 }
-
-function ListPanel({ title, items }: { title: string; items: string[] }) {
+function List({ title, values }: { title: string; values: string[] }) {
   return (
-    <section className="rounded-lg border border-ink/10 bg-pearl p-7 shadow-soft">
-      <p className="text-xs font-semibold uppercase tracking-editorial text-slate">{title}</p>
-      <div className="mt-5 flex flex-wrap gap-2">
-        {items.map((item) => (
-          <span key={item} className="rounded-full border border-ink/10 bg-white/70 px-3 py-2 text-sm text-ink/68">
-            {item}
-          </span>
+    <section className="border-t border-ink/10 pt-5">
+      <h2 className="text-xs uppercase tracking-editorial text-slate">{title}</h2>
+      <ul className="mt-5 grid gap-3">
+        {values.map((x) => (
+          <li key={x} className="text-base leading-7">
+            {x}
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

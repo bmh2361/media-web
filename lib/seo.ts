@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import type { Language } from "@/lib/i18n";
 
-const siteUrl = "https://framebridge.studio";
-const ogImage = "/images/framebridge-hero.png";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://framebridge.studio";
+const ogImagePath = (lang: Language, path: string) =>
+  `/og/${lang}/${path === "/" ? "home" : path.replace(/^\//, "").replaceAll("/", "--")}`;
 
 export const seoDescriptions = {
   en: "UK-based creative production, photography, video, styling, models, creators and event content partner for Chinese brands, agencies and PR teams.",
@@ -14,18 +15,17 @@ export function buildMetadata({
   path,
   title,
   description,
-  keywords = []
+  keywords = [],
+  ogAlt
 }: {
   lang: Language;
   path: string;
   title: string;
   description: string;
   keywords?: string[];
+  ogAlt?: string;
 }): Metadata {
   const localizedPath = `/${lang}${path === "/" ? "" : path}`;
-  const alternateLang = lang === "en" ? "zh" : "en";
-  const alternatePath = `/${alternateLang}${path === "/" ? "" : path}`;
-
   return {
     title: {
       absolute: title
@@ -35,8 +35,9 @@ export function buildMetadata({
     alternates: {
       canonical: localizedPath,
       languages: {
-        en: `/en${path === "/" ? "" : path}`,
-        "zh-CN": `/zh${path === "/" ? "" : path}`
+        "en-GB": `/en${path === "/" ? "" : path}`,
+        "zh-CN": `/zh${path === "/" ? "" : path}`,
+        "x-default": `/en${path === "/" ? "" : path}`
       }
     },
     openGraph: {
@@ -49,10 +50,10 @@ export function buildMetadata({
       alternateLocale: lang === "zh" ? ["en_GB"] : ["zh_CN"],
       images: [
         {
-          url: ogImage,
+          url: ogImagePath(lang, path),
           width: 1200,
           height: 630,
-          alt: "FrameBridge Studio UK creative production"
+          alt: ogAlt ?? title
         }
       ]
     },
@@ -60,10 +61,7 @@ export function buildMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [ogImage]
-    },
-    other: {
-      "x-default-language": alternatePath
+      images: [ogImagePath(lang, path)]
     }
   };
 }

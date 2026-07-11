@@ -1,4 +1,4 @@
-import { caseStudies } from "@/content/site";
+﻿import { caseStudies } from "@/content/site";
 import type { Language } from "@/lib/i18n";
 import { Reveal } from "@/components/Reveal";
 import { MediaPlaceholder } from "@/components/media/MediaPlaceholder";
@@ -24,9 +24,11 @@ export function CaseStudyGrid({ language }: { language: Language }) {
               sizes="(min-width: 1024px) 33vw, 100vw"
             />
             <div className="p-6">
-              <p className="text-xs font-semibold uppercase tracking-editorial text-slate">{study.category[language]}</p>
+              <p className="text-xs font-semibold uppercase tracking-editorial text-slate">
+                {study.category[language]}
+              </p>
               <h3 className="mt-5 text-2xl font-semibold leading-tight text-ink">{study.title[language]}</h3>
-              <p className="mt-4 text-sm leading-6 text-ink/62">{study.text[language]}</p>
+              <p className="mt-4 text-sm leading-6 text-ink/60">{study.text[language]}</p>
             </div>
           </article>
         </Reveal>

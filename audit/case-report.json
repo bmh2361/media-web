@@ -1,0 +1,145 @@
+{
+  "generatedAt": "2026-07-11T14:52:23.947Z",
+  "cases": [
+    {
+      "slug": "london-celebrity-event-coverage",
+      "status": "concept",
+      "disclosureLevel": "illustrative",
+      "evidenceState": "unverified",
+      "title": "London entertainment event media plan",
+      "heroMediaId": "event-concept-hero",
+      "mediaIds": ["event-concept-landscape", "event-concept-portrait", "event-concept-diagram"],
+      "servicePillars": ["events-exhibitions", "talent"],
+      "conceptCopyTense": "hypothetical",
+      "publicDisclosureLabel": "Concept project model",
+      "metadata": {
+        "en": "London entertainment event media plan | Concept Project Model | FrameBridge Studio",
+        "zh": "伦敦娱乐活动传播执行方案｜概念项目模式｜FrameBridge Studio"
+      },
+      "routes": {
+        "enStatus": 200,
+        "zhStatus": 200
+      },
+      "evidenceRulePass": true,
+      "unsupportedClaimDetected": false
+    },
+    {
+      "slug": "fashion-campaign-production-london",
+      "status": "concept",
+      "disclosureLevel": "illustrative",
+      "evidenceState": "unverified",
+      "title": "London fashion seasonal campaign",
+      "heroMediaId": "fashion-concept-hero",
+      "mediaIds": ["fashion-concept-landscape", "fashion-concept-portrait", "fashion-concept-diagram"],
+      "servicePillars": ["commercial-production", "talent"],
+      "conceptCopyTense": "hypothetical",
+      "publicDisclosureLabel": "Concept project model",
+      "metadata": {
+        "en": "London fashion seasonal campaign | Concept Project Model | FrameBridge Studio",
+        "zh": "伦敦时尚季节广告制作方案｜概念项目模式｜FrameBridge Studio"
+      },
+      "routes": {
+        "enStatus": 200,
+        "zhStatus": 200
+      },
+      "evidenceRulePass": true,
+      "unsupportedClaimDetected": false
+    },
+    {
+      "slug": "ai-product-video-uk-market",
+      "status": "concept",
+      "disclosureLevel": "illustrative",
+      "evidenceState": "unverified",
+      "title": "AI product explanation for a UK audience",
+      "heroMediaId": "technology-concept-hero",
+      "mediaIds": [
+        "technology-concept-landscape",
+        "technology-concept-portrait",
+        "technology-concept-diagram"
+      ],
+      "servicePillars": ["technology-content", "commercial-production"],
+      "conceptCopyTense": "hypothetical",
+      "publicDisclosureLabel": "Concept project model",
+      "metadata": {
+        "en": "AI product explanation for a UK audience | Concept Project Model | FrameBridge Studio",
+        "zh": "面向英国受众的 AI 产品说明内容｜概念项目模式｜FrameBridge Studio"
+      },
+      "routes": {
+        "enStatus": 200,
+        "zhStatus": 200
+      },
+      "evidenceRulePass": true,
+      "unsupportedClaimDetected": false
+    },
+    {
+      "slug": "beauty-creator-content-sprint",
+      "status": "concept",
+      "disclosureLevel": "illustrative",
+      "evidenceState": "unverified",
+      "title": "Beauty creator content sprint",
+      "heroMediaId": "beauty-concept-hero",
+      "mediaIds": ["beauty-concept-landscape", "beauty-concept-portrait", "beauty-concept-diagram"],
+      "servicePillars": ["talent", "commercial-production"],
+      "conceptCopyTense": "hypothetical",
+      "publicDisclosureLabel": "Concept project model",
+      "metadata": {
+        "en": "Beauty creator content sprint | Concept Project Model | FrameBridge Studio",
+        "zh": "美妆创作者内容短周期方案｜概念项目模式｜FrameBridge Studio"
+      },
+      "routes": {
+        "enStatus": 200,
+        "zhStatus": 200
+      },
+      "evidenceRulePass": true,
+      "unsupportedClaimDetected": false
+    },
+    {
+      "slug": "automotive-event-presenter-support",
+      "status": "concept",
+      "disclosureLevel": "illustrative",
+      "evidenceState": "unverified",
+      "title": "Automotive launch and presenter support",
+      "heroMediaId": "automotive-concept-hero",
+      "mediaIds": [
+        "automotive-concept-landscape",
+        "automotive-concept-portrait",
+        "automotive-concept-diagram"
+      ],
+      "servicePillars": ["events-exhibitions", "talent"],
+      "conceptCopyTense": "hypothetical",
+      "publicDisclosureLabel": "Concept project model",
+      "metadata": {
+        "en": "Automotive launch and presenter support | Concept Project Model | FrameBridge Studio",
+        "zh": "汽车发布与主持人支持方案｜概念项目模式｜FrameBridge Studio"
+      },
+      "routes": {
+        "enStatus": 200,
+        "zhStatus": 200
+      },
+      "evidenceRulePass": true,
+      "unsupportedClaimDetected": false
+    },
+    {
+      "slug": "jewellery-editorial-shoot",
+      "status": "concept",
+      "disclosureLevel": "illustrative",
+      "evidenceState": "unverified",
+      "title": "Jewellery editorial production",
+      "heroMediaId": "jewellery-concept-hero",
+      "mediaIds": ["jewellery-concept-landscape", "jewellery-concept-portrait", "jewellery-concept-diagram"],
+      "servicePillars": ["commercial-production", "talent"],
+      "conceptCopyTense": "hypothetical",
+      "publicDisclosureLabel": "Concept project model",
+      "metadata": {
+        "en": "Jewellery editorial production | Concept Project Model | FrameBridge Studio",
+        "zh": "珠宝编辑式内容制作方案｜概念项目模式｜FrameBridge Studio"
+      },
+      "routes": {
+        "enStatus": 200,
+        "zhStatus": 200
+      },
+      "evidenceRulePass": true,
+      "unsupportedClaimDetected": false
+    }
+  ]
+}
