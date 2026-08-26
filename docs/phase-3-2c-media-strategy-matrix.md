@@ -1,0 +1,41 @@
+# Phase 3.2C Media Strategy Matrix
+
+This matrix maps media to a commercial job. “Capability media” means rights-approved visual experience that is not published as a named client case.
+
+| Surface | Selected media | Why it belongs there | Guardrail |
+|---|---|---|---|
+| Homepage Hero | Changan launch `01-hero`; `vbm-003` robot exhibition; `vbm-024` interview panel; `vbm-015` skincare campaign | Four slow editorial scenes establish industry, technology, people and production breadth before automotive can define the whole company | Only Changan is a named case; capability scenes use category labels, not client claims; mobile uses a static technology scene |
+| Homepage Early Proof | Changan launch, CATL Open Day, Teal editorial, Creative beauty makeup | Replaces three visually similar automotive moments with launch, technology-energy, talent-led production and creative-output breadth | All remain linked to existing public project records with narrow roles |
+| Homepage Outcomes | `vbm-024`, `vbm-003`, `vbm-015`, London brand-film `03-gallery` | Connects credibility, industry presence, people and transferable assets to an immediately legible scene | Keyboard/touch selection; content remains legible without interaction |
+| Homepage Capabilities | Institutional text-only; Leapmotor `01-hero`; `vbm-013`; London brand-film `01-hero` | Gives each capability a distinct preview while refusing fake institutional imagery | No campus/stock images; talent is shown inside an activation context |
+| Homepage Selected Work | CATL, Teal editorial, London automotive brand film | Provides energy/technology, talent-led creative and integrated content range | Use different frames from Hero/Early Proof |
+| Capabilities Hero | Institutional typography; `vbm-003`; `vbm-013`; London brand-film `01-hero` | The index previews the different project worlds without becoming a mega-menu | First capability deliberately has no image |
+| Institutional Capability | No media; numbered formats/process plus future `SelectedEngagements` infrastructure | Absence of photography becomes intentional editorial credibility | Render no engagement row until approved evidence exists |
+| Industry Presence Capability | Changan `02-cover`; CATL `03-gallery`; Leapmotor `01-hero`; `vbm-003`; `vbm-005` | Shows launch, energy technology, exhibition, robotics and an industry talk | Capability-only technology scenes are not labelled as completed client cases |
+| Creators / Talent Capability | `vbm-013`, `014`, `015`, `018`, `019`; Teal `03/04`; creative beauty `01` | Product, creator, fashion retail, campaign and art-direction context prevents roster perception | No personal names, measurements or talent directory patterns |
+| Creative Production Capability | London film `01/03/04`; `vbm-024`; `vbm-015`; Teal `03`; creative beauty `03`; CATL `03` | Demonstrates film, interview, creator content, fashion/beauty and event output as one asset engine | Labels describe output types, not unsupported campaign ownership |
+| Work Hero | Changan `02-cover`; CATL `03-gallery`; Teal `03-gallery`; London film `02-cover` | A visual mosaic opens with four different commercial narratives rather than a governance heading | Named public projects only |
+| Work Featured Projects | Changan, CATL, Teal, London brand film | Strongest combined commercial context, strategic breadth, role and conversion value | Maximum four; use project metadata sparingly |
+| Work Supporting Evidence | Leapmotor, BYD, commercial fashion, creative beauty, European road lifestyle | Curated second tier without evidence-level terminology or dense tags | European road remains supporting due weaker commercial context |
+| About | `vbm-023` UK location cast production; `vbm-003` robotics environment | Real working environments add humanity and China/UK relevance without manufacturing team imagery | Captions state production/environment, never “our team” or institutional relationship |
+| Contact | No portfolio media | A calm, conversation-first surface should not introduce new proof claims or distract from the form | Typography, spacing and form state carry the page |
+| Automotive case hero | Existing project hero in full-bleed/cinematic mode | Wide, context-rich commercial environments earn scale | Use protected crop and preserve logos/products |
+| Fashion/beauty case hero | Existing portrait hero in editorial split mode | Portrait assets retain face, styling and garment integrity | Never force 16:8 wide crop |
+| London brand-film case hero | Existing film frame in cinematic mode | Supports the activity-to-assets narrative | Preserve subtitles and film text safe areas |
+
+## Load strategy
+
+- Preload only the first Home hero frame.
+- Lazy-load other desktop hero scenes and all below-fold media.
+- Keep Home mobile static; do not auto-cycle scenes below 768 px.
+- Use existing art-directed AVIF/WebP variants and per-asset focal metadata.
+- New high-level capability media must use existing responsive derivatives; originals are never overwritten.
+- No video is introduced in this phase because the public library contains no governed video record.
+
+## Duplicate-control rules
+
+- A project may appear more than once, but the same source frame should not appear twice across Home, Capabilities and Work.
+- Changan is limited to one Home early-proof frame, one Industry chapter frame and one Work/case frame.
+- CATL carries technology-energy authority; BYD no longer carries the Home hero.
+- Teal and beauty frames appear with campaign/output framing, not as repeated portrait cards.
+- `vbm-003` may recur as the key technology scene, but uses different aspect treatments between Home and Capabilities.

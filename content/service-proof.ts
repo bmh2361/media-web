@@ -45,16 +45,16 @@ export const serviceProof: Record<"commercial" | "talent" | "research" | "events
         "统筹制作路径并维护审核与交付计划。"
       ),
       client: l(
-        "Confirms campaign claims, brand references, budget, rights and final usage.",
-        "确认广告表述、品牌参考、预算、使用权和最终用途。"
+        "Confirms campaign claims, brand references, commercial parameters, rights and final usage.",
+        "确认广告表述、品牌参考、商业条件、使用权和最终用途。"
       ),
       nextStep: l(
         "Share audience, channels, dates and required formats.",
         "提供受众、渠道、日期和所需规格。"
       ),
       relatedModels: l(
-        "Fashion seasonal campaign; jewellery editorial production.",
-        "时尚季节广告；珠宝编辑式制作。"
+        "Fashion seasonal campaign; beauty creator content sprint.",
+        "时尚季节广告；美妆创作者内容短周期。"
       )
     },
     talent: {
@@ -78,7 +78,7 @@ export const serviceProof: Record<"commercial" | "talent" | "research" | "events
       ),
       approvals: l(
         "Client selection, usage scope, rates, contracts and publication permissions.",
-        "客户人选确认、使用范围、费用、合同及发布许可。"
+        "客户人选确认、使用范围、商业条款、合同及发布许可。"
       ),
       frameBridge: l(
         "Coordinates matching, communication and the booking handoff.",
@@ -162,8 +162,8 @@ export const serviceProof: Record<"commercial" | "talent" | "research" | "events
         "统筹可行性、多方接口与执行计划。"
       ),
       client: l(
-        "Owns the event objective, public message, budget and approval chain.",
-        "负责活动目标、公开信息、预算和审核链路。"
+        "Owns the event objective, public message, commercial parameters and approval chain.",
+        "负责活动目标、公开信息、商业条件和审核链路。"
       ),
       nextStep: l(
         "Share the audience, venue status, date, format and required outputs.",
@@ -213,8 +213,8 @@ export const serviceProof: Record<"commercial" | "talent" | "research" | "events
         "提供保密需求、交付日期及所需本地执行范围。"
       ),
       relatedModels: l(
-        "London entertainment event media plan; jewellery editorial production.",
-        "伦敦娱乐活动传播执行方案；珠宝编辑式制作方案。"
+        "London entertainment event media plan; fashion seasonal campaign.",
+        "伦敦娱乐活动传播执行方案；时尚季节广告制作方案。"
       )
     }
   };

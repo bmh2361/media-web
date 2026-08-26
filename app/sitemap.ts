@@ -1,22 +1,24 @@
 import type { MetadataRoute } from "next";
 import { brand } from "@/content/brand";
-import { caseStudies } from "@/content/cases";
+import { publishedPortfolioProjects } from "@/content/portfolio";
+import { getEffectiveWorkMode, isProductionReleaseReady } from "@/lib/release";
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  if (process.env.RELEASE_PROFILE === "production" && !isProductionReleaseReady()) return [];
+  const workMode = getEffectiveWorkMode();
   const pages = [
     "",
-    "/services",
-    "/services/commercial-production",
-    "/services/research-innovation",
-    "/services/events-exhibitions",
-    "/industries",
-    "/talent",
+    "/companies",
+    "/partners",
     "/work",
-    "/for-agencies",
+    "/how-we-work",
     "/about",
     "/contact",
     "/privacy",
     "/terms"
   ];
+  if (workMode === "hidden") pages.splice(pages.indexOf("/work"), 1);
+
   const routes = ["en", "zh"].flatMap((lang) =>
     pages.map((path) => ({
       url: `${brand.domain}/${lang}${path}`,
@@ -24,12 +26,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: path === "" ? 1 : 0.7
     }))
   );
-  const cases = ["en", "zh"].flatMap((lang) =>
-    caseStudies.map((c) => ({
-      url: `${brand.domain}/${lang}/work/${c.slug}`,
+  const projects = ["en", "zh"].flatMap((lang) =>
+    (workMode === "hidden" ? [] : publishedPortfolioProjects).map((project) => ({
+      url: `${brand.domain}/${lang}/work/${project.slug}`,
       changeFrequency: "monthly" as const,
       priority: 0.6
     }))
   );
-  return [...routes, ...cases];
+  return [...routes, ...projects];
 }

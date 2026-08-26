@@ -1,0 +1,122 @@
+[
+  {
+    "scenario": "01-home-opening",
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "duration": 9.3,
+    "actions": ["first-session opening", "coordinated hero", "proof strip"],
+    "expectedStates": ["first-session opening", "coordinated hero", "proof strip"],
+    "outputPath": "audit/motion-correction/01-home-opening.webm"
+  },
+  {
+    "scenario": "02-home-continuous-scroll",
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "duration": 22.2,
+    "actions": ["hero", "proof", "capability 0-2", "selected work"],
+    "expectedStates": ["hero", "proof", "capability 0-2", "selected work"],
+    "outputPath": "audit/motion-correction/02-home-continuous-scroll.webm"
+  },
+  {
+    "scenario": "03-capability-scroll",
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "duration": 17,
+    "actions": ["scroll only active 0", "scroll only active 1", "scroll only active 2"],
+    "expectedStates": ["scroll only active 0", "scroll only active 1", "scroll only active 2"],
+    "outputPath": "audit/motion-correction/03-capability-scroll.webm"
+  },
+  {
+    "scenario": "04-selected-work",
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "duration": 14.8,
+    "actions": ["hover 0-2", "keyboard focus", "two-layer transition"],
+    "expectedStates": ["hover 0-2", "keyboard focus", "two-layer transition"],
+    "outputPath": "audit/motion-correction/04-selected-work.webm"
+  },
+  {
+    "scenario": "05-route-transition",
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "duration": 13,
+    "actions": ["internal link home to services", "internal link services to work", "browser back"],
+    "expectedStates": ["internal link home to services", "internal link services to work", "browser back"],
+    "outputPath": "audit/motion-correction/05-route-transition.webm"
+  },
+  {
+    "scenario": "06-media-loading",
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "duration": 10.7,
+    "actions": ["1200ms delayed image", "loading preview", "loaded curtain reveal"],
+    "expectedStates": ["1200ms delayed image", "loading preview", "loaded curtain reveal"],
+    "outputPath": "audit/motion-correction/06-media-loading.webm"
+  },
+  {
+    "scenario": "07-logo-marquee",
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "duration": 12.9,
+    "actions": ["continuous track", "hover pause", "demo disclosure"],
+    "expectedStates": ["continuous track", "hover pause", "demo disclosure"],
+    "outputPath": "audit/motion-correction/07-logo-marquee.webm"
+  },
+  {
+    "scenario": "08-mobile-home",
+    "route": "/en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "duration": 20.1,
+    "actions": ["mobile hero", "natural capability cards", "selected work cards"],
+    "expectedStates": ["mobile hero", "natural capability cards", "selected work cards"],
+    "outputPath": "audit/motion-correction/08-mobile-home.webm"
+  },
+  {
+    "scenario": "09-reduced-desktop",
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "duration": 8.4,
+    "actions": ["no intro block", "static logo grid", "no parallax"],
+    "expectedStates": ["no intro block", "static logo grid", "no parallax"],
+    "outputPath": "audit/motion-correction/09-reduced-desktop.webm"
+  },
+  {
+    "scenario": "10-reduced-mobile",
+    "route": "/en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "duration": 8.1,
+    "actions": ["no intro block", "static logo grid", "no parallax"],
+    "expectedStates": ["no intro block", "static logo grid", "no parallax"],
+    "outputPath": "audit/motion-correction/10-reduced-mobile.webm"
+  }
+]

@@ -86,6 +86,35 @@ export function EventsExhibitionsExperience({ copy, language }: { copy: ServiceD
           <MediaSlot id="events-floorplan" language={language} sizes="40vw" />
         </div>
       </section>
+      <section className="section-y bg-ink text-pearl">
+        <div className="container-x">
+          <SectionHeading
+            eyebrow={zh ? "多机位内容系统" : "Multi-camera content system"}
+            title={
+              zh
+                ? "把舞台、观众、访谈与展区纳入同一拍摄计划。"
+                : "Plan stage, audience, interviews and exhibition coverage as one system."
+            }
+            theme="dark"
+          />
+          <div className="mt-10 grid gap-3 md:grid-cols-12">
+            <MediaSlot id="events-stage" language={language} className="md:col-span-7" showCaption={false} />
+            <MediaSlot id="events-panel" language={language} className="md:col-span-5" showCaption={false} />
+            <MediaSlot
+              id="events-exhibition"
+              language={language}
+              className="md:col-span-5"
+              showCaption={false}
+            />
+            <MediaSlot
+              id="events-interview"
+              language={language}
+              className="md:col-span-7"
+              showCaption={false}
+            />
+          </div>
+        </div>
+      </section>
       <section className="section-y bg-white">
         <div className="container-x">
           <SectionHeading
@@ -110,13 +139,37 @@ export function EventsExhibitionsExperience({ copy, language }: { copy: ServiceD
               zh ? "为跨团队交付明确谁负责什么。" : "Make responsibilities clear across the delivery team."
             }
           />
-          <div className="mt-10 overflow-x-auto">
-            <table className="min-w-full border-collapse text-left text-sm">
+          <div className="mt-10 grid gap-3 md:hidden">
+            {eventResponsibilityRows.map((row) => (
+              <article key={row.scope.en} className="border border-ink/10 bg-white p-5">
+                <h3 className="font-medium">{row.scope[language]}</h3>
+                <dl className="mt-4 grid gap-3 text-sm">
+                  {[
+                    ["Venus Bridge", row.owners.framebridge],
+                    [zh ? "客户" : "Client", row.owners.client],
+                    [zh ? "场地" : "Venue", row.owners.venue],
+                    [zh ? "嘉宾 / 合作方" : "Speaker / partner", row.owners.speakerPartner],
+                    [zh ? "专业供应商" : "Specialist supplier", row.owners.supplier]
+                  ].map(([label, owner]) => (
+                    <div key={label} className="grid grid-cols-[1fr_auto] gap-4 border-t border-ink/10 pt-3">
+                      <dt className="text-ink/60">{label}</dt>
+                      <dd className="font-medium">{owner ?? "—"}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </article>
+            ))}
+          </div>
+          <div
+            className="mt-10 hidden md:block"
+            aria-label={language === "zh" ? "活动责任表" : "Event responsibility table"}
+          >
+            <table className="w-full table-fixed border-collapse text-left text-sm">
               <thead>
                 <tr className="border-y border-ink/20">
                   <th className="p-3">{zh ? "工作范围" : "Scope"}</th>
                   {[
-                    "FrameBridge",
+                    "Venus Bridge",
                     zh ? "客户" : "Client",
                     zh ? "场地" : "Venue",
                     zh ? "嘉宾 / 合作方" : "Speaker / partner",
@@ -134,6 +187,7 @@ export function EventsExhibitionsExperience({ copy, language }: { copy: ServiceD
                     <td className="p-3 font-medium">{row.scope[language]}</td>
                     <td className="p-3">{row.owners.framebridge ?? "-"}</td>
                     <td className="p-3">{row.owners.client ?? "-"}</td>
+                    <td className="p-3">{row.owners.venue ?? "-"}</td>
                     <td className="p-3">{row.owners.speakerPartner ?? "-"}</td>
                     <td className="p-3">{row.owners.supplier ?? "-"}</td>
                   </tr>
@@ -141,6 +195,52 @@ export function EventsExhibitionsExperience({ copy, language }: { copy: ServiceD
               </tbody>
             </table>
           </div>
+        </div>
+      </section>
+      <section className="section-y bg-blueDeep text-pearl">
+        <div className="container-x grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
+          <div>
+            <p className="inline-flex border border-champagne/50 px-3 py-2 text-xs font-semibold uppercase tracking-editorial text-champagne">
+              {zh ? "制作场景" : "Production scenario"}
+            </p>
+            <h2 className="mt-6 text-4xl font-semibold md:text-6xl">
+              {zh ? "汽车发布与路演制作" : "Automotive Launch & Roadshow Production"}
+            </h2>
+            <p className="mt-6 max-w-2xl text-base leading-7 text-pearl/75">
+              {zh
+                ? "用于规划品牌发布、多城市展示或产品路演的制作路径。下列范围是可配置的服务模块，不代表旁侧图片所示项目已经执行了全部服务。"
+                : "A configurable production route for a brand launch, multi-city showcase or product roadshow. The modules below do not imply that every service was delivered for the project shown in the supporting image."}
+            </p>
+          </div>
+          <MediaSlot
+            id="events-exhibition"
+            language={language}
+            className="aspect-[4/3]"
+            sizes="(min-width:1024px) 55vw, 100vw"
+            showCaption={false}
+          />
+          <ul className="grid gap-px bg-pearl/20 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-5">
+            {(zh
+              ? [
+                  "路演形式与场地协调",
+                  "产品展示与嘉宾动线",
+                  "主持人与采访协调",
+                  "中英双语活动物料",
+                  "摄影、视频与会后素材交接"
+                ]
+              : [
+                  "Format and venue coordination",
+                  "Product presentation and guest flow",
+                  "Presenter and interview coordination",
+                  "Bilingual event materials",
+                  "Photography, video and asset handoff"
+                ]
+            ).map((item) => (
+              <li key={item} className="bg-blueDeep p-5 text-sm leading-6">
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
       <ServiceProof service="events" language={language} />

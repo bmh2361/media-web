@@ -1,0 +1,74 @@
+[
+  {
+    "route": "home",
+    "brokenImages": 0,
+    "mobileRail": 0,
+    "overflow": -15,
+    "pageHeight": 8303,
+    "visibleMobileStories": 0,
+    "consoleIssues": 0
+  },
+  {
+    "route": "companies",
+    "brokenImages": 0,
+    "mobileRail": 0,
+    "overflow": -15,
+    "pageHeight": 5881,
+    "visibleMobileStories": 1,
+    "consoleIssues": 0
+  },
+  {
+    "route": "partners",
+    "brokenImages": 0,
+    "mobileRail": 0,
+    "overflow": -15,
+    "pageHeight": 4911,
+    "visibleMobileStories": 1,
+    "consoleIssues": 0
+  },
+  {
+    "route": "cases",
+    "brokenImages": 0,
+    "mobileRail": 0,
+    "overflow": -15,
+    "pageHeight": 2971,
+    "visibleMobileStories": 0,
+    "consoleIssues": 0
+  },
+  {
+    "route": "case-detail",
+    "brokenImages": 0,
+    "mobileRail": 0,
+    "overflow": -15,
+    "pageHeight": 7783,
+    "visibleMobileStories": 0,
+    "consoleIssues": 0
+  },
+  {
+    "route": "how-we-work",
+    "brokenImages": 0,
+    "mobileRail": 0,
+    "overflow": -15,
+    "pageHeight": 5408,
+    "visibleMobileStories": 1,
+    "consoleIssues": 0
+  },
+  {
+    "route": "about",
+    "brokenImages": 0,
+    "mobileRail": 0,
+    "overflow": -15,
+    "pageHeight": 8052,
+    "visibleMobileStories": 1,
+    "consoleIssues": 0
+  },
+  {
+    "route": "contact",
+    "brokenImages": 0,
+    "mobileRail": 0,
+    "overflow": -15,
+    "pageHeight": 2535,
+    "visibleMobileStories": 0,
+    "consoleIssues": 0
+  }
+]

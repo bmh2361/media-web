@@ -21,11 +21,15 @@ export function ServiceBreadcrumbs({
       aria-label={language === "zh" ? "面包屑导航" : "Breadcrumb"}
       className={cn("text-xs", dark ? "text-pearl/60" : "text-ink/65")}
     >
-      <Link href={withLanguage("/services", language)}>{language === "zh" ? "服务" : "Services"}</Link>
+      <Link className="inline-flex min-h-11 items-center" href={withLanguage("/services", language)}>
+        {language === "zh" ? "服务" : "Services"}
+      </Link>
       <span aria-hidden className="px-2">
         /
       </span>
-      <span aria-current="page">{current}</span>
+      <span className="inline-flex min-h-11 items-center" aria-current="page">
+        {current}
+      </span>
     </nav>
   );
 }
@@ -93,7 +97,8 @@ export function ServiceCTA({
         <ButtonLink
           href={`${withLanguage("/contact", language)}?project=${project}`}
           showArrow
-          className={cn("mt-9", dark && "bg-pearl text-ink hover:bg-champagne")}
+          variant={dark ? "secondary" : "primary"}
+          className="mt-9"
           data-project-type={project}
         >
           {cta}

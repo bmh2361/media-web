@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" role="img" aria-labelledby="title desc">
-  <title id="title">Service visual placeholder</title>
-  <desc id="desc">Abstract production planning and shoot set placeholder.</desc>
+  <title id="title">Abstract production composition</title>
+  <desc id="desc">An editorial study of framing, light and production planning.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#14171c"/>
@@ -12,5 +12,5 @@
   <rect x="155" y="130" width="470" height="650" rx="28" fill="#fbfaf7" fill-opacity=".08" stroke="#fbfaf7" stroke-opacity=".15"/>
   <rect x="690" y="220" width="530" height="360" rx="30" fill="#fbfaf7" fill-opacity=".1" stroke="#d8c7a2" stroke-opacity=".28"/>
   <path d="M230 680 L535 320 L850 575 L1180 260" fill="none" stroke="#d8c7a2" stroke-opacity=".4" stroke-width="5"/>
-  <circle cx="1040" cy="440" r="90" fill="#6fb7ff" fill-opacity=".14"/>
+  <circle cx="1040" cy="440" r="90" fill="#9b8057" fill-opacity=".14"/>
 </svg>

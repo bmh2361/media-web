@@ -1,0 +1,195 @@
+{
+  "generatedAt": "2026-07-17T12:05:58.061Z",
+  "assets": [
+    {
+      "source": "ChatGPT Image 2026年7月17日 19_52_01 (1).png",
+      "role": "mark",
+      "sourceMetadata": {
+        "width": 1254,
+        "height": 1254,
+        "channels": 3,
+        "hasAlpha": false
+      },
+      "outputs": [
+        {
+          "path": "public/brand/venus-bridge-media/vbm-monogram-gold.png",
+          "width": 96,
+          "height": 71,
+          "hasAlpha": true,
+          "bytes": 7676
+        },
+        {
+          "path": "public/brand/venus-bridge-media/vbm-monogram-gold@2x.png",
+          "width": 192,
+          "height": 142,
+          "hasAlpha": true,
+          "bytes": 20975
+        }
+      ],
+      "darkSurfaceVariants": []
+    },
+    {
+      "source": "ChatGPT Image 2026年7月17日 19_52_01 (2).png",
+      "role": "name",
+      "sourceMetadata": {
+        "width": 1448,
+        "height": 1086,
+        "channels": 3,
+        "hasAlpha": false
+      },
+      "outputs": [
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-name.png",
+          "width": 320,
+          "height": 157,
+          "hasAlpha": true,
+          "bytes": 22056
+        },
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-name@2x.png",
+          "width": 640,
+          "height": 314,
+          "hasAlpha": true,
+          "bytes": 60003
+        }
+      ],
+      "darkSurfaceVariants": [
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-name-dark.png",
+          "width": 320,
+          "height": 157,
+          "hasAlpha": true,
+          "bytes": 24719
+        },
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-name-dark@2x.png",
+          "width": 640,
+          "height": 314,
+          "hasAlpha": true,
+          "bytes": 66803
+        }
+      ]
+    },
+    {
+      "source": "ChatGPT Image 2026年7月17日 19_52_02 (3).png",
+      "role": "tagline",
+      "sourceMetadata": {
+        "width": 1448,
+        "height": 1086,
+        "channels": 3,
+        "hasAlpha": false
+      },
+      "outputs": [
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-tagline.png",
+          "width": 560,
+          "height": 315,
+          "hasAlpha": true,
+          "bytes": 52622
+        },
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-tagline@2x.png",
+          "width": 1120,
+          "height": 629,
+          "hasAlpha": true,
+          "bytes": 148615
+        }
+      ],
+      "darkSurfaceVariants": [
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-tagline-dark.png",
+          "width": 560,
+          "height": 315,
+          "hasAlpha": true,
+          "bytes": 57940
+        },
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-tagline-dark@2x.png",
+          "width": 1120,
+          "height": 629,
+          "hasAlpha": true,
+          "bytes": 161489
+        }
+      ]
+    },
+    {
+      "source": "ChatGPT Image 2026年7月17日 19_52_02 (4).png",
+      "role": "full-transparent",
+      "sourceMetadata": {
+        "width": 1448,
+        "height": 1086,
+        "channels": 3,
+        "hasAlpha": false
+      },
+      "outputs": [
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-full-transparent.png",
+          "width": 560,
+          "height": 319,
+          "hasAlpha": true,
+          "bytes": 53150
+        },
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-full-transparent@2x.png",
+          "width": 1120,
+          "height": 638,
+          "hasAlpha": true,
+          "bytes": 149755
+        }
+      ],
+      "darkSurfaceVariants": [
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-full-transparent-dark.png",
+          "width": 560,
+          "height": 319,
+          "hasAlpha": true,
+          "bytes": 58522
+        },
+        {
+          "path": "public/brand/venus-bridge-media/vbm-lockup-full-transparent-dark@2x.png",
+          "width": 1120,
+          "height": 638,
+          "hasAlpha": true,
+          "bytes": 162409
+        }
+      ]
+    },
+    {
+      "source": "ChatGPT Image 2026年7月17日 19_52_01 (2).png",
+      "role": "header-wordmark",
+      "derivedFromApprovedArtwork": true,
+      "outputs": [
+        {
+          "path": "public/brand/venus-bridge-media/vbm-wordmark-name.png",
+          "width": 280,
+          "height": 38,
+          "hasAlpha": true,
+          "bytes": 6949
+        },
+        {
+          "path": "public/brand/venus-bridge-media/vbm-wordmark-name@2x.png",
+          "width": 560,
+          "height": 75,
+          "hasAlpha": true,
+          "bytes": 16881
+        }
+      ],
+      "darkSurfaceVariants": [
+        {
+          "path": "public/brand/venus-bridge-media/vbm-wordmark-name-dark.png",
+          "width": 280,
+          "height": 38,
+          "hasAlpha": true,
+          "bytes": 9229
+        },
+        {
+          "path": "public/brand/venus-bridge-media/vbm-wordmark-name-dark@2x.png",
+          "width": 560,
+          "height": 75,
+          "hasAlpha": true,
+          "bytes": 22835
+        }
+      ]
+    }
+  ]
+}

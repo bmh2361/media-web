@@ -5,10 +5,12 @@ import { ButtonLink } from "@/components/ui/Button";
 import { agencyResponsibilityRows } from "@/content/responsibilities";
 import { agenciesPage } from "@/content/site";
 import { withLanguage, type Language } from "@/lib/i18n";
+import { getEffectiveMarketEntryMode } from "@/lib/release";
 
 export function AgencySupportExperience({ language }: { language: Language }) {
   const copy = agenciesPage[language];
   const zh = language === "zh";
+  const showMarketEntry = getEffectiveMarketEntryMode() !== "hidden";
   const handoff = zh
     ? ["文件夹结构", "版本审核", "母版与社媒导出", "授权与使用说明"]
     : ["Folder structure", "Review versions", "Masters and social exports", "Release and usage notes"];
@@ -75,8 +77,8 @@ export function AgencySupportExperience({ language }: { language: Language }) {
             <p className="mt-8 text-xl leading-8 text-ink/70">{copy.whiteLabel}</p>
             <p className="mt-6 border-l-2 border-blue pl-4 text-sm leading-6 text-ink/65">
               {zh
-                ? "FrameBridge 可按约定在幕后执行；客户关系由代理保持，沟通和素材通过约定渠道交付。"
-                : "FrameBridge can work behind the scenes by agreement; the agency retains the client relationship and receives materials through agreed channels."}
+                ? "Venus Bridge 可按约定在幕后执行；客户关系由代理保持，沟通和素材通过约定渠道交付。"
+                : "Venus Bridge can work behind the scenes by agreement; the agency retains the client relationship and receives materials through agreed channels."}
             </p>
           </div>
         </div>
@@ -99,13 +101,37 @@ export function AgencySupportExperience({ language }: { language: Language }) {
           <MediaSlot id="agency-handoff" language={language} sizes="45vw" />
         </div>
       </section>
+      {showMarketEntry ? (
+        <section className="border-y border-champagne/25 bg-night py-12 text-pearl">
+          <div className="container-x grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="eyebrow text-champagne">
+                {zh ? "计划进入英国市场？" : "Entering the UK market?"}
+              </p>
+              <h2 className="mt-4 max-w-3xl text-3xl font-medium">
+                {zh
+                  ? "把英国制作支持连接到设立准备、专业机构工作流与市场启动。"
+                  : "Connect UK production support to setup preparation, specialist workstreams and market launch."}
+              </h2>
+            </div>
+            <ButtonLink
+              href={withLanguage("/services/uk-market-entry", language)}
+              className="bg-champagne text-ink"
+              showArrow
+            >
+              {zh ? "查看市场进入协同" : "View market-entry coordination"}
+            </ButtonLink>
+          </div>
+        </section>
+      ) : null}
       <ServiceProof service="agency" language={language} />
       <section className="section-y bg-ink text-center text-pearl">
         <div className="container-x">
           <h2 className="mx-auto max-w-4xl text-4xl font-semibold md:text-6xl">{copy.sections.ctaTitle}</h2>
           <ButtonLink
             href={`${withLanguage("/contact", language)}?project=agency`}
-            className="mt-9 bg-pearl text-ink"
+            variant="secondary"
+            className="mt-9"
             showArrow
             data-project-type="agency"
           >

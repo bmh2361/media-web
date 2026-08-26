@@ -1,4 +1,4 @@
-# FrameBridge Studio
+# Venus Bridge
 
 ## Release Profiles
 
@@ -22,9 +22,9 @@ npm run test:e2e
 
 The production command is expected to fail until protected production configuration and human approvals exist. Do not send a real enquiry in automation; the final production webhook delivery test is manual. See [PRODUCTION_LAUNCH_CHECKLIST.md](PRODUCTION_LAUNCH_CHECKLIST.md).
 
-# FrameBridge Studio website
+# Venus Bridge website
 
-Bilingual Next.js 15 App Router website for FrameBridge Studio / 镜桥创意, covering UK commercial production, talent coordination, research and innovation, events, exhibitions, and agency support.
+Bilingual Next.js 15 App Router website for Venus Bridge, helping Chinese companies build relevant market relationships, credible presence and accountable local execution across the UK and Europe. Creative and media production remain project capabilities rather than the master-brand category.
 
 ## Requirements and commands
 

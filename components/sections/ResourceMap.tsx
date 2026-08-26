@@ -1,6 +1,6 @@
 "use client";
 import { motion, useReducedMotion } from "framer-motion";
-import { motionTokens } from "@/lib/motion";
+import { motionSystem as motionTokens } from "@/lib/motion-system";
 const nodes = [
   [50, 14],
   [82, 34],
@@ -48,7 +48,7 @@ export function ResourceMap({ language }: { language: "en" | "zh" }) {
             y1="52"
             x2={n[0]}
             y2={n[1]}
-            stroke="#6fb7ff"
+            stroke="#b59a71"
             strokeWidth=".35"
             initial={reduced ? false : { pathLength: 0 }}
             whileInView={{ pathLength: 1 }}
@@ -63,7 +63,7 @@ export function ResourceMap({ language }: { language: "en" | "zh" }) {
               cy={n[1]}
               r={i === 6 ? 5 : 3}
               fill={i === 6 ? "#0b0d10" : "#fbfaf7"}
-              stroke="#6fb7ff"
+              stroke="#b59a71"
               strokeWidth=".5"
             />
             <text x={n[0]} y={n[1] + (i === 6 ? 9 : 6)} textAnchor="middle" fontSize="3" fill="#242830">

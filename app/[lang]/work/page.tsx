@@ -1,79 +1,59 @@
-﻿import { LockKeyhole } from "lucide-react";
 import { notFound } from "next/navigation";
-import { WorkFilterGrid } from "@/components/sections/WorkFilterGrid";
-import { JsonLd } from "@/components/seo/JsonLd";
-import { workContent } from "@/content/pages/work";
+import type { CommercialCaseFilter } from "@/components/sections/CommercialCaseIndex";
+import { PortfolioWork } from "@/components/sections/PortfolioWork";
+import { Container } from "@/components/ui/Container";
+import { Eyebrow } from "@/components/ui/Eyebrow";
+import { commercialCaseFilters } from "@/content/portfolio";
 import { isSupportedLocale } from "@/lib/i18n";
+import { getEffectiveWorkMode } from "@/lib/release";
 import { buildMetadata } from "@/lib/seo";
-import { getReleaseConfig, getWorkPresentation } from "@/lib/release";
-import { breadcrumbJsonLd } from "@/lib/structured-data";
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!isSupportedLocale(lang)) return {};
-  const presentation = getWorkPresentation();
-
   return buildMetadata({
     lang,
     path: "/work",
-    title: presentation.metadataTitle[lang],
-    description: presentation.description[lang],
-    keywords: [
-      "UK campaign production case studies",
-      "London event photography",
-      "UK product video",
-      "Chinese brand overseas content",
-      "creator campaign UK"
-    ]
+    title: lang === "zh" ? "英国与欧洲项目案例 | Venus Bridge" : "UK & European Projects | Venus Bridge Case Studies",
+    description:
+      lang === "zh"
+        ? "浏览真实英国与欧洲项目，了解商业背景、Venus Bridge 的具体职责、本地执行和后续可用成果。"
+        : "Explore real UK and European projects through their business context, Venus Bridge role, local delivery and useful outputs."
   });
 }
 
-export default async function WorkPage({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params;
-  if (!isSupportedLocale(lang)) notFound();
-  const release = getReleaseConfig();
-  const presentation = getWorkPresentation(release.publicWorkMode);
+export default async function WorkPage({
+  params,
+  searchParams
+}: {
+  params: Promise<{ lang: string }>;
+  searchParams: Promise<{ category?: string }>;
+}) {
+  const [{ lang }, query] = await Promise.all([params, searchParams]);
+  if (!isSupportedLocale(lang) || getEffectiveWorkMode() === "hidden") notFound();
+  const zh = lang === "zh";
+  const initialCategory = commercialCaseFilters.some((filter) => filter.value === query.category)
+    ? (query.category as CommercialCaseFilter)
+    : "all";
 
   return (
     <>
-      <JsonLd
-        data={breadcrumbJsonLd({
-          lang,
-          items: [
-            { name: "FrameBridge Studio", path: "/" },
-            { name: presentation.pageTitle[lang], path: "/work" }
-          ]
-        })}
-      />
-      <section className="relative overflow-hidden bg-ink pt-36 text-pearl">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_76%_8%,rgba(216,199,162,0.22),transparent_26rem),radial-gradient(circle_at_18%_10%,rgba(111,183,255,0.18),transparent_24rem)]" />
-        <div className="container-x relative grid gap-10 pb-24 lg:grid-cols-[1fr_24rem] lg:items-end">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-editorial text-champagne">
-              {presentation.navigationLabel[lang]}
-            </p>
-            <h1 className="editorial-heading mt-5 max-w-5xl text-balance font-semibold">
-              {presentation.pageTitle[lang]}
+      <section className="bg-pearl pt-[76px] text-ink lg:pt-[88px]" data-work-hero>
+        <Container className="grid gap-8 py-16 md:grid-cols-12 md:items-end lg:py-24">
+          <div className="md:col-span-8">
+            <Eyebrow>{zh ? "案例研究" : "CASE STUDIES"}</Eyebrow>
+            <h1 className="type-display-page zh-display-measure mt-6 max-w-[13ch]">
+              {zh ? "真实英国与欧洲项目，清楚目标与职责。" : "Real UK & European projects. Clear objectives. Clear roles."}
             </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-pearl/70">{presentation.description[lang]}</p>
           </div>
-          <div className="rounded-lg border border-pearl/10 bg-pearl/[0.05] p-6 backdrop-blur-md">
-            <LockKeyhole size={22} className="text-champagne" />
-            <p className="mt-5 text-sm leading-6 text-pearl/70">
-              {release.publicWorkMode === "portfolio"
-                ? presentation.description[lang]
-                : workContent[lang].disclosure}
-            </p>
-          </div>
-        </div>
+          <p className="type-lede text-ink/65 md:col-span-4">
+            {zh
+              ? "按商业场景浏览项目。每个案例说明项目目标、商业背景、实际职责、本地执行，以及之后留下的可用成果。"
+              : "Browse by commercial situation. Each case explains the objective, business context, our verified role, local delivery and what remained useful."}
+          </p>
+        </Container>
       </section>
-
-      <section className="section-y bg-porcelain">
-        <div className="container-x">
-          <h2 className="sr-only">{presentation.sectionHeading[lang]}</h2>
-          <WorkFilterGrid language={lang} mode={release.publicWorkMode ?? "concept-models"} />
-        </div>
-      </section>
+      <PortfolioWork language={lang} initialCategory={initialCategory} />
     </>
   );
 }

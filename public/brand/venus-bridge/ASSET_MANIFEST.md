@@ -1,0 +1,31 @@
+# Asset manifest
+
+- `CODEX_INTEGRATION_PROMPT.md`
+- `README.md`
+- `favicon/favicon.ico`
+- `favicon/venus-bridge-icon-180.png`
+- `favicon/venus-bridge-icon-192.png`
+- `favicon/venus-bridge-icon-32.png`
+- `favicon/venus-bridge-icon-48.png`
+- `favicon/venus-bridge-icon-512.png`
+- `png/venus-bridge-horizontal-lockup-black.png`
+- `png/venus-bridge-horizontal-lockup-white.png`
+- `png/venus-bridge-monogram-black.png`
+- `png/venus-bridge-monogram-circle-black.png`
+- `png/venus-bridge-monogram-circle-white.png`
+- `png/venus-bridge-monogram-white.png`
+- `png/venus-bridge-primary-stack-black.png`
+- `png/venus-bridge-primary-stack-white.png`
+- `png/venus-bridge-wordmark-black.png`
+- `png/venus-bridge-wordmark-white.png`
+- `source/venus_bridge_logo_reference.jpg`
+- `webp/venus-bridge-horizontal-lockup-black.webp`
+- `webp/venus-bridge-horizontal-lockup-white.webp`
+- `webp/venus-bridge-monogram-black.webp`
+- `webp/venus-bridge-monogram-circle-black.webp`
+- `webp/venus-bridge-monogram-circle-white.webp`
+- `webp/venus-bridge-monogram-white.webp`
+- `webp/venus-bridge-primary-stack-black.webp`
+- `webp/venus-bridge-primary-stack-white.webp`
+- `webp/venus-bridge-wordmark-black.webp`
+- `webp/venus-bridge-wordmark-white.webp`

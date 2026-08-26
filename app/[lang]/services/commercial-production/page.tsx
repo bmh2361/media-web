@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Lan
   return buildMetadata({
     lang,
     path: "/services/commercial-production",
-    title: `${c.title} | FrameBridge Studio`,
+    title: `${c.title} | Venus Bridge`,
     description: c.intro
   });
 }

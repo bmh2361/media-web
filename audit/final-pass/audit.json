@@ -1,0 +1,4135 @@
+[
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 9972,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 359
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 359
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 359
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 359
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 359
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "48px",
+    "h1LineHeight": "51.84px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 10916,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 359
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 359
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 359
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 359
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 359
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "60px",
+    "h1LineHeight": "56.4px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 3203,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 3701,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 4388,
+    "overflow": [
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 330
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 4716,
+    "overflow": [
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 398
+      },
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 542
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 6822,
+    "overflow": [
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 431
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 353
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 591
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 471
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 750
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 630
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 966
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 790
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 5320,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 3251,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 3304,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 7691,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 9382,
+    "overflow": [
+      {
+        "tag": "TABLE",
+        "className": "min-w-full border-collapse text-left text-sm",
+        "right": 322
+      },
+      {
+        "tag": "THEAD",
+        "className": "",
+        "right": 322
+      },
+      {
+        "tag": "TR",
+        "className": "border-y border-ink/20",
+        "right": 322
+      },
+      {
+        "tag": "TH",
+        "className": "p-3",
+        "right": 322
+      },
+      {
+        "tag": "TBODY",
+        "className": "",
+        "right": 322
+      },
+      {
+        "tag": "TR",
+        "className": "border-b border-ink/10",
+        "right": 322
+      },
+      {
+        "tag": "TD",
+        "className": "p-3",
+        "right": 322
+      },
+      {
+        "tag": "TR",
+        "className": "border-b border-ink/10",
+        "right": 322
+      },
+      {
+        "tag": "TD",
+        "className": "p-3",
+        "right": 322
+      },
+      {
+        "tag": "TR",
+        "className": "border-b border-ink/10",
+        "right": 322
+      },
+      {
+        "tag": "TD",
+        "className": "p-3",
+        "right": 322
+      },
+      {
+        "tag": "TR",
+        "className": "border-b border-ink/10",
+        "right": 322
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 6543,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 12216,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 320,
+      "height": 568
+    },
+    "errors": [],
+    "scrollWidth": 320,
+    "clientWidth": 320,
+    "scrollHeight": 6778,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 9867,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "48px",
+    "h1LineHeight": "51.84px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 10781,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "60px",
+    "h1LineHeight": "56.4px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 3031,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 3501,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 4343,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 4739,
+    "overflow": [
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 398
+      },
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 542
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 6800,
+    "overflow": [
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 431
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 591
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 471
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 750
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 630
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 966
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 790
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 5148,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 3203,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 3304,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 7710,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 9518,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 6532,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 12502,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 360,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 360,
+    "clientWidth": 360,
+    "scrollHeight": 6645,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 9886,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "48px",
+    "h1LineHeight": "51.84px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 10753,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "60px",
+    "h1LineHeight": "56.4px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 3031,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 3501,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 4394,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 4718,
+    "overflow": [
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 398
+      },
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 542
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 6822,
+    "overflow": [
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 431
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 591
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 471
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 750
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 630
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 966
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 790
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 5067,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 3138,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 3304,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 7693,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 9077,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 6465,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 12527,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "errors": [],
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "scrollHeight": 6588,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 9875,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "48px",
+    "h1LineHeight": "51.84px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 10680,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "60px",
+    "h1LineHeight": "56.4px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 3031,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 3477,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 4385,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 4717,
+    "overflow": [
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 398
+      },
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 542
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 6885,
+    "overflow": [
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 431
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 591
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 471
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 750
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 630
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 966
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 790
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 5035,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 3138,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 3304,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 7653,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 9101,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 6460,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 12737,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "scrollHeight": 6596,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 10126,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "48px",
+    "h1LineHeight": "51.84px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 10720,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "60px",
+    "h1LineHeight": "56.4px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 2979,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 3232,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 4531,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 4739,
+    "overflow": [
+      {
+        "tag": "BUTTON",
+        "className": "shrink-0 border-b px-1 py-2 text-sm font-medium border-transparent text-ink/70 hover:text-ink",
+        "right": 542
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 7117,
+    "overflow": [
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 431
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 591
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 471
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 750
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 630
+      },
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 966
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 790
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 5050,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 3114,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 3160,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 7775,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 9109,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 6585,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 13281,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 430,
+      "height": 932
+    },
+    "errors": [],
+    "scrollWidth": 430,
+    "clientWidth": 430,
+    "scrollHeight": 6657,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 11099,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "48px",
+    "h1LineHeight": "51.84px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 11403,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "60px",
+    "h1LineHeight": "56.4px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 2435,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 2574,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 5168,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 5254,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 7237,
+    "overflow": [
+      {
+        "tag": "A",
+        "className": "shrink-0 text-ink/60 hover:text-ink",
+        "right": 966
+      },
+      {
+        "tag": "SPAN",
+        "className": "mr-2 text-champagne",
+        "right": 790
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 4416,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 2183,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 2206,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40px",
+    "h1LineHeight": "40.8px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 5230,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 6238,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 5120,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 8874,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 768,
+      "height": 1024
+    },
+    "errors": [],
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "scrollHeight": 5769,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36px",
+    "h1LineHeight": "40.68px"
+  },
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 6029,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 1343
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 1343
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 1343
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 1343
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 1343
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "54.272px",
+    "h1LineHeight": "58.6138px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 6375,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 1343
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 1343
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 1343
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 1343
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 1343
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "65.536px",
+    "h1LineHeight": "61.6038px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 2319,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 2469,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40.96px",
+    "h1LineHeight": "41.7792px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 2609,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 2768,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40.96px",
+    "h1LineHeight": "41.7792px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 4199,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 3628,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 1817,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 1851,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "40.96px",
+    "h1LineHeight": "41.7792px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 4358,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 5128,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 4449,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 6088,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "errors": [],
+    "scrollWidth": 1024,
+    "clientWidth": 1024,
+    "scrollHeight": 3949,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "36.864px",
+    "h1LineHeight": "41.6563px"
+  },
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 6427,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 1500
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 1500
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 1500
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 1500
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 1500
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "67.84px",
+    "h1LineHeight": "73.2672px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 6623,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 1500
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 1500
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 1500
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 1500
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 1500
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "81.92px",
+    "h1LineHeight": "77.0048px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 2343,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 2516,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "51.2px",
+    "h1LineHeight": "52.224px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 2831,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 2935,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "51.2px",
+    "h1LineHeight": "52.224px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 4636,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 3820,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 1827,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 1825,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "51.2px",
+    "h1LineHeight": "52.224px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 4796,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 5742,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 5038,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 6890,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "errors": [],
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "scrollHeight": 4554,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "46.08px",
+    "h1LineHeight": "52.0704px"
+  },
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 6989,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 1694
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 1694
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 1694
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 1694
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 1694
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "76.32px",
+    "h1LineHeight": "82.4256px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 7138,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 1694
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 1694
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 1694
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 1694
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 1694
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "92.16px",
+    "h1LineHeight": "86.6304px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 2389,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 2520,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "57.6px",
+    "h1LineHeight": "58.752px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 2930,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 3034,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "57.6px",
+    "h1LineHeight": "58.752px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 4928,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 4017,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 1810,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 1832,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "57.6px",
+    "h1LineHeight": "58.752px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 5142,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 6084,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 5436,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 7311,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "scrollWidth": 1440,
+    "clientWidth": 1440,
+    "scrollHeight": 4814,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "51.84px",
+    "h1LineHeight": "58.5792px"
+  },
+  {
+    "route": "/zh",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 7967,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 1934
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 1934
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 1934
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 1934
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 1934
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "92px",
+    "h1LineHeight": "99.36px"
+  },
+  {
+    "route": "/en",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 8131,
+    "overflow": [
+      {
+        "tag": "FIGURE",
+        "className": "group relative overflow-hidden bg-graphite h-full",
+        "right": 1934
+      },
+      {
+        "tag": "IMG",
+        "className": "object-cover transition-transform duration-700 group-hover:scale-[1.018] object-center",
+        "right": 1934
+      },
+      {
+        "tag": "DIV",
+        "className": "pointer-events-none absolute inset-0 bg-graphite",
+        "right": 1934
+      },
+      {
+        "tag": "DIV",
+        "className": "media-loading-shimmer absolute inset-0",
+        "right": 1934
+      },
+      {
+        "tag": "DIV",
+        "className": "absolute inset-0 bg-gradient-to-t from-ink/40 via-transparent to-transparent",
+        "right": 1934
+      }
+    ],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "116px",
+    "h1LineHeight": "109.04px"
+  },
+  {
+    "route": "/zh/services",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 2485,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  },
+  {
+    "route": "/en/services",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 2636,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "76px",
+    "h1LineHeight": "77.52px"
+  },
+  {
+    "route": "/zh/work",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 3008,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "全部",
+        "w": 36,
+        "h": 37
+      },
+      {
+        "tag": "BUTTON",
+        "text": "人才",
+        "w": 36,
+        "h": 37
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  },
+  {
+    "route": "/en/work",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 3113,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "BUTTON",
+        "text": "All",
+        "w": 24,
+        "h": 37
+      }
+    ],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "76px",
+    "h1LineHeight": "77.52px"
+  },
+  {
+    "route": "/zh/industries",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 5340,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  },
+  {
+    "route": "/zh/about",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 4375,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  },
+  {
+    "route": "/zh/contact",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 1905,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  },
+  {
+    "route": "/en/contact",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 1928,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Font": "Inter, \"Helvetica Neue\", Arial, sans-serif",
+    "h1Size": "76px",
+    "h1LineHeight": "77.52px"
+  },
+  {
+    "route": "/zh/services/commercial-production",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 5638,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  },
+  {
+    "route": "/zh/services/events-exhibitions",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 6689,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  },
+  {
+    "route": "/zh/services/research-innovation",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 5885,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [
+      {
+        "tag": "A",
+        "text": "服务",
+        "w": 24,
+        "h": 17
+      }
+    ],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  },
+  {
+    "route": "/zh/talent",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 7882,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  },
+  {
+    "route": "/zh/for-agencies",
+    "viewport": {
+      "width": 1920,
+      "height": 1080
+    },
+    "errors": [],
+    "scrollWidth": 1920,
+    "clientWidth": 1920,
+    "scrollHeight": 5137,
+    "overflow": [],
+    "h1Count": 1,
+    "brokenImages": [],
+    "missingAlt": 0,
+    "forbidden": [],
+    "tinyTargets": [],
+    "bodyFont": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Font": "\"Noto Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", \"Noto Sans CJK SC\", sans-serif",
+    "h1Size": "68px",
+    "h1LineHeight": "76.84px"
+  }
+]

@@ -9,7 +9,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Lan
   return buildMetadata({
     lang,
     path: "/for-agencies",
-    title: lang === "zh" ? `${copy.title} | 代理支持` : `${copy.title} | For Agencies`,
+    title:
+      lang === "zh"
+        ? `${copy.title} | 英国制作与本地落地执行`
+        : `${copy.title} | UK Production & Local Execution`,
     description: copy.intro,
     keywords: [
       "UK production partner for Chinese agencies",

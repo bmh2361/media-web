@@ -4,7 +4,7 @@ import type { LocalisedString } from "@/content/types";
 const l = (en: string, zh: string): LocalisedString => ({ en, zh });
 
 export type IndustryKey =
-  | "fashion-beauty-jewellery"
+  | "fashion-beauty-apparel"
   | "ai-technology-robotics"
   | "automotive-mobility"
   | "education-research-innovation"
@@ -24,6 +24,10 @@ export type IndustryRecord = {
   capabilities: LocalisedString[];
   formats: LocalisedString[];
   deliverables: LocalisedString[];
+  clientNeeds?: LocalisedString[];
+  clientInputs?: LocalisedString[];
+  adjacentCategoryNote?: LocalisedString;
+  detailPath?: string;
   relatedServicePaths: string[];
   relatedWorkFilter?: string;
   variant: IndustryVariant;
@@ -40,28 +44,47 @@ export const industriesPageCopy = {
 
 export const industryRecords: IndustryRecord[] = [
   {
-    key: "fashion-beauty-jewellery",
-    title: l("Fashion, Beauty & Jewellery", "时尚、美妆与珠宝"),
+    key: "fashion-beauty-apparel",
+    title: l("Fashion, Beauty & Apparel", "时尚、美妆与服装"),
     challenge: l(
-      "Create a distinctive UK campaign world while protecting product detail, styling references and usage rights.",
-      "在准确呈现产品细节、造型参考与使用权边界的同时，建立有辨识度的英国广告语境。"
+      "Produce UK campaign, lookbook and social assets while aligning products, models, makeup, hair, wardrobe, locations and usage rights against one schedule.",
+      "在同一排期内统筹产品、模特、妆发、服装造型、场地与使用权，完成英国广告、型录与社交素材。"
     ),
     capabilities: [
-      l("Casting and styling", "选角与造型"),
-      l("Editorial stills and motion", "编辑式图片与视频")
+      l("Creative direction and production planning", "创意方向与制作规划"),
+      l("Casting, makeup, hair and wardrobe coordination", "选角、妆发与服装造型统筹"),
+      l("London locations, permits and bilingual on-set coordination", "伦敦场地、许可与双语现场协调")
     ],
     formats: [
-      l("Campaigns and lookbooks", "广告与型录"),
-      l("Creator and launch content", "创作者与发布内容")
+      l("Campaigns, lookbooks and editorial content", "广告、型录与编辑内容"),
+      l("E-commerce, social and launch content", "电商、社交与发布内容")
     ],
     deliverables: [
-      l("Key visuals and image libraries", "主视觉与图片库"),
-      l("Channel-ready edits", "适配渠道的剪辑版本")
+      l("Campaign photography and image selects", "广告摄影与精选图片"),
+      l("Short-form, behind-the-scenes and interview video", "短视频、幕后与采访内容"),
+      l("Multi-ratio assets and usage handoff, subject to scope", "根据范围交付多比例素材与使用信息")
     ],
+    clientNeeds: [
+      l("UK campaign, editorial or lookbook shoot", "英国广告、编辑或型录拍摄"),
+      l("Product, lifestyle and social-first content", "产品、生活方式与社交优先内容"),
+      l("Model casting, makeup, hair and wardrobe", "模特选角、化妆、发型与服装造型"),
+      l("London location or launch-event production", "伦敦场地或发布活动制作"),
+      l("China-facing overseas assets or UK-facing campaign content", "面向中国的海外素材或英国本地发布内容")
+    ],
+    clientInputs: [
+      l("Brand guidelines, references and product list", "品牌规范、参考与产品清单"),
+      l("Intended channels, territories and target audience", "使用渠道、地区与目标受众"),
+      l("Target date, location preference and deliverable priorities", "目标日期、场地偏好与交付优先级")
+    ],
+    adjacentCategoryNote: l(
+      "Selected accessories and jewellery projects may be supported where they fit the production brief.",
+      "对于符合制作范围的配饰与珠宝项目，也可根据具体需求提供支持。"
+    ),
+    detailPath: "/industries/fashion-beauty-apparel",
     relatedServicePaths: ["/services/commercial-production", "/talent"],
     relatedWorkFilter: "commercial-production",
     variant: "editorial",
-    mediaIds: ["industry-fashion", "industry-jewellery", "industry-beauty"]
+    mediaIds: ["industry-fashion", "industry-beauty", "industry-lifestyle"]
   },
   {
     key: "ai-technology-robotics",
@@ -107,6 +130,7 @@ export const industryRecords: IndustryRecord[] = [
       l("Detail stills and event coverage", "细节图片与活动记录")
     ],
     relatedServicePaths: ["/services/events-exhibitions", "/talent"],
+    detailPath: "/industries/automotive",
     relatedWorkFilter: "events-exhibitions",
     variant: "cinematic",
     mediaIds: ["industry-automotive", "events-stage"]

@@ -1,13 +1,15 @@
-import { MediaSlot } from "@/components/media/MediaSlot";
+import { PortfolioImage } from "@/components/media/PortfolioImage";
 import { ServiceProof } from "@/components/sections/ServiceProof";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ButtonLink } from "@/components/ui/Button";
 import { talentPage } from "@/content/site";
+import { portfolioMediaForPage } from "@/content/portfolio";
 import { withLanguage, type Language } from "@/lib/i18n";
 
 export function TalentExperience({ language }: { language: Language }) {
   const copy = talentPage[language];
   const zh = language === "zh";
+  const talentMedia = portfolioMediaForPage("/talent");
   const criteria = zh
     ? ["品牌与受众匹配", "语言与镜头表达", "可用档期", "使用权与排他范围"]
     : [
@@ -28,12 +30,12 @@ export function TalentExperience({ language }: { language: Language }) {
             <h1 className="editorial-heading mt-5 max-w-4xl font-semibold">{copy.title}</h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-ink/65">{copy.intro}</p>
           </div>
-          <MediaSlot
-            id="talent-hero"
+          <PortfolioImage
+            media={talentMedia[0]}
             language={language}
             priority
             sizes="(min-width:1024px) 34vw, 100vw"
-            showCaption={false}
+            className="aspect-[4/5]"
           />
         </div>
       </section>
@@ -50,19 +52,11 @@ export function TalentExperience({ language }: { language: Language }) {
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {copy.categories.map((category, index) => (
               <article key={category.name} className="group overflow-hidden border border-ink/10 bg-white">
-                <MediaSlot
-                  id={
-                    (
-                      [
-                        "talent-contact-sheet-01",
-                        "talent-contact-sheet-02",
-                        "talent-contact-sheet-03"
-                      ] as const
-                    )[index % 3]
-                  }
+                <PortfolioImage
+                  media={talentMedia[(index % (talentMedia.length - 1)) + 1]}
                   language={language}
                   sizes="(min-width:1024px) 28vw, 100vw"
-                  showCaption={false}
+                  className="aspect-[4/5]"
                 />
                 <div className="p-5">
                   <span className="text-xs text-slate">
@@ -100,7 +94,12 @@ export function TalentExperience({ language }: { language: Language }) {
             </div>
           </div>
           <div className="border border-ink/10 bg-pearl p-7">
-            <MediaSlot id="talent-private-shortlist" language={language} sizes="45vw" showCaption={false} />
+            <PortfolioImage
+              media={talentMedia[talentMedia.length - 1]}
+              language={language}
+              sizes="45vw"
+              className="aspect-[4/3]"
+            />
             <p className="mt-6 text-lg leading-8 text-ink/70">{copy.privateNote}</p>
           </div>
         </div>
@@ -145,9 +144,15 @@ export function TalentExperience({ language }: { language: Language }) {
       <section className="section-y bg-ink text-center text-pearl">
         <div className="container-x">
           <h2 className="mx-auto max-w-4xl text-4xl font-semibold md:text-6xl">{copy.disclaimer}</h2>
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-pearl/65">
+            {zh
+              ? "人才档期、使用范围与合作条件将根据具体项目单独确认。"
+              : "Talent availability, usage and booking terms are confirmed for each project."}
+          </p>
           <ButtonLink
             href={`${withLanguage("/contact", language)}?project=talent`}
-            className="mt-9 bg-pearl text-ink"
+            variant="secondary"
+            className="mt-9"
             showArrow
             data-project-type="talent"
           >

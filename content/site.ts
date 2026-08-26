@@ -3,8 +3,8 @@ import type { Language } from "@/lib/i18n";
 type Localized<T> = Record<Language, T>;
 
 export const brand = {
-  en: "FrameBridge Studio",
-  zh: "镜桥创意",
+  en: "Venus Bridge",
+  zh: "Venus Bridge",
   strapline: {
     en: "UK Creative Production for Chinese Brands Going Global.",
     zh: "为中国品牌提供英国本地创意制作与商业内容落地服务。"
@@ -14,33 +14,31 @@ export const brand = {
 export const ui = {
   en: {
     startBrief: "Start a brief",
-    viewAllServices: "View all services",
+    viewAllServices: "View project routes",
     mediaFrameKicker: "Visual system",
     footerNote: "London and China-ready production coordination",
     contactLocation: "United Kingdom, serving China-facing teams",
-    brandShort: "FrameBridge",
-    copyright: "© 2026 FrameBridge Studio / 镜桥创意",
+    brandShort: "Venus Bridge",
+    copyright: "© 2026 Venus Bridge / Venus Bridge",
     aboutMedia: "London production culture"
   },
   zh: {
     startBrief: "提交需求",
-    viewAllServices: "查看全部服务",
+    viewAllServices: "查看项目路径",
     mediaFrameKicker: "视觉体系",
     footerNote: "英国本地制作与中英双语项目协作",
     contactLocation: "英国本地，服务面向中国市场的团队",
-    brandShort: "FrameBridge",
-    copyright: "© 2026 FrameBridge Studio / 镜桥创意",
+    brandShort: "Venus Bridge",
+    copyright: "© 2026 Venus Bridge / Venus Bridge",
     aboutMedia: "伦敦制作现场"
   }
 } satisfies Localized<Record<string, string>>;
 
 export const navItems = [
-  { href: "/services", label: { en: "Services", zh: "服务" } },
-  { href: "/industries", label: { en: "Industries", zh: "行业" } },
-  { href: "/talent", label: { en: "Talent & Creators", zh: "人才与创作者" } },
-  { href: "/work", label: { en: "Work", zh: "案例作品" } },
-  { href: "/for-agencies", label: { en: "For Agencies", zh: "代理合作" } },
-  { href: "/about", label: { en: "About", zh: "关于" } },
+  { href: "/what-we-do", label: { en: "What We Do", zh: "我们能做什么" } },
+  { href: "/expertise", label: { en: "Expertise", zh: "专业领域" } },
+  { href: "/work", label: { en: "Work", zh: "项目" } },
+  { href: "/about", label: { en: "About Us", zh: "关于我们" } },
   { href: "/contact", label: { en: "Contact", zh: "联系" } }
 ] as const;
 
@@ -64,7 +62,7 @@ export const home = {
       scenariosEyebrow: "What we create",
       scenariosTitle: "Campaign assets with a clear commercial job.",
       scenariosIntro:
-        "One brief can become a complete UK content package for launch, social, PR, retail and agency handoff.",
+        "One brief can become a complete UK content system for launch, social, PR, retail and agency handoff.",
       capabilitiesEyebrow: "Core capabilities",
       capabilitiesTitle: "Production depth, without the overseas friction.",
       industriesEyebrow: "Industries",
@@ -74,7 +72,7 @@ export const home = {
       talentEyebrow: "Talent network",
       talentTitle: "The right faces, makers and specialists in the UK.",
       talentText:
-        "FrameBridge Studio works with UK-based models, actors, presenters, Chinese creators, stylists, makeup artists, photographers and videographers, matching each role to the brand, script, audience and platform.",
+        "Venus Bridge works with UK-based models, actors, presenters, Chinese creators, stylists, makeup artists, photographers and videographers, matching each role to the brand, script, audience and platform.",
       processEyebrow: "How we work",
       processTitle: "A calm route from brief to campaign-ready assets.",
       finalTitle: "Planning a brand shoot, campaign or event in the UK?",
@@ -209,7 +207,7 @@ export const home = {
       talentEyebrow: "人才与创作者网络",
       talentTitle: "在英国找到适合品牌、镜头与渠道的人。",
       talentText:
-        "镜桥创意长期协作英国本地模特、演员、主持人、华人创作者、造型师、化妆师、摄影师与摄像团队，并根据品牌调性、脚本、受众与平台需求进行匹配。",
+        "Venus Bridge长期协作英国本地模特、演员、主持人、华人创作者、造型师、化妆师、摄影师与摄像团队，并根据品牌调性、脚本、受众与平台需求进行匹配。",
       processEyebrow: "工作流程",
       processTitle: "从需求到可投放素材的稳定路径。",
       finalTitle: "正在计划英国品牌拍摄、活动或海外宣传内容？",
@@ -427,7 +425,7 @@ export const caseStudies = [
     category: { en: "Fashion campaign", zh: "时装广告" },
     title: { en: "London editorial shoot for a China launch", zh: "面向中国上市的伦敦编辑式拍摄" },
     text: {
-      en: "A modular image and motion package designed for launch pages, paid social, showroom use and PR distribution.",
+      en: "A modular image and motion asset set designed for launch pages, paid social, showroom use and PR distribution.",
       zh: "为上市页面、广告投放、展厅展示与公关传播设计的图片与视频资产组合。"
     }
   },
@@ -480,8 +478,8 @@ export const process = [
   {
     title: { en: "Clarify the brief", zh: "梳理项目需求" },
     text: {
-      en: "We align campaign goals, required formats, usage rights, timeline, budget range and Chinese market expectations before production begins.",
-      zh: "在制作前明确传播目标、内容规格、使用范围、时间节点、预算区间与中国市场传播语境。"
+      en: "We align campaign goals, required formats, usage rights, timeline, commercial parameters and Chinese market expectations before production begins.",
+      zh: "在制作前明确传播目标、内容规格、使用范围、时间节点、商业条件与中国市场传播语境。"
     }
   },
   {
@@ -602,15 +600,15 @@ export const pageCopy = {
   },
   about: {
     en: {
-      eyebrow: "About",
-      title: "A bridge between UK production craft and Chinese brand momentum.",
+      eyebrow: "About Us",
+      title: "London production, local talent and bilingual delivery.",
       intro:
-        "FrameBridge Studio was built for teams that care about image quality, speed, cultural nuance and calm project communication."
+        "Venus Bridge coordinates creative production, talent, events and UK execution for Chinese brands, agencies and international teams."
     },
     zh: {
-      eyebrow: "关于",
-      title: "连接英国制作能力与中国品牌增长节奏。",
-      intro: "镜桥创意服务重视影像质感、执行效率、文化语境与项目沟通稳定性的团队。"
+      eyebrow: "关于我们",
+      title: "以伦敦本地团队统筹制作、人才与双语交付。",
+      intro: "Venus Bridge 为中国品牌、代理与国际团队统筹创意制作、人才、活动与英国本地执行。"
     }
   },
   contact: {
@@ -645,10 +643,6 @@ export const servicesPage = {
       industries: "Related industries",
       caseStudy: "Related case study",
       cta: "Plan this service",
-      packagesEyebrow: "Packages",
-      packagesTitle: "Production shapes built around the job.",
-      packagesIntro:
-        "No fixed public pricing. Each package is scoped around schedule, format, crew, talent, usage and delivery requirements.",
       finalTitle: "Send us your brief and we’ll build the right production plan.",
       finalCta: "Send Brief"
     },
@@ -749,21 +743,13 @@ export const servicesPage = {
         ],
         deliverables: [
           "Production route",
-          "Budget guidance",
+          "Commercial parameters note",
           "Local resource map",
           "Risk and logistics notes"
         ],
         industries: ["Chinese brands", "Agencies", "Technology", "Consumer goods", "E-commerce"],
         caseStudy: "UK Launch Production"
       }
-    ],
-    packages: [
-      "Brand Campaign Day",
-      "Product Content Sprint",
-      "Event Content Coverage",
-      "Creator Campaign Package",
-      "UK Launch Production",
-      "Short Drama Production"
     ]
   },
   zh: {
@@ -776,10 +762,6 @@ export const servicesPage = {
       industries: "相关行业",
       caseStudy: "相关案例",
       cta: "规划此服务",
-      packagesEyebrow: "服务组合",
-      packagesTitle: "根据项目目标搭建制作组合。",
-      packagesIntro:
-        "不展示固定公开价格。每个组合都会根据时间、内容形式、团队、人才、使用范围与交付要求进行定制。",
       finalTitle: "把项目需求发给我们，我们会为你搭建合适的制作方案。",
       finalCta: "提交需求"
     },
@@ -852,12 +834,11 @@ export const servicesPage = {
         name: "英国本地制作咨询",
         explanation: "为需要英国本地内容策略、物流、选角、场地与执行指导的中国品牌提供制作咨询。",
         usefulFor: ["本地策略", "制作可行性", "选角建议", "场地规划", "执行支持"],
-        deliverables: ["制作路径", "预算建议", "本地资源图谱", "风险与物流提示"],
+        deliverables: ["制作路径", "商业条件说明", "本地资源图谱", "风险与物流提示"],
         industries: ["中国品牌", "代理公司", "科技", "消费品", "电商"],
         caseStudy: "英国上市制作支持"
       }
-    ],
-    packages: ["品牌广告拍摄日", "产品内容冲刺", "活动内容记录", "达人广告组合", "英国上市制作", "短剧制作"]
+    ]
   }
 } satisfies Localized<{
   eyebrow: string;
@@ -872,7 +853,6 @@ export const servicesPage = {
     industries: string[];
     caseStudy: string;
   }>;
-  packages: string[];
 }>;
 
 export const industriesPage = {
@@ -884,7 +864,7 @@ export const industriesPage = {
     labels: {
       insight: "Industry insight",
       needs: "What brands usually need",
-      delivers: "What FrameBridge delivers",
+      delivers: "What Venus Bridge delivers",
       examples: "Example deliverables",
       services: "Related services",
       cta: "Discuss this industry"
@@ -1075,7 +1055,7 @@ export const industriesPage = {
     labels: {
       insight: "行业洞察",
       needs: "品牌通常需要",
-      delivers: "镜桥创意交付",
+      delivers: "Venus Bridge交付",
       examples: "示例交付物",
       services: "相关服务",
       cta: "咨询此行业方案"
@@ -1208,14 +1188,14 @@ export const talentPage = {
           "Automotive content",
           "Brand launch visuals"
         ],
-        industries: ["Fashion", "Lifestyle", "Automotive", "Jewellery"]
+        industries: ["Fashion, Beauty & Apparel", "Lifestyle", "Automotive"]
       },
       {
         name: "Asian & Chinese Models",
         suitableFor:
           "China-facing campaigns that need culturally relevant faces and clear on-camera communication.",
         useCases: ["Beauty campaigns", "E-commerce content", "Try-on videos", "Editorial shoots"],
-        industries: ["Beauty", "Fashion", "Jewellery", "Consumer products"]
+        industries: ["Fashion, Beauty & Apparel", "Consumer products"]
       },
       {
         name: "UK-based Chinese Creators",
@@ -1246,20 +1226,20 @@ export const talentPage = {
         name: "Makeup Artists",
         suitableFor: "Camera-ready makeup for models, presenters, artists, beauty campaigns and live events.",
         useCases: ["Beauty looks", "Presenter makeup", "Event touch-ups", "Campaign shoots"],
-        industries: ["Beauty", "Fashion", "Entertainment", "Events"]
+        industries: ["Fashion, Beauty & Apparel", "Entertainment", "Events"]
       },
       {
         name: "Hair Stylists and Fashion Stylists",
         suitableFor: "Wardrobe, hair, styling direction and on-set refinement for campaign-level visuals.",
         useCases: ["Fashion editorials", "Lookbooks", "Presenter wardrobe", "Product styling"],
-        industries: ["Fashion", "Jewellery", "Beauty", "Lifestyle"]
+        industries: ["Fashion, Beauty & Apparel", "Lifestyle"]
       },
       {
         name: "Photographers and Videographers",
         suitableFor:
           "Specialist image and video capture across campaigns, events, products and social content.",
         useCases: ["Campaign stills", "Event coverage", "Product videos", "Short-form social edits"],
-        industries: ["Fashion", "PR", "Technology", "Consumer products"]
+        industries: ["Fashion, Beauty & Apparel", "PR", "Technology", "Consumer products"]
       },
       {
         name: "Directors, Producers and Editors",
@@ -1298,13 +1278,13 @@ export const talentPage = {
         name: "英国本地模特",
         suitableFor: "适合需要英国本地气质、生活方式场景和品牌视觉可信度的广告内容。",
         useCases: ["时尚画册", "生活方式产品拍摄", "汽车内容", "品牌上市视觉"],
-        industries: ["时尚", "生活方式", "汽车", "珠宝"]
+        industries: ["时尚、美妆与服装", "生活方式", "汽车"]
       },
       {
         name: "亚洲与华人模特",
         suitableFor: "适合面向中国市场、需要文化相关性与清晰镜头表达的品牌项目。",
         useCases: ["美妆广告", "电商内容", "试穿视频", "编辑式拍摄"],
-        industries: ["美妆", "时尚", "珠宝", "消费品"]
+        industries: ["时尚、美妆与服装", "消费品"]
       },
       {
         name: "英国华人创作者",
@@ -1328,19 +1308,19 @@ export const talentPage = {
         name: "化妆师",
         suitableFor: "适合模特、主持人、艺人、美妆广告与活动现场的镜头妆造。",
         useCases: ["美妆造型", "主持人妆容", "活动补妆", "广告拍摄"],
-        industries: ["美妆", "时尚", "娱乐", "活动"]
+        industries: ["时尚、美妆与服装", "娱乐", "活动"]
       },
       {
         name: "发型师与时尚造型师",
         suitableFor: "适合广告级视觉中的服装、发型、整体造型方向与现场细节把控。",
         useCases: ["时尚编辑片", "品牌画册", "主持人服装", "产品造型"],
-        industries: ["时尚", "珠宝", "美妆", "生活方式"]
+        industries: ["时尚、美妆与服装", "生活方式"]
       },
       {
         name: "摄影师与摄像师",
         suitableFor: "适合广告、活动、产品与社媒内容中的专业图片和视频采集。",
         useCases: ["广告图片", "活动记录", "产品视频", "社媒短内容"],
-        industries: ["时尚", "公关", "科技", "消费品"]
+        industries: ["时尚、美妆与服装", "公关", "科技", "消费品"]
       },
       {
         name: "导演、制片与剪辑",
@@ -1356,7 +1336,7 @@ export const talentPage = {
       "确认档期与使用范围",
       "协调拍摄与交付"
     ],
-    disclaimer: "具体人选、档期、报价和肖像使用范围会根据项目需求确认。我们会在了解项目后提供匹配方案。"
+    disclaimer: "具体人选、档期、商业条款和肖像使用范围会根据项目需求确认。我们会在了解项目后提供匹配方案。"
   }
 } satisfies Localized<{
   eyebrow: string;
@@ -1379,7 +1359,7 @@ export const workPage = {
     eyebrow: "Work / Case Studies",
     title: "Selected work across campaigns, events, products and talent-led content.",
     intro:
-      "Structured examples of how FrameBridge Studio supports Chinese brands and agencies with UK-based creative production.",
+      "Structured examples of how Venus Bridge supports Chinese brands and agencies with UK-based creative production.",
     confidentialNote: "Some client names are kept confidential due to project agreements.",
     filters: [
       "All",
@@ -1421,7 +1401,7 @@ export const workPage = {
         clientNeed:
           "The team needed a discreet local production partner able to capture talent moments, atmosphere, backstage detail and audience-facing highlights.",
         ourRole:
-          "FrameBridge coordinated event content capture, shot priorities, backstage access needs and delivery formats for social and PR use.",
+          "Venus Bridge coordinated event content capture, shot priorities, backstage access needs and delivery formats for social and PR use.",
         productionScope: [
           "Pre-event shot planning",
           "Event photography",
@@ -1452,7 +1432,7 @@ export const workPage = {
         clientNeed:
           "The brand needed UK-based faces, styling control, location planning and a production rhythm that could serve multiple channels.",
         ourRole:
-          "FrameBridge managed model casting, styling coordination, shoot planning, crew and campaign asset delivery.",
+          "Venus Bridge managed model casting, styling coordination, shoot planning, crew and campaign asset delivery.",
         productionScope: [
           "Creative production",
           "Model casting",
@@ -1483,7 +1463,7 @@ export const workPage = {
         clientNeed:
           "The team needed clear English-facing content, credible usage environments and short assets for website and social deployment.",
         ourRole:
-          "FrameBridge coordinated presenter casting, office-style scenarios, product demo capture and bilingual production management.",
+          "Venus Bridge coordinated presenter casting, office-style scenarios, product demo capture and bilingual production management.",
         productionScope: [
           "Presenter casting",
           "Demo planning",
@@ -1513,7 +1493,7 @@ export const workPage = {
         clientNeed:
           "The brand needed UK-based Chinese creators who could demonstrate product texture, routine and results for social platforms.",
         ourRole:
-          "FrameBridge shortlisted creators, coordinated makeup looks, production support and content delivery formats.",
+          "Venus Bridge shortlisted creators, coordinated makeup looks, production support and content delivery formats.",
         productionScope: [
           "Creator shortlist",
           "Product trial setup",
@@ -1543,7 +1523,7 @@ export const workPage = {
         clientNeed:
           "The team needed presenter options, product walkaround support and content coverage that could work for both social and internal recap.",
         ourRole:
-          "FrameBridge supported presenter sourcing, shoot flow, on-site capture priorities and short-form delivery.",
+          "Venus Bridge supported presenter sourcing, shoot flow, on-site capture priorities and short-form delivery.",
         productionScope: [
           "Presenter shortlist",
           "Event capture",
@@ -1567,7 +1547,7 @@ export const workPage = {
         clientNeed:
           "The brand needed a controlled UK shoot with model styling, product close-ups and social-ready adaptations.",
         ourRole:
-          "FrameBridge coordinated model styling, makeup, photography direction, close-up capture and export formats.",
+          "Venus Bridge coordinated model styling, makeup, photography direction, close-up capture and export formats.",
         productionScope: [
           "Model and styling coordination",
           "Product handling",
@@ -1590,7 +1570,7 @@ export const workPage = {
   zh: {
     eyebrow: "案例作品",
     title: "覆盖品牌拍摄、活动内容、产品宣传与达人模特项目的精选案例。",
-    intro: "通过结构化案例展示镜桥创意如何为中国品牌与代理团队提供英国本地创意制作支持。",
+    intro: "通过结构化案例展示Venus Bridge如何为中国品牌与代理团队提供英国本地创意制作支持。",
     confidentialNote: "部分项目因客户协议不公开品牌名称。",
     filters: ["全部", "时尚", "美妆", "科技", "汽车", "活动", "达人广告", "短剧", "产品内容"],
     labels: {
@@ -1618,7 +1598,7 @@ export const workPage = {
         delivered: "活动摄影、后台内容、高光视觉、社交媒体素材。",
         overview: "一个节奏紧凑的伦敦活动需要高质感内容记录，既服务公关传播，也满足社媒与内部复盘需求。",
         clientNeed: "团队需要一位低干扰的英国本地制作伙伴，捕捉艺人现场、后台细节、氛围与高光瞬间。",
-        ourRole: "镜桥创意协调活动内容采集、拍摄重点、后台动线需求与社媒公关交付规格。",
+        ourRole: "Venus Bridge协调活动内容采集、拍摄重点、后台动线需求与社媒公关交付规格。",
         productionScope: ["活动前拍摄规划", "活动摄影", "后台内容记录", "高光视觉采集", "社媒素材筛选"],
         deliverables: ["精修活动精选图", "后台内容组", "高光视觉", "社媒裁切素材"],
         visualDirection: "具有电影感的活动纪实，保持精致光线、干净构图与现场氛围。",
@@ -1634,7 +1614,7 @@ export const workPage = {
         overview:
           "项目围绕伦敦场景价值、编辑式造型与多渠道资产交付，搭建一组可用于上市与社媒传播的广告内容。",
         clientNeed: "品牌需要英国本地面孔、造型把控、场地规划与适配多个渠道的制作节奏。",
-        ourRole: "镜桥创意统筹模特选角、造型协调、拍摄规划、团队搭建与广告素材交付。",
+        ourRole: "Venus Bridge统筹模特选角、造型协调、拍摄规划、团队搭建与广告素材交付。",
         productionScope: ["创意制作", "模特选角", "服装与妆造", "伦敦场地规划", "图片与短视频采集"],
         deliverables: ["广告图片", "Lookbook 精选", "短视频剪辑", "社媒裁切"],
         visualDirection: "高级伦敦编辑式视觉，强调自信造型、干净动态与品牌质感。",
@@ -1649,7 +1629,7 @@ export const workPage = {
         delivered: "出镜讲解产品视频、用户场景画面、办公室风格视觉与社媒剪辑。",
         overview: "科技产品需要更容易被海外用户、合作伙伴与内部团队理解的表达方式。",
         clientNeed: "团队需要英文内容、可信的使用环境与可用于官网和社媒的短内容。",
-        ourRole: "镜桥创意协调出镜人才、办公室场景、产品演示拍摄与中英双语制作管理。",
+        ourRole: "Venus Bridge协调出镜人才、办公室场景、产品演示拍摄与中英双语制作管理。",
         productionScope: ["主持人选角", "演示规划", "办公室与用户场景", "视频制作", "社媒短版"],
         deliverables: ["出镜讲解产品视频", "场景画面", "官网视频素材", "社媒短剪辑"],
         visualDirection: "干净、理性且有人感，用克制科技感和清晰讲解呈现产品价值。",
@@ -1664,7 +1644,7 @@ export const workPage = {
         delivered: "达人协调、妆容视觉、产品试用视频与竖屏社媒素材。",
         overview: "项目聚焦可信的达人试用、平台原生节奏与快速竖屏交付。",
         clientNeed: "品牌需要英国华人创作者展示产品质地、使用流程与效果。",
-        ourRole: "镜桥创意筛选创作者、协调妆容方向、制作支持与内容交付规格。",
+        ourRole: "Venus Bridge筛选创作者、协调妆容方向、制作支持与内容交付规格。",
         productionScope: ["达人 shortlist", "产品试用设置", "妆造方向", "竖屏视频采集", "社媒素材协调"],
         deliverables: ["达人试用视频", "妆容短片", "竖屏剪辑", "产品社媒素材"],
         visualDirection: "真实、明亮、平台原生，同时保持高级且符合品牌安全。",
@@ -1679,7 +1659,7 @@ export const workPage = {
         delivered: "主持人 shortlist、活动记录、短视频片段与产品 walkaround 内容。",
         overview: "汽车活动需要自信的镜头讲解、本地现场记录与适合后续传播的快速内容。",
         clientNeed: "团队需要主持人选项、产品讲解支持，以及可用于社媒和内部复盘的活动素材。",
-        ourRole: "镜桥创意支持主持人筛选、拍摄流程、现场内容重点与短视频交付。",
+        ourRole: "Venus Bridge支持主持人筛选、拍摄流程、现场内容重点与短视频交付。",
         productionScope: ["主持人 shortlist", "活动采集", "Walkaround 规划", "短视频拍摄", "素材交付"],
         deliverables: ["主持人选项", "Walkaround 视频", "活动记录", "短视频剪辑"],
         visualDirection: "自信、清晰、高级，在产品细节与活动能量之间取得平衡。",
@@ -1694,7 +1674,7 @@ export const workPage = {
         delivered: "模特造型、妆造、编辑式摄影、产品特写与社媒裁切。",
         overview: "珠宝拍摄需要细节导向的图像、优雅佩戴场景和适合上市与公关的高级视觉氛围。",
         clientNeed: "品牌需要一场可控的英国拍摄，完成模特造型、产品特写与社媒适配素材。",
-        ourRole: "镜桥创意协调模特造型、妆造、摄影方向、特写拍摄与导出规格。",
+        ourRole: "Venus Bridge协调模特造型、妆造、摄影方向、特写拍摄与导出规格。",
         productionScope: ["模特与造型协调", "产品 handling", "编辑式摄影", "细节特写", "社媒裁切交付"],
         deliverables: ["模特佩戴图", "珠宝特写", "编辑式图片", "社媒裁切"],
         visualDirection: "精致、有触感、低调奢华，关注材质、皮肤与轮廓。",
@@ -1727,28 +1707,28 @@ export const workPage = {
 }>;
 
 export const footerCredibility = {
-  en: "FrameBridge Studio is a London-based creative production and talent partner supporting Chinese brands, agencies and PR teams with UK content production, commercial visuals and local execution.",
-  zh: "镜桥创意位于伦敦，为中国品牌、广告公司、媒体与PR团队提供英国本地商业内容制作、人才资源与项目执行支持。"
+  en: "Venus Bridge is a London-based creative production and talent partner supporting Chinese brands, agencies and PR teams with UK content production, commercial visuals and local execution.",
+  zh: "Venus Bridge位于伦敦，为中国品牌、广告公司、媒体与PR团队提供英国本地商业内容制作、人才资源与项目执行支持。"
 } satisfies Localized<string>;
 
 export const agenciesPage = {
   en: {
-    eyebrow: "For Agencies",
-    title: "Your UK production partner for brand, media and PR projects.",
+    eyebrow: "LOCALISE / UK execution",
+    title: "From overseas brief to controlled UK delivery.",
     intro:
-      "We support agencies with local production, talent, styling, photography, video, event coverage and bilingual coordination across the UK.",
+      "We turn overseas and agency briefs into feasible UK production plans, coordinating locations, local crews, suppliers, bilingual approvals and organised handoff.",
     sections: {
       supportEyebrow: "What we support",
-      supportTitle: "Local execution across the production stack.",
+      supportTitle: "UK production feasibility and local execution across the delivery stack.",
       whyEyebrow: "Why agencies work with us",
       whyTitle: "Built for clear handoffs, approval checkpoints and discreet delivery.",
       whiteLabelEyebrow: "White-label / partner support",
       whiteLabelTitle: "Support the project without competing for the client relationship.",
       requestsEyebrow: "Typical agency requests",
-      requestsTitle: "The briefs we help turn into UK execution.",
+      requestsTitle: "The briefs we translate into practical UK production routes.",
       processEyebrow: "Process",
       processTitle: "A practical route from agency brief to delivered assets.",
-      ctaTitle: "Need a UK execution partner?",
+      ctaTitle: "Need to turn an overseas brief into UK delivery?",
       ctaText: "Send us the brief.",
       ctaButton: "Send Brief"
     },
@@ -1791,22 +1771,22 @@ export const agenciesPage = {
     ]
   },
   zh: {
-    eyebrow: "代理合作",
-    title: "媒体、广告与PR公司的英国本地制作伙伴。",
+    eyebrow: "LOCALISE / 英国落地执行",
+    title: "从跨境需求到英国本地落地交付。",
     intro:
-      "我们为媒体、广告、公关和MCN团队提供英国本地拍摄、模特达人、妆造造型、摄影摄像、活动内容和中英双语执行支持。",
+      "我们把海外品牌与代理需求转化为英国可执行的制作方案，协调场地、本地团队、供应商、双语审批与规范化交付。",
     sections: {
       supportEyebrow: "支持范围",
-      supportTitle: "覆盖制作链路的英国本地执行支持。",
+      supportTitle: "覆盖交付链路的英国制作可行性与本地执行支持。",
       whyEyebrow: "为什么代理团队选择我们",
       whyTitle: "适合清晰交接、明确审核节点与低调交付的合作方式。",
       whiteLabelEyebrow: "白标 / 合作伙伴支持",
       whiteLabelTitle: "支持项目落地，不介入贵司客户关系。",
       requestsEyebrow: "常见代理需求",
-      requestsTitle: "我们帮助代理团队把需求变成英国本地执行。",
+      requestsTitle: "我们帮助代理团队把跨境需求转化为英国制作路径。",
       processEyebrow: "合作流程",
       processTitle: "从代理 brief 到素材交付的实用路径。",
-      ctaTitle: "需要英国本地执行伙伴？",
+      ctaTitle: "需要把跨境需求落地为英国项目？",
       ctaText: "把项目需求发给我们。",
       ctaButton: "提交需求"
     },

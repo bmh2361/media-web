@@ -40,9 +40,12 @@ export const eventResponsibilityRows: ResponsibilityRow[] = [
 export const agencyResponsibilityRows: Array<{ scope: LocalisedString; owner: LocalisedString }> = [
   { scope: l("Strategy ownership", "策略主导"), owner: l("Agency", "代理方") },
   { scope: l("Client communication", "客户沟通"), owner: l("Agency", "代理方") },
-  { scope: l("UK feasibility", "英国本地可行性"), owner: l("FrameBridge", "FrameBridge") },
-  { scope: l("Casting and local suppliers", "选角与本地供应商"), owner: l("FrameBridge", "FrameBridge") },
-  { scope: l("Production delivery", "制作执行"), owner: l("FrameBridge", "FrameBridge") },
+  { scope: l("UK feasibility", "英国本地可行性"), owner: l("Venus Bridge", "Venus Bridge") },
+  {
+    scope: l("Casting and local suppliers", "选角与本地供应商"),
+    owner: l("Venus Bridge", "Venus Bridge")
+  },
+  { scope: l("Production delivery", "制作执行"), owner: l("Venus Bridge", "Venus Bridge") },
   { scope: l("Agency review", "代理审核"), owner: l("Agency", "代理方") },
-  { scope: l("Final handoff", "最终交接"), owner: l("FrameBridge", "FrameBridge") }
+  { scope: l("Final handoff", "最终交接"), owner: l("Venus Bridge", "Venus Bridge") }
 ];

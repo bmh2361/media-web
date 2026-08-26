@@ -3,33 +3,39 @@ import { cloneElement, isValidElement, useRef, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { brand } from "@/content/brand";
 import type { Language } from "@/lib/i18n";
-import { projectTypes, type ProjectType } from "@/lib/contact/validation";
-const typeLabels = {
-  en: [
-    "Commercial campaign or photography",
-    "Video or brand film",
-    "Models, talent or creators",
-    "Research or academic collaboration",
-    "Technology event or exhibition",
-    "Agency or white-label support",
-    "Other"
-  ],
-  zh: [
-    "商业广告或摄影",
-    "视频或品牌影片",
-    "模特、人才或创作者",
-    "科研或学术协作",
-    "科技活动或展会",
-    "代理或白标支持",
-    "其他"
-  ]
-};
+import { marketEntryNeedKeys, projectTypes, type ProjectType } from "@/lib/contact/validation";
+const pathOptions: Array<{ value: ProjectType; en: string; zh: string }> = [
+  { value: "commercial", en: "Create content in the UK", zh: "在英国制作内容" },
+  { value: "events", en: "Launch an event or product in the UK", zh: "在英国完成活动或产品发布" },
+  { value: "market-entry", en: "Enter the UK market", zh: "进入英国市场" },
+  { value: "other", en: "Not sure yet", zh: "暂不确定" }
+];
+const industryOptions = [
+  ["automotive", "Automotive", "汽车与出行"],
+  ["fashion-beauty-apparel", "Fashion, Beauty & Apparel", "时尚、美妆与服装"],
+  ["entertainment-culture", "Entertainment & Culture", "娱乐与文化"],
+  ["technology-ai-research", "Technology, AI & Research", "科技、AI 与科研"],
+  ["other", "Other", "其他"]
+] as const;
 const serviceLabels = {
   production: { en: "Commercial production", zh: "商业制作" },
   talent: { en: "Talent coordination", zh: "人才协调" },
   research: { en: "Research and innovation", zh: "科研与创新" },
-  events: { en: "Events and exhibitions", zh: "活动与展会" },
-  localisation: { en: "UK localisation and agency support", zh: "英国本地化与代理支持" }
+  events: { en: "Events, exhibitions and roadshows", zh: "活动、展会与路演" },
+  localisation: { en: "UK production and local execution", zh: "英国制作与本地落地执行" }
+};
+const marketEntryNeedLabels: Record<(typeof marketEntryNeedKeys)[number], { en: string; zh: string }> = {
+  readiness: { en: "Market-entry readiness", zh: "市场进入准备" },
+  "company-setup": { en: "Company setup coordination", zh: "公司设立协同" },
+  "accounting-tax-referral": { en: "Accounting or tax referral", zh: "会计或税务专业对接" },
+  "vat-customs-eori-referral": { en: "VAT, customs or EORI referral", zh: "VAT、海关或 EORI 专业对接" },
+  "trade-mark-ip-referral": { en: "Trade mark and IP referral", zh: "商标与知识产权专业对接" },
+  "marketing-claims": { en: "Marketing and claims coordination", zh: "营销与声明合规协同" },
+  "data-privacy-review": { en: "Data and privacy review coordination", zh: "数据与隐私审核协同" },
+  "product-compliance-referral": { en: "Product compliance referral", zh: "产品合规专业对接" },
+  "uk-launch-campaign": { en: "UK launch campaign", zh: "英国市场发布传播" },
+  "roadshow-launch-event": { en: "Roadshow or launch event", zh: "路演或发布活动" },
+  "local-production": { en: "Local production support", zh: "英国本地制作支持" }
 };
 const adaptive: Record<ProjectType, Array<[string, string, string, string]>> = {
   commercial: [
@@ -64,11 +70,11 @@ const adaptive: Record<ProjectType, Array<[string, string, string, string]>> = {
   ],
   events: [
     ["eventFormat", "Event format", "活动形式", "text"],
-    ["audience", "Estimated audience", "预计受众规模", "number"],
     ["venueStatus", "Venue status", "场地状态", "text"],
-    ["speakerRequirement", "Speaker requirement", "嘉宾需求", "text"],
-    ["stageAv", "Stage, AV and exhibition requirements", "舞台、视听与展陈需求", "text"],
-    ["mediaContent", "Media content requirement", "媒体内容需求", "text"]
+    ["audience", "Audience type or estimated size", "受众类型或预计规模", "text"],
+    ["speakerRequirement", "Presenter or talent requirement", "主持或人才需求", "text"],
+    ["mediaContent", "Photography or video requirement", "摄影或视频需求", "text"],
+    ["roadshowCities", "Roadshow cities if relevant", "相关路演城市", "text"]
   ],
   agency: [
     ["whiteLabel", "White-label requirement", "白标要求", "text"],
@@ -77,6 +83,33 @@ const adaptive: Record<ProjectType, Array<[string, string, string, string]>> = {
     ["localScope", "Local production scope", "本地制作范围", "text"],
     ["talentRequired", "Talent requirement", "人才需求", "text"],
     ["handoff", "Asset handoff format", "素材交付格式", "text"]
+  ],
+  "market-entry": [
+    ["currentJurisdiction", "Current company jurisdiction", "当前公司注册地", "text"],
+    ["ukEntityStatus", "Existing UK entity status", "是否已建立英国实体", "text"],
+    ["entryStructure", "Subsidiary, branch or undecided", "子公司、分公司或尚未决定", "text"],
+    ["targetEntryDate", "Target UK entry date", "目标进入时间", "text"],
+    ["plannedUkActivity", "Planned UK business activity", "英国计划开展的业务", "text"],
+    ["sellsProducts", "Will you sell products?", "是否销售产品", "text"],
+    ["importsGoods", "Will you import goods?", "是否进口货物", "text"],
+    ["productCategory", "Product category if relevant", "相关产品类别", "text"],
+    ["hiresUkStaff", "Will you hire UK staff?", "是否雇佣英国员工", "text"],
+    ["needsUkMarketing", "Do you need UK marketing?", "是否需要英国营销", "text"],
+    ["collectsUkData", "Will you collect UK user data?", "是否收集英国用户数据", "text"],
+    ["plansRoadshow", "Are you planning a roadshow?", "是否计划举行路演", "text"],
+    [
+      "investorCommunication",
+      "Does this involve fundraising or investor communications?",
+      "是否涉及融资或投资者沟通",
+      "text"
+    ],
+    ["appointedAdvisers", "UK advisers already appointed", "已聘请的英国律师、会计师或其他顾问", "text"],
+    [
+      "coordinationScope",
+      "What should Venus Bridge coordinate?",
+      "希望 Venus Bridge 协调哪些部分",
+      "text"
+    ]
   ],
   other: [["additionalDetail", "Additional project detail", "补充项目需求", "text"]]
 };
@@ -98,33 +131,36 @@ const messages = {
     too_fast: "请稍候并检查项目需求后再提交。"
   }
 };
-const budgetOptions = {
-  en: [
-    ["under-10k", "Under GBP 10k"],
-    ["10k-25k", "GBP 10k-25k"],
-    ["25k-50k", "GBP 25k-50k"],
-    ["50k-plus", "GBP 50k+"],
-    ["to-discuss", "To discuss"]
-  ],
-  zh: [
-    ["under-10k", "低于 GBP 10k"],
-    ["10k-25k", "GBP 10k-25k"],
-    ["25k-50k", "GBP 25k-50k"],
-    ["50k-plus", "GBP 50k+"],
-    ["to-discuss", "待讨论"]
-  ]
-} as const;
-export function ContactForm({ language, initialProject }: { language: Language; initialProject?: string }) {
+export function ContactForm({
+  language,
+  initialProject,
+  showMarketEntry
+}: {
+  language: Language;
+  initialProject?: string;
+  showMarketEntry: boolean;
+}) {
   const zh = language === "zh",
-    initial = projectTypes.includes(initialProject as ProjectType) ? (initialProject as ProjectType) : "";
+    normalizedInitial =
+      initialProject === "create-in-the-uk"
+        ? "commercial"
+        : initialProject === "launch-in-the-uk"
+          ? "events"
+          : initialProject === "enter-the-uk"
+            ? "market-entry"
+            : initialProject,
+    initial = projectTypes.includes(normalizedInitial as ProjectType)
+      ? (normalizedInitial as ProjectType)
+      : "";
   const [step, setStep] = useState(1),
     [startedAt] = useState(Date.now()),
     [projectType, setProjectType] = useState(initial),
     [state, setState] = useState<"idle" | "sending" | "success" | "fallback" | "error">("idle"),
+    [errorReference, setErrorReference] = useState(""),
     [errors, setErrors] = useState<Record<string, string>>({});
   const formRef = useRef<HTMLFormElement>(null);
   const input =
-    "w-full border border-ink/20 bg-pearl px-4 py-3 text-sm outline-none focus:border-blue focus:ring-2 focus:ring-blue/20";
+    "min-h-[50px] w-full rounded-[10px] border border-ink/20 bg-pearl px-4 py-3 text-base outline-none transition hover:border-ink/40 focus:border-blue focus:ring-2 focus:ring-blue/15";
   function clearError(name: string) {
     setErrors((current) => {
       if (!current[name]) return current;
@@ -143,7 +179,7 @@ export function ContactForm({ language, initialProject }: { language: Language; 
   function validateStepOne(form: HTMLFormElement) {
     const values = new FormData(form);
     const nextErrors: Record<string, string> = {};
-    const required = ["name", "company", "email", "projectType", "market", "summary"];
+    const required = ["name", "company", "email", "projectType", "industry", "market", "summary"];
     for (const name of required) if (!String(values.get(name) ?? "").trim()) nextErrors[name] = "required";
     const email = String(values.get("email") ?? "").trim();
     if (email && !/^\S+@\S+\.\S+$/.test(email)) nextErrors.email = "invalid";
@@ -177,18 +213,22 @@ export function ContactForm({ language, initialProject }: { language: Language; 
         adaptive[(projectType || "commercial") as ProjectType].map(([k]) => [k, String(fd.get(k) ?? "")])
       );
     const payload = {
+      enquiryType: "full",
       name: fd.get("name"),
       company: fd.get("company"),
       email: fd.get("email"),
       contact: fd.get("contact"),
       projectType,
+      industry: fd.get("industry"),
       market: fd.get("market"),
       location: fd.get("location"),
       projectDate: fd.get("projectDate"),
-      budget: fd.get("budget"),
       services: fd.getAll("services"),
+      marketEntryNeeds: fd.getAll("marketEntryNeeds"),
       formats: fd.get("formats"),
       summary: fd.get("summary"),
+      referenceLinks: fd.get("referenceLinks"),
+      commercialParameters: fd.get("commercialParameters"),
       source: fd.get("source"),
       consent: fd.get("consent") === "on",
       website: fd.get("website"),
@@ -202,6 +242,7 @@ export function ContactForm({ language, initialProject }: { language: Language; 
           body: JSON.stringify(payload)
         }),
         body = await r.json();
+      setErrorReference(body.requestId ?? "");
       if (r.ok) {
         setState("success");
         return;
@@ -217,9 +258,9 @@ export function ContactForm({ language, initialProject }: { language: Language; 
           "market",
           "location",
           "projectDate",
-          "budget",
           "summary",
-          "projectType"
+          "projectType",
+          "industry"
         ].includes(key)
           ? 1
           : 2;
@@ -255,11 +296,15 @@ export function ContactForm({ language, initialProject }: { language: Language; 
         )
           clearError(target.name);
       }}
-      className="grid gap-5 border border-ink/10 bg-white/70 p-6 md:grid-cols-2"
+      className="grid gap-5 rounded-[16px] border border-ink/10 bg-white p-6 md:grid-cols-2 md:p-9"
       aria-describedby="form-status"
     >
       <div className="md:col-span-2">
-        <p className="text-xs uppercase tracking-editorial text-slate" aria-live="polite">
+        <div className="mb-5 grid grid-cols-2 gap-3" aria-hidden>
+          <span className={`h-px ${step >= 1 ? "bg-champagne" : "bg-ink/15"}`} />
+          <span className={`h-px ${step >= 2 ? "bg-champagne" : "bg-ink/15"}`} />
+        </div>
+        <p className="text-xs text-slate" aria-live="polite">
           {step === 1
             ? zh
               ? "第 1 步，共 2 步：项目基础信息"
@@ -342,7 +387,7 @@ export function ContactForm({ language, initialProject }: { language: Language; 
         </F>
         <F
           id="projectType"
-          label={zh ? "项目类型" : "Project type"}
+          label={zh ? "首要项目路径" : "Primary project route"}
           error={errors.projectType}
           language={language}
         >
@@ -358,9 +403,28 @@ export function ContactForm({ language, initialProject }: { language: Language; 
             <option value="" disabled>
               {zh ? "请选择" : "Select one"}
             </option>
-            {projectTypes.map((x, i) => (
-              <option key={x} value={x}>
-                {typeLabels[language][i]}
+            {pathOptions
+              .filter((option) => showMarketEntry || option.value !== "market-entry")
+              .map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option[language]}
+                </option>
+              ))}
+          </select>
+        </F>
+        <F
+          id="industry"
+          label={zh ? "专业领域" : "Expertise sector"}
+          error={errors.industry}
+          language={language}
+        >
+          <select className={input} id="industry" name="industry" required defaultValue="">
+            <option value="" disabled>
+              {zh ? "请选择" : "Select one"}
+            </option>
+            {industryOptions.map(([value, en, cn]) => (
+              <option key={value} value={value}>
+                {zh ? cn : en}
               </option>
             ))}
           </select>
@@ -390,27 +454,6 @@ export function ContactForm({ language, initialProject }: { language: Language; 
           <input className={input} id="projectDate" name="projectDate" type="date" />
         </F>
         <F
-          id="budget"
-          label={zh ? "预算范围" : "Approximate budget"}
-          error={errors.budget}
-          language={language}
-        >
-          <select
-            className={input}
-            id="budget"
-            name="budget"
-            defaultValue=""
-            aria-invalid={Boolean(errors.budget)}
-          >
-            <option value="">{zh ? "请选择预算范围（选填）" : "Select a range (optional)"}</option>
-            {budgetOptions[language].map(([value, label]) => (
-              <option key={value} value={value}>
-                {label}
-              </option>
-            ))}
-          </select>
-        </F>
-        <F
           id="summary"
           label={zh ? "项目目标或概述" : "Project objective or summary"}
           error={errors.summary}
@@ -432,6 +475,23 @@ export function ContactForm({ language, initialProject }: { language: Language; 
         </div>
       </div>
       <div data-step="2" className={`${step === 2 ? "contents" : "hidden"}`}>
+        {projectType === "market-entry" ? (
+          <fieldset className="rounded-[12px] border border-champagne/40 bg-mist p-5 md:col-span-2">
+            <legend className="px-2 text-sm font-semibold">
+              {zh
+                ? "需要协调的市场进入工作流（可多选）"
+                : "Market-entry workstreams to coordinate (select all that apply)"}
+            </legend>
+            <div className="mt-3 grid gap-3 sm:grid-cols-2">
+              {marketEntryNeedKeys.map((value) => (
+                <label key={value} className="flex gap-2 text-sm leading-6">
+                  <input type="checkbox" name="marketEntryNeeds" value={value} />
+                  {marketEntryNeedLabels[value][language]}
+                </label>
+              ))}
+            </div>
+          </fieldset>
+        ) : null}
         {adaptive[(projectType || "commercial") as ProjectType].map(([id, en, cn, type]) => (
           <F key={id} id={id} label={zh ? cn : en} language={language}>
             <input className={input} id={id} name={id} type={type} />
@@ -472,6 +532,31 @@ export function ContactForm({ language, initialProject }: { language: Language; 
         <F id="source" label={zh ? "如何了解到我们" : "How did you hear about us"} language={language}>
           <input className={input} id="source" name="source" />
         </F>
+        <F
+          id="referenceLinks"
+          label={zh ? "参考链接（选填）" : "Reference links (optional)"}
+          language={language}
+          wide
+        >
+          <textarea className={`${input} min-h-24`} id="referenceLinks" name="referenceLinks" />
+        </F>
+        <F
+          id="commercialParameters"
+          label={
+            zh ? "相关商业条件（选填，自由填写）" : "Relevant commercial parameters (optional, free text)"
+          }
+          language={language}
+          wide
+        >
+          <textarea className={`${input} min-h-24`} id="commercialParameters" name="commercialParameters" />
+        </F>
+        {projectType === "market-entry" ? (
+          <p className="border-l-2 border-champagne pl-4 text-sm leading-6 text-ink/65 md:col-span-2">
+            {zh
+              ? "请勿通过本表单发送护照、身份证、银行资料、股东敏感信息或未加密 KYC 文件。需要时，我们会在审核后提供安全传输方式。"
+              : "Do not send passports, identity documents, bank details, sensitive shareholder information or unencrypted KYC files through this form. If needed, a reviewed secure transfer route will be arranged separately."}
+          </p>
+        ) : null}
         <label className="flex gap-3 text-sm md:col-span-2">
           <input
             id="consent"
@@ -483,8 +568,8 @@ export function ContactForm({ language, initialProject }: { language: Language; 
           />
           <span>
             {zh
-              ? "我同意镜桥使用以上信息评估并跟进本次项目需求。"
-              : "I consent to FrameBridge using this information to assess and follow up this enquiry."}
+              ? "我同意 Venus Bridge Media 使用以上信息评估并跟进本次项目需求。"
+              : "I consent to Venus Bridge Media using this information to assess and follow up this enquiry."}
             {errors.consent && (
               <span id="consent-error" className="block text-red-700">
                 {messages[language][errors.consent as keyof typeof messages.en]}
@@ -503,6 +588,14 @@ export function ContactForm({ language, initialProject }: { language: Language; 
             <a className="text-blue" href={`mailto:${brand.email}`}>
               {brand.email}
             </a>
+          </p>
+        )}
+        {state === "error" && Object.keys(errors).length === 0 && (
+          <p role="alert" className="text-sm text-red-700 md:col-span-2">
+            {zh
+              ? "暂时无法提交。请稍后重试，或通过邮箱联系工作室。"
+              : "The brief could not be delivered. Try again shortly or contact the studio by email."}
+            {errorReference ? ` ${zh ? "参考编号" : "Reference"}: ${errorReference}` : ""}
           </p>
         )}
         <div className="flex gap-3 md:col-span-2">
@@ -544,7 +637,7 @@ function F({
     : children;
   return (
     <div className={`grid gap-2 ${wide ? "md:col-span-2" : ""}`}>
-      <label htmlFor={id} className="text-sm font-semibold">
+      <label htmlFor={id} className="text-sm font-medium">
         {label}
       </label>
       {control}
