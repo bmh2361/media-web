@@ -21,6 +21,7 @@ const en = {
   journeys: {
     eyebrow: "WHEN COMPANIES BRING US IN",
     title: "Useful when the UK or European opportunity has become real.",
+    context: "Five situations typically bring Venus Bridge into a project: commercial intent is clear, while the local path, relationships or execution still need structure.",
     situations: [
       { title: "Entering the UK or Europe", body: "Validate the opportunity, understand the local landscape and decide what should happen first." },
       { title: "Preparing a launch or exhibition", body: "Turn a fixed date into a joined-up programme before, during and after the event." },
@@ -106,6 +107,7 @@ const zh = {
   journeys: {
     eyebrow: "企业通常在这些时候找到我们",
     title: "当英国或欧洲机会已经从想法变成具体任务。",
+    context: "企业通常在商业意图已经明确，但本地路径、关系推进或执行方式仍需梳理时，引入 Venus Bridge。以下是五种常见情况。",
     situations: [
       { title: "准备进入英国或欧洲", body: "验证市场机会、了解本地格局，并判断第一步应该做什么。" },
       { title: "筹备发布或展会", body: "围绕确定日期，统筹活动前、现场及后续跟进。" },

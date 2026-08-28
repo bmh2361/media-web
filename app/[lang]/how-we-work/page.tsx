@@ -86,7 +86,7 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
       <section className="section-y bg-ink text-pearl">
         <div className="container-x">
           <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "我们承担什么" : "WHAT WE TAKE RESPONSIBILITY FOR"}</p>
-          <h2 className="type-heading-section zh-display-measure mt-6 max-w-[13ch]">
+          <h2 className="type-heading-section zh-display-measure heading-measure-standard mt-6 max-w-[13ch]">
             {zh ? "一个本地团队，把商务方向与现场行动连接起来。" : "One local team connecting commercial direction with action on the ground."}
           </h2>
           <div className="mt-10 grid border-l border-t border-pearl/15 md:grid-cols-2 lg:mt-14">
@@ -105,7 +105,7 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
         <div className="container-x">
           <div className="min-[1200px]:hidden">
             <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "项目顺序" : "THE PROJECT JOURNEY"}</p>
-            <h2 className="type-heading-section zh-display-measure mt-6 max-w-[11ch]">
+            <h2 className="type-heading-section zh-display-measure heading-measure-compact mt-6 max-w-[11ch]">
               {zh ? "五个阶段，从目标到持续跟进。" : "Five stages from objective to follow-through."}
             </h2>
             <div className="mt-10">
@@ -119,23 +119,23 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
             </div>
           </div>
           <div className="hidden gap-14 min-[1200px]:grid min-[1200px]:grid-cols-[.78fr_1.22fr]">
-          <div className="self-start lg:sticky lg:top-32">
-            <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "项目顺序" : "THE PROJECT JOURNEY"}</p>
-            <h2 className="type-heading-section zh-display-measure mt-6 max-w-[11ch]">
-              {zh ? "五个阶段，从目标到持续跟进。" : "Five stages from objective to follow-through."}
-            </h2>
-          </div>
-          <ol className="border-t border-ink/15">
-            {stages.map(([title, text], index) => (
-              <li key={title} className="grid gap-5 border-b border-ink/15 py-8 sm:grid-cols-[64px_1fr] lg:min-h-48">
-                <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
-                <div>
-                  <h3 className="text-3xl font-medium">{title}</h3>
-                  <p className="mt-5 max-w-xl text-lg leading-8 text-ink/62">{text}</p>
-                </div>
-              </li>
-            ))}
-          </ol>
+            <div className="self-start lg:sticky lg:top-32">
+              <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "项目顺序" : "THE PROJECT JOURNEY"}</p>
+              <h2 className="type-heading-section zh-display-measure heading-measure-compact mt-6 max-w-[11ch]">
+                {zh ? "五个阶段，从目标到持续跟进。" : "Five stages from objective to follow-through."}
+              </h2>
+            </div>
+            <ol className="border-t border-ink/15">
+              {stages.map(([title, text], index) => (
+                <li key={title} className="grid gap-5 border-b border-ink/15 py-8 sm:grid-cols-[64px_1fr] lg:min-h-48">
+                  <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
+                  <div>
+                    <h3 className="text-3xl font-medium">{title}</h3>
+                    <p className="mt-5 max-w-xl text-lg leading-8 text-ink/62">{text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </section>
@@ -143,7 +143,7 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
       <section className="section-y bg-porcelain" aria-labelledby="timing-title">
         <div className="container-x">
           <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "活动前、现场与活动后" : "BEFORE, ON THE GROUND & AFTER"}</p>
-          <h2 id="timing-title" className="type-heading-section zh-display-measure mt-6 max-w-[13ch]">
+          <h2 id="timing-title" className="type-heading-section zh-display-measure heading-measure-wide mt-6 max-w-[13ch]">
             {zh ? "市场节点只有连到后续行动，才真正有价值。" : "A market moment becomes valuable when it connects to what happens next."}
           </h2>
           <ol className="mt-12 grid border-y border-ink/15 md:grid-cols-3">
@@ -162,7 +162,7 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
         <div className="container-x grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-6">
             <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "专业能力何时加入" : "WHEN SPECIALISTS ENTER"}</p>
-            <h2 className="type-heading-section zh-display-measure mt-6 max-w-[12ch]">
+            <h2 className="type-heading-section zh-display-measure heading-measure-compact mt-6 max-w-[12ch]">
               {zh ? "由目标决定需要什么能力。" : "The goal determines the capability."}
             </h2>
           </div>

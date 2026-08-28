@@ -28,13 +28,13 @@ export function AboutTeam({ language }: { language: Language }) {
         data-about-chapter="operating-model"
       >
         <div className="container-x grid gap-12 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-4">
+          <div className="lg:col-span-4 min-[1200px]:col-span-5">
             <p className="text-xs uppercase tracking-editorial text-champagne">
               {zh ? "一个能力系统" : "ONE CAPABILITY SYSTEM"}
             </p>
             <h2
               id="delivery-system-title"
-              className="type-heading-section zh-display-measure mt-6 max-w-[11ch]"
+              className="type-heading-section zh-display-measure heading-measure-standard mt-6 max-w-[11ch]"
             >
               {zh ? "五种能力，服务同一个市场结果。" : "Five disciplines. One commercial direction."}
             </h2>
@@ -45,7 +45,7 @@ export function AboutTeam({ language }: { language: Language }) {
             </p>
           </div>
 
-          <ol className="border-t border-ink/15 lg:col-span-7 lg:col-start-6" data-operating-sequence>
+          <ol className="border-t border-ink/15 lg:col-span-7 lg:col-start-6 min-[1200px]:col-span-6 min-[1200px]:col-start-7" data-operating-sequence>
             {capabilitySystem.map(([title, description], index) => (
               <li
                 key={title}
@@ -73,7 +73,7 @@ export function AboutTeam({ language }: { language: Language }) {
               <p className="text-xs uppercase tracking-editorial text-champagne">
                 {zh ? "核心团队" : "CORE TEAM"}
               </p>
-              <h2 id="about-team-title" className="type-heading-section zh-display-measure mt-6 max-w-[11ch]">
+              <h2 id="about-team-title" className="type-heading-section zh-display-measure heading-measure-wide mt-6 max-w-[11ch]">
                 {zh ? "把总部目标变成本地行动的人。" : "The people turning headquarters goals into local action."}
               </h2>
             </div>
@@ -101,7 +101,7 @@ export function AboutTeam({ language }: { language: Language }) {
             </p>
             <h2
               id="specialist-network-title"
-              className="type-heading-section zh-display-measure mt-6 max-w-[11ch]"
+              className="type-heading-section zh-display-measure heading-measure-compact mt-6 max-w-[11ch]"
             >
               {zh ? "由项目决定需要什么专业能力。" : "The project determines the expertise required."}
             </h2>

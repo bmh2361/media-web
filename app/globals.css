@@ -209,6 +209,20 @@ a {
 .section-compact {
   padding-block: clamp(3.5rem, 6vw, var(--space-8));
 }
+@media (min-width: 1200px) {
+  .home-journeys-desktop {
+    padding-block: clamp(6rem, 7vw, 7rem);
+  }
+  .heading-measure-compact {
+    max-width: 18ch;
+  }
+  .heading-measure-standard {
+    max-width: 22ch;
+  }
+  .heading-measure-wide {
+    max-width: 26ch;
+  }
+}
 .display-heading,
 .type-display-hero {
   font-size: clamp(3.4rem, 5.65vw, 6rem);

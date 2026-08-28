@@ -118,7 +118,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
       <Section className="bg-pearl">
         <Container>
           <Eyebrow>{zh ? "我们在哪里创造价值" : "WHERE WE CREATE VALUE"}</Eyebrow>
-          <h2 className="editorial-heading mt-5 max-w-[15ch]">
+          <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[15ch]">
             {zh ? "当英国或欧洲机会需要真正开始推进。" : "When the UK or European opportunity needs to move."}
           </h2>
           <div className="mt-10 min-[1200px]:hidden">
@@ -143,7 +143,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
       <Section className="bg-porcelain">
         <Container>
           <Eyebrow>{zh ? "解决路径" : "SOLUTION ROUTES"}</Eyebrow>
-          <h2 className="editorial-heading mt-5 max-w-[14ch]">
+          <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">
             {zh ? "围绕商业结果组合本地行动。" : "Local action assembled around the commercial result."}
           </h2>
           <div className="mt-10 grid border-t border-ink/15 md:grid-cols-2 lg:mt-14" data-company-solution-grid>
@@ -168,7 +168,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
       <Section className="bg-night text-pearl">
         <Container>
           <Eyebrow className="text-champagne">{zh ? "客户获得什么" : "WHAT CLIENTS GAIN"}</Eyebrow>
-          <h2 className="editorial-heading mt-5 max-w-[14ch]">
+          <h2 className="editorial-heading heading-measure-wide mt-5 max-w-[14ch]">
             {zh ? "更快行动，更少复杂度，更强本地连续性。" : "Faster action. Less complexity. Stronger local continuity."}
           </h2>
           <div className="mt-10 grid border-y border-pearl/15 md:grid-cols-5 lg:mt-14" data-company-benefit-grid>
@@ -188,7 +188,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
           <div className="grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-7">
               <Eyebrow>{zh ? "从展会到商务管道" : "FROM EXHIBITION TO PIPELINE"}</Eyebrow>
-              <h2 className="editorial-heading mt-5 max-w-[13ch]">
+              <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[13ch]">
                 {zh ? "把固定日期变成前后连贯的商务行动。" : "Turn a fixed date into joined-up commercial activity."}
               </h2>
             </div>
@@ -312,7 +312,7 @@ export function PartnersJourney({ language }: { language: Language }) {
       <Section className="bg-pearl">
         <Container>
           <Eyebrow>{zh ? "项目可能需要的能力" : "CAPABILITIES WE COORDINATE"}</Eyebrow>
-          <h2 className="editorial-heading mt-5 max-w-[14ch]">
+          <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">
             {zh ? "由项目目标决定谁需要加入。" : "The project goal determines who needs to be involved."}
           </h2>
           <ul className="mt-10 grid border-y border-ink/15 md:mt-12 md:grid-cols-3" data-partner-type-list>
@@ -329,7 +329,7 @@ export function PartnersJourney({ language }: { language: Language }) {
       <Section className="bg-porcelain">
         <Container>
           <Eyebrow>{zh ? "合作方获得什么" : "WHAT PARTNERS RECEIVE"}</Eyebrow>
-          <h2 className="editorial-heading mt-5 max-w-[14ch]">
+          <h2 className="editorial-heading heading-measure-wide mt-5 max-w-[14ch]">
             {zh ? "相关机会、清楚范围和顺畅跨境协作。" : "Relevant opportunities, clear scope and smoother cross-border collaboration."}
           </h2>
           <div className="mt-10 grid border-t border-ink/15 md:grid-cols-2 lg:mt-14 lg:grid-cols-3" data-partner-fit-grid>
@@ -350,7 +350,7 @@ export function PartnersJourney({ language }: { language: Language }) {
       <Section className="bg-night text-pearl">
         <Container>
           <Eyebrow className="text-champagne">{zh ? "合作如何展开" : "HOW WE WORK WITH PARTNERS"}</Eyebrow>
-          <h2 className="editorial-heading mt-5 max-w-[14ch]">
+          <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">
             {zh ? "从商业背景到项目成果，全程保持清楚。" : "Clear from commercial context through to useful outputs."}
           </h2>
           <div className="mt-10 min-[1200px]:hidden">

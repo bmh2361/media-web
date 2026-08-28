@@ -109,7 +109,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           </p>
           <div className="mt-7 grid gap-10 lg:grid-cols-12 lg:gap-8">
             <EditorialReveal className="lg:col-span-6">
-              <h2 id="why-title" className="type-display-page zh-display-measure max-w-[11ch]">
+              <h2 id="why-title" className="type-display-page zh-display-measure heading-measure-wide max-w-[11ch]">
                 {zh ? "关键是让每一个本地行动都服务同一个商业目标。" : "Make every local action work towards the same commercial goal."}
               </h2>
             </EditorialReveal>
@@ -160,7 +160,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           <div className="mt-7 grid gap-10 lg:grid-cols-12 lg:items-end">
             <h2
               id="accountability-title"
-              className="type-heading-section zh-display-measure max-w-[14ch] lg:col-span-8"
+              className="type-heading-section zh-display-measure heading-measure-standard max-w-[14ch] lg:col-span-8"
             >
               {zh
                 ? "从最初市场判断到现场执行与后续跟进，工作始终保持连接。"
