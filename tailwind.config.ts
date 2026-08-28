@@ -9,43 +9,28 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0b0d10",
-        night: "#14171c",
-        graphite: "#242830",
-        slate: "#646b75",
-        silver: "#c8cdd2",
-        champagne: "#d8c7a2",
-        pearl: "#fbfaf7",
-        porcelain: "#f7f3ec",
-        mist: "#ece7dd",
-        blue: "#1467a9",
-        blueBright: "#6fb7ff"
+        ink: "#0b0d0e",
+        night: "#141719",
+        graphite: "#242729",
+        slate: "#5d6264",
+        silver: "#cbc5ba",
+        champagne: "#c8a56a",
+        pearl: "#f3f0e9",
+        porcelain: "#f8f6f1",
+        mist: "#e8e4dc",
+        blue: "#2d58ef",
+        blueBright: "#2d58ef"
       },
       fontFamily: {
-        sans: [
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          '"PingFang SC"',
-          '"Microsoft YaHei"',
-          "sans-serif"
-        ],
-        serif: ["Georgia", '"Noto Serif SC"', '"Songti SC"', "serif"]
+        sans: ["var(--font-sans)", "Inter", "Arial", "sans-serif"],
+        zh: ["var(--font-zh)", "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "sans-serif"]
       },
-      boxShadow: {
-        soft: "0 24px 80px rgba(11, 13, 16, 0.12)",
-        cinematic: "0 32px 120px rgba(11, 13, 16, 0.32)"
-      },
-      maxWidth: {
-        container: "1440px"
-      },
-      letterSpacing: {
-        editorial: "0.08em"
-      }
+      maxWidth: { container: "1320px", reading: "62ch" },
+      letterSpacing: { editorial: "0.055em" },
+      transitionTimingFunction: { editorial: "cubic-bezier(.22,1,.36,1)" },
+      boxShadow: { soft: "none", cinematic: "none" }
     }
   },
   plugins: []
 };
-
 export default config;

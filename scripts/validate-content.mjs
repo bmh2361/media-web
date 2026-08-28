@@ -13,6 +13,8 @@ const responsibilitiesSource = read("content/responsibilities.ts");
 const termsSource = read("app/[lang]/terms/page.tsx");
 const aboutSource = read("content/pages/about.ts");
 const serviceProofSource = read("content/service-proof.ts");
+const caseTemplateSource = read("content/cases/template.ts");
+const companySource = read("content/company.ts");
 const errors = [];
 
 const slugMatches = [...casesSource.matchAll(/slug:\s*"([a-z0-9-]+)"/g)];
@@ -62,10 +64,10 @@ for (const field of arrayFields) {
 }
 
 const illegalEvidence = [
-  { status: "published", evidence: "unverified" },
+  { status: "verified", evidence: "unverified" },
   { status: "anonymised", evidence: "unverified" },
-  { status: "published", evidence: "company-confirmed" },
-  { status: "published", evidence: "unverified" }
+  { status: "confidential", evidence: "unverified" },
+  { status: "verified", evidence: "company-confirmed" }
 ];
 for (const rule of illegalEvidence) {
   if (
@@ -100,8 +102,8 @@ for (const file of [
 }
 if (homepageSource.includes("workPage") || homepageSource.includes("work.cases"))
   errors.push("Homepage must use canonical case records.");
-if (!casePageSource.includes("Concept Project Model") || !casePageSource.includes("概念项目模式"))
-  errors.push("Concept case metadata does not use the required disclosure terminology.");
+if (!casePageSource.includes("getEffectiveWorkMode") || !casePageSource.includes("buildMetadata"))
+  errors.push("Case metadata must be governed by work mode and the shared release-readiness indexing gate.");
 for (const service of ["commercial", "talent", "research", "events", "agency"]) {
   if (!serviceProofSource.includes(`${service}: {`))
     errors.push(`Missing service-specific proof for ${service}.`);
@@ -135,6 +137,23 @@ if (/launch-readiness text|上线准备文本/.test(termsSource))
 if (/require company confirmation|需经公司确认/.test(aboutSource))
   errors.push("Public About content contains an internal confirmation marker.");
 if (process.env.VALIDATE_CONTENT_TEST_INJECT_VIOLATION) errors.push("Injected content-contract violation.");
+for (const rule of [
+  "verified projects require approved project media",
+  "verified projects require a confirmed project date",
+  "anonymised projects cannot expose a client display name",
+  "confidential projects must withhold the client name",
+  "concept projects require bilingual public disclosure"
+])
+  if (!caseTemplateSource.includes(rule)) errors.push(`Missing project governance rule: ${rule}.`);
+for (const field of [
+  "legalName",
+  "companyNumber",
+  "registeredOffice",
+  "privacyContact",
+  "legalApprovalStatus",
+  "termsApprovalStatus"
+])
+  if (!companySource.includes(field)) errors.push(`Missing company configuration field: ${field}.`);
 
 if (errors.length) {
   console.error(errors.join("\n"));

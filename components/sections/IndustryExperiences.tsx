@@ -1,188 +1,171 @@
 import Link from "next/link";
 import { MediaSlot } from "@/components/media/MediaSlot";
-import type { IndustryRecord, IndustryVariant } from "@/content/pages/industries";
-import type { Language } from "@/lib/i18n";
-import { withLanguage } from "@/lib/i18n";
+import type { IndustryRecord } from "@/content/pages/industries";
+import { withLanguage, type Language } from "@/lib/i18n";
 
-type Props = { record: IndustryRecord; language: Language };
+export function IndustryExperience({
+  record,
+  language,
+  showScenarios,
+  showMarketEntry
+}: {
+  record: IndustryRecord;
+  language: Language;
+  showScenarios: boolean;
+  showMarketEntry: boolean;
+}) {
+  const zh = language === "zh";
+  const details = (
+    <div>
+      <p className="eyebrow text-champagne">{zh ? "进入英国时的常见问题" : "Common UK challenge"}</p>
+      <h2 className="editorial-heading mt-5 max-w-[14ch]">{record.title[language]}</h2>
+      <p className="body-large mt-6 max-w-2xl text-ink/65">{record.challenge[language]}</p>
+      <div className="mt-8 grid gap-6 border-t border-ink/15 pt-6 sm:grid-cols-3">
+        <IndustryList
+          title={zh ? "Venus Bridge 可承担" : "Venus Bridge role"}
+          items={record.capabilities}
+          language={language}
+        />
+        <IndustryList
+          title={zh ? "典型内容形式" : "Typical formats"}
+          items={record.formats}
+          language={language}
+        />
+        <IndustryList
+          title={zh ? "典型交付" : "Typical delivery"}
+          items={record.deliverables}
+          language={language}
+        />
+      </div>
+      <div className="mt-8 flex flex-wrap gap-4">
+        {record.detailPath ? (
+          <Link
+            href={withLanguage(record.detailPath, language)}
+            className="inline-flex min-h-11 items-center border-b border-ink px-1 text-sm font-medium"
+          >
+            {zh ? "查看行业制作详情" : "Explore sector production"} ↗
+          </Link>
+        ) : null}
+        {record.relatedServicePaths.map((path) => (
+          <Link
+            key={path}
+            href={withLanguage(path, language)}
+            className="inline-flex min-h-11 items-center border-b border-ink px-1 text-sm font-medium"
+          >
+            {zh ? "相关服务" : "Related service"} ↗
+          </Link>
+        ))}
+        {showScenarios && record.relatedWorkFilter ? (
+          <Link
+            href={withLanguage("/work", language)}
+            className="inline-flex min-h-11 items-center border-b border-ink px-1 text-sm font-medium"
+          >
+            {zh ? "相关制作场景" : "Related production scenario"} ↗
+          </Link>
+        ) : null}
+        {showMarketEntry &&
+        ["fashion-beauty-apparel", "ai-technology-robotics", "automotive-mobility"].includes(record.key) ? (
+          <Link
+            href={withLanguage("/services/uk-market-entry", language)}
+            className="inline-flex min-h-11 items-center border-b border-ink px-1 text-sm font-medium"
+          >
+            {zh ? "该行业的英国市场进入协同" : "UK market entry for this sector"} ↗
+          </Link>
+        ) : null}
+      </div>
+    </div>
+  );
 
-function Copy({ record, language }: Props) {
-  const labels =
-    language === "zh"
-      ? ["商业挑战", "相关能力", "常见形式", "预期交付"]
-      : ["Commercial challenge", "Capabilities", "Formats", "Deliverables"];
-  const groups: Array<[string, string[]]> = [
-    [labels[0], [record.challenge[language]]],
-    [labels[1], record.capabilities.map((item) => item[language])],
-    [labels[2], record.formats.map((item) => item[language])],
-    [labels[3], record.deliverables.map((item) => item[language])]
-  ];
-  return (
-    <div className="grid gap-5 md:grid-cols-2">
-      {groups.map(([label, values]) => (
-        <div key={label} className="border-current/20 border-t pt-4">
-          <p className="text-xs uppercase tracking-editorial opacity-50">{label}</p>
-          <p className="mt-4 leading-7 opacity-75">{values.join(" · ")}</p>
+  if (record.variant === "systems" || record.variant === "channel-matrix") {
+    return (
+      <section id={record.key} className="section-y scroll-mt-32 border-t border-ink/10 bg-mist">
+        <div className="container-x grid gap-10 lg:grid-cols-[1.1fr_.9fr] lg:items-start">
+          {details}
+          <div className="grid gap-3 rounded-[18px] bg-ink p-5 text-pearl sm:grid-cols-2">
+            {[...record.formats, ...record.deliverables].map((item, index) => (
+              <div key={item.en} className="min-h-32 border border-pearl/15 p-4">
+                <span className="text-xs text-champagne">0{index + 1}</span>
+                <p className="mt-8 text-lg">{item[language]}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  );
-}
+      </section>
+    );
+  }
 
-function Links({ record, language }: Props) {
-  return (
-    <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-sm font-semibold text-blue">
-      {record.relatedServicePaths.map((path) => (
-        <Link key={path} href={withLanguage(path, language)}>
-          {language === "zh" ? "相关服务" : "Related service"} →
-        </Link>
-      ))}
-      <Link href={withLanguage("/work", language)}>
-        {language === "zh" ? "查看项目模式" : "Explore Project Models"} →
-      </Link>
-    </div>
-  );
-}
+  if (record.variant === "publication" || record.variant === "sequence") {
+    return (
+      <section id={record.key} className="section-y scroll-mt-32 border-t border-ink/10 bg-pearl">
+        <div className="container-x">
+          <div className="grid gap-10 lg:grid-cols-[.75fr_1.25fr] lg:items-start">
+            <MediaSlot
+              id={record.mediaIds[0]}
+              language={language}
+              showCaption={false}
+              sizes="(min-width:1024px) 38vw,100vw"
+              className={record.variant === "publication" ? "aspect-[3/4]" : "aspect-[4/3]"}
+            />
+            {details}
+          </div>
+          {record.variant === "sequence" ? (
+            <div className="mt-10 grid gap-3 sm:grid-cols-3">
+              {record.mediaIds.slice(0, 3).map((id) => (
+                <MediaSlot
+                  key={id}
+                  id={id}
+                  language={language}
+                  showCaption={false}
+                  className="aspect-[4/3]"
+                />
+              ))}
+            </div>
+          ) : null}
+        </div>
+      </section>
+    );
+  }
 
-function Editorial({ record, language }: Props) {
-  return (
-    <div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
-      <div>
-        <Copy record={record} language={language} />
-        <Links record={record} language={language} />
-      </div>
-      <div className="grid grid-cols-2 gap-3">
-        <MediaSlot id={record.mediaIds[0]} language={language} className="aspect-[4/5]" />
-        <MediaSlot id={record.mediaIds[1]} language={language} className="mt-12 aspect-[3/2]" />
-        <MediaSlot id={record.mediaIds[2]} language={language} className="col-span-2 aspect-[16/7]" />
-      </div>
-    </div>
-  );
-}
-function Systems({ record, language }: Props) {
-  return (
-    <div className="grid gap-8 lg:grid-cols-[1.1fr_.9fr]">
-      <div className="border border-blue/30 bg-ink p-6 text-pearl">
-        <p className="text-xs uppercase tracking-editorial text-blueBright">
-          {language === "zh" ? "内容流程" : "Content flow"}
-        </p>
-        <div className="mt-8 grid gap-3 md:grid-cols-3">
-          {[
-            language === "zh" ? "产品用例" : "Product use case",
-            language === "zh" ? "审核演示" : "Reviewed demonstration",
-            language === "zh" ? "渠道交付" : "Channel delivery"
-          ].map((step) => (
-            <p key={step} className="border border-pearl/20 p-4 text-sm">
-              {step}
-            </p>
-          ))}
-        </div>
-        <div className="mt-5">
-          <Copy record={record} language={language} />
-        </div>
-        <Links record={record} language={language} />
-      </div>
-      <MediaSlot id={record.mediaIds[0]} language={language} className="aspect-[4/5]" />
-    </div>
-  );
-}
-function Cinematic({ record, language }: Props) {
-  return (
-    <>
-      <MediaSlot id={record.mediaIds[0]} language={language} className="aspect-[16/7]" />
-      <div className="mt-8 grid gap-8 lg:grid-cols-[.9fr_1.1fr]">
-        <MediaSlot id={record.mediaIds[1]} language={language} className="aspect-[4/3]" />
-        <div>
-          <Copy record={record} language={language} />
-          <Links record={record} language={language} />
-        </div>
-      </div>
-    </>
-  );
-}
-function Publication({ record, language }: Props) {
-  return (
-    <div className="grid gap-8 lg:grid-cols-[.7fr_1fr_.7fr]">
-      <MediaSlot id={record.mediaIds[0]} language={language} className="aspect-[4/5]" />
-      <div className="columns-1 gap-8 md:columns-2">
-        <Copy record={record} language={language} />
-      </div>
-      <div>
-        <MediaSlot id={record.mediaIds[1]} language={language} className="aspect-square" />
-        <Links record={record} language={language} />
-      </div>
-    </div>
-  );
-}
-function Sequence({ record, language }: Props) {
-  const steps =
-    language === "zh" ? ["舞台", "访谈", "观众", "回顾"] : ["Stage", "Interview", "Audience", "Recap"];
-  return (
-    <div className="grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
-      <div>
-        <Copy record={record} language={language} />
-        <Links record={record} language={language} />
-      </div>
-      <div>
-        <div className="grid grid-cols-4 gap-px bg-ink/20">
-          {steps.map((step) => (
-            <p key={step} className="bg-pearl p-4 text-xs uppercase tracking-editorial">
-              {step}
-            </p>
-          ))}
-        </div>
-        <div className="mt-4 grid gap-4 md:grid-cols-2">
-          <MediaSlot id={record.mediaIds[0]} language={language} className="aspect-[4/3]" />
-          <MediaSlot id={record.mediaIds[1]} language={language} className="aspect-[4/3]" />
-        </div>
-      </div>
-    </div>
-  );
-}
-function ChannelMatrix({ record, language }: Props) {
-  const channels =
-    language === "zh" ? ["电商", "社媒", "零售", "创作者"] : ["E-commerce", "Social", "Retail", "Creator"];
-  return (
-    <div className="grid gap-8 lg:grid-cols-[1fr_.9fr]">
-      <div>
-        <div className="grid grid-cols-2 gap-px bg-ink/20">
-          {channels.map((channel) => (
-            <p key={channel} className="bg-porcelain p-5 text-sm font-semibold">
-              {channel}
-            </p>
-          ))}
-        </div>
-        <div className="mt-8">
-          <Copy record={record} language={language} />
-        </div>
-        <Links record={record} language={language} />
-      </div>
-      <MediaSlot id={record.mediaIds[0]} language={language} className="aspect-[4/5]" />
-    </div>
-  );
-}
-
-const variants: Record<IndustryVariant, (props: Props) => React.ReactNode> = {
-  editorial: Editorial,
-  systems: Systems,
-  cinematic: Cinematic,
-  publication: Publication,
-  sequence: Sequence,
-  "channel-matrix": ChannelMatrix
-};
-
-export function IndustryExperience({ record, language }: Props) {
-  const Variant = variants[record.variant];
   return (
     <section
-      data-industry-variant={record.variant}
-      className="section-y border-t border-ink/10 bg-porcelain text-ink even:bg-ink even:text-pearl"
+      id={record.key}
+      className={`scroll-mt-32 border-t border-ink/10 ${record.variant === "cinematic" ? "bg-night py-16 text-pearl" : "bg-porcelain py-16"}`}
     >
       <div className="container-x">
-        <p className="text-xs uppercase tracking-editorial text-champagne">{record.variant}</p>
-        <h2 className="mt-4 max-w-3xl text-4xl font-semibold leading-tight">{record.title[language]}</h2>
-        <Variant record={record} language={language} />
+        <MediaSlot
+          id={record.mediaIds[0]}
+          language={language}
+          showCaption={false}
+          sizes="100vw"
+          className="aspect-[16/7]"
+        />
+        <div
+          className={`mt-10 ${record.variant === "cinematic" ? "[&_a]:border-pearl [&_a]:text-pearl [&_h2]:text-pearl [&_li]:text-pearl/80 [&_p]:text-pearl/70" : ""}`}
+        >
+          {details}
+        </div>
       </div>
     </section>
+  );
+}
+
+function IndustryList({
+  title,
+  items,
+  language
+}: {
+  title: string;
+  items: IndustryRecord["capabilities"];
+  language: Language;
+}) {
+  return (
+    <div>
+      <p className="eyebrow text-slate">{title}</p>
+      <ul className="mt-3 space-y-2 text-base leading-7">
+        {items.map((item) => (
+          <li key={item.en}>{item[language]}</li>
+        ))}
+      </ul>
+    </div>
   );
 }

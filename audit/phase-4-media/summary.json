@@ -1,0 +1,582 @@
+{
+  "generatedAt": "2026-08-20T20:47:35.097Z",
+  "root": "D:/media web/media-web/public/media",
+  "totalAssets": 1050,
+  "formats": {
+    "heif": 364,
+    "jpeg": 107,
+    "svg": 37,
+    "webp": 542
+  },
+  "orientations": {
+    "landscape": 672,
+    "portrait": 362,
+    "square": 16
+  },
+  "exactDuplicateFiles": 20,
+  "variantGroups": 444,
+  "currentlyReferenced": 1015,
+  "contactSheets": 115,
+  "topHomepageCandidates": [
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/04-gallery.avif",
+      "totalScore": 33.1,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 4.2,
+        "premiumFeel": 4.7,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/04-gallery.webp",
+      "totalScore": 33.1,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 4.2,
+        "premiumFeel": 4.7,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "expertise/entertainment-culture/interviews/uk-location-cast-production-duplicate.avif",
+      "totalScore": 32.6,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 4.2,
+        "premiumFeel": 4.2,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "expertise/entertainment-culture/interviews/uk-location-cast-production-duplicate.jpg",
+      "totalScore": 32.6,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 4.2,
+        "premiumFeel": 4.2,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "expertise/entertainment-culture/interviews/uk-location-cast-production-duplicate.webp",
+      "totalScore": 32.6,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 4.2,
+        "premiumFeel": 4.2,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/01-hero.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/01-hero.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/02-cover.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/02-cover.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/03-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/03-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/04-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/04-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/05-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/05-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/06-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/06-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/07-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/byd-bd11-london/07-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/01-hero.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/01-hero.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/02-cover.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/02-cover.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/03-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/03-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/05-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/05-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/06-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/06-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/07-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/catl-open-day-2025/07-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/01-hero.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/01-hero.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/02-cover.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/02-cover.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/05-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/05-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/06-gallery.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/changan-europe-launch-2025/06-gallery.webp",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    },
+    {
+      "relativePath": "portfolio/automotive/european-road-lifestyle/01-hero.avif",
+      "totalScore": 32.4,
+      "scores": {
+        "commercialRelevance": 4.2,
+        "visualQuality": 3.7,
+        "premiumFeel": 4.5,
+        "internationalContext": 3.9,
+        "focalClarity": 4.1,
+        "compositionFlexibility": 3.8,
+        "websiteCropSafety": 3.8,
+        "colourCompatibility": 4.4
+      }
+    }
+  ]
+}

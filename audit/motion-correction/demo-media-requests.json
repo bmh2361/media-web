@@ -1,0 +1,34 @@
+{
+  "routes": [
+    "/en",
+    "/en/services",
+    "/en/work",
+    "/en/industries",
+    "/en/about",
+    "/en/services/commercial-production",
+    "/en/services/events-exhibitions",
+    "/en/services/research-innovation"
+  ],
+  "requested": [
+    "/media/demo/agency-handoff.webp",
+    "/media/demo/automotive-motion.webp",
+    "/media/demo/campaign-sequence.webp",
+    "/media/demo/editorial-spread.webp",
+    "/media/demo/event-stage.webp",
+    "/media/demo/fashion-crop.webp",
+    "/media/demo/home-hero.webp",
+    "/media/demo/interview-frame.webp",
+    "/media/demo/landscape-film.webp",
+    "/media/demo/marks/mark-01.svg",
+    "/media/demo/marks/mark-02.svg",
+    "/media/demo/marks/mark-03.svg",
+    "/media/demo/marks/mark-04.svg",
+    "/media/demo/marks/mark-05.svg",
+    "/media/demo/marks/mark-06.svg",
+    "/media/demo/marks/mark-07.svg",
+    "/media/demo/production-frame.webp",
+    "/media/demo/research-map.webp",
+    "/media/demo/talent-sheet.webp",
+    "/media/demo/technology-layer.webp"
+  ]
+}

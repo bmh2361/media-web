@@ -1,0 +1,234 @@
+{
+  "generatedAt": "2026-08-26T13:27:15.529Z",
+  "fixtureManifest": {
+    "generatedAt": "2026-07-17T10:33:37.385Z",
+    "purpose": "Performance-only fixtures; never production or portfolio media.",
+    "assets": [
+      {
+        "name": "hero-desktop.webp",
+        "width": 1200,
+        "height": 1500,
+        "bytes": 225010
+      },
+      {
+        "name": "hero-mobile.webp",
+        "width": 720,
+        "height": 960,
+        "bytes": 82666
+      },
+      {
+        "name": "poster-desktop.webp",
+        "width": 1200,
+        "height": 675,
+        "bytes": 98680
+      },
+      {
+        "name": "gallery-01.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 63546
+      },
+      {
+        "name": "gallery-02.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 64146
+      },
+      {
+        "name": "gallery-03.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 63652
+      },
+      {
+        "name": "gallery-04.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 64940
+      },
+      {
+        "name": "gallery-05.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 63678
+      },
+      {
+        "name": "gallery-06.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 64806
+      },
+      {
+        "name": "gallery-07.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 64494
+      },
+      {
+        "name": "gallery-08.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 63112
+      },
+      {
+        "name": "gallery-09.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 63822
+      },
+      {
+        "name": "gallery-10.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 64192
+      },
+      {
+        "name": "gallery-11.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 62944
+      },
+      {
+        "name": "gallery-12.webp",
+        "width": 900,
+        "height": 600,
+        "bytes": 64304
+      }
+    ],
+    "simulatedVideo": {
+      "name": "hero-video-payload.bin",
+      "bytes": 1200000,
+      "assumedDurationSeconds": 8,
+      "assumedBitrateMbps": 1.2,
+      "note": "Network payload simulation only; not a playable public video."
+    }
+  },
+  "results": [
+    {
+      "scenario": "fast-desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "navigationMs": 1835,
+      "routeTransitionMs": 70,
+      "videoPayloadMs": null,
+      "simulatedVideoBytes": 0,
+      "scrollFrameP95Ms": 17.3,
+      "lcp": 92,
+      "cls": 0.00025557725694444445,
+      "inp": 16,
+      "longTasks": 0,
+      "longTaskDuration": 0,
+      "visibleOverflow": 0,
+      "overflowTargets": [],
+      "brokenImages": 0,
+      "transferBytes": 1104095,
+      "jsBytes": 228903,
+      "imageBytes": 363399,
+      "jsHeapUsed": 8334384,
+      "fixtureRequests": 3,
+      "fixtureImageRequests": 3,
+      "fixtureVideoRequests": 0,
+      "simulatedFixtureBytes": 352702
+    },
+    {
+      "scenario": "mid-laptop",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "navigationMs": 2511,
+      "routeTransitionMs": 203,
+      "videoPayloadMs": null,
+      "simulatedVideoBytes": 0,
+      "scrollFrameP95Ms": 17.4,
+      "lcp": 404,
+      "cls": 0.000185394287109375,
+      "inp": 16,
+      "longTasks": 1,
+      "longTaskDuration": 55,
+      "visibleOverflow": 0,
+      "overflowTargets": [],
+      "brokenImages": 0,
+      "transferBytes": 1064930,
+      "jsBytes": 228903,
+      "imageBytes": 324234,
+      "jsHeapUsed": 9608104,
+      "fixtureRequests": 2,
+      "fixtureImageRequests": 2,
+      "fixtureVideoRequests": 0,
+      "simulatedFixtureBytes": 288556
+    },
+    {
+      "scenario": "mid-mobile-slow4g",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "navigationMs": 5253,
+      "routeTransitionMs": 922,
+      "videoPayloadMs": null,
+      "simulatedVideoBytes": 0,
+      "scrollFrameP95Ms": 18,
+      "lcp": 924,
+      "cls": 0,
+      "inp": 40,
+      "longTasks": 3,
+      "longTaskDuration": 284,
+      "visibleOverflow": 0,
+      "overflowTargets": [],
+      "brokenImages": 0,
+      "transferBytes": 677548,
+      "jsBytes": 225103,
+      "imageBytes": 179488,
+      "jsHeapUsed": 12761940,
+      "fixtureRequests": 2,
+      "fixtureImageRequests": 2,
+      "fixtureVideoRequests": 0,
+      "simulatedFixtureBytes": 146212
+    },
+    {
+      "scenario": "reduced-data-motion",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "navigationMs": 4965,
+      "routeTransitionMs": 784,
+      "videoPayloadMs": null,
+      "simulatedVideoBytes": 0,
+      "scrollFrameP95Ms": 20.1,
+      "lcp": 916,
+      "cls": 0.00021437592976866575,
+      "inp": 48,
+      "longTasks": 3,
+      "longTaskDuration": 308,
+      "visibleOverflow": 0,
+      "overflowTargets": [],
+      "brokenImages": 0,
+      "transferBytes": 685156,
+      "jsBytes": 225665,
+      "imageBytes": 179488,
+      "jsHeapUsed": 11292280,
+      "fixtureRequests": 2,
+      "fixtureImageRequests": 2,
+      "fixtureVideoRequests": 0,
+      "simulatedFixtureBytes": 146212
+    }
+  ],
+  "thresholds": {
+    "mobileLcpMs": 2500,
+    "cls": 0.1,
+    "inpMs": 200,
+    "routeTransitionMs": 800,
+    "visibleOverflow": 0,
+    "brokenImages": 0
+  },
+  "violations": [
+    {
+      "scenario": "mid-mobile-slow4g",
+      "detail": "route transition 922ms"
+    }
+  ]
+}

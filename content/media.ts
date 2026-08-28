@@ -3,8 +3,10 @@ import type { Language } from "@/lib/i18n";
 type Localized<T> = Record<Language, T>;
 
 export type MediaPublicationStatus = "placeholder" | "illustrative" | "approved" | "restricted";
+export type MediaApprovalStatus = "placeholder" | "internal-review" | "approved" | "restricted";
 export type MediaRightsState = "not-applicable" | "unverified" | "company-approved" | "client-approved";
 export type MediaSourceType = "placeholder" | "illustration" | "company-library" | "client-supplied";
+export type MediaMode = "fallback" | "demo" | "approved";
 
 export type CasePrefix = "event" | "fashion" | "technology" | "beauty" | "automotive" | "jewellery";
 type CaseSlot = "hero" | "landscape" | "portrait" | "diagram";
@@ -44,6 +46,7 @@ export type MediaId =
   | "home-create"
   | "home-connect"
   | "home-activate"
+  | "home-localise"
   | "home-featured-case"
   | "home-supporting-case-01"
   | "home-supporting-case-02"
@@ -76,8 +79,19 @@ type MediaBase = {
   id?: MediaId;
   type?: "image" | "video" | "diagram";
   src: string;
+  mobileSource?: string;
   aspectRatio?: string;
   alt: Localized<string>;
+  caption?: Localized<string>;
+  credit?: string;
+  route?: string;
+  section?: string;
+  purpose?: string;
+  approvalStatus?: MediaApprovalStatus;
+  projectId?: string;
+  clientApprovalRequired?: boolean;
+  assetPriority?: "critical" | "high" | "standard";
+  focalPoint?: { x: number; y: number };
   replacementNote?: Localized<string>;
   suggestedContent?: Localized<string>;
   composition?: Localized<string>;
@@ -90,6 +104,9 @@ type MediaBase = {
   criticalForProduction?: boolean;
   priority?: boolean;
   poster?: string;
+  captions?: Partial<Record<Language, string>>;
+  transcript?: Partial<Record<Language, string>>;
+  speaking?: boolean;
   muted?: boolean;
   loop?: boolean;
   autoPlay?: boolean;
@@ -108,6 +125,14 @@ export type VideoMedia = MediaBase & {
 export type DiagramMedia = MediaBase & { type: "diagram"; decorative?: boolean };
 export type MediaSlotDefinition = ImageMedia | VideoMedia | DiagramMedia;
 export type PublishedMediaSlotDefinition = MediaSlotDefinition & {
+  aspectRatio: string;
+  route: string;
+  section: string;
+  purpose: string;
+  approvalStatus: MediaApprovalStatus;
+  clientApprovalRequired: boolean;
+  assetPriority: "critical" | "high" | "standard";
+  focalPoint: { x: number; y: number };
   publicationStatus: MediaPublicationStatus;
   rightsState: MediaRightsState;
   sourceType: MediaSourceType;
@@ -426,6 +451,16 @@ const mediaSeed: Record<MediaId, MediaSlotDefinition> = {
     safeArea: "center",
     pageUsage: ["home pillars"]
   },
+  "home-localise": {
+    src: "/media/placeholders/service-production.svg",
+    aspectRatio: "4 / 3",
+    alt: {
+      en: "UK production and local execution media placeholder.",
+      zh: "英国制作与本地落地执行媒体占位图。"
+    },
+    safeArea: "center",
+    pageUsage: ["home pillars"]
+  },
   "home-featured-case": {
     src: "/media/placeholders/case-study.svg",
     aspectRatio: "16 / 10",
@@ -691,7 +726,7 @@ const mediaSeed: Record<MediaId, MediaSlotDefinition> = {
   }
 };
 
-const criticalMediaIds = new Set<MediaId>([
+export const criticalMediaIds = new Set<MediaId>([
   "home-hero-primary",
   "home-featured-case",
   "production-hero",
@@ -700,25 +735,434 @@ const criticalMediaIds = new Set<MediaId>([
   "events-hero",
   "agency-hero",
   "industry-fashion",
-  "industry-jewellery",
   "industry-beauty",
   "industry-tech",
   "industry-automotive",
   "industry-lifestyle"
 ]);
 
-export const media: Record<MediaId, PublishedMediaSlotDefinition> = Object.fromEntries(
-  Object.entries(mediaSeed).map(([id, item]) => [
-    id,
+const criticalMediaGovernance: Record<
+  Exclude<MediaId, never>,
+  {
+    route: string;
+    section: string;
+    purpose: string;
+    clientApprovalRequired: boolean;
+    projectId?: string;
+    focalPoint?: { x: number; y: number };
+  }
+> = {
+  "home-hero-primary": {
+    route: "/[lang]",
+    section: "hero",
+    purpose: "Primary cinematic proof of London production capability.",
+    clientApprovalRequired: true,
+    focalPoint: { x: 58, y: 46 }
+  },
+  "home-featured-case": {
+    route: "/[lang]",
+    section: "project-models",
+    purpose: "Disclosed project-model preview; replace only with approved portfolio evidence.",
+    clientApprovalRequired: true,
+    projectId: "concept-models"
+  },
+  "production-hero": {
+    route: "/[lang]/services/commercial-production",
+    section: "hero",
+    purpose: "Show an authentic commercial production environment.",
+    clientApprovalRequired: true
+  },
+  "talent-hero": {
+    route: "/[lang]/talent",
+    section: "hero",
+    purpose: "Communicate a private, curated casting and styling workspace.",
+    clientApprovalRequired: true,
+    focalPoint: { x: 50, y: 38 }
+  },
+  "research-hero": {
+    route: "/[lang]/services/research-innovation",
+    section: "hero",
+    purpose: "Show credible technical communication or expert production.",
+    clientApprovalRequired: true
+  },
+  "events-hero": {
+    route: "/[lang]/services/events-exhibitions",
+    section: "hero",
+    purpose: "Show live-event scale and operational control.",
+    clientApprovalRequired: true
+  },
+  "agency-hero": {
+    route: "/[lang]/for-agencies",
+    section: "hero",
+    purpose: "Represent discreet UK production and white-label handoff.",
+    clientApprovalRequired: true
+  },
+  "industry-fashion": {
+    route: "/[lang]/industries",
+    section: "fashion",
+    purpose: "Approved fashion production context.",
+    clientApprovalRequired: true
+  },
+  "industry-beauty": {
+    route: "/[lang]/industries",
+    section: "beauty",
+    purpose: "Approved beauty campaign context.",
+    clientApprovalRequired: true
+  },
+  "industry-tech": {
+    route: "/[lang]/industries",
+    section: "technology",
+    purpose: "Approved technology demonstration or interview context.",
+    clientApprovalRequired: true
+  },
+  "industry-automotive": {
+    route: "/[lang]/industries",
+    section: "automotive",
+    purpose: "Approved automotive production or launch context.",
+    clientApprovalRequired: true
+  },
+  "industry-lifestyle": {
+    route: "/[lang]/industries",
+    section: "lifestyle",
+    purpose: "Approved UK lifestyle production context.",
+    clientApprovalRequired: true
+  }
+} as Record<
+  MediaId,
+  {
+    route: string;
+    section: string;
+    purpose: string;
+    clientApprovalRequired: boolean;
+    projectId?: string;
+    focalPoint?: { x: number; y: number };
+  }
+>;
+
+const projectIdByPrefix: Record<CasePrefix, string> = {
+  event: "london-celebrity-event-coverage",
+  fashion: "fashion-campaign-production-london",
+  technology: "ai-product-video-uk-market",
+  beauty: "beauty-creator-content-sprint",
+  automotive: "automotive-event-presenter-support",
+  jewellery: "jewellery-editorial-shoot"
+};
+const legacyProjectIdByMedia: Partial<Record<MediaId, string>> = {
+  "case-london-celebrity-hero": "london-celebrity-event-coverage",
+  "case-fashion-campaign-hero": "fashion-campaign-production-london",
+  "case-ai-product-hero": "ai-product-video-uk-market",
+  "case-beauty-creator-hero": "beauty-creator-content-sprint",
+  "case-automotive-event-hero": "automotive-event-presenter-support",
+  "case-jewellery-editorial-hero": "jewellery-editorial-shoot"
+};
+
+function projectIdForMedia(id: MediaId) {
+  const prefix = casePrefixes.find((value) => id.startsWith(`${value}-concept-`));
+  if (prefix) return projectIdByPrefix[prefix];
+  return legacyProjectIdByMedia[id];
+}
+
+function routeForMedia(id: MediaId, projectId?: string) {
+  if (projectId) return `/[lang]/work/${projectId}`;
+  if (id.startsWith("home-") || id === "hero-cinematic") return "/[lang]";
+  if (id.startsWith("industry-")) return "/[lang]/industries";
+  if (id.startsWith("service-")) return "/[lang]/services";
+  if (id.startsWith("production-")) return "/[lang]/services/commercial-production";
+  if (id.startsWith("talent-")) return "/[lang]/talent";
+  if (id.startsWith("research-")) return "/[lang]/services/research-innovation";
+  if (id.startsWith("events-")) return "/[lang]/services/events-exhibitions";
+  if (id.startsWith("agency-")) return "/[lang]/for-agencies";
+  if (id.startsWith("case-")) return "/[lang]/work/[project]";
+  return "/[lang]";
+}
+
+function aspectRatioFor(id: MediaId, item: MediaSlotDefinition) {
+  if (item.aspectRatio) return item.aspectRatio;
+  if (id.includes("portrait") || id.includes("talent") || id.includes("fashion")) return "4 / 5";
+  return "16 / 9";
+}
+
+function approvalStatusFor(item: MediaSlotDefinition): MediaApprovalStatus {
+  if (item.publicationStatus === "approved") return "approved";
+  if (item.publicationStatus === "restricted") return "restricted";
+  if (item.publicationStatus === "illustrative") return "internal-review";
+  return "placeholder";
+}
+
+const approvedPortfolio = (
+  src: string,
+  mobileSource: string,
+  projectId: string,
+  alt: Localized<string>
+): Partial<MediaSlotDefinition> => ({
+  src,
+  mobileSource,
+  projectId,
+  alt,
+  publicationStatus: "approved",
+  approvalStatus: "approved",
+  rightsState: "company-approved",
+  sourceType: "company-library",
+  clientApprovalRequired: false
+});
+
+const approvedPortfolioMediaById: Partial<Record<MediaId, Partial<MediaSlotDefinition>>> = {
+  "service-creative-planning": approvedPortfolio(
+    "/media/portfolio/automotive/changan-europe-launch-2025/01-hero.webp",
+    "/media/portfolio/automotive/changan-europe-launch-2025/01-hero-mobile.webp",
+    "changan-europe-launch-2025",
     {
-      ...item,
-      publicationStatus: item.publicationStatus ?? "placeholder",
-      rightsState: item.rightsState ?? "not-applicable",
-      sourceType: item.sourceType ?? "placeholder",
-      pageUsage: item.pageUsage ?? ["unassigned"],
-      criticalForProduction: item.criticalForProduction ?? criticalMediaIds.has(id as MediaId)
+      en: "Presenter introducing vehicles on a blue-lit European launch stage.",
+      zh: "欧洲品牌发布舞台上的车辆与演讲者。"
     }
-  ])
+  ),
+  "service-commercial-photography": approvedPortfolio(
+    "/media/portfolio/fashion-beauty-apparel/teal-editorial-series/02-cover.webp",
+    "/media/portfolio/fashion-beauty-apparel/teal-editorial-series/02-cover-mobile.webp",
+    "teal-editorial-series",
+    {
+      en: "Editorial fashion image combining tailored styling and a London bus.",
+      zh: "将剪裁造型与伦敦巴士结合的时尚编辑影像。"
+    }
+  ),
+  "service-video-production": approvedPortfolio(
+    "/media/portfolio/automotive/london-automotive-brand-film/01-hero.webp",
+    "/media/portfolio/automotive/london-automotive-brand-film/01-hero-mobile.webp",
+    "london-automotive-brand-film",
+    {
+      en: "London street frame from an automotive brand story film.",
+      zh: "汽车品牌故事影片中的伦敦街景画面。"
+    }
+  ),
+  "service-talent-casting": approvedPortfolio(
+    "/media/portfolio/talent-casting-styling/talent-categories/04-gallery.webp",
+    "/media/portfolio/talent-casting-styling/talent-categories/04-gallery-mobile.webp",
+    "talent-categories",
+    {
+      en: "Two male talent examples in contrasting editorial styling.",
+      zh: "两位男性人才的不同编辑造型示例。"
+    }
+  ),
+  "service-styling": approvedPortfolio(
+    "/media/portfolio/fashion-beauty-apparel/commercial-fashion-styling/01-hero.webp",
+    "/media/portfolio/fashion-beauty-apparel/commercial-fashion-styling/01-hero-mobile.webp",
+    "commercial-fashion-styling",
+    { en: "Structured camel outerwear in a commercial fashion image.", zh: "商业时尚影像中的驼色结构外套。" }
+  ),
+  "service-event-coverage": approvedPortfolio(
+    "/media/portfolio/automotive/catl-open-day-2025/01-hero.webp",
+    "/media/portfolio/automotive/catl-open-day-2025/01-hero-mobile.webp",
+    "catl-open-day-2025",
+    {
+      en: "Audience and presentation stage at an automotive Open Day.",
+      zh: "汽车 Open Day 的观众与发布舞台。"
+    }
+  ),
+  "production-hero": approvedPortfolio(
+    "/media/portfolio/automotive/london-automotive-brand-film/01-hero.webp",
+    "/media/portfolio/automotive/london-automotive-brand-film/01-hero-mobile.webp",
+    "london-automotive-brand-film",
+    {
+      en: "Automotive brand story frame produced on location in London.",
+      zh: "伦敦现场制作的汽车品牌故事画面。"
+    }
+  ),
+  "production-storyboard-01": approvedPortfolio(
+    "/media/portfolio/fashion-beauty-apparel/teal-editorial-series/03-gallery.webp",
+    "/media/portfolio/fashion-beauty-apparel/teal-editorial-series/03-gallery-mobile.webp",
+    "teal-editorial-series",
+    { en: "Full-length fashion image in a sculpted garden setting.", zh: "雕塑花园环境中的全身时尚影像。" }
+  ),
+  "production-storyboard-02": approvedPortfolio(
+    "/media/portfolio/automotive/european-road-lifestyle/03-gallery.webp",
+    "/media/portfolio/automotive/european-road-lifestyle/03-gallery-mobile.webp",
+    "european-road-lifestyle",
+    { en: "Performance vehicle captured in motion on a European road.", zh: "欧洲道路上行驶中的性能车辆。" }
+  ),
+  "production-storyboard-03": approvedPortfolio(
+    "/media/portfolio/fashion-beauty-apparel/creative-beauty-makeup/03-gallery.webp",
+    "/media/portfolio/fashion-beauty-apparel/creative-beauty-makeup/03-gallery-mobile.webp",
+    "creative-beauty-makeup",
+    {
+      en: "Creative beauty portrait focused on styling and makeup texture.",
+      zh: "突出造型与妆面质感的创意美妆肖像。"
+    }
+  ),
+  "events-hero": approvedPortfolio(
+    "/media/portfolio/automotive/changan-europe-launch-2025/01-hero.webp",
+    "/media/portfolio/automotive/changan-europe-launch-2025/01-hero-mobile.webp",
+    "changan-europe-launch-2025",
+    { en: "Automotive European brand launch stage in Munich.", zh: "慕尼黑汽车欧洲品牌发布舞台。" }
+  ),
+  "events-stage": approvedPortfolio(
+    "/media/portfolio/automotive/catl-open-day-2025/05-gallery.webp",
+    "/media/portfolio/automotive/catl-open-day-2025/05-gallery-mobile.webp",
+    "catl-open-day-2025",
+    { en: "Audience facing a wide technical presentation stage.", zh: "面向技术发布舞台的现场观众。" }
+  ),
+  "events-exhibition": approvedPortfolio(
+    "/media/portfolio/automotive/leapmotor-iaa-2023/01-hero.webp",
+    "/media/portfolio/automotive/leapmotor-iaa-2023/01-hero-mobile.webp",
+    "leapmotor-iaa-2023",
+    { en: "Automotive exhibition stand at IAA Mobility 2023.", zh: "IAA Mobility 2023 汽车展台。" }
+  ),
+  "events-panel": approvedPortfolio(
+    "/media/portfolio/automotive/byd-bd11-london/06-gallery.webp",
+    "/media/portfolio/automotive/byd-bd11-london/06-gallery-mobile.webp",
+    "byd-bd11-london",
+    { en: "Audience listening during a London vehicle presentation.", zh: "伦敦车辆发布活动中的现场观众。" }
+  ),
+  "events-interview": approvedPortfolio(
+    "/media/portfolio/automotive/london-automotive-brand-film/03-gallery.webp",
+    "/media/portfolio/automotive/london-automotive-brand-film/03-gallery-mobile.webp",
+    "london-automotive-brand-film",
+    {
+      en: "Interview subject beside an electric vehicle in England.",
+      zh: "英格兰场景中站在电动车旁的采访人物。"
+    }
+  ),
+  "agency-hero": approvedPortfolio(
+    "/media/portfolio/automotive/london-automotive-brand-film/07-gallery.webp",
+    "/media/portfolio/automotive/london-automotive-brand-film/07-gallery-mobile.webp",
+    "london-automotive-brand-film",
+    {
+      en: "Aerial vehicle movement through an English rural landscape.",
+      zh: "车辆穿行英格兰乡村的航拍画面。"
+    }
+  ),
+  "agency-workflow": approvedPortfolio(
+    "/media/portfolio/automotive/european-road-lifestyle/04-gallery.webp",
+    "/media/portfolio/automotive/european-road-lifestyle/04-gallery-mobile.webp",
+    "european-road-lifestyle",
+    {
+      en: "Multiple performance vehicles moving through a European route.",
+      zh: "多辆性能车辆沿欧洲道路行驶。"
+    }
+  ),
+  "agency-handoff": approvedPortfolio(
+    "/media/portfolio/automotive/london-automotive-brand-film/02-cover.webp",
+    "/media/portfolio/automotive/london-automotive-brand-film/02-cover-mobile.webp",
+    "london-automotive-brand-film",
+    {
+      en: "Aerial production view of vehicles and a countryside venue.",
+      zh: "车辆与乡村场地的航拍制作画面。"
+    }
+  ),
+  "agency-production": approvedPortfolio(
+    "/media/portfolio/automotive/changan-europe-launch-2025/04-gallery.webp",
+    "/media/portfolio/automotive/changan-europe-launch-2025/04-gallery-mobile.webp",
+    "changan-europe-launch-2025",
+    { en: "Guests viewing vehicles in an outdoor launch display.", zh: "嘉宾在户外发布展示区观看车辆。" }
+  ),
+  "industry-fashion": approvedPortfolio(
+    "/media/portfolio/fashion-beauty-apparel/teal-editorial-series/01-hero.webp",
+    "/media/portfolio/fashion-beauty-apparel/teal-editorial-series/01-hero-mobile.webp",
+    "teal-editorial-series",
+    { en: "Model in teal styling against modern architecture.", zh: "现代建筑前身着青绿色造型的模特。" }
+  ),
+  "industry-beauty": approvedPortfolio(
+    "/media/portfolio/fashion-beauty-apparel/creative-beauty-makeup/04-gallery.webp",
+    "/media/portfolio/fashion-beauty-apparel/creative-beauty-makeup/04-gallery-mobile.webp",
+    "creative-beauty-makeup",
+    { en: "Close beauty portrait with graphic blue and pink eye makeup.", zh: "蓝粉色图形眼妆的美妆近景。" }
+  ),
+  "industry-automotive": approvedPortfolio(
+    "/media/portfolio/automotive/changan-europe-launch-2025/02-cover.webp",
+    "/media/portfolio/automotive/changan-europe-launch-2025/02-cover-mobile.webp",
+    "changan-europe-launch-2025",
+    {
+      en: "Guests and vehicles inside a European automotive launch venue.",
+      zh: "欧洲汽车发布场地中的嘉宾与车辆。"
+    }
+  ),
+  "industry-lifestyle": approvedPortfolio(
+    "/media/portfolio/automotive/european-road-lifestyle/07-gallery.webp",
+    "/media/portfolio/automotive/european-road-lifestyle/07-gallery-mobile.webp",
+    "european-road-lifestyle",
+    {
+      en: "Yellow performance car moving through a European city at night.",
+      zh: "夜间穿行欧洲城市的黄色性能车辆。"
+    }
+  )
+};
+
+const demoMediaById: Partial<Record<MediaId, string>> = {
+  "home-hero-primary": "/media/demo/home-hero.webp",
+  "home-create": "/media/demo/production-frame.webp",
+  "home-connect": "/media/demo/talent-sheet.webp",
+  "home-activate": "/media/demo/event-stage.webp",
+  "home-localise": "/media/demo/agency-handoff.webp",
+  "home-featured-case": "/media/demo/campaign-sequence.webp",
+  "home-supporting-case-01": "/media/demo/fashion-crop.webp",
+  "home-supporting-case-02": "/media/demo/technology-layer.webp",
+  "production-hero": "/media/demo/production-frame.webp",
+  "production-storyboard-01": "/media/demo/editorial-spread.webp",
+  "production-storyboard-02": "/media/demo/landscape-film.webp",
+  "talent-hero": "/media/demo/talent-sheet.webp",
+  "talent-contact-sheet-01": "/media/demo/portrait-shadow.webp",
+  "events-hero": "/media/demo/event-stage.webp",
+  "events-exhibition": "/media/demo/exhibition-space.webp",
+  "events-interview": "/media/demo/interview-frame.webp",
+  "research-hero": "/media/demo/research-map.webp",
+  "research-interview": "/media/demo/interview-frame.webp",
+  "research-technical-content": "/media/demo/technology-layer.webp",
+  "agency-hero": "/media/demo/agency-handoff.webp",
+  "agency-handoff": "/media/demo/agency-handoff.webp",
+  "service-commercial-photography": "/media/demo/fashion-crop.webp",
+  "service-video-production": "/media/demo/production-frame.webp",
+  "service-talent-casting": "/media/demo/talent-sheet.webp",
+  "service-styling": "/media/demo/styling-form.webp",
+  "service-event-coverage": "/media/demo/event-stage.webp",
+  "industry-fashion": "/media/demo/fashion-crop.webp",
+  "industry-jewellery": "/media/demo/beauty-study.webp",
+  "industry-beauty": "/media/demo/beauty-study.webp",
+  "industry-tech": "/media/demo/technology-layer.webp",
+  "industry-automotive": "/media/demo/automotive-motion.webp",
+  "industry-lifestyle": "/media/demo/editorial-spread.webp",
+  "case-london-celebrity-hero": "/media/demo/event-stage.webp",
+  "case-fashion-campaign-hero": "/media/demo/campaign-sequence.webp",
+  "case-ai-product-hero": "/media/demo/technology-layer.webp",
+  "case-beauty-creator-hero": "/media/demo/beauty-study.webp",
+  "case-automotive-event-hero": "/media/demo/automotive-motion.webp",
+  "case-jewellery-editorial-hero": "/media/demo/editorial-spread.webp"
+};
+export const mediaMode: MediaMode = process.env.NEXT_PUBLIC_SHOW_DEMO_MEDIA === "true" ? "demo" : "fallback";
+
+export const media: Record<MediaId, PublishedMediaSlotDefinition> = Object.fromEntries(
+  Object.entries(mediaSeed).map(([rawId, item]) => {
+    const id = rawId as MediaId;
+    const resolvedItem = { ...item, ...approvedPortfolioMediaById[id] } as MediaSlotDefinition;
+    const critical = criticalMediaIds.has(id);
+    const governance = criticalMediaGovernance[id];
+    const projectId = resolvedItem.projectId ?? governance?.projectId ?? projectIdForMedia(id);
+    return [
+      id,
+      {
+        ...resolvedItem,
+        src: mediaMode === "demo" && demoMediaById[id] ? demoMediaById[id]! : resolvedItem.src,
+        aspectRatio: aspectRatioFor(id, resolvedItem),
+        route: resolvedItem.route ?? governance?.route ?? routeForMedia(id, projectId),
+        section: resolvedItem.section ?? governance?.section ?? resolvedItem.pageUsage?.[0] ?? id,
+        purpose:
+          resolvedItem.purpose ??
+          governance?.purpose ??
+          resolvedItem.suggestedContent?.en ??
+          resolvedItem.alt.en,
+        approvalStatus: resolvedItem.approvalStatus ?? approvalStatusFor(resolvedItem),
+        projectId,
+        clientApprovalRequired:
+          resolvedItem.clientApprovalRequired ?? governance?.clientApprovalRequired ?? Boolean(projectId),
+        assetPriority:
+          resolvedItem.assetPriority ?? (critical ? "critical" : resolvedItem.priority ? "high" : "standard"),
+        focalPoint: resolvedItem.focalPoint ?? governance?.focalPoint ?? { x: 50, y: 50 },
+        publicationStatus: resolvedItem.publicationStatus ?? "placeholder",
+        rightsState: resolvedItem.rightsState ?? "not-applicable",
+        sourceType: resolvedItem.sourceType ?? "placeholder",
+        pageUsage: resolvedItem.pageUsage ?? ["unassigned"],
+        criticalForProduction: resolvedItem.criticalForProduction ?? critical
+      }
+    ];
+  })
 ) as Record<MediaId, PublishedMediaSlotDefinition>;
 
 export const serviceMediaSequence: MediaId[] = [

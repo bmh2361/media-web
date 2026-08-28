@@ -3,16 +3,17 @@
 import { motion } from "framer-motion";
 import { useReducedMotion } from "framer-motion";
 import type { ReactNode } from "react";
+import { distances, durations, easings, viewport } from "@/lib/motion-system";
 
 export function Reveal({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
   const prefersReducedMotion = useReducedMotion();
 
   return (
     <motion.div
-      initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 24 }}
+      initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: distances.medium }}
       whileInView={prefersReducedMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay }}
+      viewport={viewport}
+      transition={{ duration: prefersReducedMotion ? 0.01 : durations.media, ease: easings.editorial, delay }}
     >
       {children}
     </motion.div>

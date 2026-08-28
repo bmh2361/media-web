@@ -52,6 +52,40 @@ export function CommercialProductionExperience({
           <ServiceBreadcrumbs language={language} current={copy.title} dark />
         </div>
       </section>
+      <section className="section-y bg-ink text-pearl">
+        <div className="container-x grid gap-8 lg:grid-cols-[.68fr_1.32fr] lg:items-end">
+          <div>
+            <p className="text-xs uppercase tracking-editorial text-champagne">
+              {zh ? "动态作品槽位" : "Motion reel slot"}
+            </p>
+            <h2 className="mt-5 text-4xl font-medium md:text-6xl">
+              {zh ? "以静音海报进入动态内容。" : "Enter motion through a muted, poster-led reel."}
+            </h2>
+            <p className="mt-6 max-w-xl text-sm leading-6 text-pearl/60">
+              {zh
+                ? "正式发布前需要替换为已获授权的作品集影片、海报与字幕文件；页面不会自动播放声音。"
+                : "Replace with an approved reel, poster and caption file before publication. Audio never starts automatically."}
+            </p>
+          </div>
+          <div className="relative" data-cursor={zh ? "播放作品" : "Play reel"}>
+            <MediaSlot
+              id="production-video-poster"
+              language={language}
+              sizes="(min-width:1024px) 58vw, 100vw"
+              showCaption={false}
+              className="aspect-video"
+            />
+            <span className="absolute inset-0 grid place-items-center">
+              <span className="grid size-20 place-items-center rounded-full border border-pearl/40 bg-ink/45 text-xs uppercase tracking-[.15em] backdrop-blur-sm">
+                {zh ? "播放" : "Play"}
+              </span>
+            </span>
+            <span className="absolute bottom-4 left-4 text-[10px] uppercase tracking-[.16em] text-pearl/70">
+              00:00:00:00 / MUTE
+            </span>
+          </div>
+        </div>
+      </section>
       <section className="section-y bg-porcelain">
         <div className="container-x grid gap-10 lg:grid-cols-[.68fr_1.32fr]">
           <SectionHeading

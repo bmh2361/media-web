@@ -1,0 +1,302 @@
+{
+  "generatedAt": "2026-08-20T20:52:46.330Z",
+  "viewports": [
+    {
+      "requested": {
+        "width": 390,
+        "height": 844
+      },
+      "language": "en",
+      "clientWidth": 375,
+      "companies": true,
+      "h1": "Turn cross-border objectives into credible local projects.",
+      "lang": "en-GB",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 375,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 390,
+        "height": 844
+      },
+      "language": "zh",
+      "clientWidth": 375,
+      "companies": true,
+      "h1": "从真实商业目标出发，把跨境计划做成可信的本地项目。",
+      "lang": "zh-CN",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 375,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 430,
+        "height": 932
+      },
+      "language": "en",
+      "clientWidth": 415,
+      "companies": true,
+      "h1": "Turn cross-border objectives into credible local projects.",
+      "lang": "en-GB",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 415,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 430,
+        "height": 932
+      },
+      "language": "zh",
+      "clientWidth": 415,
+      "companies": true,
+      "h1": "从真实商业目标出发，把跨境计划做成可信的本地项目。",
+      "lang": "zh-CN",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 415,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 768,
+        "height": 1024
+      },
+      "language": "en",
+      "clientWidth": 753,
+      "companies": true,
+      "h1": "Turn cross-border objectives into credible local projects.",
+      "lang": "en-GB",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 753,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 768,
+        "height": 1024
+      },
+      "language": "zh",
+      "clientWidth": 753,
+      "companies": true,
+      "h1": "从真实商业目标出发，把跨境计划做成可信的本地项目。",
+      "lang": "zh-CN",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 753,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 1024,
+        "height": 768
+      },
+      "language": "en",
+      "clientWidth": 1009,
+      "companies": true,
+      "h1": "Turn cross-border objectives into credible local projects.",
+      "lang": "en-GB",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 1009,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 1024,
+        "height": 768
+      },
+      "language": "zh",
+      "clientWidth": 1009,
+      "companies": true,
+      "h1": "从真实商业目标出发，把跨境计划做成可信的本地项目。",
+      "lang": "zh-CN",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 1009,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 1440,
+        "height": 900
+      },
+      "language": "en",
+      "clientWidth": 1425,
+      "companies": true,
+      "h1": "Turn cross-border objectives into credible local projects.",
+      "lang": "en-GB",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 1425,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 1440,
+        "height": 900
+      },
+      "language": "zh",
+      "clientWidth": 1425,
+      "companies": true,
+      "h1": "从真实商业目标出发，把跨境计划做成可信的本地项目。",
+      "lang": "zh-CN",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 1425,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 1728,
+        "height": 1080
+      },
+      "language": "en",
+      "clientWidth": 1713,
+      "companies": true,
+      "h1": "Turn cross-border objectives into credible local projects.",
+      "lang": "en-GB",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 1713,
+      "overflow": false
+    },
+    {
+      "requested": {
+        "width": 1728,
+        "height": 1080
+      },
+      "language": "zh",
+      "clientWidth": 1713,
+      "companies": true,
+      "h1": "从真实商业目标出发，把跨境计划做成可信的本地项目。",
+      "lang": "zh-CN",
+      "mobileMenu": true,
+      "partners": true,
+      "scrollWidth": 1713,
+      "overflow": false
+    }
+  ],
+  "routes": [
+    {
+      "language": "en",
+      "route": "/companies",
+      "clientWidth": 1425,
+      "h1": "Build UK & European presence around what your business actually needs.",
+      "navVisible": true,
+      "pressed": [],
+      "scrollWidth": 1425,
+      "url": "/en/companies",
+      "overflow": false
+    },
+    {
+      "language": "en",
+      "route": "/partners",
+      "clientWidth": 1425,
+      "h1": "Better-structured China–UK & European collaboration.",
+      "navVisible": true,
+      "pressed": [],
+      "scrollWidth": 1425,
+      "url": "/en/partners",
+      "overflow": false
+    },
+    {
+      "language": "en",
+      "route": "/work",
+      "clientWidth": 1425,
+      "h1": "Commercial objectives. Clear responsibility. Real delivery.",
+      "navVisible": true,
+      "pressed": [],
+      "scrollWidth": 1425,
+      "url": "/en/work",
+      "overflow": false
+    },
+    {
+      "language": "en",
+      "route": "/about",
+      "clientWidth": 1425,
+      "h1": "Cross-border judgement. Local orchestration. Accountable delivery.",
+      "navVisible": true,
+      "pressed": [],
+      "scrollWidth": 1425,
+      "url": "/en/about",
+      "overflow": false
+    },
+    {
+      "language": "en",
+      "route": "/contact?intent=partner",
+      "clientWidth": 1425,
+      "h1": "Tell us which side of the collaboration brings you here.",
+      "navVisible": true,
+      "pressed": ["Partnership"],
+      "scrollWidth": 1425,
+      "url": "/en/contact?intent=partner",
+      "overflow": false
+    },
+    {
+      "language": "zh",
+      "route": "/companies",
+      "clientWidth": 1425,
+      "h1": "围绕企业真正需要解决的问题，建立英国与欧洲市场存在。",
+      "navVisible": true,
+      "pressed": [],
+      "scrollWidth": 1425,
+      "url": "/zh/companies",
+      "overflow": false
+    },
+    {
+      "language": "zh",
+      "route": "/partners",
+      "clientWidth": 1425,
+      "h1": "让中英与欧洲合作更容易被理解、信任和交付。",
+      "navVisible": true,
+      "pressed": [],
+      "scrollWidth": 1425,
+      "url": "/zh/partners",
+      "overflow": false
+    },
+    {
+      "language": "zh",
+      "route": "/work",
+      "clientWidth": 1425,
+      "h1": "商业目标、明确职责、真实执行。",
+      "navVisible": true,
+      "pressed": [],
+      "scrollWidth": 1425,
+      "url": "/zh/work",
+      "overflow": false
+    },
+    {
+      "language": "zh",
+      "route": "/about",
+      "clientWidth": 1425,
+      "h1": "跨境判断、本地组织与可追责的执行。",
+      "navVisible": true,
+      "pressed": [],
+      "scrollWidth": 1425,
+      "url": "/zh/about",
+      "overflow": false
+    },
+    {
+      "language": "zh",
+      "route": "/contact?intent=partner",
+      "clientWidth": 1425,
+      "h1": "告诉我们，你从哪一边来到这次合作。",
+      "navVisible": true,
+      "pressed": ["合作伙伴"],
+      "scrollWidth": 1425,
+      "url": "/zh/contact?intent=partner",
+      "overflow": false
+    }
+  ],
+  "capabilitiesRedirect": "http://localhost:3105/en/companies",
+  "mobileMenu": {
+    "dialog": true,
+    "links": ["Home", "Companies", "Partners", "Work", "About", "Contact", "Discuss a Collaboration"]
+  }
+}

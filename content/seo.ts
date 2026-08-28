@@ -9,12 +9,12 @@ export type SeoRecord = {
 
 export const seoContent: Record<string, SeoRecord> = {
   home: {
-    title: { en: "FrameBridge Studio", zh: "镜桥创意" },
+    title: { en: "Venus Bridge", zh: "Venus Bridge" },
     description: {
-      en: "UK production, talent and innovation delivery.",
-      zh: "英国制作、人才与创新活动执行。"
+      en: "Cross-border collaboration, UK and European market presence, institutional engagement and reusable brand evidence.",
+      zh: "跨境合作、英国与欧洲市场存在、机构与人才触达，以及可复用的海外品牌证据。"
     },
-    ogSubtitle: { en: "UK production, talent and innovation", zh: "英国制作、人才与创新" },
+    ogSubtitle: { en: "Cross-border collaboration and market presence", zh: "跨境合作与海外市场存在" },
     canonicalPath: "/"
   },
   services: {
@@ -30,9 +30,12 @@ export const seoContent: Record<string, SeoRecord> = {
     canonicalPath: "/industries"
   },
   work: {
-    title: { en: "Concept Project Models", zh: "概念项目模式" },
-    description: { en: "Illustrative project planning models.", zh: "项目规划示例。" },
-    ogSubtitle: { en: "Illustrative, not client portfolio evidence", zh: "概念示例，不是客户作品集证据" },
+    title: { en: "Commercial Evidence", zh: "商业项目证据" },
+    description: {
+      en: "Market presence, institutional engagement and international brand evidence from UK and European projects.",
+      zh: "英国与欧洲项目中的市场存在、机构与人才触达及国际品牌证据。"
+    },
+    ogSubtitle: { en: "Objectives, context and accountable delivery", zh: "商业目标、当地语境与可追责交付" },
     canonicalPath: "/work"
   }
 };

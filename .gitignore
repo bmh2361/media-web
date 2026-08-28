@@ -6,6 +6,7 @@ blob-report/
 node_modules/
 out/
 dist/
+tmp/
 coverage/
 .env*
 !.env.example
@@ -13,8 +14,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+*.log
 *.tsbuildinfo
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
+.wrangler/
+.dev.vars*
+.cloudflared/
+audit/**/*.png
+audit/**/*.jpg
+audit/**/*.jpeg
+audit/**/*.webm
+audit/**/*.mp4
+audit/performance/fixtures/
+public/media/demo/

@@ -1,0 +1,22 @@
+[
+  {
+    "scenario": "05-route-transition",
+    "route": "/en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "duration": 12.8,
+    "actions": [
+      "internal capability link to commercial production",
+      "header link to project models",
+      "browser back"
+    ],
+    "expectedStates": [
+      "internal capability link to commercial production",
+      "header link to project models",
+      "browser back"
+    ],
+    "outputPath": "audit/motion-correction/05-route-transition.webm"
+  }
+]

@@ -1,78 +1,111 @@
 import type { Language } from "@/lib/i18n";
+
 type Localized<T> = Record<Language, T>;
-export type MegaMenuKey = "services";
+
+export type MegaMenuKey = "how-we-help" | "industries";
+
 export const navigation = {
   en: {
-    logo: "FrameBridge Studio",
+    logo: "Venus Bridge",
     language: "中文",
-    cta: "Send Brief",
-    megaCtaTitle: "Planning a UK project?",
-    megaCtaText: "Share the objective and required outcome.",
-    megaCtaButton: "Send brief",
+    cta: "Request a UK Fit Call",
+    megaCtaTitle: "Planning a UK move?",
+    megaCtaText: "Start with your current situation and the decision you need to make.",
+    megaCtaButton: "Request a fit call",
     mobileMenu: "Menu",
     closeMenu: "Close"
   },
   zh: {
-    logo: "FrameBridge Studio 镜桥创意",
+    logo: "Venus Bridge",
     language: "EN",
-    cta: "提交需求",
-    megaCtaTitle: "正在筹备英国项目？",
-    megaCtaText: "告诉我们目标与预期成果。",
-    megaCtaButton: "提交需求",
+    cta: "申请英国市场沟通",
+    megaCtaTitle: "正在规划英国市场行动？",
+    megaCtaText: "从当前阶段和需要做出的决策开始。",
+    megaCtaButton: "申请沟通",
     mobileMenu: "菜单",
     closeMenu: "关闭"
   }
 } satisfies Localized<Record<string, string>>;
+
 export const primaryNav = [
-  { href: "/services", key: "services", label: { en: "Services", zh: "服务" }, mega: "services" },
-  { href: "/industries", key: "industries", label: { en: "Industries", zh: "行业" } },
-  { href: "/work", key: "work", label: { en: "Work", zh: "案例" } },
-  { href: "/about", key: "about", label: { en: "About", zh: "关于" } },
+  {
+    href: "/what-we-do",
+    key: "how-we-help",
+    label: { en: "How We Help", zh: "我们如何协助" },
+    mega: "how-we-help"
+  },
+  {
+    href: "/industries",
+    key: "industries",
+    label: { en: "Industries", zh: "行业" },
+    mega: "industries"
+  },
+  { href: "/services", key: "solutions", label: { en: "Solutions", zh: "解决方案" } },
+  { href: "/work", key: "work", label: { en: "Proof", zh: "项目证明" } },
+  { href: "/about", key: "about", label: { en: "Why Venus", zh: "为什么选择我们" } },
   { href: "/contact", key: "contact", label: { en: "Contact", zh: "联系" } }
 ] as const;
+
 export const megaMenus = {
-  services: {
-    eyebrow: { en: "Create · Connect · Activate", zh: "创作 · 连接 · 落地" },
+  "how-we-help": {
+    eyebrow: { en: "Start with your situation", zh: "从当前阶段开始" },
     items: [
       {
-        href: "/services/commercial-production",
-        title: { en: "Commercial Production", zh: "商业内容制作" },
+        href: "/what-we-do/enter-the-uk",
+        title: { en: "Exploring the UK", zh: "正在探索英国市场" },
         description: {
-          en: "Campaigns, photography, films and social content.",
-          zh: "广告、摄影、品牌影片与社交内容。"
+          en: "Clarify readiness, dependencies and a useful next test.",
+          zh: "明确准备度、关键依赖与下一步验证。"
         }
       },
       {
-        href: "/talent",
-        title: { en: "Models, Talent & Creators", zh: "海外模特与人才资源" },
+        href: "/what-we-do/launch-in-the-uk",
+        title: { en: "Preparing a UK Launch", zh: "正在筹备英国发布" },
         description: {
-          en: "Models, presenters, creators and production specialists.",
-          zh: "模特、主持人、创作者与制作人才。"
+          en: "Align the launch story, live plan and local delivery.",
+          zh: "统一发布叙事、现场计划与本地交付。"
         }
       },
       {
-        href: "/services/research-innovation",
-        title: { en: "Research & Innovation Collaboration", zh: "英国科研与创新协作" },
+        href: "/what-we-do/building-uk-presence",
+        title: { en: "Building UK Presence", zh: "正在建立英国市场存在" },
         description: {
-          en: "Academic, technical and innovation resource coordination.",
-          zh: "科研、技术嘉宾与创新资源协调。"
+          en: "Build continuity across content, moments and relationships.",
+          zh: "持续建设内容、市场节点与关系沟通。"
         }
       },
       {
-        href: "/services/events-exhibitions",
-        title: { en: "Technology Events & Exhibitions", zh: "科技展会与活动策划" },
+        href: "/what-we-do/create-in-the-uk",
+        title: { en: "Ready for Local Delivery", zh: "已经准备好英国本地执行" },
         description: {
-          en: "Launches, showcases, panels and exhibition delivery.",
-          zh: "发布、展示、论坛与展会执行。"
+          en: "Turn a defined brief into accountable UK delivery.",
+          zh: "把明确需求转化为责任清晰的英国交付。"
         }
+      }
+    ]
+  },
+  industries: {
+    eyebrow: { en: "Industry priorities", zh: "行业重点" },
+    items: [
+      {
+        href: "/industries/automotive",
+        title: { en: "Automotive & Mobility", zh: "汽车与出行" },
+        description: { en: "Core sector.", zh: "核心行业。" }
       },
       {
-        href: "/for-agencies",
-        title: { en: "UK Localisation & Agency Support", zh: "英国本地化与代理支持" },
-        description: {
-          en: "White-label execution, logistics and bilingual handoff.",
-          zh: "白标执行、后勤协调与双语交付。"
-        }
+        href: "/industries/technology-ai-research",
+        title: { en: "AI & Technology", zh: "AI 与科技" },
+        description: { en: "Growth sector.", zh: "增长行业。" }
+      },
+      {
+        href: "/industries/fashion-beauty-apparel",
+        title: { en: "Fashion & Beauty", zh: "时尚与美妆" },
+        description: { en: "Growth sector.", zh: "增长行业。" }
+      },
+      {
+        href: "/industries/entertainment-culture",
+        title: { en: "Entertainment & Creator", zh: "娱乐与创作者" },
+        description: { en: "Growth sector.", zh: "增长行业。" }
       }
     ]
   }

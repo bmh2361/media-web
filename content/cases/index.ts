@@ -1,14 +1,53 @@
 import type { CaseStatus, CaseStudy, DisclosureLevel, LocalisedString, ServicePillar } from "@/content/types";
 import type { ProjectType } from "@/lib/contact/validation";
+import { roadshowCaseStudies } from "@/content/roadshows";
 import { defineCaseStudy } from "./template";
 
 const l = (en: string, zh: string): LocalisedString => ({ en, zh });
-const concept = (caseStudy: Omit<CaseStudy, "status" | "disclosureLevel" | "evidenceState">) =>
+const concept = (
+  caseStudy: Omit<
+    CaseStudy,
+    | "status"
+    | "deliveryStatus"
+    | "publicStatus"
+    | "realProject"
+    | "featured"
+    | "clientNameDisclosure"
+    | "mediaApproval"
+    | "publicDisclosurePermission"
+    | "clientLogoApproval"
+    | "roleDisclosure"
+    | "disclosure"
+    | "disclosureLevel"
+    | "evidenceState"
+    | "evidence"
+    | "clientApproval"
+    | "mediaRightsApproved"
+    | "legalApproved"
+  >
+) =>
   defineCaseStudy({
     ...caseStudy,
     status: "concept",
+    deliveryStatus: "concept",
+    publicStatus: "hidden",
+    realProject: false,
+    featured: true,
+    clientNameDisclosure: "withheld",
+    mediaApproval: "placeholder",
+    publicDisclosurePermission: "not-required",
+    clientLogoApproval: "not-applicable",
+    roleDisclosure: caseStudy.frameBridgeRole,
+    disclosure: l(
+      "Illustrative project model. It is not presented as completed client work.",
+      "概念项目模型，不作为已完成客户项目展示。"
+    ),
     disclosureLevel: "illustrative",
-    evidenceState: "unverified"
+    evidenceState: "unverified",
+    evidence: [],
+    clientApproval: false,
+    mediaRightsApproved: false,
+    legalApproved: false
   });
 
 export const caseStudies: CaseStudy[] = [
@@ -40,8 +79,8 @@ export const caseStudies: CaseStudy[] = [
       "示例需求：在伦敦举办包含嘉宾对谈、媒体到场与当周社媒精选素材的活动。"
     ),
     frameBridgeRole: l(
-      "FrameBridge could coordinate venue feasibility, speaker timings, media capture plan, supplier briefings and the handoff schedule.",
-      "FrameBridge 可协调场地可行性、嘉宾时间、媒体采集方案、供应商简报与交付排期。"
+      "Venus Bridge could coordinate venue feasibility, speaker timings, media capture plan, supplier briefings and the handoff schedule.",
+      "Venus Bridge 可协调场地可行性、嘉宾时间、媒体采集方案、供应商简报与交付排期。"
     ),
     productionScope: [
       l("Audience journey and run-of-show", "观众动线与现场流程"),
@@ -85,7 +124,7 @@ export const caseStudies: CaseStudy[] = [
       "An illustrative campaign model for aligning casting, styling, stills and motion with channel-specific usage.",
       "用于说明如何将选角、造型、图片与视频和渠道使用要求对齐的概念项目模式。"
     ),
-    industry: l("Fashion", "时尚"),
+    industry: l("Fashion, Beauty & Apparel", "时尚、美妆与服装"),
     industryKey: "fashion",
     servicePillars: ["commercial-production", "talent"],
     projectType: l("Concept seasonal campaign model", "概念季节广告模式"),
@@ -106,8 +145,8 @@ export const caseStudies: CaseStudy[] = [
       "示例需求：为季节广告制作伦敦场景内容，包含两类模特、日间至夜间造型变化以及付费与自然流量素材。"
     ),
     frameBridgeRole: l(
-      "FrameBridge could translate the brief into casting criteria, styling approvals, location options, shot order and delivery specifications.",
-      "FrameBridge 可将需求转化为选角标准、造型审批、场地备选、拍摄顺序及交付规格。"
+      "Venus Bridge could translate the brief into casting criteria, styling approvals, location options, shot order and delivery specifications.",
+      "Venus Bridge 可将需求转化为选角标准、造型审批、场地备选、拍摄顺序及交付规格。"
     ),
     productionScope: [
       l("Casting shortlist against audience and usage", "按受众与使用范围筛选候选模特"),
@@ -172,8 +211,8 @@ export const caseStudies: CaseStudy[] = [
       "示例需求：通过创始人访谈、界面演示和教育型短视频解释一个与英国市场相关的产品使用场景。"
     ),
     frameBridgeRole: l(
-      "FrameBridge could plan the interview structure, coordinate technical review, sequence interface capture and prepare release-ready edits.",
-      "FrameBridge 可规划访谈结构、协调技术审核、安排界面录制顺序并准备发布版本。"
+      "Venus Bridge could plan the interview structure, coordinate technical review, sequence interface capture and prepare release-ready edits.",
+      "Venus Bridge 可规划访谈结构、协调技术审核、安排界面录制顺序并准备发布版本。"
     ),
     productionScope: [
       l("Use-case and terminology review", "使用场景与术语审核"),
@@ -217,7 +256,7 @@ export const caseStudies: CaseStudy[] = [
       "An illustrative creator-content model for matching product claims, creator briefs and review windows within a short launch schedule.",
       "用于说明如何在短发布周期内匹配产品表述、创作者简报与审核窗口的概念项目模式。"
     ),
-    industry: l("Beauty", "美妆"),
+    industry: l("Fashion, Beauty & Apparel", "时尚、美妆与服装"),
     industryKey: "beauty",
     servicePillars: ["talent", "commercial-production"],
     projectType: l("Concept creator content model", "概念创作者内容模式"),
@@ -238,8 +277,8 @@ export const caseStudies: CaseStudy[] = [
       "示例需求：协调小型英国创作者团队，完成产品质地故事、使用流程演示和发布周自然流量内容。"
     ),
     frameBridgeRole: l(
-      "FrameBridge could source against audience fit, issue creator briefs, coordinate product receipt and manage the review calendar.",
-      "FrameBridge 可按受众匹配筛选创作者、发放简报、协调产品寄送并管理审核日历。"
+      "Venus Bridge could source against audience fit, issue creator briefs, coordinate product receipt and manage the review calendar.",
+      "Venus Bridge 可按受众匹配筛选创作者、发放简报、协调产品寄送并管理审核日历。"
     ),
     productionScope: [
       l("Creator selection and territory check", "创作者筛选与使用地区核对"),
@@ -310,8 +349,8 @@ export const caseStudies: CaseStudy[] = [
       "示例需求：支持英国车辆亮相活动，包含双语主持人、受控测试区域进场，以及横版、竖版和社媒素材。"
     ),
     frameBridgeRole: l(
-      "FrameBridge could align the venue, vehicle team, presenter brief, safety boundaries and production schedule.",
-      "FrameBridge 可协调场地、车辆团队、主持人简报、安全边界与制作排期。"
+      "Venus Bridge could align the venue, vehicle team, presenter brief, safety boundaries and production schedule.",
+      "Venus Bridge 可协调场地、车辆团队、主持人简报、安全边界与制作排期。"
     ),
     productionScope: [
       l("Vehicle access and safety route", "车辆进场与安全路线"),
@@ -358,7 +397,7 @@ export const caseStudies: CaseStudy[] = [
       "An illustrative editorial model for planning product detail, model wearing shots and rights-aware launch assets.",
       "用于说明如何规划产品细节、模特佩戴画面与使用权意识下的发布素材的概念项目模式。"
     ),
-    industry: l("Jewellery", "珠宝"),
+    industry: l("Accessories & Jewellery (adjacent)", "配饰与珠宝（相邻品类）"),
     industryKey: "jewellery",
     servicePillars: ["commercial-production", "talent"],
     projectType: l("Concept jewellery editorial model", "概念珠宝编辑制作模式"),
@@ -379,8 +418,8 @@ export const caseStudies: CaseStudy[] = [
       "示例需求：为珠宝系列制作伦敦编辑式内容，包括产品近景、模特佩戴及克制的媒体精选素材。"
     ),
     frameBridgeRole: l(
-      "FrameBridge could coordinate casting, product handling protocol, styling references, retouching review and final file naming.",
-      "FrameBridge 可协调选角、产品保管流程、造型参考、修图审核和最终文件命名。"
+      "Venus Bridge could coordinate casting, product handling protocol, styling references, retouching review and final file naming.",
+      "Venus Bridge 可协调选角、产品保管流程、造型参考、修图审核和最终文件命名。"
     ),
     productionScope: [
       l("Product handling and security protocol", "产品保管与安全流程"),
@@ -423,17 +462,19 @@ export const caseStudies: CaseStudy[] = [
     heroMediaId: "jewellery-concept-hero",
     mediaIds: ["jewellery-concept-landscape", "jewellery-concept-portrait", "jewellery-concept-diagram"]
   })
-];
+].concat(roadshowCaseStudies);
 
 export const caseStatusLabels: Record<"en" | "zh", Record<string, string>> = {
   en: {
-    "published:named": "Published client project",
+    "verified:named": "Verified client project",
     "anonymised:confidential": "Client-confidential project",
+    "confidential:confidential": "Confidential real project",
     "concept:illustrative": "Concept project model"
   },
   zh: {
-    "published:named": "已公开客户项目",
+    "verified:named": "已核实客户项目",
     "anonymised:confidential": "客户保密项目",
+    "confidential:confidential": "保密真实项目",
     "concept:illustrative": "概念项目模式"
   }
 };
@@ -450,7 +491,7 @@ export function getCaseDisclosureLabel(
 export function disclosureLabel(status: CaseStatus, level: DisclosureLevel, lang: "en" | "zh") {
   return getCaseDisclosureLabel({ status, disclosureLevel: level }, lang);
 }
-export const featuredCaseStudies = caseStudies.slice(0, 3);
+export const featuredCaseStudies = caseStudies.filter((caseStudy) => caseStudy.featured).slice(0, 3);
 export const projectTypeByServicePillar: Partial<Record<ServicePillar, ProjectType>> = {
   "commercial-production": "commercial",
   talent: "talent",
@@ -464,8 +505,20 @@ export function getCaseProjectType(caseStudy: CaseStudy): ProjectType {
 }
 export function isPortfolioEligible(caseStudy: CaseStudy) {
   return (
-    (caseStudy.status === "published" || caseStudy.status === "anonymised") &&
-    (caseStudy.evidenceState === "client-approved" || caseStudy.evidenceState === "publicly-verifiable")
+    caseStudy.deliveryStatus === "completed" &&
+    caseStudy.publicStatus === "public" &&
+    (caseStudy.status === "verified" || caseStudy.status === "anonymised") &&
+    (caseStudy.evidenceState === "client-approved" || caseStudy.evidenceState === "publicly-verifiable") &&
+    caseStudy.mediaApproval === "approved" &&
+    caseStudy.publicDisclosurePermission === "approved" &&
+    caseStudy.clientApproval &&
+    caseStudy.mediaRightsApproved &&
+    caseStudy.legalApproved &&
+    Boolean(caseStudy.projectDate) &&
+    Boolean(caseStudy.clientNeed.en && caseStudy.clientNeed.zh) &&
+    Boolean(caseStudy.frameBridgeRole.en && caseStudy.frameBridgeRole.zh) &&
+    caseStudy.deliverables.length > 0 &&
+    caseStudy.evidence.some((record) => record.verified && record.approvedForPublic)
   );
 }
 export const serviceLabels: Record<ServicePillar, LocalisedString> = {
@@ -473,6 +526,6 @@ export const serviceLabels: Record<ServicePillar, LocalisedString> = {
   talent: l("Talent", "人才"),
   "technology-content": l("Technology Content", "科技内容"),
   "research-innovation": l("Research & Innovation", "科研与创新"),
-  "events-exhibitions": l("Events & Exhibitions", "活动与展会"),
+  "events-exhibitions": l("Events, Exhibitions & Roadshows", "活动、展会与路演"),
   "agency-support": l("Agency Support", "代理支持")
 };

@@ -1,128 +1,95 @@
-﻿"use client";
+"use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { MediaPlaceholder } from "@/components/media/MediaPlaceholder";
+import { useOpeningSequence } from "@/components/motion/OpeningSequenceProvider";
+import { ProductionSystemCanvas } from "@/components/sections/ProductionSystemCanvas";
 import { ButtonLink } from "@/components/ui/Button";
 import { homeContent } from "@/content/pages/home";
+import { venusBridgeMedia } from "@/lib/brand/venusBridgeMedia";
 import { withLanguage, type Language } from "@/lib/i18n";
-import { editorialEase, fastDuration, slowDuration, standardDuration } from "@/lib/motion";
+import { distances, durations, easings } from "@/lib/motion-system";
 
 export function Hero({ language }: { language: Language }) {
   const copy = homeContent[language];
-  const prefersReducedMotion = useReducedMotion();
-
-  const fadeUp = {
-    hidden: prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 18 },
-    show: { opacity: 1, y: 0 }
-  };
+  const reduced = useReducedMotion();
+  const { heroReady, firstVisit } = useOpeningSequence();
+  const ready = reduced || heroReady;
+  const base = firstVisit ? 0.08 : 0;
+  const zh = language === "zh";
 
   return (
-    <section className="relative overflow-hidden bg-ink pt-16 text-pearl">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_18%,rgba(111,183,255,0.32),transparent_24rem),radial-gradient(circle_at_20%_35%,rgba(216,199,162,0.24),transparent_28rem),linear-gradient(180deg,#14171c_0%,#0b0d10_72%)]" />
-      <motion.div
-        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 1.04 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: slowDuration, ease: editorialEase }}
-        className="absolute right-[-8vw] top-24 hidden h-[68vh] w-[58vw] rotate-[-8deg] border border-pearl/10 bg-pearl/[0.06] shadow-cinematic lg:block"
-      />
-      <motion.div
-        initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, scale: 1.08 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: slowDuration, ease: editorialEase, delay: 0.08 }}
-        className="absolute right-[7vw] top-36 hidden aspect-[4/5] w-[26vw] lg:block"
-      >
-        <MediaPlaceholder
-          id="home-hero-primary"
-          language={language}
-          priority
-          sizes="26vw"
-          className="h-full rounded-lg border border-pearl/10"
-        />
-      </motion.div>
-      <motion.div
-        variants={fadeUp}
-        initial="hidden"
-        animate="show"
-        transition={{ duration: standardDuration, ease: editorialEase, delay: 0.24 }}
-        className="absolute bottom-20 right-[32vw] hidden w-72 border border-pearl/10 bg-ink/80 p-5 lg:block"
-      >
-        <p className="text-xs uppercase tracking-editorial text-champagne">
-          {language === "zh" ? "伦敦 / 英国" : "London / UK"}
-        </p>
-        <p className="mt-6 border-t border-pearl/20 pt-4 text-sm text-pearl/70">
-          {language === "zh" ? "制作、人才与活动执行协调" : "Production, talent and activation coordination"}
-        </p>
-      </motion.div>
-      <div className="container-x relative grid min-h-[calc(100svh-4rem)] gap-10 pb-14 pt-20 lg:grid-cols-[minmax(0,1fr)_minmax(24rem,.72fr)] lg:items-end lg:pb-16">
-        <div className="max-w-5xl">
+    <section className="relative overflow-hidden bg-ink pt-[72px] text-pearl lg:pt-20">
+      <div className="media-grain pointer-events-none absolute inset-0 opacity-[.045]" aria-hidden />
+      <div className="pointer-events-none absolute inset-x-0 top-[72px] h-px bg-gradient-to-r from-transparent via-champagne/30 to-transparent lg:top-20" />
+      <div className="container-x grid gap-12 py-12 lg:min-h-[min(900px,calc(100svh-5rem))] lg:grid-cols-12 lg:items-center lg:gap-8 lg:py-14 xl:gap-14">
+        <div className="relative z-10 min-w-0 lg:col-span-6 xl:pr-4">
           <motion.p
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            transition={{ duration: standardDuration, ease: editorialEase }}
-            className="text-xs font-semibold uppercase tracking-editorial text-champagne"
+            className="eyebrow text-champagne"
+            initial={reduced ? false : { opacity: 0, y: distances.small }}
+            animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: distances.small }}
+            transition={{ delay: base, duration: durations.fast, ease: easings.editorial }}
           >
             {copy.eyebrow}
           </motion.p>
-          <h1 className="display-heading mt-6 max-w-5xl text-balance font-semibold">
-            {copy.titleLines.map((line, index) => (
-              <span key={line} className="block overflow-hidden pb-1">
-                <motion.span
-                  className="block"
-                  initial={prefersReducedMotion ? { y: 0, opacity: 1 } : { y: "105%", opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: slowDuration, ease: editorialEase, delay: 0.08 + index * 0.08 }}
-                >
-                  {line}
-                </motion.span>
-              </span>
-            ))}
+
+          <h1
+            className={`mt-6 text-balance font-medium ${
+              zh
+                ? "max-w-[16ch] text-[clamp(2.4rem,4.4vw,3.9rem)] leading-[1.13] tracking-normal"
+                : "max-w-[20ch] text-[clamp(2.75rem,4.1vw,3.95rem)] leading-[.99] tracking-[-.04em]"
+            }`}
+          >
+            <span className="block">{copy.title}</span>
           </h1>
+
           <motion.p
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            transition={{ duration: standardDuration, ease: editorialEase, delay: 0.38 }}
-            className="mt-8 max-w-2xl text-lg leading-8 text-pearl/70 sm:text-xl"
+            initial={reduced ? false : { opacity: 0, y: distances.small }}
+            animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: distances.small }}
+            transition={{ delay: base + 0.22, duration: durations.fast, ease: easings.editorial }}
+            className="text-pearl/68 mt-7 max-w-[37rem] text-base leading-7 sm:text-lg sm:leading-8"
           >
             {copy.intro}
           </motion.p>
+
           <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            animate="show"
-            transition={{ duration: standardDuration, ease: editorialEase, delay: 0.5 }}
-            className="mt-10 flex flex-col gap-3 sm:flex-row"
+            initial={reduced ? false : { opacity: 0, y: distances.small }}
+            animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: distances.small }}
+            transition={{ delay: base + 0.3, duration: durations.fast, ease: easings.editorial }}
+            className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
           >
             <ButtonLink
-              href={withLanguage("/contact", language)}
+              href={withLanguage("/contact?brief=fit-call", language)}
               showArrow
-              className="bg-pearl text-ink hover:bg-champagne"
+              className="w-full bg-champagne text-ink hover:bg-pearl sm:w-auto"
             >
               {copy.primary}
             </ButtonLink>
             <ButtonLink
-              href={withLanguage("/services", language)}
+              href={withLanguage("/what-we-do", language)}
               variant="secondary"
-              className="border-pearl/20 bg-pearl/10 text-pearl hover:bg-pearl/20"
+              className="w-full border-pearl/25 bg-transparent text-pearl hover:border-champagne hover:bg-pearl/5 sm:w-auto"
             >
               {copy.secondary}
             </ButtonLink>
           </motion.div>
+
+          <motion.p
+            initial={reduced ? false : { opacity: 0 }}
+            animate={ready ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ delay: base + 0.42, duration: durations.fast }}
+            className="mt-8 border-l border-champagne/60 pl-4 font-serif text-xs tracking-[.14em] text-pearl/55"
+          >
+            {venusBridgeMedia.slogan}
+          </motion.p>
         </div>
+
         <motion.div
-          initial={prefersReducedMotion ? { opacity: 1 } : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: fastDuration, ease: editorialEase, delay: 0.18 }}
-          className="relative aspect-[4/5] w-full max-w-sm justify-self-end lg:hidden"
+          className="min-w-0 lg:col-span-6"
+          initial={reduced ? false : { opacity: 0, y: 22 }}
+          animate={ready ? { opacity: 1, y: 0 } : { opacity: 0, y: 22 }}
+          transition={{ delay: base + 0.14, duration: reduced ? 0 : 0.54, ease: easings.editorial }}
         >
-          <MediaPlaceholder
-            id="home-hero-primary"
-            language={language}
-            priority
-            sizes="(max-width: 640px) 100vw, 24rem"
-            className="h-full border border-pearl/10"
-          />
+          <ProductionSystemCanvas language={language} active={ready} />
         </motion.div>
       </div>
     </section>

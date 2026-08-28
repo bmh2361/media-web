@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import type { Language } from "@/lib/i18n";
+import { company } from "@/content/company";
+import { isProductionReleaseReady } from "@/lib/release";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://framebridge.studio";
+const siteUrl = company.websiteDomain;
+const indexable = isProductionReleaseReady();
 const ogImagePath = (lang: Language, path: string) =>
   `/og/${lang}/${path === "/" ? "home" : path.replace(/^\//, "").replaceAll("/", "--")}`;
 
 export const seoDescriptions = {
-  en: "UK-based creative production, photography, video, styling, models, creators and event content partner for Chinese brands, agencies and PR teams.",
-  zh: "为中国品牌、媒体、广告公司和PR团队提供英国本地创意制作、商业摄影、短视频、模特达人、活动拍摄和海外传播素材服务。"
+  en: "UK and European market validation, buyer and partner engagement, launches and local execution for Chinese companies.",
+  zh: "帮助中国企业验证英国与欧洲市场机会、对接买家与合作方，并推进发布、展会和本地执行。"
 };
 
 export function buildMetadata({
@@ -16,7 +19,9 @@ export function buildMetadata({
   title,
   description,
   keywords = [],
-  ogAlt
+  ogAlt,
+  ogImage,
+  allowIndex = indexable
 }: {
   lang: Language;
   path: string;
@@ -24,14 +29,18 @@ export function buildMetadata({
   description: string;
   keywords?: string[];
   ogAlt?: string;
+  ogImage?: string;
+  allowIndex?: boolean;
 }): Metadata {
   const localizedPath = `/${lang}${path === "/" ? "" : path}`;
+  const resolvedOgImage = ogImage ?? ogImagePath(lang, path);
   return {
-    title: {
-      absolute: title
-    },
+    title: { absolute: title },
     description,
     keywords,
+    robots: allowIndex
+      ? { index: true, follow: true }
+      : { index: false, follow: false, noarchive: true, nocache: true },
     alternates: {
       canonical: localizedPath,
       languages: {
@@ -44,24 +53,12 @@ export function buildMetadata({
       title,
       description,
       url: `${siteUrl}${localizedPath}`,
-      siteName: "FrameBridge Studio",
+      siteName: "Venus Bridge",
       type: "website",
       locale: lang === "zh" ? "zh_CN" : "en_GB",
       alternateLocale: lang === "zh" ? ["en_GB"] : ["zh_CN"],
-      images: [
-        {
-          url: ogImagePath(lang, path),
-          width: 1200,
-          height: 630,
-          alt: ogAlt ?? title
-        }
-      ]
+      images: [{ url: resolvedOgImage, width: 1200, height: 630, alt: ogAlt ?? title }]
     },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [ogImagePath(lang, path)]
-    }
+    twitter: { card: "summary_large_image", title, description, images: [resolvedOgImage] }
   };
 }
