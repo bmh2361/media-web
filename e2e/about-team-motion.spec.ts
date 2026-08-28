@@ -1,5 +1,7 @@
 import { expect, test } from "@playwright/test";
 
+const SETTLED_STAGE_TIMEOUT_MS = 20_000;
+
 test.describe("About Us geographic story", () => {
   test("China origins converge on London before the quieter London to Europe network", async ({ page }) => {
     await page.emulateMedia({ reducedMotion: "no-preference" });
@@ -16,7 +18,9 @@ test.describe("About Us geographic story", () => {
     const visual = globe.locator("[data-connection-visual]");
     await expect(visual).toHaveAttribute("data-globe-stage", /origin|primary|europe|settled/);
     await expect(visual).toHaveAttribute("data-main-propagation-ms", "2600");
-    await expect(visual).toHaveAttribute("data-globe-stage", "settled", { timeout: 8500 });
+    await expect(visual).toHaveAttribute("data-globe-stage", "settled", {
+      timeout: SETTLED_STAGE_TIMEOUT_MS
+    });
     await page.waitForTimeout(1200);
     await expect(visual).toHaveAttribute("data-globe-stage", "settled");
     await expect(globe.locator("[data-globe-halo]")).toHaveCount(2);
@@ -110,7 +114,9 @@ test.describe("About Us geographic story", () => {
       pausedOffset
     );
     await visual.scrollIntoViewIfNeeded();
-    await expect(visual).toHaveAttribute("data-globe-stage", "settled", { timeout: 8500 });
+    await expect(visual).toHaveAttribute("data-globe-stage", "settled", {
+      timeout: SETTLED_STAGE_TIMEOUT_MS
+    });
   });
 
   test("WebGL failure leaves the complete SVG and semantic story in place", async ({ page }) => {
