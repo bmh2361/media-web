@@ -6,6 +6,7 @@ blob-report/
 node_modules/
 out/
 dist/
+tmp/
 coverage/
 .env*
 !.env.example
@@ -19,6 +20,9 @@ pnpm-debug.log*
 Thumbs.db
 .idea/
 .vscode/
+.wrangler/
+.dev.vars*
+.cloudflared/
 audit/**/*.png
 audit/**/*.jpg
 audit/**/*.jpeg

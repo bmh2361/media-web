@@ -29,7 +29,10 @@ export function MeasurementBridge() {
       if (link.dataset.analytics === "language-switch") {
         trackMeasurement("language_switch", { destination: path });
       } else if (/\/(?:en|zh)\/work\/[^/]+$/.test(path)) {
-        trackMeasurement("case_detail_open", { case_slug: path.split("/").at(-1), cta_location: ctaLocation });
+        trackMeasurement("case_detail_open", {
+          case_slug: path.split("/").at(-1),
+          cta_location: ctaLocation
+        });
       } else if (path.endsWith("/companies")) {
         trackMeasurement("companies_cta_click", { cta_location: ctaLocation });
       } else if (path.endsWith("/partners")) {

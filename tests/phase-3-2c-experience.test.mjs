@@ -13,8 +13,11 @@ test("Phase 3.2C pre-implementation evidence is complete", async () => {
     "docs/phase-3-2c-page-hero-system.md",
     "docs/phase-3-2c-page-purpose-map.md",
     "docs/phase-3-2c-experience-redesign-plan.md"
-  ]) assert.ok((await source(path)).length > 800, path);
-  const inventory = JSON.parse(await source("audit/phase-3-2c/pre-implementation/public-media-inventory.json"));
+  ])
+    assert.ok((await source(path)).length > 800, path);
+  const inventory = JSON.parse(
+    await source("audit/phase-3-2c/pre-implementation/public-media-inventory.json")
+  );
   assert.equal(inventory.reviewSourcePhotographs, 107);
   const audit = await source("docs/phase-3-2c-full-portfolio-visual-audit.md");
   assert.match(audit, /91 distinct photographic moments/);
@@ -22,7 +25,18 @@ test("Phase 3.2C pre-implementation evidence is complete", async () => {
 
 test("selected capability media is rights-approved and publication-safe", async () => {
   const manifest = JSON.parse(await source("content/capability-media.generated.json"));
-  const selected = ["vbm-002", "vbm-003", "vbm-005", "vbm-013", "vbm-014", "vbm-015", "vbm-018", "vbm-019", "vbm-023", "vbm-024"];
+  const selected = [
+    "vbm-002",
+    "vbm-003",
+    "vbm-005",
+    "vbm-013",
+    "vbm-014",
+    "vbm-015",
+    "vbm-018",
+    "vbm-019",
+    "vbm-023",
+    "vbm-024"
+  ];
   for (const id of selected) {
     const media = manifest.records.find((record) => record.id === id);
     assert.ok(media, id);
@@ -71,12 +85,25 @@ test("public surfaces remove internal proof vocabulary", async () => {
     "content/phase3.ts"
   ];
   const joined = (await Promise.all(files.map(source))).join("\n");
-  assert.doesNotMatch(joined, /Proof before explanation|Execution Cases|Capability Evidence|Evidence Boundary|Relationship & Knowledge Proof|Process Proof|Visual Proof|Adjacent proof|Direct proof/);
+  assert.doesNotMatch(
+    joined,
+    /Proof before explanation|Execution Cases|Capability Evidence|Evidence Boundary|Relationship & Knowledge Proof|Process Proof|Visual Proof|Adjacent proof|Direct proof/
+  );
 });
 
 test("case details retain the shared narrative and data-driven visual system", async () => {
   const detail = await source("components/sections/PortfolioProjectDetail.tsx");
-  for (const marker of ["Project Objective", "Business Context", "Challenge", "Venus Bridge Role", "Strategy / Approach", "Local Delivery", "Outputs / Outcomes", "What Remained Useful", "Next project"])
+  for (const marker of [
+    "Project Objective",
+    "Business Context",
+    "Challenge",
+    "Venus Bridge Role",
+    "Strategy / Approach",
+    "Local Delivery",
+    "Outputs / Outcomes",
+    "What Remained Useful",
+    "Next project"
+  ])
     assert.match(detail, new RegExp(marker));
   assert.match(detail, /data-editorial-media-blocks/);
   assert.match(detail, /data-evidence-level/);
@@ -87,5 +114,8 @@ test("institutional engagements stay empty-safe and do not invent public proof",
   const capabilities = await source("components/sections/Phase3Capabilities.tsx");
   assert.match(component, /if \(!records\.length\) return null/);
   assert.match(capabilities, /<SelectedEngagements records=\{\[\]\}/);
-  assert.doesNotMatch(capabilities, /Oxford|Cambridge|Imperial|Leading British Professor|World-Class Institution/);
+  assert.doesNotMatch(
+    capabilities,
+    /Oxford|Cambridge|Imperial|Leading British Professor|World-Class Institution/
+  );
 });

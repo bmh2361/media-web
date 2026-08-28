@@ -17,7 +17,14 @@ export function CapabilityImage({
   sizes?: string;
   priority?: boolean;
   fit?: "cover" | "contain";
-  mediaRole?: "hero-landscape" | "hero-portrait" | "proof-landscape" | "proof-portrait" | "card-landscape" | "mosaic-fill" | "editorial-natural";
+  mediaRole?:
+    | "hero-landscape"
+    | "hero-portrait"
+    | "proof-landscape"
+    | "proof-portrait"
+    | "card-landscape"
+    | "mosaic-fill"
+    | "editorial-natural";
 }) {
   return (
     <ArtDirectedImage

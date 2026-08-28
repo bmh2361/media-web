@@ -4,12 +4,16 @@ const activeButton = (page: Page) => page.locator('[data-mobile-case-row] button
 const row = (page: Page, index: number) => page.locator("[data-mobile-case-row]").nth(index);
 
 async function placeAnchor(page: Page, index: number, ratio = 0.46) {
-  await page.evaluate(({ targetIndex, targetRatio }) => {
-    const anchor = document.querySelectorAll<HTMLElement>("[data-mobile-case-anchor]")[targetIndex];
-    if (!anchor) throw new Error(`Missing mobile case anchor ${targetIndex}`);
-    const point = anchor.getBoundingClientRect().top + Math.min(48, anchor.getBoundingClientRect().height * 0.35);
-    window.scrollBy({ top: point - innerHeight * targetRatio, behavior: "auto" });
-  }, { targetIndex: index, targetRatio: ratio });
+  await page.evaluate(
+    ({ targetIndex, targetRatio }) => {
+      const anchor = document.querySelectorAll<HTMLElement>("[data-mobile-case-anchor]")[targetIndex];
+      if (!anchor) throw new Error(`Missing mobile case anchor ${targetIndex}`);
+      const point =
+        anchor.getBoundingClientRect().top + Math.min(48, anchor.getBoundingClientRect().height * 0.35);
+      window.scrollBy({ top: point - innerHeight * targetRatio, behavior: "auto" });
+    },
+    { targetIndex: index, targetRatio: ratio }
+  );
 }
 
 test.beforeEach(async ({ page }, testInfo) => {
@@ -31,7 +35,9 @@ test("candidate dwell filters incidental movement and direct tap overrides immed
   await placeAnchor(page, 4);
   await page.waitForTimeout(120);
   await expect(row(page, 3).locator("button")).toHaveAttribute("aria-expanded", "true");
-  await expect.poll(async () => row(page, 4).locator("button").getAttribute("aria-expanded"), { timeout: 1200 }).toBe("true");
+  await expect
+    .poll(async () => row(page, 4).locator("button").getAttribute("aria-expanded"), { timeout: 1200 })
+    .toBe("true");
 });
 
 test("tiny forward and backward corrections retain the explicitly active case", async ({ page }) => {
@@ -57,7 +63,9 @@ test("active preview body retains ownership while its media and role are read", 
   await expect(activeButton(page)).toHaveCount(1);
 
   await placeAnchor(page, 3);
-  await expect.poll(async () => row(page, 3).locator("button").getAttribute("aria-expanded"), { timeout: 1200 }).toBe("true");
+  await expect
+    .poll(async () => row(page, 3).locator("button").getAttribute("aria-expanded"), { timeout: 1200 })
+    .toBe("true");
 });
 
 test("rapid flick suppresses sequential intermediate activations", async ({ page }) => {
@@ -71,13 +79,21 @@ test("rapid flick suppresses sequential intermediate activations", async ({ page
       if (slug && history.at(-1) !== slug) history.push(slug);
     };
     record();
-    new MutationObserver(record).observe(list!, { attributes: true, subtree: true, attributeFilter: ["aria-expanded"] });
+    new MutationObserver(record).observe(list!, {
+      attributes: true,
+      subtree: true,
+      attributeFilter: ["aria-expanded"]
+    });
     (window as Window & { __caseActivationHistory?: string[] }).__caseActivationHistory = history;
   });
 
   await placeAnchor(page, 4);
-  await expect.poll(async () => row(page, 4).locator("button").getAttribute("aria-expanded"), { timeout: 1500 }).toBe("true");
-  const history = await page.evaluate(() => (window as Window & { __caseActivationHistory?: string[] }).__caseActivationHistory ?? []);
+  await expect
+    .poll(async () => row(page, 4).locator("button").getAttribute("aria-expanded"), { timeout: 1500 })
+    .toBe("true");
+  const history = await page.evaluate(
+    () => (window as Window & { __caseActivationHistory?: string[] }).__caseActivationHistory ?? []
+  );
   expect(history.length).toBeLessThanOrEqual(2);
   expect(history.at(-1)).toBe(await row(page, 4).getAttribute("data-mobile-case-row"));
 });

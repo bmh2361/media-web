@@ -99,10 +99,7 @@ try {
   const invalid = await submit({ ...base, enquiryType: "quick", email: "invalid" }, "10.0.0.3");
   check(invalid.status === 400, "invalid email is rejected");
 
-  const missingRequired = await submit(
-    { ...base, enquiryType: "quick", objective: "" },
-    "10.0.0.7"
-  );
+  const missingRequired = await submit({ ...base, enquiryType: "quick", objective: "" }, "10.0.0.7");
   check(missingRequired.status === 400, "missing required fields are rejected");
 
   const longDescription = await submit(
@@ -137,10 +134,7 @@ try {
   );
   check(optionalFields.status === 200, "empty optional fields are accepted");
 
-  const consentMissing = await submit(
-    { ...base, enquiryType: "quick", consent: false },
-    "10.0.0.11"
-  );
+  const consentMissing = await submit({ ...base, enquiryType: "quick", consent: false }, "10.0.0.11");
   check(consentMissing.status === 400, "missing consent is rejected");
 
   const repeatPayload = { ...base, enquiryType: "quick", company: "Duplicate Test" };
@@ -225,7 +219,9 @@ try {
   await page.getByLabel("职位（选填）").fill("品牌总监");
   await page.getByLabel("邮箱").fill("zh@example.test");
   await page.getByLabel("当前阶段").selectOption({ index: 1 });
-  await page.getByLabel("希望在英国或欧洲实现什么？").fill("验证中文联系表单的提交、成功提示与本地交付流程。 ");
+  await page
+    .getByLabel("希望在英国或欧洲实现什么？")
+    .fill("验证中文联系表单的提交、成功提示与本地交付流程。 ");
   await page.getByLabel(/我同意 Venus Bridge Media/).check();
   await page.waitForTimeout(2600);
   await page.getByRole("button", { name: "提交咨询" }).click();

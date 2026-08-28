@@ -19,6 +19,7 @@ Work index word count:
 221 → 203
 
 Commercial project types:
+
 1. International Credibility Project
 2. UK Industry Presence Project
 3. International Brand Activation

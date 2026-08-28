@@ -79,7 +79,7 @@ test("detail pages use data-driven editorial blocks and chronological next-proje
   ])
     assert.match(detail, new RegExp(`data-case-section=\\"${section}\\"`));
   for (const number of ["01", "02", "03"])
-    assert.match(detail, new RegExp(`>${number}<|eyebrow=\\"${number}\\"|>${number} ·`));
+    assert.match(detail, new RegExp(`>\\s*${number}(?:\\s*·)?|eyebrow=\\"${number}\\"`));
   assert.match(detail, /data-editorial-media-blocks/);
   assert.match(detail, /getNextPortfolioProject/);
   assert.match(detail, /EditorialBlock/);

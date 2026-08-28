@@ -16,10 +16,7 @@ export function ServiceProof({
     [language === "zh" ? "典型交付" : "Typical deliverables", proof.deliverables[language]],
     [language === "zh" ? "项目依赖" : "Dependencies", proof.dependencies[language]],
     [language === "zh" ? "需确认事项" : "Approvals", proof.approvals[language]],
-    [
-      language === "zh" ? "Venus Bridge 责任" : "Venus Bridge responsibility",
-      proof.frameBridge[language]
-    ],
+    [language === "zh" ? "Venus Bridge 责任" : "Venus Bridge responsibility", proof.frameBridge[language]],
     [language === "zh" ? "客户责任" : "Client responsibility", proof.client[language]],
     [language === "zh" ? "典型下一步" : "Typical next step", proof.nextStep[language]],
     [language === "zh" ? "相关概念项目模式" : "Related concept project models", proof.relatedModels[language]]

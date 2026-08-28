@@ -40,7 +40,12 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
       ];
   const principles = zh
     ? ["商业方向一致", "本地关系有人推进", "现场执行有人负责", "项目结束后继续跟进"]
-    : ["Aligned commercial direction", "Local relationships advanced", "Live delivery owned", "Follow-through after the project"];
+    : [
+        "Aligned commercial direction",
+        "Local relationships advanced",
+        "Live delivery owned",
+        "Follow-through after the project"
+      ];
   const operatingFrame = zh
     ? [
         { title: "总部商业目标", description: "明确企业进入英国与欧洲所要解决的商业问题。" },
@@ -48,9 +53,18 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         { title: "本地协同推进", description: "协调相关合作方与本地执行。" }
       ]
     : [
-        { title: "Headquarters intent", description: "Define the commercial problem the company needs to solve in the UK and Europe." },
-        { title: "UK & European market judgement", description: "Assess the market, relevant relationships and priorities for action." },
-        { title: "Coordinated local action", description: "Coordinate relevant partners and delivery on the ground." }
+        {
+          title: "Headquarters intent",
+          description: "Define the commercial problem the company needs to solve in the UK and Europe."
+        },
+        {
+          title: "UK & European market judgement",
+          description: "Assess the market, relevant relationships and priorities for action."
+        },
+        {
+          title: "Coordinated local action",
+          description: "Coordinate relevant partners and delivery on the ground."
+        }
       ];
 
   return (
@@ -60,25 +74,44 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         data-about-chapter="identity"
       >
         <div className="container-x relative py-8 md:py-9 lg:py-5">
-          <div className="flex items-center justify-between border-b border-ink/15 pb-4 text-[11px] uppercase tracking-editorial text-ink/42">
+          <div className="text-ink/42 flex items-center justify-between border-b border-ink/15 pb-4 text-[11px] uppercase tracking-editorial">
             <span>01 / {zh ? "跨境市场运营" : "CROSS-BORDER OPERATIONS"}</span>
             <span className="hidden sm:inline">BEIJING · LONDON · EUROPE</span>
           </div>
 
           <div className="mt-7 grid gap-x-8 gap-y-8 lg:grid-cols-12 lg:gap-y-0">
             <EditorialReveal className={zh ? "lg:col-span-6" : "lg:col-span-7"}>
-              <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "关于我们" : "ABOUT US"}</p>
-              <h1 className={`zh-display-measure mt-5 font-medium leading-[1.01] tracking-[-0.045em] ${zh ? "max-w-[17ch] text-[clamp(2.5rem,4.35vw,4.2rem)]" : "max-w-[20ch] text-[clamp(2.25rem,3.8vw,3.7rem)]"}`}>
-                {zh ? <><span className="block">服务中国企业</span><span className="block">英国与欧洲发展的</span><span className="block">跨境运营团队。</span></> : "A cross-border operating team for Chinese companies building in the UK and Europe."}
+              <p className="text-xs uppercase tracking-editorial text-champagne">
+                {zh ? "关于我们" : "ABOUT US"}
+              </p>
+              <h1
+                className={`zh-display-measure mt-5 font-medium leading-[1.01] tracking-[-0.045em] ${zh ? "max-w-[17ch] text-[clamp(2.5rem,4.35vw,4.2rem)]" : "max-w-[20ch] text-[clamp(2.25rem,3.8vw,3.7rem)]"}`}
+              >
+                {zh ? (
+                  <>
+                    <span className="block">服务中国企业</span>
+                    <span className="block">英国与欧洲发展的</span>
+                    <span className="block">跨境运营团队。</span>
+                  </>
+                ) : (
+                  "A cross-border operating team for Chinese companies building in the UK and Europe."
+                )}
               </h1>
             </EditorialReveal>
 
-            <EditorialReveal className={`max-w-md border-l border-ink/20 pl-5 lg:mt-14 lg:pl-7 ${zh ? "lg:col-span-4 lg:col-start-9" : "lg:col-span-5 lg:col-start-8"}`} delay={0.08}>
-              <p className="text-base leading-7 text-ink/68 md:text-lg md:leading-8">
-                {zh ? "Venus Bridge 是面向中国企业的跨境商业合作与英国、欧洲市场执行团队，将总部目标、相关商业关系与本地交付连接成协同行动。" : "Venus Bridge is a cross-border commercial partnerships and market-execution team, connecting Chinese headquarters goals, relevant relationships and delivery on the ground across the UK and Europe."}
+            <EditorialReveal
+              className={`max-w-md border-l border-ink/20 pl-5 lg:mt-14 lg:pl-7 ${zh ? "lg:col-span-4 lg:col-start-9" : "lg:col-span-5 lg:col-start-8"}`}
+              delay={0.08}
+            >
+              <p className="text-ink/68 text-base leading-7 md:text-lg md:leading-8">
+                {zh
+                  ? "Venus Bridge 是面向中国企业的跨境商业合作与英国、欧洲市场执行团队，将总部目标、相关商业关系与本地交付连接成协同行动。"
+                  : "Venus Bridge is a cross-border commercial partnerships and market-execution team, connecting Chinese headquarters goals, relevant relationships and delivery on the ground across the UK and Europe."}
               </p>
               <p className="mt-4 text-sm leading-6 text-ink/65">
-                {zh ? "从总部目标，到市场判断，再到本地执行。" : "From headquarters intent to market judgement and local delivery."}
+                {zh
+                  ? "从总部目标，到市场判断，再到本地执行。"
+                  : "From headquarters intent to market judgement and local delivery."}
               </p>
             </EditorialReveal>
           </div>
@@ -88,14 +121,21 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
               items={operatingFrame.map((item) => ({ title: item.title, description: item.description }))}
               label={zh ? "跨境市场运营逻辑" : "Cross-border operating frame"}
               compact
+              headingLevel={2}
             />
           </div>
-          <ol className="mt-9 hidden border-y border-ink/15 md:grid md:grid-cols-3 lg:mt-10" aria-label={zh ? "跨境市场运营逻辑" : "Cross-border operating frame"}>
+          <ol
+            className="mt-9 hidden border-y border-ink/15 md:grid md:grid-cols-3 lg:mt-10"
+            aria-label={zh ? "跨境市场运营逻辑" : "Cross-border operating frame"}
+          >
             {operatingFrame.map((item, index) => (
-              <li key={item.title} className="border-b border-ink/15 py-5 last:border-b-0 sm:border-b-0 sm:border-r sm:px-5 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0 lg:py-6">
+              <li
+                key={item.title}
+                className="border-b border-ink/15 py-5 last:border-b-0 sm:border-b-0 sm:border-r sm:px-5 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0 lg:py-6"
+              >
                 <span className="text-[11px] text-champagne">0{index + 1}</span>
                 <h2 className="mt-4 text-base font-medium leading-6 text-ink/80">{item.title}</h2>
-                <p className="mt-2 max-w-[29ch] text-sm leading-6 text-ink/56">{item.description}</p>
+                <p className="text-ink/56 mt-2 max-w-[29ch] text-sm leading-6">{item.description}</p>
               </li>
             ))}
           </ol>
@@ -109,8 +149,13 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           </p>
           <div className="mt-7 grid gap-10 lg:grid-cols-12 lg:gap-8">
             <EditorialReveal className="lg:col-span-6">
-              <h2 id="why-title" className="type-display-page zh-display-measure heading-measure-wide max-w-[11ch]">
-                {zh ? "关键是让每一个本地行动都服务同一个商业目标。" : "Make every local action work towards the same commercial goal."}
+              <h2
+                id="why-title"
+                className="type-display-page zh-display-measure heading-measure-wide max-w-[11ch]"
+              >
+                {zh
+                  ? "关键是让每一个本地行动都服务同一个商业目标。"
+                  : "Make every local action work towards the same commercial goal."}
               </h2>
             </EditorialReveal>
 
@@ -167,7 +212,9 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
                 : "Connected from the first market decision through live delivery and follow-through."}
             </h2>
             <p className="text-ink/56 max-w-sm text-base leading-7 lg:col-span-3 lg:col-start-10">
-              {zh ? "一个本地协调点，让总部更快掌握进展。" : "One local coordination point keeps headquarters close to progress."}
+              {zh
+                ? "一个本地协调点，让总部更快掌握进展。"
+                : "One local coordination point keeps headquarters close to progress."}
             </p>
           </div>
           <ol className="mt-12 grid grid-cols-2 border-y border-ink/15 lg:grid-cols-4">

@@ -32,29 +32,29 @@ The most important visual recommendation is therefore negative: **freeze the cur
 
 ## Page composition classification
 
-| Page / section | Density / focal point | Classification | Audit decision |
-|---|---|---|---|
-| Home hero | Strong asymmetric text/media balance | **KEEP AS-IS** | Proposition, visual and CTA work together. |
-| Home proof | Dense enough to prove, not overwhelm | **KEEP AS-IS** | Best business-first image ordering. |
-| Home buying situations | High information density, very scannable | **KEEP AS-IS** | Commercially essential. |
-| Home routes | Visually similar cards but appropriate taxonomy | **KEEP AS-IS** | Do not add icons/illustrations. |
-| Home local/partner split | Strong visual contrast and audience separation | **KEEP AS-IS** | Prevents partner pathway from hijacking primary ICP. |
-| Home expertise | Some conceptual repetition | **MINOR POLISH ONLY** | Monitor; no restructure. |
-| Home exhibition sequence | Clear temporal focal point | **KEEP AS-IS** | Strong visual/commercial bridge. |
-| Home differentiation/value | Slightly quieter, text-led | **MINOR POLISH ONLY** | Intentional trust-building pause. |
-| Companies hero/trigger grid | Clear and sales-focused | **KEEP AS-IS** | No service-menu redesign. |
-| Companies exhibition panel | Strong focal example | **KEEP AS-IS** | Demonstrates continuity. |
-| Partners categories/flow | Calm, professional, non-broker feel | **KEEP AS-IS** | Add proof later, not decoration. |
-| Work desktop index | Premium editorial archive with fixed preview | **KEEP AS-IS** | Strongest interaction system. |
-| Work mobile list | Long but fast to scan | **KEEP AS-IS** | Correctly removes hover dependency. |
-| Case details | Image-led, role-bounded, consistent | **MINOR POLISH ONLY** | Future evidence can diversify narrative. |
-| How We Work stages | Balanced process information | **KEEP AS-IS** | Avoid process-diagram novelty. |
-| About opening/why | Bold text fields with strong tension | **KEEP AS-IS** | Finished. |
-| About globe | Purposeful centrepiece with text/SVG fallback | **KEEP AS-IS** | Do not turn into an office map. |
-| About team | Five responsibility-led profiles | **KEEP AS-IS** | Portraits lazy-load correctly; interactive detail is accessible. |
-| Contact | Clear hierarchy and generous fields | **KEEP AS-IS** | Operational copy/fallback only. |
-| Privacy/Terms | Simple and readable | **NEEDS ITERATION** | Content/configuration, not visual redesign. |
-| 404 | Blank framework default | **NEEDS ITERATION** | P2 minimal branded recovery. |
+| Page / section              | Density / focal point                           | Classification        | Audit decision                                                   |
+| --------------------------- | ----------------------------------------------- | --------------------- | ---------------------------------------------------------------- |
+| Home hero                   | Strong asymmetric text/media balance            | **KEEP AS-IS**        | Proposition, visual and CTA work together.                       |
+| Home proof                  | Dense enough to prove, not overwhelm            | **KEEP AS-IS**        | Best business-first image ordering.                              |
+| Home buying situations      | High information density, very scannable        | **KEEP AS-IS**        | Commercially essential.                                          |
+| Home routes                 | Visually similar cards but appropriate taxonomy | **KEEP AS-IS**        | Do not add icons/illustrations.                                  |
+| Home local/partner split    | Strong visual contrast and audience separation  | **KEEP AS-IS**        | Prevents partner pathway from hijacking primary ICP.             |
+| Home expertise              | Some conceptual repetition                      | **MINOR POLISH ONLY** | Monitor; no restructure.                                         |
+| Home exhibition sequence    | Clear temporal focal point                      | **KEEP AS-IS**        | Strong visual/commercial bridge.                                 |
+| Home differentiation/value  | Slightly quieter, text-led                      | **MINOR POLISH ONLY** | Intentional trust-building pause.                                |
+| Companies hero/trigger grid | Clear and sales-focused                         | **KEEP AS-IS**        | No service-menu redesign.                                        |
+| Companies exhibition panel  | Strong focal example                            | **KEEP AS-IS**        | Demonstrates continuity.                                         |
+| Partners categories/flow    | Calm, professional, non-broker feel             | **KEEP AS-IS**        | Add proof later, not decoration.                                 |
+| Work desktop index          | Premium editorial archive with fixed preview    | **KEEP AS-IS**        | Strongest interaction system.                                    |
+| Work mobile list            | Long but fast to scan                           | **KEEP AS-IS**        | Correctly removes hover dependency.                              |
+| Case details                | Image-led, role-bounded, consistent             | **MINOR POLISH ONLY** | Future evidence can diversify narrative.                         |
+| How We Work stages          | Balanced process information                    | **KEEP AS-IS**        | Avoid process-diagram novelty.                                   |
+| About opening/why           | Bold text fields with strong tension            | **KEEP AS-IS**        | Finished.                                                        |
+| About globe                 | Purposeful centrepiece with text/SVG fallback   | **KEEP AS-IS**        | Do not turn into an office map.                                  |
+| About team                  | Five responsibility-led profiles                | **KEEP AS-IS**        | Portraits lazy-load correctly; interactive detail is accessible. |
+| Contact                     | Clear hierarchy and generous fields             | **KEEP AS-IS**        | Operational copy/fallback only.                                  |
+| Privacy/Terms               | Simple and readable                             | **NEEDS ITERATION**   | Content/configuration, not visual redesign.                      |
+| 404                         | Blank framework default                         | **NEEDS ITERATION**   | P2 minimal branded recovery.                                     |
 
 No major section qualifies as **NEEDS RESTRUCTURE**.
 
@@ -110,30 +110,30 @@ Motion verdict: **purposeful and mature**. No pre-launch motion change is justif
 
 ## Navigation and interaction audit
 
-| Element | Result | Decision |
-|---|---|---|
-| Labels: Home, For Companies, For Partners, Case Studies, How We Work, About Us, Contact | Clear, audience-led and optimal for current strategy | Keep. |
-| Desktop hierarchy | Flat; no mega-menu complexity | Keep. |
-| Sticky header | Maintains access without dominating | Keep. |
-| Language switch | Preserves Contact query and route context; clear EN/中文 controls | Keep. |
-| Primary CTA | “Discuss a Project” stays visible and aligned to serious B2B intent | Keep. |
-| Mobile menu | Operable at 320/390; Escape closes and focus restores | Keep. |
-| Skip link/focus | Present and visible on focus | Keep. |
-| Work filters | URL-initialised and fail-closed | Keep; monitor horizontal discovery. |
-| 404 recovery | Absent | P2 later. |
+| Element                                                                                 | Result                                                              | Decision                            |
+| --------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ----------------------------------- |
+| Labels: Home, For Companies, For Partners, Case Studies, How We Work, About Us, Contact | Clear, audience-led and optimal for current strategy                | Keep.                               |
+| Desktop hierarchy                                                                       | Flat; no mega-menu complexity                                       | Keep.                               |
+| Sticky header                                                                           | Maintains access without dominating                                 | Keep.                               |
+| Language switch                                                                         | Preserves Contact query and route context; clear EN/中文 controls   | Keep.                               |
+| Primary CTA                                                                             | “Discuss a Project” stays visible and aligned to serious B2B intent | Keep.                               |
+| Mobile menu                                                                             | Operable at 320/390; Escape closes and focus restores               | Keep.                               |
+| Skip link/focus                                                                         | Present and visible on focus                                        | Keep.                               |
+| Work filters                                                                            | URL-initialised and fail-closed                                     | Keep; monitor horizontal discovery. |
+| 404 recovery                                                                            | Absent                                                              | P2 later.                           |
 
 ## Responsive audit
 
 Evidence combines the independent rendered audit and existing Playwright coverage.
 
-| Viewport | Findings |
-|---|---|
-| 320–390 | Header/menu operable; no document overflow; headings remain legible; CTAs and form controls meet touch needs. Home is long but coherent. |
-| 430 | Release/case/editorial tests pass; no wrapping or grid regression found. |
-| 768 | Major pages and cases retain hierarchy. About globe intentionally shifts left; Work filters are horizontally contained. |
-| 1024 | Grid transitions hold; About and case layouts pass. |
-| 1440 | Primary design target is polished and balanced. |
-| 1920 | Home/portfolio/legacy route coverage passes; content remains constrained and does not over-stretch. |
+| Viewport | Findings                                                                                                                                 |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 320–390  | Header/menu operable; no document overflow; headings remain legible; CTAs and form controls meet touch needs. Home is long but coherent. |
+| 430      | Release/case/editorial tests pass; no wrapping or grid regression found.                                                                 |
+| 768      | Major pages and cases retain hierarchy. About globe intentionally shifts left; Work filters are horizontally contained.                  |
+| 1024     | Grid transitions hold; About and case layouts pass.                                                                                      |
+| 1440     | Primary design target is polished and balanced.                                                                                          |
+| 1920     | Home/portfolio/legacy route coverage passes; content remains constrained and does not over-stretch.                                      |
 
 Chinese headings typically occupy fewer visual lines than English at desktop and remain balanced on mobile. No long Chinese string broke the grid.
 
@@ -160,14 +160,14 @@ Chinese: **8.6/10**. It is not merely literal translation: `本地执行`, `商�
 
 Official sites reviewed: [Landor](https://landor.com/), [Brunswick Group](https://www.brunswickgroup.com/), [Intralink](https://www.intralinkgroup.com/), [Control Risks](https://www.controlrisks.com/), [Hawksford](https://www.hawksford.com/), [Jack Morton](https://jackmorton.com/), [GPJ](https://www.gpj.com/), plus current official/searchable material from Prophet and smaller China–Europe advisory examples.
 
-| Benchmark lesson | Venus Bridge position |
-|---|---|
-| Landor proves the power of very short category language plus immediate work. | Venus Bridge is nearly as disciplined visually and clearer about buyer situations, though less famous proof requires more explanation. |
-| Brunswick uses one high-stakes outcome line and expert authority. | Venus Bridge’s team/operating story is strong; legal identity and commercial references must catch up. |
-| Intralink makes hands-on business development credible through metrics, logos and testimonials. | This is Venus Bridge’s largest maturity gap; it cannot be solved through design. |
-| Control Risks combines an explicit category, deep service taxonomy and maintained insights. | Venus Bridge wisely avoids premature taxonomy/insights breadth; its focused IA is stronger for current scale. |
-| Hawksford uses bilingual access and formal legal/location confidence. | Venus Bridge has better editorial focus but incomplete release/legal configuration. |
-| Jack Morton/GPJ lead with spectacular work and scale/outcome claims. | Venus Bridge is less visually theatrical and more commercially precise for its niche; current cases lack outcome/scale evidence. |
+| Benchmark lesson                                                                                | Venus Bridge position                                                                                                                  |
+| ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Landor proves the power of very short category language plus immediate work.                    | Venus Bridge is nearly as disciplined visually and clearer about buyer situations, though less famous proof requires more explanation. |
+| Brunswick uses one high-stakes outcome line and expert authority.                               | Venus Bridge’s team/operating story is strong; legal identity and commercial references must catch up.                                 |
+| Intralink makes hands-on business development credible through metrics, logos and testimonials. | This is Venus Bridge’s largest maturity gap; it cannot be solved through design.                                                       |
+| Control Risks combines an explicit category, deep service taxonomy and maintained insights.     | Venus Bridge wisely avoids premature taxonomy/insights breadth; its focused IA is stronger for current scale.                          |
+| Hawksford uses bilingual access and formal legal/location confidence.                           | Venus Bridge has better editorial focus but incomplete release/legal configuration.                                                    |
+| Jack Morton/GPJ lead with spectacular work and scale/outcome claims.                            | Venus Bridge is less visually theatrical and more commercially precise for its niche; current cases lack outcome/scale evidence.       |
 
 Venus Bridge is already stronger than many smaller cross-border sites in visual authority, mobile coherence, bilingual symmetry, buying-trigger recognition and honesty about verified roles. It should not imitate enterprise-scale logo walls, metrics or insight libraries until it genuinely owns that evidence.
 
@@ -204,4 +204,3 @@ Venus Bridge is already stronger than many smaller cross-border sites in visual 
 ### NEEDS RESTRUCTURE
 
 - None.
-

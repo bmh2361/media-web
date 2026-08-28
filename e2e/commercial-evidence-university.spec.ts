@@ -24,12 +24,12 @@ test.describe("scalable commercial case evidence", () => {
       await expect(page.locator("[data-case-preview]")).toContainText(
         locale === "zh" ? "记录慕尼黑发布现场" : "documented the Munich launch setting"
       );
-      await rows.first().focus();
-      await expect(rows.first()).toBeFocused();
+      await rows.first().getByRole("button").focus();
+      await expect(rows.first().getByRole("button")).toBeFocused();
 
       await page.locator('[data-case-filter="market-presence"]').click();
       await expect(rows).toHaveCount(3);
-      await expect(rows.first()).toHaveAttribute("href", `/${locale}/work/byd-bd11-london`);
+      await expect(rows.first().getByRole("link")).toHaveAttribute("href", `/${locale}/work/byd-bd11-london`);
 
       await page.locator('[data-case-filter="institutional-talent"]').click();
       await expect(rows).toHaveCount(2);
@@ -40,7 +40,9 @@ test.describe("scalable commercial case evidence", () => {
       await expect(page.locator("[data-case-preview]")).toBeHidden();
     });
 
-    test(`${locale} home, archive and two details remain responsive at six breakpoints`, async ({ page }, testInfo) => {
+    test(`${locale} home, archive and two details remain responsive at six breakpoints`, async ({
+      page
+    }, testInfo) => {
       test.skip(testInfo.project.name === "mobile");
       const errors: string[] = [];
       page.on("pageerror", (error) => errors.push(error.message));
@@ -48,7 +50,11 @@ test.describe("scalable commercial case evidence", () => {
         await page.setViewportSize(viewport);
         for (const path of ["", "/work", ...detailSlugs.map((slug) => `/work/${slug}`)]) {
           await page.goto(`/${locale}${path}`);
-          await expect(page.locator("main, [data-phase5-section='hero'], [data-work-hero], [data-case-section='hero']").first()).toBeVisible();
+          await expect(
+            page
+              .locator("main, [data-phase5-section='hero'], [data-work-hero], [data-case-section='hero']")
+              .first()
+          ).toBeVisible();
           const overflow = await page.evaluate(
             () => document.documentElement.scrollWidth - document.documentElement.clientWidth
           );
@@ -58,7 +64,9 @@ test.describe("scalable commercial case evidence", () => {
       expect(errors).toEqual([]);
     });
 
-    test(`${locale} detail has eight-part commercial narrative and related links`, async ({ page }, testInfo) => {
+    test(`${locale} detail has eight-part commercial narrative and related links`, async ({
+      page
+    }, testInfo) => {
       test.skip(testInfo.project.name === "mobile");
       await page.goto(`/${locale}/work/byd-bd11-london`);
       for (const section of [

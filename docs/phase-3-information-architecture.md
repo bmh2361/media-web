@@ -16,28 +16,28 @@ No mega-menu is required. Mobile uses the same flat order.
 
 ## Route mapping
 
-| Old route | New route | Action |
-| --- | --- | --- |
-| `/[lang]` | `/[lang]` | Retain and rebuild |
-| `/[lang]/what-we-do` | `/[lang]/capabilities` | Merge and redirect |
-| `/[lang]/what-we-do/enter-the-uk` | `/[lang]/capabilities` | Retire and redirect |
-| `/[lang]/what-we-do/launch-in-the-uk` | `/[lang]/capabilities#industry-presence-events` | Merge and redirect |
-| `/[lang]/what-we-do/building-uk-presence` | `/[lang]/capabilities` | Retire and redirect |
-| `/[lang]/what-we-do/create-in-the-uk` | `/[lang]/capabilities#creative-production-brand-assets` | Merge and redirect |
-| `/[lang]/services` | `/[lang]/capabilities` | Merge and redirect |
-| `/[lang]/services/uk-market-entry` | `/[lang]/capabilities` | Retire and redirect |
-| `/[lang]/services/events-exhibitions` | `/[lang]/capabilities#industry-presence-events` | Merge and redirect |
-| `/[lang]/services/commercial-production` | `/[lang]/capabilities#creative-production-brand-assets` | Merge and redirect |
-| `/[lang]/services/research-innovation` | `/[lang]/capabilities#institutional-expert-collaboration` | Merge and redirect |
-| `/[lang]/industries` and descendants | `/[lang]/capabilities` | Merge and redirect |
-| `/[lang]/expertise` and descendants | `/[lang]/capabilities` | Merge and redirect |
-| `/[lang]/talent` | `/[lang]/capabilities#creators-talent-cultural-partnerships` | Merge and redirect |
-| `/[lang]/for-agencies` | `/[lang]/capabilities` | Merge and redirect |
-| `/[lang]/work` | `/[lang]/work` | Retain and reposition |
-| `/[lang]/work/[slug]` | same | Retain with truth-gated structure |
-| `/[lang]/about` | same | Retain and rewrite |
-| `/[lang]/contact` | same | Retain and simplify |
-| `/[lang]/privacy`, `/terms` | same | Retain |
+| Old route                                 | New route                                                    | Action                            |
+| ----------------------------------------- | ------------------------------------------------------------ | --------------------------------- |
+| `/[lang]`                                 | `/[lang]`                                                    | Retain and rebuild                |
+| `/[lang]/what-we-do`                      | `/[lang]/capabilities`                                       | Merge and redirect                |
+| `/[lang]/what-we-do/enter-the-uk`         | `/[lang]/capabilities`                                       | Retire and redirect               |
+| `/[lang]/what-we-do/launch-in-the-uk`     | `/[lang]/capabilities#industry-presence-events`              | Merge and redirect                |
+| `/[lang]/what-we-do/building-uk-presence` | `/[lang]/capabilities`                                       | Retire and redirect               |
+| `/[lang]/what-we-do/create-in-the-uk`     | `/[lang]/capabilities#creative-production-brand-assets`      | Merge and redirect                |
+| `/[lang]/services`                        | `/[lang]/capabilities`                                       | Merge and redirect                |
+| `/[lang]/services/uk-market-entry`        | `/[lang]/capabilities`                                       | Retire and redirect               |
+| `/[lang]/services/events-exhibitions`     | `/[lang]/capabilities#industry-presence-events`              | Merge and redirect                |
+| `/[lang]/services/commercial-production`  | `/[lang]/capabilities#creative-production-brand-assets`      | Merge and redirect                |
+| `/[lang]/services/research-innovation`    | `/[lang]/capabilities#institutional-expert-collaboration`    | Merge and redirect                |
+| `/[lang]/industries` and descendants      | `/[lang]/capabilities`                                       | Merge and redirect                |
+| `/[lang]/expertise` and descendants       | `/[lang]/capabilities`                                       | Merge and redirect                |
+| `/[lang]/talent`                          | `/[lang]/capabilities#creators-talent-cultural-partnerships` | Merge and redirect                |
+| `/[lang]/for-agencies`                    | `/[lang]/capabilities`                                       | Merge and redirect                |
+| `/[lang]/work`                            | `/[lang]/work`                                               | Retain and reposition             |
+| `/[lang]/work/[slug]`                     | same                                                         | Retain with truth-gated structure |
+| `/[lang]/about`                           | same                                                         | Retain and rewrite                |
+| `/[lang]/contact`                         | same                                                         | Retain and simplify               |
+| `/[lang]/privacy`, `/terms`               | same                                                         | Retain                            |
 
 Retired pages are removed from primary navigation and sitemap. Redirects preserve incoming links without leaving obsolete copy accessible.
 
@@ -90,4 +90,3 @@ One concise invitation plus a short form: Name, Company, Role, Email or WeChat, 
 ## Footer
 
 Capabilities, Work, About, Contact, Privacy, Terms and London, UK. No duplicate sitemap or retired taxonomy.
-

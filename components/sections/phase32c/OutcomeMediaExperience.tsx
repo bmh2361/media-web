@@ -21,7 +21,13 @@ export function OutcomeMediaExperience({ items, language }: { items: OutcomeScen
             <span className="type-label text-champagne">0{index + 1}</span>
             <h3 className="mt-5 text-2xl font-medium">{item.title}</h3>
             <p className="mt-4 text-base leading-7 text-ink/65">{item.text}</p>
-            <EditorialScene scene={item.scene} language={language} className="mt-6" sizes="100vw" mediaRole="card-landscape" />
+            <EditorialScene
+              scene={item.scene}
+              language={language}
+              className="mt-6"
+              sizes="100vw"
+              mediaRole="card-landscape"
+            />
           </article>
         ))}
       </div>
@@ -46,8 +52,17 @@ export function OutcomeMediaExperience({ items, language }: { items: OutcomeScen
           ))}
         </div>
         <div className="relative min-h-[560px] overflow-hidden bg-ink md:col-span-7">
-          <EditorialScene key={items[active]?.scene.media.id} scene={items[active]!.scene} language={language} className="absolute inset-0 h-full w-full animate-[phase32c-scene-in_.55s_ease-out_both]" sizes="58vw" mediaRole="mosaic-fill" />
-          <p className="absolute bottom-6 left-6 bg-ink/85 px-4 py-3 text-xs uppercase tracking-editorial text-pearl">{items[active]?.label}</p>
+          <EditorialScene
+            key={items[active]?.scene.media.id}
+            scene={items[active]!.scene}
+            language={language}
+            className="absolute inset-0 h-full w-full animate-[phase32c-scene-in_.55s_ease-out_both]"
+            sizes="58vw"
+            mediaRole="mosaic-fill"
+          />
+          <p className="absolute bottom-6 left-6 bg-ink/85 px-4 py-3 text-xs uppercase tracking-editorial text-pearl">
+            {items[active]?.label}
+          </p>
         </div>
       </div>
     </div>

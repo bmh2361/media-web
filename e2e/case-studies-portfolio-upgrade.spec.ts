@@ -33,7 +33,8 @@ test("index taxonomy, preview and retired redirects follow the new contract", as
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/zh/work");
   await expect(page.locator("[data-case-row]")).toHaveCount(12);
-  for (const label of ["全部", "市场进入与发布", "行业与展会", "合作与机构", "品牌与内容"]) await expect(page.getByRole("button", { name: label, exact: true })).toBeVisible();
+  for (const label of ["全部", "市场进入与发布", "行业与展会", "合作与机构", "品牌与内容"])
+    await expect(page.getByRole("button", { name: label, exact: true })).toBeVisible();
   await expect(page.locator("[data-case-preview] img")).toBeVisible();
   const accessibility = await new AxeBuilder({ page: page as never }).include("main").analyze();
   expect(accessibility.violations).toEqual([]);

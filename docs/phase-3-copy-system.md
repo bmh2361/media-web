@@ -34,12 +34,12 @@ The first variant is selected because it identifies the activity and commercial 
 
 ## Outcome language
 
-| English | Chinese | Meaning |
-| --- | --- | --- |
-| Build International Credibility | 建立国际品牌可信度 | Create real relationships, experiences and evidence that strengthen brand perception. |
-| Be Present in the Right Rooms | 进入真正有价值的行业场景 | Participate in relevant events, communities and business environments. |
-| Work With the Right People | 与合适的人建立合作 | Coordinate relevant experts, creators, talent and specialist partners. |
-| Create Proof That Travels | 让海外成果持续产生价值 | Turn UK activity into reusable photography, film, interviews and stakeholder assets. |
+| English                         | Chinese                  | Meaning                                                                               |
+| ------------------------------- | ------------------------ | ------------------------------------------------------------------------------------- |
+| Build International Credibility | 建立国际品牌可信度       | Create real relationships, experiences and evidence that strengthen brand perception. |
+| Be Present in the Right Rooms   | 进入真正有价值的行业场景 | Participate in relevant events, communities and business environments.                |
+| Work With the Right People      | 与合适的人建立合作       | Coordinate relevant experts, creators, talent and specialist partners.                |
+| Create Proof That Travels       | 让海外成果持续产生价值   | Turn UK activity into reusable photography, film, interviews and stakeholder assets.  |
 
 ## Capability descriptions
 
@@ -95,4 +95,3 @@ Institutional endorsement, official partnership, client-agency status, campaign 
 ## Translation principles
 
 Chinese copy is written for founders, CEOs, CMOs, brand leaders and international business teams rather than translated sentence by sentence. Use commercially natural terms such as 英国本地合作、国际品牌可信度、行业参与、专家资源、海外品牌资产、本地执行 and 国际传播素材. Avoid inflated “出海” slogans and unexplained consulting frameworks. Both languages use concrete outputs and narrow, verifiable role descriptions.
-

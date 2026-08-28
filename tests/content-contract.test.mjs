@@ -51,7 +51,8 @@ test("approved Venus Bridge brand variants resolve from the canonical asset pack
     "public/brand/venus-bridge/webp/venus-bridge-horizontal-lockup-black.webp",
     "public/brand/venus-bridge/favicon/venus-bridge-icon-192.png",
     "public/brand/venus-bridge/favicon/venus-bridge-icon-512.png"
-  ]) await access(new URL(asset, root));
+  ])
+    await access(new URL(asset, root));
 });
 
 test("public brand surfaces no longer render the previous brand name", async () => {

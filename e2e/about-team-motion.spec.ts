@@ -15,7 +15,26 @@ test.describe("About Us geographic story", () => {
     await globe.scrollIntoViewIfNeeded();
     const visual = globe.locator("[data-connection-visual]");
     await expect(visual).toHaveAttribute("data-globe-stage", /origin|primary|europe|settled/);
-    await expect(visual).toHaveAttribute("data-globe-stage", "settled", { timeout: 6500 });
+    await expect(visual).toHaveAttribute("data-main-propagation-ms", "2600");
+    await expect(visual).toHaveAttribute("data-globe-stage", "settled", { timeout: 8500 });
+    await page.waitForTimeout(1200);
+    await expect(visual).toHaveAttribute("data-globe-stage", "settled");
+    await expect(globe.locator("[data-globe-halo]")).toHaveCount(2);
+    await expect(globe.locator("[data-cobe-layer]")).toHaveAttribute("data-enhanced", "true");
+    await expect(globe.locator("[data-globe-fallback]")).toHaveCSS("opacity", "0");
+    await expect(globe.locator("[data-connection-residual-route]")).toHaveCount(0);
+    await expect(globe.locator("[data-residual-particle]")).toHaveCount(5);
+    await expect(globe.locator("[data-residual-particle] animateMotion")).toHaveCount(5);
+    await expect(globe.locator("[data-residual-particle-core]")).toHaveCount(5);
+    const particle = globe.locator("[data-residual-particle]").first();
+    const particleStart = await particle.evaluate(
+      (element) => (element as SVGGraphicsElement).getCTM()?.e ?? 0
+    );
+    await page.waitForTimeout(500);
+    const particleEnd = await particle.evaluate(
+      (element) => (element as SVGGraphicsElement).getCTM()?.e ?? 0
+    );
+    expect(Math.abs(particleEnd - particleStart)).toBeGreaterThan(1);
     await expect(globe.locator('[data-connection-route="primary"]')).toHaveCount(5);
     await expect(globe.locator('[data-connection-route="secondary"]')).toHaveCount(7);
 
@@ -32,6 +51,43 @@ test.describe("About Us geographic story", () => {
       return element.width / element.getBoundingClientRect().width;
     });
     expect(ratio).toBeLessThanOrEqual((await page.viewportSize())!.width < 768 ? 1.26 : 1.61);
+  });
+
+  test("editorial rows and city labels take priority over the narrative loop", async ({ page }, testInfo) => {
+    test.skip(testInfo.project.name === "mobile");
+    await page.emulateMedia({ reducedMotion: "no-preference" });
+    await page.goto("/en/about");
+    const visual = page.locator("[data-connection-visual]");
+    await visual.scrollIntoViewIfNeeded();
+
+    const china = page.locator('[data-globe-trigger="china"]');
+    await china.focus();
+    await expect(china).toHaveAttribute("data-active", "true");
+    await expect(visual).toHaveAttribute("data-globe-emphasis", "china");
+    await expect(visual).toHaveAttribute("data-globe-narrative", "suppressed");
+    await expect(page.locator('[data-connection-node="beijing"]')).toHaveAttribute(
+      "data-node-highlighted",
+      "true"
+    );
+
+    const europe = page.locator('[data-globe-trigger="europe"]');
+    await europe.focus();
+    await expect(visual).toHaveAttribute("data-globe-emphasis", "europe");
+    await expect(page.locator('[data-connection-node="paris"]')).toHaveAttribute(
+      "data-node-highlighted",
+      "true"
+    );
+
+    await page.getByRole("link", { name: "Venus Bridge home" }).focus();
+    await expect(visual).toHaveAttribute("data-globe-emphasis", "ambient");
+    await expect(visual).toHaveAttribute("data-globe-narrative", "active");
+
+    const beijingLabel = page.locator('[data-connection-label="beijing"]');
+    await beijingLabel.hover();
+    await expect(visual).toHaveAttribute("data-globe-emphasis", "beijing");
+    await expect(
+      page.locator('[data-connection-base-route="primary"][data-route-highlighted="true"]')
+    ).toHaveCount(1);
   });
 
   test("the finite sequence pauses outside the viewport and resumes on return", async ({
@@ -54,7 +110,7 @@ test.describe("About Us geographic story", () => {
       pausedOffset
     );
     await visual.scrollIntoViewIfNeeded();
-    await expect(visual).toHaveAttribute("data-globe-stage", "settled", { timeout: 6500 });
+    await expect(visual).toHaveAttribute("data-globe-stage", "settled", { timeout: 8500 });
   });
 
   test("WebGL failure leaves the complete SVG and semantic story in place", async ({ page }) => {
@@ -87,4 +143,10 @@ test("reduced motion shows the completed network without traversal", async ({ pa
   await expect(visual).toHaveAttribute("data-reduced-motion", "true");
   await expect(visual).toHaveAttribute("data-globe-stage", "settled");
   await expect(visual).toHaveAttribute("data-globe-paused", "false");
+  await page.locator('[data-globe-trigger="china"]').focus();
+  await expect(visual).toHaveAttribute("data-globe-emphasis", "china");
+  await expect(visual).toHaveAttribute("data-globe-narrative", "suppressed");
+  await expect(page.locator('[data-connection-route="primary"]').first()).toHaveCSS("animation-name", "none");
+  await expect(page.locator("[data-residual-particle-layer]")).toHaveCSS("visibility", "hidden");
+  await expect(page.locator("[data-residual-particle-layer]")).toHaveCSS("opacity", "0");
 });

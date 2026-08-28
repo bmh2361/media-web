@@ -63,7 +63,9 @@ test("legacy commercial routes resolve through the secondary capabilities redire
     assert.ok(
       redirects.some((item) => item.source.includes(legacy) && item.destination.includes("/capabilities"))
     );
-  assert.ok(redirects.some((item) => item.source.includes("/capabilities") && item.destination.includes("/companies")));
+  assert.ok(
+    redirects.some((item) => item.source.includes("/capabilities") && item.destination.includes("/companies"))
+  );
   for (const route of ["/companies", "/partners", "/work", "/about", "/contact"])
     assert.match(sitemap, new RegExp(route));
   assert.doesNotMatch(sitemap, /"\/(?:what-we-do|services|industries|expertise|talent|for-agencies)/);

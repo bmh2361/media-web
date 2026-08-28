@@ -73,7 +73,9 @@ test("four mobile journeys use the shared bounded sticky story", async ({ page }
     await page.goto(route);
     const story = page.locator(".mobile-indexed-story").first();
     await expect(story.locator('[role="listitem"]')).toHaveCount(count);
-    expect(await story.locator(".mobile-indexed-story__status").evaluate((node) => getComputedStyle(node).position)).toBe("sticky");
+    expect(
+      await story.locator(".mobile-indexed-story__status").evaluate((node) => getComputedStyle(node).position)
+    ).toBe("sticky");
     await expect(story.locator('[role="listitem"][data-active="true"]')).toHaveCount(1);
   }
 });
@@ -102,13 +104,20 @@ test("reduced motion exposes all content and pauses carousel movement", async ({
   await page.goto("/en/about");
   const portrait = page.locator("[data-portrait-frame]").first();
   await portrait.scrollIntoViewIfNeeded();
-  expect(await portrait.evaluate((node) => ({ clip: getComputedStyle(node).clipPath, opacity: getComputedStyle(node).opacity }))).toEqual({ clip: "none", opacity: "1" });
+  expect(
+    await portrait.evaluate((node) => ({
+      clip: getComputedStyle(node).clipPath,
+      opacity: getComputedStyle(node).opacity
+    }))
+  ).toEqual({ clip: "none", opacity: "1" });
 
   await page.goto("/en");
   await expect(page.locator("[data-home-media-system]")).toHaveAttribute("data-autoplay-paused", "true");
 });
 
-test("all core pages remain readable and overflow-free at every required mobile viewport", async ({ page }) => {
+test("all core pages remain readable and overflow-free at every required mobile viewport", async ({
+  page
+}) => {
   const consoleIssues: string[] = [];
   page.on("console", (message) => {
     if (message.type() === "error" || message.type() === "warning") consoleIssues.push(message.text());
@@ -120,13 +129,17 @@ test("all core pages remain readable and overflow-free at every required mobile 
     for (const route of routes) {
       await page.goto(route);
       await expect(page.locator("h1")).toBeVisible();
-      expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)
+      ).toBeLessThanOrEqual(1);
     }
   }
   for (const route of ["/zh", "/zh/about"]) {
     await page.goto(route);
     await expect(page.locator("h1")).toBeVisible();
-    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(
+      1
+    );
   }
   expect(consoleIssues).toEqual([]);
 });
@@ -138,6 +151,8 @@ test("protected desktop keeps mobile systems out of layout", async ({ page }) =>
     await expect(page.locator(".mobile-indexed-story")).toBeHidden();
     await expect(page.locator(".mobile-progress-navigation")).toHaveCount(0);
     expect(await page.evaluate(() => document.body.dataset.mobileExperience ?? null)).toBeNull();
-    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(
+      1
+    );
   }
 });

@@ -304,7 +304,10 @@ export function validateCaseEvidence(record: CaseEvidenceRecord): string[] {
       errors.push(`${id}: public placement requires approved public wording.`);
   }
 
-  if (record.identity.clientVisibility === "named" && record.rightsAndClaims.clientNameApproved !== "approved")
+  if (
+    record.identity.clientVisibility === "named" &&
+    record.rightsAndClaims.clientNameApproved !== "approved"
+  )
     errors.push(`${id}: a named client requires client-name approval.`);
   if (record.identity.maturityState === "ANONYMOUS_PUBLIC") {
     if (record.identity.clientVisibility !== "anonymised")
@@ -353,7 +356,8 @@ export function validateCaseEvidence(record: CaseEvidenceRecord): string[] {
     errors.push(`${id}: an approved event name requires an event record.`);
 
   const strengths = Object.values(record.evidenceStrength).filter(Boolean).length;
-  if (strengths !== 1) errors.push(`${id}: exactly one primary evidence-strength classification is required.`);
+  if (strengths !== 1)
+    errors.push(`${id}: exactly one primary evidence-strength classification is required.`);
   if (record.evidenceStrength.archive !== record.conversionRole.archiveOnly)
     errors.push(`${id}: archive strength and archive-only placement must agree.`);
   if (record.conversionRole.archiveOnly && publicPlacement)

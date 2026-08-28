@@ -31,9 +31,7 @@ export function ProductionSystemCanvas({ language, active }: { language: Languag
   return (
     <div
       className="relative min-h-[29rem] overflow-hidden rounded-[1.25rem] border border-champagne/20 bg-graphite shadow-[0_32px_90px_rgba(0,0,0,.28)] sm:min-h-[34rem] lg:h-[min(640px,68vh)] lg:min-h-[36rem]"
-      aria-label={
-        language === "zh" ? "Venus Bridge 三条项目路径" : "Venus Bridge three project routes"
-      }
+      aria-label={language === "zh" ? "Venus Bridge 三条项目路径" : "Venus Bridge three project routes"}
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_68%_36%,rgba(204,166,114,.10),transparent_34%),linear-gradient(145deg,rgba(255,255,255,.035),transparent_45%)]" />
       <div className="absolute inset-x-5 top-5 z-20 flex items-center justify-between border-b border-pearl/10 pb-4 text-[10px] uppercase tracking-[.16em] text-pearl/50 sm:inset-x-7 sm:top-7">

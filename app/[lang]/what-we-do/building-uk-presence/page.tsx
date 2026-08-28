@@ -9,8 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return buildMetadata({
     lang,
     path: "/what-we-do/building-uk-presence",
-    title:
-      lang === "zh" ? "建立英国市场存在｜Venus Bridge" : "Building UK Presence | Venus Bridge",
+    title: lang === "zh" ? "建立英国市场存在｜Venus Bridge" : "Building UK Presence | Venus Bridge",
     description:
       lang === "zh"
         ? "通过持续内容、市场节点与双语本地执行，帮助中国企业建立可信的英国市场存在。"

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import "../globals.css";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { EditorialMotionLayer } from "@/components/motion/EditorialMotionLayer";
 import { PageTransition } from "@/components/motion/PageTransition";
 import { MobileExperienceLayer } from "@/components/motion/MobileExperienceLayer";
 import { OpeningSequenceProvider } from "@/components/motion/OpeningSequenceProvider";
@@ -44,13 +45,16 @@ export default async function LanguageLayout({
   return (
     <html lang={language === "zh" ? "zh-CN" : "en-GB"}>
       <body>
-        <Suspense fallback={null}><MeasurementBridge /></Suspense>
+        <Suspense fallback={null}>
+          <MeasurementBridge />
+        </Suspense>
         <OpeningSequenceProvider>
           {organization ? <JsonLd data={organization} /> : null}
           <a href="#main-content" className="skip-link">
             {language === "zh" ? "跳至主要内容" : "Skip to main content"}
           </a>
           <Header language={language} showWork={workMode !== "hidden"} />
+          <EditorialMotionLayer />
           <MobileExperienceLayer language={language} />
           <PointerLabel />
           <PageTransition lang={lang} className={language === "zh" ? "zh-copy" : undefined}>

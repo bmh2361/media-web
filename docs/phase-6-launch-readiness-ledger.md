@@ -39,13 +39,13 @@ NOT READY FOR PRODUCTION
 
 ## Checkpoints
 
-| Checkpoint | Result | Evidence |
-| --- | --- | --- |
-| A — Deployment + Contact | BLOCKED | Architecture/runbook complete; hosting credentials and live delivery unavailable. |
-| B — SEO + Analytics | PARTIAL PASS | SEO contract passes locally; analytics emits allow-listed local events but has no approved production sink. |
-| C — Performance + Security + Privacy | ISSUES | Security/dependency checks pass; one slow-4G transition budget breach and legal review remain. |
-| D — Monitoring + Operations + Device QA | BLOCKED | Plans/checklists complete; external systems and physical devices require owners. |
-| E — Final validation + Go/No-Go | NO-GO | Engineering suite passes except the separately reported performance threshold; production validator correctly fails closed on 23 missing release inputs. |
+| Checkpoint                              | Result       | Evidence                                                                                                                                                 |
+| --------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A — Deployment + Contact                | BLOCKED      | Architecture/runbook complete; hosting credentials and live delivery unavailable.                                                                        |
+| B — SEO + Analytics                     | PARTIAL PASS | SEO contract passes locally; analytics emits allow-listed local events but has no approved production sink.                                              |
+| C — Performance + Security + Privacy    | ISSUES       | Security/dependency checks pass; one slow-4G transition budget breach and legal review remain.                                                           |
+| D — Monitoring + Operations + Device QA | BLOCKED      | Plans/checklists complete; external systems and physical devices require owners.                                                                         |
+| E — Final validation + Go/No-Go         | NO-GO        | Engineering suite passes except the separately reported performance threshold; production validator correctly fails closed on 23 missing release inputs. |
 
 ## Final local evidence
 

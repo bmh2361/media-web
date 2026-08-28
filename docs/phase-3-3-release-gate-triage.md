@@ -6,20 +6,20 @@ Baseline: 14 passed checks, 28 failed checks, 7 human confirmations required
 
 ## Canonical release blockers
 
-| Gate | Count | Why it blocks | Safe resolution |
-| --- | ---: | --- | --- |
-| Production profile and public Work mode | 2 | Indexing and real-work visibility must be explicit | Set deployed `RELEASE_PROFILE=production` and choose `PUBLIC_WORK_MODE=portfolio` after final content approval |
-| Canonical site URL | 1 | Canonical/OG metadata cannot use an unknown origin | Supply the final HTTPS domain |
-| Contact delivery, origin and rate limiting | 3 | The form cannot be treated as production-ready without a live destination, allowed origins and distributed throttling | Supply HTTPS webhook, test delivery, configure origins and a verified distributed adapter |
-| Legal/company identity and approvals | 9 | Legal name, number, office, policy dates and approvals are owner/legal facts | Owner/legal counsel must supply and approve values; do not fabricate defaults |
-| Human release confirmations | 7 | Each represents a completed review or live verification | Set only after the corresponding evidence, legal, contact, media and channel check is complete |
+| Gate                                       | Count | Why it blocks                                                                                                         | Safe resolution                                                                                                |
+| ------------------------------------------ | ----: | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Production profile and public Work mode    |     2 | Indexing and real-work visibility must be explicit                                                                    | Set deployed `RELEASE_PROFILE=production` and choose `PUBLIC_WORK_MODE=portfolio` after final content approval |
+| Canonical site URL                         |     1 | Canonical/OG metadata cannot use an unknown origin                                                                    | Supply the final HTTPS domain                                                                                  |
+| Contact delivery, origin and rate limiting |     3 | The form cannot be treated as production-ready without a live destination, allowed origins and distributed throttling | Supply HTTPS webhook, test delivery, configure origins and a verified distributed adapter                      |
+| Legal/company identity and approvals       |     9 | Legal name, number, office, policy dates and approvals are owner/legal facts                                          | Owner/legal counsel must supply and approve values; do not fabricate defaults                                  |
+| Human release confirmations                |     7 | Each represents a completed review or live verification                                                               | Set only after the corresponding evidence, legal, contact, media and channel check is complete                 |
 
 ## Retired or cross-system gates
 
-| Gate | Count | Status | Triage |
-| --- | ---: | --- | --- |
-| Market-entry mode, legal review and source review | 3 | Legacy routes redirect to canonical Capabilities; no dedicated market-entry page is public | Keep the conservative source system gated. Do not let its partnership language leak into canonical pages. Decide separately whether the retired subsystem should remain in the production validator. |
-| Legacy critical media records | 5 | The current Phase 3 canonical pages use approved portfolio/capability media; flagged IDs belong to earlier page systems | Verify route reachability, then either replace assets for any still-reachable consumer or scope the validator to canonical consumers. Do not mark placeholders approved. |
+| Gate                                              | Count | Status                                                                                                                  | Triage                                                                                                                                                                                               |
+| ------------------------------------------------- | ----: | ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Market-entry mode, legal review and source review |     3 | Legacy routes redirect to canonical Capabilities; no dedicated market-entry page is public                              | Keep the conservative source system gated. Do not let its partnership language leak into canonical pages. Decide separately whether the retired subsystem should remain in the production validator. |
+| Legacy critical media records                     |     5 | The current Phase 3 canonical pages use approved portfolio/capability media; flagged IDs belong to earlier page systems | Verify route reachability, then either replace assets for any still-reachable consumer or scope the validator to canonical consumers. Do not mark placeholders approved.                             |
 
 ## Phase 3.3 code/config decision
 

@@ -5,11 +5,11 @@ Baseline: Phase 3 local production build, measured from rendered English main co
 
 ## Baseline measurements
 
-| Canonical route | Major sections | Rendered main-content words | Commercial observation |
-| --- | ---: | ---: | --- |
-| Homepage | 8 | 508 | Category and proof are clear; capability rows do not yet show representative engagement formats. |
-| Capabilities | 9 | 486 | Individual capabilities are precise, but the three programme examples are only component strings and do not explain objective, activity, outputs or proof. |
-| Work index | 3 | 221 | Visually disciplined, but cards do not explicitly state which commercial capability each project proves. |
+| Canonical route | Major sections | Rendered main-content words | Commercial observation                                                                                                                                     |
+| --------------- | -------------: | --------------------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Homepage        |              8 |                         508 | Category and proof are clear; capability rows do not yet show representative engagement formats.                                                           |
+| Capabilities    |              9 |                         486 | Individual capabilities are precise, but the three programme examples are only component strings and do not explain objective, activity, outputs or proof. |
+| Work index      |              3 |                         221 | Visually disciplined, but cards do not explicitly state which commercial capability each project proves.                                                   |
 
 The CTA vocabulary is already constrained to Discuss a UK Collaboration, View Selected Work, Explore Capabilities and contextual project links. The Contact form already uses the recommended short field set and does not request budget.
 

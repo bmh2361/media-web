@@ -19,7 +19,14 @@ export function PortfolioImage({
   sizes?: string;
   priority?: boolean;
   fit?: "cover" | "contain" | "natural";
-  mediaRole?: "hero-landscape" | "hero-portrait" | "proof-landscape" | "proof-portrait" | "card-landscape" | "mosaic-fill" | "editorial-natural";
+  mediaRole?:
+    | "hero-landscape"
+    | "hero-portrait"
+    | "proof-landscape"
+    | "proof-portrait"
+    | "card-landscape"
+    | "mosaic-fill"
+    | "editorial-natural";
   desktopFocalPoint?: { x: number; y: number };
   mobileFocalPoint?: { x: number; y: number };
 }) {

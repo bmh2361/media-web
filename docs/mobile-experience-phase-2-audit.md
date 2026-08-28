@@ -127,28 +127,28 @@ Real-device hardware testing after deployment remains advisable, particularly iO
 
 ## Final perception scores
 
-| Perception | Score |
-| --- | ---: |
-| Commercial clarity | 9.3 / 10 |
-| Premium perception | 9.1 / 10 |
-| Technology perception | 8.5 / 10 |
+| Perception               |    Score |
+| ------------------------ | -------: |
+| Commercial clarity       | 9.3 / 10 |
+| Premium perception       | 9.1 / 10 |
+| Technology perception    | 8.5 / 10 |
 | Editorial sophistication | 9.2 / 10 |
-| Motion quality | 8.8 / 10 |
-| Spatial design | 9.0 / 10 |
-| Mobile usability | 9.2 / 10 |
-| Touch interaction | 9.0 / 10 |
-| Visual rhythm | 9.0 / 10 |
-| Commercial credibility | 9.3 / 10 |
+| Motion quality           | 8.8 / 10 |
+| Spatial design           | 9.0 / 10 |
+| Mobile usability         | 9.2 / 10 |
+| Touch interaction        | 9.0 / 10 |
+| Visual rhythm            | 9.0 / 10 |
+| Commercial credibility   | 9.3 / 10 |
 
 Undesirable perceptions — lower is better:
 
-| Perception | Score |
-| --- | ---: |
-| PDF / document-like | 2.1 / 10 |
+| Perception                 |    Score |
+| -------------------------- | -------: |
+| PDF / document-like        | 2.1 / 10 |
 | Generic responsive website | 2.0 / 10 |
-| Creative-agency gimmick | 1.2 / 10 |
-| SaaS / app-like | 1.1 / 10 |
-| Over-animated | 1.3 / 10 |
+| Creative-agency gimmick    | 1.2 / 10 |
+| SaaS / app-like            | 1.1 / 10 |
+| Over-animated              | 1.3 / 10 |
 
 ## Release recommendation
 

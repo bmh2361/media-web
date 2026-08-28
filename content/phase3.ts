@@ -96,36 +96,60 @@ const en = {
       title: "Institutional & Expert Collaboration",
       short: "Legitimate knowledge exchange, technical discussion and professional engagement.",
       problem: "You need credible expertise or a UK knowledge setting without implied endorsement.",
-      coordination: "We shape the format, identify appropriate participants where verified, coordinate logistics and define how the engagement is documented.",
+      coordination:
+        "We shape the format, identify appropriate participants where verified, coordinate logistics and define how the engagement is documented.",
       outputs: "Roundtables, interviews, visits and reusable stakeholder content.",
-      examples: ["Academic or expert engagement", "Technical roundtables", "Executive conversations", "Knowledge-exchange formats"]
+      examples: [
+        "Academic or expert engagement",
+        "Technical roundtables",
+        "Executive conversations",
+        "Knowledge-exchange formats"
+      ]
     },
     {
       id: "industry-presence-events",
       title: "Industry Presence & Events",
       short: "Meaningful presence in relevant industry and stakeholder environments.",
       problem: "You need credible presence at an exhibition, conference, visit or brand event.",
-      coordination: "We coordinate the local format, people, venue and production interfaces required for the agreed scope.",
+      coordination:
+        "We coordinate the local format, people, venue and production interfaces required for the agreed scope.",
       outputs: "Delivery support, participant coordination, documentation and follow-on assets.",
-      examples: ["Exhibitions and conferences", "Roundtables and visits", "Brand events", "Event documentation"]
+      examples: [
+        "Exhibitions and conferences",
+        "Roundtables and visits",
+        "Brand events",
+        "Event documentation"
+      ]
     },
     {
       id: "creators-talent-cultural-partnerships",
       title: "Creators, Talent & Cultural Partnerships",
       short: "Commissioned creative people within a wider commercial project.",
       problem: "You need local creative collaborators without managing separate suppliers.",
-      coordination: "We define the role, coordinate casting or outreach, usage, production requirements and working interfaces.",
+      coordination:
+        "We define the role, coordinate casting or outreach, usage, production requirements and working interfaces.",
       outputs: "Commissioned talent and production-ready coordination.",
-      examples: ["Creators and presenters", "Models and performers", "Casting and styling", "Commissioned collaborations"]
+      examples: [
+        "Creators and presenters",
+        "Models and performers",
+        "Casting and styling",
+        "Commissioned collaborations"
+      ]
     },
     {
       id: "creative-production-brand-assets",
       title: "Creative Production & Brand Assets",
       short: "Photography and film that turn UK activity into reusable commercial assets.",
       problem: "You need UK activity turned into useful commercial material.",
-      coordination: "We plan and execute the agreed creative production, from local crew and locations through capture and delivery.",
+      coordination:
+        "We plan and execute the agreed creative production, from local crew and locations through capture and delivery.",
       outputs: "Photography, film, interviews, event and stakeholder content.",
-      examples: ["Commercial photography", "Brand films and interviews", "Event coverage", "China-ready international content"]
+      examples: [
+        "Commercial photography",
+        "Brand films and interviews",
+        "Event coverage",
+        "China-ready international content"
+      ]
     }
   ],
   selectedWork: {
@@ -138,16 +162,30 @@ const en = {
     eyebrow: "HOW A PROJECT COMES TOGETHER",
     title: "From objective to evidence people can use.",
     items: [
-      { title: "Define the Objective", text: "Clarify the audience, decision or brand moment the activity must support." },
-      { title: "Shape a Credible Route", text: "Select an appropriate environment, people and production scope—subject to fit, availability and permission." },
-      { title: "Deliver & Document", text: "Execute the agreed scope and turn what genuinely happened into approved, reusable evidence." }
+      {
+        title: "Define the Objective",
+        text: "Clarify the audience, decision or brand moment the activity must support."
+      },
+      {
+        title: "Shape a Credible Route",
+        text: "Select an appropriate environment, people and production scope—subject to fit, availability and permission."
+      },
+      {
+        title: "Deliver & Document",
+        text: "Execute the agreed scope and turn what genuinely happened into approved, reusable evidence."
+      }
     ]
   },
   why: {
     eyebrow: "WHY VENUS BRIDGE",
     title: "A practical bridge between Chinese objectives and UK execution.",
     body: "Instead of managing separate UK contacts and suppliers, clients work through one bilingual coordination layer—from objective to local delivery and reusable assets.",
-    items: ["One project logic", "Bilingual China/UK coordination", "London-based delivery", "Activity turned into brand assets"]
+    items: [
+      "One project logic",
+      "Bilingual China/UK coordination",
+      "London-based delivery",
+      "Activity turned into brand assets"
+    ]
   },
   finalCta: {
     eyebrow: "START A CONVERSATION",
@@ -166,7 +204,10 @@ const en = {
         activity: "May include a legitimate expert conversation, visit, roundtable or executive interview.",
         outputs: "Discussion records, interviews, photography or film.",
         capabilities: ["Institutional & Expert Collaboration", "Creative Production & Brand Assets"],
-        proof: { slug: "london-automotive-brand-film", label: "Adjacent production proof only: UK interview and brand-content imagery" }
+        proof: {
+          slug: "london-automotive-brand-film",
+          label: "Adjacent production proof only: UK interview and brand-content imagery"
+        }
       },
       {
         title: "UK Industry Presence Project",
@@ -174,7 +215,10 @@ const en = {
         activity: "May include exhibition, conference, local coordination, presenter and event content.",
         outputs: "Event documentation and China-facing stakeholder assets.",
         capabilities: ["Industry Presence & Events", "Creative Production & Brand Assets"],
-        proof: { slug: "changan-europe-launch-2025", label: "Related work: European launch content production" }
+        proof: {
+          slug: "changan-europe-launch-2025",
+          label: "Related work: European launch content production"
+        }
       },
       {
         title: "International Brand Activation",
@@ -182,7 +226,10 @@ const en = {
         activity: "May combine a London environment, commissioned talent, styling and production.",
         outputs: "Activation photography, short-form film and campaign assets.",
         capabilities: ["Creators, Talent & Cultural Partnerships", "Creative Production & Brand Assets"],
-        proof: { slug: "beauty-fashion-brand-content", label: "Adjacent capability proof only: talent-facing visual production" }
+        proof: {
+          slug: "beauty-fashion-brand-content",
+          label: "Adjacent capability proof only: talent-facing visual production"
+        }
       },
       {
         title: "UK Brand Content Production",
@@ -346,12 +393,30 @@ const zh = {
 export const phase3 = { en, zh } as const;
 
 export const phase3ProjectCapabilities: Record<string, { en: string[]; zh: string[] }> = {
-  "changan-europe-launch-2025": { en: ["Industry Presence & Events", "Creative Production & Brand Assets"], zh: ["行业参与与活动执行", "创意制作与品牌资产"] },
-  "byd-bd11-london": { en: ["Industry Presence & Events", "Creative Production & Brand Assets"], zh: ["行业参与与活动执行", "创意制作与品牌资产"] },
-  "catl-open-day-2025": { en: ["Industry Presence & Events", "Creative Production & Brand Assets"], zh: ["行业参与与活动执行", "创意制作与品牌资产"] },
-  "leapmotor-iaa-2023": { en: ["Industry Presence & Events", "Creative Production & Brand Assets"], zh: ["行业参与与活动执行", "创意制作与品牌资产"] },
+  "changan-europe-launch-2025": {
+    en: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+    zh: ["行业参与与活动执行", "创意制作与品牌资产"]
+  },
+  "byd-bd11-london": {
+    en: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+    zh: ["行业参与与活动执行", "创意制作与品牌资产"]
+  },
+  "catl-open-day-2025": {
+    en: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+    zh: ["行业参与与活动执行", "创意制作与品牌资产"]
+  },
+  "leapmotor-iaa-2023": {
+    en: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+    zh: ["行业参与与活动执行", "创意制作与品牌资产"]
+  },
   "london-automotive-brand-film": { en: ["Creative Production & Brand Assets"], zh: ["创意制作与品牌资产"] },
   "european-road-lifestyle": { en: ["Creative Production & Brand Assets"], zh: ["创意制作与品牌资产"] },
-  "london-fashion-week-2025": { en: ["Creators, Talent & Cultural Partnerships", "Creative Production & Brand Assets"], zh: ["创作者、人才与文化合作", "创意制作与品牌资产"] },
-  "beauty-fashion-brand-content": { en: ["Creators, Talent & Cultural Partnerships", "Creative Production & Brand Assets"], zh: ["创作者、人才与文化合作", "创意制作与品牌资产"] }
+  "london-fashion-week-2025": {
+    en: ["Creators, Talent & Cultural Partnerships", "Creative Production & Brand Assets"],
+    zh: ["创作者、人才与文化合作", "创意制作与品牌资产"]
+  },
+  "beauty-fashion-brand-content": {
+    en: ["Creators, Talent & Cultural Partnerships", "Creative Production & Brand Assets"],
+    zh: ["创作者、人才与文化合作", "创意制作与品牌资产"]
+  }
 };

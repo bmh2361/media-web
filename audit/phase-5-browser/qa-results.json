@@ -233,9 +233,7 @@
       "clientWidth": 1425,
       "h1": "Tell us which side of the collaboration brings you here.",
       "navVisible": true,
-      "pressed": [
-        "Partnership"
-      ],
+      "pressed": ["Partnership"],
       "scrollWidth": 1425,
       "url": "/en/contact?intent=partner",
       "overflow": false
@@ -290,9 +288,7 @@
       "clientWidth": 1425,
       "h1": "告诉我们，你从哪一边来到这次合作。",
       "navVisible": true,
-      "pressed": [
-        "合作伙伴"
-      ],
+      "pressed": ["合作伙伴"],
       "scrollWidth": 1425,
       "url": "/zh/contact?intent=partner",
       "overflow": false
@@ -301,14 +297,6 @@
   "capabilitiesRedirect": "http://localhost:3105/en/companies",
   "mobileMenu": {
     "dialog": true,
-    "links": [
-      "Home",
-      "Companies",
-      "Partners",
-      "Work",
-      "About",
-      "Contact",
-      "Discuss a Collaboration"
-    ]
+    "links": ["Home", "Companies", "Partners", "Work", "About", "Contact", "Discuss a Collaboration"]
   }
 }

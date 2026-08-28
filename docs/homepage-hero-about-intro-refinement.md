@@ -8,20 +8,20 @@ The homepage now opens with a more decisive brand statement while preserving cle
 
 Twelve English directions were assessed for clarity, premium tone, rhythm, visual line breaks and commercial authority.
 
-| Option | Clarity | Premium tone | Rhythm / line breaks | Decision |
-| --- | ---: | ---: | ---: | --- |
-| Advance your next UK or European market move with people on the ground. | 9 | 8.5 | 8 | Clear, but remains service-led. |
-| Put your next UK or European market move in local hands. | 8 | 8 | 8.5 | Risks implying simple outsourcing. |
-| Move your UK or European plans forward with a team on the ground. | 9 | 8 | 8.5 | Strong but still functional. |
-| Turn your next UK or European move into credible local action. | 9 | 8 | 7.5 | Clear, but noun-heavy. |
-| Make your next UK or European market move real on the ground. | 9 | 8 | 8 | Direct but slightly blunt. |
-| Give your next UK or European market move local momentum. | 8.5 | 9 | 9 | Elegant, but “give” feels less authoritative. |
-| Take your next UK or European market move further, with the right team on the ground. | 8.5 | 9 | 7 | Too long for the composition. |
-| Build real local momentum behind your next UK or European market move. | 9 | 9 | 7.5 | Strong meaning, long visual measure. |
-| Move from market ambition to local action in the UK and Europe. | 9 | 8.5 | 8.5 | Credible but more consultancy-like. |
-| Where your next UK or European market move becomes local action. | 8.5 | 9 | 8.5 | Editorial, but less decisive. |
-| Advance your UK or European ambitions where it matters: on the ground. | 8 | 9.5 | 8.5 | Premium, but slightly rhetorical. |
-| **Move your UK or European ambitions forward—on the ground.** | **9.5** | **9.5** | **9.5** | **Selected: concise, decisive and visually strong without overclaiming.** |
+| Option                                                                                | Clarity | Premium tone | Rhythm / line breaks | Decision                                                                  |
+| ------------------------------------------------------------------------------------- | ------: | -----------: | -------------------: | ------------------------------------------------------------------------- |
+| Advance your next UK or European market move with people on the ground.               |       9 |          8.5 |                    8 | Clear, but remains service-led.                                           |
+| Put your next UK or European market move in local hands.                              |       8 |            8 |                  8.5 | Risks implying simple outsourcing.                                        |
+| Move your UK or European plans forward with a team on the ground.                     |       9 |            8 |                  8.5 | Strong but still functional.                                              |
+| Turn your next UK or European move into credible local action.                        |       9 |            8 |                  7.5 | Clear, but noun-heavy.                                                    |
+| Make your next UK or European market move real on the ground.                         |       9 |            8 |                    8 | Direct but slightly blunt.                                                |
+| Give your next UK or European market move local momentum.                             |     8.5 |            9 |                    9 | Elegant, but “give” feels less authoritative.                             |
+| Take your next UK or European market move further, with the right team on the ground. |     8.5 |            9 |                    7 | Too long for the composition.                                             |
+| Build real local momentum behind your next UK or European market move.                |       9 |            9 |                  7.5 | Strong meaning, long visual measure.                                      |
+| Move from market ambition to local action in the UK and Europe.                       |       9 |          8.5 |                  8.5 | Credible but more consultancy-like.                                       |
+| Where your next UK or European market move becomes local action.                      |     8.5 |            9 |                  8.5 | Editorial, but less decisive.                                             |
+| Advance your UK or European ambitions where it matters: on the ground.                |       8 |          9.5 |                  8.5 | Premium, but slightly rhetorical.                                         |
+| **Move your UK or European ambitions forward—on the ground.**                         | **9.5** |      **9.5** |              **9.5** | **Selected: concise, decisive and visually strong without overclaiming.** |
 
 Selected Chinese direction:
 

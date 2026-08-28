@@ -6,16 +6,16 @@ Media is assigned by compositional role, not only by source orientation. The sou
 
 ## Roles
 
-| Role | Ratio | Default fit | Use | Crop rule |
-| --- | --- | --- | --- | --- |
-| `hero-landscape` | 2:1 desktop; 16:9 tablet; 4:3 mobile | cover | Cinematic case and page hero | Preserve protected area; crop outer environment first. |
-| `hero-portrait` | 4:5 | contain or editorial cover | Fashion/people case hero | Preserve face and full silhouette where the frame permits. |
-| `proof-landscape` | 16:9 | cover | Event, stage, environment and vehicle evidence | Keep stage/vehicle and any meaningful screen text inside the protected area. |
-| `proof-portrait` | 4:5 | cover | People, talent, fashion and product proof | Use focal point; do not crop eyes, hands holding product or principal garment detail. |
-| `card-landscape` | 4:3 | cover | Project rail and supporting cards | One subject or one readable environment per card. |
-| `mosaic-fill` | parent-controlled | cover | Work and capability mosaics | Fill the grid cell; parent establishes height and span. |
-| `editorial-natural` | source/profile ratio | contain | Deliberate full-image evidence where cropping would remove proof | Neutral background is allowed only when visibly intentional and proportionate. |
-| `logo-mark` | natural | contain | Brand marks only | Never crop or stretch. |
+| Role                | Ratio                                | Default fit                | Use                                                              | Crop rule                                                                             |
+| ------------------- | ------------------------------------ | -------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `hero-landscape`    | 2:1 desktop; 16:9 tablet; 4:3 mobile | cover                      | Cinematic case and page hero                                     | Preserve protected area; crop outer environment first.                                |
+| `hero-portrait`     | 4:5                                  | contain or editorial cover | Fashion/people case hero                                         | Preserve face and full silhouette where the frame permits.                            |
+| `proof-landscape`   | 16:9                                 | cover                      | Event, stage, environment and vehicle evidence                   | Keep stage/vehicle and any meaningful screen text inside the protected area.          |
+| `proof-portrait`    | 4:5                                  | cover                      | People, talent, fashion and product proof                        | Use focal point; do not crop eyes, hands holding product or principal garment detail. |
+| `card-landscape`    | 4:3                                  | cover                      | Project rail and supporting cards                                | One subject or one readable environment per card.                                     |
+| `mosaic-fill`       | parent-controlled                    | cover                      | Work and capability mosaics                                      | Fill the grid cell; parent establishes height and span.                               |
+| `editorial-natural` | source/profile ratio                 | contain                    | Deliberate full-image evidence where cropping would remove proof | Neutral background is allowed only when visibly intentional and proportionate.        |
+| `logo-mark`         | natural                              | contain                    | Brand marks only                                                 | Never crop or stretch.                                                                |
 
 ## Source-selection rule
 

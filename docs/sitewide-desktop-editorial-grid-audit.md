@@ -23,11 +23,11 @@ The repeated pattern was eyebrow + 11–15ch heading + full-width or multi-colum
 
 Three desktop-only roles now begin at 1200px:
 
-| Role | Measure | Use |
-| --- | ---: | --- |
-| Compact | 18ch | Split proof, sticky process and constrained two-column statements |
-| Standard | 22ch | Most ordinary section headings |
-| Wide | 26ch | Longer editorial statements with a broad content field |
+| Role     | Measure | Use                                                               |
+| -------- | ------: | ----------------------------------------------------------------- |
+| Compact  |    18ch | Split proof, sticky process and constrained two-column statements |
+| Standard |    22ch | Most ordinary section headings                                    |
+| Wide     |    26ch | Longer editorial statements with a broad content field            |
 
 Existing body-copy measures remain unchanged (`type-body` max-width 44rem and `type-lede` max-width 46rem). This keeps reading lengths controlled without creating another token layer.
 
@@ -79,12 +79,12 @@ The measure roles are enclosed in `@media (min-width: 1200px)`. Visual captures 
 
 ## Quantitative before/after
 
-| Metric | Before | After |
-| --- | ---: | ---: |
-| Ordinary section headings measured | 25 | 25 |
-| Average headline lines | 4.32 | 2.68 |
-| Headings at 5+ lines | 9 | 0 |
-| Ordinary headings outside 2–4 lines | 0 | 0 |
+| Metric                              | Before | After |
+| ----------------------------------- | -----: | ----: |
+| Ordinary section headings measured  |     25 |    25 |
+| Average headline lines              |   4.32 |  2.68 |
+| Headings at 5+ lines                |      9 |     0 |
+| Ordinary headings outside 2–4 lines |      0 |     0 |
 
 The reduction comes from width and grid composition only; font sizes and approved copy were not reduced.
 

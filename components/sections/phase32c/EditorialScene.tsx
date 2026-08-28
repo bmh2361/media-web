@@ -23,11 +23,34 @@ export function EditorialScene({
   sizes?: string;
   priority?: boolean;
   fit?: "cover" | "contain";
-  mediaRole?: "hero-landscape" | "hero-portrait" | "proof-landscape" | "proof-portrait" | "card-landscape" | "mosaic-fill" | "editorial-natural";
+  mediaRole?:
+    | "hero-landscape"
+    | "hero-portrait"
+    | "proof-landscape"
+    | "proof-portrait"
+    | "card-landscape"
+    | "mosaic-fill"
+    | "editorial-natural";
 }) {
   return scene.kind === "capability" ? (
-    <CapabilityImage media={scene.media} language={language} className={className} sizes={sizes} priority={priority} fit={fit} mediaRole={mediaRole} />
+    <CapabilityImage
+      media={scene.media}
+      language={language}
+      className={className}
+      sizes={sizes}
+      priority={priority}
+      fit={fit}
+      mediaRole={mediaRole}
+    />
   ) : (
-    <PortfolioImage media={scene.media} language={language} className={className} sizes={sizes} priority={priority} fit={fit} mediaRole={mediaRole} />
+    <PortfolioImage
+      media={scene.media}
+      language={language}
+      className={className}
+      sizes={sizes}
+      priority={priority}
+      fit={fit}
+      mediaRole={mediaRole}
+    />
   );
 }

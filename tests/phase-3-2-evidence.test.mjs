@@ -43,9 +43,32 @@ const record = () => ({
   projectActivity: {
     ukActivity: { en: "A live industry event in London." },
     engagementFormat: ["Industry Event"],
-    participants: [], institutions: [],
-    events: [{ internalName: "Example Event", publicName: "Example Event", city: "London", country: "United Kingdom", eventContext: "Industry event", boothLaunchActivationScope: null, staffing: null, talent: null, creator: null, executiveContent: null, photography: "Event photography", video: null, stakeholderContent: "Event images", chinaFacingOutputs: null, clientFacingDeliverables: "Approved image selection" }],
-    talent: [], creators: [], experts: [], venues: [], productionElements: ["Photography"]
+    participants: [],
+    institutions: [],
+    events: [
+      {
+        internalName: "Example Event",
+        publicName: "Example Event",
+        city: "London",
+        country: "United Kingdom",
+        eventContext: "Industry event",
+        boothLaunchActivationScope: null,
+        staffing: null,
+        talent: null,
+        creator: null,
+        executiveContent: null,
+        photography: "Event photography",
+        video: null,
+        stakeholderContent: "Event images",
+        chinaFacingOutputs: null,
+        clientFacingDeliverables: "Approved image selection"
+      }
+    ],
+    talent: [],
+    creators: [],
+    experts: [],
+    venues: [],
+    productionElements: ["Photography"]
   },
   venusBridgeRole: {
     venusRole: { en: "Event documentation." },
@@ -58,35 +81,80 @@ const record = () => ({
   outputs: {
     deliverables: [{ en: "Approved event images." }],
     contentOutputs: [{ en: "Event images." }],
-    eventOutputs: [], relationshipOutputs: [], brandAssets: []
+    eventOutputs: [],
+    relationshipOutputs: [],
+    brandAssets: []
   },
   capabilityMapping: {
     capabilities: ["Industry Presence & Events", "Creative Production & Brand Assets"],
     commercialProjectTypes: ["UK Industry Presence Project"]
   },
-  evidenceGovernance: { evidenceLevel: "A_DIRECT_VERIFIED", proofTypes: ["VISUAL"], trustDimensions: ["EXECUTION"], verificationNotes: ["Owner evidence checked."] },
+  evidenceGovernance: {
+    evidenceLevel: "A_DIRECT_VERIFIED",
+    proofTypes: ["VISUAL"],
+    trustDimensions: ["EXECUTION"],
+    verificationNotes: ["Owner evidence checked."]
+  },
   rightsAndClaims: {
-    clientNameApproved: "approved", clientLogoApproved: "not-required",
-    institutionNameApproved: "not-required", institutionLogoApproved: "not-required",
-    participantNameApproved: "not-required", participantImageApproved: "not-required",
-    creatorIdentityApproved: "not-required", venueIdentityApproved: "not-required",
-    eventNameApproved: "approved", mediaRightsApproved: "approved",
-    casePublicationApproved: "approved", approvedPublicWording: { en: "Approved narrow wording." },
-    claimRestrictions: ["No event ownership claim."], verificationNotes: [], ownerApprovalStatus: "approved",
-    relationshipLevel: "none", institutionRole: null, participantRole: null,
-    formalAgreement: "not-required", logoPermission: "not-required", approvedInstitutionWording: null,
+    clientNameApproved: "approved",
+    clientLogoApproved: "not-required",
+    institutionNameApproved: "not-required",
+    institutionLogoApproved: "not-required",
+    participantNameApproved: "not-required",
+    participantImageApproved: "not-required",
+    creatorIdentityApproved: "not-required",
+    venueIdentityApproved: "not-required",
+    eventNameApproved: "approved",
+    mediaRightsApproved: "approved",
+    casePublicationApproved: "approved",
+    approvedPublicWording: { en: "Approved narrow wording." },
+    claimRestrictions: ["No event ownership claim."],
+    verificationNotes: [],
+    ownerApprovalStatus: "approved",
+    relationshipLevel: "none",
+    institutionRole: null,
+    participantRole: null,
+    formalAgreement: "not-required",
+    logoPermission: "not-required",
+    approvedInstitutionWording: null,
     creatorRelationshipType: "none"
   },
   media: {
-    heroMedia: [{ assetId: "hero", filename: "hero.jpg", kind: "image", evidentialFunction: "Shows the live event context.", rightsStatus: "approved", publicUseStatus: "approved" }],
-    galleryMedia: [], video: [], documents: [], pressEvidence: [], screenshots: [], eventEvidence: [], supportingAssets: []
+    heroMedia: [
+      {
+        assetId: "hero",
+        filename: "hero.jpg",
+        kind: "image",
+        evidentialFunction: "Shows the live event context.",
+        rightsStatus: "approved",
+        publicUseStatus: "approved"
+      }
+    ],
+    galleryMedia: [],
+    video: [],
+    documents: [],
+    pressEvidence: [],
+    screenshots: [],
+    eventEvidence: [],
+    supportingAssets: []
   },
   conversionRole: {
-    homepageProofEligible: false, selectedWorkEligible: false, capabilityProofEligible: true,
-    programmeProofEligible: true, workIndexEligible: true, dedicatedCaseStudyEligible: true,
-    contactPreCTAEligible: false, archiveOnly: false
+    homepageProofEligible: false,
+    selectedWorkEligible: false,
+    capabilityProofEligible: true,
+    programmeProofEligible: true,
+    workIndexEligible: true,
+    dedicatedCaseStudyEligible: true,
+    contactPreCTAEligible: false,
+    archiveOnly: false
   },
-  evidenceStrength: { heroEvidence: false, coreEvidence: true, supportingEvidence: false, visualEvidence: false, archive: false }
+  evidenceStrength: {
+    heroEvidence: false,
+    coreEvidence: true,
+    supportingEvidence: false,
+    visualEvidence: false,
+    archive: false
+  }
 });
 
 test("Phase 3.2 uses controlled frozen taxonomies", () => {
@@ -143,14 +211,26 @@ test("evidence register enforces homepage capacity and unique identity", () => {
 test("maturity states block private placement and unsafe anonymous disclosure", () => {
   const privateRecord = record();
   privateRecord.identity.maturityState = "PRIVATE";
-  assert.match(validateCaseEvidence(privateRecord).join("\n"), /private evidence cannot receive a public placement/);
+  assert.match(
+    validateCaseEvidence(privateRecord).join("\n"),
+    /private evidence cannot receive a public placement/
+  );
 
   const anonymousRecord = record();
   anonymousRecord.identity.maturityState = "ANONYMOUS_PUBLIC";
   anonymousRecord.identity.clientVisibility = "anonymised";
   anonymousRecord.identity.clientName = null;
-  anonymousRecord.projectActivity.participants.push({ internalName: "Restricted Expert", publicName: "Named Expert", role: "Expert", identityType: "expert", relationshipType: "not-applicable" });
-  assert.match(validateCaseEvidence(anonymousRecord).join("\n"), /cannot expose participant or institution names/);
+  anonymousRecord.projectActivity.participants.push({
+    internalName: "Restricted Expert",
+    publicName: "Named Expert",
+    role: "Expert",
+    identityType: "expert",
+    relationshipType: "not-applicable"
+  });
+  assert.match(
+    validateCaseEvidence(anonymousRecord).join("\n"),
+    /cannot expose participant or institution names/
+  );
 });
 
 test("Phase 3.2A reports and intake template cover required governance", async () => {
@@ -165,7 +245,14 @@ test("Phase 3.2A reports and intake template cover required governance", async (
   ];
   for (const path of paths) assert.ok((await source(path)).length > 500, `${path} is incomplete`);
   const intake = await source("docs/phase-3-2-owner-case-intake-template.md");
-  for (const field of ["PROJECT NAME:", "CLIENT OBJECTIVE:", "VENUS BRIDGE ROLE:", "PUBLICATION RIGHTS:", "APPROVED PUBLIC WORDING:", "OWNER'S VIEW OF IMPORTANCE:"])
+  for (const field of [
+    "PROJECT NAME:",
+    "CLIENT OBJECTIVE:",
+    "VENUS BRIDGE ROLE:",
+    "PUBLICATION RIGHTS:",
+    "APPROVED PUBLIC WORDING:",
+    "OWNER'S VIEW OF IMPORTANCE:"
+  ])
     assert.match(intake, new RegExp(field.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
 });
 

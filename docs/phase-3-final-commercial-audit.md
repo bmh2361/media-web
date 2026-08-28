@@ -76,17 +76,17 @@ Evidence directories:
 - Before: `audit/phase-3/before/`
 - After: `audit/phase-3/after/`
 
-| Audit dimension | Before | After |
-| --- | --- | --- |
-| Content density | 12 homepage sections with parallel stage, service, industry and framework explanations | 8 sections with one commercial sequence |
-| Hierarchy | Market-entry stages and multiple taxonomies compete with proof | Category and outcome first, proof second, capabilities fourth |
-| Clarity | Requires understanding Explore / Launch / Presence / Delivery stages | One promise, four outcomes, four capabilities |
-| Brand perception | Premium visual system carrying a broad consultancy promise | Same premium system with a narrower, execution-led category |
-| Visual rhythm | Repeated explanatory modules and taxonomies | Proof triptych, outcome grid, editorial rows, staggered work, process and split rationale |
-| Commercial credibility | Proven production sits beside unsupported lifecycle breadth | Proven execution is prominent; unsupported boundaries are explicit |
-| Mobile experience | Long page and competing CTA concepts | Clear hero, two actions, flat menu and no horizontal overflow |
-| CTA competition | Fit Call, Execution Brief and multiple pathway actions | Discuss a UK Collaboration; View Selected Work as the sole secondary action |
-| Case visibility | Work present but framed as generic Proof and mixed with frameworks | Named execution records appear immediately and Work is a top-level destination |
+| Audit dimension        | Before                                                                                 | After                                                                                     |
+| ---------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Content density        | 12 homepage sections with parallel stage, service, industry and framework explanations | 8 sections with one commercial sequence                                                   |
+| Hierarchy              | Market-entry stages and multiple taxonomies compete with proof                         | Category and outcome first, proof second, capabilities fourth                             |
+| Clarity                | Requires understanding Explore / Launch / Presence / Delivery stages                   | One promise, four outcomes, four capabilities                                             |
+| Brand perception       | Premium visual system carrying a broad consultancy promise                             | Same premium system with a narrower, execution-led category                               |
+| Visual rhythm          | Repeated explanatory modules and taxonomies                                            | Proof triptych, outcome grid, editorial rows, staggered work, process and split rationale |
+| Commercial credibility | Proven production sits beside unsupported lifecycle breadth                            | Proven execution is prominent; unsupported boundaries are explicit                        |
+| Mobile experience      | Long page and competing CTA concepts                                                   | Clear hero, two actions, flat menu and no horizontal overflow                             |
+| CTA competition        | Fit Call, Execution Brief and multiple pathway actions                                 | Discuss a UK Collaboration; View Selected Work as the sole secondary action               |
+| Case visibility        | Work present but framed as generic Proof and mixed with frameworks                     | Named execution records appear immediately and Work is a top-level destination            |
 
 ## Runtime validation
 
@@ -113,4 +113,3 @@ Evidence directories:
 ## Remaining release conditions
 
 No P0 implementation issue remains. P1 owner actions are: configure the production site URL and contact delivery/origins, confirm public company/legal details, complete human release confirmations, and approve five critical media records for production. Existing case rights/evidence flags should receive the scheduled final owner/legal confirmation before production indexing.
-

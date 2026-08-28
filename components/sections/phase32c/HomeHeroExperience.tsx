@@ -79,14 +79,18 @@ export function HomeHeroExperience({ scenes, language }: { scenes: HomeHeroScene
       mobileAvifPath?: string;
     };
     const preload = new window.Image();
-    preload.src = window.innerWidth < 768
-      ? media.mobileAvifPath ?? media.mobilePath ?? media.publicPath
-      : media.avifPath ?? media.publicPath;
+    preload.src =
+      window.innerWidth < 768
+        ? (media.mobileAvifPath ?? media.mobilePath ?? media.publicPath)
+        : (media.avifPath ?? media.publicPath);
   }, [active, scenes]);
 
-  useEffect(() => () => {
-    if (resumeTimer.current !== null) window.clearTimeout(resumeTimer.current);
-  }, []);
+  useEffect(
+    () => () => {
+      if (resumeTimer.current !== null) window.clearTimeout(resumeTimer.current);
+    },
+    []
+  );
 
   const pauseForPointer = () => {
     if (resumeTimer.current !== null) window.clearTimeout(resumeTimer.current);
@@ -117,7 +121,8 @@ export function HomeHeroExperience({ scenes, language }: { scenes: HomeHeroScene
   const onPointerUp = (event: PointerEvent<HTMLDivElement>) => {
     const start = pointerStart.current;
     pointerStart.current = null;
-    if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId);
+    if (event.currentTarget.hasPointerCapture(event.pointerId))
+      event.currentTarget.releasePointerCapture(event.pointerId);
     if (start !== null && Math.abs(event.clientX - start) >= SWIPE_THRESHOLD) {
       goTo(active + (event.clientX < start ? 1 : -1));
     }
@@ -158,8 +163,12 @@ export function HomeHeroExperience({ scenes, language }: { scenes: HomeHeroScene
     >
       <div
         className="relative aspect-[16/10] w-full overflow-hidden bg-mist"
-        onPointerEnter={(event) => { if (event.pointerType === "mouse") setHovered(true); }}
-        onPointerLeave={(event) => { if (event.pointerType === "mouse") setHovered(false); }}
+        onPointerEnter={(event) => {
+          if (event.pointerType === "mouse") setHovered(true);
+        }}
+        onPointerLeave={(event) => {
+          if (event.pointerType === "mouse") setHovered(false);
+        }}
         data-home-media-viewport
         data-mobile-reveal
       >
@@ -168,9 +177,17 @@ export function HomeHeroExperience({ scenes, language }: { scenes: HomeHeroScene
             key={scene.media.id}
             id={`home-slide-${active + 1}`}
             className="absolute inset-0"
-            initial={reducedMotion ? false : { opacity: 0, x: mobileMotionEnabled ? 8 : 0, scale: mobileMotionEnabled ? 1.006 : 1.008 }}
+            initial={
+              reducedMotion
+                ? false
+                : { opacity: 0, x: mobileMotionEnabled ? 8 : 0, scale: mobileMotionEnabled ? 1.006 : 1.008 }
+            }
             animate={{ opacity: 1, x: 0, scale: 1 }}
-            exit={reducedMotion ? { opacity: 0 } : { opacity: 0, x: mobileMotionEnabled ? -8 : 0, scale: mobileMotionEnabled ? 0.998 : 1 }}
+            exit={
+              reducedMotion
+                ? { opacity: 0 }
+                : { opacity: 0, x: mobileMotionEnabled ? -8 : 0, scale: mobileMotionEnabled ? 0.998 : 1 }
+            }
             transition={transition}
             data-home-media-slide={scene.media.id}
             aria-current="true"
@@ -211,7 +228,8 @@ export function HomeHeroExperience({ scenes, language }: { scenes: HomeHeroScene
             transition={reducedMotion ? { duration: 0 } : { duration: 0.45 }}
           >
             <p className="text-[10px] uppercase tracking-editorial text-champagne">
-              {String(active + 1).padStart(2, "0")}{scene.context ? ` · ${scene.context}` : ""}
+              {String(active + 1).padStart(2, "0")}
+              {scene.context ? ` · ${scene.context}` : ""}
             </p>
             <p className="mt-2 text-sm font-medium uppercase tracking-editorial">{scene.label}</p>
           </motion.div>
@@ -236,7 +254,9 @@ export function HomeHeroExperience({ scenes, language }: { scenes: HomeHeroScene
                 data-active={active === index || undefined}
                 aria-hidden="true"
               >
-                {active === index ? <span key={`${active}-${timerVersion}`} className="home-carousel-indicator-progress" /> : null}
+                {active === index ? (
+                  <span key={`${active}-${timerVersion}`} className="home-carousel-indicator-progress" />
+                ) : null}
               </span>
             </button>
           ))}

@@ -18,55 +18,55 @@ The editorial outcome is a clearer progression:
 
 ## Message audit
 
-| Page / section | Visitor question | Distinct communication job | Concrete answer after refinement |
-| --- | --- | --- | --- |
-| Home — Hero | What does Venus Bridge do? | Category and mechanism | Decide the local action, define the project, organise people and organisations, manage delivery. |
-| Home — Selected Proof | Is this based on real work? | Immediate substantiation | Three approved projects show the need, setting and actual Venus Bridge role. |
-| Home — Two Audiences | Which route is for me? | Route selection | Companies start with a result; partners receive a clear brief, bilingual communication and defined responsibility. |
-| Home — Operating Model | What does Venus Bridge take responsibility for? | Five concrete actions | Understand, shape, coordinate, deliver and preserve useful project material. |
-| Home — One Project | Why not manage suppliers directly? | Commercial differentiator | One brief and delivery plan connect venues, participants, specialists, talent and production. |
-| Home — Commercial Environments | Where can this apply? | Audience and environment examples | Employer branding, universities, experts, graduates, cultural groups and industry audiences. |
-| Home — Case Studies | What has been delivered? | Full evidence route | Numbered, filterable, verified case records with clear responsibility. |
-| Home — Project Fit | When is Venus Bridge useful? | Qualification | A UK/European need plus multiple local participants, bilingual coordination or one delivery owner. |
-| Home — CTA | How do I start? | Conversion | Discuss a Project / Introduce Your Organisation. |
-| For Companies — Hero | What can you help my company achieve? | Outcome clarity | Market visibility, industry participation, employer branding, university engagement and brand evidence. |
-| For Companies — Objectives | What results can I buy towards? | Four client outcomes | Each item now describes what the company wants, not an internal capability label. |
-| For Companies — Environments | Why would the setting change? | Decision logic | A launch, employer programme and brand-evidence need require different local environments. |
-| For Companies — Building Blocks | What may be combined? | Delivery ingredients | Professional/institutional input, industry activity, talent/culture and project material. |
-| For Companies — University & Talent | What is the commercial use? | Applied audience route | Employer branding, graduates, community programmes, cultural participation and academic/industry dialogue. |
-| For Companies — CTA | Do I need a supplier list first? | Friction removal | No; begin with the result and Venus Bridge will determine the required parts. |
-| For Partners — Hero | Why would my organisation work with Venus Bridge? | Partner value | Clear company background, scope, bilingual coordination and managed local delivery. |
-| For Partners — Types | Who should make contact? | Qualification | Universities, researchers, communities, industry bodies, businesses, media, creators, venues and specialists. |
-| For Partners — Value | What will I know before participating? | Participation conditions | What the project is, why the organisation is involved and who is responsible. |
-| For Partners — Process | How will the relationship be handled? | Collaboration sequence | Context, fit, scope, one coordination point and accurate representation. |
-| Case Studies — Hero | What will I find here? | Evidence orientation | Real UK and European projects, browsed by the result the company needed. |
-| Case detail — 01–08 | What happened and what can be claimed? | Truth-gated narrative | Objective, project setting, responsibility, execution, created material, public-record boundary, visuals and related cases. |
-| How We Work — Hero | Why does Venus Bridge exist? | Problem and difference | Companies may know the outcome but not the action, participants or delivery owner. |
-| How We Work — Responsibility | Who owns what? | Ownership | Four continuing responsibilities from scope to handover. |
-| How We Work — Workflow | In what order does work happen? | Chronology | Five stages from business need to handover; explicitly separated from ownership. |
-| How We Work — Team | Who performs the work? | Resourcing model | One accountable core team, with specialists engaged only when a brief requires them. |
-| Contact | What should I send? | Low-friction intake | Result, timing, audience and known constraints; no service selection required. |
+| Page / section                      | Visitor question                                  | Distinct communication job        | Concrete answer after refinement                                                                                            |
+| ----------------------------------- | ------------------------------------------------- | --------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Home — Hero                         | What does Venus Bridge do?                        | Category and mechanism            | Decide the local action, define the project, organise people and organisations, manage delivery.                            |
+| Home — Selected Proof               | Is this based on real work?                       | Immediate substantiation          | Three approved projects show the need, setting and actual Venus Bridge role.                                                |
+| Home — Two Audiences                | Which route is for me?                            | Route selection                   | Companies start with a result; partners receive a clear brief, bilingual communication and defined responsibility.          |
+| Home — Operating Model              | What does Venus Bridge take responsibility for?   | Five concrete actions             | Understand, shape, coordinate, deliver and preserve useful project material.                                                |
+| Home — One Project                  | Why not manage suppliers directly?                | Commercial differentiator         | One brief and delivery plan connect venues, participants, specialists, talent and production.                               |
+| Home — Commercial Environments      | Where can this apply?                             | Audience and environment examples | Employer branding, universities, experts, graduates, cultural groups and industry audiences.                                |
+| Home — Case Studies                 | What has been delivered?                          | Full evidence route               | Numbered, filterable, verified case records with clear responsibility.                                                      |
+| Home — Project Fit                  | When is Venus Bridge useful?                      | Qualification                     | A UK/European need plus multiple local participants, bilingual coordination or one delivery owner.                          |
+| Home — CTA                          | How do I start?                                   | Conversion                        | Discuss a Project / Introduce Your Organisation.                                                                            |
+| For Companies — Hero                | What can you help my company achieve?             | Outcome clarity                   | Market visibility, industry participation, employer branding, university engagement and brand evidence.                     |
+| For Companies — Objectives          | What results can I buy towards?                   | Four client outcomes              | Each item now describes what the company wants, not an internal capability label.                                           |
+| For Companies — Environments        | Why would the setting change?                     | Decision logic                    | A launch, employer programme and brand-evidence need require different local environments.                                  |
+| For Companies — Building Blocks     | What may be combined?                             | Delivery ingredients              | Professional/institutional input, industry activity, talent/culture and project material.                                   |
+| For Companies — University & Talent | What is the commercial use?                       | Applied audience route            | Employer branding, graduates, community programmes, cultural participation and academic/industry dialogue.                  |
+| For Companies — CTA                 | Do I need a supplier list first?                  | Friction removal                  | No; begin with the result and Venus Bridge will determine the required parts.                                               |
+| For Partners — Hero                 | Why would my organisation work with Venus Bridge? | Partner value                     | Clear company background, scope, bilingual coordination and managed local delivery.                                         |
+| For Partners — Types                | Who should make contact?                          | Qualification                     | Universities, researchers, communities, industry bodies, businesses, media, creators, venues and specialists.               |
+| For Partners — Value                | What will I know before participating?            | Participation conditions          | What the project is, why the organisation is involved and who is responsible.                                               |
+| For Partners — Process              | How will the relationship be handled?             | Collaboration sequence            | Context, fit, scope, one coordination point and accurate representation.                                                    |
+| Case Studies — Hero                 | What will I find here?                            | Evidence orientation              | Real UK and European projects, browsed by the result the company needed.                                                    |
+| Case detail — 01–08                 | What happened and what can be claimed?            | Truth-gated narrative             | Objective, project setting, responsibility, execution, created material, public-record boundary, visuals and related cases. |
+| How We Work — Hero                  | Why does Venus Bridge exist?                      | Problem and difference            | Companies may know the outcome but not the action, participants or delivery owner.                                          |
+| How We Work — Responsibility        | Who owns what?                                    | Ownership                         | Four continuing responsibilities from scope to handover.                                                                    |
+| How We Work — Workflow              | In what order does work happen?                   | Chronology                        | Five stages from business need to handover; explicitly separated from ownership.                                            |
+| How We Work — Team                  | Who performs the work?                            | Resourcing model                  | One accountable core team, with specialists engaged only when a brief requires them.                                        |
+| Contact                             | What should I send?                               | Low-friction intake               | Result, timing, audience and known constraints; no service selection required.                                              |
 
 No two adjacent homepage sections now have the same communication job. The previous overlap between audience value, process, coordination and continuing value was separated into route selection, responsibility, commercial difference and project fit.
 
 ## Before / after decisions
 
-| Surface | Before | After | Reason |
-| --- | --- | --- | --- |
-| Navigation | Companies / Partners / Work / About | For Companies / For Partners / Case Studies / How We Work | Removes ambiguity while retaining stable URLs. |
-| Global CTA | Discuss a Collaboration | Discuss a Project | A project is more concrete and matches the intake. |
-| Home proof | “Projects with a real place…” | “See how the model works in real projects.” | Explains why the visitor is seeing the work. |
-| Home model | Questions about objective and context | Concrete definitions of work at each stage | Changes abstract prompts into actions and responsibilities. |
-| One-project section | Inputs described as subordinate resources | Explicitly says the client need not manage venues, participants and specialists separately | Answers the commercial alternative directly. |
-| Communities | “communities that make a market credible” | “people and communities that matter to the project” | Keeps the idea while naming audiences. |
-| Companies hero | Build presence around what the business needs | Turn a UK or European objective into the right local project | Makes the service mechanism immediate. |
-| Companies environments | Choose local context around a market result | Different objectives require different local environments | Retains logic with less interpretation. |
-| Partners value | “What we aim to make easier” | Know what the project is, why you are involved and who is responsible | States the partner gain directly. |
-| Case archive | Commercial evidence / real contexts / accountable delivery | Case studies from real UK & European projects | Uses familiar evidence language at the entry point. |
-| Case detail labels | Context / Evidence created / Evidence boundary | Project setting / Project material created / Public record boundary | More natural visitor language without weakening disclosure. |
-| About navigation and metadata | About | How We Work | Matches the page’s actual content. |
-| Team heading | The Team Behind the Work | One accountable team, supported by the specialists each project needs | Clarifies core ownership versus project specialists. |
-| Contact hero | Which side brings you here? | Start with what you are trying to achieve | Leads with the visitor’s need. |
+| Surface                       | Before                                                     | After                                                                                      | Reason                                                      |
+| ----------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ----------------------------------------------------------- |
+| Navigation                    | Companies / Partners / Work / About                        | For Companies / For Partners / Case Studies / How We Work                                  | Removes ambiguity while retaining stable URLs.              |
+| Global CTA                    | Discuss a Collaboration                                    | Discuss a Project                                                                          | A project is more concrete and matches the intake.          |
+| Home proof                    | “Projects with a real place…”                              | “See how the model works in real projects.”                                                | Explains why the visitor is seeing the work.                |
+| Home model                    | Questions about objective and context                      | Concrete definitions of work at each stage                                                 | Changes abstract prompts into actions and responsibilities. |
+| One-project section           | Inputs described as subordinate resources                  | Explicitly says the client need not manage venues, participants and specialists separately | Answers the commercial alternative directly.                |
+| Communities                   | “communities that make a market credible”                  | “people and communities that matter to the project”                                        | Keeps the idea while naming audiences.                      |
+| Companies hero                | Build presence around what the business needs              | Turn a UK or European objective into the right local project                               | Makes the service mechanism immediate.                      |
+| Companies environments        | Choose local context around a market result                | Different objectives require different local environments                                  | Retains logic with less interpretation.                     |
+| Partners value                | “What we aim to make easier”                               | Know what the project is, why you are involved and who is responsible                      | States the partner gain directly.                           |
+| Case archive                  | Commercial evidence / real contexts / accountable delivery | Case studies from real UK & European projects                                              | Uses familiar evidence language at the entry point.         |
+| Case detail labels            | Context / Evidence created / Evidence boundary             | Project setting / Project material created / Public record boundary                        | More natural visitor language without weakening disclosure. |
+| About navigation and metadata | About                                                      | How We Work                                                                                | Matches the page’s actual content.                          |
+| Team heading                  | The Team Behind the Work                                   | One accountable team, supported by the specialists each project needs                      | Clarifies core ownership versus project specialists.        |
+| Contact hero                  | Which side brings you here?                                | Start with what you are trying to achieve                                                  | Leads with the visitor’s need.                              |
 
 ## Controlled vocabulary
 
@@ -176,15 +176,15 @@ Automated regression coverage is recorded in `e2e/editorial-copy-ux.spec.ts` in 
 
 ## Editorial scores after refinement
 
-| Area | Score |
-| --- | ---: |
-| For Companies clarity | 9.3 / 10 |
-| For Partners clarity | 9.2 / 10 |
-| Case Studies clarity | 9.5 / 10 |
-| How We Work clarity | 9.2 / 10 |
-| What Venus Bridge does | 9.4 / 10 |
-| Client value | 9.2 / 10 |
-| Why Venus Bridge | 9.3 / 10 |
+| Area                       |    Score |
+| -------------------------- | -------: |
+| For Companies clarity      | 9.3 / 10 |
+| For Partners clarity       | 9.2 / 10 |
+| Case Studies clarity       | 9.5 / 10 |
+| How We Work clarity        | 9.2 / 10 |
+| What Venus Bridge does     | 9.4 / 10 |
+| Client value               | 9.2 / 10 |
+| Why Venus Bridge           | 9.3 / 10 |
 | Sitewide information logic | 9.4 / 10 |
 
 Scores below 10 reflect evidence-dependent commercial details that cannot be improved honestly through copy alone: named institutional proof, quantified outcomes, client testimonials, lead times, budget ranges and approved team profiles.
@@ -196,4 +196,3 @@ Scores below 10 reflect evidence-dependent commercial details that cannot be imp
 - confirmed public team names, roles, biographies, genuine photographs and permissions;
 - project-specific commercial parameters such as timing, budget and contracting terms;
 - any approved evidence that connects created assets to later commercial performance.
-

@@ -5,13 +5,31 @@ export const runtime = "edge";
 
 const cardCopy = {
   en: {
-    home: ["UK & European Market Execution", "Local commercial judgement, relationships and integrated execution for Chinese companies."],
-    companies: ["For Chinese Companies", "Validate opportunities and move UK and European market plans forward locally."],
-    partners: ["For UK & European Partners", "Relevant China-related opportunities with clear context and one bilingual coordination route."],
-    work: ["Real UK & European Projects", "Verified responsibilities and approved evidence from published work."],
-    "how-we-work": ["How We Work", "One accountable local team from market goal through execution and follow-through."],
+    home: [
+      "UK & European Market Execution",
+      "Local commercial judgement, relationships and integrated execution for Chinese companies."
+    ],
+    companies: [
+      "For Chinese Companies",
+      "Validate opportunities and move UK and European market plans forward locally."
+    ],
+    partners: [
+      "For UK & European Partners",
+      "Relevant China-related opportunities with clear context and one bilingual coordination route."
+    ],
+    work: [
+      "Real UK & European Projects",
+      "Verified responsibilities and approved evidence from published work."
+    ],
+    "how-we-work": [
+      "How We Work",
+      "One accountable local team from market goal through execution and follow-through."
+    ],
     about: ["About Venus Bridge", "A China-aware UK and European market execution team."],
-    contact: ["Discuss Your UK & European Plans", "Share the market goal and we will assess the most useful next step."],
+    contact: [
+      "Discuss Your UK & European Plans",
+      "Share the market goal and we will assess the most useful next step."
+    ],
     privacy: ["Privacy Notice", "How project-enquiry information is collected and used."],
     terms: ["Website Terms", "Website-use terms for Venus Bridge."]
   },
@@ -61,9 +79,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ lang
         />
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div style={{ display: "flex", fontSize: 72, fontWeight: 700 }}>{title}</div>
-          <div style={{ display: "flex", color: "#b8b0a4", fontSize: 28 }}>
-            {support}
-          </div>
+          <div style={{ display: "flex", color: "#b8b0a4", fontSize: 28 }}>{support}</div>
         </div>
         <div style={{ display: "flex", height: 4, width: "100%", background: "#cca672" }} />
       </div>

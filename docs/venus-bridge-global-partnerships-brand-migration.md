@@ -23,15 +23,15 @@ Changed public identity surfaces include metadata titles, Open Graph site identi
 
 ## Legal identity unchanged areas
 
-| Protected area | Remaining source lines | Reason |
-| --- | ---: | --- |
-| Company configuration | 1 | Approved trading identity remains configuration-controlled |
-| Footer approved legal statement | 2 | Explicit trading-name relationship to the configured legal entity |
-| Brand legal statement | 2 | Legal/trading reference, not public master-brand copy |
-| Privacy and Terms metadata | 3 | Kept with the current legal surface pending owner-approved legal change |
-| Consent interfaces | 7 | Existing privacy/processing consent language remains legally stable |
-| Regulated market-entry disclaimers | 4 | Scope and liability attribution retained |
-| Legacy About legal description | 2 | Explicit historical/current B2B trading-brand description |
+| Protected area                     | Remaining source lines | Reason                                                                  |
+| ---------------------------------- | ---------------------: | ----------------------------------------------------------------------- |
+| Company configuration              |                      1 | Approved trading identity remains configuration-controlled              |
+| Footer approved legal statement    |                      2 | Explicit trading-name relationship to the configured legal entity       |
+| Brand legal statement              |                      2 | Legal/trading reference, not public master-brand copy                   |
+| Privacy and Terms metadata         |                      3 | Kept with the current legal surface pending owner-approved legal change |
+| Consent interfaces                 |                      7 | Existing privacy/processing consent language remains legally stable     |
+| Regulated market-entry disclaimers |                      4 | Scope and liability attribution retained                                |
+| Legacy About legal description     |                      2 | Explicit historical/current B2B trading-brand description               |
 
 No legal entity, privacy controller, company number, registered office, contracting identity or legal approval gate was changed.
 

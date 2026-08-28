@@ -8,7 +8,10 @@ const source = async (path) => readFile(new URL(path, root), "utf8");
 test("homepage proof is geographically explicit and begins with real UK work", async () => {
   const page = await source("components/sections/Phase3Homepage.tsx");
   const copy = await source("content/phase3.ts");
-  assert.match(page, /earlyProofSlugs = \["byd-bd11-london", "london-automotive-brand-film", "changan-europe-launch-2025", "catl-open-day-2025"\]/);
+  assert.match(
+    page,
+    /earlyProofSlugs\s*=\s*\[\s*"byd-bd11-london"\s*,\s*"london-automotive-brand-film"\s*,\s*"changan-europe-launch-2025"\s*,\s*"catl-open-day-2025"\s*\]/
+  );
   assert.match(page, /project\.location/);
   assert.doesNotMatch(copy, /SELECTED UK ACTIVITY/);
   assert.match(copy, /Real UK and European work, precisely located/);
@@ -30,7 +33,8 @@ test("all public portfolio records appear in the Work index", async () => {
     "london-fashion-week-2025",
     "agibot-london-launch",
     "beauty-fashion-brand-content"
-  ]) assert.match(portfolio, new RegExp(slug));
+  ])
+    assert.match(portfolio, new RegExp(slug));
   assert.match(work, /publishedPortfolioProjects/);
   assert.match(work, /CommercialCaseIndex/);
 });
@@ -59,5 +63,6 @@ test("Phase 3.3 evidence, gap, release and IA records exist", async () => {
     "docs/phase-3-3-case-evidence-gap-register.md",
     "docs/phase-3-3-release-gate-triage.md",
     "docs/phase-3-3-commercial-ia-plan.md"
-  ]) assert.ok((await source(path)).length > 800, `${path} should be substantive`);
+  ])
+    assert.ok((await source(path)).length > 800, `${path} should be substantive`);
 });

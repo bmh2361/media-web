@@ -2,16 +2,16 @@
 
 ## Palette
 
-| Token role | Value | Purpose |
-| --- | --- | --- |
-| Ink | `#0b0d0e` | primary authority surface |
-| Night | `#141719` | tonal dark separation |
-| Graphite | `#242729` | media fallback and quiet dark layer |
-| Ivory | `#f3f0e9` | primary editorial ground |
-| Porcelain | `#f8f6f1` | high-clarity reading ground |
-| Stone | `#e8e4dc` | restrained chapter separation |
-| Slate | `#5d6264` | secondary text on light |
-| Champagne | `#c8a56a` | small, high-impact accent |
+| Token role           | Value     | Purpose                                                               |
+| -------------------- | --------- | --------------------------------------------------------------------- |
+| Ink                  | `#0b0d0e` | primary authority surface                                             |
+| Night                | `#141719` | tonal dark separation                                                 |
+| Graphite             | `#242729` | media fallback and quiet dark layer                                   |
+| Ivory                | `#f3f0e9` | primary editorial ground                                              |
+| Porcelain            | `#f8f6f1` | high-clarity reading ground                                           |
+| Stone                | `#e8e4dc` | restrained chapter separation                                         |
+| Slate                | `#5d6264` | secondary text on light                                               |
+| Champagne            | `#c8a56a` | small, high-impact accent                                             |
 | Light-surface accent | `#805f35` | small labels and indices on neutral canvas; AA at the text sizes used |
 
 ## Ratio

@@ -10,12 +10,17 @@ const representativeCases = [
 
 test("case index is stable at every required viewport", async ({ page }) => {
   const consoleErrors: string[] = [];
-  page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
   for (const width of [1440, 1280, 1024, 768, 430, 390, 375]) {
     await page.setViewportSize({ width, height: width < 768 ? 844 : 1000 });
     await page.goto("/en/work");
     await expect(page.locator("[data-case-row]")).toHaveCount(12);
-    const health = await page.evaluate(() => ({ overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth, broken: [...document.images].filter((image) => image.complete && image.naturalWidth === 0).length }));
+    const health = await page.evaluate(() => ({
+      overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+      broken: [...document.images].filter((image) => image.complete && image.naturalWidth === 0).length
+    }));
     expect(health, `index at ${width}`).toEqual({ overflow: 0, broken: 0 });
   }
   expect(consoleErrors).toEqual([]);
@@ -23,7 +28,9 @@ test("case index is stable at every required viewport", async ({ page }) => {
 
 test("four case archetypes remain evidence-led, accessible and reduced-motion safe", async ({ page }) => {
   const consoleErrors: string[] = [];
-  page.on("console", (message) => { if (message.type() === "error") consoleErrors.push(message.text()); });
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
   await page.emulateMedia({ reducedMotion: "reduce" });
   for (const width of [1440, 390]) {
     await page.setViewportSize({ width, height: width === 390 ? 844 : 1000 });
@@ -33,7 +40,9 @@ test("four case archetypes remain evidence-led, accessible and reduced-motion sa
       await expect(page.locator("[data-case-section=responsibility]")).toBeVisible();
       await expect(page.locator("[data-case-section=outputs]")).toBeVisible();
       await expect(page.locator("[data-editorial-media-blocks]").first()).toBeVisible();
-      expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBe(0);
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
+      ).toBe(0);
     }
   }
   await page.setViewportSize({ width: 1440, height: 1000 });

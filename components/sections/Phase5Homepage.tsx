@@ -6,7 +6,12 @@ import { Section } from "@/components/ui/Section";
 import { EditorialScene, type EditorialSceneMedia } from "@/components/sections/phase32c/EditorialScene";
 import { HomeHeroExperience, type HomeHeroScene } from "@/components/sections/phase32c/HomeHeroExperience";
 import { phase5 } from "@/content/phase5";
-import { findPortfolioProject, getProofPresentation, homepagePortfolioProjects, type PortfolioProject } from "@/content/portfolio";
+import {
+  findPortfolioProject,
+  getProofPresentation,
+  homepagePortfolioProjects,
+  type PortfolioProject
+} from "@/content/portfolio";
 import type { Language } from "@/lib/i18n";
 import { withLanguage } from "@/lib/i18n";
 
@@ -15,41 +20,393 @@ const project = (slug: string) => {
   if (!item) throw new Error(`Phase 5 project missing: ${slug}`);
   return item;
 };
-const scene = (item: PortfolioProject, category: "hero" | "cover" | "gallery", offset = 0): EditorialSceneMedia => ({ kind: "portfolio", media: item.media.filter((media) => media.category === category)[offset] ?? item.media.find((media) => media.category === category) ?? item.media[0] });
+const scene = (
+  item: PortfolioProject,
+  category: "hero" | "cover" | "gallery",
+  offset = 0
+): EditorialSceneMedia => ({
+  kind: "portfolio",
+  media:
+    item.media.filter((media) => media.category === category)[offset] ??
+    item.media.find((media) => media.category === category) ??
+    item.media[0]
+});
 
 export function Phase5Homepage({ language }: { language: Language }) {
-  const copy = phase5[language], zh = language === "zh";
-  const changan = project("changan-europe-launch-2025"), catl = project("catl-open-day-2025"), londonFilm = project("london-automotive-brand-film"), geely = project("geely-london-brand-launch"), agibot = project("agibot-london-launch");
+  const copy = phase5[language],
+    zh = language === "zh";
+  const changan = project("changan-europe-launch-2025"),
+    catl = project("catl-open-day-2025"),
+    londonFilm = project("london-automotive-brand-film"),
+    geely = project("geely-london-brand-launch"),
+    agibot = project("agibot-london-launch");
   const heroScenes: HomeHeroScene[] = [
-    { ...scene(changan, "gallery", 0), label: zh ? "欧洲发布场景" : "European Launch Context", context: "MUNICH · 2025" },
+    {
+      ...scene(changan, "gallery", 0),
+      label: zh ? "欧洲发布场景" : "European Launch Context",
+      context: "MUNICH · 2025"
+    },
     { ...scene(catl, "hero"), label: zh ? "专业现场" : "Professional Environment", context: "MUNICH · 2025" },
-    { ...scene(geely, "hero"), label: zh ? "品牌发布现场" : "Brand Launch Setting", context: "LONDON · 2025" },
+    {
+      ...scene(geely, "hero"),
+      label: zh ? "品牌发布现场" : "Brand Launch Setting",
+      context: "LONDON · 2025"
+    },
     { ...scene(agibot, "hero"), label: zh ? "科技发布现场" : "Technology Launch", context: "LONDON · UK" },
-    { ...scene(londonFilm, "hero"), label: zh ? "伦敦品牌证据" : "London Brand Evidence", context: "LONDON · UK" }
+    {
+      ...scene(londonFilm, "hero"),
+      label: zh ? "伦敦品牌证据" : "London Brand Evidence",
+      context: "LONDON · UK"
+    }
   ];
   const proof = homepagePortfolioProjects.slice(0, 3).map((item) => ({ item, media: scene(item, "hero") }));
-  return <>
-    <section className="overflow-hidden bg-ink pt-[76px] text-pearl lg:pt-[88px]" data-phase5-section="hero">
-      <Container className="grid gap-12 pb-14 pt-12 lg:min-h-[800px] lg:grid-cols-12 lg:items-center lg:gap-10 lg:py-16">
-	        <div className="lg:col-span-6 lg:pr-6" data-home-hero-copy><Eyebrow className="text-champagne">{copy.hero.eyebrow}</Eyebrow><h1 className={`mt-7 text-balance font-medium ${zh ? "max-w-[11em] text-[clamp(2.7rem,4vw,4.25rem)] leading-[1.1]" : "max-w-[15ch] text-[clamp(2.7rem,4.2vw,4.4rem)] leading-[1.01] tracking-[-.04em]"}`}>{copy.hero.title}</h1><p className="type-lede mt-8 max-w-[42rem] text-pearl/72">{copy.hero.body}</p><p className="mt-6 max-w-[39rem] border-l border-champagne/60 pl-4 text-sm leading-7 text-pearl/58">{copy.hero.partner}</p><div className="mt-10 flex flex-wrap gap-3"><ButtonLink href={withLanguage("/contact?intent=company", language)} showArrow>{copy.hero.companies}</ButtonLink><ButtonLink href={withLanguage("/work", language)} variant="secondary" className="border-pearl/30 text-pearl hover:bg-pearl hover:text-ink" showArrow>{copy.hero.work}</ButtonLink></div><Link href={withLanguage("/partners", language)} className="mt-5 inline-flex min-h-11 items-center text-sm text-pearl/65 underline-offset-4 hover:text-pearl hover:underline">{copy.hero.partners} →</Link></div>
-	        <div className="relative min-w-0 lg:col-span-6 lg:translate-y-3" data-home-hero-media><HomeHeroExperience scenes={heroScenes} language={language} /></div>
-      </Container>
-    </section>
+  return (
+    <>
+      <section
+        className="overflow-hidden bg-ink pt-[76px] text-pearl lg:pt-[88px]"
+        data-phase5-section="hero"
+      >
+        <Container className="grid gap-12 pb-14 pt-12 lg:min-h-[800px] lg:grid-cols-12 lg:items-center lg:gap-10 lg:py-16">
+          <div className="lg:col-span-6 lg:pr-6" data-home-hero-copy>
+            <Eyebrow className="text-champagne">{copy.hero.eyebrow}</Eyebrow>
+            <h1
+              className={`mt-7 text-balance font-medium ${zh ? "max-w-[11em] text-[clamp(2.7rem,4vw,4.25rem)] leading-[1.1]" : "max-w-[15ch] text-[clamp(2.7rem,4.2vw,4.4rem)] leading-[1.01] tracking-[-.04em]"}`}
+            >
+              {copy.hero.title}
+            </h1>
+            <p className="type-lede text-pearl/72 mt-8 max-w-[42rem]">{copy.hero.body}</p>
+            <p className="text-pearl/58 mt-6 max-w-[39rem] border-l border-champagne/60 pl-4 text-sm leading-7">
+              {copy.hero.partner}
+            </p>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <ButtonLink href={withLanguage("/contact?intent=company", language)} showArrow>
+                {copy.hero.companies}
+              </ButtonLink>
+              <ButtonLink
+                href={withLanguage("/work", language)}
+                variant="secondary"
+                className="border-pearl/30 text-pearl hover:bg-pearl hover:text-ink"
+                showArrow
+              >
+                {copy.hero.work}
+              </ButtonLink>
+            </div>
+            <Link
+              href={withLanguage("/partners", language)}
+              className="mt-5 inline-flex min-h-11 items-center text-sm text-pearl/65 underline-offset-4 hover:text-pearl hover:underline"
+            >
+              {copy.hero.partners} →
+            </Link>
+          </div>
+          <div className="relative min-w-0 lg:col-span-6 lg:translate-y-3" data-home-hero-media>
+            <HomeHeroExperience scenes={heroScenes} language={language} />
+          </div>
+        </Container>
+      </section>
 
-    <Section compact className="overflow-hidden bg-pearl" data-phase5-section="proof"><Container><div className="grid gap-6 border-b border-ink/15 pb-9 md:grid-cols-12 md:items-end"><div className="md:col-span-7"><Eyebrow>{copy.proof.eyebrow}</Eyebrow><h2 className="editorial-heading mt-5 max-w-[14ch]">{copy.proof.title}</h2></div><p className="type-body md:col-span-4 md:col-start-9">{copy.proof.body}</p></div><div className="mt-10 grid gap-6 md:grid-cols-12" data-home-proof-grid>{proof.map(({ item, media }, index) => <Link key={item.slug} href={withLanguage(`/work/${item.slug}`, language)} className={`group block ${index === 0 ? "md:col-span-6" : "md:col-span-3"}`} data-home-proof-card={index}><EditorialScene scene={media} language={language} sizes={index === 0 ? "(min-width:768px) 50vw, 100vw" : "(min-width:768px) 25vw, 100vw"} mediaRole="card-landscape" /><p className="mt-4 text-xs uppercase tracking-editorial text-slate">{item.location} · {getProofPresentation(item).label[language]}</p><h3 className="mt-2 text-lg font-medium group-hover:text-champagne">{zh ? item.titleZh : item.titleEn}</h3><p className="mt-2 text-sm leading-6 text-ink/60">{(zh ? item.venusRoleZh : item.venusRoleEn).join(" · ")}</p></Link>)}</div></Container></Section>
+      <Section compact className="overflow-hidden bg-pearl" data-phase5-section="proof">
+        <Container>
+          <div className="grid gap-6 border-b border-ink/15 pb-9 md:grid-cols-12 md:items-end">
+            <div className="md:col-span-7">
+              <Eyebrow>{copy.proof.eyebrow}</Eyebrow>
+              <h2 className="editorial-heading mt-5 max-w-[14ch]">{copy.proof.title}</h2>
+            </div>
+            <p className="type-body md:col-span-4 md:col-start-9">{copy.proof.body}</p>
+          </div>
+          <div
+            className="mt-10 grid gap-6 md:grid-cols-12"
+            data-home-proof-grid
+            data-editorial-reveal
+            data-editorial-stagger
+          >
+            {proof.map(({ item, media }, index) => (
+              <Link
+                key={item.slug}
+                href={withLanguage(`/work/${item.slug}`, language)}
+                className={`group block ${index === 0 ? "md:col-span-6" : "md:col-span-3"}`}
+                data-home-proof-card={index}
+                data-cursor={zh ? "查看案例" : "View case"}
+              >
+                <EditorialScene
+                  scene={media}
+                  language={language}
+                  sizes={index === 0 ? "(min-width:768px) 50vw, 100vw" : "(min-width:768px) 25vw, 100vw"}
+                  mediaRole="card-landscape"
+                />
+                <p className="mt-4 text-xs uppercase tracking-editorial text-slate">
+                  {item.location} · {getProofPresentation(item).label[language]}
+                </p>
+                <h3 className="mt-2 text-lg font-medium group-hover:text-champagne">
+                  {zh ? item.titleZh : item.titleEn}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-ink/60">
+                  {(zh ? item.venusRoleZh : item.venusRoleEn).join(" · ")}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </Section>
 
-    <Section className="home-journeys-desktop bg-porcelain" data-phase5-section="journeys"><Container><div className="xl:grid xl:grid-cols-12 xl:gap-x-8" data-home-journey-intro><Eyebrow className="xl:col-span-12">{copy.journeys.eyebrow}</Eyebrow><h2 className="editorial-heading mt-5 max-w-[15ch] xl:col-span-7 xl:max-w-[18ch]">{copy.journeys.title}</h2><div className="hidden max-w-xl border-t border-ink/15 pt-5 xl:col-span-4 xl:col-start-9 xl:mt-5 xl:block xl:self-end" data-home-journey-context><p className="type-body text-ink/65">{copy.journeys.context}</p><p className="mt-5 text-[10px] uppercase tracking-editorial text-slate">01—05 · {zh ? "英国 / 欧洲" : "UK / EUROPE"}</p></div></div><div className="mt-10 grid border-l border-t border-ink/15 md:grid-cols-2 lg:mt-14 lg:grid-cols-5 xl:mt-12" data-home-journey-rail tabIndex={0} role="region" aria-label={zh ? "企业需求场景" : "Company situations"}>{copy.journeys.situations.map((item, index) => <article key={item.title} className="border-b border-r border-ink/15 p-6 lg:min-h-64" data-home-journey-card><span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span><h3 className="mt-9 text-xl font-medium leading-tight xl:mt-7 xl:min-h-[5.5rem]">{item.title}</h3><p className="mt-5 text-sm leading-6 text-ink/65 xl:mt-4">{item.body}</p></article>)}</div><ButtonLink href={withLanguage("/companies", language)} variant="ghost" className="mt-8 xl:flex xl:w-full xl:justify-between xl:border-b xl:border-ink/15 xl:px-0 xl:pb-4" showArrow>{copy.journeys.cta}</ButtonLink></Container></Section>
+      <Section className="home-journeys-desktop bg-porcelain" data-phase5-section="journeys">
+        <Container>
+          <div className="xl:grid xl:grid-cols-12 xl:gap-x-8" data-home-journey-intro>
+            <Eyebrow className="xl:col-span-12">{copy.journeys.eyebrow}</Eyebrow>
+            <h2 className="editorial-heading mt-5 max-w-[15ch] xl:col-span-7 xl:max-w-[18ch]">
+              {copy.journeys.title}
+            </h2>
+            <div
+              className="hidden max-w-xl border-t border-ink/15 pt-5 xl:col-span-4 xl:col-start-9 xl:mt-5 xl:block xl:self-end"
+              data-home-journey-context
+            >
+              <p className="type-body text-ink/65">{copy.journeys.context}</p>
+              <p className="mt-5 text-[10px] uppercase tracking-editorial text-slate">
+                01—05 · {zh ? "英国 / 欧洲" : "UK / EUROPE"}
+              </p>
+            </div>
+          </div>
+          <div
+            className="mt-10 grid border-l border-t border-ink/15 md:grid-cols-2 lg:mt-14 lg:grid-cols-5 xl:mt-12"
+            data-home-journey-rail
+            tabIndex={0}
+            role="region"
+            aria-label={zh ? "企业需求场景" : "Company situations"}
+          >
+            {copy.journeys.situations.map((item, index) => (
+              <article
+                key={item.title}
+                className="border-b border-r border-ink/15 p-6 lg:min-h-64"
+                data-home-journey-card
+              >
+                <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
+                <h3 className="mt-9 text-xl font-medium leading-tight xl:mt-7 xl:min-h-[5.5rem]">
+                  {item.title}
+                </h3>
+                <p className="mt-5 text-sm leading-6 text-ink/65 xl:mt-4">{item.body}</p>
+              </article>
+            ))}
+          </div>
+          <ButtonLink
+            href={withLanguage("/companies", language)}
+            variant="ghost"
+            className="mt-8 xl:flex xl:w-full xl:justify-between xl:border-b xl:border-ink/15 xl:px-0 xl:pb-4"
+            showArrow
+          >
+            {copy.journeys.cta}
+          </ButtonLink>
+        </Container>
+      </Section>
 
-    <Section className="bg-night text-pearl" data-phase5-section="model"><Container><div className="grid gap-8 lg:grid-cols-12"><div className="lg:col-span-9"><Eyebrow className="text-champagne">{copy.model.eyebrow}</Eyebrow><h2 className="editorial-heading heading-measure-standard mt-5 max-w-[15ch]">{copy.model.title}</h2></div></div><ol className="mt-10 grid border-y border-pearl/15 md:grid-cols-2 lg:mt-14 lg:grid-cols-4" data-home-model-grid>{copy.model.steps.map((item, index) => <li key={item.title} className="border-b border-pearl/15 py-7 md:border-r md:px-6 md:first:pl-0 md:last:border-r-0 lg:min-h-64 lg:border-b-0"><span className="text-xs text-champagne">0{index + 1}</span><h3 className="mt-10 text-xl font-medium lg:mt-14">{item.title}</h3><p className="mt-4 text-sm leading-6 text-pearl/60">{item.text}</p></li>)}</ol></Container></Section>
+      <Section className="bg-night text-pearl" data-phase5-section="model">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-12">
+            <div className="lg:col-span-9">
+              <Eyebrow className="text-champagne">{copy.model.eyebrow}</Eyebrow>
+              <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[15ch]">
+                {copy.model.title}
+              </h2>
+            </div>
+          </div>
+          <ol
+            className="mt-10 grid border-y border-pearl/15 md:grid-cols-2 lg:mt-14 lg:grid-cols-4"
+            data-home-model-grid
+            data-editorial-reveal
+            data-editorial-stagger
+          >
+            {copy.model.steps.map((item, index) => (
+              <li
+                key={item.title}
+                className="border-b border-pearl/15 py-7 md:border-r md:px-6 md:first:pl-0 md:last:border-r-0 lg:min-h-64 lg:border-b-0"
+              >
+                <span className="text-xs text-champagne">0{index + 1}</span>
+                <h3 className="mt-10 text-xl font-medium lg:mt-14">{item.title}</h3>
+                <p className="mt-4 text-sm leading-6 text-pearl/60">{item.text}</p>
+              </li>
+            ))}
+          </ol>
+        </Container>
+      </Section>
 
-    <Section className="bg-pearl" data-phase5-section="value"><Container><div className="grid gap-16 lg:grid-cols-2"><article><Eyebrow>{copy.company.eyebrow}</Eyebrow><h2 className="editorial-heading heading-measure-compact mt-5 max-w-[13ch]">{copy.company.title}</h2><p className="mt-7 text-lg leading-8 text-ink/65">{copy.company.body}</p><ul className="mt-8 border-t border-ink/15">{copy.company.outcomes.map((item) => <li key={item} className="border-b border-ink/15 py-4 text-base">{item}</li>)}</ul><ButtonLink href={withLanguage("/companies", language)} variant="ghost" className="mt-8" showArrow>{copy.journeys.cta}</ButtonLink></article><article className="bg-graphite p-7 text-pearl md:p-10"><Eyebrow className="text-pearl/80">{copy.partner.eyebrow}</Eyebrow><h2 className="editorial-heading heading-measure-compact mt-5 max-w-[12ch]">{copy.partner.title}</h2><p className="mt-7 text-lg leading-8 text-pearl/65">{copy.partner.body}</p><ul className="mt-8 grid grid-cols-2 border-t border-pearl/15">{copy.partner.values.map((item) => <li key={item} className="border-b border-pearl/15 py-4 pr-3 text-sm">{item}</li>)}</ul><ButtonLink href={withLanguage("/partners", language)} variant="secondary" className="mt-8 border-pearl/30 text-pearl hover:bg-pearl hover:text-ink" showArrow>{copy.hero.partners}</ButtonLink></article></div></Container></Section>
+      <Section className="bg-pearl" data-phase5-section="value">
+        <Container>
+          <div className="grid gap-16 lg:grid-cols-2">
+            <article>
+              <Eyebrow>{copy.company.eyebrow}</Eyebrow>
+              <h2 className="editorial-heading heading-measure-compact mt-5 max-w-[13ch]">
+                {copy.company.title}
+              </h2>
+              <p className="mt-7 text-lg leading-8 text-ink/65">{copy.company.body}</p>
+              <ul className="mt-8 border-t border-ink/15">
+                {copy.company.outcomes.map((item) => (
+                  <li key={item} className="border-b border-ink/15 py-4 text-base">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <ButtonLink
+                href={withLanguage("/companies", language)}
+                variant="ghost"
+                className="mt-8"
+                showArrow
+              >
+                {copy.journeys.cta}
+              </ButtonLink>
+            </article>
+            <article className="bg-graphite p-7 text-pearl md:p-10">
+              <Eyebrow className="text-pearl/80">{copy.partner.eyebrow}</Eyebrow>
+              <h2 className="editorial-heading heading-measure-compact mt-5 max-w-[12ch]">
+                {copy.partner.title}
+              </h2>
+              <p className="mt-7 text-lg leading-8 text-pearl/65">{copy.partner.body}</p>
+              <ul className="mt-8 grid grid-cols-2 border-t border-pearl/15">
+                {copy.partner.values.map((item) => (
+                  <li key={item} className="border-b border-pearl/15 py-4 pr-3 text-sm">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <ButtonLink
+                href={withLanguage("/partners", language)}
+                variant="secondary"
+                className="mt-8 border-pearl/30 text-pearl hover:bg-pearl hover:text-ink"
+                showArrow
+              >
+                {copy.hero.partners}
+              </ButtonLink>
+            </article>
+          </div>
+        </Container>
+      </Section>
 
-    <Section className="bg-porcelain" data-phase5-section="participants"><Container><div className="grid gap-8 lg:grid-cols-12"><div className="lg:col-span-7"><Eyebrow>{copy.participants.eyebrow}</Eyebrow><h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">{copy.participants.title}</h2></div><p className="type-body lg:col-span-4 lg:col-start-9 lg:self-end">{copy.participants.body}</p></div><ul className="mt-10 grid border-y border-ink/15 md:grid-cols-3 lg:mt-14" data-home-participant-grid>{copy.participants.types.map((item, index) => <li key={item} className="border-b border-ink/15 py-7 md:px-7 md:border-r md:[&:nth-child(3n)]:border-r-0 lg:min-h-40"><span className="text-xs text-champagne">0{index + 1}</span><h3 className="mt-8 text-xl font-medium lg:mt-10">{item}</h3></li>)}</ul></Container></Section>
+      <Section className="bg-porcelain" data-phase5-section="participants">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <Eyebrow>{copy.participants.eyebrow}</Eyebrow>
+              <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">
+                {copy.participants.title}
+              </h2>
+            </div>
+            <p className="type-body lg:col-span-4 lg:col-start-9 lg:self-end">{copy.participants.body}</p>
+          </div>
+          <ul
+            className="mt-10 grid border-y border-ink/15 md:grid-cols-3 lg:mt-14"
+            data-home-participant-grid
+          >
+            {copy.participants.types.map((item, index) => (
+              <li
+                key={item}
+                className="border-b border-ink/15 py-7 md:border-r md:px-7 lg:min-h-40 md:[&:nth-child(3n)]:border-r-0"
+              >
+                <span className="text-xs text-champagne">0{index + 1}</span>
+                <h3 className="mt-8 text-xl font-medium lg:mt-10">{item}</h3>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </Section>
 
-    <Section className="bg-mist" data-phase5-section="work"><Container><Eyebrow>{copy.work.eyebrow}</Eyebrow><h2 className="editorial-heading heading-measure-wide mt-5 max-w-[14ch]">{copy.work.title}</h2><ol className="mt-10 grid border-y border-ink/15 md:mt-12 md:grid-cols-3 xl:mt-14">{copy.work.stages.map((item, index) => <li key={item.title} className="border-b border-ink/15 py-7 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0 lg:min-h-60"><span className="text-xs text-champagne">0{index + 1}</span><h3 className="mt-10 text-2xl font-medium lg:mt-12">{item.title}</h3><p className="mt-5 text-sm leading-7 text-ink/65">{item.text}</p></li>)}</ol></Container></Section>
+      <Section className="bg-mist" data-phase5-section="work">
+        <Container>
+          <Eyebrow>{copy.work.eyebrow}</Eyebrow>
+          <h2 className="editorial-heading heading-measure-wide mt-5 max-w-[14ch]">{copy.work.title}</h2>
+          <ol className="mt-10 grid border-y border-ink/15 md:mt-12 md:grid-cols-3 xl:mt-14">
+            {copy.work.stages.map((item, index) => (
+              <li
+                key={item.title}
+                className="border-b border-ink/15 py-7 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0 lg:min-h-60"
+              >
+                <span className="text-xs text-champagne">0{index + 1}</span>
+                <h3 className="mt-10 text-2xl font-medium lg:mt-12">{item.title}</h3>
+                <p className="mt-5 text-sm leading-7 text-ink/65">{item.text}</p>
+              </li>
+            ))}
+          </ol>
+        </Container>
+      </Section>
 
-    <Section className="bg-pearl" data-phase5-section="compound"><Container><Eyebrow>{copy.compound.eyebrow}</Eyebrow><h2 className="editorial-heading mt-5 max-w-[14ch]">{copy.compound.title}</h2><div className="mt-14 grid gap-10 lg:grid-cols-2"><article className="border-t border-ink/15 pt-6"><h3 className="text-2xl font-medium">{copy.compound.companyTitle}</h3><div className="mt-7 flex flex-wrap gap-3">{copy.compound.company.map((item) => <span key={item} className="border border-ink/15 px-4 py-3 text-sm">{item}</span>)}</div></article><article className="border-t border-ink/15 pt-6"><h3 className="text-2xl font-medium">{copy.compound.partnerTitle}</h3><div className="mt-7 flex flex-wrap gap-3">{copy.compound.partner.map((item) => <span key={item} className="border border-ink/15 px-4 py-3 text-sm">{item}</span>)}</div></article></div><div className="mt-16 grid gap-8 border-t border-ink/15 pt-10 lg:grid-cols-12"><div className="lg:col-span-7"><Eyebrow>{copy.accountability.eyebrow}</Eyebrow><h3 className="mt-5 max-w-[15ch] text-3xl font-medium leading-tight lg:text-4xl">{copy.accountability.title}</h3></div><p className="type-body lg:col-span-4 lg:col-start-9">{copy.accountability.body}</p></div></Container></Section>
+      <Section className="bg-pearl" data-phase5-section="compound">
+        <Container className="container-editorial">
+          <div className="editorial-grid">
+            <Eyebrow className="lg:col-span-12">{copy.compound.eyebrow}</Eyebrow>
+            <h2 className="editorial-heading editorial-display-measure lg:col-span-8">
+              {copy.compound.title}
+            </h2>
+          </div>
+          <div
+            className="editorial-grid mt-12 border-t border-ink/15 pt-8 lg:mt-14 lg:pt-10"
+            data-editorial-reveal
+          >
+            <article className="lg:col-span-5">
+              <h3 className="text-sm font-medium uppercase tracking-editorial text-slate">
+                {copy.compound.companyTitle}
+              </h3>
+              <ol className="mt-6 border-t border-ink/15">
+                {copy.compound.company.map((item, index) => (
+                  <li
+                    key={item}
+                    className="grid grid-cols-[1fr_auto] gap-6 border-b border-ink/15 py-4 text-base"
+                    data-why-editorial-row
+                  >
+                    <span>{item}</span>
+                    <span aria-hidden="true" className="text-xs tabular-nums text-champagne">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </article>
+            <article className="lg:col-span-5 lg:col-start-8">
+              <h3 className="text-sm font-medium uppercase tracking-editorial text-slate">
+                {copy.compound.partnerTitle}
+              </h3>
+              <ol className="mt-6 border-t border-ink/15">
+                {copy.compound.partner.map((item, index) => (
+                  <li
+                    key={item}
+                    className="grid grid-cols-[1fr_auto] gap-6 border-b border-ink/15 py-4 text-base"
+                    data-why-editorial-row
+                  >
+                    <span>{item}</span>
+                    <span aria-hidden="true" className="text-xs tabular-nums text-champagne">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+            </article>
+          </div>
+          <div className="editorial-grid mt-14 border-t border-ink/15 pt-9 lg:mt-16 lg:items-end lg:pt-10">
+            <div className="lg:col-span-7">
+              <Eyebrow>{copy.accountability.eyebrow}</Eyebrow>
+              <h3 className="editorial-heading editorial-display-measure mt-5">
+                {copy.accountability.title}
+              </h3>
+            </div>
+            <p className="type-body lg:col-span-4 lg:col-start-9">{copy.accountability.body}</p>
+          </div>
+        </Container>
+      </Section>
 
-    <Section className="bg-ink text-pearl" data-phase5-section="cta"><Container><Eyebrow className="text-champagne">{copy.cta.eyebrow}</Eyebrow><h2 className="type-display-page mt-5 max-w-[15ch]">{copy.cta.title}</h2><div className="mt-10 flex flex-wrap gap-3"><ButtonLink href={withLanguage("/contact?intent=company", language)} showArrow>{copy.cta.companies}</ButtonLink><ButtonLink href={withLanguage("/contact?intent=partner", language)} variant="secondary" className="border-pearl/30 text-pearl hover:bg-pearl hover:text-ink" showArrow>{copy.cta.partners}</ButtonLink></div></Container></Section>
-  </>;
+      <Section className="bg-ink text-pearl" data-phase5-section="cta">
+        <Container>
+          <Eyebrow className="text-champagne">{copy.cta.eyebrow}</Eyebrow>
+          <h2 className="type-display-page mt-5 max-w-[15ch]">{copy.cta.title}</h2>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <ButtonLink href={withLanguage("/contact?intent=company", language)} showArrow>
+              {copy.cta.companies}
+            </ButtonLink>
+            <ButtonLink
+              href={withLanguage("/contact?intent=partner", language)}
+              variant="secondary"
+              className="border-pearl/30 text-pearl hover:bg-pearl hover:text-ink"
+              showArrow
+            >
+              {copy.cta.partners}
+            </ButtonLink>
+          </div>
+        </Container>
+      </Section>
+    </>
+  );
 }

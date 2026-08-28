@@ -2,16 +2,16 @@
 
 ## Audited pages and experience map
 
-| Page | Sequence |
-| --- | --- |
-| Home | Hero `REVEAL` → carousel `MEDIA / INTERACTIVE` → projects `PROOF` → capabilities `REVEAL` → CTA |
-| Companies | Hero `REVEAL / MEDIA` → opportunity journey `STICKY` → solution routes `STATIC` → benefits `PROOF` → CTA |
-| Partners | Hero `REVEAL / MEDIA` → partner types `STATIC` → value `PROOF` → project process `STICKY` → CTA |
-| Case Studies | Intro `REVEAL` → filters `INTERACTIVE` → project rows `INTERACTIVE / MEDIA` → footer |
-| Case Detail | Identity `REVEAL` → hero `MEDIA` → context `STATIC` → evidence `MEDIA / TRANSITION` → outcomes → next project CTA |
-| How We Work | Hero `REVEAL / MEDIA` → responsibility `PROOF` → journey `STICKY` → timing `STATIC` → CTA |
-| About | Identity `REVEAL` → operating frame `STICKY` → context `LOW` → globe `MEDIA` → team `INTERACTIVE / REVEAL` → CTA |
-| Contact | Hero `REVEAL` → form `TRANSITION / INTERACTIVE` → footer |
+| Page         | Sequence                                                                                                          |
+| ------------ | ----------------------------------------------------------------------------------------------------------------- |
+| Home         | Hero `REVEAL` → carousel `MEDIA / INTERACTIVE` → projects `PROOF` → capabilities `REVEAL` → CTA                   |
+| Companies    | Hero `REVEAL / MEDIA` → opportunity journey `STICKY` → solution routes `STATIC` → benefits `PROOF` → CTA          |
+| Partners     | Hero `REVEAL / MEDIA` → partner types `STATIC` → value `PROOF` → project process `STICKY` → CTA                   |
+| Case Studies | Intro `REVEAL` → filters `INTERACTIVE` → project rows `INTERACTIVE / MEDIA` → footer                              |
+| Case Detail  | Identity `REVEAL` → hero `MEDIA` → context `STATIC` → evidence `MEDIA / TRANSITION` → outcomes → next project CTA |
+| How We Work  | Hero `REVEAL / MEDIA` → responsibility `PROOF` → journey `STICKY` → timing `STATIC` → CTA                         |
+| About        | Identity `REVEAL` → operating frame `STICKY` → context `LOW` → globe `MEDIA` → team `INTERACTIVE / REVEAL` → CTA  |
+| Contact      | Hero `REVEAL` → form `TRANSITION / INTERACTIVE` → footer                                                          |
 
 English and Chinese home/About entry paths are included in viewport QA.
 
@@ -48,17 +48,17 @@ English and Chinese home/About entry paths are included in viewport QA.
 
 ## Animation-density review
 
-| Area | Density |
-| --- | --- |
-| Hero entry | HIGH |
-| Supporting editorial sections | LOW |
-| Indexed journeys | MEDIUM |
-| Proof grids | LOW |
-| Case archive | MEDIUM |
-| Case-detail media | MEDIUM |
-| Team | MEDIUM |
-| Contact form | LOW |
-| Closing CTA | LOW |
+| Area                          | Density |
+| ----------------------------- | ------- |
+| Hero entry                    | HIGH    |
+| Supporting editorial sections | LOW     |
+| Indexed journeys              | MEDIUM  |
+| Proof grids                   | LOW     |
+| Case archive                  | MEDIUM  |
+| Case-detail media             | MEDIUM  |
+| Team                          | MEDIUM  |
+| Contact form                  | LOW     |
+| Closing CTA                   | LOW     |
 
 No page consists entirely of high-motion sections.
 

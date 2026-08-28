@@ -8,17 +8,17 @@ The desktop homepage was strong but several text-led chapters placed a narrow he
 
 The nine homepage chapters mapped as follows:
 
-| Section | Composition type | Audit outcome |
-| --- | --- | --- |
-| Hero | A — text + dominant media | Preserved |
-| Real Projects | C — full-width visual evidence | Preserved |
-| When Companies Bring Us In | B — positioning + contextual explanation | Refined |
-| What We Help Make Happen | D/E — indexed dark chapter | Refined |
-| Local Capability | F — asymmetric two-audience proof | Preserved |
-| Capability Around the Goal | D — indexed horizontal system | Preserved |
-| Exhibition to Pipeline | G/D — editorial statement + process index | Refined |
-| Why Venus Bridge | F — asymmetric proof composition | Preserved |
-| Closing CTA | H — closing conversion section | Preserved |
+| Section                    | Composition type                          | Audit outcome |
+| -------------------------- | ----------------------------------------- | ------------- |
+| Hero                       | A — text + dominant media                 | Preserved     |
+| Real Projects              | C — full-width visual evidence            | Preserved     |
+| When Companies Bring Us In | B — positioning + contextual explanation  | Refined       |
+| What We Help Make Happen   | D/E — indexed dark chapter                | Refined       |
+| Local Capability           | F — asymmetric two-audience proof         | Preserved     |
+| Capability Around the Goal | D — indexed horizontal system             | Preserved     |
+| Exhibition to Pipeline     | G/D — editorial statement + process index | Refined       |
+| Why Venus Bridge           | F — asymmetric proof composition          | Preserved     |
+| Closing CTA                | H — closing conversion section            | Preserved     |
 
 The repeated formula was eyebrow + narrow upper-left headline + system below. It appeared most noticeably across the journeys, model and work chapters.
 

@@ -1,17 +1,13 @@
 import { cn } from "@/lib/utils";
+import type { ComponentPropsWithoutRef } from "react";
 export function Section({
   children,
   className,
   compact = false,
-  id
-}: {
-  children: React.ReactNode;
-  className?: string;
-  compact?: boolean;
-  id?: string;
-}) {
+  ...props
+}: ComponentPropsWithoutRef<"section"> & { compact?: boolean }) {
   return (
-    <section id={id} className={cn(compact ? "section-compact" : "section-y", className)}>
+    <section {...props} className={cn(compact ? "section-compact" : "section-y", className)}>
       {children}
     </section>
   );

@@ -28,11 +28,7 @@ function context() {
   const url = new URL(window.location.href);
   const locale = url.pathname.split("/")[1] === "zh" ? "zh" : "en";
   const referrer = document.referrer ? new URL(document.referrer) : null;
-  const source = !referrer
-    ? "direct"
-    : referrer.origin === url.origin
-      ? "internal"
-      : "referral";
+  const source = !referrer ? "direct" : referrer.origin === url.origin ? "internal" : "referral";
   return {
     path: url.pathname,
     locale,

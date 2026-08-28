@@ -36,7 +36,9 @@ test.describe("approved Venus Bridge brand assets", () => {
           /venus-bridge-horizontal-lockup-white/
         );
         await expect(page.locator("body")).not.toContainText(/FrameBridge|FRAMEBRIDGE/);
-        expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+        expect(
+          await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)
+        ).toBeLessThanOrEqual(1);
       });
     }
   }
@@ -49,6 +51,8 @@ test.describe("approved Venus Bridge brand assets", () => {
     await expect(page.getByRole("dialog", { name: "Menu" })).toBeVisible();
     await page.keyboard.press("Escape");
     await expect(page.getByRole("dialog", { name: "Menu" })).toBeHidden();
-    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(
+      1
+    );
   });
 });

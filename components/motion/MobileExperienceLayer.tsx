@@ -63,13 +63,17 @@ export function MobileExperienceLayer({ language }: { language: Language }) {
 
     sectionNodes.forEach((section) => sectionObserver.observe(section));
     const observeReveals = () => {
-      document.querySelectorAll<HTMLElement>("[data-mobile-reveal]:not([data-mobile-entered])").forEach((node) => revealObserver.observe(node));
+      document
+        .querySelectorAll<HTMLElement>("[data-mobile-reveal]:not([data-mobile-entered])")
+        .forEach((node) => revealObserver.observe(node));
     };
     const activateVisibleReveals = () => {
-      document.querySelectorAll<HTMLElement>("[data-mobile-reveal]:not([data-mobile-entered])").forEach((node) => {
-        const rect = node.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.9 && rect.bottom > 0) node.dataset.mobileEntered = "true";
-      });
+      document
+        .querySelectorAll<HTMLElement>("[data-mobile-reveal]:not([data-mobile-entered])")
+        .forEach((node) => {
+          const rect = node.getBoundingClientRect();
+          if (rect.top < window.innerHeight * 0.9 && rect.bottom > 0) node.dataset.mobileEntered = "true";
+        });
     };
     observeReveals();
     activateVisibleReveals();
@@ -132,9 +136,11 @@ export function MobileExperienceLayer({ language }: { language: Language }) {
             type="button"
             aria-label={`${language === "zh" ? "前往" : "Go to"} ${section.label}`}
             aria-current={index === active ? "step" : undefined}
-            onClick={() => document.getElementById(section.id)?.scrollIntoView({
-              behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
-            })}
+            onClick={() =>
+              document.getElementById(section.id)?.scrollIntoView({
+                behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
+              })
+            }
           >
             <span />
           </button>

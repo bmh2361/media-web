@@ -13857,9 +13857,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 27.3,
-    "duplicates": [
-      "demo/exhibition-space.svg"
-    ]
+    "duplicates": ["demo/exhibition-space.svg"]
   },
   {
     "filename": "interview-frame.webp",
@@ -13887,9 +13885,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 27.3,
-    "duplicates": [
-      "demo/exhibition-space.webp"
-    ]
+    "duplicates": ["demo/exhibition-space.webp"]
   },
   {
     "filename": "robot-exhibition-content-03-thumb.webp",
@@ -18537,9 +18533,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 25.2,
-    "duplicates": [
-      "demo/interview-frame.svg"
-    ]
+    "duplicates": ["demo/interview-frame.svg"]
   },
   {
     "filename": "exhibition-space.webp",
@@ -18567,9 +18561,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 25.2,
-    "duplicates": [
-      "demo/interview-frame.webp"
-    ]
+    "duplicates": ["demo/interview-frame.webp"]
   },
   {
     "filename": "01-hero-thumb.webp",
@@ -21201,9 +21193,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 25,
-    "duplicates": [
-      "demo/styling-form.svg"
-    ]
+    "duplicates": ["demo/styling-form.svg"]
   },
   {
     "filename": "portrait-shadow.webp",
@@ -21231,9 +21221,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 25,
-    "duplicates": [
-      "demo/styling-form.webp"
-    ]
+    "duplicates": ["demo/styling-form.webp"]
   },
   {
     "filename": "tablet.avif",
@@ -25769,9 +25757,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 23.8,
-    "duplicates": [
-      "demo/portrait-shadow.svg"
-    ]
+    "duplicates": ["demo/portrait-shadow.svg"]
   },
   {
     "filename": "styling-form.webp",
@@ -25799,9 +25785,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 23.8,
-    "duplicates": [
-      "demo/portrait-shadow.webp"
-    ]
+    "duplicates": ["demo/portrait-shadow.webp"]
   },
   {
     "filename": "mobile.avif",
@@ -29049,11 +29033,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-04.svg",
-      "demo/marks/mark-07.svg",
-      "demo/marks/mark-10.svg"
-    ]
+    "duplicates": ["demo/marks/mark-04.svg", "demo/marks/mark-07.svg", "demo/marks/mark-10.svg"]
   },
   {
     "filename": "mark-02.svg",
@@ -29081,11 +29061,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-05.svg",
-      "demo/marks/mark-08.svg",
-      "demo/marks/mark-11.svg"
-    ]
+    "duplicates": ["demo/marks/mark-05.svg", "demo/marks/mark-08.svg", "demo/marks/mark-11.svg"]
   },
   {
     "filename": "mark-03.svg",
@@ -29113,9 +29089,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-09.svg"
-    ]
+    "duplicates": ["demo/marks/mark-09.svg"]
   },
   {
     "filename": "mark-04.svg",
@@ -29143,11 +29117,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-01.svg",
-      "demo/marks/mark-07.svg",
-      "demo/marks/mark-10.svg"
-    ]
+    "duplicates": ["demo/marks/mark-01.svg", "demo/marks/mark-07.svg", "demo/marks/mark-10.svg"]
   },
   {
     "filename": "mark-05.svg",
@@ -29175,11 +29145,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-02.svg",
-      "demo/marks/mark-08.svg",
-      "demo/marks/mark-11.svg"
-    ]
+    "duplicates": ["demo/marks/mark-02.svg", "demo/marks/mark-08.svg", "demo/marks/mark-11.svg"]
   },
   {
     "filename": "mark-06.svg",
@@ -29207,9 +29173,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-12.svg"
-    ]
+    "duplicates": ["demo/marks/mark-12.svg"]
   },
   {
     "filename": "mark-07.svg",
@@ -29237,11 +29201,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-01.svg",
-      "demo/marks/mark-04.svg",
-      "demo/marks/mark-10.svg"
-    ]
+    "duplicates": ["demo/marks/mark-01.svg", "demo/marks/mark-04.svg", "demo/marks/mark-10.svg"]
   },
   {
     "filename": "mark-08.svg",
@@ -29269,11 +29229,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-02.svg",
-      "demo/marks/mark-05.svg",
-      "demo/marks/mark-11.svg"
-    ]
+    "duplicates": ["demo/marks/mark-02.svg", "demo/marks/mark-05.svg", "demo/marks/mark-11.svg"]
   },
   {
     "filename": "mark-09.svg",
@@ -29301,9 +29257,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-03.svg"
-    ]
+    "duplicates": ["demo/marks/mark-03.svg"]
   },
   {
     "filename": "mark-10.svg",
@@ -29331,11 +29285,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-01.svg",
-      "demo/marks/mark-04.svg",
-      "demo/marks/mark-07.svg"
-    ]
+    "duplicates": ["demo/marks/mark-01.svg", "demo/marks/mark-04.svg", "demo/marks/mark-07.svg"]
   },
   {
     "filename": "mark-11.svg",
@@ -29363,11 +29313,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-02.svg",
-      "demo/marks/mark-05.svg",
-      "demo/marks/mark-08.svg"
-    ]
+    "duplicates": ["demo/marks/mark-02.svg", "demo/marks/mark-05.svg", "demo/marks/mark-08.svg"]
   },
   {
     "filename": "mark-12.svg",
@@ -29395,9 +29341,7 @@
       "colourCompatibility": 3.8
     },
     "totalScore": 20.5,
-    "duplicates": [
-      "demo/marks/mark-06.svg"
-    ]
+    "duplicates": ["demo/marks/mark-06.svg"]
   },
   {
     "filename": "mobile.avif",

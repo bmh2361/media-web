@@ -12,12 +12,17 @@ export function EditorialLink({ children, className, ...props }: EditorialLinkPr
     <Link
       {...props}
       className={cn(
-        "inline-flex min-h-11 items-center gap-3 border-b border-current py-2 text-sm font-medium",
+        "editorial-link group relative inline-flex min-h-11 items-center gap-3 py-2 text-sm font-medium",
         className
       )}
     >
       {children}
-      <span aria-hidden>↗</span>
+      <span
+        aria-hidden
+        className="transition-transform duration-200 ease-editorial group-hover:translate-x-1 group-focus-visible:translate-x-1"
+      >
+        ↗
+      </span>
     </Link>
   );
 }

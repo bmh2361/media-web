@@ -35,6 +35,8 @@ test.describe("current motion correction", () => {
     await page.goto("/en/work");
     await expect(page.locator("[data-mobile-case-row]")).toHaveCount(12);
     await expect(page.locator("[data-case-preview]")).toBeHidden();
-    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(
+      1
+    );
   });
 });

@@ -13,9 +13,11 @@ test.describe("motion direction", () => {
     const row = page
       .locator((await page.viewportSize())!.width < 1024 ? "[data-mobile-case-row]" : "[data-case-row]")
       .nth(1);
-    await row.focus();
-    await expect(row).toBeFocused();
-    await expect(row).toHaveAttribute("href", /\/en\/work\//);
+    const trigger = row.getByRole("button").first();
+    await trigger.focus();
+    await expect(trigger).toBeFocused();
+    await trigger.press("Enter");
+    await expect(row.locator('a[href^="/en/work/"]')).toBeVisible();
   });
 
   test("reduced motion removes first-visit overlay", async ({ page }) => {

@@ -83,4 +83,3 @@ The primary navigation will be Capabilities, Work, About, Contact and EN/中文.
 ## Proposed redirects
 
 All previous stage, service, industry and expertise routes will permanently redirect to `/capabilities` or a relevant capability anchor. `/for-agencies` and `/talent` will also merge into the capability architecture. Existing `/work` and `/work/[slug]` routes remain. `/about`, `/contact`, `/privacy` and `/terms` remain. Redirects will exist in both locale contexts through relative locale-preserving destinations.
-

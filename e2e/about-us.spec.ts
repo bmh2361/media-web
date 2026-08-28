@@ -67,7 +67,9 @@ test.describe("About Us and sector content", () => {
       await page.goto(`/${locale}/industries/fashion-beauty-apparel`);
       await expect(page).toHaveURL(new RegExp(`/${locale}/companies$`));
       await expect(page).toHaveTitle(
-        locale === "zh" ? /中国企业英国与欧洲市场进入及本地执行/ : /UK & Europe Market Entry and Local Execution/
+        locale === "zh"
+          ? /中国企业英国与欧洲市场进入及本地执行/
+          : /UK & Europe Market Entry and Local Execution/
       );
       await expect(page.locator("h1")).toContainText(
         locale === "zh"

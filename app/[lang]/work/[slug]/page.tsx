@@ -1,7 +1,12 @@
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { PortfolioProjectDetail } from "@/components/sections/PortfolioProjectDetail";
-import { commercialCaseCategories, findPublishedPortfolioProject, getProjectCover, publishedPortfolioProjects } from "@/content/portfolio";
+import {
+  commercialCaseCategories,
+  findPublishedPortfolioProject,
+  getProjectCover,
+  publishedPortfolioProjects
+} from "@/content/portfolio";
 import { isSupportedLocale, languages } from "@/lib/i18n";
 import { buildMetadata } from "@/lib/seo";
 import { getEffectiveWorkMode } from "@/lib/release";
@@ -27,9 +32,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       lang === "zh" ? project.commercialObjectiveZh : project.commercialObjectiveEn,
       lang === "zh" ? project.roleStatementZh : project.roleStatementEn,
       project.location
-    ].filter(Boolean).join(" — "),
+    ]
+      .filter(Boolean)
+      .join(" — "),
     ogAlt: lang === "zh" ? project.titleZh : project.titleEn,
-    ogImage: getProjectCover(project)?.publicPath,
+    ogImage: getProjectCover(project)?.publicPath
   });
 }
 
@@ -43,7 +50,9 @@ export default async function Page({ params }: { params: Promise<{ lang: string;
     lang === "zh" ? project.commercialObjectiveZh : project.commercialObjectiveEn,
     lang === "zh" ? project.roleStatementZh : project.roleStatementEn,
     project.location
-  ].filter(Boolean).join(" — ");
+  ]
+    .filter(Boolean)
+    .join(" — ");
   const cover = getProjectCover(project)?.publicPath;
   return (
     <>

@@ -5,7 +5,17 @@ import { chromium } from "@playwright/test";
 const root = process.cwd();
 const outputDir = path.join(root, "audit", "final-prelaunch");
 const baseUrl = process.env.AUDIT_BASE_URL || "http://127.0.0.1:3340";
-const routes = ["", "/companies", "/partners", "/work", "/how-we-work", "/about", "/contact", "/privacy", "/terms"];
+const routes = [
+  "",
+  "/companies",
+  "/partners",
+  "/work",
+  "/how-we-work",
+  "/about",
+  "/contact",
+  "/privacy",
+  "/terms"
+];
 const viewports = [
   { name: "mobile", width: 390, height: 844 },
   { name: "desktop", width: 1440, height: 1000 }

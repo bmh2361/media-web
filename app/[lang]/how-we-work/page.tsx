@@ -14,7 +14,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return buildMetadata({
     lang,
     path: "/how-we-work",
-    title: lang === "zh" ? "Venus Bridge 如何交付英国与欧洲项目" : "How Venus Bridge Delivers UK & European Projects",
+    title:
+      lang === "zh"
+        ? "Venus Bridge 如何交付英国与欧洲项目"
+        : "How Venus Bridge Delivers UK & European Projects",
     description:
       lang === "zh"
         ? "了解 Venus Bridge 如何从商业目标出发，设计本地行动、推进关系、管理执行，并在项目后继续跟进。"
@@ -34,9 +37,15 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
         ["后续跟进", "整理关系、市场信息、获准内容及下一步行动。"]
       ]
     : [
-        ["Commercial direction", "Clarify the market result, priorities, constraints and definition of success."],
+        [
+          "Commercial direction",
+          "Clarify the market result, priorities, constraints and definition of success."
+        ],
         ["Local route", "Turn the goal into action that fits the UK or European market."],
-        ["Relationships & delivery", "Advance the required local relationships and manage timing, communication, approvals and live work."],
+        [
+          "Relationships & delivery",
+          "Advance the required local relationships and manage timing, communication, approvals and live work."
+        ],
         ["Follow-through", "Organise relationships, market learning, approved material and next actions."]
       ];
   const stages = zh
@@ -50,23 +59,47 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
     : [
         ["Understand", "Clarify the commercial goal, market stage, timing and anything already committed."],
         ["Design", "Create a locally relevant route that can move the goal forward."],
-        ["Activate", "Engage the required buyer, partner, industry or specialist relationships around a clear scope."],
+        [
+          "Activate",
+          "Engage the required buyer, partner, industry or specialist relationships around a clear scope."
+        ],
         ["Deliver", "Manage local execution, communication, approvals and live decisions."],
-        ["Follow Through", "Organise commercial relationships, market learning, project assets and next actions."]
+        [
+          "Follow Through",
+          "Organise commercial relationships, market learning, project assets and next actions."
+        ]
       ];
   const timings = zh
-    ? [["活动前", "目标关系、重点会面、本地叙事、排期与跟进计划。"], ["现场", "利益相关方协调、现场执行、即时判断与获准内容。"], ["活动后", "商务跟进、市场反馈、关系延续与可复用项目资产。"]]
-    : [["Before", "Target relationships, priority meetings, local narrative, schedule and follow-up plan."], ["On the ground", "Stakeholder coordination, live delivery, immediate decisions and approved content."], ["After", "Commercial follow-up, market feedback, relationship continuity and reusable project assets."]];
+    ? [
+        ["活动前", "目标关系、重点会面、本地叙事、排期与跟进计划。"],
+        ["现场", "利益相关方协调、现场执行、即时判断与获准内容。"],
+        ["活动后", "商务跟进、市场反馈、关系延续与可复用项目资产。"]
+      ]
+    : [
+        ["Before", "Target relationships, priority meetings, local narrative, schedule and follow-up plan."],
+        [
+          "On the ground",
+          "Stakeholder coordination, live delivery, immediate decisions and approved content."
+        ],
+        [
+          "After",
+          "Commercial follow-up, market feedback, relationship continuity and reusable project assets."
+        ]
+      ];
   return (
     <>
       <section className="bg-porcelain pt-[76px] lg:pt-[88px]">
         <div className="container-x grid gap-12 py-20 lg:min-h-[720px] lg:grid-cols-12 lg:items-center lg:py-24">
           <div className="lg:col-span-7">
-            <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "工作方式" : "HOW WE WORK"}</p>
+            <p className="text-xs uppercase tracking-editorial text-champagne">
+              {zh ? "工作方式" : "HOW WE WORK"}
+            </p>
             <h1 className="type-display-page zh-display-measure mt-7 max-w-[17ch] md:max-w-[18ch] lg:max-w-[15ch]">
-              {zh ? "从一个具体市场目标，到真正落地并持续推进。" : "From one commercial goal to local action and follow-through."}
+              {zh
+                ? "从一个具体市场目标，到真正落地并持续推进。"
+                : "From one commercial goal to local action and follow-through."}
             </h1>
-            <p className="type-lede mt-8 text-ink/66">
+            <p className="type-lede text-ink/66 mt-8">
               {zh
                 ? "先说明英国或欧洲需要实现什么。我们会判断合适的本地行动、所需关系与执行路径，并把各环节连接起来。"
                 : "Start with what needs to happen in the UK or Europe. We define the right local action, relationships and delivery route, then keep the work connected."}
@@ -74,9 +107,17 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
           </div>
           {processMedia?.websiteUseApproved && processMedia.mediaRightsApproved ? (
             <div className="lg:col-span-5">
-              <EditorialScene scene={{ kind: "capability", media: processMedia }} language={lang} sizes="(min-width:1024px) 40vw, 100vw" priority mediaRole="hero-landscape" />
+              <EditorialScene
+                scene={{ kind: "capability", media: processMedia }}
+                language={lang}
+                sizes="(min-width:1024px) 40vw, 100vw"
+                priority
+                mediaRole="hero-landscape"
+              />
               <p className="mt-4 text-sm leading-6 text-ink/65">
-                {zh ? "市场判断、关系推进与现场执行，进入同一条工作路径。" : "Market judgement, relationship engagement and live delivery follow one working route."}
+                {zh
+                  ? "市场判断、关系推进与现场执行，进入同一条工作路径。"
+                  : "Market judgement, relationship engagement and live delivery follow one working route."}
               </p>
             </div>
           ) : null}
@@ -85,16 +126,25 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
 
       <section className="section-y bg-ink text-pearl">
         <div className="container-x">
-          <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "我们承担什么" : "WHAT WE TAKE RESPONSIBILITY FOR"}</p>
+          <p className="text-xs uppercase tracking-editorial text-champagne">
+            {zh ? "我们承担什么" : "WHAT WE TAKE RESPONSIBILITY FOR"}
+          </p>
           <h2 className="type-heading-section zh-display-measure heading-measure-standard mt-6 max-w-[13ch]">
-            {zh ? "一个本地团队，把商务方向与现场行动连接起来。" : "One local team connecting commercial direction with action on the ground."}
+            {zh
+              ? "一个本地团队，把商务方向与现场行动连接起来。"
+              : "One local team connecting commercial direction with action on the ground."}
           </h2>
-          <div className="mt-10 grid border-l border-t border-pearl/15 md:grid-cols-2 lg:mt-14">
+          <div
+            className="mt-10 grid border-l border-t border-pearl/15 md:grid-cols-2 lg:mt-14"
+            data-how-principles
+            data-editorial-reveal
+            data-editorial-stagger
+          >
             {responsibilities.map(([title, text], index) => (
               <article key={title} className="border-b border-r border-pearl/15 p-7 lg:min-h-56">
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-10 text-2xl font-medium">{title}</h3>
-                <p className="mt-4 max-w-lg text-base leading-7 text-pearl/58">{text}</p>
+                <p className="text-pearl/58 mt-4 max-w-lg text-base leading-7">{text}</p>
               </article>
             ))}
           </div>
@@ -104,7 +154,9 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
       <section className="section-y bg-mist">
         <div className="container-x">
           <div className="min-[1200px]:hidden">
-            <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "项目顺序" : "THE PROJECT JOURNEY"}</p>
+            <p className="text-xs uppercase tracking-editorial text-champagne">
+              {zh ? "项目顺序" : "THE PROJECT JOURNEY"}
+            </p>
             <h2 className="type-heading-section zh-display-measure heading-measure-compact mt-6 max-w-[11ch]">
               {zh ? "五个阶段，从目标到持续跟进。" : "Five stages from objective to follow-through."}
             </h2>
@@ -120,18 +172,28 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
           </div>
           <div className="hidden gap-14 min-[1200px]:grid min-[1200px]:grid-cols-[.78fr_1.22fr]">
             <div className="self-start lg:sticky lg:top-32">
-              <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "项目顺序" : "THE PROJECT JOURNEY"}</p>
+              <p className="text-xs uppercase tracking-editorial text-champagne">
+                {zh ? "项目顺序" : "THE PROJECT JOURNEY"}
+              </p>
               <h2 className="type-heading-section zh-display-measure heading-measure-compact mt-6 max-w-[11ch]">
                 {zh ? "五个阶段，从目标到持续跟进。" : "Five stages from objective to follow-through."}
               </h2>
             </div>
-            <ol className="border-t border-ink/15">
+            <ol
+              className="border-t border-ink/15"
+              data-how-process
+              data-editorial-reveal
+              data-editorial-stagger
+            >
               {stages.map(([title, text], index) => (
-                <li key={title} className="grid gap-5 border-b border-ink/15 py-8 sm:grid-cols-[64px_1fr] lg:min-h-48">
+                <li
+                  key={title}
+                  className="grid gap-5 border-b border-ink/15 py-8 sm:grid-cols-[64px_1fr] lg:min-h-48"
+                >
                   <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                   <div>
                     <h3 className="text-3xl font-medium">{title}</h3>
-                    <p className="mt-5 max-w-xl text-lg leading-8 text-ink/62">{text}</p>
+                    <p className="text-ink/62 mt-5 max-w-xl text-lg leading-8">{text}</p>
                   </div>
                 </li>
               ))}
@@ -142,16 +204,31 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
 
       <section className="section-y bg-porcelain" aria-labelledby="timing-title">
         <div className="container-x">
-          <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "活动前、现场与活动后" : "BEFORE, ON THE GROUND & AFTER"}</p>
-          <h2 id="timing-title" className="type-heading-section zh-display-measure heading-measure-wide mt-6 max-w-[13ch]">
-            {zh ? "市场节点只有连到后续行动，才真正有价值。" : "A market moment becomes valuable when it connects to what happens next."}
+          <p className="text-xs uppercase tracking-editorial text-champagne">
+            {zh ? "活动前、现场与活动后" : "BEFORE, ON THE GROUND & AFTER"}
+          </p>
+          <h2
+            id="timing-title"
+            className="type-heading-section zh-display-measure heading-measure-wide mt-6 max-w-[13ch]"
+          >
+            {zh
+              ? "市场节点只有连到后续行动，才真正有价值。"
+              : "A market moment becomes valuable when it connects to what happens next."}
           </h2>
-          <ol className="mt-12 grid border-y border-ink/15 md:grid-cols-3">
+          <ol
+            className="mt-12 grid border-y border-ink/15 md:grid-cols-3"
+            data-how-timing
+            data-editorial-reveal
+            data-editorial-stagger
+          >
             {timings.map(([title, text], index) => (
-              <li key={title} className="border-b border-ink/15 py-7 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0 lg:min-h-56">
+              <li
+                key={title}
+                className="border-b border-ink/15 py-7 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0 lg:min-h-56"
+              >
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-10 text-2xl font-medium">{title}</h3>
-                <p className="mt-5 text-base leading-7 text-ink/62">{text}</p>
+                <p className="text-ink/62 mt-5 text-base leading-7">{text}</p>
               </li>
             ))}
           </ol>
@@ -161,7 +238,9 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
       <section className="section-y bg-mist">
         <div className="container-x grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-6">
-            <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "专业能力何时加入" : "WHEN SPECIALISTS ENTER"}</p>
+            <p className="text-xs uppercase tracking-editorial text-champagne">
+              {zh ? "专业能力何时加入" : "WHEN SPECIALISTS ENTER"}
+            </p>
             <h2 className="type-heading-section zh-display-measure heading-measure-compact mt-6 max-w-[12ch]">
               {zh ? "由目标决定需要什么能力。" : "The goal determines the capability."}
             </h2>
@@ -179,15 +258,29 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
       <section className="bg-ink py-20 text-pearl lg:py-28">
         <div className="container-x container-standard grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
-            <p className="text-xs uppercase tracking-editorial text-champagne">{zh ? "从需求开始" : "START WITH THE NEED"}</p>
+            <p className="text-xs uppercase tracking-editorial text-champagne">
+              {zh ? "从需求开始" : "START WITH THE NEED"}
+            </p>
             <h2 className="type-display-page zh-display-measure mt-6 max-w-[14ch]">
-              {zh ? "告诉我们，英国或欧洲需要发生什么。" : "Tell us what needs to happen in the UK or Europe."}
+              {zh
+                ? "告诉我们，英国或欧洲需要发生什么。"
+                : "Tell us what needs to happen in the UK or Europe."}
             </h2>
-            <ButtonLink href={withLanguage("/about", lang)} variant="ghost" className="mt-5 px-0 text-pearl" showArrow>
+            <ButtonLink
+              href={withLanguage("/about", lang)}
+              variant="ghost"
+              className="mt-5 px-0 text-pearl"
+              showArrow
+            >
               {zh ? "认识团队" : "Meet the team"}
             </ButtonLink>
           </div>
-          <ButtonLink href={withLanguage("/contact", lang)} variant="secondary" className="border-pearl/30 text-pearl hover:bg-pearl hover:text-ink" showArrow>
+          <ButtonLink
+            href={withLanguage("/contact", lang)}
+            variant="secondary"
+            className="border-pearl/30 text-pearl hover:bg-pearl hover:text-ink"
+            showArrow
+          >
             {zh ? "讨论项目" : "Discuss a Project"}
           </ButtonLink>
         </div>

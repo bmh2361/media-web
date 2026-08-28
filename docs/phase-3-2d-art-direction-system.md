@@ -82,4 +82,3 @@ Context, Venus role, delivered outputs and media must read as one evidence seque
 ## Acceptance test
 
 At every audited width a visitor must first understand what Venus Bridge makes possible, then see credible evidence, then find an obvious conversation path. Visual variety must increase attention without weakening that sequence.
-

@@ -48,20 +48,20 @@ The pass covered the homepage hero media module, About hero, core-team index, Wo
 
 The recommendation below applies to the selected Work-index preview, not every image in the case-study gallery. `Natural` means intrinsic ratio with no crop; paired previews preserve both source ratios inside the editorial grid.
 
-| Project | Selected preview evidence | Source ratio / subject | Crop assessment | Index mode |
-| --- | --- | --- | --- | --- |
-| BYD BD11 London | `byd-bd11-london-01-hero` | 952×540, vehicle / venue landscape | Wide frame is readable without crop | Natural |
-| Changan European launch | `changan-europe-launch-2025-03-gallery` | 952×536, launch landscape | Stage and vehicle context should remain intact | Natural |
-| Geely London launch | `geely-london-brand-launch-02-cover` + hero | 1080×1584 portrait + 1440×1080 landscape | Portrait subject is unsafe in a landscape cover | Paired natural |
-| CATL Open Day | `catl-open-day-2025-01-hero` | 952×536, presentation landscape | Wide event context is already composed | Natural |
-| Leapmotor at IAA | `leapmotor-iaa-2023-01-hero` | 952×538, exhibition landscape | Stand context should remain intact | Natural |
-| AGIBOT London launch | `agibot-london-launch-02-cover` + hero | 1280×1920 portrait + 1600×1067 landscape | Product/speaker portrait is unsafe in 4:3 cover | Paired natural |
-| London automotive brand film | `london-automotive-brand-film-01-hero` | 952×536, automotive landscape | Cinematic frame is already composed | Natural |
-| Wang Linkai London concert | `wang-linkai-london-concert-02-cover` + hero | 1280×1920 portrait + 1600×1000 landscape | Performer portrait requires full-height preservation | Paired natural |
-| Yue Yunpeng London live | `yue-yunpeng-london-live-01-hero` | 1440×1080, stage landscape | Existing 4:3 source can display naturally | Natural |
-| London Fashion Week | hero + cover | 1440×1920 + 1279×1920, full-length portraits | Full figures are unsafe in landscape crops | Paired natural |
-| Beauty & fashion content | hero + supporting | 800×800 square + approved supporting frame | Product/talent composition should not be normalised | Paired natural |
-| European road lifestyle | hero + supporting | 1075×1571 portrait + approved supporting frame | Vehicle/environment framing requires original ratios | Paired natural |
+| Project                      | Selected preview evidence                    | Source ratio / subject                         | Crop assessment                                      | Index mode     |
+| ---------------------------- | -------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- | -------------- |
+| BYD BD11 London              | `byd-bd11-london-01-hero`                    | 952×540, vehicle / venue landscape             | Wide frame is readable without crop                  | Natural        |
+| Changan European launch      | `changan-europe-launch-2025-03-gallery`      | 952×536, launch landscape                      | Stage and vehicle context should remain intact       | Natural        |
+| Geely London launch          | `geely-london-brand-launch-02-cover` + hero  | 1080×1584 portrait + 1440×1080 landscape       | Portrait subject is unsafe in a landscape cover      | Paired natural |
+| CATL Open Day                | `catl-open-day-2025-01-hero`                 | 952×536, presentation landscape                | Wide event context is already composed               | Natural        |
+| Leapmotor at IAA             | `leapmotor-iaa-2023-01-hero`                 | 952×538, exhibition landscape                  | Stand context should remain intact                   | Natural        |
+| AGIBOT London launch         | `agibot-london-launch-02-cover` + hero       | 1280×1920 portrait + 1600×1067 landscape       | Product/speaker portrait is unsafe in 4:3 cover      | Paired natural |
+| London automotive brand film | `london-automotive-brand-film-01-hero`       | 952×536, automotive landscape                  | Cinematic frame is already composed                  | Natural        |
+| Wang Linkai London concert   | `wang-linkai-london-concert-02-cover` + hero | 1280×1920 portrait + 1600×1000 landscape       | Performer portrait requires full-height preservation | Paired natural |
+| Yue Yunpeng London live      | `yue-yunpeng-london-live-01-hero`            | 1440×1080, stage landscape                     | Existing 4:3 source can display naturally            | Natural        |
+| London Fashion Week          | hero + cover                                 | 1440×1920 + 1279×1920, full-length portraits   | Full figures are unsafe in landscape crops           | Paired natural |
+| Beauty & fashion content     | hero + supporting                            | 800×800 square + approved supporting frame     | Product/talent composition should not be normalised  | Paired natural |
+| European road lifestyle      | hero + supporting                            | 1075×1571 portrait + approved supporting frame | Vehicle/environment framing requires original ratios | Paired natural |
 
 ## Duplication and sizing audit
 

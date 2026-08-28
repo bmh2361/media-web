@@ -23,7 +23,10 @@ test("public routes expose intentional bilingual metadata and language alternate
     await expect(page).toHaveTitle(/Venus Bridge/);
     const description = await page.locator('meta[name="description"]').getAttribute("content");
     expect(description?.trim().length).toBeGreaterThanOrEqual(30);
-    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", new RegExp(`${route.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`));
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      "href",
+      new RegExp(`${route.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`)
+    );
     await expect(page.locator('link[rel="alternate"][hreflang="en-GB"]')).toHaveCount(1);
     await expect(page.locator('link[rel="alternate"][hreflang="zh-CN"]')).toHaveCount(1);
     await expect(page.locator('link[rel="alternate"][hreflang="x-default"]')).toHaveCount(1);
@@ -60,7 +63,10 @@ test("not-found routes provide restrained recovery paths", async ({ page }) => {
   await expect(page).toHaveTitle("Page Not Found | Venus Bridge");
   await expect(page.getByRole("heading", { name: "This page is not available." })).toBeVisible();
   await expect(page.getByRole("link", { name: "Return home" })).toHaveAttribute("href", "/en");
-  await expect(page.getByRole("link", { name: "Contact Venus Bridge" })).toHaveAttribute("href", "/en/contact");
+  await expect(page.getByRole("link", { name: "Contact Venus Bridge" })).toHaveAttribute(
+    "href",
+    "/en/contact"
+  );
 });
 
 test("commercial measurement emits only allow-listed non-sensitive event context", async ({ page }) => {
@@ -74,13 +80,17 @@ test("commercial measurement emits only allow-listed non-sensitive event context
   await page.goto("/en");
   await page.getByRole("link", { name: "See How We Help Companies" }).first().click();
   await page.waitForURL("**/en/companies");
-  const events = await page.evaluate(() => JSON.parse(sessionStorage.getItem("measurement-events") || "[]")) as Array<{
+  const events = (await page.evaluate(() =>
+    JSON.parse(sessionStorage.getItem("measurement-events") || "[]")
+  )) as Array<{
     name: string;
     properties: Record<string, unknown>;
   }>;
   expect(events.some((event: { name: string }) => event.name === "companies_cta_click")).toBeTruthy();
   const propertyKeys = events.flatMap((event) => Object.keys(event.properties));
-  expect(propertyKeys).not.toEqual(expect.arrayContaining(["project_description", "email", "contact_name", "free_text"]));
+  expect(propertyKeys).not.toEqual(
+    expect.arrayContaining(["project_description", "email", "contact_name", "free_text"])
+  );
 });
 
 test("contact endpoint rejects malformed requests without exposing a stack trace", async ({ request }) => {
@@ -96,7 +106,9 @@ test("canonical internal links resolve without broken destinations", async ({ pa
   const links = new Set<string>();
   for (const route of keyRoutes) {
     await page.goto(route);
-    for (const href of await page.locator('a[href]').evaluateAll((anchors) => anchors.map((anchor) => anchor.getAttribute("href") || ""))) {
+    for (const href of await page
+      .locator("a[href]")
+      .evaluateAll((anchors) => anchors.map((anchor) => anchor.getAttribute("href") || ""))) {
       if (!href.startsWith("/") || href.startsWith("//")) continue;
       const url = new URL(href, "https://internal.invalid");
       links.add(`${url.pathname}${url.search}`);

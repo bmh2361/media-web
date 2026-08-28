@@ -30,6 +30,7 @@ const viewports = [
 test("Phase 3.4 canonical release surface is responsive and accessible", async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== "desktop");
   test.setTimeout(240_000);
+  await page.emulateMedia({ reducedMotion: "reduce" });
   const runtimeErrors: string[] = [];
   page.on("pageerror", (error) => runtimeErrors.push(error.message));
   page.on("console", (message) => {

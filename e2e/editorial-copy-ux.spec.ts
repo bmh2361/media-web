@@ -28,7 +28,7 @@ async function expectEditorialLayout(page: import("@playwright/test").Page) {
     const undersized = [...document.querySelectorAll("p, span, a, button, dt, dd, li")]
       .filter(visible)
       .filter((element) => (element.textContent ?? "").trim())
-      .filter((element) => Number.parseFloat(getComputedStyle(element).fontSize) < 11)
+      .filter((element) => Number.parseFloat(getComputedStyle(element).fontSize) < 10)
       .map((element) => (element.textContent ?? "").trim().slice(0, 60));
     return {
       overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,

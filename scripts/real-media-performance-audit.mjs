@@ -172,7 +172,10 @@ try {
         const insideHorizontalScroller = [...document.querySelectorAll("body *")].some((candidate) => {
           if (!(candidate instanceof HTMLElement) || !candidate.contains(element)) return false;
           const candidateStyle = getComputedStyle(candidate);
-          return ["auto", "scroll"].includes(candidateStyle.overflowX) && candidate.scrollWidth > candidate.clientWidth;
+          return (
+            ["auto", "scroll"].includes(candidateStyle.overflowX) &&
+            candidate.scrollWidth > candidate.clientWidth
+          );
         });
         if (insideHorizontalScroller) return false;
         return rect.left < -1 || rect.right > innerWidth + 1;

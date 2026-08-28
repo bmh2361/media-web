@@ -1,6 +1,28 @@
 export const phase5Navigation = {
-  en: { home: "Home", companies: "For Companies", partners: "For Partners", work: "Case Studies", how: "How We Work", about: "About Us", contact: "Contact", cta: "Discuss a Project", menu: "Open menu", close: "Close menu" },
-  zh: { home: "首页", companies: "面向企业", partners: "面向合作方", work: "案例研究", how: "工作方式", about: "关于我们", contact: "联系", cta: "讨论项目", menu: "打开菜单", close: "关闭菜单" }
+  en: {
+    home: "Home",
+    companies: "For Companies",
+    partners: "For Partners",
+    work: "Case Studies",
+    how: "How We Work",
+    about: "About Us",
+    contact: "Contact",
+    cta: "Discuss a Project",
+    menu: "Open menu",
+    close: "Close menu"
+  },
+  zh: {
+    home: "首页",
+    companies: "面向企业",
+    partners: "面向合作方",
+    work: "案例研究",
+    how: "工作方式",
+    about: "关于我们",
+    contact: "联系",
+    cta: "讨论项目",
+    menu: "打开菜单",
+    close: "关闭菜单"
+  }
 } as const;
 
 const en = {
@@ -8,7 +30,8 @@ const en = {
     eyebrow: "CHINA → UK & EUROPE",
     title: "Move your UK or European ambitions forward—on the ground.",
     body: "From validating the opportunity and engaging buyers or partners to delivering launches and exhibitions, Venus Bridge gives Chinese companies the local judgement and execution to build credible momentum across the UK and Europe.",
-    partner: "China-side understanding. UK and European market judgement. One local team carrying the work forward.",
+    partner:
+      "China-side understanding. UK and European market judgement. One local team carrying the work forward.",
     companies: "Discuss Your UK / European Plans",
     partners: "For Partners",
     work: "View Case Studies"
@@ -21,13 +44,29 @@ const en = {
   journeys: {
     eyebrow: "WHEN COMPANIES BRING US IN",
     title: "Useful when the UK or European opportunity has become real.",
-    context: "Five situations typically bring Venus Bridge into a project: commercial intent is clear, while the local path, relationships or execution still need structure.",
+    context:
+      "Five situations typically bring Venus Bridge into a project: commercial intent is clear, while the local path, relationships or execution still need structure.",
     situations: [
-      { title: "Entering the UK or Europe", body: "Validate the opportunity, understand the local landscape and decide what should happen first." },
-      { title: "Preparing a launch or exhibition", body: "Turn a fixed date into a joined-up programme before, during and after the event." },
-      { title: "Looking for buyers, distributors or partners", body: "Identify relevant organisations, create the right context and coordinate local engagement." },
-      { title: "Building local credibility", body: "Use industry, expert, institutional or content environments where they strengthen the commercial goal." },
-      { title: "When the local team is too small", body: "Add UK execution capacity without immediately building every function in-house." }
+      {
+        title: "Entering the UK or Europe",
+        body: "Validate the opportunity, understand the local landscape and decide what should happen first."
+      },
+      {
+        title: "Preparing a launch or exhibition",
+        body: "Turn a fixed date into a joined-up programme before, during and after the event."
+      },
+      {
+        title: "Looking for buyers, distributors or partners",
+        body: "Identify relevant organisations, create the right context and coordinate local engagement."
+      },
+      {
+        title: "Building local credibility",
+        body: "Use industry, expert, institutional or content environments where they strengthen the commercial goal."
+      },
+      {
+        title: "When the local team is too small",
+        body: "Add UK execution capacity without immediately building every function in-house."
+      }
     ],
     cta: "See How We Help Companies"
   },
@@ -35,46 +74,97 @@ const en = {
     eyebrow: "WHAT WE HELP MAKE HAPPEN",
     title: "Four routes from market ambition to useful local action.",
     steps: [
-      { title: "Market Validation & Entry", text: "Understand the landscape, frame the opportunity and decide where to invest before committing heavily." },
-      { title: "Buyers, Partners & Industry Presence", text: "Identify and engage relationships that can move the market forward." },
-      { title: "Launches, Exhibitions & Local Activation", text: "Turn a fixed market moment into a coordinated commercial programme." },
-      { title: "Credibility, Content & Market Assets", text: "Create proof and material that remain useful after the live activity." }
+      {
+        title: "Market Validation & Entry",
+        text: "Understand the landscape, frame the opportunity and decide where to invest before committing heavily."
+      },
+      {
+        title: "Buyers, Partners & Industry Presence",
+        text: "Identify and engage relationships that can move the market forward."
+      },
+      {
+        title: "Launches, Exhibitions & Local Activation",
+        text: "Turn a fixed market moment into a coordinated commercial programme."
+      },
+      {
+        title: "Credibility, Content & Market Assets",
+        text: "Create proof and material that remain useful after the live activity."
+      }
     ]
   },
   company: {
     eyebrow: "LOCAL CAPABILITY",
     title: "A UK and European delivery layer before you build a full local team.",
     body: "We work alongside Chinese headquarters and existing European teams, adding the market coordination, relationship management and execution capacity required around a defined commercial goal.",
-    outcomes: ["Local market judgement", "One commercial coordination point", "Bilingual China-to-Europe communication", "Flexible specialist capability", "Follow-through after the live moment"]
+    outcomes: [
+      "Local market judgement",
+      "One commercial coordination point",
+      "Bilingual China-to-Europe communication",
+      "Flexible specialist capability",
+      "Follow-through after the live moment"
+    ]
   },
   partner: {
     eyebrow: "FOR UK & EUROPEAN PARTNERS",
     title: "Relevant China-related opportunities with clear commercial context.",
     body: "We bring organisations and specialists into projects where the fit is genuine, with a defined scope, bilingual coordination and one project interface.",
-    values: ["Relevant opportunities", "Clear context", "Defined scope", "Bilingual coordination", "One project interface", "Long-term fit"]
+    values: [
+      "Relevant opportunities",
+      "Clear context",
+      "Defined scope",
+      "Bilingual coordination",
+      "One project interface",
+      "Long-term fit"
+    ]
   },
   participants: {
     eyebrow: "CAPABILITY AROUND THE GOAL",
     title: "The project determines the expertise.",
     body: "Venus Bridge keeps commercial responsibility and brings in specialist capability only where it strengthens the result.",
-    types: ["Universities & Researchers", "Industry Specialists", "Professional Services", "Creators & Talent", "Venues & Event Operations", "Local Delivery Specialists"]
+    types: [
+      "Universities & Researchers",
+      "Industry Specialists",
+      "Professional Services",
+      "Creators & Talent",
+      "Venues & Event Operations",
+      "Local Delivery Specialists"
+    ]
   },
   work: {
     eyebrow: "EXHIBITION TO PIPELINE",
     title: "Make the market moment useful before, during and after it happens.",
     stages: [
-      { title: "Before", text: "Define target organisations, priority meetings, the local story and the follow-up plan." },
-      { title: "On the ground", text: "Coordinate the live environment, stakeholder activity and approved market-facing assets." },
-      { title: "After", text: "Organise follow-up, market learning, relationships and reusable content while momentum is fresh." }
+      {
+        title: "Before",
+        text: "Define target organisations, priority meetings, the local story and the follow-up plan."
+      },
+      {
+        title: "On the ground",
+        text: "Coordinate the live environment, stakeholder activity and approved market-facing assets."
+      },
+      {
+        title: "After",
+        text: "Organise follow-up, market learning, relationships and reusable content while momentum is fresh."
+      }
     ]
   },
   compound: {
     eyebrow: "WHY VENUS BRIDGE",
     title: "One market objective. One joined-up local route.",
     companyTitle: "What Chinese headquarters gains",
-    company: ["Faster credible action", "Less supplier management", "Local market context", "Continuity after the event"],
+    company: [
+      "Faster credible action",
+      "Less supplier management",
+      "Local market context",
+      "Continuity after the event"
+    ],
     partnerTitle: "How the model works",
-    partner: ["China-side understanding", "UK & European judgement", "Relevant local relationships", "Integrated delivery"]
+    partner: [
+      "China-side understanding",
+      "UK & European judgement",
+      "Relevant local relationships",
+      "Integrated delivery"
+    ]
   },
   accountability: {
     eyebrow: "VALUE THAT CONTINUES",
@@ -107,7 +197,8 @@ const zh = {
   journeys: {
     eyebrow: "企业通常在这些时候找到我们",
     title: "当英国或欧洲机会已经从想法变成具体任务。",
-    context: "企业通常在商业意图已经明确，但本地路径、关系推进或执行方式仍需梳理时，引入 Venus Bridge。以下是五种常见情况。",
+    context:
+      "企业通常在商业意图已经明确，但本地路径、关系推进或执行方式仍需梳理时，引入 Venus Bridge。以下是五种常见情况。",
     situations: [
       { title: "准备进入英国或欧洲", body: "验证市场机会、了解本地格局，并判断第一步应该做什么。" },
       { title: "筹备发布或展会", body: "围绕确定日期，统筹活动前、现场及后续跟进。" },
@@ -131,7 +222,13 @@ const zh = {
     eyebrow: "本地能力",
     title: "在自建完整团队之前，先拥有英国与欧洲执行层。",
     body: "我们与中国总部及现有欧洲团队并肩工作，围绕明确的商业目标补充市场协调、关系推进与本地执行能力。",
-    outcomes: ["英国与欧洲市场判断", "一个商务协调窗口", "中英双语沟通", "按需配置专业能力", "现场之后继续跟进"]
+    outcomes: [
+      "英国与欧洲市场判断",
+      "一个商务协调窗口",
+      "中英双语沟通",
+      "按需配置专业能力",
+      "现场之后继续跟进"
+    ]
   },
   partner: {
     eyebrow: "面向英国与欧洲合作方",

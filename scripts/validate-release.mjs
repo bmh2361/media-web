@@ -71,7 +71,11 @@ if (profile === "production" && process.env.RELEASE_PROFILE !== "production")
 
 const workMode = process.env.PUBLIC_WORK_MODE;
 if (profile === "production" && workMode !== "portfolio")
-  fail("public-work-mode", "PUBLIC_WORK_MODE=portfolio is required for the approved real-project release.", ".env.example");
+  fail(
+    "public-work-mode",
+    "PUBLIC_WORK_MODE=portfolio is required for the approved real-project release.",
+    ".env.example"
+  );
 else if (workModes.has(workMode)) pass("public-work-mode", `Using ${workMode}.`);
 else
   warn(
@@ -215,7 +219,11 @@ for (const [key, value, predicate, description] of [
   else warn("configuration", `${key} is not configured for ${profile}.`, ".env.example");
 }
 if (profile === "production" && !process.env.CONTACT_WEBHOOK_SECRET?.trim())
-  fail("contact-signing", "CONTACT_WEBHOOK_SECRET is required for signed production delivery.", ".env.example");
+  fail(
+    "contact-signing",
+    "CONTACT_WEBHOOK_SECRET is required for signed production delivery.",
+    ".env.example"
+  );
 else if (process.env.CONTACT_WEBHOOK_SECRET?.trim())
   pass("contact-signing", "Signed contact delivery is configured.");
 
@@ -251,7 +259,11 @@ if (profile === "production" && !hasCompleteCompanyConfiguration()) {
     ["privacyContact", process.env.NEXT_PUBLIC_PRIVACY_EMAIL]
   ])
     if (!value || /\.example$/i.test(value))
-      fail("company-configuration", `Company field '${field}' must be an approved public email.`, ".env.example");
+      fail(
+        "company-configuration",
+        `Company field '${field}' must be an approved public email.`,
+        ".env.example"
+      );
 } else if (hasCompleteCompanyConfiguration())
   pass("company-configuration", "Company and legal public configuration is complete.");
 else
@@ -324,8 +336,7 @@ if (analyticsEnabled && !analyticsConfigured)
     "Enabled measurement requires an approved provider, production property ID and NEXT_PUBLIC_ANALYTICS_PRIVACY_APPROVED=true.",
     ".env.example"
   );
-else if (analyticsEnabled)
-  pass("analytics-privacy-gate", "Privacy-approved measurement is enabled.");
+else if (analyticsEnabled) pass("analytics-privacy-gate", "Privacy-approved measurement is enabled.");
 else
   warn(
     "ANALYTICS_PROVIDER_REQUIRED",

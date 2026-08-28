@@ -31,7 +31,10 @@ export const seoContent: Record<string, SeoRecord> = {
   },
   work: {
     title: { en: "Commercial Evidence", zh: "商业项目证据" },
-    description: { en: "Market presence, institutional engagement and international brand evidence from UK and European projects.", zh: "英国与欧洲项目中的市场存在、机构与人才触达及国际品牌证据。" },
+    description: {
+      en: "Market presence, institutional engagement and international brand evidence from UK and European projects.",
+      zh: "英国与欧洲项目中的市场存在、机构与人才触达及国际品牌证据。"
+    },
     ogSubtitle: { en: "Objectives, context and accountable delivery", zh: "商业目标、当地语境与可追责交付" },
     canonicalPath: "/work"
   }

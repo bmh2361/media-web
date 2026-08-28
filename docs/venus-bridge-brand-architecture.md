@@ -64,4 +64,3 @@ Media is a capability, not the company category. Retain the term where it descri
 - Prefer natural terms such as `跨境商业合作`, `英国与欧洲市场`, `买家与经销商`, `行业关系`, `市场验证`, `本地执行`, `展会与发布` and `商务跟进`.
 - Use `全球合作` selectively; do not translate the descriptor repeatedly or mechanically.
 - Avoid `资源对接平台`, `海外资源整合平台` and wording that implies brokerage or guaranteed access.
-

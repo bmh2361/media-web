@@ -10,10 +10,10 @@
 
 ## Device summary
 
-| Device | Crops | Cover | Contain | Maximum AVIF | Failures |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| desktop | 83 | 14 | 69 | 183 KB | 0 |
-| tablet | 83 | 3 | 80 | 151 KB | 0 |
-| mobile | 83 | 3 | 80 | 87 KB | 0 |
+| Device  | Crops | Cover | Contain | Maximum AVIF | Failures |
+| ------- | ----: | ----: | ------: | -----------: | -------: |
+| desktop |    83 |    14 |      69 |       183 KB |        0 |
+| tablet  |    83 |     3 |      80 |       151 KB |        0 |
+| mobile  |    83 |     3 |      80 |        87 KB |        0 |
 
 Every protected area remains inside the desktop, tablet and mobile visible window.

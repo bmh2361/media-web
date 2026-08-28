@@ -45,7 +45,10 @@ export function AboutTeam({ language }: { language: Language }) {
             </p>
           </div>
 
-          <ol className="border-t border-ink/15 lg:col-span-7 lg:col-start-6 min-[1200px]:col-span-6 min-[1200px]:col-start-7" data-operating-sequence>
+          <ol
+            className="border-t border-ink/15 lg:col-span-7 lg:col-start-6 min-[1200px]:col-span-6 min-[1200px]:col-start-7"
+            data-operating-sequence
+          >
             {capabilitySystem.map(([title, description], index) => (
               <li
                 key={title}
@@ -73,8 +76,13 @@ export function AboutTeam({ language }: { language: Language }) {
               <p className="text-xs uppercase tracking-editorial text-champagne">
                 {zh ? "核心团队" : "CORE TEAM"}
               </p>
-              <h2 id="about-team-title" className="type-heading-section zh-display-measure heading-measure-wide mt-6 max-w-[11ch]">
-                {zh ? "把总部目标变成本地行动的人。" : "The people turning headquarters goals into local action."}
+              <h2
+                id="about-team-title"
+                className="type-heading-section zh-display-measure heading-measure-wide mt-6 max-w-[11ch]"
+              >
+                {zh
+                  ? "把总部目标变成本地行动的人。"
+                  : "The people turning headquarters goals into local action."}
               </h2>
             </div>
             <p className="text-ink/58 max-w-md text-lg leading-8 lg:col-span-4 lg:col-start-9">
@@ -111,7 +119,9 @@ export function AboutTeam({ language }: { language: Language }) {
                 : "Venus Bridge keeps core commercial and delivery responsibility, bringing in specialist capability only where the goal requires it."}
             </p>
             <p className="text-pearl/72 mt-10 border-l border-champagne pl-5 text-sm leading-6">
-              {zh ? "一个核心团队，按需配置专业能力。" : "One core team, with specialist capability added as required."}
+              {zh
+                ? "一个核心团队，按需配置专业能力。"
+                : "One core team, with specialist capability added as required."}
             </p>
           </div>
 

@@ -19,47 +19,47 @@ No new client, institutional relationship, endorsement, outcome or project was i
 
 ## Adversarial visual review
 
-| Question | Result | Evidence |
-|---|---|---|
-| Expensive or simply empty? | PASS | Large type is paired with real environments, deliberate borders, asymmetry and controlled media density. Empty space performs hierarchy rather than substituting for content. |
-| Understandable without every paragraph? | PASS | Hero propositions, numbered capability labels, project titles, contextual media and short role lines communicate the structure at scan speed. |
-| Does automotive dominate? | IMPROVED | Automotive still supplies the strongest named launch cases, but Home now leads with industry, robotics, people and creator-product production; Capabilities gives technology and creator work substantial independent space. |
-| Is technology / innovation visible? | PASS | Robotics leads one Home hero scene and an outcome, while CATL, Leapmotor, the robot exhibition and an industry-design talk form a technology-rich Industry chapter. |
-| Is creator / talent visible? | PASS | Product-led creator media, fashion retail, Teal, beauty and interview content are framed as activation, casting and commercial production rather than a roster. |
-| Does fashion look commercially relevant? | PASS | Fashion and beauty are paired with product, styling, campaign, retail and deliverable language. |
-| Does institutional capability feel credible without fake imagery? | PASS | The chapter is intentionally text-first, explains formats and process, states the endorsement boundary once and renders no invented engagement. |
-| Does Work create desire rather than feel like a database? | PASS | Four large alternating features and a five-project supporting edit replace proof-tier groups, tags and governance labels. |
-| Do Capabilities feel like repeated templates? | PASS | Each capability has a distinct interaction and visual rhythm. |
-| Does About feel human and specific? | PASS | A real UK location-production moment and real technology environment support a London-based China/UK rationale without presenting a fake team. |
-| Does every major page have its own grammar? | PASS | Home multi-scene; Capabilities index; Work mosaic; About manifesto; Contact conversation; case adaptive evidence hero. |
-| Would a serious Chinese CEO understand the opportunity? | PASS | English and Chinese both lead with objectives, credible environments, local delivery and assets that continue serving commercial conversations. |
-| Would this support a £5k–£50k+ discussion? | PASS WITH EVIDENCE LIMIT | Production range and delivery credibility support the conversation. Named commercial outcomes and permissioned institutional engagements remain owner-supplied evidence opportunities. |
+| Question                                                          | Result                   | Evidence                                                                                                                                                                                                                     |
+| ----------------------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Expensive or simply empty?                                        | PASS                     | Large type is paired with real environments, deliberate borders, asymmetry and controlled media density. Empty space performs hierarchy rather than substituting for content.                                                |
+| Understandable without every paragraph?                           | PASS                     | Hero propositions, numbered capability labels, project titles, contextual media and short role lines communicate the structure at scan speed.                                                                                |
+| Does automotive dominate?                                         | IMPROVED                 | Automotive still supplies the strongest named launch cases, but Home now leads with industry, robotics, people and creator-product production; Capabilities gives technology and creator work substantial independent space. |
+| Is technology / innovation visible?                               | PASS                     | Robotics leads one Home hero scene and an outcome, while CATL, Leapmotor, the robot exhibition and an industry-design talk form a technology-rich Industry chapter.                                                          |
+| Is creator / talent visible?                                      | PASS                     | Product-led creator media, fashion retail, Teal, beauty and interview content are framed as activation, casting and commercial production rather than a roster.                                                              |
+| Does fashion look commercially relevant?                          | PASS                     | Fashion and beauty are paired with product, styling, campaign, retail and deliverable language.                                                                                                                              |
+| Does institutional capability feel credible without fake imagery? | PASS                     | The chapter is intentionally text-first, explains formats and process, states the endorsement boundary once and renders no invented engagement.                                                                              |
+| Does Work create desire rather than feel like a database?         | PASS                     | Four large alternating features and a five-project supporting edit replace proof-tier groups, tags and governance labels.                                                                                                    |
+| Do Capabilities feel like repeated templates?                     | PASS                     | Each capability has a distinct interaction and visual rhythm.                                                                                                                                                                |
+| Does About feel human and specific?                               | PASS                     | A real UK location-production moment and real technology environment support a London-based China/UK rationale without presenting a fake team.                                                                               |
+| Does every major page have its own grammar?                       | PASS                     | Home multi-scene; Capabilities index; Work mosaic; About manifesto; Contact conversation; case adaptive evidence hero.                                                                                                       |
+| Would a serious Chinese CEO understand the opportunity?           | PASS                     | English and Chinese both lead with objectives, credible environments, local delivery and assets that continue serving commercial conversations.                                                                              |
+| Would this support a £5k–£50k+ discussion?                        | PASS WITH EVIDENCE LIMIT | Production range and delivery credibility support the conversation. Named commercial outcomes and permissioned institutional engagements remain owner-supplied evidence opportunities.                                       |
 
 ## Buyer test
 
-| Buyer | Recognition test | Result |
-|---|---|---|
-| Chinese AI / robotics company | Technology environments, industry presence, expert possibilities, content execution | PASS |
-| Automotive / energy company | Launches, large events, exhibitions, executive/stakeholder content | PASS |
-| Fashion / beauty brand | Creator, talent, styling, production and activation | PASS |
-| Technology company seeking expert engagement | Credible formats, confidentiality maturity, coordination without false institutional claims | PASS |
-| Chinese marketing director | Overseas activity plus China-useful commercial assets | PASS |
+| Buyer                                        | Recognition test                                                                            | Result |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------- | ------ |
+| Chinese AI / robotics company                | Technology environments, industry presence, expert possibilities, content execution         | PASS   |
+| Automotive / energy company                  | Launches, large events, exhibitions, executive/stakeholder content                          | PASS   |
+| Fashion / beauty brand                       | Creator, talent, styling, production and activation                                         | PASS   |
+| Technology company seeking expert engagement | Credible formats, confidentiality maturity, coordination without false institutional claims | PASS   |
+| Chinese marketing director                   | Overseas activity plus China-useful commercial assets                                       | PASS   |
 
 ## Perception assessment
 
-| Perception | Final result |
-|---|---|
-| Market-entry consultancy | VERY LOW |
-| Generic consultancy | LOW |
-| Photography studio | LOW |
-| Model agency | LOW |
-| Generic event supplier | LOW |
-| Premium B2B partner | HIGH |
-| Programme orchestrator | HIGH |
-| Technology / innovation relevance | HIGH |
-| Creative execution credibility | HIGH |
-| Institutional potential | CREDIBLE |
-| Commercial desire | HIGH |
+| Perception                        | Final result |
+| --------------------------------- | ------------ |
+| Market-entry consultancy          | VERY LOW     |
+| Generic consultancy               | LOW          |
+| Photography studio                | LOW          |
+| Model agency                      | LOW          |
+| Generic event supplier            | LOW          |
+| Premium B2B partner               | HIGH         |
+| Programme orchestrator            | HIGH         |
+| Technology / innovation relevance | HIGH         |
+| Creative execution credibility    | HIGH         |
+| Institutional potential           | CREDIBLE     |
+| Commercial desire                 | HIGH         |
 
 ## Media balance
 
@@ -83,20 +83,20 @@ Evidence is stored under `audit/phase-3-2c/`:
 
 ## Engineering validation
 
-| Validation | Result |
-|---|---|
-| TypeScript | PASS |
-| ESLint | PASS |
-| Unit tests | PASS — 101 tests, 90 passed and 11 intentionally skipped by existing release gates |
-| Phase 3.2C E2E | PASS — four relevant checks passed across desktop/mobile; two project-specific tests intentionally skipped outside their target project |
-| Production build | PASS — 88 static pages generated; canonical first-load JavaScript 105–129 kB |
-| Content / claim validation | PASS |
-| Media / rights validation | PASS — 83 governed records in the existing staging manifest |
-| Responsive crop validation | PASS — 249 crops across 83 art-directed assets |
-| Pricing-removal validation | PASS |
-| Accessibility | PASS — canonical EN/ZH pages and three case modes have zero moderate-or-higher Axe findings; mobile menu focus restores on Escape |
-| Performance | PASS — 866,575 B initial encoded resources, 188,582 B scripts, 536,451 B images, one priority image and one rendered Home hero scene |
-| Runtime visual validation | PASS |
+| Validation                 | Result                                                                                                                                  |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| TypeScript                 | PASS                                                                                                                                    |
+| ESLint                     | PASS                                                                                                                                    |
+| Unit tests                 | PASS — 101 tests, 90 passed and 11 intentionally skipped by existing release gates                                                      |
+| Phase 3.2C E2E             | PASS — four relevant checks passed across desktop/mobile; two project-specific tests intentionally skipped outside their target project |
+| Production build           | PASS — 88 static pages generated; canonical first-load JavaScript 105–129 kB                                                            |
+| Content / claim validation | PASS                                                                                                                                    |
+| Media / rights validation  | PASS — 83 governed records in the existing staging manifest                                                                             |
+| Responsive crop validation | PASS — 249 crops across 83 art-directed assets                                                                                          |
+| Pricing-removal validation | PASS                                                                                                                                    |
+| Accessibility              | PASS — canonical EN/ZH pages and three case modes have zero moderate-or-higher Axe findings; mobile menu focus restores on Escape       |
+| Performance                | PASS — 866,575 B initial encoded resources, 188,582 B scripts, 536,451 B images, one priority image and one rendered Home hero scene    |
+| Runtime visual validation  | PASS                                                                                                                                    |
 
 The pre-existing broad E2E command still contains superseded Phase 2 route and copy assertions and timed out after encountering those failures. Phase 3.2C therefore has its own canonical production suite. Updating or retiring the superseded specs is P1 test-maintenance work, not a Phase 3.2C production defect.
 

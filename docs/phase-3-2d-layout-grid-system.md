@@ -2,13 +2,13 @@
 
 ## Width roles
 
-| Role | Maximum | Purpose |
-| --- | --- | --- |
-| Viewport wide | 1440px | cinematic media and publication openings |
-| Editorial main | 1320px | primary 12-column composition |
-| Standard | 1200px | text/media chapters and forms |
-| Reading | 760px | long-form explanation |
-| Narrow | 620px | short statements and focused prompts |
+| Role           | Maximum | Purpose                                  |
+| -------------- | ------- | ---------------------------------------- |
+| Viewport wide  | 1440px  | cinematic media and publication openings |
+| Editorial main | 1320px  | primary 12-column composition            |
+| Standard       | 1200px  | text/media chapters and forms            |
+| Reading        | 760px   | long-form explanation                    |
+| Narrow         | 620px   | short statements and focused prompts     |
 
 Gutters are fluid: 20px at mobile, 28–40px through tablet and 48–60px on large desktop.
 
@@ -39,4 +39,3 @@ Gutters are fluid: 20px at mobile, 28–40px through tablet and 48–60px on lar
 ## Responsive rule
 
 Recomposition is preferred to proportional shrinkage. Hero, capability preview, selected work and media sequences each declare their own tablet/mobile hierarchy.
-

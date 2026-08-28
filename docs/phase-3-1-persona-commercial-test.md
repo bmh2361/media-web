@@ -67,4 +67,3 @@ All five visitors can identify a relevant project type without adding a homepage
 ## Architecture decision
 
 No additional route or homepage section is required. The four project types belong inside the existing Capabilities programme section; evidence remains on the existing Work and selected-proof surfaces. This preserves the Phase 3 category and reduces decision cost.
-

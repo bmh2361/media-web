@@ -67,7 +67,10 @@ test("About uses supplied team portraits and keeps the opening typographic", asy
   assert.match(about, /publicTeamMembers/);
   assert.match(about, /capabilitySystem/);
   assert.match(about, /SPECIALIST DEPTH/);
-  assert.doesNotMatch(about, /PortfolioImage|findPublishedPortfolioProject|AboutProjectProof|data-about-chapter="real-work"/);
+  assert.doesNotMatch(
+    about,
+    /PortfolioImage|findPublishedPortfolioProject|AboutProjectProof|data-about-chapter="real-work"/
+  );
   assert.doesNotMatch(about, /CapabilityImage|talent-categories/);
 });
 

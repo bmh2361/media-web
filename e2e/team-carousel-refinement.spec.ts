@@ -6,19 +6,15 @@ test("team profiles keep semantic order, 4:5 portraits and role-first fields", a
 
   const members = page.locator("[data-team-member]");
   await expect(members).toHaveCount(5);
-  expect(await members.evaluateAll((items) => items.map((item) => item.getAttribute("data-team-member")))).toEqual([
-    "minghan",
-    "vivian",
-    "richard-bussmann",
-    "patrick-lenihan",
-    "fei-cao"
-  ]);
+  expect(
+    await members.evaluateAll((items) => items.map((item) => item.getAttribute("data-team-member")))
+  ).toEqual(["minghan", "vivian", "richard-bussmann", "patrick-lenihan", "fei-cao"]);
 
   for (let index = 0; index < 5; index += 1) {
     const frame = members.nth(index).locator("[data-portrait-frame]");
     const box = await frame.boundingBox();
     expect(box).not.toBeNull();
-    expect(Math.abs((box!.width / box!.height) - 0.8)).toBeLessThan(0.02);
+    expect(Math.abs(box!.width / box!.height - 0.8)).toBeLessThan(0.02);
     await expect(frame.locator("img")).toHaveCount(1);
     await expect(members.nth(index).locator("p")).not.toHaveCount(0);
   }
@@ -40,7 +36,9 @@ test("team grid remains intentional with eight members", async ({ page }) => {
 
   const members = grid.locator("[data-team-member]");
   await expect(members).toHaveCount(8);
-  const boxes = await members.evaluateAll((items) => items.map((item) => item.getBoundingClientRect().toJSON()));
+  const boxes = await members.evaluateAll((items) =>
+    items.map((item) => item.getBoundingClientRect().toJSON())
+  );
   expect(Math.abs(boxes[0].y - boxes[1].y)).toBeLessThan(2);
   expect(Math.abs(boxes[2].y - boxes[3].y)).toBeLessThan(2);
   expect(Math.abs(boxes[3].y - boxes[4].y)).toBeLessThan(2);

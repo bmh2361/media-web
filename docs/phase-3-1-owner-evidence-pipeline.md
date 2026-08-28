@@ -117,4 +117,3 @@ Minimum publication gate: project identity + exact production role + deliverable
 - [ ] Evidence level assigned.
 - [ ] Review/expiry date assigned.
 - [ ] Final owner/legal approval recorded.
-

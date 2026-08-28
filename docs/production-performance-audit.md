@@ -13,21 +13,21 @@
 
 The most recent production Lighthouse evidence records:
 
-| Profile | LCP | CLS | Lab interaction / TBT |
-| --- | ---: | ---: | ---: |
-| Mobile | 3.2 s | 0 | 20 ms TBT |
-| Desktop | 0.7 s | 0 | 0 ms TBT |
+| Profile |   LCP | CLS | Lab interaction / TBT |
+| ------- | ----: | --: | --------------------: |
+| Mobile  | 3.2 s |   0 |             20 ms TBT |
+| Desktop | 0.7 s |   0 |              0 ms TBT |
 
 The heavy-media stress harness recorded 3.388 s mobile slow-4G LCP, 0 CLS, 80 ms controlled interaction latency and roughly 199–203 KB JavaScript transfer. These are lab results, not field Core Web Vitals.
 
 The Phase 6 rerun on 26 August 2026 corrected the harness so initial-load CLS is not conflated with a later soft navigation and deliberate fixed edge controls/horizontal rails are not treated as document overflow. Its final production-build results were:
 
-| Profile | LCP | CLS | INP | Route transition | Overflow / broken images |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Desktop 1440 | 92 ms | 0.00026 | 16 ms | 70 ms | 0 / 0 |
-| Laptop 1280 | 404 ms | 0.00019 | 16 ms | 203 ms | 0 / 0 |
-| Mobile 390 slow 4G | 924 ms | 0 | 40 ms | 922 ms | 0 / 0 |
-| Mobile reduced data/motion | 916 ms | 0.00021 | 48 ms | 784 ms | 0 / 0 |
+| Profile                    |    LCP |     CLS |   INP | Route transition | Overflow / broken images |
+| -------------------------- | -----: | ------: | ----: | ---------------: | -----------------------: |
+| Desktop 1440               |  92 ms | 0.00026 | 16 ms |            70 ms |                    0 / 0 |
+| Laptop 1280                | 404 ms | 0.00019 | 16 ms |           203 ms |                    0 / 0 |
+| Mobile 390 slow 4G         | 924 ms |       0 | 40 ms |           922 ms |                    0 / 0 |
+| Mobile reduced data/motion | 916 ms | 0.00021 | 48 ms |           784 ms |                    0 / 0 |
 
 The fixture-based LCP values are useful regression signals, not claims about the real production CDN or real portfolio payloads.
 

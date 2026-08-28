@@ -69,23 +69,23 @@ The code never reads or emits form fields, names, emails, organisations, free-fo
 
 ## Verification summary
 
-| Check | Result |
-|---|---|
-| TypeScript | PASS |
-| Lint | PASS |
-| Unit | 121 passed, 11 skipped, 0 failed |
-| Content | PASS |
-| Pricing | PASS |
-| Contact harness | 11/11 PASS |
-| Production release, owner-empty | expected FAIL with explicit owner/config blockers |
-| Production release, test-only complete | PASS; 12 governed portfolio records |
-| Production media | PASS with five accepted retired/noncanonical reuse warnings |
-| Dependency audit | PASS; 0 vulnerabilities |
-| Production build | PASS on Next 15.5.23 |
-| Focused stale E2E rerun | 18 passed, 14 intentionally skipped |
-| Final full E2E | 105 passed, 53 intentionally skipped, 0 failed |
-| In-app production browser QA | 108 route/viewport checks, 0 structural/responsive/indexing failures |
-| Browser console/hydration | 0 warning/error entries |
+| Check                                  | Result                                                               |
+| -------------------------------------- | -------------------------------------------------------------------- |
+| TypeScript                             | PASS                                                                 |
+| Lint                                   | PASS                                                                 |
+| Unit                                   | 121 passed, 11 skipped, 0 failed                                     |
+| Content                                | PASS                                                                 |
+| Pricing                                | PASS                                                                 |
+| Contact harness                        | 11/11 PASS                                                           |
+| Production release, owner-empty        | expected FAIL with explicit owner/config blockers                    |
+| Production release, test-only complete | PASS; 12 governed portfolio records                                  |
+| Production media                       | PASS with five accepted retired/noncanonical reuse warnings          |
+| Dependency audit                       | PASS; 0 vulnerabilities                                              |
+| Production build                       | PASS on Next 15.5.23                                                 |
+| Focused stale E2E rerun                | 18 passed, 14 intentionally skipped                                  |
+| Final full E2E                         | 105 passed, 53 intentionally skipped, 0 failed                       |
+| In-app production browser QA           | 108 route/viewport checks, 0 structural/responsive/indexing failures |
+| Browser console/hydration              | 0 warning/error entries                                              |
 
 ## Browser QA evidence
 

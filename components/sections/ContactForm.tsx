@@ -104,12 +104,7 @@ const adaptive: Record<ProjectType, Array<[string, string, string, string]>> = {
       "text"
     ],
     ["appointedAdvisers", "UK advisers already appointed", "已聘请的英国律师、会计师或其他顾问", "text"],
-    [
-      "coordinationScope",
-      "What should Venus Bridge coordinate?",
-      "希望 Venus Bridge 协调哪些部分",
-      "text"
-    ]
+    ["coordinationScope", "What should Venus Bridge coordinate?", "希望 Venus Bridge 协调哪些部分", "text"]
   ],
   other: [["additionalDetail", "Additional project detail", "补充项目需求", "text"]]
 };

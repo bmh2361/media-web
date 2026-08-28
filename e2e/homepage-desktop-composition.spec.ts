@@ -1,6 +1,8 @@
 import { expect, test } from "@playwright/test";
 
-test("desktop homepage composition remains intentional across large breakpoints", async ({ page }, testInfo) => {
+test("desktop homepage composition remains intentional across large breakpoints", async ({
+  page
+}, testInfo) => {
   test.skip(testInfo.project.name === "mobile");
   const consoleIssues: string[] = [];
   page.on("console", (message) => {

@@ -120,29 +120,29 @@ The repository-wide historical Playwright command was also sampled. Four pre-exi
 
 Scores are evidence-based editorial judgements after source, browser and validation review.
 
-| Measure | Score |
-| --- | ---: |
-| Primary category clarity | 9.2 / 10 |
-| Cross-border commercial clarity | 9.3 / 10 |
-| Market-presence credibility | 8.8 / 10 |
-| Institutional credibility | 8.0 / 10 |
+| Measure                                |    Score |
+| -------------------------------------- | -------: |
+| Primary category clarity               | 9.2 / 10 |
+| Cross-border commercial clarity        | 9.3 / 10 |
+| Market-presence credibility            | 8.8 / 10 |
+| Institutional credibility              | 8.0 / 10 |
 | University / talent capability clarity | 8.5 / 10 |
-| Creative credibility | 8.6 / 10 |
-| Case-study commercial quality | 9.0 / 10 |
-| Partner clarity | 9.0 / 10 |
-| Chinese-buyer clarity | 9.1 / 10 |
-| UK / European partner clarity | 9.0 / 10 |
-| Premium visual perception | 9.0 / 10 |
-| Conversion clarity | 8.8 / 10 |
+| Creative credibility                   | 8.6 / 10 |
+| Case-study commercial quality          | 9.0 / 10 |
+| Partner clarity                        | 9.0 / 10 |
+| Chinese-buyer clarity                  | 9.1 / 10 |
+| UK / European partner clarity          | 9.0 / 10 |
+| Premium visual perception              | 9.0 / 10 |
+| Conversion clarity                     | 8.8 / 10 |
 
-| Unwanted perception | Score |
-| --- | ---: |
+| Unwanted perception            |    Score |
+| ------------------------------ | -------: |
 | Photography-company perception | 2.8 / 10 |
-| Event-agency perception | 2.5 / 10 |
-| Production-house perception | 2.8 / 10 |
-| Resource-broker perception | 1.2 / 10 |
+| Event-agency perception        | 2.5 / 10 |
+| Production-house perception    | 2.8 / 10 |
+| Resource-broker perception     | 1.2 / 10 |
 | Generic-consultancy perception | 2.0 / 10 |
-| Portfolio-only perception | 1.5 / 10 |
+| Portfolio-only perception      | 1.5 / 10 |
 
 ## Final delivery report
 

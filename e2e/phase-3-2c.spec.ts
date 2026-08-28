@@ -18,6 +18,7 @@ const canonicalRoutes = [
 ];
 
 test("Phase 3.2C canonical pages pass responsive and automated accessibility checks", async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: "reduce" });
   for (const route of canonicalRoutes) {
     await page.goto(route);
     await expect(page.locator("main")).toHaveCount(1);

@@ -66,10 +66,20 @@ export function ArtDirectedImage({
     const width = media.outputWidth ?? media.width ?? 1600;
     const height = media.outputHeight ?? media.height ?? 900;
     return (
-      <figure className={`relative overflow-hidden bg-mist ${className}`} data-media-id={media.id} data-content-role={contentRole} data-media-role={mediaRole} data-natural-ratio={fit === "natural" || undefined}>
+      <figure
+        className={`relative overflow-hidden bg-mist ${className}`}
+        data-media-id={media.id}
+        data-content-role={contentRole}
+        data-media-role={mediaRole}
+        data-natural-ratio={fit === "natural" || undefined}
+      >
         <picture>
-          {media.mobileAvifPath ? <source media="(max-width: 767px)" srcSet={media.mobileAvifPath} type="image/avif" /> : null}
-          {media.mobilePath ? <source media="(max-width: 767px)" srcSet={media.mobilePath} type="image/webp" /> : null}
+          {media.mobileAvifPath ? (
+            <source media="(max-width: 767px)" srcSet={media.mobileAvifPath} type="image/avif" />
+          ) : null}
+          {media.mobilePath ? (
+            <source media="(max-width: 767px)" srcSet={media.mobilePath} type="image/webp" />
+          ) : null}
           {media.avifPath ? <source srcSet={media.avifPath} type="image/avif" /> : null}
           <Image
             src={media.publicPath}
@@ -81,7 +91,11 @@ export function ArtDirectedImage({
             fetchPriority={priority ? "high" : "auto"}
             loading={priority ? "eager" : "lazy"}
             style={{ objectPosition: media.objectPositionDesktop ?? "50% 50%" }}
-            className={fit === "natural" ? "h-auto w-full" : `h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`}
+            className={
+              fit === "natural"
+                ? "h-auto w-full"
+                : `h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`
+            }
           />
         </picture>
       </figure>
@@ -119,12 +133,31 @@ export function ArtDirectedImage({
       data-media-role={mediaRole}
     >
       <picture data-source-treatment={useUnpaddedSource ? "unpadded-cover" : "art-directed"}>
-        <source media="(max-width: 767px)" srcSet={useUnpaddedSource ? media.mobileAvifPath ?? media.mobilePath ?? media.publicPath : profile.mobileAvifPath} type={useUnpaddedSource && !media.mobileAvifPath ? "image/webp" : "image/avif"} />
-        {useUnpaddedSource && media.mobileAvifPath && media.mobilePath ? <source media="(max-width: 767px)" srcSet={media.mobilePath} type="image/webp" /> : null}
-        {!useUnpaddedSource ? <source media="(max-width: 767px)" srcSet={profile.mobileWebpPath} type="image/webp" /> : null}
-        {!useUnpaddedSource ? <source media="(max-width: 1023px)" srcSet={profile.tabletAvifPath} type="image/avif" /> : null}
-        {!useUnpaddedSource ? <source media="(max-width: 1023px)" srcSet={profile.tabletWebpPath} type="image/webp" /> : null}
-        <source srcSet={useUnpaddedSource ? media.avifPath ?? media.publicPath : profile.desktopAvifPath} type={useUnpaddedSource && !media.avifPath ? "image/webp" : "image/avif"} />
+        <source
+          media="(max-width: 767px)"
+          srcSet={
+            useUnpaddedSource
+              ? (media.mobileAvifPath ?? media.mobilePath ?? media.publicPath)
+              : profile.mobileAvifPath
+          }
+          type={useUnpaddedSource && !media.mobileAvifPath ? "image/webp" : "image/avif"}
+        />
+        {useUnpaddedSource && media.mobileAvifPath && media.mobilePath ? (
+          <source media="(max-width: 767px)" srcSet={media.mobilePath} type="image/webp" />
+        ) : null}
+        {!useUnpaddedSource ? (
+          <source media="(max-width: 767px)" srcSet={profile.mobileWebpPath} type="image/webp" />
+        ) : null}
+        {!useUnpaddedSource ? (
+          <source media="(max-width: 1023px)" srcSet={profile.tabletAvifPath} type="image/avif" />
+        ) : null}
+        {!useUnpaddedSource ? (
+          <source media="(max-width: 1023px)" srcSet={profile.tabletWebpPath} type="image/webp" />
+        ) : null}
+        <source
+          srcSet={useUnpaddedSource ? (media.avifPath ?? media.publicPath) : profile.desktopAvifPath}
+          type={useUnpaddedSource && !media.avifPath ? "image/webp" : "image/avif"}
+        />
         {useUnpaddedSource && media.avifPath ? <source srcSet={media.publicPath} type="image/webp" /> : null}
         {!useUnpaddedSource ? <source srcSet={profile.desktopWebpPath} type="image/webp" /> : null}
         <Image
@@ -181,7 +214,11 @@ export function MediaGallery({
           sizes={item.sizes}
           fit="cover"
           contentRole="case-media"
-          mediaRole={getMediaPresentationProfile(item.media.id)?.subjectType === "single-person" ? "proof-portrait" : "proof-landscape"}
+          mediaRole={
+            getMediaPresentationProfile(item.media.id)?.subjectType === "single-person"
+              ? "proof-portrait"
+              : "proof-landscape"
+          }
         />
       ))}
     </div>

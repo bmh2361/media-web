@@ -95,8 +95,7 @@ const en = {
 const zh = {
   eyebrow: "关于 VENUS BRIDGE",
   title: "以伦敦本地制作、项目协调与中英双语交付，形成一条清晰负责的执行路径。",
-  intro:
-    "Venus Bridge 面向中国企业与国际团队，协调有商业价值的本地关系、市场行动与英国本地执行。",
+  intro: "Venus Bridge 面向中国企业与国际团队，协调有商业价值的本地关系、市场行动与英国本地执行。",
   who: {
     eyebrow: "我们是谁",
     title: "面向跨市场项目的伦敦制作伙伴",

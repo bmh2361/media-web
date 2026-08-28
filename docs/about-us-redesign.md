@@ -94,21 +94,21 @@ Mobile uses a shorter 3.3s sequence (60ms / 280ms / 2.15s stage thresholds), red
 
 There was no WebGL library or globe-specific lazy chunk before this phase. The incremental dependency is isolated to one on-demand file:
 
-| Measurement | Result |
-| --- | ---: |
-| COBE dynamic chunk | 12,943 B raw / 5,905 B gzip |
-| About route client chunk | 28,107 B raw / 10,393 B gzip |
-| Next build About route | 10.4 kB route size / 181 kB first-load JS |
-| Desktop canvas ratio on a 2x display | 1.10 |
-| Mobile canvas ratio on a 3x display | 1.25 |
-| Desktop visible frame delivery | 58.3 fps during the finite sequence |
-| Mobile visible frame delivery | 60.8 fps during the finite sequence |
-| Desktop/mobile off-screen frame delivery | 60.3 / 61.0 fps |
-| Desktop/mobile settled frame delivery | 60.4 / 60.3 fps |
-| Desktop JS heap after interaction | ~6.8 MB in headless Chromium profile |
-| Mobile JS heap after interaction | ~6.7 MB in headless Chromium profile |
-| Globe WebGL draws while off-screen | 0 during an 800ms sample |
-| Globe WebGL draws after settling | 0 during a 1,000ms sample |
+| Measurement                              |                                    Result |
+| ---------------------------------------- | ----------------------------------------: |
+| COBE dynamic chunk                       |               12,943 B raw / 5,905 B gzip |
+| About route client chunk                 |              28,107 B raw / 10,393 B gzip |
+| Next build About route                   | 10.4 kB route size / 181 kB first-load JS |
+| Desktop canvas ratio on a 2x display     |                                      1.10 |
+| Mobile canvas ratio on a 3x display      |                                      1.25 |
+| Desktop visible frame delivery           |       58.3 fps during the finite sequence |
+| Mobile visible frame delivery            |       60.8 fps during the finite sequence |
+| Desktop/mobile off-screen frame delivery |                           60.3 / 61.0 fps |
+| Desktop/mobile settled frame delivery    |                           60.4 / 60.3 fps |
+| Desktop JS heap after interaction        |      ~6.8 MB in headless Chromium profile |
+| Mobile JS heap after interaction         |      ~6.7 MB in headless Chromium profile |
+| Globe WebGL draws while off-screen       |                  0 during an 800ms sample |
+| Globe WebGL draws after settling         |                 0 during a 1,000ms sample |
 
 The first near-viewport WebGL setup produced one 72ms desktop / 53ms mobile long task in headless Chromium. It occurs before the section is visible because of the load margin. No long tasks were observed during the finite camera sequence, off-screen sample or settled sample. These measurements are local Chromium diagnostics rather than promises for every device.
 
@@ -128,13 +128,13 @@ The selected index exposes every member and supports mouse, Tab, Home/End and ar
 
 No face or identity was generated, replaced or materially altered. CSS monochrome treatment, consistent framing and per-person focal points unify the supplied photographs. Source derivatives are sized so the active layout does not force unsafe enlargement; Richard uses `contain` plus inset rather than cropping or upscaling his 649px square source.
 
-| Person | Original source | Web derivative | Payload | Focal point | Fit/treatment |
-| --- | ---: | ---: | ---: | --- | --- |
-| Vivian | 1080 × 1440 JPEG | 1000 × 1333 WebP | 65,970 B | 50% / 36% | cover / mono |
-| Fei Cao | 1086 × 1448 JPEG | 1000 × 1333 WebP | 47,430 B | 50% / 38% | cover / mono |
-| Minghan | 1672 × 2508 JPEG | 933 × 1400 WebP | 53,778 B | 50% / 35% | cover / mono |
-| Patrick Lenihan | 1024 × 1536 PNG | 933 × 1400 WebP | 42,496 B | 50% / 33% | cover / mono |
-| Richard Bußmann | 649 × 649 PNG | 649 × 649 WebP | 27,328 B | 50% / 40% | contain / mono |
+| Person          |  Original source |   Web derivative |  Payload | Focal point | Fit/treatment  |
+| --------------- | ---------------: | ---------------: | -------: | ----------- | -------------- |
+| Vivian          | 1080 × 1440 JPEG | 1000 × 1333 WebP | 65,970 B | 50% / 36%   | cover / mono   |
+| Fei Cao         | 1086 × 1448 JPEG | 1000 × 1333 WebP | 47,430 B | 50% / 38%   | cover / mono   |
+| Minghan         | 1672 × 2508 JPEG |  933 × 1400 WebP | 53,778 B | 50% / 35%   | cover / mono   |
+| Patrick Lenihan |  1024 × 1536 PNG |  933 × 1400 WebP | 42,496 B | 50% / 33%   | cover / mono   |
+| Richard Bußmann |    649 × 649 PNG |   649 × 649 WebP | 27,328 B | 50% / 40%   | contain / mono |
 
 The five derivatives total 237,002 B. Desktop portrait width is capped at 660px; Richard's inset keeps his rendered image below his 649px source width. Mobile portraits render at 112 × 144px.
 
@@ -195,11 +195,11 @@ Content changes:
 
 Final production screenshots are in `audit/about-us-redesign/final/`:
 
-| Locale | Widths | Result |
-| --- | --- | --- |
-| EN | 375, 390, 430, 768, 1024, 1280, 1440, 1920 | Pass; no horizontal overflow |
-| ZH | 390, 1440 | Pass; no horizontal overflow |
-| WebGL failure | 1440 | Pass; complete SVG fallback and legend |
+| Locale        | Widths                                     | Result                                 |
+| ------------- | ------------------------------------------ | -------------------------------------- |
+| EN            | 375, 390, 430, 768, 1024, 1280, 1440, 1920 | Pass; no horizontal overflow           |
+| ZH            | 390, 1440                                  | Pass; no horizontal overflow           |
+| WebGL failure | 1440                                       | Pass; complete SVG fallback and legend |
 
 The 1440 review confirms a 920px signature geography chapter with a deliberately framed large globe, distinct route hierarchy, editorial team composition, real image proof and consolidated accountability. Mobile retains the same story without tiny five-across portraits or a squeezed full globe.
 

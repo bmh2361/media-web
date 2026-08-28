@@ -93,17 +93,17 @@ Twelve exact account/legal/device actions are listed in `docs/launch-human-actio
 
 ## Validation appendix
 
-| Check | Result |
-| --- | --- |
-| TypeScript / ESLint / production build | PASS / PASS / PASS (101 static pages) |
-| Unit/content suite | PASS — 121 passed, 11 skipped |
-| Contact integration | PASS — 19 assertions |
-| Staging release validator | PASS with documented warnings/actions |
-| Production release validator | EXPECTED FAIL — 23 missing production/human inputs |
-| Production dependency audit | PASS — zero vulnerabilities |
-| Production-launch E2E | PASS — 16/16 |
-| Phase 2 E2E | PASS — 14/14 |
-| Mobile transformation regression | PASS — 14/14 |
-| Release/accessibility E2E | PASS — 13 passed, 1 intentional duplicate-project skip |
-| Performance audit | ISSUES — one 922 ms route-transition breach |
-| `git diff --check` | PASS (line-ending notices only) |
+| Check                                  | Result                                                 |
+| -------------------------------------- | ------------------------------------------------------ |
+| TypeScript / ESLint / production build | PASS / PASS / PASS (101 static pages)                  |
+| Unit/content suite                     | PASS — 121 passed, 11 skipped                          |
+| Contact integration                    | PASS — 19 assertions                                   |
+| Staging release validator              | PASS with documented warnings/actions                  |
+| Production release validator           | EXPECTED FAIL — 23 missing production/human inputs     |
+| Production dependency audit            | PASS — zero vulnerabilities                            |
+| Production-launch E2E                  | PASS — 16/16                                           |
+| Phase 2 E2E                            | PASS — 14/14                                           |
+| Mobile transformation regression       | PASS — 14/14                                           |
+| Release/accessibility E2E              | PASS — 13 passed, 1 intentional duplicate-project skip |
+| Performance audit                      | ISSUES — one 922 ms route-transition breach            |
+| `git diff --check`                     | PASS (line-ending notices only)                        |

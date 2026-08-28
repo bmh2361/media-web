@@ -90,9 +90,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/contact?_rsc=aG18vT7-TBPL1WOt :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=aG18vT7-TBPL1WOt :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -120,9 +118,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=z3BgrctqxBHejR-4 :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=z3BgrctqxBHejR-4 :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -130,9 +126,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=z3BgrctqxBHejR-4 :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=z3BgrctqxBHejR-4 :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -162,9 +156,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=ATZIBIC8hohFgYiI :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=ATZIBIC8hohFgYiI :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -172,9 +164,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/contact?_rsc=be4STPe_5Qb9toiV :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/contact?_rsc=be4STPe_5Qb9toiV :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -182,9 +172,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/contact?_rsc=be4STPe_5Qb9toiV :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/contact?_rsc=be4STPe_5Qb9toiV :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -192,9 +180,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/contact?_rsc=61SigdTNu5CfWcJB :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=61SigdTNu5CfWcJB :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -202,9 +188,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/contact?_rsc=hiUgQUArVbpxm841 :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=hiUgQUArVbpxm841 :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -212,9 +196,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/contact?_rsc=hiUgQUArVbpxm841 :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=hiUgQUArVbpxm841 :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -222,9 +204,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=tvjB7pFNOszP_w_k :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=tvjB7pFNOszP_w_k :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -232,9 +212,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=tvjB7pFNOszP_w_k :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=tvjB7pFNOszP_w_k :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -253,9 +231,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=i27WIhFOOwZOqeKp :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=i27WIhFOOwZOqeKp :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -263,9 +239,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=i27WIhFOOwZOqeKp :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=i27WIhFOOwZOqeKp :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -273,9 +247,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=zqd-dBgQlUJ2HuAb :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=zqd-dBgQlUJ2HuAb :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -283,9 +255,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=zqd-dBgQlUJ2HuAb :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=zqd-dBgQlUJ2HuAb :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -293,9 +263,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=fW4YGt0m2z1_rM8C :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=fW4YGt0m2z1_rM8C :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -303,9 +271,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=XYXmxuKMMN7WI9rb :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=XYXmxuKMMN7WI9rb :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -313,9 +279,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=pK7Y-YO7CO1eqHcR :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=pK7Y-YO7CO1eqHcR :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -323,9 +287,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=pK7Y-YO7CO1eqHcR :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=pK7Y-YO7CO1eqHcR :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -344,9 +306,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=wUenjoVACwRW_G8i :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=wUenjoVACwRW_G8i :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -365,9 +325,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=QId-KLzchl2_I6CV :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=QId-KLzchl2_I6CV :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -375,9 +333,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=QId-KLzchl2_I6CV :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=QId-KLzchl2_I6CV :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -396,9 +352,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=QcOUBAcwd-E_7rVZ :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=QcOUBAcwd-E_7rVZ :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -406,9 +360,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=QcOUBAcwd-E_7rVZ :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=QcOUBAcwd-E_7rVZ :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -416,9 +368,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=VXptVV97IrhDKPxi :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=VXptVV97IrhDKPxi :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -437,9 +387,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=W_meP44TYF32G_Qb :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=W_meP44TYF32G_Qb :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -447,9 +395,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=W_meP44TYF32G_Qb :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=W_meP44TYF32G_Qb :: net::ERR_ABORTED"]
       },
       {
         "language": "en",
@@ -468,9 +414,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/contact?_rsc=Q3M39VD_V7FXV00N :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=Q3M39VD_V7FXV00N :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -531,9 +475,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/contact?_rsc=wriaRe8f1-YoeXHT :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/contact?_rsc=wriaRe8f1-YoeXHT :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -562,9 +504,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/en/work?_rsc=HltNYvDvv6URMQd6 :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=HltNYvDvv6URMQd6 :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -583,9 +523,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=TQnW_NCff1BWFsDu :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=TQnW_NCff1BWFsDu :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -626,9 +564,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=rvDXuy-hD8F5y-Fq :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=rvDXuy-hD8F5y-Fq :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -636,9 +572,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=rvDXuy-hD8F5y-Fq :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=rvDXuy-hD8F5y-Fq :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -657,9 +591,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=uSVX8wxDZxQX5LSW :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=uSVX8wxDZxQX5LSW :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -678,9 +610,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -688,9 +618,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -698,9 +626,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/contact?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/contact?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -708,9 +634,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=M0lqCfWjYaxHmlAY :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=M0lqCfWjYaxHmlAY :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -740,9 +664,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=NlgxWAOWXesS3CxM :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=NlgxWAOWXesS3CxM :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -750,9 +672,7 @@
         "viewport": "desktop",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=NlgxWAOWXesS3CxM :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=NlgxWAOWXesS3CxM :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -760,9 +680,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=adAp8Ne7bm3iAnP2 :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=adAp8Ne7bm3iAnP2 :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -770,9 +688,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=adAp8Ne7bm3iAnP2 :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=adAp8Ne7bm3iAnP2 :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -802,9 +718,7 @@
         "viewport": "mobile",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=xOCHNhElK8DYdsRQ :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=xOCHNhElK8DYdsRQ :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -823,9 +737,7 @@
         "viewport": "tablet",
         "consoleErrors": [],
         "pageErrors": [],
-        "failedRequests": [
-          "GET http://127.0.0.1:3340/zh/work?_rsc=R1WOD1fTuB3K1tzg :: net::ERR_ABORTED"
-        ]
+        "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=R1WOD1fTuB3K1tzg :: net::ERR_ABORTED"]
       },
       {
         "language": "zh",
@@ -1141,16 +1053,10 @@
       "description": "Venus Bridge helps Chinese companies validate UK and European opportunities, engage buyers and partners, and deliver launches, exhibitions and market activity on the ground.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/home",
       "lang": "en-GB",
-      "h1": [
-        "Move your UK or European ambitions forward—on the ground."
-      ],
+      "h1": ["Move your UK or European ambitions forward—on the ground."],
       "h2": [
         "Serious market activity, delivered on the ground.",
         "Useful when the UK or European opportunity has become real.",
@@ -1212,16 +1118,10 @@
       "description": "Venus Bridge helps Chinese companies validate UK and European opportunities, engage buyers and partners, and deliver launches, exhibitions and market activity on the ground.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/home",
       "lang": "en-GB",
-      "h1": [
-        "Move your UK or European ambitions forward—on the ground."
-      ],
+      "h1": ["Move your UK or European ambitions forward—on the ground."],
       "h2": [
         "Serious market activity, delivered on the ground.",
         "Useful when the UK or European opportunity has become real.",
@@ -1268,16 +1168,10 @@
       "description": "Venus Bridge helps Chinese companies validate UK and European opportunities, engage buyers and partners, and deliver launches, exhibitions and market activity on the ground.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/home",
       "lang": "en-GB",
-      "h1": [
-        "Move your UK or European ambitions forward—on the ground."
-      ],
+      "h1": ["Move your UK or European ambitions forward—on the ground."],
       "h2": [
         "Serious market activity, delivered on the ground.",
         "Useful when the UK or European opportunity has become real.",
@@ -1323,16 +1217,10 @@
       "description": "Market validation, buyer and distributor engagement, launches, exhibitions and local execution for Chinese companies building in the UK and Europe.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/companies",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/companies",
       "lang": "en-GB",
-      "h1": [
-        "Enter and grow in the UK & Europe with local commercial execution."
-      ],
+      "h1": ["Enter and grow in the UK & Europe with local commercial execution."],
       "h2": [
         "When the UK or European opportunity needs to move.",
         "Local action assembled around the commercial result.",
@@ -1372,16 +1260,10 @@
       "description": "Market validation, buyer and distributor engagement, launches, exhibitions and local execution for Chinese companies building in the UK and Europe.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/companies",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/companies",
       "lang": "en-GB",
-      "h1": [
-        "Enter and grow in the UK & Europe with local commercial execution."
-      ],
+      "h1": ["Enter and grow in the UK & Europe with local commercial execution."],
       "h2": [
         "When the UK or European opportunity needs to move.",
         "Local action assembled around the commercial result.",
@@ -1411,9 +1293,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/companies",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/contact?_rsc=aG18vT7-TBPL1WOt :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=aG18vT7-TBPL1WOt :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -1423,16 +1303,10 @@
       "description": "Market validation, buyer and distributor engagement, launches, exhibitions and local execution for Chinese companies building in the UK and Europe.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/companies",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/companies",
       "lang": "en-GB",
-      "h1": [
-        "Enter and grow in the UK & Europe with local commercial execution."
-      ],
+      "h1": ["Enter and grow in the UK & Europe with local commercial execution."],
       "h2": [
         "When the UK or European opportunity needs to move.",
         "Local action assembled around the commercial result.",
@@ -1474,16 +1348,10 @@
       "description": "Relevant China-related opportunities for UK and European organisations, experts, venues and specialist teams, with clear context, scope and bilingual coordination.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/partners",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/partners",
       "lang": "en-GB",
-      "h1": [
-        "Access relevant China-related opportunities with clear commercial context."
-      ],
+      "h1": ["Access relevant China-related opportunities with clear commercial context."],
       "h2": [
         "The project goal determines who needs to be involved.",
         "Relevant opportunities, clear scope and smoother cross-border collaboration.",
@@ -1524,16 +1392,10 @@
       "description": "Relevant China-related opportunities for UK and European organisations, experts, venues and specialist teams, with clear context, scope and bilingual coordination.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/partners",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/partners",
       "lang": "en-GB",
-      "h1": [
-        "Access relevant China-related opportunities with clear commercial context."
-      ],
+      "h1": ["Access relevant China-related opportunities with clear commercial context."],
       "h2": [
         "The project goal determines who needs to be involved.",
         "Relevant opportunities, clear scope and smoother cross-border collaboration.",
@@ -1572,16 +1434,10 @@
       "description": "Relevant China-related opportunities for UK and European organisations, experts, venues and specialist teams, with clear context, scope and bilingual coordination.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/partners",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/partners",
       "lang": "en-GB",
-      "h1": [
-        "Access relevant China-related opportunities with clear commercial context."
-      ],
+      "h1": ["Access relevant China-related opportunities with clear commercial context."],
       "h2": [
         "The project goal determines who needs to be involved.",
         "Relevant opportunities, clear scope and smoother cross-border collaboration.",
@@ -1610,9 +1466,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=z3BgrctqxBHejR-4 :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=z3BgrctqxBHejR-4 :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -1622,16 +1476,10 @@
       "description": "Explore real UK and European projects through their business context, Venus Bridge role, local delivery and useful outputs.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/work",
       "lang": "en-GB",
-      "h1": [
-        "Real UK & European projects. Clear objectives. Clear roles."
-      ],
+      "h1": ["Real UK & European projects. Clear objectives. Clear roles."],
       "h2": [
         "BYD BD11 Double-Decker Bus Launch, London",
         "BYD BD11 Double-Decker Bus Launch, London",
@@ -1691,9 +1539,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=z3BgrctqxBHejR-4 :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=z3BgrctqxBHejR-4 :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -1703,16 +1549,10 @@
       "description": "Explore real UK and European projects through their business context, Venus Bridge role, local delivery and useful outputs.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/work",
       "lang": "en-GB",
-      "h1": [
-        "Real UK & European projects. Clear objectives. Clear roles."
-      ],
+      "h1": ["Real UK & European projects. Clear objectives. Clear roles."],
       "h2": [
         "BYD BD11 Double-Decker Bus Launch, London",
         "BYD BD11 Double-Decker Bus Launch, London",
@@ -1778,16 +1618,10 @@
       "description": "Explore real UK and European projects through their business context, Venus Bridge role, local delivery and useful outputs.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/work",
       "lang": "en-GB",
-      "h1": [
-        "Real UK & European projects. Clear objectives. Clear roles."
-      ],
+      "h1": ["Real UK & European projects. Clear objectives. Clear roles."],
       "h2": [
         "BYD BD11 Double-Decker Bus Launch, London",
         "BYD BD11 Double-Decker Bus Launch, London",
@@ -1835,16 +1669,10 @@
       "description": "How Venus Bridge turns a commercial goal into local action, coordinates relationships, manages delivery and follows through after the live moment.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/how-we-work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/how-we-work",
       "lang": "en-GB",
-      "h1": [
-        "From one commercial goal to local action and follow-through."
-      ],
+      "h1": ["From one commercial goal to local action and follow-through."],
       "h2": [
         "One local team connecting commercial direction with action on the ground.",
         "Five stages from objective to follow-through.",
@@ -1884,16 +1712,10 @@
       "description": "How Venus Bridge turns a commercial goal into local action, coordinates relationships, manages delivery and follows through after the live moment.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/how-we-work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/how-we-work",
       "lang": "en-GB",
-      "h1": [
-        "From one commercial goal to local action and follow-through."
-      ],
+      "h1": ["From one commercial goal to local action and follow-through."],
       "h2": [
         "One local team connecting commercial direction with action on the ground.",
         "Five stages from objective to follow-through.",
@@ -1936,16 +1758,10 @@
       "description": "How Venus Bridge turns a commercial goal into local action, coordinates relationships, manages delivery and follows through after the live moment.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/how-we-work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/how-we-work",
       "lang": "en-GB",
-      "h1": [
-        "From one commercial goal to local action and follow-through."
-      ],
+      "h1": ["From one commercial goal to local action and follow-through."],
       "h2": [
         "One local team connecting commercial direction with action on the ground.",
         "Five stages from objective to follow-through.",
@@ -1985,16 +1801,10 @@
       "description": "Meet the cross-border operating team connecting Chinese headquarters goals with market action in the UK and Europe.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/about",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/about",
       "lang": "en-GB",
-      "h1": [
-        "A cross-border operating team for Chinese companies building in the UK and Europe."
-      ],
+      "h1": ["A cross-border operating team for Chinese companies building in the UK and Europe."],
       "h2": [
         "Make every local action work towards the same commercial goal.",
         "China-side context. UK & European project reach.",
@@ -2036,16 +1846,10 @@
       "description": "Meet the cross-border operating team connecting Chinese headquarters goals with market action in the UK and Europe.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/about",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/about",
       "lang": "en-GB",
-      "h1": [
-        "A cross-border operating team for Chinese companies building in the UK and Europe."
-      ],
+      "h1": ["A cross-border operating team for Chinese companies building in the UK and Europe."],
       "h2": [
         "Make every local action work towards the same commercial goal.",
         "China-side context. UK & European project reach.",
@@ -2113,9 +1917,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/about",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=ATZIBIC8hohFgYiI :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=ATZIBIC8hohFgYiI :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2125,16 +1927,10 @@
       "description": "Meet the cross-border operating team connecting Chinese headquarters goals with market action in the UK and Europe.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/about",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/about",
       "lang": "en-GB",
-      "h1": [
-        "A cross-border operating team for Chinese companies building in the UK and Europe."
-      ],
+      "h1": ["A cross-border operating team for Chinese companies building in the UK and Europe."],
       "h2": [
         "Make every local action work towards the same commercial goal.",
         "China-side context. UK & European project reach.",
@@ -2195,9 +1991,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/contact",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/contact?_rsc=be4STPe_5Qb9toiV :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/contact?_rsc=be4STPe_5Qb9toiV :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2207,16 +2001,10 @@
       "description": "Share the market, goal, timing and anything already committed. We will assess the fit and suggest the most useful next step.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/contact",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/contact",
       "lang": "en-GB",
-      "h1": [
-        "Tell us what needs to happen in the UK or Europe."
-      ],
+      "h1": ["Tell us what needs to happen in the UK or Europe."],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -2250,16 +2038,10 @@
       "description": "Share the market, goal, timing and anything already committed. We will assess the fit and suggest the most useful next step.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/contact",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/contact",
       "lang": "en-GB",
-      "h1": [
-        "Tell us what needs to happen in the UK or Europe."
-      ],
+      "h1": ["Tell us what needs to happen in the UK or Europe."],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -2283,9 +2065,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/contact",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/contact?_rsc=be4STPe_5Qb9toiV :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/contact?_rsc=be4STPe_5Qb9toiV :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2295,16 +2075,10 @@
       "description": "Share the market, goal, timing and anything already committed. We will assess the fit and suggest the most useful next step.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/contact",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/contact",
       "lang": "en-GB",
-      "h1": [
-        "Tell us what needs to happen in the UK or Europe."
-      ],
+      "h1": ["Tell us what needs to happen in the UK or Europe."],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -2338,16 +2112,10 @@
       "description": "How project-enquiry information is collected and used.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/privacy",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/privacy",
       "lang": "en-GB",
-      "h1": [
-        "Project enquiry information"
-      ],
+      "h1": ["Project enquiry information"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -2381,16 +2149,10 @@
       "description": "How project-enquiry information is collected and used.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/privacy",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/privacy",
       "lang": "en-GB",
-      "h1": [
-        "Project enquiry information"
-      ],
+      "h1": ["Project enquiry information"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -2414,9 +2176,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/privacy",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/contact?_rsc=61SigdTNu5CfWcJB :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=61SigdTNu5CfWcJB :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2426,16 +2186,10 @@
       "description": "How project-enquiry information is collected and used.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/privacy",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/privacy",
       "lang": "en-GB",
-      "h1": [
-        "Project enquiry information"
-      ],
+      "h1": ["Project enquiry information"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -2469,16 +2223,10 @@
       "description": "Venus Bridge Media website-use terms.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/terms",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/terms",
       "lang": "en-GB",
-      "h1": [
-        "Website content and project enquiries"
-      ],
+      "h1": ["Website content and project enquiries"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -2502,9 +2250,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/terms",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/contact?_rsc=hiUgQUArVbpxm841 :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=hiUgQUArVbpxm841 :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2514,16 +2260,10 @@
       "description": "Venus Bridge Media website-use terms.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/terms",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/terms",
       "lang": "en-GB",
-      "h1": [
-        "Website content and project enquiries"
-      ],
+      "h1": ["Website content and project enquiries"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -2547,9 +2287,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/terms",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/contact?_rsc=hiUgQUArVbpxm841 :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=hiUgQUArVbpxm841 :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2559,16 +2297,10 @@
       "description": "Venus Bridge Media website-use terms.",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/terms",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/en/terms",
       "lang": "en-GB",
-      "h1": [
-        "Website content and project enquiries"
-      ],
+      "h1": ["Website content and project enquiries"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -2592,9 +2324,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/wang-linkai-london-concert",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=tvjB7pFNOszP_w_k :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=tvjB7pFNOszP_w_k :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2604,16 +2334,10 @@
       "description": "A reusable visual record of a London live performance — Venus Bridge handled live-event photography and editorial image selection within the London performance setting. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/wang-linkai-london-concert",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/wang-linkai-london-concert/02-cover.webp",
       "lang": "en-GB",
-      "h1": [
-        "Wang Linkai (Xiao Gui) London Concert 2026"
-      ],
+      "h1": ["Wang Linkai (Xiao Gui) London Concert 2026"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -2644,9 +2368,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/wang-linkai-london-concert",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=tvjB7pFNOszP_w_k :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=tvjB7pFNOszP_w_k :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2656,16 +2378,10 @@
       "description": "A reusable visual record of a London live performance — Venus Bridge handled live-event photography and editorial image selection within the London performance setting. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/wang-linkai-london-concert",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/wang-linkai-london-concert/02-cover.webp",
       "lang": "en-GB",
-      "h1": [
-        "Wang Linkai (Xiao Gui) London Concert 2026"
-      ],
+      "h1": ["Wang Linkai (Xiao Gui) London Concert 2026"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -2709,16 +2425,10 @@
       "description": "A reusable visual record of a London live performance — Venus Bridge handled live-event photography and editorial image selection within the London performance setting. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/wang-linkai-london-concert",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/wang-linkai-london-concert/02-cover.webp",
       "lang": "en-GB",
-      "h1": [
-        "Wang Linkai (Xiao Gui) London Concert 2026"
-      ],
+      "h1": ["Wang Linkai (Xiao Gui) London Concert 2026"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -2759,16 +2469,10 @@
       "description": "UK market-presence evidence from Geely's London brand launch — Venus Bridge delivered visual documentation of the London launch environment, covering the design presentation, EX5 display and audience context. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/geely-london-brand-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/geely-london-brand-launch/02-cover.webp",
       "lang": "en-GB",
-      "h1": [
-        "Geely London Brand Launch 2025"
-      ],
+      "h1": ["Geely London Brand Launch 2025"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -2799,9 +2503,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/geely-london-brand-launch",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=i27WIhFOOwZOqeKp :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=i27WIhFOOwZOqeKp :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2811,16 +2513,10 @@
       "description": "UK market-presence evidence from Geely's London brand launch — Venus Bridge delivered visual documentation of the London launch environment, covering the design presentation, EX5 display and audience context. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/geely-london-brand-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/geely-london-brand-launch/02-cover.webp",
       "lang": "en-GB",
-      "h1": [
-        "Geely London Brand Launch 2025"
-      ],
+      "h1": ["Geely London Brand Launch 2025"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -2851,9 +2547,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/geely-london-brand-launch",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=i27WIhFOOwZOqeKp :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=i27WIhFOOwZOqeKp :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2863,16 +2557,10 @@
       "description": "UK market-presence evidence from Geely's London brand launch — Venus Bridge delivered visual documentation of the London launch environment, covering the design presentation, EX5 display and audience context. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/geely-london-brand-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/geely-london-brand-launch/02-cover.webp",
       "lang": "en-GB",
-      "h1": [
-        "Geely London Brand Launch 2025"
-      ],
+      "h1": ["Geely London Brand Launch 2025"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -2903,9 +2591,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/changan-europe-launch-2025",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=zqd-dBgQlUJ2HuAb :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=zqd-dBgQlUJ2HuAb :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -2915,16 +2601,10 @@
       "description": "European-market visibility in an international launch setting — Venus Bridge documented the Munich launch setting across the stage, vehicle reveal and guest viewing environment. — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/changan-europe-launch-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/changan-europe-launch-2025/03-gallery.webp",
       "lang": "en-GB",
-      "h1": [
-        "Changan European Brand Launch 2025, Munich"
-      ],
+      "h1": ["Changan European Brand Launch 2025, Munich"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -2965,16 +2645,10 @@
       "description": "European-market visibility in an international launch setting — Venus Bridge documented the Munich launch setting across the stage, vehicle reveal and guest viewing environment. — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/changan-europe-launch-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/changan-europe-launch-2025/03-gallery.webp",
       "lang": "en-GB",
-      "h1": [
-        "Changan European Brand Launch 2025, Munich"
-      ],
+      "h1": ["Changan European Brand Launch 2025, Munich"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3005,9 +2679,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/changan-europe-launch-2025",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=zqd-dBgQlUJ2HuAb :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=zqd-dBgQlUJ2HuAb :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3017,16 +2689,10 @@
       "description": "European-market visibility in an international launch setting — Venus Bridge documented the Munich launch setting across the stage, vehicle reveal and guest viewing environment. — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/changan-europe-launch-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/changan-europe-launch-2025/03-gallery.webp",
       "lang": "en-GB",
-      "h1": [
-        "Changan European Brand Launch 2025, Munich"
-      ],
+      "h1": ["Changan European Brand Launch 2025, Munich"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3067,16 +2733,10 @@
       "description": "International communications in a professional stakeholder setting — Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting. — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/catl-open-day-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/catl-open-day-2025/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "CATL Open Day 2025, Munich"
-      ],
+      "h1": ["CATL Open Day 2025, Munich"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3107,9 +2767,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/catl-open-day-2025",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=fW4YGt0m2z1_rM8C :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=fW4YGt0m2z1_rM8C :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3119,16 +2777,10 @@
       "description": "International communications in a professional stakeholder setting — Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting. — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/catl-open-day-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/catl-open-day-2025/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "CATL Open Day 2025, Munich"
-      ],
+      "h1": ["CATL Open Day 2025, Munich"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3169,16 +2821,10 @@
       "description": "International communications in a professional stakeholder setting — Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting. — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/catl-open-day-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/catl-open-day-2025/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "CATL Open Day 2025, Munich"
-      ],
+      "h1": ["CATL Open Day 2025, Munich"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3219,16 +2865,10 @@
       "description": "A concise visual record of a Chinese-language live performance in London — Venus Bridge delivered complementary wide-stage documentation of the London performance. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/yue-yunpeng-london-live",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/yue-yunpeng-london-live/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "Yue Yunpeng London Live 2025"
-      ],
+      "h1": ["Yue Yunpeng London Live 2025"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3259,9 +2899,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/yue-yunpeng-london-live",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=XYXmxuKMMN7WI9rb :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=XYXmxuKMMN7WI9rb :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3271,16 +2909,10 @@
       "description": "A concise visual record of a Chinese-language live performance in London — Venus Bridge delivered complementary wide-stage documentation of the London performance. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/yue-yunpeng-london-live",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/yue-yunpeng-london-live/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "Yue Yunpeng London Live 2025"
-      ],
+      "h1": ["Yue Yunpeng London Live 2025"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3321,16 +2953,10 @@
       "description": "A concise visual record of a Chinese-language live performance in London — Venus Bridge delivered complementary wide-stage documentation of the London performance. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/yue-yunpeng-london-live",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/yue-yunpeng-london-live/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "Yue Yunpeng London Live 2025"
-      ],
+      "h1": ["Yue Yunpeng London Live 2025"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3361,9 +2987,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/london-fashion-week-2025",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=pK7Y-YO7CO1eqHcR :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=pK7Y-YO7CO1eqHcR :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3373,16 +2997,10 @@
       "description": "Editorial fashion evidence created in the London Fashion Week setting — Venus Bridge created and selected a complementary pair of full-length editorial portraits in London Fashion Week settings. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/london-fashion-week-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/london-fashion-week-2025/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "London Fashion Week 2025 — Editorial & Event Content"
-      ],
+      "h1": ["London Fashion Week 2025 — Editorial & Event Content"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3413,9 +3031,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/london-fashion-week-2025",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=pK7Y-YO7CO1eqHcR :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=pK7Y-YO7CO1eqHcR :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3425,16 +3041,10 @@
       "description": "Editorial fashion evidence created in the London Fashion Week setting — Venus Bridge created and selected a complementary pair of full-length editorial portraits in London Fashion Week settings. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/london-fashion-week-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/london-fashion-week-2025/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "London Fashion Week 2025 — Editorial & Event Content"
-      ],
+      "h1": ["London Fashion Week 2025 — Editorial & Event Content"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3478,16 +3088,10 @@
       "description": "Editorial fashion evidence created in the London Fashion Week setting — Venus Bridge created and selected a complementary pair of full-length editorial portraits in London Fashion Week settings. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/london-fashion-week-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/london-fashion-week-2025/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "London Fashion Week 2025 — Editorial & Event Content"
-      ],
+      "h1": ["London Fashion Week 2025 — Editorial & Event Content"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3528,16 +3132,10 @@
       "description": "European industry presence and stakeholder context — Venus Bridge documented Leapmotor's visible IAA Mobility presence across the stand, vehicles, product details and visitor environment. — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/leapmotor-iaa-2023",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/leapmotor-iaa-2023/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "Leapmotor at IAA Mobility 2023, Munich"
-      ],
+      "h1": ["Leapmotor at IAA Mobility 2023, Munich"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3568,9 +3166,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/leapmotor-iaa-2023",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=wUenjoVACwRW_G8i :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=wUenjoVACwRW_G8i :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3580,16 +3176,10 @@
       "description": "European industry presence and stakeholder context — Venus Bridge documented Leapmotor's visible IAA Mobility presence across the stand, vehicles, product details and visitor environment. — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/leapmotor-iaa-2023",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/leapmotor-iaa-2023/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "Leapmotor at IAA Mobility 2023, Munich"
-      ],
+      "h1": ["Leapmotor at IAA Mobility 2023, Munich"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3633,16 +3223,10 @@
       "description": "European industry presence and stakeholder context — Venus Bridge documented Leapmotor's visible IAA Mobility presence across the stand, vehicles, product details and visitor environment. — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/leapmotor-iaa-2023",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/leapmotor-iaa-2023/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "Leapmotor at IAA Mobility 2023, Munich"
-      ],
+      "h1": ["Leapmotor at IAA Mobility 2023, Munich"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3673,9 +3257,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/byd-bd11-london",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=QId-KLzchl2_I6CV :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=QId-KLzchl2_I6CV :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3685,16 +3267,10 @@
       "description": "UK market presence around a London product introduction — Venus Bridge delivered the London-side visual documentation of the BD11 product introduction, covering the vehicle, venue and audience context. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/byd-bd11-london",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/byd-bd11-london/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "BYD BD11 Double-Decker Bus Launch, London"
-      ],
+      "h1": ["BYD BD11 Double-Decker Bus Launch, London"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3725,9 +3301,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/byd-bd11-london",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=QId-KLzchl2_I6CV :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=QId-KLzchl2_I6CV :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3737,16 +3311,10 @@
       "description": "UK market presence around a London product introduction — Venus Bridge delivered the London-side visual documentation of the BD11 product introduction, covering the vehicle, venue and audience context. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/byd-bd11-london",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/byd-bd11-london/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "BYD BD11 Double-Decker Bus Launch, London"
-      ],
+      "h1": ["BYD BD11 Double-Decker Bus Launch, London"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3790,16 +3358,10 @@
       "description": "UK market presence around a London product introduction — Venus Bridge delivered the London-side visual documentation of the BD11 product introduction, covering the vehicle, venue and audience context. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/byd-bd11-london",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/byd-bd11-london/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "BYD BD11 Double-Decker Bus Launch, London"
-      ],
+      "h1": ["BYD BD11 Double-Decker Bus Launch, London"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3830,9 +3392,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/agibot-london-launch",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=QcOUBAcwd-E_7rVZ :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=QcOUBAcwd-E_7rVZ :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3842,16 +3402,10 @@
       "description": "London event evidence for an embodied-robotics brand — Venus Bridge documented the London technology-event setting across the technical presentation and two product displays. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/agibot-london-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/technology-ai/agibot-london-launch/02-cover.webp",
       "lang": "en-GB",
-      "h1": [
-        "AGIBOT London Launch"
-      ],
+      "h1": ["AGIBOT London Launch"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3892,16 +3446,10 @@
       "description": "London event evidence for an embodied-robotics brand — Venus Bridge documented the London technology-event setting across the technical presentation and two product displays. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/agibot-london-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/technology-ai/agibot-london-launch/02-cover.webp",
       "lang": "en-GB",
-      "h1": [
-        "AGIBOT London Launch"
-      ],
+      "h1": ["AGIBOT London Launch"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3932,9 +3480,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/agibot-london-launch",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=QcOUBAcwd-E_7rVZ :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=QcOUBAcwd-E_7rVZ :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -3944,16 +3490,10 @@
       "description": "London event evidence for an embodied-robotics brand — Venus Bridge documented the London technology-event setting across the technical presentation and two product displays. — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/agibot-london-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/technology-ai/agibot-london-launch/02-cover.webp",
       "lang": "en-GB",
-      "h1": [
-        "AGIBOT London Launch"
-      ],
+      "h1": ["AGIBOT London Launch"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -3994,16 +3534,10 @@
       "description": "London-localised international brand evidence — Venus Bridge coordinated UK locations and produced automotive imagery across London streets, interview, vehicle-movement and countryside settings. — London and England, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/london-automotive-brand-film",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/london-automotive-brand-film/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "London Automotive Brand Film"
-      ],
+      "h1": ["London Automotive Brand Film"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -4034,9 +3568,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/london-automotive-brand-film",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=VXptVV97IrhDKPxi :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=VXptVV97IrhDKPxi :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -4046,16 +3578,10 @@
       "description": "London-localised international brand evidence — Venus Bridge coordinated UK locations and produced automotive imagery across London streets, interview, vehicle-movement and countryside settings. — London and England, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/london-automotive-brand-film",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/london-automotive-brand-film/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "London Automotive Brand Film"
-      ],
+      "h1": ["London Automotive Brand Film"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -4099,16 +3625,10 @@
       "description": "London-localised international brand evidence — Venus Bridge coordinated UK locations and produced automotive imagery across London streets, interview, vehicle-movement and countryside settings. — London and England, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/london-automotive-brand-film",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/london-automotive-brand-film/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "London Automotive Brand Film"
-      ],
+      "h1": ["London Automotive Brand Film"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -4139,9 +3659,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/beauty-fashion-brand-content",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=W_meP44TYF32G_Qb :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=W_meP44TYF32G_Qb :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -4151,16 +3669,10 @@
       "description": "A selected view of beauty, product, fashion and retail-content capability — This capability selection brings together photography and visual-content curation across beauty, product, fashion and retail formats. — UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/beauty-fashion-brand-content",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/beauty-fashion-brand-content/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "Selected Beauty & Fashion Brand Content"
-      ],
+      "h1": ["Selected Beauty & Fashion Brand Content"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -4191,9 +3703,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/beauty-fashion-brand-content",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=W_meP44TYF32G_Qb :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=W_meP44TYF32G_Qb :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -4203,16 +3713,10 @@
       "description": "A selected view of beauty, product, fashion and retail-content capability — This capability selection brings together photography and visual-content curation across beauty, product, fashion and retail formats. — UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/beauty-fashion-brand-content",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/beauty-fashion-brand-content/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "Selected Beauty & Fashion Brand Content"
-      ],
+      "h1": ["Selected Beauty & Fashion Brand Content"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -4256,16 +3760,10 @@
       "description": "A selected view of beauty, product, fashion and retail-content capability — This capability selection brings together photography and visual-content curation across beauty, product, fashion and retail formats. — UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/beauty-fashion-brand-content",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/beauty-fashion-brand-content/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "Selected Beauty & Fashion Brand Content"
-      ],
+      "h1": ["Selected Beauty & Fashion Brand Content"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -4306,16 +3804,10 @@
       "description": "A selected programme of European automotive brand assets — This capability selection brings together automotive photography and on-location image making across European road and city settings. — Europe",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/european-road-lifestyle",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/european-road-lifestyle/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "European Automotive Asset Programme"
-      ],
+      "h1": ["European Automotive Asset Programme"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -4356,16 +3848,10 @@
       "description": "A selected programme of European automotive brand assets — This capability selection brings together automotive photography and on-location image making across European road and city settings. — Europe",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/european-road-lifestyle",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/european-road-lifestyle/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "European Automotive Asset Programme"
-      ],
+      "h1": ["European Automotive Asset Programme"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -4396,9 +3882,7 @@
       "finalUrl": "http://127.0.0.1:3340/en/work/european-road-lifestyle",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/contact?_rsc=Q3M39VD_V7FXV00N :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/contact?_rsc=Q3M39VD_V7FXV00N :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -4408,16 +3892,10 @@
       "description": "A selected programme of European automotive brand assets — This capability selection brings together automotive photography and on-location image making across European road and city settings. — Europe",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/en/work/european-road-lifestyle",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/european-road-lifestyle/01-hero.webp",
       "lang": "en-GB",
-      "h1": [
-        "European Automotive Asset Programme"
-      ],
+      "h1": ["European Automotive Asset Programme"],
       "h2": [
         "Project Objective",
         "Business Context",
@@ -4461,16 +3939,10 @@
       "description": "帮助中国企业验证英国与欧洲市场机会、对接买家与合作方，并落地发布、展会及本地市场行动。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/home",
       "lang": "zh-CN",
-      "h1": [
-        "让你的英国与欧洲市场行动，在本地真正向前推进。"
-      ],
+      "h1": ["让你的英国与欧洲市场行动，在本地真正向前推进。"],
       "h2": [
         "在真实英国与欧洲市场现场完成工作。",
         "当英国或欧洲机会已经从想法变成具体任务。",
@@ -4517,16 +3989,10 @@
       "description": "帮助中国企业验证英国与欧洲市场机会、对接买家与合作方，并落地发布、展会及本地市场行动。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/home",
       "lang": "zh-CN",
-      "h1": [
-        "让你的英国与欧洲市场行动，在本地真正向前推进。"
-      ],
+      "h1": ["让你的英国与欧洲市场行动，在本地真正向前推进。"],
       "h2": [
         "在真实英国与欧洲市场现场完成工作。",
         "当英国或欧洲机会已经从想法变成具体任务。",
@@ -4573,16 +4039,10 @@
       "description": "帮助中国企业验证英国与欧洲市场机会、对接买家与合作方，并落地发布、展会及本地市场行动。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/home",
       "lang": "zh-CN",
-      "h1": [
-        "让你的英国与欧洲市场行动，在本地真正向前推进。"
-      ],
+      "h1": ["让你的英国与欧洲市场行动，在本地真正向前推进。"],
       "h2": [
         "在真实英国与欧洲市场现场完成工作。",
         "当英国或欧洲机会已经从想法变成具体任务。",
@@ -4628,16 +4088,10 @@
       "description": "为中国企业提供市场验证、买家与经销商对接、发布与展会落地，以及英国和欧洲本地执行能力。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/companies",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/companies",
       "lang": "zh-CN",
-      "h1": [
-        "以本地商业执行，进入并拓展英国与欧洲市场。"
-      ],
+      "h1": ["以本地商业执行，进入并拓展英国与欧洲市场。"],
       "h2": [
         "当英国或欧洲机会需要真正开始推进。",
         "围绕商业结果组合本地行动。",
@@ -4679,16 +4133,10 @@
       "description": "为中国企业提供市场验证、买家与经销商对接、发布与展会落地，以及英国和欧洲本地执行能力。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/companies",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/companies",
       "lang": "zh-CN",
-      "h1": [
-        "以本地商业执行，进入并拓展英国与欧洲市场。"
-      ],
+      "h1": ["以本地商业执行，进入并拓展英国与欧洲市场。"],
       "h2": [
         "当英国或欧洲机会需要真正开始推进。",
         "围绕商业结果组合本地行动。",
@@ -4718,9 +4166,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/companies",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/contact?_rsc=wriaRe8f1-YoeXHT :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/contact?_rsc=wriaRe8f1-YoeXHT :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -4730,16 +4176,10 @@
       "description": "为中国企业提供市场验证、买家与经销商对接、发布与展会落地，以及英国和欧洲本地执行能力。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/companies",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/companies",
       "lang": "zh-CN",
-      "h1": [
-        "以本地商业执行，进入并拓展英国与欧洲市场。"
-      ],
+      "h1": ["以本地商业执行，进入并拓展英国与欧洲市场。"],
       "h2": [
         "当英国或欧洲机会需要真正开始推进。",
         "围绕商业结果组合本地行动。",
@@ -4781,16 +4221,10 @@
       "description": "为英国与欧洲机构、专家、场地和专业团队提供商业背景清楚、范围明确、双语协调的中国企业项目机会。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/partners",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/partners",
       "lang": "zh-CN",
-      "h1": [
-        "参与背景清楚、与你真正相关的中国企业项目。"
-      ],
+      "h1": ["参与背景清楚、与你真正相关的中国企业项目。"],
       "h2": [
         "由项目目标决定谁需要加入。",
         "相关机会、清楚范围和顺畅跨境协作。",
@@ -4829,16 +4263,10 @@
       "description": "为英国与欧洲机构、专家、场地和专业团队提供商业背景清楚、范围明确、双语协调的中国企业项目机会。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/partners",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/partners",
       "lang": "zh-CN",
-      "h1": [
-        "参与背景清楚、与你真正相关的中国企业项目。"
-      ],
+      "h1": ["参与背景清楚、与你真正相关的中国企业项目。"],
       "h2": [
         "由项目目标决定谁需要加入。",
         "相关机会、清楚范围和顺畅跨境协作。",
@@ -4880,16 +4308,10 @@
       "description": "为英国与欧洲机构、专家、场地和专业团队提供商业背景清楚、范围明确、双语协调的中国企业项目机会。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/partners",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/partners",
       "lang": "zh-CN",
-      "h1": [
-        "参与背景清楚、与你真正相关的中国企业项目。"
-      ],
+      "h1": ["参与背景清楚、与你真正相关的中国企业项目。"],
       "h2": [
         "由项目目标决定谁需要加入。",
         "相关机会、清楚范围和顺畅跨境协作。",
@@ -4918,9 +4340,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/en/work?_rsc=HltNYvDvv6URMQd6 :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/en/work?_rsc=HltNYvDvv6URMQd6 :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -4930,16 +4350,10 @@
       "description": "浏览真实英国与欧洲项目，了解商业背景、Venus Bridge 的具体职责、本地执行和后续可用成果。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/work",
       "lang": "zh-CN",
-      "h1": [
-        "真实英国与欧洲项目，清楚目标与职责。"
-      ],
+      "h1": ["真实英国与欧洲项目，清楚目标与职责。"],
       "h2": [
         "BYD BD11 双层公交车伦敦发布",
         "BYD BD11 双层公交车伦敦发布",
@@ -5002,16 +4416,10 @@
       "description": "浏览真实英国与欧洲项目，了解商业背景、Venus Bridge 的具体职责、本地执行和后续可用成果。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/work",
       "lang": "zh-CN",
-      "h1": [
-        "真实英国与欧洲项目，清楚目标与职责。"
-      ],
+      "h1": ["真实英国与欧洲项目，清楚目标与职责。"],
       "h2": [
         "BYD BD11 双层公交车伦敦发布",
         "BYD BD11 双层公交车伦敦发布",
@@ -5062,16 +4470,10 @@
       "description": "浏览真实英国与欧洲项目，了解商业背景、Venus Bridge 的具体职责、本地执行和后续可用成果。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/work",
       "lang": "zh-CN",
-      "h1": [
-        "真实英国与欧洲项目，清楚目标与职责。"
-      ],
+      "h1": ["真实英国与欧洲项目，清楚目标与职责。"],
       "h2": [
         "BYD BD11 双层公交车伦敦发布",
         "BYD BD11 双层公交车伦敦发布",
@@ -5119,16 +4521,10 @@
       "description": "了解 Venus Bridge 如何从商业目标出发，设计本地行动、推进关系、管理执行，并在项目后继续跟进。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/how-we-work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/how-we-work",
       "lang": "zh-CN",
-      "h1": [
-        "从一个具体市场目标，到真正落地并持续推进。"
-      ],
+      "h1": ["从一个具体市场目标，到真正落地并持续推进。"],
       "h2": [
         "一个本地团队，把商务方向与现场行动连接起来。",
         "五个阶段，从目标到持续跟进。",
@@ -5168,16 +4564,10 @@
       "description": "了解 Venus Bridge 如何从商业目标出发，设计本地行动、推进关系、管理执行，并在项目后继续跟进。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/how-we-work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/how-we-work",
       "lang": "zh-CN",
-      "h1": [
-        "从一个具体市场目标，到真正落地并持续推进。"
-      ],
+      "h1": ["从一个具体市场目标，到真正落地并持续推进。"],
       "h2": [
         "一个本地团队，把商务方向与现场行动连接起来。",
         "五个阶段，从目标到持续跟进。",
@@ -5207,9 +4597,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/how-we-work",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=TQnW_NCff1BWFsDu :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=TQnW_NCff1BWFsDu :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -5219,16 +4607,10 @@
       "description": "了解 Venus Bridge 如何从商业目标出发，设计本地行动、推进关系、管理执行，并在项目后继续跟进。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/how-we-work",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/how-we-work",
       "lang": "zh-CN",
-      "h1": [
-        "从一个具体市场目标，到真正落地并持续推进。"
-      ],
+      "h1": ["从一个具体市场目标，到真正落地并持续推进。"],
       "h2": [
         "一个本地团队，把商务方向与现场行动连接起来。",
         "五个阶段，从目标到持续跟进。",
@@ -5268,16 +4650,10 @@
       "description": "认识连接中国总部目标与英国、欧洲本地市场行动的跨境运营团队。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/about",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/about",
       "lang": "zh-CN",
-      "h1": [
-        "服务中国企业英国与欧洲发展的跨境运营团队。"
-      ],
+      "h1": ["服务中国企业英国与欧洲发展的跨境运营团队。"],
       "h2": [
         "关键是让每一个本地行动都服务同一个商业目标。",
         "理解中国端目标，在英国与欧洲推进。",
@@ -5319,16 +4695,10 @@
       "description": "认识连接中国总部目标与英国、欧洲本地市场行动的跨境运营团队。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/about",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/about",
       "lang": "zh-CN",
-      "h1": [
-        "服务中国企业英国与欧洲发展的跨境运营团队。"
-      ],
+      "h1": ["服务中国企业英国与欧洲发展的跨境运营团队。"],
       "h2": [
         "关键是让每一个本地行动都服务同一个商业目标。",
         "理解中国端目标，在英国与欧洲推进。",
@@ -5406,16 +4776,10 @@
       "description": "认识连接中国总部目标与英国、欧洲本地市场行动的跨境运营团队。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/about",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/about",
       "lang": "zh-CN",
-      "h1": [
-        "服务中国企业英国与欧洲发展的跨境运营团队。"
-      ],
+      "h1": ["服务中国企业英国与欧洲发展的跨境运营团队。"],
       "h2": [
         "关键是让每一个本地行动都服务同一个商业目标。",
         "理解中国端目标，在英国与欧洲推进。",
@@ -5486,16 +4850,10 @@
       "description": "告诉我们市场、目标、时间和已经确定的条件；我们会判断是否匹配并建议下一步。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/contact",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/contact",
       "lang": "zh-CN",
-      "h1": [
-        "告诉我们，英国或欧洲需要发生什么。"
-      ],
+      "h1": ["告诉我们，英国或欧洲需要发生什么。"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -5529,16 +4887,10 @@
       "description": "告诉我们市场、目标、时间和已经确定的条件；我们会判断是否匹配并建议下一步。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/contact",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/contact",
       "lang": "zh-CN",
-      "h1": [
-        "告诉我们，英国或欧洲需要发生什么。"
-      ],
+      "h1": ["告诉我们，英国或欧洲需要发生什么。"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -5572,16 +4924,10 @@
       "description": "告诉我们市场、目标、时间和已经确定的条件；我们会判断是否匹配并建议下一步。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/contact",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/contact",
       "lang": "zh-CN",
-      "h1": [
-        "告诉我们，英国或欧洲需要发生什么。"
-      ],
+      "h1": ["告诉我们，英国或欧洲需要发生什么。"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -5615,16 +4961,10 @@
       "description": "了解项目咨询信息的收集与使用方式。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/privacy",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/privacy",
       "lang": "zh-CN",
-      "h1": [
-        "项目咨询信息"
-      ],
+      "h1": ["项目咨询信息"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -5658,16 +4998,10 @@
       "description": "了解项目咨询信息的收集与使用方式。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/privacy",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/privacy",
       "lang": "zh-CN",
-      "h1": [
-        "项目咨询信息"
-      ],
+      "h1": ["项目咨询信息"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -5704,16 +5038,10 @@
       "description": "了解项目咨询信息的收集与使用方式。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/privacy",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/privacy",
       "lang": "zh-CN",
-      "h1": [
-        "项目咨询信息"
-      ],
+      "h1": ["项目咨询信息"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -5747,16 +5075,10 @@
       "description": "Venus Bridge Media网站使用说明。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/terms",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/terms",
       "lang": "zh-CN",
-      "h1": [
-        "网站内容与项目咨询"
-      ],
+      "h1": ["网站内容与项目咨询"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -5793,16 +5115,10 @@
       "description": "Venus Bridge Media网站使用说明。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/terms",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/terms",
       "lang": "zh-CN",
-      "h1": [
-        "网站内容与项目咨询"
-      ],
+      "h1": ["网站内容与项目咨询"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -5839,16 +5155,10 @@
       "description": "Venus Bridge Media网站使用说明。",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/terms",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/og/zh/terms",
       "lang": "zh-CN",
-      "h1": [
-        "网站内容与项目咨询"
-      ],
+      "h1": ["网站内容与项目咨询"],
       "h2": [],
       "mainCount": 1,
       "brokenImages": [],
@@ -5872,9 +5182,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/wang-linkai-london-concert",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=rvDXuy-hD8F5y-Fq :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=rvDXuy-hD8F5y-Fq :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -5884,16 +5192,10 @@
       "description": "形成可复用的伦敦现场演出视觉记录 — Venus Bridge 负责伦敦演出现场的视觉记录与编辑选片。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/wang-linkai-london-concert",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/wang-linkai-london-concert/02-cover.webp",
       "lang": "zh-CN",
-      "h1": [
-        "王琳凯（小鬼）伦敦演唱会 2026"
-      ],
+      "h1": ["王琳凯（小鬼）伦敦演唱会 2026"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -5934,16 +5236,10 @@
       "description": "形成可复用的伦敦现场演出视觉记录 — Venus Bridge 负责伦敦演出现场的视觉记录与编辑选片。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/wang-linkai-london-concert",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/wang-linkai-london-concert/02-cover.webp",
       "lang": "zh-CN",
-      "h1": [
-        "王琳凯（小鬼）伦敦演唱会 2026"
-      ],
+      "h1": ["王琳凯（小鬼）伦敦演唱会 2026"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -5974,9 +5270,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/wang-linkai-london-concert",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=rvDXuy-hD8F5y-Fq :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=rvDXuy-hD8F5y-Fq :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -5986,16 +5280,10 @@
       "description": "形成可复用的伦敦现场演出视觉记录 — Venus Bridge 负责伦敦演出现场的视觉记录与编辑选片。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/wang-linkai-london-concert",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/wang-linkai-london-concert/02-cover.webp",
       "lang": "zh-CN",
-      "h1": [
-        "王琳凯（小鬼）伦敦演唱会 2026"
-      ],
+      "h1": ["王琳凯（小鬼）伦敦演唱会 2026"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6036,16 +5324,10 @@
       "description": "形成吉利伦敦品牌发布的英国市场落地证据 — Venus Bridge 完成伦敦发布现场的视觉记录，覆盖设计演讲、EX5 展示与观众环境。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/geely-london-brand-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/geely-london-brand-launch/02-cover.webp",
       "lang": "zh-CN",
-      "h1": [
-        "吉利伦敦品牌发布会 2025"
-      ],
+      "h1": ["吉利伦敦品牌发布会 2025"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6086,16 +5368,10 @@
       "description": "形成吉利伦敦品牌发布的英国市场落地证据 — Venus Bridge 完成伦敦发布现场的视觉记录，覆盖设计演讲、EX5 展示与观众环境。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/geely-london-brand-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/geely-london-brand-launch/02-cover.webp",
       "lang": "zh-CN",
-      "h1": [
-        "吉利伦敦品牌发布会 2025"
-      ],
+      "h1": ["吉利伦敦品牌发布会 2025"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6139,16 +5415,10 @@
       "description": "形成吉利伦敦品牌发布的英国市场落地证据 — Venus Bridge 完成伦敦发布现场的视觉记录，覆盖设计演讲、EX5 展示与观众环境。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/geely-london-brand-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/geely-london-brand-launch/02-cover.webp",
       "lang": "zh-CN",
-      "h1": [
-        "吉利伦敦品牌发布会 2025"
-      ],
+      "h1": ["吉利伦敦品牌发布会 2025"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6179,9 +5449,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/changan-europe-launch-2025",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=uSVX8wxDZxQX5LSW :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=uSVX8wxDZxQX5LSW :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -6191,16 +5459,10 @@
       "description": "国际发布场景中的欧洲市场品牌可见度 — Venus Bridge 记录慕尼黑发布现场，覆盖舞台、车辆亮相与嘉宾观看环境。 — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/changan-europe-launch-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/changan-europe-launch-2025/03-gallery.webp",
       "lang": "zh-CN",
-      "h1": [
-        "长安汽车 2025 欧洲品牌发布｜慕尼黑"
-      ],
+      "h1": ["长安汽车 2025 欧洲品牌发布｜慕尼黑"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6241,16 +5503,10 @@
       "description": "国际发布场景中的欧洲市场品牌可见度 — Venus Bridge 记录慕尼黑发布现场，覆盖舞台、车辆亮相与嘉宾观看环境。 — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/changan-europe-launch-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/changan-europe-launch-2025/03-gallery.webp",
       "lang": "zh-CN",
-      "h1": [
-        "长安汽车 2025 欧洲品牌发布｜慕尼黑"
-      ],
+      "h1": ["长安汽车 2025 欧洲品牌发布｜慕尼黑"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6294,16 +5550,10 @@
       "description": "国际发布场景中的欧洲市场品牌可见度 — Venus Bridge 记录慕尼黑发布现场，覆盖舞台、车辆亮相与嘉宾观看环境。 — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/changan-europe-launch-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/changan-europe-launch-2025/03-gallery.webp",
       "lang": "zh-CN",
-      "h1": [
-        "长安汽车 2025 欧洲品牌发布｜慕尼黑"
-      ],
+      "h1": ["长安汽车 2025 欧洲品牌发布｜慕尼黑"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6334,9 +5584,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/catl-open-day-2025",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -6346,16 +5594,10 @@
       "description": "专业利益相关方场景中的国际传播 — Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。 — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/catl-open-day-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/catl-open-day-2025/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "CATL Open Day 2025｜慕尼黑"
-      ],
+      "h1": ["CATL Open Day 2025｜慕尼黑"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6386,9 +5628,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/catl-open-day-2025",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -6398,16 +5638,10 @@
       "description": "专业利益相关方场景中的国际传播 — Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。 — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/catl-open-day-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/catl-open-day-2025/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "CATL Open Day 2025｜慕尼黑"
-      ],
+      "h1": ["CATL Open Day 2025｜慕尼黑"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6438,9 +5672,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/catl-open-day-2025",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/contact?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/contact?_rsc=-WBZ6TqfXoqemHfZ :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -6450,16 +5682,10 @@
       "description": "专业利益相关方场景中的国际传播 — Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。 — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/catl-open-day-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/catl-open-day-2025/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "CATL Open Day 2025｜慕尼黑"
-      ],
+      "h1": ["CATL Open Day 2025｜慕尼黑"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6490,9 +5716,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/yue-yunpeng-london-live",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=M0lqCfWjYaxHmlAY :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=M0lqCfWjYaxHmlAY :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -6502,16 +5726,10 @@
       "description": "形成华语现场演出在伦敦落地的精炼视觉记录 — Venus Bridge 以互补的舞台全景完成伦敦演出的视觉记录。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/yue-yunpeng-london-live",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/yue-yunpeng-london-live/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "岳云鹏伦敦演出 2025"
-      ],
+      "h1": ["岳云鹏伦敦演出 2025"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6552,16 +5770,10 @@
       "description": "形成华语现场演出在伦敦落地的精炼视觉记录 — Venus Bridge 以互补的舞台全景完成伦敦演出的视觉记录。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/yue-yunpeng-london-live",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/yue-yunpeng-london-live/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "岳云鹏伦敦演出 2025"
-      ],
+      "h1": ["岳云鹏伦敦演出 2025"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6605,16 +5817,10 @@
       "description": "形成华语现场演出在伦敦落地的精炼视觉记录 — Venus Bridge 以互补的舞台全景完成伦敦演出的视觉记录。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/yue-yunpeng-london-live",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/events-roadshows/yue-yunpeng-london-live/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "岳云鹏伦敦演出 2025"
-      ],
+      "h1": ["岳云鹏伦敦演出 2025"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6655,16 +5861,10 @@
       "description": "在伦敦时装周语境中创作时尚编辑视觉证据 — Venus Bridge 在伦敦时装周语境中创作并筛选一组相互呼应的全身编辑肖像。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/london-fashion-week-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/london-fashion-week-2025/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "伦敦时装周 2025｜时尚编辑与活动内容"
-      ],
+      "h1": ["伦敦时装周 2025｜时尚编辑与活动内容"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6705,16 +5905,10 @@
       "description": "在伦敦时装周语境中创作时尚编辑视觉证据 — Venus Bridge 在伦敦时装周语境中创作并筛选一组相互呼应的全身编辑肖像。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/london-fashion-week-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/london-fashion-week-2025/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "伦敦时装周 2025｜时尚编辑与活动内容"
-      ],
+      "h1": ["伦敦时装周 2025｜时尚编辑与活动内容"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6758,16 +5952,10 @@
       "description": "在伦敦时装周语境中创作时尚编辑视觉证据 — Venus Bridge 在伦敦时装周语境中创作并筛选一组相互呼应的全身编辑肖像。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/london-fashion-week-2025",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/london-fashion-week-2025/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "伦敦时装周 2025｜时尚编辑与活动内容"
-      ],
+      "h1": ["伦敦时装周 2025｜时尚编辑与活动内容"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6808,16 +5996,10 @@
       "description": "欧洲行业存在与利益相关方语境 — Venus Bridge 记录零跑汽车在 IAA Mobility 的现场呈现，覆盖展台、车辆、产品细节与观众环境。 — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/leapmotor-iaa-2023",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/leapmotor-iaa-2023/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "零跑汽车 IAA Mobility 2023｜慕尼黑"
-      ],
+      "h1": ["零跑汽车 IAA Mobility 2023｜慕尼黑"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6848,9 +6030,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/leapmotor-iaa-2023",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=NlgxWAOWXesS3CxM :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=NlgxWAOWXesS3CxM :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -6860,16 +6040,10 @@
       "description": "欧洲行业存在与利益相关方语境 — Venus Bridge 记录零跑汽车在 IAA Mobility 的现场呈现，覆盖展台、车辆、产品细节与观众环境。 — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/leapmotor-iaa-2023",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/leapmotor-iaa-2023/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "零跑汽车 IAA Mobility 2023｜慕尼黑"
-      ],
+      "h1": ["零跑汽车 IAA Mobility 2023｜慕尼黑"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6900,9 +6074,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/leapmotor-iaa-2023",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=NlgxWAOWXesS3CxM :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=NlgxWAOWXesS3CxM :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -6912,16 +6084,10 @@
       "description": "欧洲行业存在与利益相关方语境 — Venus Bridge 记录零跑汽车在 IAA Mobility 的现场呈现，覆盖展台、车辆、产品细节与观众环境。 — Munich, Germany",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/leapmotor-iaa-2023",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/leapmotor-iaa-2023/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "零跑汽车 IAA Mobility 2023｜慕尼黑"
-      ],
+      "h1": ["零跑汽车 IAA Mobility 2023｜慕尼黑"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -6952,9 +6118,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/byd-bd11-london",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=adAp8Ne7bm3iAnP2 :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=adAp8Ne7bm3iAnP2 :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -6964,16 +6128,10 @@
       "description": "围绕伦敦产品亮相建立英国市场落地证据 — Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/byd-bd11-london",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/byd-bd11-london/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "BYD BD11 双层公交车伦敦发布"
-      ],
+      "h1": ["BYD BD11 双层公交车伦敦发布"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7004,9 +6162,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/byd-bd11-london",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=adAp8Ne7bm3iAnP2 :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=adAp8Ne7bm3iAnP2 :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -7016,16 +6172,10 @@
       "description": "围绕伦敦产品亮相建立英国市场落地证据 — Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/byd-bd11-london",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/byd-bd11-london/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "BYD BD11 双层公交车伦敦发布"
-      ],
+      "h1": ["BYD BD11 双层公交车伦敦发布"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7069,16 +6219,10 @@
       "description": "围绕伦敦产品亮相建立英国市场落地证据 — Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/byd-bd11-london",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/byd-bd11-london/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "BYD BD11 双层公交车伦敦发布"
-      ],
+      "h1": ["BYD BD11 双层公交车伦敦发布"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7119,16 +6263,10 @@
       "description": "形成具身机器人品牌伦敦活动的视觉证据 — Venus Bridge 记录伦敦科技活动现场，覆盖技术演讲与两款产品展示。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/agibot-london-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/technology-ai/agibot-london-launch/02-cover.webp",
       "lang": "zh-CN",
-      "h1": [
-        "AGIBOT 智元伦敦发布会"
-      ],
+      "h1": ["AGIBOT 智元伦敦发布会"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7169,16 +6307,10 @@
       "description": "形成具身机器人品牌伦敦活动的视觉证据 — Venus Bridge 记录伦敦科技活动现场，覆盖技术演讲与两款产品展示。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/agibot-london-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/technology-ai/agibot-london-launch/02-cover.webp",
       "lang": "zh-CN",
-      "h1": [
-        "AGIBOT 智元伦敦发布会"
-      ],
+      "h1": ["AGIBOT 智元伦敦发布会"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7222,16 +6354,10 @@
       "description": "形成具身机器人品牌伦敦活动的视觉证据 — Venus Bridge 记录伦敦科技活动现场，覆盖技术演讲与两款产品展示。 — London, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/agibot-london-launch",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/technology-ai/agibot-london-launch/02-cover.webp",
       "lang": "zh-CN",
-      "h1": [
-        "AGIBOT 智元伦敦发布会"
-      ],
+      "h1": ["AGIBOT 智元伦敦发布会"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7262,9 +6388,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/london-automotive-brand-film",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=xOCHNhElK8DYdsRQ :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=xOCHNhElK8DYdsRQ :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -7274,16 +6398,10 @@
       "description": "伦敦本地化国际品牌证据 — Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。 — London and England, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/london-automotive-brand-film",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/london-automotive-brand-film/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "伦敦汽车品牌影片"
-      ],
+      "h1": ["伦敦汽车品牌影片"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7324,16 +6442,10 @@
       "description": "伦敦本地化国际品牌证据 — Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。 — London and England, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/london-automotive-brand-film",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/london-automotive-brand-film/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "伦敦汽车品牌影片"
-      ],
+      "h1": ["伦敦汽车品牌影片"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7377,16 +6489,10 @@
       "description": "伦敦本地化国际品牌证据 — Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。 — London and England, UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/london-automotive-brand-film",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/london-automotive-brand-film/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "伦敦汽车品牌影片"
-      ],
+      "h1": ["伦敦汽车品牌影片"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7427,16 +6533,10 @@
       "description": "集中展示美妆、产品、时尚与零售内容能力 — 本能力选集汇集美妆、产品、时尚与零售形式中的摄影及视觉内容筛选。 — UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/beauty-fashion-brand-content",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/beauty-fashion-brand-content/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "美妆与时尚品牌内容精选"
-      ],
+      "h1": ["美妆与时尚品牌内容精选"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7467,9 +6567,7 @@
       "finalUrl": "http://127.0.0.1:3340/zh/work/beauty-fashion-brand-content",
       "consoleErrors": [],
       "pageErrors": [],
-      "failedRequests": [
-        "GET http://127.0.0.1:3340/zh/work?_rsc=R1WOD1fTuB3K1tzg :: net::ERR_ABORTED"
-      ],
+      "failedRequests": ["GET http://127.0.0.1:3340/zh/work?_rsc=R1WOD1fTuB3K1tzg :: net::ERR_ABORTED"],
       "accessibility": {
         "serious": 0,
         "critical": 0,
@@ -7479,16 +6577,10 @@
       "description": "集中展示美妆、产品、时尚与零售内容能力 — 本能力选集汇集美妆、产品、时尚与零售形式中的摄影及视觉内容筛选。 — UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/beauty-fashion-brand-content",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/beauty-fashion-brand-content/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "美妆与时尚品牌内容精选"
-      ],
+      "h1": ["美妆与时尚品牌内容精选"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7532,16 +6624,10 @@
       "description": "集中展示美妆、产品、时尚与零售内容能力 — 本能力选集汇集美妆、产品、时尚与零售形式中的摄影及视觉内容筛选。 — UK",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/beauty-fashion-brand-content",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/fashion-beauty-apparel/beauty-fashion-brand-content/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "美妆与时尚品牌内容精选"
-      ],
+      "h1": ["美妆与时尚品牌内容精选"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7582,16 +6668,10 @@
       "description": "欧洲汽车品牌资产精选项目 — 本能力选集汇集欧洲公路与城市环境中的汽车摄影及实景影像创作。 — Europe",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/european-road-lifestyle",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/european-road-lifestyle/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "欧洲汽车品牌资产项目"
-      ],
+      "h1": ["欧洲汽车品牌资产项目"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7632,16 +6712,10 @@
       "description": "欧洲汽车品牌资产精选项目 — 本能力选集汇集欧洲公路与城市环境中的汽车摄影及实景影像创作。 — Europe",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/european-road-lifestyle",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/european-road-lifestyle/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "欧洲汽车品牌资产项目"
-      ],
+      "h1": ["欧洲汽车品牌资产项目"],
       "h2": [
         "项目目标",
         "商业背景",
@@ -7685,16 +6759,10 @@
       "description": "欧洲汽车品牌资产精选项目 — 本能力选集汇集欧洲公路与城市环境中的汽车摄影及实景影像创作。 — Europe",
       "robots": "noindex, nofollow, noarchive, nocache",
       "canonical": "https://venusbridgemedia.example/zh/work/european-road-lifestyle",
-      "hreflang": [
-        "en-GB",
-        "zh-CN",
-        "x-default"
-      ],
+      "hreflang": ["en-GB", "zh-CN", "x-default"],
       "ogImage": "https://venusbridgemedia.example/media/portfolio/automotive/european-road-lifestyle/01-hero.webp",
       "lang": "zh-CN",
-      "h1": [
-        "欧洲汽车品牌资产项目"
-      ],
+      "h1": ["欧洲汽车品牌资产项目"],
       "h2": [
         "项目目标",
         "商业背景",

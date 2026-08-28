@@ -71,11 +71,11 @@ The goal is not more website content. The goal is a small body of increasingly s
 
 ## Proof-type capture
 
-| Proof type | Capture priority | Typical public presentation |
-| --- | --- | --- |
-| Visual | context, interaction, execution and output imagery | large selected media with concise commercial framing |
-| Relationship | objective, engagement format, participant roles, exact relationship, outputs and permissions | editorial facts and metadata; imagery optional |
-| Process | objective translation, participant selection logic, agenda, bilingual coordination, logistics and documentation method | explicitly labelled process proof; never presented as a delivered case |
+| Proof type   | Capture priority                                                                                                       | Typical public presentation                                            |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Visual       | context, interaction, execution and output imagery                                                                     | large selected media with concise commercial framing                   |
+| Relationship | objective, engagement format, participant roles, exact relationship, outputs and permissions                           | editorial facts and metadata; imagery optional                         |
+| Process      | objective translation, participant selection logic, agenda, bilingual coordination, logistics and documentation method | explicitly labelled process proof; never presented as a delivered case |
 
 ## Capability-specific evidence targets
 

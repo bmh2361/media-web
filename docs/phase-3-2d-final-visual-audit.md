@@ -67,13 +67,13 @@ The baseline hero used an ambiguous people image that could be interpreted as a 
 
 ## Breakpoint audit
 
-| Breakpoint | Result | Observation |
-| --- | --- | --- |
-| 1440 | PASS | Full twelve-column hierarchy, strong evidence scale and intentional asymmetry. |
-| 1280 | PASS | Editorial proportions remain intact without cramped support copy. |
-| 1024 | PASS | Grid collapse is controlled; no clipped type, overflow or stranded media. |
-| 768 | PASS | Tablet order preserves headline, proof and CTA hierarchy. |
-| 390 | PASS | Navigation, headings, media crops and conversion paths remain legible and usable. |
+| Breakpoint | Result | Observation                                                                       |
+| ---------- | ------ | --------------------------------------------------------------------------------- |
+| 1440       | PASS   | Full twelve-column hierarchy, strong evidence scale and intentional asymmetry.    |
+| 1280       | PASS   | Editorial proportions remain intact without cramped support copy.                 |
+| 1024       | PASS   | Grid collapse is controlled; no clipped type, overflow or stranded media.         |
+| 768        | PASS   | Tablet order preserves headline, proof and CTA hierarchy.                         |
+| 390        | PASS   | Navigation, headings, media crops and conversion paths remain legible and usable. |
 
 English and Chinese headlines were inspected at all five widths. No broken line-height, glyph collision, horizontal overflow or unreadable heading was found. Chinese display measures remain deliberately shorter than English measures.
 

@@ -14,16 +14,24 @@ test("case publication is gated by evidence level and a non-empty factual scope"
 });
 
 test("all four case archetypes and capability collections are explicit", () => {
-  for (const archetype of ["market-presence-launch", "industry-event-presence", "talent-activation", "brand-content-system"])
+  for (const archetype of [
+    "market-presence-launch",
+    "industry-event-presence",
+    "talent-activation",
+    "brand-content-system"
+  ])
     assert.match(portfolio, new RegExp(archetype));
   assert.match(detail, /Selected capability work/);
   assert.match(portfolio, /capability selection brings together photography and visual-content curation/);
-  assert.match(portfolio, /capability selection brings together automotive photography and on-location image making/);
+  assert.match(
+    portfolio,
+    /capability selection brings together automotive photography and on-location image making/
+  );
 });
 
 test("the index uses one preload and one intrinsic-ratio cover per project", () => {
   assert.doesNotMatch(index, /cases\.slice\(0, 3\)/);
-  assert.match(index, /initialCover \? <link rel="preload"/);
+  assert.match(index, /initialCover\s*\?\s*\(\s*<link\s+rel="preload"/);
   assert.doesNotMatch(index, /clamp\(440px,58vh,680px\)|aspect-\[4\/3\].*fit="cover"/);
   assert.match(index, /fit="natural"/);
   assert.match(index, /data-preview-image-count="1"/);
@@ -33,7 +41,16 @@ test("the index uses one preload and one intrinsic-ratio cover per project", () 
 });
 
 test("detail pages lead with commercial context, verified responsibility and continued value", () => {
-  for (const marker of ["Project Objective", "Business Context", "Challenge", "Venus Bridge Role", "Strategy / Approach", "Local Delivery", "Outputs / Outcomes", "What Remained Useful"])
+  for (const marker of [
+    "Project Objective",
+    "Business Context",
+    "Challenge",
+    "Venus Bridge Role",
+    "Strategy / Approach",
+    "Local Delivery",
+    "Outputs / Outcomes",
+    "What Remained Useful"
+  ])
     assert.match(detail, new RegExp(marker));
   assert.match(detail, /Project \/ Brand/);
   assert.doesNotMatch(detail, />Client</);

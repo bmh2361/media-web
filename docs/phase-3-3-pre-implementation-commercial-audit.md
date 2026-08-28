@@ -10,14 +10,14 @@
 
 **Website type:** a polished **hybrid brand/portfolio site with an emerging B2B sales layer**. It is not yet a fully persuasive B2B sales site because cases rarely show the client situation, agreed scope, deliverables or commercial effect in enough depth.
 
-| Measure | Score | Diagnosis |
-| --- | ---: | --- |
-| Visual quality | 8/10 | Distinctive editorial system, strong imagery and disciplined layout. |
-| Brand perception | 8/10 | Premium, London-based and culturally fluent. |
-| Commercial clarity | 7/10 | Clear high-level proposition; project models and proof do not fully close the sale. |
-| Trust | 6/10 | Named automotive activity and truth gates help; outcome and institutional proof are thin. |
-| Lead-generation quality | 7/10 | Consistent CTA and low-friction form; no alternative direct contact route in the rendered contact journey. |
-| Conversion architecture | 7/10 | Interest → capabilities/work → contact is coherent; proof-to-proposition fit is incomplete. |
+| Measure                 | Score | Diagnosis                                                                                                  |
+| ----------------------- | ----: | ---------------------------------------------------------------------------------------------------------- |
+| Visual quality          |  8/10 | Distinctive editorial system, strong imagery and disciplined layout.                                       |
+| Brand perception        |  8/10 | Premium, London-based and culturally fluent.                                                               |
+| Commercial clarity      |  7/10 | Clear high-level proposition; project models and proof do not fully close the sale.                        |
+| Trust                   |  6/10 | Named automotive activity and truth gates help; outcome and institutional proof are thin.                  |
+| Lead-generation quality |  7/10 | Consistent CTA and low-friction form; no alternative direct contact route in the rendered contact journey. |
+| Conversion architecture |  7/10 | Interest → capabilities/work → contact is coherent; proof-to-proposition fit is incomplete.                |
 
 **Runtime visual validation: PASS.** EN and 中文 were inspected at 1440×900, 1280×800 and 390×844. Current responsive captures also exist under `audit/phase-3-2c/responsive/`. Live checks found one H1 per key page, no horizontal overflow at the three requested sizes, no missing image `alt` attributes, and working mobile-menu focus/escape behaviour.
 
@@ -37,26 +37,26 @@ Commercial signal: **premium small specialist partner / premium agency**, not en
 
 ## 3. Five-Second Homepage Test
 
-| Question | Score | Evidence |
-| --- | ---: | --- |
-| Who is it for? | 2/2 | Hero body explicitly names ambitious Chinese companies. |
-| What does it help them achieve? | 2/2 | “Build credible UK connections” and create international brand value. |
-| Why is it different? | 1/2 | UK network + bilingual coordination + production are implied, but not uniquely evidenced above the fold. |
-| Why trust it? | 1/2 | The hero shows a real technology environment, but no client/role/result is visible in the first viewport. |
-| What next? | 2/2 | “Discuss a UK Collaboration” and “View Selected Work” are clear. On 390×844 the primary CTA is visible; the secondary sits just below the first viewport. |
+| Question                        | Score | Evidence                                                                                                                                                  |
+| ------------------------------- | ----: | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Who is it for?                  |   2/2 | Hero body explicitly names ambitious Chinese companies.                                                                                                   |
+| What does it help them achieve? |   2/2 | “Build credible UK connections” and create international brand value.                                                                                     |
+| Why is it different?            |   1/2 | UK network + bilingual coordination + production are implied, but not uniquely evidenced above the fold.                                                  |
+| Why trust it?                   |   1/2 | The hero shows a real technology environment, but no client/role/result is visible in the first viewport.                                                 |
+| What next?                      |   2/2 | “Discuss a UK Collaboration” and “View Selected Work” are clear. On 390×844 the primary CTA is visible; the secondary sits just below the first viewport. |
 
 **Total: 8/10.** The proposition is unusually clear for this category. Trust is the missing five-second component.
 
 ## 4. Target Customer Recognition
 
-| Persona | Likely interpretation and route | Buyable offer perceived | Confusion / trust trigger | Contact? | Clarity |
-| --- | --- | --- | --- | --- | ---: |
-| A. Chinese technology founder, not entering UK | A partner that can create expert/industry participation and international assets; Home → Capabilities → Work | International Credibility Project; Industry Presence; content | Robot/event imagery helps, but no named expert or institutional case demonstrates the promised relationship layer | Probably, for a scoped content/event project; less likely for credibility-only work | 8/10 |
-| B. Automotive/mobility brand | UK/European launch and automotive content partner; Work first | Industry Presence, activation, launch documentation, brand content | Changan, CATL, BYD and Leapmotor provide strongest recognition; exact responsibility remains narrow | Yes, especially for photography/event content | 9/10 |
-| C. Fashion/beauty/lifestyle brand | London creative production, talent and styling partner; Work/Capabilities | Brand activation, creator/talent production, international content | Strong aesthetic proof but anonymous clients, no usage/outcome evidence | Yes for production; uncertain for broader activation | 8/10 |
-| D. Chinese corporate/industry organisation | Cross-border project organiser with expert/industry access | Credibility project, roundtable/interview/event content | Institutional language is attractive, yet public selected engagements are empty and confidentiality is doing too much explanatory work | Maybe, after a credibility call | 6/10 |
-| E. Genuine UK-market-entry company | May initially infer broad UK access, then finds no market-entry route | No complete compliance/distribution/channel product is currently public | Correctly redirected away from legacy market-entry pages; the site cannot meet distributor, compliance, sales and long-term expansion needs | Unlikely for full entry; appropriate outcome | 4/10 |
-| F. UK organisation seeking Chinese participants | A China–UK bridge, but messaging is overwhelmingly addressed to Chinese companies | General collaboration inquiry only | No explicit UK-side proposition, participant model or relevant UK proof | Possibly, but self-identification is weak | 4/10 |
+| Persona                                         | Likely interpretation and route                                                                              | Buyable offer perceived                                                 | Confusion / trust trigger                                                                                                                   | Contact?                                                                            | Clarity |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------: |
+| A. Chinese technology founder, not entering UK  | A partner that can create expert/industry participation and international assets; Home → Capabilities → Work | International Credibility Project; Industry Presence; content           | Robot/event imagery helps, but no named expert or institutional case demonstrates the promised relationship layer                           | Probably, for a scoped content/event project; less likely for credibility-only work |    8/10 |
+| B. Automotive/mobility brand                    | UK/European launch and automotive content partner; Work first                                                | Industry Presence, activation, launch documentation, brand content      | Changan, CATL, BYD and Leapmotor provide strongest recognition; exact responsibility remains narrow                                         | Yes, especially for photography/event content                                       |    9/10 |
+| C. Fashion/beauty/lifestyle brand               | London creative production, talent and styling partner; Work/Capabilities                                    | Brand activation, creator/talent production, international content      | Strong aesthetic proof but anonymous clients, no usage/outcome evidence                                                                     | Yes for production; uncertain for broader activation                                |    8/10 |
+| D. Chinese corporate/industry organisation      | Cross-border project organiser with expert/industry access                                                   | Credibility project, roundtable/interview/event content                 | Institutional language is attractive, yet public selected engagements are empty and confidentiality is doing too much explanatory work      | Maybe, after a credibility call                                                     |    6/10 |
+| E. Genuine UK-market-entry company              | May initially infer broad UK access, then finds no market-entry route                                        | No complete compliance/distribution/channel product is currently public | Correctly redirected away from legacy market-entry pages; the site cannot meet distributor, compliance, sales and long-term expansion needs | Unlikely for full entry; appropriate outcome                                        |    4/10 |
+| F. UK organisation seeking Chinese participants | A China–UK bridge, but messaging is overwhelmingly addressed to Chinese companies                            | General collaboration inquiry only                                      | No explicit UK-side proposition, participant model or relevant UK proof                                                                     | Possibly, but self-identification is weak                                           |    4/10 |
 
 **Client self-identification: 7/10.** The homepage starts from outcomes (“What could the right UK project make possible?”), but “right rooms”, “right people” and “credible evidence” remain broad. Automotive and creative buyers recognise themselves fastest; UK-side and institutional buyers do not.
 
@@ -70,12 +70,12 @@ Commercial signal: **premium small specialist partner / premium agency**, not en
 
 **Four current project models:** International Credibility Project; UK Industry Presence Project; International Brand Activation; UK Brand Content Production.
 
-| Model | What it is | Buyable? | Outcome-led? | Proof fit |
-| --- | --- | --- | --- | --- |
-| International Credibility Project | Proposed project type/outcome | Partially | Yes | Weak: linked brand-film work proves content, not institutional credibility |
-| UK Industry Presence Project | Event/exhibition project type | Yes | Yes | Strongest: Changan/CATL/Leapmotor support the visible component |
-| International Brand Activation | Activation concept | Partially | Yes | Medium: visual/talent proof, little activation scope/outcome proof |
-| UK Brand Content Production | Concrete production offer | Yes | Mostly | Strong: multiple automotive/fashion/beauty examples |
+| Model                             | What it is                    | Buyable?  | Outcome-led? | Proof fit                                                                  |
+| --------------------------------- | ----------------------------- | --------- | ------------ | -------------------------------------------------------------------------- |
+| International Credibility Project | Proposed project type/outcome | Partially | Yes          | Weak: linked brand-film work proves content, not institutional credibility |
+| UK Industry Presence Project      | Event/exhibition project type | Yes       | Yes          | Strongest: Changan/CATL/Leapmotor support the visible component            |
+| International Brand Activation    | Activation concept            | Partially | Yes          | Medium: visual/talent proof, little activation scope/outcome proof         |
+| UK Brand Content Production       | Concrete production offer     | Yes       | Mostly       | Strong: multiple automotive/fashion/beauty examples                        |
 
 The architecture is simpler than earlier source systems but not fully settled: the navigation presents capabilities, while the actual “products” appear late on a 10,000px-long Capabilities page inside collapsed disclosures.
 
@@ -85,20 +85,20 @@ The architecture is simpler than earlier source systems but not fully settled: t
 
 Specific model scoring (10 is better except overpromise risk, where 10 is riskier):
 
-| Model | Relevance | Proof | Readiness | Comprehension | Differentiation | Overpromise risk | Ease of sale | Contract value | Upsell |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| International Credibility Project | 8 | 3 | 5 | 6 | 8 | 7 | 5 | 8 | 8 |
-| UK Industry Presence Project | 8 | 8 | 8 | 8 | 6 | 3 | 8 | 7 | 8 |
-| International Brand Activation | 8 | 5 | 7 | 7 | 6 | 4 | 7 | 7 | 8 |
-| UK Brand Content Production | 9 | 9 | 9 | 9 | 5 | 2 | 9 | 6 | 7 |
+| Model                             | Relevance | Proof | Readiness | Comprehension | Differentiation | Overpromise risk | Ease of sale | Contract value | Upsell |
+| --------------------------------- | --------: | ----: | --------: | ------------: | --------------: | ---------------: | -----------: | -------------: | -----: |
+| International Credibility Project |         8 |     3 |         5 |             6 |               8 |                7 |            5 |              8 |      8 |
+| UK Industry Presence Project      |         8 |     8 |         8 |             8 |               6 |                3 |            8 |              7 |      8 |
+| International Brand Activation    |         8 |     5 |         7 |             7 |               6 |                4 |            7 |              7 |      8 |
+| UK Brand Content Production       |         9 |     9 |         9 |             9 |               5 |                2 |            9 |              6 |      7 |
 
 **Three-product hypothesis:**
 
-| Possible future product | Fit | Proof | Deliver today | Demand clarity | Value | Differentiation | Risk | Conclusion |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| International Credibility | 9 | 4 | 6 | 7 | 8 | 8 | High if access/endorsement is inferred | PARTIALLY SUPPORTED |
-| UK Brand Activation | 8 | 6 | 8 | 8 | 8 | 6 | Moderate role inflation | SUPPORTED |
-| International Brand Content | 9 | 9 | 9 | 9 | 7 | 5 | Low | STRONGLY SUPPORTED |
+| Possible future product     | Fit | Proof | Deliver today | Demand clarity | Value | Differentiation |                                   Risk | Conclusion          |
+| --------------------------- | --: | ----: | ------------: | -------------: | ----: | --------------: | -------------------------------------: | ------------------- |
+| International Credibility   |   9 |     4 |             6 |              7 |     8 |               8 | High if access/endorsement is inferred | PARTIALLY SUPPORTED |
+| UK Brand Activation         |   8 |     6 |             8 |              8 |     8 |               6 |                Moderate role inflation | SUPPORTED           |
+| International Brand Content |   9 |     9 |             9 |              9 |     7 |               5 |                                    Low | STRONGLY SUPPORTED  |
 
 Overall: **PARTIAL.** The simplification is coherent, but the flagship credibility product needs proof before it can carry the commercial system.
 
@@ -108,16 +108,16 @@ Overall: **PARTIAL.** The simplification is coherent, but the flagship credibili
 
 Terminology inventory:
 
-| Term/claim | Surface | Classification | Reason |
-| --- | --- | --- | --- |
-| “UK partnerships · brand credibility · creative execution” | Home hero | SAFE | Accurately frames current direction without full entry. |
-| “connect ambitious Chinese companies with UK institutions…” | Home hero | AMBIGUOUS | “Connect” may imply verified access at scale; public relationship register is empty. |
-| “Build the Right UK Network” / “assemble institutions…” | Home process | AMBIGUOUS | Sounds like dependable network assembly beyond demonstrated cases. |
-| “London-based delivery” | Home/footer | SAFE | Governed as verified. |
-| “UK Industry Presence” | Capabilities/models | SAFE–AMBIGUOUS | Event proof exists, but two leading proofs are Munich rather than UK. |
-| “International Brand Activation” | Capabilities | SAFE if scoped | Current proof supports creative activation elements, not full launch ownership. |
-| Market-entry coordination, setup, compliance, referrals | Redirected/dead source content | HIGH-RISK if re-exposed | No verified partner network; independent legal review pending; source reviews stale. |
-| Distribution, channel, sales, certification | Current public UI | ABSENT | Correctly not promised. |
+| Term/claim                                                  | Surface                        | Classification          | Reason                                                                               |
+| ----------------------------------------------------------- | ------------------------------ | ----------------------- | ------------------------------------------------------------------------------------ |
+| “UK partnerships · brand credibility · creative execution”  | Home hero                      | SAFE                    | Accurately frames current direction without full entry.                              |
+| “connect ambitious Chinese companies with UK institutions…” | Home hero                      | AMBIGUOUS               | “Connect” may imply verified access at scale; public relationship register is empty. |
+| “Build the Right UK Network” / “assemble institutions…”     | Home process                   | AMBIGUOUS               | Sounds like dependable network assembly beyond demonstrated cases.                   |
+| “London-based delivery”                                     | Home/footer                    | SAFE                    | Governed as verified.                                                                |
+| “UK Industry Presence”                                      | Capabilities/models            | SAFE–AMBIGUOUS          | Event proof exists, but two leading proofs are Munich rather than UK.                |
+| “International Brand Activation”                            | Capabilities                   | SAFE if scoped          | Current proof supports creative activation elements, not full launch ownership.      |
+| Market-entry coordination, setup, compliance, referrals     | Redirected/dead source content | HIGH-RISK if re-exposed | No verified partner network; independent legal review pending; source reviews stale. |
+| Distribution, channel, sales, certification                 | Current public UI              | ABSENT                  | Correctly not promised.                                                              |
 
 The production release validator also rejects market-entry publication because legal review and source review are not current. This is effective truth-gating and must be preserved.
 
@@ -154,16 +154,16 @@ However, the homepage section titled **“Selected UK activity” includes Chang
 
 ## 12. Homepage Journey
 
-| Section | Purpose / message | Target | Commercial / proof / CTA / visual function | Primary role | Issue |
-| --- | --- | --- | --- | --- | --- |
-| Hero | Credible UK connections → international value | Chinese decision-maker | Position, contact/work CTAs, technology visual | Selling/differentiating | Trust proof absent above fold; “connect” broad. |
-| Selected UK Activity | Show early range | All | Four linked visual projects | Proving | First proof is section 2—GOOD—but geography label is inaccurate. |
-| Outcomes | Four client ambitions | B2B buyers | Self-identification with media | Explaining/selling | Broad outcomes not tied to case results. |
-| Capabilities | Four operating pillars | Evaluators | Route to Capabilities | Explaining | Institutional capability has no preview image/proof. |
-| Selected Work | Curated deeper proof | Evaluators | Three visual projects + Work CTA | Proving | Repeats CATL/Teal already seen; adds length more than new evidence. |
-| Process | Outcome → network → delivery | Risk-conscious buyer | Three-step method | Explaining/trust | “assemble network” is stronger than proof. |
-| Why Venus Bridge | Bilingual single coordination layer | Cross-border buyer | Differentiation | Differentiating | No team/accountability evidence. |
-| Final CTA | Start conversation | High intent | Contact CTA | Converting | Clear. |
+| Section              | Purpose / message                             | Target                 | Commercial / proof / CTA / visual function     | Primary role            | Issue                                                               |
+| -------------------- | --------------------------------------------- | ---------------------- | ---------------------------------------------- | ----------------------- | ------------------------------------------------------------------- |
+| Hero                 | Credible UK connections → international value | Chinese decision-maker | Position, contact/work CTAs, technology visual | Selling/differentiating | Trust proof absent above fold; “connect” broad.                     |
+| Selected UK Activity | Show early range                              | All                    | Four linked visual projects                    | Proving                 | First proof is section 2—GOOD—but geography label is inaccurate.    |
+| Outcomes             | Four client ambitions                         | B2B buyers             | Self-identification with media                 | Explaining/selling      | Broad outcomes not tied to case results.                            |
+| Capabilities         | Four operating pillars                        | Evaluators             | Route to Capabilities                          | Explaining              | Institutional capability has no preview image/proof.                |
+| Selected Work        | Curated deeper proof                          | Evaluators             | Three visual projects + Work CTA               | Proving                 | Repeats CATL/Teal already seen; adds length more than new evidence. |
+| Process              | Outcome → network → delivery                  | Risk-conscious buyer   | Three-step method                              | Explaining/trust        | “assemble network” is stronger than proof.                          |
+| Why Venus Bridge     | Bilingual single coordination layer           | Cross-border buyer     | Differentiation                                | Differentiating         | No team/accountability evidence.                                    |
+| Final CTA            | Start conversation                            | High intent            | Contact CTA                                    | Converting              | Clear.                                                              |
 
 The homepage is approximately 8,200px at 1280px wide and 10,783px on 390px mobile. It is not structurally bloated at eight sections, but proof duplication between early activity and Selected Work contributes avoidable length.
 
@@ -171,20 +171,20 @@ The homepage is approximately 8,200px at 1280px wide and 10,783px on 390px mobil
 
 ## 13. Proof Architecture
 
-| Proof item/category | Type | Strength | Best use | Risk |
-| --- | --- | --- | --- | --- |
-| Changan 2025 Munich | Client, visual, execution, participation | A | Home, Work, industry presence | Medium: “UK” label; role limited to capture/photography |
-| CATL Open Day Munich | Client, visual, execution | A | Home, Work, technology/events | Medium: role/title says automotive launch although CATL context is energy technology |
-| BYD BD11 London | Client, location, execution | A | Home/Work/Real UK Presence | Low–Medium: no date/outcome/deliverables |
-| Leapmotor IAA Munich | Client, exhibition, visual | A | Work, industry presence | Low–Medium: documentation only |
-| London automotive film (BYD in registry) | Client, UK location, production | A/B | Home, content | Medium: public title anonymises brand while registry names BYD |
-| Teal fashion series | Visual/capability | B | Creative production/talent | Medium: no client, location or commercial outcome |
-| Fashion/apparel series | Visual/capability | B | Capabilities | Medium |
-| Beauty/makeup series | Visual/capability | B | Capabilities | Medium |
-| European road/lifestyle | Visual/capability | B | Automotive content | Medium: absent from Work index despite indexed detail route |
-| Expert/panel/technology capability images | Participation/visual | C | Capabilities with explicit disclosure | High if treated as relationship proof |
-| Institutional relationship register | Institutional | D/empty | Not public | Low because correctly suppressed |
-| Case metrics/testimonials/outcomes | Outcome/commercial | Missing | Home/cases | High opportunity cost |
+| Proof item/category                       | Type                                     | Strength | Best use                              | Risk                                                                                 |
+| ----------------------------------------- | ---------------------------------------- | -------- | ------------------------------------- | ------------------------------------------------------------------------------------ |
+| Changan 2025 Munich                       | Client, visual, execution, participation | A        | Home, Work, industry presence         | Medium: “UK” label; role limited to capture/photography                              |
+| CATL Open Day Munich                      | Client, visual, execution                | A        | Home, Work, technology/events         | Medium: role/title says automotive launch although CATL context is energy technology |
+| BYD BD11 London                           | Client, location, execution              | A        | Home/Work/Real UK Presence            | Low–Medium: no date/outcome/deliverables                                             |
+| Leapmotor IAA Munich                      | Client, exhibition, visual               | A        | Work, industry presence               | Low–Medium: documentation only                                                       |
+| London automotive film (BYD in registry)  | Client, UK location, production          | A/B      | Home, content                         | Medium: public title anonymises brand while registry names BYD                       |
+| Teal fashion series                       | Visual/capability                        | B        | Creative production/talent            | Medium: no client, location or commercial outcome                                    |
+| Fashion/apparel series                    | Visual/capability                        | B        | Capabilities                          | Medium                                                                               |
+| Beauty/makeup series                      | Visual/capability                        | B        | Capabilities                          | Medium                                                                               |
+| European road/lifestyle                   | Visual/capability                        | B        | Automotive content                    | Medium: absent from Work index despite indexed detail route                          |
+| Expert/panel/technology capability images | Participation/visual                     | C        | Capabilities with explicit disclosure | High if treated as relationship proof                                                |
+| Institutional relationship register       | Institutional                            | D/empty  | Not public                            | Low because correctly suppressed                                                     |
+| Case metrics/testimonials/outcomes        | Outcome/commercial                       | Missing  | Home/cases                            | High opportunity cost                                                                |
 
 The evidence governance is technically strong: media rights are approved, named claims require approval, participation is distinguished from endorsement, and unsafe records fail closed. Public storytelling does not yet exploit the governance structure to communicate role and limitations clearly.
 
@@ -192,17 +192,17 @@ The evidence governance is technically strong: media rights are approved, named 
 
 All nine detail pages answer project identity, context, activity, Venus Bridge role, location where known, capabilities and visual evidence. They generally do **not** answer the original client need, what Venus Bridge did not do, named collaborators, distinct delivered outputs, retained evidence or commercial importance. In the data model, `deliverables` are usually absent, so the UI repeats role items as “Delivered Outputs.”
 
-| Case | Role clarity | Commercial relevance | Proof | Visual | Credibility | Similar-lead value |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Changan European Launch | 7 | 8 | 9 | 9 | 8 | 8 |
-| CATL Open Day | 7 | 8 | 9 | 8 | 8 | 8 |
-| BYD BD11 London | 7 | 8 | 9 | 8 | 9 | 8 |
-| Leapmotor IAA | 7 | 7 | 9 | 8 | 8 | 7 |
-| London Automotive Brand Film | 7 | 8 | 8 | 9 | 7 | 8 |
-| European Road & Lifestyle | 6 | 6 | 6 | 8 | 6 | 6 |
-| Teal Editorial | 6 | 6 | 6 | 9 | 6 | 7 |
-| Commercial Fashion/Apparel | 6 | 6 | 6 | 8 | 6 | 6 |
-| Creative Beauty/Makeup | 6 | 5 | 6 | 8 | 6 | 6 |
+| Case                         | Role clarity | Commercial relevance | Proof | Visual | Credibility | Similar-lead value |
+| ---------------------------- | -----------: | -------------------: | ----: | -----: | ----------: | -----------------: |
+| Changan European Launch      |            7 |                    8 |     9 |      9 |           8 |                  8 |
+| CATL Open Day                |            7 |                    8 |     9 |      8 |           8 |                  8 |
+| BYD BD11 London              |            7 |                    8 |     9 |      8 |           9 |                  8 |
+| Leapmotor IAA                |            7 |                    7 |     9 |      8 |           8 |                  7 |
+| London Automotive Brand Film |            7 |                    8 |     8 |      9 |           7 |                  8 |
+| European Road & Lifestyle    |            6 |                    6 |     6 |      8 |           6 |                  6 |
+| Teal Editorial               |            6 |                    6 |     6 |      9 |           6 |                  7 |
+| Commercial Fashion/Apparel   |            6 |                    6 |     6 |      8 |           6 |                  6 |
+| Creative Beauty/Makeup       |            6 |                    5 |     6 |      8 |           6 |                  6 |
 
 Strongest ranking: **BYD BD11, Changan, CATL, Leapmotor, London Automotive Brand Film.** These are also the strongest five commercial proofs. The current Work index shows eight projects and omits European Road & Lifestyle while its detail route remains sitemap-indexed.
 
@@ -211,11 +211,11 @@ Strongest ranking: **BYD BD11, Changan, CATL, Leapmotor, London Automotive Brand
 Selected Work is ranked by a **balanced visual/commercial logic**, but visual variety sometimes wins over proof strength. Featured: Changan, CATL, Teal, London Film. Supporting: Leapmotor, BYD, Commercial Fashion, Creative Beauty.
 
 | Featured project | Commercial proof | Visual | Strategic relevance | Role clarity | Lead value |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Changan | 9 | 9 | 8 | 7 | 8 |
-| CATL | 9 | 8 | 8 | 7 | 8 |
-| Teal | 5 | 9 | 7 | 6 | 7 |
-| London film | 8 | 9 | 9 | 7 | 8 |
+| ---------------- | ---------------: | -----: | ------------------: | -----------: | ---------: |
+| Changan          |                9 |      9 |                   8 |            7 |          8 |
+| CATL             |                9 |      8 |                   8 |            7 |          8 |
+| Teal             |                5 |      9 |                   7 |            6 |          7 |
+| London film      |                8 |      9 |                   9 |            7 |          8 |
 
 BYD London is commercially stronger and more geographically relevant than Teal for the “Real UK Presence” story, but is demoted to supporting work. This is the clearest example of prettier/varied work outranking stronger strategic evidence.
 
@@ -266,12 +266,12 @@ Legacy routes are handled by permanent redirects without loops. This is a sound 
 
 The page clarifies the operating system and is visually strong, but at approximately 10,300px desktop / 12,500px mobile it is long and mixes capabilities, visual showcase and products.
 
-| Capability | Current status | Evidence-based classification |
-| --- | --- | --- |
-| Institutional & Expert Collaboration | Carefully bounded; no selected engagements | **EXPERIMENTAL** until publishable proof exists |
-| Industry Presence & Events | Multiple named events/exhibitions | **CORE** |
-| Creators, Talent & Cultural Partnerships | Strong capability imagery, anonymous relationship proof | **SUPPORTING** |
-| Creative Production & Brand Assets | Extensive cases and images | **CORE** |
+| Capability                               | Current status                                          | Evidence-based classification                   |
+| ---------------------------------------- | ------------------------------------------------------- | ----------------------------------------------- |
+| Institutional & Expert Collaboration     | Carefully bounded; no selected engagements              | **EXPERIMENTAL** until publishable proof exists |
+| Industry Presence & Events               | Multiple named events/exhibitions                       | **CORE**                                        |
+| Creators, Talent & Cultural Partnerships | Strong capability imagery, anonymous relationship proof | **SUPPORTING**                                  |
+| Creative Production & Brand Assets       | Extensive cases and images                              | **CORE**                                        |
 
 The institutional section correctly states participation ≠ endorsement, publishes no logos and explains confidentiality. Yet it appears first and lacks a concrete engagement, making the capability hierarchy more ambitious than the evidence hierarchy. Product models appear late and are collapsed, so the page feels more like a premium capability/showcase catalogue than a product sales page.
 
@@ -285,13 +285,13 @@ It underuses founder/team credibility. Although controlled team-role data exists
 
 Homepage → inquiry is **one click** from hero/header/final CTA. The form requests name, optional company/role, email, optional WeChat/timing/support type, objective and consent. It is low-friction and asks the buyer to start with the outcome.
 
-| Measure | Score | Finding |
-| --- | ---: | --- |
-| CTA clarity | 9/10 | Consistent collaboration language. |
-| Form clarity | 9/10 | Labels, required states and intent are clear. |
-| Lead qualification | 6/10 | Captures support and timing, but not budget, location, market stage, intended audience or project model. |
-| Friction | 8/10 | Appropriately low; checkbox itself is only 13×16px though its label is clickable. |
-| Commercial usefulness | 7/10 | Good first brief; not enough to distinguish credibility/activation/content beyond capability choices. |
+| Measure               | Score | Finding                                                                                                  |
+| --------------------- | ----: | -------------------------------------------------------------------------------------------------------- |
+| CTA clarity           |  9/10 | Consistent collaboration language.                                                                       |
+| Form clarity          |  9/10 | Labels, required states and intent are clear.                                                            |
+| Lead qualification    |  6/10 | Captures support and timing, but not budget, location, market stage, intended audience or project model. |
+| Friction              |  8/10 | Appropriately low; checkbox itself is only 13×16px though its label is clickable.                        |
+| Commercial usefulness |  7/10 | Good first brief; not enough to distinguish credibility/activation/content beyond capability choices.    |
 
 It feels like **Start a project/conversation**, not generic “Contact us.” There is no visible direct email, phone, company address or response-time expectation. Therefore the form is a single point of conversion failure. The production release gate currently fails `CONTACT_DELIVERY_VERIFIED` and webhook/origin configuration, so live delivery cannot be assumed.
 
@@ -299,13 +299,13 @@ It feels like **Start a project/conversation**, not generic “Contact us.” Th
 
 Significant CTA inventory:
 
-| Label | Main surfaces | Destination | Intent / friction |
-| --- | --- | --- | --- |
-| Discuss a UK Collaboration | Header, Home hero/final, Capabilities final, cases, About, Contact submit | Contact or submit | Primary conversion; consistent and low ambiguity |
-| View Selected Work | Home hero/section | Work | Proof route; low friction |
-| Explore Capabilities | Home | Capabilities | Evaluation route |
-| View project / related work | Home, Capabilities, Work, cases | Case detail | Proof deepening |
-| Back to selected work / View Project | Case | Work/next case | Exploration |
+| Label                                | Main surfaces                                                             | Destination       | Intent / friction                                |
+| ------------------------------------ | ------------------------------------------------------------------------- | ----------------- | ------------------------------------------------ |
+| Discuss a UK Collaboration           | Header, Home hero/final, Capabilities final, cases, About, Contact submit | Contact or submit | Primary conversion; consistent and low ambiguity |
+| View Selected Work                   | Home hero/section                                                         | Work              | Proof route; low friction                        |
+| Explore Capabilities                 | Home                                                                      | Capabilities      | Evaluation route                                 |
+| View project / related work          | Home, Capabilities, Work, cases                                           | Case detail       | Proof deepening                                  |
+| Back to selected work / View Project | Case                                                                      | Work/next case    | Exploration                                      |
 
 The website asks for a coherent set of actions, not too many. Minor inconsistency: the same “Discuss a UK Collaboration” label is both a navigation CTA and the form submit button; before submission it describes a conversation, after form completion it functions as “send.”
 
@@ -323,14 +323,14 @@ Fake-trust risk is well controlled: no decorative institution logo wall and no u
 
 Endorsement/participation classifications:
 
-| Current pattern | Classification |
-| --- | --- |
-| “Participation is not endorsement” | SAFE; preserve |
-| Institutional/executive/expert engagements remain confidential | REQUIRES EVIDENCE before used as proof |
-| “connect … with UK institutions” | REWRITE RECOMMENDED unless relationship capacity can be evidenced |
-| Panel/interview images used as capability context | SAFE with contextual alt/caption; not institutional proof |
-| Any future institution/person/logo naming | REQUIRES PERMISSION and exact role wording |
-| Munich work labelled UK activity | REWRITE RECOMMENDED immediately; evidence contradicts label |
+| Current pattern                                                | Classification                                                    |
+| -------------------------------------------------------------- | ----------------------------------------------------------------- |
+| “Participation is not endorsement”                             | SAFE; preserve                                                    |
+| Institutional/executive/expert engagements remain confidential | REQUIRES EVIDENCE before used as proof                            |
+| “connect … with UK institutions”                               | REWRITE RECOMMENDED unless relationship capacity can be evidenced |
+| Panel/interview images used as capability context              | SAFE with contextual alt/caption; not institutional proof         |
+| Any future institution/person/logo naming                      | REQUIRES PERMISSION and exact role wording                        |
+| Munich work labelled UK activity                               | REWRITE RECOMMENDED immediately; evidence contradicts label       |
 
 ## 25. Commercial Differentiation
 
@@ -348,24 +348,24 @@ Missing differentiation is not another slogan; it is evidence that Venus Bridge 
 
 ## 26. Visual Design
 
-| Dimension | /10 | Finding |
-| --- | ---: | --- |
-| Typography | 9 | Distinct, large and controlled bilingual display system. |
-| Hierarchy | 8 | Clear editorial chapters; some long sections. |
-| Spacing | 8 | Premium rhythm; mobile pages become very long. |
-| Whitespace | 8 | Confident; blank institutional preview can feel under-evidenced. |
-| Colour | 8 | Consistent ink/pearl/champagne palette. |
-| Editorial quality | 9 | Strongest brand asset. |
-| Image scale | 9 | Immersive and premium. |
-| Layout rhythm | 8 | Varied, though image-led patterns repeat. |
-| Grid | 9 | Robust across requested sizes. |
-| Card system | 8 | Consistent without appearing template-like. |
-| Section transitions | 8 | Clear tonal chapters. |
-| Visual repetition | 7 | CATL/Teal and similar proof recur. |
-| Premium perception | 9 | High. |
-| B2B credibility | 7 | Design says premium; evidence still says production. |
-| Creative credibility | 9 | Excellent. |
-| Institutional credibility | 5 | No names, records or outcomes. |
+| Dimension                 | /10 | Finding                                                          |
+| ------------------------- | --: | ---------------------------------------------------------------- |
+| Typography                |   9 | Distinct, large and controlled bilingual display system.         |
+| Hierarchy                 |   8 | Clear editorial chapters; some long sections.                    |
+| Spacing                   |   8 | Premium rhythm; mobile pages become very long.                   |
+| Whitespace                |   8 | Confident; blank institutional preview can feel under-evidenced. |
+| Colour                    |   8 | Consistent ink/pearl/champagne palette.                          |
+| Editorial quality         |   9 | Strongest brand asset.                                           |
+| Image scale               |   9 | Immersive and premium.                                           |
+| Layout rhythm             |   8 | Varied, though image-led patterns repeat.                        |
+| Grid                      |   9 | Robust across requested sizes.                                   |
+| Card system               |   8 | Consistent without appearing template-like.                      |
+| Section transitions       |   8 | Clear tonal chapters.                                            |
+| Visual repetition         |   7 | CATL/Teal and similar proof recur.                               |
+| Premium perception        |   9 | High.                                                            |
+| B2B credibility           |   7 | Design says premium; evidence still says production.             |
+| Creative credibility      |   9 | Excellent.                                                       |
+| Institutional credibility |   5 | No names, records or outcomes.                                   |
 
 The site feels premium editorial/creative, not generic or underdesigned. It occasionally becomes overdesigned relative to the amount of commercial information—large image walls can make capability evidence look stronger than the underlying claim.
 
@@ -435,14 +435,14 @@ Risks:
 
 ## 33. Technical Health
 
-| Check | Result |
-| --- | --- |
-| TypeScript (`tsc --noEmit`) | PASS |
-| Lint (`eslint . --max-warnings=0`) | PASS |
+| Check                                  | Result                                      |
+| -------------------------------------- | ------------------------------------------- |
+| TypeScript (`tsc --noEmit`)            | PASS                                        |
+| Lint (`eslint . --max-warnings=0`)     | PASS                                        |
 | Unit/content/evidence/truth-gate tests | 90 passed, 0 failed, 11 skipped (101 total) |
-| Content validation | PASS: 6 governed case records |
-| Production build | PASS: 88 static pages generated |
-| Production release validation | **FAIL: 28 failed release checks** |
+| Content validation                     | PASS: 6 governed case records               |
+| Production build                       | PASS: 88 static pages generated             |
+| Production release validation          | **FAIL: 28 failed release checks**          |
 
 Release failures include missing production profile/modes, HTTPS site/webhook/origin configuration, company legal name/number/address/effective dates, legal/terms approval, contact delivery confirmation, distributed rate limiting, media/case/social/contact human confirmations, stale market-entry source review and legacy critical-media placeholders. Some failures concern redirected legacy surfaces, but the company/contact/indexing failures affect the canonical release.
 
@@ -477,24 +477,24 @@ The working tree was already heavily modified before the audit. This report does
 
 ## 35. Keep / Refine / Reposition / Remove Matrix
 
-| Area | Current State | Keep | Refine | Reposition | Remove | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| Hero | Credibility + UK collaboration | Core proposition, clear CTA | Trust proof and narrower “connect” semantics | No | No | Strong five-second clarity |
-| Early Proof | Four visual projects | Proof immediately after hero | Geography/taxonomy and mix | Toward named execution | No | Munich ≠ UK |
-| Project Models | Four collapsed models | Outcome-led logic | Visibility, proof and buyability | Possibly simplify after proof review | Do not remove yet | Product/capability score 6/10 |
-| Capabilities | Four pillars | Execution/content pillars | Hierarchy and proof captions | Institutional to experimental/supporting until proven | No | Evidence imbalance |
-| Selected Work | Four featured + four supporting | Strong imagery and cases | Rank by proof; include/resolve omitted route | More commercial proof | No | BYD underweighted |
-| Case Studies | Nine visual records | Truth-gated structure and galleries | Brief, limits, deliverables, outcome | From portfolio pages to sales proof | No | Repeated role/output |
-| About | Cross-border execution story | Two-context/process story | Founder/team/company facts | Toward accountability | No | Current person-free page |
-| Contact | Low-friction objective form | Simple form and consent | Intent qualification, fallback, delivery verification | No | No | One-click journey |
-| CTA | Discuss collaboration | Consistency | Submit-label nuance | No | No | Coherent path |
-| Navigation | Four flat items | Entire structure | Optional product recognition only | No | No | Buyer-readable |
-| Institutional language | Bounded but prominent | Participation ≠ endorsement | Narrow access claims | Supporting/experimental | No | Empty relationship register |
-| Market-entry language | Redirected/suppressed | Truth gates and redirects | Delete stale maintenance only in later phase | Keep non-public | Public product | No partner/legal approval |
-| Creative production positioning | Strongest proof | Preserve as commercial engine | Tie to outcomes | Secondary, not hidden | No | 9/10 creative credibility |
-| Credibility positioning | Primary copy | Strategic direction | Evidence alignment | Make defensible, not louder | No | Copy/proof mismatch |
-| UK execution positioning | Clear | London/local execution | Separate UK from Europe | No | No | London proof + Munich issue |
-| China–UK positioning | Bilingual bridge | Preserve | Demonstrate China-side value | No | No | Differentiator but underproved |
+| Area                            | Current State                   | Keep                                | Refine                                                | Reposition                                            | Remove            | Evidence                       |
+| ------------------------------- | ------------------------------- | ----------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------- | ------------------------------ |
+| Hero                            | Credibility + UK collaboration  | Core proposition, clear CTA         | Trust proof and narrower “connect” semantics          | No                                                    | No                | Strong five-second clarity     |
+| Early Proof                     | Four visual projects            | Proof immediately after hero        | Geography/taxonomy and mix                            | Toward named execution                                | No                | Munich ≠ UK                    |
+| Project Models                  | Four collapsed models           | Outcome-led logic                   | Visibility, proof and buyability                      | Possibly simplify after proof review                  | Do not remove yet | Product/capability score 6/10  |
+| Capabilities                    | Four pillars                    | Execution/content pillars           | Hierarchy and proof captions                          | Institutional to experimental/supporting until proven | No                | Evidence imbalance             |
+| Selected Work                   | Four featured + four supporting | Strong imagery and cases            | Rank by proof; include/resolve omitted route          | More commercial proof                                 | No                | BYD underweighted              |
+| Case Studies                    | Nine visual records             | Truth-gated structure and galleries | Brief, limits, deliverables, outcome                  | From portfolio pages to sales proof                   | No                | Repeated role/output           |
+| About                           | Cross-border execution story    | Two-context/process story           | Founder/team/company facts                            | Toward accountability                                 | No                | Current person-free page       |
+| Contact                         | Low-friction objective form     | Simple form and consent             | Intent qualification, fallback, delivery verification | No                                                    | No                | One-click journey              |
+| CTA                             | Discuss collaboration           | Consistency                         | Submit-label nuance                                   | No                                                    | No                | Coherent path                  |
+| Navigation                      | Four flat items                 | Entire structure                    | Optional product recognition only                     | No                                                    | No                | Buyer-readable                 |
+| Institutional language          | Bounded but prominent           | Participation ≠ endorsement         | Narrow access claims                                  | Supporting/experimental                               | No                | Empty relationship register    |
+| Market-entry language           | Redirected/suppressed           | Truth gates and redirects           | Delete stale maintenance only in later phase          | Keep non-public                                       | Public product    | No partner/legal approval      |
+| Creative production positioning | Strongest proof                 | Preserve as commercial engine       | Tie to outcomes                                       | Secondary, not hidden                                 | No                | 9/10 creative credibility      |
+| Credibility positioning         | Primary copy                    | Strategic direction                 | Evidence alignment                                    | Make defensible, not louder                           | No                | Copy/proof mismatch            |
+| UK execution positioning        | Clear                           | London/local execution              | Separate UK from Europe                               | No                                                    | No                | London proof + Munich issue    |
+| China–UK positioning            | Bilingual bridge                | Preserve                            | Demonstrate China-side value                          | No                                                    | No                | Differentiator but underproved |
 
 ## 36. Strategic Conclusions
 

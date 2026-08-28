@@ -49,4 +49,3 @@ The positioning, primary navigation, four capabilities, four commercial project 
 - Images replaced in major roles: 2 (Home lead; Work brand-film frame).
 - Images removed from public major-page compositions: 8 (three Creator supports, two Production outputs, one Industry moment, one Work supporting project, one repeated About image).
 - Images newly surfaced: 0; all selections came from the already approved public registry.
-

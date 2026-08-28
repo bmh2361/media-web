@@ -40,24 +40,71 @@ export function CompaniesJourney({ language }: { language: Language }) {
         ["补充本地执行能力", "为中国总部或精简欧洲团队增加英国本地协调与执行支持。"]
       ]
     : [
-        ["Validate the market", "Decide whether the UK or European opportunity merits investment, where to begin and what to test next."],
-        ["Build commercial relationships", "Identify and engage buyers, distributors, channel partners and relevant industry stakeholders."],
-        ["Deliver launches and exhibitions", "Turn a fixed market date into joined-up activity before, during and after the event."],
-        ["Establish credible market presence", "Show up in the right industry, expert, institutional or content environment."],
-        ["Add local execution capacity", "Give Chinese headquarters or a lean European team a UK coordination and delivery layer."]
+        [
+          "Validate the market",
+          "Decide whether the UK or European opportunity merits investment, where to begin and what to test next."
+        ],
+        [
+          "Build commercial relationships",
+          "Identify and engage buyers, distributors, channel partners and relevant industry stakeholders."
+        ],
+        [
+          "Deliver launches and exhibitions",
+          "Turn a fixed market date into joined-up activity before, during and after the event."
+        ],
+        [
+          "Establish credible market presence",
+          "Show up in the right industry, expert, institutional or content environment."
+        ],
+        [
+          "Add local execution capacity",
+          "Give Chinese headquarters or a lean European team a UK coordination and delivery layer."
+        ]
       ];
   const solutions = zh
     ? [
-        ["市场验证与进入", "市场格局、竞争环境、机会判断、相关方梳理与首步行动建议。", "在大规模投入前，先决定钱和时间应该放在哪里。"],
-        ["买家、伙伴与行业参与", "买家与经销商研究、合作方识别、商务会面及行业参与。", "建立能够推动市场进展的本地关系。"],
-        ["发布、展会与本地激活", "展会计划、发布活动、场地、本地团队、现场统筹与利益相关方协调。", "把一次市场节点变成完整的商务计划。"],
-        ["行业影响力、内容与市场资产", "在适用时组织专家、高校、创作者、摄影、影片、采访与项目记录。", "留下可用于销售、传播和后续跟进的资产。"]
+        [
+          "市场验证与进入",
+          "市场格局、竞争环境、机会判断、相关方梳理与首步行动建议。",
+          "在大规模投入前，先决定钱和时间应该放在哪里。"
+        ],
+        [
+          "买家、伙伴与行业参与",
+          "买家与经销商研究、合作方识别、商务会面及行业参与。",
+          "建立能够推动市场进展的本地关系。"
+        ],
+        [
+          "发布、展会与本地激活",
+          "展会计划、发布活动、场地、本地团队、现场统筹与利益相关方协调。",
+          "把一次市场节点变成完整的商务计划。"
+        ],
+        [
+          "行业影响力、内容与市场资产",
+          "在适用时组织专家、高校、创作者、摄影、影片、采访与项目记录。",
+          "留下可用于销售、传播和后续跟进的资产。"
+        ]
       ]
     : [
-        ["Market Validation & Entry", "Market landscape, competitor context, opportunity framing, stakeholder mapping and a first-action recommendation.", "Decide where to invest before committing heavily."],
-        ["Buyers, Partners & Industry Presence", "Buyer and distributor research, partner identification, business meetings and industry participation.", "Build relationships that can move the market forward."],
-        ["Launches, Exhibitions & Local Activation", "Exhibition planning, launches, venues, local teams, on-site coordination and stakeholder activity.", "Turn a market moment into a complete commercial programme."],
-        ["Credibility, Content & Market Assets", "Expert, university or creator engagement where relevant, plus photography, film, interviews and project records.", "Leave with assets that support sales, communications and follow-up."]
+        [
+          "Market Validation & Entry",
+          "Market landscape, competitor context, opportunity framing, stakeholder mapping and a first-action recommendation.",
+          "Decide where to invest before committing heavily."
+        ],
+        [
+          "Buyers, Partners & Industry Presence",
+          "Buyer and distributor research, partner identification, business meetings and industry participation.",
+          "Build relationships that can move the market forward."
+        ],
+        [
+          "Launches, Exhibitions & Local Activation",
+          "Exhibition planning, launches, venues, local teams, on-site coordination and stakeholder activity.",
+          "Turn a market moment into a complete commercial programme."
+        ],
+        [
+          "Credibility, Content & Market Assets",
+          "Expert, university or creator engagement where relevant, plus photography, film, interviews and project records.",
+          "Leave with assets that support sales, communications and follow-up."
+        ]
       ];
   const benefits = zh
     ? [
@@ -68,11 +115,26 @@ export function CompaniesJourney({ language }: { language: Language }) {
         ["活动后继续推进", "及时整理关系、市场信息、获准内容和下一步商务跟进。"]
       ]
     : [
-        ["Local judgement", "Choose the right action for the UK or European context, rather than simply translating headquarters instructions."],
-        ["One commercial lead", "Connect the brief, local relationships, timing, approvals and live execution through one team."],
-        ["China-to-Europe translation", "Turn the headquarters goal into action that local teams can understand and advance."],
-        ["Flexible local capability", "Add the capability the current goal requires without immediately hiring every function."],
-        ["Value beyond the event", "Organise relationships, market learning, approved content and commercial follow-up while momentum is fresh."]
+        [
+          "Local judgement",
+          "Choose the right action for the UK or European context, rather than simply translating headquarters instructions."
+        ],
+        [
+          "One commercial lead",
+          "Connect the brief, local relationships, timing, approvals and live execution through one team."
+        ],
+        [
+          "China-to-Europe translation",
+          "Turn the headquarters goal into action that local teams can understand and advance."
+        ],
+        [
+          "Flexible local capability",
+          "Add the capability the current goal requires without immediately hiring every function."
+        ],
+        [
+          "Value beyond the event",
+          "Organise relationships, market learning, approved content and commercial follow-up while momentum is fresh."
+        ]
       ];
   const exhibition = zh
     ? [
@@ -81,9 +143,18 @@ export function CompaniesJourney({ language }: { language: Language }) {
         ["活动后", "整理联系人、市场反馈、后续材料与下一步行动，让展会真正进入商务管道。"]
       ]
     : [
-        ["Before", "Map target buyers, distributors or partners; prioritise meetings; align the local story and follow-up plan."],
-        ["On the ground", "Coordinate live delivery, stakeholder activity and approved material for market communications."],
-        ["After", "Organise contacts, market feedback, follow-up material and next actions so the exhibition feeds the commercial pipeline."]
+        [
+          "Before",
+          "Map target buyers, distributors or partners; prioritise meetings; align the local story and follow-up plan."
+        ],
+        [
+          "On the ground",
+          "Coordinate live delivery, stakeholder activity and approved material for market communications."
+        ],
+        [
+          "After",
+          "Organise contacts, market feedback, follow-up material and next actions so the exhibition feeds the commercial pipeline."
+        ]
       ];
 
   return (
@@ -93,14 +164,16 @@ export function CompaniesJourney({ language }: { language: Language }) {
           <div className="lg:col-span-7">
             <Eyebrow className="text-champagne">{zh ? "面向中国企业" : "FOR CHINESE COMPANIES"}</Eyebrow>
             <h1 className="type-display-page mt-7 max-w-[17ch] md:max-w-[18ch] lg:max-w-[15ch]">
-              {zh ? "以本地商业执行，进入并拓展英国与欧洲市场。" : "Enter and grow in the UK & Europe with local commercial execution."}
+              {zh
+                ? "以本地商业执行，进入并拓展英国与欧洲市场。"
+                : "Enter and grow in the UK & Europe with local commercial execution."}
             </h1>
             <p className="type-lede mt-8 text-pearl/70">
               {zh
                 ? "当英国或欧洲机会已经变得具体——无论是验证市场、寻找买家、筹备展会、落地发布，还是为精简欧洲团队补充执行能力——Venus Bridge 都可以在本地推进工作。"
                 : "Venus Bridge works with Chinese companies when a UK or European opportunity has become real—whether that means validating the market, meeting buyers, preparing for an exhibition, launching locally or adding capacity around a lean European team."}
             </p>
-            <p className="mt-5 max-w-2xl text-base leading-7 text-pearl/58">
+            <p className="text-pearl/58 mt-5 max-w-2xl text-base leading-7">
               {zh
                 ? "我们帮助确定正确行动、推进相关本地关系，并把工作落实到现场。"
                 : "We help define the right action, coordinate the relevant local relationships and deliver the work on the ground."}
@@ -110,7 +183,14 @@ export function CompaniesJourney({ language }: { language: Language }) {
             </ButtonLink>
           </div>
           <div className="lg:col-span-5" data-audience-hero-media>
-            <EditorialScene scene={portfolio("leapmotor-iaa-2023", "cover")} language={language} priority sizes="(min-width:1024px) 40vw, 100vw" fit="contain" mediaRole="hero-landscape" />
+            <EditorialScene
+              scene={portfolio("leapmotor-iaa-2023", "cover")}
+              language={language}
+              priority
+              sizes="(min-width:1024px) 40vw, 100vw"
+              fit="contain"
+              mediaRole="hero-landscape"
+            />
           </div>
         </Container>
       </section>
@@ -128,7 +208,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
               scrollLinked
             />
           </div>
-          <div className="mt-10 hidden border-l border-t border-ink/15 min-[1200px]:grid min-[1200px]:grid-cols-5 min-[1200px]:mt-14">
+          <div className="mt-10 hidden border-l border-t border-ink/15 min-[1200px]:mt-14 min-[1200px]:grid min-[1200px]:grid-cols-5">
             {situations.map(([title, text], index) => (
               <article key={title} className="border-b border-r border-ink/15 p-6 lg:min-h-64">
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
@@ -146,9 +226,17 @@ export function CompaniesJourney({ language }: { language: Language }) {
           <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">
             {zh ? "围绕商业结果组合本地行动。" : "Local action assembled around the commercial result."}
           </h2>
-          <div className="mt-10 grid border-t border-ink/15 md:grid-cols-2 lg:mt-14" data-company-solution-grid>
+          <div
+            className="mt-10 grid border-t border-ink/15 md:grid-cols-2 lg:mt-14"
+            data-company-solution-grid
+            data-editorial-reveal
+            data-editorial-stagger
+          >
             {solutions.map(([title, scope, value], index) => (
-              <article key={title} className="border-b border-ink/15 py-8 md:px-8 md:odd:border-r md:odd:pl-0 lg:min-h-80">
+              <article
+                key={title}
+                className="border-b border-ink/15 py-8 md:px-8 md:odd:border-r md:odd:pl-0 lg:min-h-80"
+              >
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-9 text-2xl font-medium">{title}</h3>
                 <p className="mt-5 max-w-xl text-base leading-7 text-ink/65">{scope}</p>
@@ -158,9 +246,27 @@ export function CompaniesJourney({ language }: { language: Language }) {
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-2 text-sm">
             <span className="text-ink/70">{zh ? "查看相关项目" : "See relevant projects"}</span>
-            <ButtonLink href={withLanguage("/work?category=market-presence", language)} variant="ghost" showArrow>{zh ? "市场进入与发布" : "Market Entry & Launch"}</ButtonLink>
-            <ButtonLink href={withLanguage("/work?category=industry-credibility", language)} variant="ghost" showArrow>{zh ? "行业与展会" : "Industry & Exhibitions"}</ButtonLink>
-            <ButtonLink href={withLanguage("/work?category=brand-evidence", language)} variant="ghost" showArrow>{zh ? "品牌与内容" : "Brand & Content"}</ButtonLink>
+            <ButtonLink
+              href={withLanguage("/work?category=market-presence", language)}
+              variant="ghost"
+              showArrow
+            >
+              {zh ? "市场进入与发布" : "Market Entry & Launch"}
+            </ButtonLink>
+            <ButtonLink
+              href={withLanguage("/work?category=industry-credibility", language)}
+              variant="ghost"
+              showArrow
+            >
+              {zh ? "行业与展会" : "Industry & Exhibitions"}
+            </ButtonLink>
+            <ButtonLink
+              href={withLanguage("/work?category=brand-evidence", language)}
+              variant="ghost"
+              showArrow
+            >
+              {zh ? "品牌与内容" : "Brand & Content"}
+            </ButtonLink>
           </div>
         </Container>
       </Section>
@@ -169,11 +275,21 @@ export function CompaniesJourney({ language }: { language: Language }) {
         <Container>
           <Eyebrow className="text-champagne">{zh ? "客户获得什么" : "WHAT CLIENTS GAIN"}</Eyebrow>
           <h2 className="editorial-heading heading-measure-wide mt-5 max-w-[14ch]">
-            {zh ? "更快行动，更少复杂度，更强本地连续性。" : "Faster action. Less complexity. Stronger local continuity."}
+            {zh
+              ? "更快行动，更少复杂度，更强本地连续性。"
+              : "Faster action. Less complexity. Stronger local continuity."}
           </h2>
-          <div className="mt-10 grid border-y border-pearl/15 md:grid-cols-5 lg:mt-14" data-company-benefit-grid>
+          <div
+            className="mt-10 grid border-y border-pearl/15 md:grid-cols-5 lg:mt-14"
+            data-company-benefit-grid
+            data-editorial-reveal
+            data-editorial-stagger
+          >
             {benefits.map(([title, text], index) => (
-              <article key={title} className="border-b border-pearl/15 py-7 md:border-b-0 md:border-r md:px-6 md:first:pl-0 md:last:border-r-0 lg:min-h-64">
+              <article
+                key={title}
+                className="border-b border-pearl/15 py-7 md:border-b-0 md:border-r md:px-6 md:first:pl-0 md:last:border-r-0 lg:min-h-64"
+              >
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-10 text-xl font-medium">{title}</h3>
                 <p className="mt-4 text-sm leading-6 text-pearl/60">{text}</p>
@@ -189,7 +305,9 @@ export function CompaniesJourney({ language }: { language: Language }) {
             <div className="lg:col-span-7">
               <Eyebrow>{zh ? "从展会到商务管道" : "FROM EXHIBITION TO PIPELINE"}</Eyebrow>
               <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[13ch]">
-                {zh ? "把固定日期变成前后连贯的商务行动。" : "Turn a fixed date into joined-up commercial activity."}
+                {zh
+                  ? "把固定日期变成前后连贯的商务行动。"
+                  : "Turn a fixed date into joined-up commercial activity."}
               </h2>
             </div>
             <p className="type-body lg:col-span-4 lg:col-start-9 lg:self-end">
@@ -200,7 +318,10 @@ export function CompaniesJourney({ language }: { language: Language }) {
           </div>
           <ol className="mt-12 grid border-y border-ink/15 md:grid-cols-3">
             {exhibition.map(([title, text], index) => (
-              <li key={title} className="border-b border-ink/15 py-7 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0 lg:min-h-60">
+              <li
+                key={title}
+                className="border-b border-ink/15 py-7 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0 lg:min-h-60"
+              >
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-10 text-2xl font-medium">{title}</h3>
                 <p className="mt-5 text-sm leading-7 text-ink/65">{text}</p>
@@ -211,7 +332,9 @@ export function CompaniesJourney({ language }: { language: Language }) {
             <div className="lg:col-span-7">
               <Eyebrow>{zh ? "本地团队能力" : "LOCAL TEAM CAPABILITY"}</Eyebrow>
               <h3 className="mt-5 max-w-[15ch] text-3xl font-medium leading-tight lg:text-4xl">
-                {zh ? "在自建完整团队之前，先补上关键执行能力。" : "Local capability before you build a full local team."}
+                {zh
+                  ? "在自建完整团队之前，先补上关键执行能力。"
+                  : "Local capability before you build a full local team."}
               </h3>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
@@ -228,9 +351,13 @@ export function CompaniesJourney({ language }: { language: Language }) {
       <Section className="bg-ink text-pearl">
         <Container className="grid gap-10 lg:grid-cols-[1fr_auto] lg:items-end">
           <div>
-            <Eyebrow className="text-champagne">{zh ? "从市场结果开始" : "START WITH THE MARKET RESULT"}</Eyebrow>
+            <Eyebrow className="text-champagne">
+              {zh ? "从市场结果开始" : "START WITH THE MARKET RESULT"}
+            </Eyebrow>
             <h2 className="editorial-heading mt-5 max-w-[14ch]">
-              {zh ? "告诉我们，英国或欧洲现在需要发生什么。" : "Tell us what needs to happen in the UK or Europe."}
+              {zh
+                ? "告诉我们，英国或欧洲现在需要发生什么。"
+                : "Tell us what needs to happen in the UK or Europe."}
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-pearl/65">
               {zh
@@ -238,7 +365,12 @@ export function CompaniesJourney({ language }: { language: Language }) {
                 : "You do not need a finished brief. Share the market, goal, timing and anything already committed; we will assess the fit and suggest the most useful next step."}
             </p>
           </div>
-          <ButtonLink href={withLanguage("/contact?intent=company", language)} variant="secondary" className="border-pearl/30 text-pearl hover:bg-pearl hover:text-ink" showArrow>
+          <ButtonLink
+            href={withLanguage("/contact?intent=company", language)}
+            variant="secondary"
+            className="border-pearl/30 text-pearl hover:bg-pearl hover:text-ink"
+            showArrow
+          >
             {zh ? "沟通英国 / 欧洲计划" : "Discuss Your UK / European Plans"}
           </ButtonLink>
         </Container>
@@ -251,7 +383,14 @@ export function PartnersJourney({ language }: { language: Language }) {
   const zh = language === "zh";
   const types = zh
     ? ["高校与研究人员", "行业专家", "专业服务机构", "创作者与人才", "场地与活动执行", "本地交付团队"]
-    : ["Universities & Researchers", "Industry Specialists", "Professional Services", "Creators & Talent", "Venues & Event Operations", "Local Delivery Specialists"];
+    : [
+        "Universities & Researchers",
+        "Industry Specialists",
+        "Professional Services",
+        "Creators & Talent",
+        "Venues & Event Operations",
+        "Local Delivery Specialists"
+      ];
   const values = zh
     ? [
         ["相关机会", "仅在项目与贵方能力、受众或环境真正匹配时发出邀请。"],
@@ -262,12 +401,24 @@ export function PartnersJourney({ language }: { language: Language }) {
         ["长期匹配", "首次合作顺利且相关性持续时，再自然推进后续机会。"]
       ]
     : [
-        ["Relevant opportunities", "Invitations begin only when the project genuinely fits your capability, audience or environment."],
-        ["Clear commercial context", "Understand the company, market goal and reason for the collaboration before becoming involved."],
+        [
+          "Relevant opportunities",
+          "Invitations begin only when the project genuinely fits your capability, audience or environment."
+        ],
+        [
+          "Clear commercial context",
+          "Understand the company, market goal and reason for the collaboration before becoming involved."
+        ],
         ["Defined scope", "Agree roles, timing, deliverables, approvals and usage before delivery."],
-        ["Bilingual coordination", "Reduce information loss between Chinese companies and UK or European teams."],
+        [
+          "Bilingual coordination",
+          "Reduce information loss between Chinese companies and UK or European teams."
+        ],
         ["One project interface", "Venus Bridge connects cross-border communication with local delivery."],
-        ["Long-term fit", "When the first project works well and relevance continues, further opportunities can follow naturally."]
+        [
+          "Long-term fit",
+          "When the first project works well and relevance continues, further opportunities can follow naturally."
+        ]
       ];
   const process = zh
     ? [
@@ -290,9 +441,13 @@ export function PartnersJourney({ language }: { language: Language }) {
       <section className="bg-ink pt-[76px] text-pearl lg:pt-[88px]" data-audience-page="partners">
         <Container className="grid gap-12 py-16 lg:min-h-[720px] lg:grid-cols-12 lg:items-center lg:py-24">
           <div className="lg:col-span-7">
-            <Eyebrow className="text-champagne">{zh ? "面向英国与欧洲合作方" : "FOR UK & EUROPEAN PARTNERS"}</Eyebrow>
+            <Eyebrow className="text-champagne">
+              {zh ? "面向英国与欧洲合作方" : "FOR UK & EUROPEAN PARTNERS"}
+            </Eyebrow>
             <h1 className="type-display-page mt-7 max-w-[17ch] md:max-w-[18ch] lg:max-w-[15ch]">
-              {zh ? "参与背景清楚、与你真正相关的中国企业项目。" : "Access relevant China-related opportunities with clear commercial context."}
+              {zh
+                ? "参与背景清楚、与你真正相关的中国企业项目。"
+                : "Access relevant China-related opportunities with clear commercial context."}
             </h1>
             <p className="type-lede mt-8 text-pearl/70">
               {zh
@@ -304,7 +459,14 @@ export function PartnersJourney({ language }: { language: Language }) {
             </ButtonLink>
           </div>
           <div className="lg:col-span-5" data-audience-hero-media>
-            <EditorialScene scene={capability("vbm-024")} language={language} priority sizes="(min-width:1024px) 40vw, 100vw" fit="contain" mediaRole="hero-landscape" />
+            <EditorialScene
+              scene={capability("vbm-024")}
+              language={language}
+              priority
+              sizes="(min-width:1024px) 40vw, 100vw"
+              fit="contain"
+              mediaRole="hero-landscape"
+            />
           </div>
         </Container>
       </section>
@@ -315,9 +477,17 @@ export function PartnersJourney({ language }: { language: Language }) {
           <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">
             {zh ? "由项目目标决定谁需要加入。" : "The project goal determines who needs to be involved."}
           </h2>
-          <ul className="mt-10 grid border-y border-ink/15 md:mt-12 md:grid-cols-3" data-partner-type-list>
+          <ul
+            className="mt-10 grid border-y border-ink/15 md:mt-12 md:grid-cols-3"
+            data-partner-type-list
+            data-editorial-reveal
+            data-editorial-stagger
+          >
             {types.map((item, index) => (
-              <li key={item} className="border-b border-ink/15 p-7 md:border-r md:[&:nth-child(3n)]:border-r-0 lg:min-h-40">
+              <li
+                key={item}
+                className="border-b border-ink/15 p-7 md:border-r lg:min-h-40 md:[&:nth-child(3n)]:border-r-0"
+              >
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-9 text-xl font-medium">{item}</h3>
               </li>
@@ -330,11 +500,21 @@ export function PartnersJourney({ language }: { language: Language }) {
         <Container>
           <Eyebrow>{zh ? "合作方获得什么" : "WHAT PARTNERS RECEIVE"}</Eyebrow>
           <h2 className="editorial-heading heading-measure-wide mt-5 max-w-[14ch]">
-            {zh ? "相关机会、清楚范围和顺畅跨境协作。" : "Relevant opportunities, clear scope and smoother cross-border collaboration."}
+            {zh
+              ? "相关机会、清楚范围和顺畅跨境协作。"
+              : "Relevant opportunities, clear scope and smoother cross-border collaboration."}
           </h2>
-          <div className="mt-10 grid border-t border-ink/15 md:grid-cols-2 lg:mt-14 lg:grid-cols-3" data-partner-fit-grid>
+          <div
+            className="mt-10 grid border-t border-ink/15 md:grid-cols-2 lg:mt-14 lg:grid-cols-3"
+            data-partner-fit-grid
+            data-editorial-reveal
+            data-editorial-stagger
+          >
             {values.map(([title, text], index) => (
-              <article key={title} className="border-b border-ink/15 py-7 md:px-7 lg:min-h-64 lg:border-r lg:[&:nth-child(3n)]:border-r-0">
+              <article
+                key={title}
+                className="border-b border-ink/15 py-7 md:px-7 lg:min-h-64 lg:border-r lg:[&:nth-child(3n)]:border-r-0"
+              >
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-9 text-2xl font-medium">{title}</h3>
                 <p className="mt-4 text-sm leading-7 text-ink/65">{text}</p>
@@ -351,7 +531,9 @@ export function PartnersJourney({ language }: { language: Language }) {
         <Container>
           <Eyebrow className="text-champagne">{zh ? "合作如何展开" : "HOW WE WORK WITH PARTNERS"}</Eyebrow>
           <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">
-            {zh ? "从商业背景到项目成果，全程保持清楚。" : "Clear from commercial context through to useful outputs."}
+            {zh
+              ? "从商业背景到项目成果，全程保持清楚。"
+              : "Clear from commercial context through to useful outputs."}
           </h2>
           <div className="mt-10 min-[1200px]:hidden">
             <MobileIndexedStory
@@ -361,9 +543,16 @@ export function PartnersJourney({ language }: { language: Language }) {
               scrollLinked
             />
           </div>
-          <ol className="mt-10 hidden border-y border-pearl/15 min-[1200px]:grid min-[1200px]:grid-cols-5 min-[1200px]:mt-14">
+          <ol
+            className="mt-10 hidden border-y border-pearl/15 min-[1200px]:mt-14 min-[1200px]:grid min-[1200px]:grid-cols-5"
+            data-editorial-reveal
+            data-editorial-stagger
+          >
             {process.map(([title, text], index) => (
-              <li key={title} className="border-b border-pearl/15 py-7 md:border-b-0 md:border-r md:px-6 md:first:pl-0 md:last:border-r-0 lg:min-h-64">
+              <li
+                key={title}
+                className="border-b border-pearl/15 py-7 md:border-b-0 md:border-r md:px-6 md:first:pl-0 md:last:border-r-0 lg:min-h-64"
+              >
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-12 text-xl font-medium">{title}</h3>
                 <p className="mt-4 text-sm leading-6 text-pearl/60">{text}</p>
@@ -376,7 +565,12 @@ export function PartnersJourney({ language }: { language: Language }) {
       <Section className="bg-pearl">
         <Container className="grid gap-12 lg:grid-cols-12 lg:items-center">
           <div className="lg:col-span-5" data-partner-proof-media>
-            <EditorialScene scene={capability("vbm-003")} language={language} sizes="(min-width:1024px) 40vw, 100vw" mediaRole="proof-landscape" />
+            <EditorialScene
+              scene={capability("vbm-003")}
+              language={language}
+              sizes="(min-width:1024px) 40vw, 100vw"
+              mediaRole="proof-landscape"
+            />
           </div>
           <div className="lg:col-span-6 lg:col-start-7">
             <Eyebrow>{zh ? "介绍你的机构" : "INTRODUCE YOUR ORGANISATION"}</Eyebrow>

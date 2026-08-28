@@ -7,13 +7,12 @@ type ButtonVariant = "primary" | "secondary" | "ghost";
 
 const variants: Record<ButtonVariant, string> = {
   primary: "border border-ink bg-ink text-pearl hover:bg-graphite",
-  secondary:
-    "border border-ink/25 bg-transparent text-ink hover:border-ink hover:bg-pearl",
+  secondary: "border border-ink/25 bg-transparent text-ink hover:border-ink hover:bg-pearl",
   ghost: "text-ink hover:text-champagne"
 };
 
 const base =
-  "group inline-flex min-h-12 min-w-12 items-center justify-center gap-3 rounded-sm px-5 py-3 text-sm font-semibold transition duration-300 ease-out focus:outline-none focus-visible:ring-2 focus-visible:ring-blue/50";
+  "group inline-flex min-h-12 min-w-12 items-center justify-center gap-3 rounded-sm px-5 py-3 text-sm font-semibold transition-[color,background-color,border-color,transform] duration-200 ease-editorial active:translate-y-px focus:outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue";
 
 export function ButtonLink({
   href,
@@ -31,7 +30,13 @@ export function ButtonLink({
   return (
     <Link href={href} className={cn(base, variants[variant], className)}>
       {children}
-      {showArrow ? <ArrowRight size={16} strokeWidth={1.8} className="transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1" /> : null}
+      {showArrow ? (
+        <ArrowRight
+          size={16}
+          strokeWidth={1.8}
+          className="transition-transform duration-200 ease-editorial group-hover:translate-x-1 group-focus-visible:translate-x-1"
+        />
+      ) : null}
     </Link>
   );
 }

@@ -1,7 +1,4 @@
-import {
-  CommercialCaseIndex,
-  type CommercialCaseFilter
-} from "@/components/sections/CommercialCaseIndex";
+import { CommercialCaseIndex, type CommercialCaseFilter } from "@/components/sections/CommercialCaseIndex";
 import { publishedPortfolioProjects } from "@/content/portfolio";
 import type { Language } from "@/lib/i18n";
 

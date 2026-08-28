@@ -30,12 +30,12 @@ The site must not imply regulated market-entry advice, official institutional en
 
 ## Model decisions
 
-| Engagement model | Decision | Reason |
-| --- | --- | --- |
+| Engagement model                  | Decision              | Reason                                                                                             |
+| --------------------------------- | --------------------- | -------------------------------------------------------------------------------------------------- |
 | International Credibility Project | REFINE / de-emphasise | Commercially important, but current public evidence is adjacent rather than a complete direct case |
-| UK Industry Presence Project | KEEP / lead | Strongest named execution evidence; distinguish UK from European delivery precisely |
-| International Brand Activation | KEEP / qualify | Talent and editorial media prove capability, not a full creator campaign |
-| UK Brand Content Production | STRENGTHEN | Strong UK-location and wider production evidence with low claim risk |
+| UK Industry Presence Project      | KEEP / lead           | Strongest named execution evidence; distinguish UK from European delivery precisely                |
+| International Brand Activation    | KEEP / qualify        | Talent and editorial media prove capability, not a full creator campaign                           |
+| UK Brand Content Production       | STRENGTHEN            | Strong UK-location and wider production evidence with low claim risk                               |
 
 ## Routes and content systems
 

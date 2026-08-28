@@ -12,12 +12,26 @@ export type CapabilityIndexItem = {
   scene?: EditorialSceneMedia;
 };
 
-export function CapabilityIndexHero({ items, language, baseHref = "" }: { items: CapabilityIndexItem[]; language: Language; baseHref?: string }) {
+export function CapabilityIndexHero({
+  items,
+  language,
+  baseHref = ""
+}: {
+  items: CapabilityIndexItem[];
+  language: Language;
+  baseHref?: string;
+}) {
   const [active, setActive] = useState(0);
   const current = items[active];
   return (
-    <div className="grid min-h-[600px] border-y border-pearl/15 lg:grid-cols-12" data-phase32c-capability-index>
-      <nav aria-label={language === "zh" ? "核心能力索引" : "Capabilities index"} className="divide-y divide-pearl/15 lg:col-span-5">
+    <div
+      className="grid min-h-[600px] border-y border-pearl/15 lg:grid-cols-12"
+      data-phase32c-capability-index
+    >
+      <nav
+        aria-label={language === "zh" ? "核心能力索引" : "Capabilities index"}
+        className="divide-y divide-pearl/15 lg:col-span-5"
+      >
         {items.map((item, index) => (
           <Link
             key={item.id}
@@ -36,12 +50,25 @@ export function CapabilityIndexHero({ items, language, baseHref = "" }: { items:
       </nav>
       <div className="relative hidden min-h-[600px] overflow-hidden bg-graphite lg:col-span-7 lg:block">
         {current?.scene ? (
-          <EditorialScene key={current.scene.media.id} scene={current.scene} language={language} className="absolute inset-0 h-full w-full animate-[phase32c-scene-in_.55s_ease-out_both]" sizes="55vw" mediaRole="mosaic-fill" />
+          <EditorialScene
+            key={current.scene.media.id}
+            scene={current.scene}
+            language={language}
+            className="absolute inset-0 h-full w-full animate-[phase32c-scene-in_.55s_ease-out_both]"
+            sizes="55vw"
+            mediaRole="mosaic-fill"
+          />
         ) : (
           <div className="flex h-full items-end bg-pearl p-12 text-ink">
             <div className="max-w-lg border-l border-champagne pl-7">
-              <p className="text-xs uppercase tracking-editorial text-champagne">{language === "zh" ? "关系与知识合作" : "RELATIONSHIPS & KNOWLEDGE"}</p>
-              <p className="mt-7 max-w-xl text-4xl leading-tight">{language === "zh" ? "以清晰目标、合适形式与准确边界，组织有价值的专业交流。" : "Serious engagement starts with a clear objective, the right format and precise boundaries."}</p>
+              <p className="text-xs uppercase tracking-editorial text-champagne">
+                {language === "zh" ? "关系与知识合作" : "RELATIONSHIPS & KNOWLEDGE"}
+              </p>
+              <p className="mt-7 max-w-xl text-4xl leading-tight">
+                {language === "zh"
+                  ? "以清晰目标、合适形式与准确边界，组织有价值的专业交流。"
+                  : "Serious engagement starts with a clear objective, the right format and precise boundaries."}
+              </p>
             </div>
           </div>
         )}

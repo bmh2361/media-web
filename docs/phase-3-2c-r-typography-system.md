@@ -14,15 +14,15 @@ This system standardises the existing typography without changing approved copy.
 
 ## Scale
 
-| Token | Intended use | English size / line height | Chinese size / line height | Measure |
-| --- | --- | --- | --- | --- |
-| `type-display-hero` | Home hero and primary campaign statement | `clamp(3.25rem, 6.1vw, 7.25rem)` / 0.92 | `clamp(3rem, 5vw, 5.9rem)` / 1.04 | 14–16ch EN; 15–18ch ZH |
-| `type-display-page` | Capabilities, Work, About, Contact and case H1 | `clamp(3rem, 5.3vw, 6.4rem)` / 0.94 | `clamp(2.8rem, 4.6vw, 5.5rem)` / 1.06 | 13–16ch EN; 15–18ch ZH |
-| `type-heading-section` | Major H2 | `clamp(2.4rem, 3.9vw, 4.75rem)` / 1.01 | `clamp(2.2rem, 3.4vw, 4.1rem)` / 1.12 | 12–16ch |
-| `type-heading-card` | H3, project and capability titles | `clamp(1.5rem, 2vw, 2.25rem)` / 1.12 | `clamp(1.45rem, 1.8vw, 2rem)` / 1.22 | 18–26ch |
-| `type-lede` | Hero and section lead copy | `clamp(1.05rem, .45vw + .95rem, 1.25rem)` / 1.65 | same size / 1.8 | 34–42rem |
-| `type-body` | Narrative and card body | 1rem / 1.7 | 1rem / 1.8 | 36–44rem |
-| `type-label` | Eyebrows, metadata and indices | .75rem / 1.4 | .75rem / 1.5 | uppercase and tracked in EN; no artificial tracking in ZH |
+| Token                  | Intended use                                   | English size / line height                       | Chinese size / line height            | Measure                                                   |
+| ---------------------- | ---------------------------------------------- | ------------------------------------------------ | ------------------------------------- | --------------------------------------------------------- |
+| `type-display-hero`    | Home hero and primary campaign statement       | `clamp(3.25rem, 6.1vw, 7.25rem)` / 0.92          | `clamp(3rem, 5vw, 5.9rem)` / 1.04     | 14–16ch EN; 15–18ch ZH                                    |
+| `type-display-page`    | Capabilities, Work, About, Contact and case H1 | `clamp(3rem, 5.3vw, 6.4rem)` / 0.94              | `clamp(2.8rem, 4.6vw, 5.5rem)` / 1.06 | 13–16ch EN; 15–18ch ZH                                    |
+| `type-heading-section` | Major H2                                       | `clamp(2.4rem, 3.9vw, 4.75rem)` / 1.01           | `clamp(2.2rem, 3.4vw, 4.1rem)` / 1.12 | 12–16ch                                                   |
+| `type-heading-card`    | H3, project and capability titles              | `clamp(1.5rem, 2vw, 2.25rem)` / 1.12             | `clamp(1.45rem, 1.8vw, 2rem)` / 1.22  | 18–26ch                                                   |
+| `type-lede`            | Hero and section lead copy                     | `clamp(1.05rem, .45vw + .95rem, 1.25rem)` / 1.65 | same size / 1.8                       | 34–42rem                                                  |
+| `type-body`            | Narrative and card body                        | 1rem / 1.7                                       | 1rem / 1.8                            | 36–44rem                                                  |
+| `type-label`           | Eyebrows, metadata and indices                 | .75rem / 1.4                                     | .75rem / 1.5                          | uppercase and tracked in EN; no artificial tracking in ZH |
 
 ## Line-break rules
 

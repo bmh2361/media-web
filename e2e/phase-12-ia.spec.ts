@@ -5,7 +5,15 @@ test.describe("canonical information architecture", () => {
     test.skip(testInfo.project.name === "mobile");
     await page.goto("/en");
     const header = page.locator("header");
-    for (const label of ["Home", "For Companies", "For Partners", "Case Studies", "How We Work", "About Us", "Contact"])
+    for (const label of [
+      "Home",
+      "For Companies",
+      "For Partners",
+      "Case Studies",
+      "How We Work",
+      "About Us",
+      "Contact"
+    ])
       await expect(header.getByRole("link", { name: label, exact: true })).toBeVisible();
     await expect(header).not.toContainText(/What We Do|Expertise|Services/);
   });
@@ -15,7 +23,14 @@ test.describe("canonical information architecture", () => {
     await page.goto("/en");
     await page.getByRole("button", { name: "Menu" }).click();
     const dialog = page.getByRole("dialog", { name: "Menu" });
-    for (const label of ["For Companies", "For Partners", "Case Studies", "How We Work", "About Us", "Contact"])
+    for (const label of [
+      "For Companies",
+      "For Partners",
+      "Case Studies",
+      "How We Work",
+      "About Us",
+      "Contact"
+    ])
       await expect(dialog.getByRole("link", { name: label, exact: true })).toBeVisible();
   });
 

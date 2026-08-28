@@ -11,7 +11,8 @@ export function MobileIndexedStory({
   compact = false,
   scrollLinked = false,
   emphasis = "standard",
-  contextLabel
+  contextLabel,
+  headingLevel = 3
 }: {
   items: MobileStoryItem[];
   label: string;
@@ -20,9 +21,11 @@ export function MobileIndexedStory({
   scrollLinked?: boolean;
   emphasis?: "standard" | "strong";
   contextLabel?: string;
+  headingLevel?: 2 | 3;
 }) {
   const [active, setActive] = useState(0);
   const rootRef = useRef<HTMLDivElement>(null);
+  const ItemHeading = headingLevel === 2 ? "h2" : "h3";
 
   useEffect(() => {
     const steps = Array.from(rootRef.current?.querySelectorAll<HTMLElement>('[role="listitem"]') ?? []);
@@ -63,7 +66,7 @@ export function MobileIndexedStory({
           nearestDistance = distanceFromLine;
         }
       });
-      setActive((current) => current === nearest ? current : nearest);
+      setActive((current) => (current === nearest ? current : nearest));
     };
 
     if (scrollLinked && !reducedMotion) {
@@ -88,14 +91,24 @@ export function MobileIndexedStory({
       data-emphasis={emphasis}
     >
       <div className="mobile-indexed-story__status">
-        {emphasis === "strong" ? <span className="mobile-indexed-story__context">{contextLabel ?? label}</span> : null}
-        <span className="mobile-indexed-story__count">{String(active + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}</span>
-        <span className="mobile-indexed-story__title" aria-live="polite">{items[active]?.title}</span>
+        {emphasis === "strong" ? (
+          <span className="mobile-indexed-story__context">{contextLabel ?? label}</span>
+        ) : null}
+        <span className="mobile-indexed-story__count">
+          {String(active + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}
+        </span>
+        <span className="mobile-indexed-story__title" aria-live="polite">
+          {items[active]?.title}
+        </span>
         <span className="mobile-indexed-story__progress" aria-hidden="true">
           <span style={scrollLinked ? undefined : { transform: `scaleX(${(active + 1) / items.length})` }} />
         </span>
       </div>
-      {emphasis === "strong" ? <span className="mobile-indexed-story__rail" aria-hidden="true"><span /></span> : null}
+      {emphasis === "strong" ? (
+        <span className="mobile-indexed-story__rail" aria-hidden="true">
+          <span />
+        </span>
+      ) : null}
       <div role="list" aria-label={label}>
         {items.map((item, index) => (
           <div
@@ -107,7 +120,7 @@ export function MobileIndexedStory({
           >
             <span>{String(index + 1).padStart(2, "0")}</span>
             <div>
-              <h3>{item.title}</h3>
+              <ItemHeading>{item.title}</ItemHeading>
               <p>{item.description}</p>
             </div>
           </div>

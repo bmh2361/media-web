@@ -10,8 +10,11 @@ test("About opening stays compact and typographic at required widths", async ({ 
     const hero = page.locator('[data-about-chapter="identity"]');
     await expect(hero.locator("img")).toHaveCount(0);
     await expect(hero.locator("ol li")).toHaveCount(3);
-    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(1);
-    if (width >= 1024) expect((await hero.boundingBox())?.height ?? height).toBeLessThanOrEqual(height * 0.73);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(
+      1
+    );
+    if (width >= 1024)
+      expect((await hero.boundingBox())?.height ?? height).toBeLessThanOrEqual(height * 0.73);
   }
 });
 
@@ -31,7 +34,9 @@ test("homepage uses one direct landscape image with autoplay and square navigati
     await expect(system).toHaveAttribute("data-carousel-active", String(index));
     await page.waitForTimeout(950);
     await expect(system.locator("img")).toHaveCount(1);
-    await expect.poll(() => system.locator("img").evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0);
+    await expect
+      .poll(() => system.locator("img").evaluate((image: HTMLImageElement) => image.naturalWidth))
+      .toBeGreaterThan(0);
     const media = await system.locator("img").evaluate((image: HTMLImageElement) => ({
       mediaId: image.closest("figure")?.getAttribute("data-media-id") ?? "",
       naturalWidth: image.naturalWidth,
@@ -64,8 +69,15 @@ test("every Work row resolves to exactly one explicit cover", async ({ page }) =
     await row.locator("button").click();
     await expect(row).toHaveAttribute("data-active-case", "true");
     await expect(page.locator("[data-case-preview] [data-preview-media-stage] img")).toHaveCount(1);
-    await expect(page.locator("[data-case-preview] [data-preview-media-stage]")).toHaveAttribute("data-preview-image-count", "1");
-    expect(await page.locator("[data-case-preview] [data-preview-media-stage]").evaluate((node) => getComputedStyle(node).backgroundColor)).not.toBe("rgb(0, 0, 0)");
+    await expect(page.locator("[data-case-preview] [data-preview-media-stage]")).toHaveAttribute(
+      "data-preview-image-count",
+      "1"
+    );
+    expect(
+      await page
+        .locator("[data-case-preview] [data-preview-media-stage]")
+        .evaluate((node) => getComputedStyle(node).backgroundColor)
+    ).not.toBe("rgb(0, 0, 0)");
   }
 
   await page.setViewportSize({ width: 390, height: 844 });

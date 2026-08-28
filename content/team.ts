@@ -172,10 +172,7 @@ export const teamMembers: TeamMember[] = [
       "Applied AI, machine-learning optimisation, intelligent systems and creative production workflows.",
       "专长涵盖应用型 AI、机器学习优化、智能系统与创意生产工作流。"
     ),
-    credential: l(
-      "PhD · Computer Science (UK)",
-      "博士 · 英国计算机科学"
-    ),
+    credential: l("PhD · Computer Science (UK)", "博士 · 英国计算机科学"),
     projectResponsibility: l(
       "Turns technical opportunities into experiments, solution designs and implementable workflows.",
       "将技术机会转化为实验、解决方案设计与可实施工作流。"

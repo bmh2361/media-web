@@ -22,7 +22,10 @@ test("canonical release routes render one main landmark without overflow", async
       await page.goto(route);
       await expect(page.locator("main")).toHaveCount(1);
       await expect(page.locator("h1")).toHaveCount(1);
-      expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth), `${route} ${width}`).toBeLessThanOrEqual(1);
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth - innerWidth),
+        `${route} ${width}`
+      ).toBeLessThanOrEqual(1);
     }
   }
 });
@@ -45,7 +48,9 @@ test("contact validation never creates a fake success and exposes no public pric
     await nextToContext.click();
     await expect(page.getByLabel("What are you trying to achieve in the UK or Europe?")).toBeVisible();
     await page.getByLabel("Current situation").selectOption("exploring");
-    await page.getByLabel("What are you trying to achieve in the UK or Europe?").fill("Validate the market opportunity.");
+    await page
+      .getByLabel("What are you trying to achieve in the UK or Europe?")
+      .fill("Validate the market opportunity.");
     await page.getByRole("button", { name: "Next: contact details" }).click();
   } else {
     await expect(page.getByLabel("What are you trying to achieve in the UK or Europe?")).toBeVisible();
@@ -54,7 +59,9 @@ test("contact validation never creates a fake success and exposes no public pric
   await expect(page.getByLabel("Email")).toBeVisible();
   await page.getByRole("button", { name: "Send enquiry" }).click();
   await expect(page.getByLabel("Name")).toBeFocused();
-  await expect(page.locator("body")).not.toContainText(/GBP|budget range|starting from|package price|Received\./i);
+  await expect(page.locator("body")).not.toContainText(
+    /GBP|budget range|starting from|package price|Received\./i
+  );
 });
 
 test("mobile navigation closes with Escape and restores focus", async ({ page }) => {
@@ -69,7 +76,15 @@ test("mobile navigation closes with Escape and restores focus", async ({ page })
 });
 
 test("canonical commercial pages have no serious automated accessibility findings", async ({ page }) => {
-  for (const route of ["/en", "/en/work", "/en/work/byd-bd11-london", "/en/how-we-work", "/en/about", "/en/contact"]) {
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  for (const route of [
+    "/en",
+    "/en/work",
+    "/en/work/byd-bd11-london",
+    "/en/how-we-work",
+    "/en/about",
+    "/en/contact"
+  ]) {
     await page.goto(route);
     if (route === "/en/contact") await page.locator("form").scrollIntoViewIfNeeded();
     await page.waitForTimeout(700);

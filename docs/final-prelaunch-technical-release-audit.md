@@ -21,21 +21,21 @@ The repository contains numerous retired source pages/components. Permanent redi
 
 ## Command/test results
 
-| Check | Result | Evidence / interpretation |
-|---|---|---|
-| `npm run typecheck` | **PASS** | No TypeScript errors. |
-| `npm run lint` | **PASS** | No warnings under `--max-warnings=0`. |
-| `npm test` | **PASS** | 121 passed, 0 failed, 11 conditional/historical skips (132 total). Node emits a non-blocking `MODULE_TYPELESS_PACKAGE_JSON` warning for TS module loading. |
-| `npm run validate:content` | **PASS** | Content contracts satisfied. |
-| `npm run validate:pricing` | **PASS** | No public pricing exposure. |
-| `npm run validate:release:staging` | **PASS with warnings** | Missing explicit Work mode, site URL, contact webhook, legal values, allowed origins, shared limiter and six human confirmations. |
-| `npm run validate:release:production` | **FAIL** | 19 failed checks, grouped below into identity/indexing, legal, contact infrastructure and human release confirmation gates. |
-| `npm run validate:media:production` | **FAIL, noncanonical scope only** | Five placeholders exist only on retired/redirected sources; validator classifies them as scope mismatches and not canonical blockers. |
-| `npm run test:contact` | **PASS** | 11 assertions; EN success/failure, ZH success, invalid payload, honeypot, bad origin, provider failure, request IDs and webhook signatures. Audit selectors were updated to the current form; production code unchanged. |
-| `npm run test:e2e` | **PARTIAL: 92 passed / 13 failed / 53 skipped** | Canonical release, a11y, cases, motion and responsive tests pass. 12 failures assert obsolete approved copy/visual headings; one screenshot audit expects a desktop-only row at 320 px. P2 test debt, not a reproduced canonical defect. |
-| Independent rendered audit | **PASS** | 126 canonical route/viewport results; 0 route failures, 0 broken images, 0 serious/critical Axe findings, 0 metadata-structure problems. |
-| `npm run build` | **PASS** | Optimised production build compiled, type/lint stage passed, 100 static pages generated. Warning: an Edge runtime page disables static generation for that route; expected for dynamic OG/API behaviour. |
-| `npm audit --omit=dev` | **FAIL** | 4 high, 0 critical; patched versions available. |
+| Check                                 | Result                                          | Evidence / interpretation                                                                                                                                                                                                                |
+| ------------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npm run typecheck`                   | **PASS**                                        | No TypeScript errors.                                                                                                                                                                                                                    |
+| `npm run lint`                        | **PASS**                                        | No warnings under `--max-warnings=0`.                                                                                                                                                                                                    |
+| `npm test`                            | **PASS**                                        | 121 passed, 0 failed, 11 conditional/historical skips (132 total). Node emits a non-blocking `MODULE_TYPELESS_PACKAGE_JSON` warning for TS module loading.                                                                               |
+| `npm run validate:content`            | **PASS**                                        | Content contracts satisfied.                                                                                                                                                                                                             |
+| `npm run validate:pricing`            | **PASS**                                        | No public pricing exposure.                                                                                                                                                                                                              |
+| `npm run validate:release:staging`    | **PASS with warnings**                          | Missing explicit Work mode, site URL, contact webhook, legal values, allowed origins, shared limiter and six human confirmations.                                                                                                        |
+| `npm run validate:release:production` | **FAIL**                                        | 19 failed checks, grouped below into identity/indexing, legal, contact infrastructure and human release confirmation gates.                                                                                                              |
+| `npm run validate:media:production`   | **FAIL, noncanonical scope only**               | Five placeholders exist only on retired/redirected sources; validator classifies them as scope mismatches and not canonical blockers.                                                                                                    |
+| `npm run test:contact`                | **PASS**                                        | 11 assertions; EN success/failure, ZH success, invalid payload, honeypot, bad origin, provider failure, request IDs and webhook signatures. Audit selectors were updated to the current form; production code unchanged.                 |
+| `npm run test:e2e`                    | **PARTIAL: 92 passed / 13 failed / 53 skipped** | Canonical release, a11y, cases, motion and responsive tests pass. 12 failures assert obsolete approved copy/visual headings; one screenshot audit expects a desktop-only row at 320 px. P2 test debt, not a reproduced canonical defect. |
+| Independent rendered audit            | **PASS**                                        | 126 canonical route/viewport results; 0 route failures, 0 broken images, 0 serious/critical Axe findings, 0 metadata-structure problems.                                                                                                 |
+| `npm run build`                       | **PASS**                                        | Optimised production build compiled, type/lint stage passed, 100 static pages generated. Warning: an Edge runtime page disables static generation for that route; expected for dynamic OG/API behaviour.                                 |
+| `npm audit --omit=dev`                | **FAIL**                                        | 4 high, 0 critical; patched versions available.                                                                                                                                                                                          |
 
 ## Production release-gate failures
 
@@ -50,12 +50,12 @@ Current fail-closed behaviour is good: robots disallows crawling, metadata is no
 
 ## Dependency/security audit
 
-| Package | Finding | Minimum direction |
-|---|---|---|
-| Next 15.5.20 (direct) | High findings including App Router DoS and SSRF; other cache/image/function advisories; fixed in 15.5.21 for the relevant branch. | Upgrade to >=15.5.21, then regression test. |
-| Sharp 0.34.5 (direct dev/runtime image dependency) | Inherited libvips high advisories; patched at >=0.35.0. | Upgrade to a supported patched Sharp version; validate image build/OG. |
-| Nanoid <=3.3.17 (transitive) | Generator loop/DoS advisories. | Refresh dependency tree to patched version. |
-| PostCSS <=8.5.22 within dependency tree | Source-map path/file disclosure advisories. | Refresh through patched Next/dependency lock resolution. |
+| Package                                            | Finding                                                                                                                           | Minimum direction                                                      |
+| -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Next 15.5.20 (direct)                              | High findings including App Router DoS and SSRF; other cache/image/function advisories; fixed in 15.5.21 for the relevant branch. | Upgrade to >=15.5.21, then regression test.                            |
+| Sharp 0.34.5 (direct dev/runtime image dependency) | Inherited libvips high advisories; patched at >=0.35.0.                                                                           | Upgrade to a supported patched Sharp version; validate image build/OG. |
+| Nanoid <=3.3.17 (transitive)                       | Generator loop/DoS advisories.                                                                                                    | Refresh dependency tree to patched version.                            |
+| PostCSS <=8.5.22 within dependency tree            | Source-map path/file disclosure advisories.                                                                                       | Refresh through patched Next/dependency lock resolution.               |
 
 Security headers are otherwise well considered. After upgrade, rerun `npm audit --omit=dev`, build, canonical E2E, contact delivery and image/OG tests.
 
@@ -124,10 +124,10 @@ WeChat rendering cannot be guaranteed locally; once the real HTTPS domain is pub
 
 Lighthouse 13.4.1 completed and wrote JSON reports; the CLI returned exit 1 only because Windows denied deletion of its temporary Chrome folder after report generation.
 
-| Profile | Performance | Accessibility | Best Practices | SEO | FCP | LCP | TBT | CLS | Speed Index |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Mobile | 93 | 100 | 100 | 69 | 0.9 s | 3.2 s | 20 ms | 0 | 0.9 s |
-| Desktop | 100 | 100 | 100 | 69 | 0.2 s | 0.7 s | 0 ms | 0 | 0.4 s |
+| Profile | Performance | Accessibility | Best Practices | SEO |   FCP |   LCP |   TBT | CLS | Speed Index |
+| ------- | ----------: | ------------: | -------------: | --: | ----: | ----: | ----: | --: | ----------: |
+| Mobile  |          93 |           100 |            100 |  69 | 0.9 s | 3.2 s | 20 ms |   0 |       0.9 s |
+| Desktop |         100 |           100 |            100 |  69 | 0.2 s | 0.7 s |  0 ms |   0 |       0.4 s |
 
 Mobile improvement estimate: ~17 KB from the BYD Home proof image and ~5 KB from the monogram; legacy JS ~12 KB and unused JS/CSS are modest. Forced reflow was ~30 ms unattributed plus a negligible code-referenced call. These are P2.
 
@@ -195,4 +195,3 @@ After release:
 - `audit/final-prelaunch/lighthouse-home-desktop.json`.
 - `audit/final-prelaunch/*.png` — 36 major-page captures plus 404 evidence.
 - `audit/final-prelaunch/run-rendered-audit.mjs` and `capture-evidence.mjs` — audit-only tooling.
-

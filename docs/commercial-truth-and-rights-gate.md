@@ -8,17 +8,17 @@ This provides a strong internal governance mechanism but does not independently 
 
 ## Classification
 
-| Area | Classification | Basis / action |
-| --- | --- | --- |
-| Project roles and outputs | SUPPORTED BY EXISTING PROJECT DATA | Governed portfolio records include role statements, scope boundaries and evidence records. Owner must match each public claim to source evidence. |
-| Named companies/projects | REQUIRES HUMAN CONFIRMATION | Confirm public naming, relationship description and client approval for every published case. |
-| Institutions/universities/partners | REQUIRES HUMAN CONFIRMATION | Do not imply endorsement; validate every named relationship against the existing evidence registers. |
-| Geographic presence | REQUIRES HUMAN CONFIRMATION | London/UK/Europe wording must match the approved legal/company operating facts. |
-| Team names, roles and qualifications | REQUIRES HUMAN CONFIRMATION | Each person must approve portrait, title, biography and public responsibilities. |
-| Portfolio and capability media | RIGHTS CONFIRMATION REQUIRED | Internal manifests say approved; responsible owner must retain the actual licence/release/source records. |
-| Logos and identifiable brands | RIGHTS CONFIRMATION REQUIRED | Confirm trademark/logo display permission and non-endorsement context. |
-| Event photography and identifiable people | RIGHTS CONFIRMATION REQUIRED | Confirm photographer copyright, event/client permission and model/participant releases where applicable. |
-| Team portraits | RIGHTS CONFIRMATION REQUIRED | Confirm photographer/source rights and subject consent. |
+| Area                                      | Classification                     | Basis / action                                                                                                                                    |
+| ----------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Project roles and outputs                 | SUPPORTED BY EXISTING PROJECT DATA | Governed portfolio records include role statements, scope boundaries and evidence records. Owner must match each public claim to source evidence. |
+| Named companies/projects                  | REQUIRES HUMAN CONFIRMATION        | Confirm public naming, relationship description and client approval for every published case.                                                     |
+| Institutions/universities/partners        | REQUIRES HUMAN CONFIRMATION        | Do not imply endorsement; validate every named relationship against the existing evidence registers.                                              |
+| Geographic presence                       | REQUIRES HUMAN CONFIRMATION        | London/UK/Europe wording must match the approved legal/company operating facts.                                                                   |
+| Team names, roles and qualifications      | REQUIRES HUMAN CONFIRMATION        | Each person must approve portrait, title, biography and public responsibilities.                                                                  |
+| Portfolio and capability media            | RIGHTS CONFIRMATION REQUIRED       | Internal manifests say approved; responsible owner must retain the actual licence/release/source records.                                         |
+| Logos and identifiable brands             | RIGHTS CONFIRMATION REQUIRED       | Confirm trademark/logo display permission and non-endorsement context.                                                                            |
+| Event photography and identifiable people | RIGHTS CONFIRMATION REQUIRED       | Confirm photographer copyright, event/client permission and model/participant releases where applicable.                                          |
+| Team portraits                            | RIGHTS CONFIRMATION REQUIRED       | Confirm photographer/source rights and subject consent.                                                                                           |
 
 ## Launch rule
 

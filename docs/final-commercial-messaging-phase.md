@@ -164,13 +164,13 @@ Final report:
 
 ### Ten-second persona test
 
-| Persona | What | Relevant | Benefit | Proof | Difference | Next step | Score |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Chinese robotics founder planning UK expansion | Yes | Yes | Yes | Yes | Yes | Yes | 6/6 |
-| Chinese EV international marketing director attending an exhibition | Yes | Yes | Yes | Yes | Yes | Yes | 6/6 |
-| Consumer-electronics European GM with a two-person UK team | Yes | Yes | Yes | Yes | Yes | Yes | 6/6 |
-| Chinese beauty brand preparing UK launch activity | Yes | Yes | Yes | Yes | Yes | Yes | 6/6 |
-| UK university, venue or specialist considering China-related work | Yes | Yes | Yes | Yes | Yes | Yes | 6/6 |
+| Persona                                                             | What | Relevant | Benefit | Proof | Difference | Next step | Score |
+| ------------------------------------------------------------------- | ---- | -------- | ------- | ----- | ---------- | --------- | ----- |
+| Chinese robotics founder planning UK expansion                      | Yes  | Yes      | Yes     | Yes   | Yes        | Yes       | 6/6   |
+| Chinese EV international marketing director attending an exhibition | Yes  | Yes      | Yes     | Yes   | Yes        | Yes       | 6/6   |
+| Consumer-electronics European GM with a two-person UK team          | Yes  | Yes      | Yes     | Yes   | Yes        | Yes       | 6/6   |
+| Chinese beauty brand preparing UK launch activity                   | Yes  | Yes      | Yes     | Yes   | Yes        | Yes       | 6/6   |
+| UK university, venue or specialist considering China-related work   | Yes  | Yes      | Yes     | Yes   | Yes        | Yes       | 6/6   |
 
 ### Reference audit
 

@@ -8,11 +8,31 @@ import type { Language } from "@/lib/i18n";
 import { globeView, projectLocation, routePath } from "@/components/globe/globeGeometry";
 import { useHydratedReducedMotion } from "@/components/motion/useHydratedReducedMotion";
 
-const stageNames = ["quiet", "origin", "primary", "europe", "settled"] as const;
+const stageNames = ["quiet", "origin", "primary", "london", "europe", "settled"] as const;
+const MAIN_PROPAGATION_DURATION_MS = 2600;
 const sequenceTimings = {
-  desktop: { duration: 4200, origin: 80, primary: 360, europe: 2800, camera: 2900 },
-  mobile: { duration: 3300, origin: 60, primary: 280, europe: 2150, camera: 2250 }
+  desktop: {
+    cycle: 12000,
+    origin: 350,
+    primary: 1100,
+    london: 4150,
+    europe: 4650,
+    settled: 6500,
+    camera: 2900
+  },
+  mobile: { cycle: 11000, origin: 250, primary: 900, london: 3800, europe: 4200, settled: 5900, camera: 2250 }
 } as const;
+
+const residualParticleSpecs = [
+  { id: "beijing-london-a", from: "beijing", to: "london", duration: 6.4, delay: 0.2 },
+  { id: "shanghai-london", from: "shanghai", to: "london", duration: 5.8, delay: 2.6 },
+  { id: "shenzhen-london", from: "shenzhen", to: "london", duration: 6.7, delay: 5.1 },
+  { id: "london-paris", from: "london", to: "paris", duration: 3.6, delay: 1.4 },
+  { id: "london-berlin", from: "london", to: "berlin", duration: 4.2, delay: 4.7 }
+] as const;
+
+export type GlobeEmphasis = "china" | "europe" | null;
+type GlobeInteraction = Exclude<GlobeEmphasis, null> | ConnectionLocation["id"] | null;
 
 const labelPlacement: Partial<Record<ConnectionLocation["id"], string>> = {
   beijing: "translate(14px, -30px)",
@@ -34,8 +54,9 @@ const locationMap = new Map(connectionLocations.map((item) => [item.id, item]));
 
 function stageForElapsed(elapsed: number, compact: boolean) {
   const timing = compact ? sequenceTimings.mobile : sequenceTimings.desktop;
-  if (elapsed >= timing.duration) return 4;
-  if (elapsed >= timing.europe) return 3;
+  if (elapsed >= timing.settled) return 5;
+  if (elapsed >= timing.europe) return 4;
+  if (elapsed >= timing.london) return 3;
   if (elapsed >= timing.primary) return 2;
   if (elapsed >= timing.origin) return 1;
   return 0;
@@ -45,12 +66,21 @@ function easeOutCubic(value: number) {
   return 1 - Math.pow(1 - value, 3);
 }
 
-export function VenusGlobeVisual({ language }: { language: Language }) {
+export function VenusGlobeVisual({
+  language,
+  emphasis = null
+}: {
+  language: Language;
+  emphasis?: GlobeEmphasis;
+}) {
   const rootRef = useRef<HTMLDivElement>(null);
   const canvasHostRef = useRef<HTMLDivElement>(null);
   const globeRef = useRef<Globe | null>(null);
   const elapsedRef = useRef(0);
+  const cameraElapsedRef = useRef(0);
   const stageRef = useRef(0);
+  const cityReleaseTimerRef = useRef<number | null>(null);
+  const previousInteractionRef = useRef<GlobeInteraction>(null);
   const reducedMotion = useHydratedReducedMotion();
   const [shouldLoad, setShouldLoad] = useState(false);
   const [inView, setInView] = useState(false);
@@ -58,6 +88,9 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
   const [compactMotion, setCompactMotion] = useState(false);
   const [enhanced, setEnhanced] = useState(false);
   const [stage, setStage] = useState(0);
+  const [introduced, setIntroduced] = useState(false);
+  const [cityEmphasis, setCityEmphasis] = useState<ConnectionLocation["id"] | null>(null);
+  const interaction: GlobeInteraction = cityEmphasis ?? emphasis;
 
   const projectedLocations = useMemo(
     () => new Map(connectionLocations.map((item) => [item.id, projectLocation(item)])),
@@ -109,13 +142,14 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
   useEffect(() => {
     const timing = compactMotion ? sequenceTimings.mobile : sequenceTimings.desktop;
     if (reducedMotion) {
-      elapsedRef.current = timing.duration;
-      stageRef.current = 4;
-      setStage(4);
+      elapsedRef.current = timing.settled;
+      stageRef.current = 5;
+      setStage(5);
+      setIntroduced(true);
       globeRef.current?.update({ phi: globeView.phi, theta: globeView.theta });
       return;
     }
-    if (!inView || !pageVisible || stageRef.current === 4) return;
+    if (!inView || !pageVisible || interaction) return;
 
     let frame = 0;
     let previous = 0;
@@ -123,45 +157,45 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
       if (!previous) previous = time;
       const delta = Math.min(time - previous, 64);
       previous = time;
-      elapsedRef.current = Math.min(timing.duration, elapsedRef.current + delta);
+      elapsedRef.current += delta;
+      if (elapsedRef.current >= timing.cycle) elapsedRef.current %= timing.cycle;
       const nextStage = stageForElapsed(elapsedRef.current, compactMotion);
       if (nextStage !== stageRef.current) {
         stageRef.current = nextStage;
         setStage(nextStage);
+        if (nextStage === 5) setIntroduced(true);
       }
 
-      const cameraProgress = easeOutCubic(Math.min(elapsedRef.current / timing.camera, 1));
+      cameraElapsedRef.current = Math.min(timing.camera, cameraElapsedRef.current + delta);
+      const cameraProgress = easeOutCubic(cameraElapsedRef.current / timing.camera);
+      const driftProgress = Math.max(0, cameraProgress - 0.92) / 0.08;
       globeRef.current?.update({
-        phi: globeView.phi - (1 - cameraProgress) * 0.045,
-        theta: globeView.theta + (1 - cameraProgress) * 0.012
+        phi: globeView.phi - (1 - cameraProgress) * 0.045 + Math.sin(time / 22000) * 0.007 * driftProgress,
+        theta:
+          globeView.theta + (1 - cameraProgress) * 0.012 + Math.sin(time / 31000) * 0.0025 * driftProgress
       });
 
-      if (elapsedRef.current < timing.duration) {
-        frame = requestAnimationFrame(tick);
-      } else {
-        globeRef.current?.update({ phi: globeView.phi, theta: globeView.theta });
-      }
-    };
-    frame = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(frame);
-  }, [compactMotion, inView, pageVisible, reducedMotion]);
-
-  useEffect(() => {
-    if (stage < 4 || reducedMotion || !inView || !pageVisible) return;
-    let frame = 0;
-    const tick = (time: number) => {
-      globeRef.current?.update({
-        phi: globeView.phi + Math.sin(time / 22000) * 0.007,
-        theta: globeView.theta + Math.sin(time / 31000) * 0.0025
-      });
       frame = requestAnimationFrame(tick);
     };
     frame = requestAnimationFrame(tick);
-    return () => {
-      cancelAnimationFrame(frame);
-      globeRef.current?.update({ phi: globeView.phi, theta: globeView.theta });
-    };
-  }, [inView, pageVisible, reducedMotion, stage]);
+    return () => cancelAnimationFrame(frame);
+  }, [compactMotion, inView, interaction, pageVisible, reducedMotion]);
+
+  useEffect(() => {
+    if (previousInteractionRef.current && !interaction && !reducedMotion) {
+      elapsedRef.current = 0;
+      stageRef.current = 0;
+      setStage(0);
+    }
+    previousInteractionRef.current = interaction;
+  }, [interaction, reducedMotion]);
+
+  useEffect(
+    () => () => {
+      if (cityReleaseTimerRef.current !== null) window.clearTimeout(cityReleaseTimerRef.current);
+    },
+    []
+  );
 
   useEffect(() => {
     if (!shouldLoad) return;
@@ -269,10 +303,38 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
     };
   }, [shouldLoad]);
 
-  const networkVisible = stage >= 3 || reducedMotion;
-  const primaryVisible = stage >= 2 || reducedMotion;
-  const originVisible = stage >= 1 || reducedMotion;
+  const activateCity = (city: ConnectionLocation["id"]) => {
+    if (cityReleaseTimerRef.current !== null) window.clearTimeout(cityReleaseTimerRef.current);
+    cityReleaseTimerRef.current = null;
+    setCityEmphasis(city);
+  };
+  const releaseCity = () => {
+    if (cityReleaseTimerRef.current !== null) window.clearTimeout(cityReleaseTimerRef.current);
+    cityReleaseTimerRef.current = window.setTimeout(() => {
+      setCityEmphasis(null);
+      cityReleaseTimerRef.current = null;
+    }, 550);
+  };
+  const routeHighlighted = (route: (typeof connectionRoutes)[number]) => {
+    if (!interaction) return false;
+    if (interaction === "china") return route.hierarchy === "primary";
+    if (interaction === "europe") return route.hierarchy === "secondary";
+    if (interaction === "london") return true;
+    return route.from === interaction || route.to === interaction;
+  };
+  const nodeHighlighted = (item: ConnectionLocation) => {
+    if (!interaction) return false;
+    if (interaction === "china") return item.type === "origin";
+    if (interaction === "europe") return item.type === "primary-hub" || item.type === "europe-context";
+    if (interaction === "london") return item.id === "london" || item.type === "europe-context";
+    return item.id === interaction || item.id === "london";
+  };
+
+  const networkVisible = introduced || stage >= 4 || reducedMotion || Boolean(interaction);
+  const primaryVisible = introduced || stage >= 2 || reducedMotion || Boolean(interaction);
+  const originVisible = introduced || stage >= 1 || reducedMotion || Boolean(interaction);
   const paused = !reducedMotion && (!inView || !pageVisible);
+  const narrativeActive = !reducedMotion && !interaction;
 
   return (
     <div
@@ -281,11 +343,34 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
       data-connection-visual
       data-globe-stage={stageNames[stage]}
       data-globe-paused={paused ? "true" : "false"}
+      data-globe-emphasis={interaction ?? "ambient"}
+      data-globe-narrative={narrativeActive ? "active" : "suppressed"}
+      data-main-propagation-ms={MAIN_PROPAGATION_DURATION_MS}
       data-reduced-motion={reducedMotion ? "true" : "false"}
     >
+      <div
+        className="pointer-events-none absolute inset-[5%] rounded-full opacity-[0.42]"
+        aria-hidden="true"
+        data-globe-halo="temperature-rim"
+        style={{
+          background:
+            "conic-gradient(from 215deg, rgba(82,90,97,.18) 0deg, rgba(105,105,100,.12) 105deg, rgba(145,132,111,.16) 220deg, rgba(110,107,101,.12) 300deg, rgba(82,90,97,.18) 360deg)",
+          maskImage:
+            "radial-gradient(circle, transparent 0%, transparent 96.5%, #000 98.1%, rgba(0,0,0,.62) 99.2%, transparent 100%)",
+          WebkitMaskImage:
+            "radial-gradient(circle, transparent 0%, transparent 96.5%, #000 98.1%, rgba(0,0,0,.62) 99.2%, transparent 100%)"
+        }}
+      />
+      <div
+        className="pointer-events-none absolute inset-[5%] rounded-full border border-pearl/[0.045] shadow-[0_0_22px_rgba(126,124,116,0.07)]"
+        aria-hidden="true"
+        data-globe-halo="neutral-rim"
+      />
       <svg
         viewBox="0 0 1000 1000"
-        className="absolute inset-0 h-full w-full"
+        className={`absolute inset-0 h-full w-full transition-opacity duration-700 ${
+          enhanced ? "opacity-0" : "opacity-100"
+        }`}
         aria-hidden="true"
         data-globe-fallback
       >
@@ -368,15 +453,20 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
         <g fill="none" strokeLinecap="round" strokeLinejoin="round">
           {paths.map(({ route, path }) => {
             const visible = route.hierarchy === "primary" ? primaryVisible : networkVisible;
+            const highlighted = routeHighlighted(route);
+            const baseOpacity = route.hierarchy === "primary" ? 0.14 : 0.075;
+            const interactionOpacity = highlighted ? (route.hierarchy === "primary" ? 0.3 : 0.22) : 0.045;
             return (
               <path
                 key={`base-${route.from}-${route.to}`}
                 d={path}
                 className={route.mobile ? undefined : "hidden sm:block"}
                 stroke="#c8a56a"
-                strokeOpacity={visible ? (route.hierarchy === "primary" ? 0.14 : 0.075) : 0}
+                strokeOpacity={visible ? (interaction ? interactionOpacity : baseOpacity) : 0}
                 strokeWidth={route.hierarchy === "primary" ? 0.72 : 0.58}
                 vectorEffect="non-scaling-stroke"
+                data-connection-base-route={route.hierarchy}
+                data-route-highlighted={highlighted ? "true" : "false"}
                 style={{
                   transition: reducedMotion ? "none" : "stroke-opacity .8s cubic-bezier(.22,1,.36,1)"
                 }}
@@ -387,6 +477,7 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
             const primary = route.hierarchy === "primary";
             const visible = primary ? primaryVisible : networkVisible;
             const routeVisible = visible && (!compactMotion || route.mobile);
+            const phaseActive = narrativeActive && (primary ? stage === 2 : stage === 4);
             return (
               <path
                 key={`${route.from}-${route.to}`}
@@ -401,19 +492,76 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
                 data-route-from={route.from}
                 data-route-to={route.to}
                 data-route-mobile={route.mobile ? "true" : "false"}
+                data-route-highlighted={routeHighlighted(route) ? "true" : "false"}
                 pathLength="1"
                 style={{
                   strokeDasharray: primary ? "0.012 0.988" : "0.009 0.991",
                   strokeDashoffset: 1,
-                  opacity: routeVisible && !reducedMotion ? 1 : 0,
-                  animationName: routeVisible && !reducedMotion ? "venus-route-flow" : "none",
-                  animationDuration: `${primary ? 8.4 + index * 0.55 : 10.5 + (index % 4) * 0.8}s`,
-                  animationDelay: `${primary ? index * 0.42 : (index % 5) * 0.7}s`,
-                  animationTimingFunction: "linear",
-                  animationIterationCount: "infinite",
+                  opacity: routeVisible && phaseActive ? 1 : 0,
+                  animationName: routeVisible && phaseActive ? "venus-route-flow" : "none",
+                  animationDuration: primary ? `${MAIN_PROPAGATION_DURATION_MS}ms` : "1.45s",
+                  animationDelay: `${primary ? index * 0.09 : (index % 5) * 0.14}s`,
+                  animationTimingFunction: "cubic-bezier(.22,1,.36,1)",
+                  animationIterationCount: 1,
+                  animationFillMode: "both",
                   animationPlayState: inView && pageVisible ? "running" : "paused"
                 }}
               />
+            );
+          })}
+        </g>
+
+        <g
+          aria-hidden="true"
+          data-residual-particle-layer
+          style={{
+            opacity: reducedMotion
+              ? 0
+              : interaction
+                ? 0.24
+                : stage === 2 || stage === 4
+                  ? 0.28
+                  : stage === 3
+                    ? 0.4
+                    : stage === 5
+                      ? 1
+                      : 0.52,
+            visibility: inView && pageVisible && !reducedMotion ? "visible" : "hidden",
+            transition: reducedMotion ? "none" : "opacity .7s cubic-bezier(.22,1,.36,1)"
+          }}
+        >
+          {residualParticleSpecs.map((particle) => {
+            const route = paths.find(
+              ({ route: candidate }) => candidate.from === particle.from && candidate.to === particle.to
+            );
+            if (!route) return null;
+            return (
+              <g
+                key={particle.id}
+                opacity="0"
+                data-residual-particle={particle.id}
+                data-particle-duration={`${particle.duration}s`}
+              >
+                <circle r="5.2" fill="#c8a56a" fillOpacity=".12" />
+                <circle r="2.1" fill="#d7b77f" fillOpacity=".78" data-residual-particle-core />
+                <animateMotion
+                  path={route.path}
+                  dur={`${particle.duration}s`}
+                  begin={`${particle.delay}s`}
+                  repeatCount="indefinite"
+                  calcMode="spline"
+                  keyTimes="0;1"
+                  keySplines=".4 0 .2 1"
+                />
+                <animate
+                  attributeName="opacity"
+                  values="0;0;.72;.72;0;0"
+                  keyTimes="0;.08;.18;.72;.82;1"
+                  dur={`${particle.duration}s`}
+                  begin={`${particle.delay}s`}
+                  repeatCount="indefinite"
+                />
+              </g>
             );
           })}
         </g>
@@ -434,11 +582,18 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
                   .filter((location) => location.type === "origin")
                   .findIndex((location) => location.id === item.id)
               : 0;
+          const highlighted = nodeHighlighted(item);
+          const narrativeHighlighted =
+            (stage === 1 && item.type === "origin") ||
+            (stage === 2 && (item.type === "origin" || item.id === "london")) ||
+            (stage === 3 && item.id === "london") ||
+            (stage === 4 && (item.id === "london" || item.type === "europe-context"));
+          const nodeOpacity = interaction ? (highlighted ? 1 : 0.48) : visible ? 1 : 0.16;
           return (
             <motion.g
               key={item.id}
               initial={false}
-              animate={{ opacity: visible ? 1 : 0.16 }}
+              animate={{ opacity: nodeOpacity }}
               transition={
                 reducedMotion
                   ? { duration: 0 }
@@ -446,13 +601,30 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
               }
               className={item.mobileRoute || item.type !== "europe-context" ? undefined : "hidden sm:block"}
               data-connection-node={item.id}
+              data-node-highlighted={highlighted ? "true" : "false"}
+              onPointerEnter={(event) => {
+                if (event.pointerType !== "touch") activateCity(item.id);
+              }}
+              onPointerLeave={releaseCity}
             >
+              <circle cx={point.x} cy={point.y} r={radius + 12} fill="transparent" pointerEvents="all" />
               <circle
                 cx={point.x}
                 cy={point.y}
                 r={radius + 7}
                 fill="#c8a56a"
-                fillOpacity={item.type === "primary-hub" ? 0.11 : 0.06}
+                fillOpacity={
+                  highlighted || narrativeHighlighted
+                    ? item.type === "primary-hub"
+                      ? 0.16
+                      : 0.1
+                    : item.type === "primary-hub"
+                      ? 0.11
+                      : 0.06
+                }
+                data-node-breathe={
+                  item.id === "london" || item.id === "beijing" || item.id === "shanghai" ? "true" : undefined
+                }
               />
               {item.type === "primary-hub" ? (
                 <circle
@@ -491,18 +663,35 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
               : item.type === "primary-hub"
                 ? primaryVisible
                 : networkVisible;
+          const highlighted = nodeHighlighted(item);
+          const labelOpacity = interaction
+            ? highlighted
+              ? 1
+              : item.type === "europe-context"
+                ? 0.34
+                : 0.48
+            : visible
+              ? item.type === "europe-context"
+                ? 0.68
+                : 1
+              : 0;
           return (
             <span key={item.id}>
               <motion.span
-                className="pointer-events-none absolute hidden whitespace-nowrap text-[11px] font-medium tracking-[0.04em] text-pearl sm:block"
+                className="pointer-events-auto absolute hidden cursor-default whitespace-nowrap text-[11px] font-medium tracking-[0.04em] text-pearl sm:block"
                 style={{
                   left: `${((point.x / globeView.viewBox) * 100).toFixed(4)}%`,
                   top: `${((point.y / globeView.viewBox) * 100).toFixed(4)}%`,
                   transform: labelPlacement[item.id]
                 }}
                 initial={false}
-                animate={{ opacity: visible ? (item.type === "europe-context" ? 0.68 : 1) : 0 }}
+                animate={{ opacity: labelOpacity }}
                 transition={reducedMotion ? { duration: 0 } : { duration: 0.48 }}
+                data-connection-label={item.id}
+                onPointerEnter={(event) => {
+                  if (event.pointerType !== "touch") activateCity(item.id);
+                }}
+                onPointerLeave={releaseCity}
               >
                 <span className={item.type === "primary-hub" ? "text-champagne" : undefined}>
                   {item.label[language]}
@@ -517,7 +706,7 @@ export function VenusGlobeVisual({ language }: { language: Language }) {
                     transform: mobileLabelPlacement[item.id]
                   }}
                   initial={false}
-                  animate={{ opacity: visible ? 1 : 0 }}
+                  animate={{ opacity: labelOpacity }}
                   transition={reducedMotion ? { duration: 0 } : { duration: 0.48 }}
                 >
                   <span className={item.type === "primary-hub" ? "text-champagne" : undefined}>

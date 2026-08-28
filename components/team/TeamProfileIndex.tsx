@@ -13,7 +13,11 @@ function displayName(member: TeamMember, language: Language) {
 
 function Portrait({ member, language }: { member: TeamMember; language: Language }) {
   return (
-    <div className="relative aspect-[4/5] overflow-hidden border border-ink/10 bg-mist" data-portrait-frame data-mobile-reveal>
+    <div
+      className="relative aspect-[4/5] overflow-hidden border border-ink/10 bg-mist"
+      data-portrait-frame
+      data-mobile-reveal
+    >
       <Image
         src={member.image}
         alt={member.imageAlt[language]}
@@ -37,9 +41,7 @@ function ProfileDetails({ member, language }: { member: TeamMember; language: La
         <p className="mt-4 text-xl leading-8 text-ink">{member.projectResponsibility?.[language]}</p>
       </div>
       <div className="lg:col-span-5 lg:col-start-6">
-        <p className="text-ink/42 text-xs uppercase tracking-editorial">
-          {zh ? "项目价值" : "CLIENT VALUE"}
-        </p>
+        <p className="text-ink/42 text-xs uppercase tracking-editorial">{zh ? "项目价值" : "CLIENT VALUE"}</p>
         <p className="text-ink/66 mt-4 text-base leading-7">{member.clientValue?.[language]}</p>
       </div>
       <div className="lg:col-span-2 lg:col-start-11">
@@ -109,8 +111,7 @@ export function TeamProfileIndex({ language }: { language: Language }) {
           const active = activeIndex === index;
           const leadership = member.featured === true;
           const coreIndex = index - leadershipCount;
-          const fillsTwoCardFinalRow =
-            !leadership && coreRemainder === 2 && coreIndex >= coreCount - 2;
+          const fillsTwoCardFinalRow = !leadership && coreRemainder === 2 && coreIndex >= coreCount - 2;
           return (
             <article
               key={member.slug}
@@ -136,7 +137,7 @@ export function TeamProfileIndex({ language }: { language: Language }) {
                     </span>
                   </div>
                   <p className="mt-3 text-sm font-medium leading-6 text-ink">{member.role?.[language]}</p>
-                  <p className="text-ink/70 text-sm leading-6">{member.specialism?.[language]}</p>
+                  <p className="text-sm leading-6 text-ink/70">{member.specialism?.[language]}</p>
                   <p className="text-ink/72 mt-5 text-base leading-7">{member.contribution[language]}</p>
                   <p className="text-ink/58 mt-4 text-sm leading-6">{member.expertiseSummary[language]}</p>
                   <p className="mt-5 border-l border-champagne/70 pl-4 text-xs leading-5 text-ink/65">
@@ -177,16 +178,24 @@ export function TeamProfileIndex({ language }: { language: Language }) {
       </div>
 
       <nav className="team-mobile-progress" aria-label={language === "zh" ? "团队成员" : "Team members"}>
-        <span aria-hidden="true">{String(railIndex + 1).padStart(2, "0")} / {String(publicTeamMembers.length).padStart(2, "0")}</span>
+        <span aria-hidden="true">
+          {String(railIndex + 1).padStart(2, "0")} / {String(publicTeamMembers.length).padStart(2, "0")}
+        </span>
         <span className="team-mobile-progress__markers">
           {publicTeamMembers.map((member, index) => (
             <button
               key={member.slug}
               type="button"
-              aria-label={language === "zh" ? `查看${displayName(member, language)}` : `View ${displayName(member, language)}`}
+              aria-label={
+                language === "zh"
+                  ? `查看${displayName(member, language)}`
+                  : `View ${displayName(member, language)}`
+              }
               aria-current={railIndex === index ? "true" : undefined}
               onClick={() => moveToMember(index)}
-            ><span /></button>
+            >
+              <span />
+            </button>
           ))}
         </span>
       </nav>

@@ -12,11 +12,13 @@ test("desktop editorial headings stay controlled across the public journeys", as
       await expect(page.locator("main")).toBeVisible();
 
       const audit = await page.locator("main").evaluate((main) => {
-        const visibleSectionHeadings = Array.from(main.querySelectorAll<HTMLElement>("h2")).filter((heading) => {
-          const rect = heading.getBoundingClientRect();
-          const size = Number.parseFloat(getComputedStyle(heading).fontSize);
-          return rect.width > 0 && size >= 32 && !heading.closest("[data-connection-globe]");
-        });
+        const visibleSectionHeadings = Array.from(main.querySelectorAll<HTMLElement>("h2")).filter(
+          (heading) => {
+            const rect = heading.getBoundingClientRect();
+            const size = Number.parseFloat(getComputedStyle(heading).fontSize);
+            return rect.width > 0 && size >= 32 && !heading.closest("[data-connection-globe]");
+          }
+        );
 
         return {
           overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
@@ -30,9 +32,13 @@ test("desktop editorial headings stay controlled across the public journeys", as
         };
       });
 
-      expect(audit.overflow, `${route} at ${width}px should not overflow horizontally`).toBeLessThanOrEqual(1);
+      expect(audit.overflow, `${route} at ${width}px should not overflow horizontally`).toBeLessThanOrEqual(
+        1
+      );
       const headlineTowers = audit.headings.filter((heading) => heading.lines > 4);
-      expect(headlineTowers, `${route} at ${width}px should not contain a desktop headline tower`).toEqual([]);
+      expect(headlineTowers, `${route} at ${width}px should not contain a desktop headline tower`).toEqual(
+        []
+      );
     }
   }
 });
@@ -45,7 +51,9 @@ test("homepage editorial statements return to the left spine", async ({ page }) 
     "Four routes from market ambition to useful local action.",
     "Make the market moment useful before, during and after it happens."
   ]) {
-    const x = await page.getByRole("heading", { name: text }).evaluate((heading) => heading.getBoundingClientRect().x);
+    const x = await page
+      .getByRole("heading", { name: text })
+      .evaluate((heading) => heading.getBoundingClientRect().x);
     expect(x).toBeLessThan(144);
   }
 });
@@ -57,7 +65,9 @@ test("desktop-only measures leave mobile and tablet flow free of overflow", asyn
     for (const route of routes) {
       await page.goto(route);
       await expect(page.locator("main")).toBeVisible();
-      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+      const overflow = await page.evaluate(
+        () => document.documentElement.scrollWidth - document.documentElement.clientWidth
+      );
       expect(overflow, `${route} at ${width}px should not overflow horizontally`).toBeLessThanOrEqual(1);
     }
   }
