@@ -40,7 +40,7 @@ test("static production robots allows indexing and sitemap is data-driven", asyn
   expect(robots.ok()).toBeTruthy();
   const robotsText = await robots.text();
   expect(robotsText).toContain("Allow: /");
-  expect(robotsText).toContain("https://www.venusbridge.com/sitemap.xml");
+  expect(robotsText).toContain("https://www.venusbridge.co.uk/sitemap.xml");
   expect(robotsText).not.toContain("Disallow: /");
 
   const sitemap = await request.get("/sitemap.xml");
