@@ -112,13 +112,10 @@ test("talent references are anonymous booking examples and are not used as team 
   assert.doesNotMatch(aboutFiles, /talent-categories|portfolioMediaForPage\("\/talent"\)/);
 });
 
-test("sitemap indexes real projects but not scenarios or the development review route", async () => {
+test("sitemap indexes real projects and the development review route is absent", async () => {
   const sitemap = await source("app/sitemap.ts");
   assert.match(sitemap, /publishedPortfolioProjects/);
   assert.doesNotMatch(sitemap, /caseStudies|media-review/);
   assert.match(sitemap, /workMode === "hidden"/);
-  const review = await source("app/[lang]/media-review/page.tsx");
-  assert.match(review, /ENABLE_MEDIA_REVIEW !== "true"/);
-  assert.match(review, /RELEASE_PROFILE === "production"/);
-  assert.match(review, /index: false/);
+  await assert.rejects(access(new URL("app/[lang]/media-review/page.tsx", root)));
 });

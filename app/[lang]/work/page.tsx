@@ -1,9 +1,7 @@
 import { notFound } from "next/navigation";
-import type { CommercialCaseFilter } from "@/components/sections/CommercialCaseIndex";
 import { PortfolioWork } from "@/components/sections/PortfolioWork";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
-import { commercialCaseFilters } from "@/content/portfolio";
 import { isSupportedLocale } from "@/lib/i18n";
 import { getEffectiveWorkMode } from "@/lib/release";
 import { buildMetadata } from "@/lib/seo";
@@ -25,19 +23,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   });
 }
 
-export default async function WorkPage({
-  params,
-  searchParams
-}: {
-  params: Promise<{ lang: string }>;
-  searchParams: Promise<{ category?: string }>;
-}) {
-  const [{ lang }, query] = await Promise.all([params, searchParams]);
+export default async function WorkPage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
   if (!isSupportedLocale(lang) || getEffectiveWorkMode() === "hidden") notFound();
   const zh = lang === "zh";
-  const initialCategory = commercialCaseFilters.some((filter) => filter.value === query.category)
-    ? (query.category as CommercialCaseFilter)
-    : "all";
 
   return (
     <>
@@ -56,7 +45,7 @@ export default async function WorkPage({
           </p>
         </Container>
       </section>
-      <PortfolioWork language={lang} initialCategory={initialCategory} />
+      <PortfolioWork language={lang} />
     </>
   );
 }

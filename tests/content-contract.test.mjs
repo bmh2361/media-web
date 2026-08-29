@@ -194,7 +194,17 @@ test("company, legal and indexing configuration is centralised", async () => {
   ])
     assert.match(company, new RegExp(field));
   assert.match(await source("lib/seo.ts"), /indexable/);
-  assert.match(await source("app/robots.ts"), /disallow: "\/"/);
+  assert.match(await source("app/robots.ts"), /allow: "\/"/);
+});
+
+test("legal release configuration distinguishes pre-incorporation from incorporated identity", async () => {
+  const company = await source("content/company.ts");
+  const validator = await source("scripts/validate-release.mjs");
+  const terms = await source("app/[lang]/terms/page.tsx");
+  assert.match(company, /\["pre-incorporation", "incorporated"\]/);
+  assert.match(validator, /LEGAL_ENTITY_MODE must be pre-incorporation or incorporated/);
+  assert.match(validator, /legalEntityMode === "incorporated"/);
+  assert.match(terms, /pre-incorporation business and is not a registered company/);
 });
 
 test.skip("work publishing keeps only approved portfolio records in the public route", async () => {
@@ -227,12 +237,13 @@ test("UK Fit Call and Execution Brief use distinct required fields", async () =>
   assert.match(forms, /Approval owner/);
 });
 
-test("production requires distributed rate limiting and complete human confirmations", async () => {
-  const rateLimit = await source("lib/contact/rate-limit.ts");
+test("static production requires direct contact and complete human confirmations", async () => {
+  const contact = await source("components/sections/ContactExperience.tsx");
   const releaseValidator = await source("scripts/validate-release.mjs");
-  assert.match(rateLimit, /interface RateLimitAdapter/);
-  assert.match(rateLimit, /DistributedRateLimitAdapter/);
-  assert.match(releaseValidator, /distributedRateLimitConfigured/);
+  assert.match(contact, /data-contact-delivery="direct-only"/);
+  assert.match(contact, /Venusbridge/);
+  assert.match(contact, /venusbridge\.co\.uk@gmail\.com/);
+  assert.doesNotMatch(contact, /<form|fetch\(/);
   for (const key of [
     "APPROVED_MEDIA_CONFIRMED",
     "PUBLIC_CASE_EVIDENCE_CONFIRMED",

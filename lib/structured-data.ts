@@ -2,12 +2,8 @@ import { brand } from "@/content/brand";
 import { company } from "@/content/company";
 import type { Language } from "@/lib/i18n";
 import { venusBridgeMedia } from "@/lib/brand/venusBridgeMedia";
-import { isProductionReleaseReady } from "@/lib/release";
 export type BreadcrumbItem = { name: string; path: string };
 export function organizationJsonLd() {
-  if (process.env.RELEASE_PROFILE === "production" && !isProductionReleaseReady()) {
-    return null;
-  }
   return {
     "@context": "https://schema.org",
     "@type": ["Organization", "ProfessionalService"],

@@ -56,16 +56,11 @@ test("capabilities expose exactly four outcome-led pillars", async () => {
 });
 
 test("legacy commercial routes resolve through the secondary capabilities redirect and stay absent from sitemap", async () => {
-  const config = (await import(new URL("../next.config.mjs", import.meta.url))).default;
-  const redirects = await config.redirects();
+  const redirects = await source("public/_redirects");
   const sitemap = await source("app/sitemap.ts");
   for (const legacy of ["/what-we-do", "/services", "/industries", "/expertise", "/talent", "/for-agencies"])
-    assert.ok(
-      redirects.some((item) => item.source.includes(legacy) && item.destination.includes("/capabilities"))
-    );
-  assert.ok(
-    redirects.some((item) => item.source.includes("/capabilities") && item.destination.includes("/companies"))
-  );
+    assert.match(redirects, new RegExp(`/en${legacy.replaceAll("/", "\\/")} .*\\/en\\/capabilities`));
+  assert.match(redirects, /\/en\/capabilities \/en\/companies 308/);
   for (const route of ["/companies", "/partners", "/work", "/about", "/contact"])
     assert.match(sitemap, new RegExp(route));
   assert.doesNotMatch(sitemap, /"\/(?:what-we-do|services|industries|expertise|talent|for-agencies)/);
@@ -79,15 +74,11 @@ test("claim governance blocks endorsement and full market-entry claims", async (
   assert.match(claims, /portfolio-role[\s\S]*VERIFIED/);
 });
 
-test("contact captures a simple intent-routed collaboration enquiry", async () => {
+test("contact uses direct channels without an active submission route", async () => {
   const contact = await source("components/sections/ContactExperience.tsx");
-  const validation = await source("lib/contact/validation.ts");
-  for (const field of ["name", "company", "role", "email", "timing", "objective"])
-    assert.match(contact, new RegExp(`name="${field}"`));
-  assert.match(contact, /Send enquiry/);
-  assert.match(contact, /collaboratorType/);
-  assert.doesNotMatch(contact, /Fit Call|Execution Brief|ukStage/);
-  assert.doesNotMatch(validation, /enquiryType === "quick" && !data\.ukStage/);
+  assert.match(contact, /data-contact-delivery="direct-only"/);
+  assert.match(contact, /mailto:\$\{CONTACT_EMAIL\}/);
+  assert.doesNotMatch(contact, /<form|fetch\(|type="submit"/);
 });
 
 test("work detail uses the required truth-gated case structure", async () => {

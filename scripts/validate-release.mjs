@@ -6,6 +6,7 @@ const root = process.cwd();
 const argProfile = process.argv.find((arg) => arg.startsWith("--profile="))?.split("=")[1];
 const profiles = new Set(["development", "staging", "production"]);
 const workModes = new Set(["hidden", "scenarios", "portfolio"]);
+const legalEntityModes = new Set(["pre-incorporation", "incorporated"]);
 const marketEntryModes = new Set(["hidden", "coordination", "partnered"]);
 const profile = argProfile ?? process.env.RELEASE_PROFILE ?? "development";
 const passed = [];
@@ -47,27 +48,59 @@ const isProductionHttpsUrl = (value) => {
   const hostname = new URL(value).hostname;
   return !/(?:^|\.)localhost$|(?:^|\.)example\.(?:com|org|net)$|\.example$/i.test(hostname);
 };
-const isHttpsOrigin = (value) => {
-  try {
-    const url = new URL(value);
-    return url.protocol === "https:" && url.origin === value.replace(/\/$/, "");
-  } catch {
-    return false;
-  }
-};
 const nextConfigSource = read("next.config.mjs");
+const redirectsSource = read("public/_redirects");
+const headersSource = read("public/_headers");
 const marketEntryRetired =
-  nextConfigSource.includes('/services/uk-market-entry", destination: "/:lang/capabilities"') &&
-  nextConfigSource.includes('/what-we-do/enter-the-uk", destination: "/:lang/capabilities"');
+  redirectsSource.includes("/en/services/uk-market-entry /en/capabilities 308") &&
+  redirectsSource.includes("/en/what-we-do/enter-the-uk /en/capabilities 308");
 
 if (!profiles.has(profile)) fail("release-profile", `Unsupported profile '${profile}'.`, ".env.example");
 else pass("release-profile", `Using ${profile}.`);
 if (profile === "production" && process.env.RELEASE_PROFILE !== "production")
-  fail(
+  warn(
     "production-profile",
-    "RELEASE_PROFILE=production must be set in the deployed environment so metadata and robots are indexable.",
+    "The validation profile came from the command; configure RELEASE_PROFILE=production in Cloudflare build settings.",
     ".env.example"
   );
+
+if (!nextConfigSource.includes('output: "export"') || !nextConfigSource.includes("unoptimized: true"))
+  fail("static-export", "Next.js must use output export with unoptimized static images.", "next.config.mjs");
+else pass("static-export", "Next.js is configured for a static export without an image runtime.");
+if (!redirectsSource.includes("/en/capabilities /en/companies 308"))
+  fail("cloudflare-redirects", "Canonical legacy redirects are missing.", "public/_redirects");
+else pass("cloudflare-redirects", "Cloudflare Pages redirects cover the canonical legacy routes.");
+for (const header of [
+  "Content-Security-Policy",
+  "Referrer-Policy",
+  "Permissions-Policy",
+  "X-Content-Type-Options",
+  "X-Frame-Options"
+])
+  if (!headersSource.includes(header)) fail("cloudflare-headers", `${header} is missing.`, "public/_headers");
+if (!failed.some((item) => item.check === "cloudflare-headers"))
+  pass("cloudflare-headers", "Cloudflare Pages preserves the required production security headers.");
+const directContactSource = read("components/sections/ContactExperience.tsx");
+const directContactReady =
+  directContactSource.includes('data-contact-delivery="direct-only"') &&
+  directContactSource.includes("Venusbridge") &&
+  directContactSource.includes("venusbridge.co.uk@gmail.com") &&
+  !directContactSource.includes("<form") &&
+  !directContactSource.includes("fetch(") &&
+  !fs.existsSync(path.join(root, "app/api/contact/route.ts"));
+if (!directContactReady)
+  fail(
+    "static-contact",
+    "Static release must expose direct contact without an active form or API route.",
+    "app/[lang]/contact/page.tsx"
+  );
+else pass("static-contact", "Contact is direct-only and has no server delivery dependency.");
+if (
+  fs.existsSync(path.join(root, "app/og/[lang]/[page]/route.tsx")) ||
+  !read("lib/seo.ts").includes("/og/venus-bridge.png")
+)
+  fail("static-open-graph", "Open Graph metadata must use the static production image.", "lib/seo.ts");
+else pass("static-open-graph", "Open Graph metadata uses a static production image.");
 
 const workMode = process.env.PUBLIC_WORK_MODE;
 if (profile === "production" && workMode !== "portfolio")
@@ -89,7 +122,7 @@ if (marketEntryRetired)
   legacy(
     "market-entry-mode",
     "The former market-entry routes are permanently redirected and are outside the canonical release surface.",
-    "next.config.mjs"
+    "public/_redirects"
   );
 else if (profile === "production" && !marketEntryModes.has(marketEntryMode))
   fail(
@@ -203,43 +236,44 @@ if (
   );
 else pass("investor-roadshow-gate", "Investor roadshow financial-promotion release gates are present.");
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
-const webhook = process.env.CONTACT_WEBHOOK_URL;
-const origins = (process.env.CONTACT_ALLOWED_ORIGINS ?? "")
-  .split(",")
-  .map((origin) => origin.trim())
-  .filter(Boolean);
+const siteUrl = company.websiteDomain;
 for (const [key, value, predicate, description] of [
-  ["NEXT_PUBLIC_SITE_URL", siteUrl, isProductionHttpsUrl, "an approved non-placeholder HTTPS URL"],
-  ["CONTACT_WEBHOOK_URL", webhook, isProductionHttpsUrl, "an approved non-placeholder HTTPS URL"]
+  ["NEXT_PUBLIC_SITE_URL", siteUrl, isProductionHttpsUrl, "an approved non-placeholder HTTPS URL"]
 ]) {
   if (profile === "production" && !predicate(value))
     fail("configuration", `${key} must be ${description}.`, ".env.example");
   else if (value && predicate(value)) pass("configuration", `${key} is structurally valid.`);
   else warn("configuration", `${key} is not configured for ${profile}.`, ".env.example");
 }
-if (profile === "production" && !process.env.CONTACT_WEBHOOK_SECRET?.trim())
+
+const legalEntityMode = process.env.LEGAL_ENTITY_MODE;
+if (profile === "production" && !legalEntityModes.has(legalEntityMode))
   fail(
-    "contact-signing",
-    "CONTACT_WEBHOOK_SECRET is required for signed production delivery.",
+    "legal-entity-mode",
+    "LEGAL_ENTITY_MODE must be pre-incorporation or incorporated for production.",
     ".env.example"
   );
-else if (process.env.CONTACT_WEBHOOK_SECRET?.trim())
-  pass("contact-signing", "Signed contact delivery is configured.");
+else if (legalEntityModes.has(legalEntityMode))
+  pass("legal-entity-mode", `Using truthful ${legalEntityMode} legal identity requirements.`);
+else warn("legal-entity-mode", "No explicit legal entity mode is configured.", ".env.example");
 
 if (profile === "production" && !hasCompleteCompanyConfiguration()) {
-  for (const [field, value] of [
-    ["legalName", company.legalName],
-    ["privacyControllerName", company.privacyControllerName],
-    ["companyNumber", company.companyNumber],
-    ["registeredOffice", company.registeredOffice],
+  const requiredCompanyFields = [
     ["privacyEffectiveDate", company.privacyEffectiveDate],
     ["termsEffectiveDate", company.termsEffectiveDate]
-  ])
+  ];
+  if (legalEntityMode === "incorporated")
+    requiredCompanyFields.unshift(
+      ["legalName", company.legalName],
+      ["privacyControllerName", company.privacyControllerName],
+      ["companyNumber", company.companyNumber],
+      ["registeredOffice", company.registeredOffice]
+    );
+  for (const [field, value] of requiredCompanyFields)
     if (!value)
       fail(
         "company-configuration",
-        `Company field '${field}' is required for production.`,
+        `Field '${field}' is required for ${legalEntityMode ?? "production"} release.`,
         "content/company.ts"
       );
   if (company.legalApprovalStatus !== "approved")
@@ -255,8 +289,8 @@ if (profile === "production" && !hasCompleteCompanyConfiguration()) {
       ".env.example"
     );
   for (const [field, value] of [
-    ["businessEmail", process.env.NEXT_PUBLIC_BUSINESS_EMAIL],
-    ["privacyContact", process.env.NEXT_PUBLIC_PRIVACY_EMAIL]
+    ["businessEmail", company.businessEmail],
+    ["privacyContact", company.privacyContact]
   ])
     if (!value || /\.example$/i.test(value))
       fail(
@@ -265,7 +299,7 @@ if (profile === "production" && !hasCompleteCompanyConfiguration()) {
         ".env.example"
       );
 } else if (hasCompleteCompanyConfiguration())
-  pass("company-configuration", "Company and legal public configuration is complete.");
+  pass("company-configuration", `Public configuration is complete for ${legalEntityMode}.`);
 else
   warn(
     "company-configuration",
@@ -273,27 +307,9 @@ else
     "content/company.ts"
   );
 
-if (profile === "production") {
-  if (!origins.length)
-    fail(
-      "contact-origins",
-      "CONTACT_ALLOWED_ORIGINS must contain one or more HTTPS origins.",
-      ".env.example"
-    );
-  else if (origins.some((origin) => !isHttpsOrigin(origin) || !isProductionHttpsUrl(origin)))
-    fail(
-      "contact-origins",
-      "Every production contact origin must be an HTTPS non-localhost origin.",
-      ".env.example"
-    );
-  else pass("contact-origins", `${origins.length} HTTPS production origin(s) configured.`);
-} else if (!origins.length)
-  warn("contact-origins", "No contact origins configured outside production.", ".env.example");
-
 for (const key of [
   "LEGAL_REVIEW_CONFIRMED",
   "PUBLIC_COMPANY_DETAILS_CONFIRMED",
-  "CONTACT_DELIVERY_VERIFIED",
   "APPROVED_MEDIA_CONFIRMED",
   "PUBLIC_CASE_EVIDENCE_CONFIRMED",
   "CONTACT_CHANNELS_CONFIRMED"
@@ -309,21 +325,6 @@ scopeMismatch(
   "No social-profile UI is published on the canonical surface, so this retired confirmation cannot block release.",
   ".env.example"
 );
-
-const distributedRateLimitConfigured =
-  process.env.RATE_LIMIT_PROVIDER === "distributed" &&
-  isProductionHttpsUrl(process.env.RATE_LIMIT_DISTRIBUTED_URL) &&
-  Boolean(process.env.RATE_LIMIT_DISTRIBUTED_TOKEN?.trim()) &&
-  process.env.DISTRIBUTED_RATE_LIMIT_VERIFIED === "true";
-if (profile === "production" && !distributedRateLimitConfigured)
-  fail(
-    "distributed-rate-limit",
-    "Production requires a configured and verified distributed rate-limit adapter.",
-    ".env.example"
-  );
-else if (distributedRateLimitConfigured)
-  pass("distributed-rate-limit", "Distributed rate limiting is configured and verified.");
-else warn("distributed-rate-limit", "Development uses the in-memory rate-limit adapter.", ".env.example");
 
 const analyticsEnabled = process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === "true";
 const analyticsConfigured =

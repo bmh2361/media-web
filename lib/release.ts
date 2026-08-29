@@ -1,7 +1,7 @@
 import "server-only";
 
 import { hasPartneredMarketEntryNetwork } from "@/content/market-entry";
-import { hasCompleteCompanyConfiguration } from "@/content/company";
+import { company, hasCompleteCompanyConfiguration } from "@/content/company";
 
 export const releaseProfiles = ["development", "staging", "production"] as const;
 export type ReleaseProfile = (typeof releaseProfiles)[number];
@@ -11,10 +11,7 @@ export type PublicWorkMode = (typeof publicWorkModes)[number];
 export const publicMarketEntryModes = ["hidden", "coordination", "partnered"] as const;
 export type PublicMarketEntryMode = (typeof publicMarketEntryModes)[number];
 
-type ConfirmationKey =
-  | "LEGAL_REVIEW_CONFIRMED"
-  | "PUBLIC_COMPANY_DETAILS_CONFIRMED"
-  | "CONTACT_DELIVERY_VERIFIED";
+type ConfirmationKey = "LEGAL_REVIEW_CONFIRMED" | "PUBLIC_COMPANY_DETAILS_CONFIRMED";
 
 const isHttpsProductionUrl = (input: string | undefined) => {
   if (!input) return false;
@@ -28,12 +25,6 @@ const isHttpsProductionUrl = (input: string | undefined) => {
     return false;
   }
 };
-const isHttpsProductionOrigin = (input: string) => {
-  if (!isHttpsProductionUrl(input)) return false;
-  const url = new URL(input);
-  return url.origin === input.replace(/\/$/, "");
-};
-
 const isReleaseProfile = (value: string | undefined): value is ReleaseProfile =>
   Boolean(value && releaseProfiles.includes(value as ReleaseProfile));
 const isPublicWorkMode = (value: string | undefined): value is PublicWorkMode =>
@@ -49,7 +40,6 @@ export type ReleaseConfig = {
   publicMarketEntryMode: PublicMarketEntryMode | null;
   legalReviewConfirmed: boolean;
   publicCompanyDetailsConfirmed: boolean;
-  contactDeliveryVerified: boolean;
   mediaGuidesEnabled: boolean;
 };
 
@@ -66,7 +56,6 @@ export function getReleaseConfig(): ReleaseConfig {
       : null,
     legalReviewConfirmed: confirmed("LEGAL_REVIEW_CONFIRMED"),
     publicCompanyDetailsConfirmed: confirmed("PUBLIC_COMPANY_DETAILS_CONFIRMED"),
-    contactDeliveryVerified: confirmed("CONTACT_DELIVERY_VERIFIED"),
     mediaGuidesEnabled: process.env.NEXT_PUBLIC_SHOW_MEDIA_GUIDES === "true"
   };
 }
@@ -83,26 +72,14 @@ export function getEffectiveMarketEntryMode(config = getReleaseConfig()): Public
 }
 
 export function isProductionReleaseReady(config = getReleaseConfig()) {
-  const origins = (process.env.CONTACT_ALLOWED_ORIGINS ?? "")
-    .split(",")
-    .map((origin) => origin.trim())
-    .filter(Boolean);
   return Boolean(
     config.configuredProfile === "production" &&
       config.publicWorkMode === "portfolio" &&
+      Boolean(company.legalEntityMode) &&
       hasCompleteCompanyConfiguration() &&
-      isHttpsProductionUrl(process.env.NEXT_PUBLIC_SITE_URL) &&
-      isHttpsProductionUrl(process.env.CONTACT_WEBHOOK_URL) &&
-      process.env.CONTACT_WEBHOOK_SECRET?.trim() &&
-      origins.length > 0 &&
-      origins.every(isHttpsProductionOrigin) &&
-      process.env.RATE_LIMIT_PROVIDER === "distributed" &&
-      isHttpsProductionUrl(process.env.RATE_LIMIT_DISTRIBUTED_URL) &&
-      process.env.RATE_LIMIT_DISTRIBUTED_TOKEN?.trim() &&
-      process.env.DISTRIBUTED_RATE_LIMIT_VERIFIED === "true" &&
+      isHttpsProductionUrl(company.websiteDomain) &&
       process.env.LEGAL_REVIEW_CONFIRMED === "true" &&
       process.env.PUBLIC_COMPANY_DETAILS_CONFIRMED === "true" &&
-      process.env.CONTACT_DELIVERY_VERIFIED === "true" &&
       process.env.APPROVED_MEDIA_CONFIRMED === "true" &&
       process.env.PUBLIC_CASE_EVIDENCE_CONFIRMED === "true" &&
       process.env.CONTACT_CHANNELS_CONFIRMED === "true"

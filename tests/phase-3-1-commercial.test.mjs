@@ -59,16 +59,12 @@ test("homepage stays at eight sections without overloading capability cards", as
   assert.doesNotMatch(page, /item\.examples\.slice\(0, 3\)/);
 });
 
-test("contact stays low-friction and routes company, partner and other intent", async () => {
+test("static contact stays low-friction and exposes both direct channels", async () => {
   const contact = await source("components/sections/ContactExperience.tsx");
-  for (const label of [
-    "Company project",
-    "Introduce an organisation",
-    "Institutional or other enquiry",
-    "Collaborator type"
-  ])
-    assert.match(contact, new RegExp(label.replace("/", "\\/")));
-  assert.match(contact, /name="objective"/);
+  assert.match(contact, /data-contact-delivery="direct-only"/);
+  assert.match(contact, /Venusbridge/);
+  assert.match(contact, /venusbridge\.co\.uk@gmail\.com/);
+  assert.doesNotMatch(contact, /<form|fetch\(/);
   assert.doesNotMatch(contact, /budget|pricing|package/i);
 });
 

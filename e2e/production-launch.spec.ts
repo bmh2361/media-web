@@ -35,10 +35,13 @@ test("public routes expose intentional bilingual metadata and language alternate
   }
 });
 
-test("robots fails closed before production approval and sitemap is data-driven", async ({ request }) => {
+test("static production robots allows indexing and sitemap is data-driven", async ({ request }) => {
   const robots = await request.get("/robots.txt");
   expect(robots.ok()).toBeTruthy();
-  expect(await robots.text()).toContain("Disallow: /");
+  const robotsText = await robots.text();
+  expect(robotsText).toContain("Allow: /");
+  expect(robotsText).toContain("https://www.venusbridge.com/sitemap.xml");
+  expect(robotsText).not.toContain("Disallow: /");
 
   const sitemap = await request.get("/sitemap.xml");
   expect(sitemap.ok()).toBeTruthy();
@@ -93,12 +96,12 @@ test("commercial measurement emits only allow-listed non-sensitive event context
   );
 });
 
-test("contact endpoint rejects malformed requests without exposing a stack trace", async ({ request }) => {
+test("static release exposes no contact API endpoint", async ({ request }) => {
   const malformed = await request.post("/api/contact", {
     headers: { "content-type": "application/json", origin: "http://127.0.0.1:3217" },
     data: "{invalid"
   });
-  expect([400, 403]).toContain(malformed.status());
+  expect(malformed.status()).toBe(404);
   expect(await malformed.text()).not.toMatch(/stack|node_modules|TypeError/i);
 });
 

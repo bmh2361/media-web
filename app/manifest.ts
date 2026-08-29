@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { venusBridgeMedia } from "@/lib/brand/venusBridgeMedia";
 
+export const dynamic = "force-static";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: venusBridgeMedia.name,
