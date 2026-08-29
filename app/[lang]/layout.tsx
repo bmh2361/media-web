@@ -17,7 +17,7 @@ import { MeasurementBridge } from "@/components/analytics/MeasurementBridge";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://venusbridgemedia.example"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.venusbridge.com"),
   applicationName: venusBridgeMedia.name,
   manifest: "/manifest.webmanifest",
   icons: {

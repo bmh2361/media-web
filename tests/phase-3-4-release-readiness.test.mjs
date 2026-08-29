@@ -5,13 +5,12 @@ import test from "node:test";
 const root = new URL("../", import.meta.url);
 const source = async (path) => readFile(new URL(path, root), "utf8");
 
-test("quick enquiries keep the UI-declared company field optional", async () => {
-  const validation = await source("lib/contact/validation.ts");
-  const deliveryTest = await source("scripts/test-contact-delivery.mjs");
-  assert.doesNotMatch(validation, /enquiryType === "quick" && !data\.company/);
-  assert.match(deliveryTest, /optional company can be blank/);
-  assert.match(deliveryTest, /Send enquiry/);
-  assert.match(deliveryTest, /提交咨询/);
+test("the static release exposes direct contact without a server submission path", async () => {
+  const contact = await source("components/sections/ContactExperience.tsx");
+  assert.match(contact, /data-contact-delivery="direct-only"/);
+  assert.match(contact, /Venusbridge/);
+  assert.match(contact, /mailto:\$\{CONTACT_EMAIL\}/);
+  assert.doesNotMatch(contact, /<form|fetch\(|\/api\/contact/);
 });
 
 test("production validation separates canonical blockers from retired findings", async () => {

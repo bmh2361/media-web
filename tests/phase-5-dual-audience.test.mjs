@@ -32,18 +32,21 @@ test("homepage implements the ordered two-sided commercial story", () => {
 });
 
 test("capabilities is secondary and redirects to Companies", () => {
-  assert.match(read("next.config.mjs"), /capabilities.*companies/);
+  const redirects = read("public/_redirects");
+  assert.match(redirects, /\/en\/capabilities \/en\/companies 308/);
+  assert.match(redirects, /\/zh\/capabilities \/zh\/companies 308/);
   assert.match(read("app/[lang]/capabilities/page.tsx"), /redirect\(withLanguage\("\/companies"/);
 });
 
-test("partner claims fail closed and contact routes three intents", () => {
+test("partner claims fail closed and contact uses direct static channels", () => {
   const collaborators = read("content/collaborators.ts");
   assert.match(collaborators, /export const collaborators: CollaboratorRecord\[\] = \[\]/);
   assert.match(collaborators, /publicDisplayPermission && item\.relationshipStatus !== "D-target-only"/);
   const contact = read("components/sections/ContactExperience.tsx");
-  for (const intent of ["company", "partner", "other"])
-    assert.match(contact, new RegExp(`phase-5-\\$\\{intent\\}-enquiry|\"${intent}\"`));
-  assert.match(contact, /collaboratorType/);
+  assert.match(contact, /data-contact-delivery="direct-only"/);
+  assert.match(contact, /Venusbridge/);
+  assert.match(contact, /mailto:\$\{CONTACT_EMAIL\}/);
+  assert.doesNotMatch(contact, /<form|fetch\(/);
 });
 
 test("Work uses filters over the published dataset and keeps institutional evidence fail-closed", () => {

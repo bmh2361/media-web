@@ -17,11 +17,12 @@ const links = [
 
 export function Footer({ language, showWork = true }: { language: Language; showWork?: boolean }) {
   const copy = phase5Navigation[language];
-  const legalStatement = areWebsiteTermsApproved()
-    ? language === "zh"
-      ? `Venus Bridge Media 为 ${company.legalName} 的业务品牌。`
-      : `Venus Bridge Media is a trading name of ${company.legalName}.`
-    : "Venus Bridge";
+  const legalStatement =
+    areWebsiteTermsApproved() && company.legalEntityMode === "incorporated"
+      ? language === "zh"
+        ? `Venus Bridge Media 为 ${company.legalName} 的业务品牌。`
+        : `Venus Bridge Media is a trading name of ${company.legalName}.`
+      : "Venus Bridge";
   return (
     <footer className="border-t border-pearl/10 bg-ink text-pearl" data-mobile-footer>
       <div className="container-x grid gap-8 py-10 md:gap-10 md:py-12 lg:grid-cols-[1.2fr_.8fr] lg:gap-16 lg:py-24">

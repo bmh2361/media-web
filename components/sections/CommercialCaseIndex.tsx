@@ -16,7 +16,7 @@ import { withLanguage } from "@/lib/i18n";
 
 export type CommercialCaseFilter = "all" | CommercialCaseCategory;
 const permittedFilters = new Set<CommercialCaseFilter>(commercialCaseFilters.map((filter) => filter.value));
-export const isCommercialCaseFilter = (value?: string): value is CommercialCaseFilter =>
+export const isCommercialCaseFilter = (value?: string | null): value is CommercialCaseFilter =>
   Boolean(value && permittedFilters.has(value as CommercialCaseFilter));
 const editorialEase = [0.22, 1, 0.36, 1] as const;
 const DESKTOP_HOVER_INTENT_MS = 110;
@@ -108,6 +108,18 @@ export function CommercialCaseIndex({
     clearMobileCandidate();
     setMobileActiveSlug(nextMobileSlug);
   };
+
+  useEffect(() => {
+    const requestedCategory = new URLSearchParams(window.location.search).get("category");
+    if (!isCommercialCaseFilter(requestedCategory) || requestedCategory === initialCategory) return;
+    const nextCases = cases.filter((item) => item.category === requestedCategory);
+    clearDesktopHoverIntent();
+    clearMobileCandidate();
+    setCategory(requestedCategory);
+    setActiveSlug(nextCases[0]?.slug ?? "");
+    mobileActiveSlugRef.current = nextCases[0]?.slug ?? null;
+    setMobileActiveSlug(nextCases[0]?.slug ?? null);
+  }, [cases, clearDesktopHoverIntent, clearMobileCandidate, initialCategory]);
 
   useEffect(() => () => clearDesktopHoverIntent(), [clearDesktopHoverIntent]);
 

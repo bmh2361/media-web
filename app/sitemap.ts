@@ -1,10 +1,11 @@
 import type { MetadataRoute } from "next";
 import { brand } from "@/content/brand";
 import { publishedPortfolioProjects } from "@/content/portfolio";
-import { getEffectiveWorkMode, isProductionReleaseReady } from "@/lib/release";
+import { getEffectiveWorkMode } from "@/lib/release";
+
+export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  if (process.env.RELEASE_PROFILE === "production" && !isProductionReleaseReady()) return [];
   const workMode = getEffectiveWorkMode();
   const pages = [
     "",

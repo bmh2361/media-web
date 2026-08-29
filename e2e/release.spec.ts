@@ -41,24 +41,18 @@ test("language switch preserves the contact query", async ({ page }) => {
   await expect(page).toHaveURL(/\/en\/contact\?intent=company$/);
 });
 
-test("contact validation never creates a fake success and exposes no public pricing", async ({ page }) => {
+test("static contact exposes direct channels without a fake submission path or public pricing", async ({
+  page
+}) => {
   await page.goto("/en/contact?intent=company");
-  const nextToContext = page.getByRole("button", { name: "Next: project context" });
-  if (await nextToContext.isVisible()) {
-    await nextToContext.click();
-    await expect(page.getByLabel("What are you trying to achieve in the UK or Europe?")).toBeVisible();
-    await page.getByLabel("Current situation").selectOption("exploring");
-    await page
-      .getByLabel("What are you trying to achieve in the UK or Europe?")
-      .fill("Validate the market opportunity.");
-    await page.getByRole("button", { name: "Next: contact details" }).click();
-  } else {
-    await expect(page.getByLabel("What are you trying to achieve in the UK or Europe?")).toBeVisible();
-  }
-  await expect(page.getByLabel("Name")).toBeVisible();
-  await expect(page.getByLabel("Email")).toBeVisible();
-  await page.getByRole("button", { name: "Send enquiry" }).click();
-  await expect(page.getByLabel("Name")).toBeFocused();
+  const contact = page.locator('[data-contact-delivery="direct-only"]');
+  await expect(contact).toContainText("Venusbridge");
+  await expect(contact.getByRole("link", { name: "venusbridge.co.uk@gmail.com" })).toHaveAttribute(
+    "href",
+    "mailto:venusbridge.co.uk@gmail.com"
+  );
+  await expect(page.locator("form")).toHaveCount(0);
+  await expect(page.getByRole("button", { name: /Send enquiry|Submit/i })).toHaveCount(0);
   await expect(page.locator("body")).not.toContainText(
     /GBP|budget range|starting from|package price|Received\./i
   );
@@ -86,7 +80,8 @@ test("canonical commercial pages have no serious automated accessibility finding
     "/en/contact"
   ]) {
     await page.goto(route);
-    if (route === "/en/contact") await page.locator("form").scrollIntoViewIfNeeded();
+    if (route === "/en/contact")
+      await page.locator('[data-contact-delivery="direct-only"]').scrollIntoViewIfNeeded();
     await page.waitForTimeout(700);
     const results = await new AxeBuilder({ page: page as never }).analyze();
     const serious = results.violations.filter((item) => ["serious", "critical"].includes(item.impact ?? ""));

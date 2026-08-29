@@ -22,11 +22,16 @@ test.describe("retired market-entry routes follow the canonical commercial archi
     }
   }
 
-  test("canonical contact keeps the company-project route available", async ({ page }) => {
+  test("canonical contact keeps direct company-project channels available", async ({ page }) => {
     await page.goto("/en/contact?intent=company");
     await expect(page.locator("main")).toHaveCount(1);
-    await expect(page.locator('input[name="name"]')).toHaveCount(1);
-    await expect(page.locator('input[type="file"]')).toHaveCount(0);
+    await expect(page.locator('[data-contact-delivery="direct-only"]')).toBeVisible();
+    await expect(page.getByText("Venusbridge", { exact: true })).toBeVisible();
+    await expect(page.getByRole("link", { name: "venusbridge.co.uk@gmail.com" })).toHaveAttribute(
+      "href",
+      "mailto:venusbridge.co.uk@gmail.com"
+    );
+    await expect(page.locator("form, input, button[type='submit']")).toHaveCount(0);
   });
 
   test("unpublished production scenarios are not exposed as Work details", async ({ page }) => {

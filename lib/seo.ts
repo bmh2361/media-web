@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
 import type { Language } from "@/lib/i18n";
 import { company } from "@/content/company";
-import { isProductionReleaseReady } from "@/lib/release";
 
 const siteUrl = company.websiteDomain;
-const indexable = isProductionReleaseReady();
-const ogImagePath = (lang: Language, path: string) =>
-  `/og/${lang}/${path === "/" ? "home" : path.replace(/^\//, "").replaceAll("/", "--")}`;
+const indexable = true;
+const ogImagePath = () => "/og/venus-bridge.png";
 
 export const seoDescriptions = {
   en: "UK and European market validation, buyer and partner engagement, launches and local execution for Chinese companies.",
@@ -33,7 +31,7 @@ export function buildMetadata({
   allowIndex?: boolean;
 }): Metadata {
   const localizedPath = `/${lang}${path === "/" ? "" : path}`;
-  const resolvedOgImage = ogImage ?? ogImagePath(lang, path);
+  const resolvedOgImage = ogImage ?? ogImagePath();
   return {
     title: { absolute: title },
     description,

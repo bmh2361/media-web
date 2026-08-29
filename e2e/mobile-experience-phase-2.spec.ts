@@ -104,32 +104,18 @@ test("team is a native semantic swipe rail on phones and stays a desktop grid", 
   await expect(rail).toHaveCSS("display", "grid");
 });
 
-test("mobile contact is a state-preserving three-step presentation over the same form", async ({ page }) => {
+test("mobile contact exposes direct channels without a server-dependent form", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/en/contact");
-  const form = page.locator(".contact-conversation-form");
-  await expect(form).toHaveAttribute("data-contact-current-step", "1");
-  await form.getByRole("button", { name: "Next: project context" }).click();
-  await expect(form).toHaveAttribute("data-contact-current-step", "2");
-  await form.locator('select[name="businessStage"]').selectOption("exploring");
-  await form
-    .locator('textarea[name="objective"]')
-    .fill("Validate the opportunity and prepare a local launch route.");
-  await form.getByRole("button", { name: "Next: contact details" }).click();
-  await expect(form).toHaveAttribute("data-contact-current-step", "3");
-  await form.locator('input[name="name"]').fill("Alex Chen");
-  await form.getByRole("button", { name: "Back" }).click();
-  await expect(form.locator('textarea[name="objective"]')).toHaveValue(
-    "Validate the opportunity and prepare a local launch route."
+  const contact = page.locator('[data-contact-delivery="direct-only"]');
+  await expect(contact).toBeVisible();
+  await expect(contact).toContainText("Venusbridge");
+  await expect(contact.getByRole("link", { name: "venusbridge.co.uk@gmail.com" })).toHaveAttribute(
+    "href",
+    "mailto:venusbridge.co.uk@gmail.com"
   );
-  await form.getByRole("button", { name: "Next: contact details" }).click();
-  await expect(form.locator('input[name="name"]')).toHaveValue("Alex Chen");
-
-  await page.setViewportSize({ width: 1280, height: 900 });
-  await page.reload();
-  await expect(page.locator(".contact-step-status")).toBeHidden();
-  await expect(page.locator('input[name="name"]')).toBeVisible();
-  await expect(page.locator('textarea[name="objective"]')).toBeVisible();
+  await expect(page.locator("form")).toHaveCount(0);
+  await expect(page.getByRole("button", { name: /Send|Submit/i })).toHaveCount(0);
 });
 
 test("reduced motion keeps transformed information visible without running scroll-linked fills", async ({

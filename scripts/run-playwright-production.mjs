@@ -12,11 +12,11 @@ const run = (command, args, options = {}) =>
     child.on("exit", (code) => resolve(code ?? 1));
   });
 
-const server = spawn(
-  process.execPath,
-  [path.join(root, "node_modules", "next", "dist", "bin", "next"), "start", "-p", String(port)],
-  { cwd: root, stdio: "inherit", env: process.env }
-);
+const server = spawn(process.execPath, ["scripts/serve-static-export.mjs", "--port", String(port)], {
+  cwd: root,
+  stdio: "inherit",
+  env: process.env
+});
 
 let ready = false;
 for (let attempt = 0; attempt < 80; attempt += 1) {
