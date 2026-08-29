@@ -47,7 +47,7 @@ export const company: CompanyConfiguration = {
     whatsapp: value(process.env.NEXT_PUBLIC_WHATSAPP),
     wechat: value(process.env.NEXT_PUBLIC_WECHAT) || "Venusbridge"
   },
-  websiteDomain: process.env.NEXT_PUBLIC_SITE_URL || "https://www.venusbridge.com",
+  websiteDomain: process.env.NEXT_PUBLIC_SITE_URL || "https://www.venusbridge.co.uk",
   socialProfiles: {
     linkedin: value(process.env.NEXT_PUBLIC_LINKEDIN_URL),
     instagram: value(process.env.NEXT_PUBLIC_INSTAGRAM_URL),

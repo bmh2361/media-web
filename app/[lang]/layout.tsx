@@ -15,9 +15,10 @@ import { getEffectiveWorkMode } from "@/lib/release";
 import { venusBridgeMedia } from "@/lib/brand/venusBridgeMedia";
 import { MeasurementBridge } from "@/components/analytics/MeasurementBridge";
 import { Suspense } from "react";
+import { company } from "@/content/company";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.venusbridge.com"),
+  metadataBase: new URL(company.websiteDomain),
   applicationName: venusBridgeMedia.name,
   manifest: "/manifest.webmanifest",
   icons: {
