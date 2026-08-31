@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "include": ["/api/contact"],
+  "exclude": ["/en", "/en/*", "/zh", "/zh/*", "/_next/static/*", "/media/*", "/og/*"]
+}

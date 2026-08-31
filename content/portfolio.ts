@@ -287,7 +287,7 @@ const specs: Spec[] = [
     sortDate: "2026-01-01",
     year: "2026",
     location: "London, UK",
-    projectTypeEn: "Live performance documentation",
+    projectTypeEn: "Live performance visual documentation",
     projectTypeZh: "现场演出视觉记录",
     objectiveEn: "A reusable visual record of a London live performance",
     objectiveZh: "形成可复用的伦敦现场演出视觉记录",
@@ -313,7 +313,7 @@ const specs: Spec[] = [
     sortDate: "2025-10-23",
     year: "2025",
     location: "London, UK",
-    projectTypeEn: "UK brand-launch documentation",
+    projectTypeEn: "UK brand-launch visual documentation",
     projectTypeZh: "英国品牌发布视觉记录",
     objectiveEn: "UK market-presence evidence from Geely's London brand launch",
     objectiveZh: "形成吉利伦敦品牌发布的英国市场落地证据",
@@ -343,13 +343,13 @@ const specs: Spec[] = [
     location: "Munich, Germany",
     projectTypeEn: "European launch-context brand evidence",
     projectTypeZh: "欧洲发布场景品牌证据",
-    objectiveEn: "European-market visibility in an international launch setting",
+    objectiveEn: "European-market brand visibility in an international launch setting",
     objectiveZh: "国际发布场景中的欧洲市场品牌可见度",
     contextEn: "Visual coverage across presentation, vehicle reveal and guest viewing moments.",
     contextZh: "欧洲品牌发布的视觉记录，覆盖舞台演示、车辆亮相与嘉宾观看场景。",
     executionEn: "Captured the stage, vehicles and guest context in Munich.",
     executionZh: "在慕尼黑拍摄舞台、车辆与嘉宾环境。",
-    rolesEn: ["Launch-context documentation", "European-facing brand assets"],
+    rolesEn: ["Launch-context documentation", "Visual assets showing the European setting"],
     rolesZh: ["发布场景记录", "面向欧洲的品牌资产"],
     primarySector: "automotive",
     primaryPath: "launch-in-the-uk",
@@ -369,7 +369,7 @@ const specs: Spec[] = [
     sortDate: "2025-07-01",
     year: "2025",
     location: "Munich, Germany",
-    projectTypeEn: "European industry communications evidence",
+    projectTypeEn: "Visual evidence for European industry communications",
     projectTypeZh: "欧洲行业传播视觉证据",
     objectiveEn: "International communications in a professional stakeholder setting",
     objectiveZh: "专业利益相关方场景中的国际传播",
@@ -397,7 +397,7 @@ const specs: Spec[] = [
     sortDate: "2025-06-01",
     year: "2025",
     location: "London, UK",
-    projectTypeEn: "Cultural performance documentation",
+    projectTypeEn: "Cultural performance visual documentation",
     projectTypeZh: "文化演出视觉记录",
     objectiveEn: "A concise visual record of a Chinese-language live performance in London",
     objectiveZh: "形成华语现场演出在伦敦落地的精炼视觉记录",
@@ -430,7 +430,7 @@ const specs: Spec[] = [
     location: "London, UK",
     projectTypeEn: "Fashion editorial content",
     projectTypeZh: "时尚编辑内容",
-    objectiveEn: "Editorial fashion evidence created in the London Fashion Week setting",
+    objectiveEn: "Fashion editorial imagery created during London Fashion Week",
     objectiveZh: "在伦敦时装周语境中创作时尚编辑视觉证据",
     contextEn: "A two-image editorial pairing across outdoor and indoor London settings.",
     contextZh: "由伦敦户外与室内场景组成的双图编辑影像。",
@@ -459,7 +459,7 @@ const specs: Spec[] = [
     sortDate: "2023-09-01",
     year: "2023",
     location: "Munich, Germany",
-    projectTypeEn: "European industry-presence evidence",
+    projectTypeEn: "Brand evidence from a European industry setting",
     projectTypeZh: "欧洲行业现场品牌证据",
     objectiveEn: "European industry presence and stakeholder context",
     objectiveZh: "欧洲行业存在与利益相关方语境",
@@ -487,13 +487,13 @@ const specs: Spec[] = [
     location: "London, UK",
     projectTypeEn: "UK market-presence documentation",
     projectTypeZh: "英国市场落地项目记录",
-    objectiveEn: "UK market presence around a London product introduction",
+    objectiveEn: "Evidence of UK market presence from a London product introduction",
     objectiveZh: "围绕伦敦产品亮相建立英国市场落地证据",
     contextEn: "Photography covering the BD11 vehicle, venue and audience context.",
     contextZh: "覆盖 BD11 车辆、场地与观众环境的摄影记录。",
     executionEn: "Captured the vehicle and presentation setting.",
     executionZh: "拍摄车辆与展示现场环境。",
-    rolesEn: ["London launch documentation", "UK-facing brand evidence"],
+    rolesEn: ["On-site visual documentation in London", "UK brand evidence"],
     rolesZh: ["伦敦发布记录", "面向英国的品牌证据"],
     primarySector: "automotive",
     primaryPath: "launch-in-the-uk",
@@ -512,9 +512,9 @@ const specs: Spec[] = [
     sector: "technology-ai",
     category: "industry-credibility",
     location: "London, UK",
-    projectTypeEn: "Robotics launch documentation",
+    projectTypeEn: "Robotics launch visual documentation",
     projectTypeZh: "机器人发布视觉记录",
-    objectiveEn: "London event evidence for an embodied-robotics brand",
+    objectiveEn: "A visual record of the embodied-robotics brand’s London event",
     objectiveZh: "形成具身机器人品牌伦敦活动的视觉证据",
     contextEn:
       "Event photographs showing a technical presentation and two robots in the display environment.",
@@ -539,7 +539,7 @@ const specs: Spec[] = [
     sector: "automotive",
     category: "brand-evidence",
     location: "London and England, UK",
-    projectTypeEn: "UK-located automotive brand imagery",
+    projectTypeEn: "On-location automotive brand imagery in the UK",
     projectTypeZh: "英国实景汽车品牌影像",
     objectiveEn: "London-localised international brand evidence",
     objectiveZh: "伦敦本地化国际品牌证据",
@@ -585,7 +585,7 @@ const specs: Spec[] = [
     location: "UK",
     projectTypeEn: "Selected visual-content series",
     projectTypeZh: "精选视觉内容系列",
-    objectiveEn: "A selected view of beauty, product, fashion and retail-content capability",
+    objectiveEn: "A curated portfolio showcasing beauty, product, fashion and retail-content capabilities",
     objectiveZh: "集中展示美妆、产品、时尚与零售内容能力",
     contextEn:
       "A mixed portfolio series spanning beauty devices, cosmetics, footwear, skincare, fashion portraiture and retail display.",
@@ -669,7 +669,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
       "A concise, approved visual record preserving the performer, stage atmosphere and audience-facing finale for continued use.",
     projectValueZh: "形成一组经批准的精炼视觉记录，保留表演者、舞台氛围与面向观众的收官场景，供后续使用。",
     structureEn: [
-      "Read the live stage and audience context",
+      "Assess the live stage and audience setting",
       "Document performance and atmosphere from complementary viewpoints",
       "Curate the approved public image selection"
     ],
@@ -707,7 +707,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
     structureEn: [
       "Map the visible launch moments",
       "Document stage, vehicles and guest context",
-      "Select a coherent European-facing asset set"
+      "Select a coherent set of visual assets showing the European setting"
     ],
     structureZh: ["梳理可见的发布关键场景", "记录舞台、车辆与嘉宾环境", "筛选连贯的欧洲场景视觉资产"]
   },
@@ -723,7 +723,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
       "Approved event material preserving CATL's presentation, technical screens and professional stakeholder environment.",
     projectValueZh: "形成经批准的活动内容，保留 CATL 的演讲、技术屏幕与专业利益相关方环境。",
     structureEn: [
-      "Read the technical presentation environment",
+      "Assess the technical presentation setting",
       "Capture speakers, screens and audience context",
       "Preserve a concise public event record"
     ],
@@ -738,7 +738,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
       "Venus Bridge delivered complementary wide-stage documentation of the London performance.",
     roleStatementZh: "Venus Bridge 以互补的舞台全景完成伦敦演出的视觉记录。",
     projectValueEn:
-      "A focused two-image public record establishing the performers and live London presentation context.",
+      "A focused two-image public record clearly showing the performers and the London live setting.",
     projectValueZh: "以两张核心画面形成公开记录，清楚呈现演出人员与伦敦现场语境。",
     structureEn: [
       "Establish the full stage context",
@@ -778,7 +778,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
       "A reusable exhibition record connecting product detail with the wider European industry setting.",
     projectValueZh: "形成可复用的展会记录，将产品细节与欧洲行业现场语境连接起来。",
     structureEn: [
-      "Establish the exhibition and press context",
+      "Establish the exhibition and launch context",
       "Document stand, vehicles, details and visitors",
       "Sequence the material from scale to product evidence"
     ],
@@ -790,7 +790,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
     scope: ["visual-documentation", "content-production"],
     capabilities: ["Event Documentation", "Brand Presentation", "Post-project Assets"],
     roleStatementEn:
-      "Venus Bridge delivered the London-side visual documentation of the BD11 product introduction, covering the vehicle, venue and audience context.",
+      "Venus Bridge delivered on-site visual documentation of the BD11 product introduction in London, covering the vehicle, venue and audience setting.",
     roleStatementZh: "Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。",
     projectValueEn:
       "An approved visual record preserving a recognisable UK product presence and the live presentation setting.",
@@ -798,7 +798,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
     structureEn: [
       "Identify the vehicle and venue context",
       "Document product, presentation and audience",
-      "Deliver a coherent UK-facing visual record"
+      "Deliver a coherent visual record of the UK setting"
     ],
     structureZh: ["明确车辆与场地语境", "记录产品、演示与观众", "交付连贯的英国场景视觉记录"]
   },
@@ -816,7 +816,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
     structureEn: [
       "Establish the technical presentation context",
       "Capture speaker and product displays",
-      "Balance landscape context with complete portrait product views"
+      "Balance landscape-format environmental shots with complete portrait-format product views"
     ],
     structureZh: ["建立技术演讲语境", "记录演讲者与产品展示", "用横向环境与完整竖向产品画面形成平衡"]
   },
@@ -836,7 +836,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
     roleStatementZh:
       "Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。",
     projectValueEn:
-      "A location-led UK visual story linking London recognition, people, vehicle movement and wider English settings.",
+      "A location-led UK visual story linking recognisable London settings, people, vehicle movement and wider English settings.",
     projectValueZh: "形成以英国实景为线索的视觉故事，连接伦敦辨识度、人物、车辆行驶与英格兰环境。",
     structureEn: [
       "Structure the story around recognisable UK settings",
@@ -859,12 +859,11 @@ const caseNarratives: Record<string, CaseNarrative> = {
     roleStatementEn:
       "This capability selection brings together photography and visual-content curation across beauty, product, fashion and retail formats.",
     roleStatementZh: "本能力选集汇集美妆、产品、时尚与零售形式中的摄影及视觉内容筛选。",
-    projectValueEn:
-      "A selected capability set demonstrating range across product-led and talent-led content formats.",
+    projectValueEn: "A curated portfolio showcasing a range of product-led and people-led visual formats.",
     projectValueZh: "形成一组精选能力内容，展示产品与人物视觉形式的跨度。",
     structureEn: [
       "Review distinct content formats",
-      "Select non-duplicative product and portrait evidence",
+      "Select distinct product and portrait imagery",
       "Sequence the material as capability evidence"
     ],
     structureZh: ["审阅不同内容形式", "筛选不重复的产品与人物证据", "按能力证据逻辑编排素材"]
@@ -878,7 +877,7 @@ const caseNarratives: Record<string, CaseNarrative> = {
       "This capability selection brings together automotive photography and on-location image making across European road and city settings.",
     roleStatementZh: "本能力选集汇集欧洲公路与城市环境中的汽车摄影及实景影像创作。",
     projectValueEn:
-      "A selected visual set showing vehicle-in-motion and environmental image capability across varied European settings.",
+      "A curated visual set demonstrating our ability to capture vehicles in motion across varied European environments.",
     projectValueZh: "形成精选视觉内容，展示在不同欧洲环境中创作车辆行驶与环境关系画面的能力。",
     structureEn: [
       "Review road, city and environmental contexts",

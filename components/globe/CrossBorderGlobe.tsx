@@ -46,12 +46,14 @@ export function CrossBorderGlobe({ language }: { language: Language }) {
             {zh ? "中国 → 英国与欧洲" : "CHINA → UK & EUROPE"}
           </p>
           <h2 id="connection-title" className="type-display-page zh-display-measure mt-6 max-w-[10ch]">
-            {zh ? "理解中国端目标，在英国与欧洲推进。" : "China-side context. UK & European project reach."}
+            {zh
+              ? "理解中国端目标，在英国与欧洲推进。"
+              : "Understand the China-side goal. Move it forward in the UK and Europe."}
           </h2>
           <p className="text-pearl/62 mt-6 max-w-[34rem] text-base leading-7 md:mt-7 md:text-lg md:leading-8">
             {zh
               ? "Venus Bridge 从中国总部的商业目标出发，在伦敦及英国、欧洲市场组织所需关系、专业能力与本地执行。"
-              : "Venus Bridge starts with the commercial goal in China, then coordinates the relationships, specialist capability and local execution required in London and across the UK and Europe."}
+              : "Venus Bridge starts with the commercial goals of Chinese headquarters, then coordinates the relationships, specialist capability and local execution required in London and across the UK and Europe."}
           </p>
 
           <div

@@ -9,6 +9,49 @@ export const proofTypes = ["VISUAL", "RELATIONSHIP", "PROCESS"] as const;
 export const caseMaturityStates = ["PRIVATE", "ANONYMOUS_PUBLIC", "NAMED_PUBLIC", "FEATURED"] as const;
 export const trustDimensions = ["ACCESS", "ORCHESTRATION", "EXECUTION"] as const;
 
+export const futureCommercialEvidenceClasses = [
+  "MARKET_VALIDATION",
+  "BUYER_DISTRIBUTOR_ENGAGEMENT",
+  "PARTNER_ENGAGEMENT",
+  "EXHIBITION_FULL_CYCLE",
+  "LAUNCH_FULL_CYCLE",
+  "INSTITUTIONAL_OR_EXPERT_COLLABORATION",
+  "CONTENT_AND_VISUAL_PRODUCTION"
+] as const;
+export type FutureCommercialEvidenceClass = (typeof futureCommercialEvidenceClasses)[number];
+
+// Intake-only model for future real projects. It is deliberately separate from
+// CaseEvidenceRecord so no historic visual case acquires a commercial label by inference.
+export type FutureCommercialCaseIntake = {
+  evidenceClass: FutureCommercialEvidenceClass;
+  startingSituation: LocalisedEvidenceText;
+  commercialDecision: LocalisedEvidenceText;
+  clientObjective: LocalisedEvidenceText;
+  marketOrGeography: string | null;
+  venusBridgeScope: LocalisedEvidenceText;
+  whatVenusBridgeDid: LocalisedEvidenceText;
+  whatVenusBridgeDidNotDo: LocalisedEvidenceText;
+  participantsOrCounterpartyTypes: string[];
+  beforeOnSiteAfter: {
+    before: LocalisedEvidenceText;
+    onSite: LocalisedEvidenceText;
+    after: LocalisedEvidenceText;
+  };
+  outputs: LocalisedEvidenceText[];
+  verifiedResult: LocalisedEvidenceText;
+  continuedValue: LocalisedEvidenceText;
+  quantitativeMetric: LegalField<string>;
+  clientQuote: LegalField<LocalisedEvidenceText>;
+  partnerQuote: LegalField<LocalisedEvidenceText>;
+  evidenceSource: string[];
+  publicationPermission: ApprovalState;
+  imageRights: ApprovalState;
+  legalReview: OwnerApprovalStatus;
+  lastVerifiedDate: string | null;
+};
+
+type LegalField<T> = { value: T | null; approved: boolean };
+
 export const evidenceCapabilities = [
   "Institutional & Expert Collaboration",
   "Industry Presence & Events",

@@ -48,7 +48,7 @@ test("homepage editorial statements return to the left spine", async ({ page }) 
   await page.goto("/en");
 
   for (const text of [
-    "Four routes from market ambition to useful local action.",
+    "Four types of local action built around market outcomes.",
     "Make the market moment useful before, during and after it happens."
   ]) {
     const x = await page

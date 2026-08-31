@@ -8,8 +8,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return buildMetadata({
     lang,
     path: "/terms",
-    title: lang === "zh" ? "网站条款 | Venus Bridge Media" : "Website Terms | Venus Bridge Media",
-    description: lang === "zh" ? "Venus Bridge Media网站使用说明。" : "Venus Bridge Media website-use terms."
+    title: lang === "zh" ? "网站条款 | Venus Bridge" : "Website Terms | Venus Bridge",
+    description: lang === "zh" ? "Venus Bridge 网站使用说明。" : "Venus Bridge website-use terms."
   });
 }
 export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
@@ -29,12 +29,12 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
             ? `${zh ? "生效日期" : "Effective"}: ${company.termsEffectiveDate}`
             : zh
               ? "当前为发布前审核版本；生产发布需补充正式公司信息与生效日期。"
-              : "Pre-release review version. Final company details and an effective date are required for production."}
+              : "Pre-release review version. Official company details and an effective date are required before production release."}
         </p>
         <p className="mt-8 text-lg leading-8 text-ink/70">
           {zh
             ? "网站内容用于介绍能力与项目形式，不构成正式提案、服务承诺、机构背书或合作协议。具体范围、责任、商业条款、权利与审批以双方书面项目文件为准。"
-            : "Website content describes capabilities and project formats. It is not a formal proposal, service guarantee, institutional endorsement or binding project agreement. Scope, responsibilities, commercial terms, rights and approvals must be confirmed in written project documentation."}
+            : "Website content describes capabilities and project formats. It does not constitute a formal proposal, service commitment, institutional endorsement or cooperation agreement. Scope, responsibilities, commercial terms, rights and approvals will be governed by, or confirmed in, written project documentation agreed by both parties."}
         </p>
         {approved && company.legalEntityMode === "incorporated" ? (
           <p className="mt-8 text-lg leading-8 text-ink/70">

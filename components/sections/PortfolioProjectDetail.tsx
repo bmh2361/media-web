@@ -28,7 +28,7 @@ function caseChallenge(project: PortfolioProject, zh: boolean) {
   if (project.contentType === "portfolio-series") {
     return zh
       ? "把不同内容形式整理成一组连贯、易于判断的能力证明。"
-      : "Bring distinct content formats together as one coherent, useful view of capability.";
+      : "Bring distinct content formats together as a clear demonstration of our capabilities.";
   }
   if (project.archetype === "market-presence-launch") {
     return zh
@@ -47,7 +47,7 @@ function caseChallenge(project: PortfolioProject, zh: boolean) {
   }
   return zh
     ? "让不同实景、人物或内容形式形成统一、可继续使用的品牌表达。"
-    : "Turn distinct locations, people or content formats into a coherent set of reusable brand material.";
+    : "Turn distinct locations, people or content formats into a coherent body of reusable branded content.";
 }
 
 export function PortfolioProjectDetail({
@@ -123,7 +123,7 @@ export function PortfolioProjectDetail({
                 {series
                   ? zh
                     ? "经核实的内容能力。"
-                    : "Verified content capability."
+                    : "A clear demonstration of our capabilities."
                   : zh
                     ? "本项目中实际承担的工作。"
                     : "The work delivered within this project."}

@@ -1,11 +1,12 @@
 import type { MetadataRoute } from "next";
 import { brand } from "@/content/brand";
 import { publishedPortfolioProjects } from "@/content/portfolio";
-import { getEffectiveWorkMode } from "@/lib/release";
+import { getEffectiveWorkMode, isIndexingAllowed } from "@/lib/release";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  if (!isIndexingAllowed()) return [];
   const workMode = getEffectiveWorkMode();
   const pages = [
     "",

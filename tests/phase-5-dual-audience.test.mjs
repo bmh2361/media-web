@@ -38,14 +38,13 @@ test("capabilities is secondary and redirects to Companies", () => {
   assert.match(read("app/[lang]/capabilities/page.tsx"), /redirect\(withLanguage\("\/companies"/);
 });
 
-test("partner claims fail closed and contact uses direct static channels", () => {
+test("partner claims fail closed and contact preserves direct channels behind the form gate", () => {
   const collaborators = read("content/collaborators.ts");
   assert.match(collaborators, /export const collaborators: CollaboratorRecord\[\] = \[\]/);
   assert.match(collaborators, /publicDisplayPermission && item\.relationshipStatus !== "D-target-only"/);
   const contact = read("components/sections/ContactExperience.tsx");
-  assert.match(contact, /data-contact-delivery="direct-only"/);
-  assert.match(contact, /Venusbridge/);
-  assert.match(contact, /mailto:\$\{CONTACT_EMAIL\}/);
+  assert.match(contact, /data-contact-delivery=\{formEnabled \? "form-and-direct" : "direct-only"\}/);
+  assert.match(contact, /ContactActions/);
   assert.doesNotMatch(contact, /<form|fetch\(/);
 });
 

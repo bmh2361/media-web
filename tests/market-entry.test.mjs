@@ -56,7 +56,6 @@ test("market entry uses Service schema and excludes professional-service schemas
     "guaranteed registration",
     "guaranteed bank account",
     "legal advice by Venus Bridge",
-    "legal advice by Venus Bridge Media",
     "fully compliant marketing",
     "legally approved by us"
   ])

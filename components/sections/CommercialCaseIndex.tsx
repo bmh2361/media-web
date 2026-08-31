@@ -98,28 +98,38 @@ export function CommercialCaseIndex({
     [clearDesktopHoverIntent]
   );
 
+  const synchroniseCategory = useCallback(
+    (value: CommercialCaseFilter) => {
+      clearDesktopHoverIntent();
+      clearMobileCandidate();
+      const nextCases = value === "all" ? cases : cases.filter((item) => item.category === value);
+      setCategory(value);
+      setActiveSlug(nextCases[0]?.slug ?? "");
+      const nextMobileSlug = nextCases[0]?.slug ?? null;
+      mobileActiveSlugRef.current = nextMobileSlug;
+      setMobileActiveSlug(nextMobileSlug);
+    },
+    [cases, clearDesktopHoverIntent, clearMobileCandidate]
+  );
+
   const chooseCategory = (value: CommercialCaseFilter) => {
-    clearDesktopHoverIntent();
-    const nextCases = value === "all" ? cases : cases.filter((item) => item.category === value);
-    setCategory(value);
-    setActiveSlug(nextCases[0]?.slug ?? "");
-    const nextMobileSlug = nextCases[0]?.slug ?? null;
-    mobileActiveSlugRef.current = nextMobileSlug;
-    clearMobileCandidate();
-    setMobileActiveSlug(nextMobileSlug);
+    synchroniseCategory(value);
+    const nextParams = new URLSearchParams(window.location.search);
+    if (value === "all") nextParams.delete("category");
+    else nextParams.set("category", value);
+    const query = nextParams.toString();
+    window.history.pushState({}, "", `${window.location.pathname}${query ? `?${query}` : ""}`);
   };
 
   useEffect(() => {
-    const requestedCategory = new URLSearchParams(window.location.search).get("category");
-    if (!isCommercialCaseFilter(requestedCategory) || requestedCategory === initialCategory) return;
-    const nextCases = cases.filter((item) => item.category === requestedCategory);
-    clearDesktopHoverIntent();
-    clearMobileCandidate();
-    setCategory(requestedCategory);
-    setActiveSlug(nextCases[0]?.slug ?? "");
-    mobileActiveSlugRef.current = nextCases[0]?.slug ?? null;
-    setMobileActiveSlug(nextCases[0]?.slug ?? null);
-  }, [cases, clearDesktopHoverIntent, clearMobileCandidate, initialCategory]);
+    const restoreFromLocation = () => {
+      const queryCategory = new URLSearchParams(window.location.search).get("category");
+      synchroniseCategory(isCommercialCaseFilter(queryCategory) ? queryCategory : "all");
+    };
+    restoreFromLocation();
+    window.addEventListener("popstate", restoreFromLocation);
+    return () => window.removeEventListener("popstate", restoreFromLocation);
+  }, [synchroniseCategory]);
 
   useEffect(() => () => clearDesktopHoverIntent(), [clearDesktopHoverIntent]);
 

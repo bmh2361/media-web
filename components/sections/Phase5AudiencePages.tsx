@@ -87,17 +87,17 @@ export function CompaniesJourney({ language }: { language: Language }) {
     : [
         [
           "Market Validation & Entry",
-          "Market landscape, competitor context, opportunity framing, stakeholder mapping and a first-action recommendation.",
+          "Market landscape, competitor context, opportunity assessment, stakeholder mapping and a first-action recommendation.",
           "Decide where to invest before committing heavily."
         ],
         [
-          "Buyers, Partners & Industry Presence",
+          "Buyers, Partners & Industry Engagement",
           "Buyer and distributor research, partner identification, business meetings and industry participation.",
-          "Build relationships that can move the market forward."
+          "Build local relationships that can move the market forward."
         ],
         [
           "Launches, Exhibitions & Local Activation",
-          "Exhibition planning, launches, venues, local teams, on-site coordination and stakeholder activity.",
+          "Exhibition planning, launches, venues, local teams, on-site coordination and stakeholder coordination.",
           "Turn a market moment into a complete commercial programme."
         ],
         [
@@ -117,23 +117,23 @@ export function CompaniesJourney({ language }: { language: Language }) {
     : [
         [
           "Local judgement",
-          "Choose the right action for the UK or European context, rather than simply translating headquarters instructions."
+          "Choose the right action for the UK or European context, rather than simply following headquarters instructions mechanically."
         ],
         [
-          "One commercial lead",
+          "One point of coordination",
           "Connect the brief, local relationships, timing, approvals and live execution through one team."
         ],
         [
-          "China-to-Europe translation",
+          "China–Europe communication",
           "Turn the headquarters goal into action that local teams can understand and advance."
         ],
         [
           "Flexible local capability",
-          "Add the capability the current goal requires without immediately hiring every function."
+          "Add the capability the current goal requires without immediately building every function in-house."
         ],
         [
-          "Value beyond the event",
-          "Organise relationships, market learning, approved content and commercial follow-up while momentum is fresh."
+          "Continued progress after the event",
+          "Organise relationships, market information, approved content and commercial follow-up while momentum is fresh."
         ]
       ];
   const exhibition = zh
@@ -145,11 +145,11 @@ export function CompaniesJourney({ language }: { language: Language }) {
     : [
         [
           "Before",
-          "Map target buyers, distributors or partners; prioritise meetings; align the local story and follow-up plan."
+          "Map target buyers, distributors or partners; arrange priority meetings; define the local narrative and follow-up plan."
         ],
         [
           "On the ground",
-          "Coordinate live delivery, stakeholder activity and approved material for market communications."
+          "Coordinate on-site delivery, stakeholder engagement and approved material for market communications."
         ],
         [
           "After",
@@ -171,7 +171,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
             <p className="type-lede mt-8 text-pearl/70">
               {zh
                 ? "当英国或欧洲机会已经变得具体——无论是验证市场、寻找买家、筹备展会、落地发布，还是为精简欧洲团队补充执行能力——Venus Bridge 都可以在本地推进工作。"
-                : "Venus Bridge works with Chinese companies when a UK or European opportunity has become real—whether that means validating the market, meeting buyers, preparing for an exhibition, launching locally or adding capacity around a lean European team."}
+                : "Venus Bridge works with Chinese companies when a UK or European opportunity has become real—whether that means validating the market, finding buyers, preparing for an exhibition, launching locally or adding capacity around a lean European team."}
             </p>
             <p className="text-pearl/58 mt-5 max-w-2xl text-base leading-7">
               {zh
@@ -195,7 +195,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
         </Container>
       </section>
 
-      <Section className="bg-pearl">
+      <Section id="market-validation-entry" className="scroll-mt-24 bg-pearl">
         <Container>
           <Eyebrow>{zh ? "我们在哪里创造价值" : "WHERE WE CREATE VALUE"}</Eyebrow>
           <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[15ch]">
@@ -220,7 +220,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
         </Container>
       </Section>
 
-      <Section className="bg-porcelain">
+      <Section id="creative-production-brand-assets" className="scroll-mt-24 bg-porcelain">
         <Container>
           <Eyebrow>{zh ? "解决路径" : "SOLUTION ROUTES"}</Eyebrow>
           <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">
@@ -299,7 +299,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
         </Container>
       </Section>
 
-      <Section className="bg-pearl">
+      <Section id="industry-presence-events" className="scroll-mt-24 bg-pearl">
         <Container>
           <div className="grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-7">
@@ -313,7 +313,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
             <p className="type-body lg:col-span-4 lg:col-start-9 lg:self-end">
               {zh
                 ? "展会价值不只在展台当天，而在目标关系、现场判断与后续推进能否连成一条线。"
-                : "The value of an exhibition is not confined to the stand. It comes from connecting target relationships, live market learning and follow-up."}
+                : "The value of an exhibition is not confined to the stand. It comes from connecting target relationships, on-the-ground market judgement and follow-up."}
             </p>
           </div>
           <ol className="mt-12 grid border-y border-ink/15 md:grid-cols-3">
@@ -328,20 +328,23 @@ export function CompaniesJourney({ language }: { language: Language }) {
               </li>
             ))}
           </ol>
-          <div className="mt-16 grid gap-8 border-t border-ink/15 pt-10 lg:grid-cols-12">
+          <div
+            id="local-team-capability"
+            className="mt-16 grid scroll-mt-24 gap-8 border-t border-ink/15 pt-10 lg:grid-cols-12"
+          >
             <div className="lg:col-span-7">
               <Eyebrow>{zh ? "本地团队能力" : "LOCAL TEAM CAPABILITY"}</Eyebrow>
               <h3 className="mt-5 max-w-[15ch] text-3xl font-medium leading-tight lg:text-4xl">
                 {zh
                   ? "在自建完整团队之前，先补上关键执行能力。"
-                  : "Local capability before you build a full local team."}
+                  : "Add key execution capability before building a full local team."}
               </h3>
             </div>
             <div className="lg:col-span-4 lg:col-start-9">
               <p className="text-base leading-7 text-ink/65">
                 {zh
                   ? "Venus Bridge 可以与总部和现有英国或欧洲团队并肩工作，围绕明确任务补充市场协调、合作方对接与执行能力。高校、研究人员及人才能力仅在有助于技术可信度、雇主品牌或行业交流时加入。"
-                  : "Venus Bridge can work alongside headquarters and existing UK or European teams, adding market coordination, partner engagement and execution around a defined goal. University, research and talent capability is used selectively for technical credibility, employer visibility or industry dialogue."}
+                  : "Venus Bridge can work alongside headquarters and existing UK or European teams, adding market coordination, partner engagement and execution around a defined goal. University, researcher and talent expertise is brought in selectively for technical credibility, employer branding or industry dialogue."}
               </p>
             </div>
           </div>
@@ -362,7 +365,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
             <p className="mt-6 max-w-2xl text-lg leading-8 text-pearl/65">
               {zh
                 ? "不需要先准备完整方案。说明市场、目标、时间和已经确定的条件，我们会判断是否匹配并建议下一步。"
-                : "You do not need a finished brief. Share the market, goal, timing and anything already committed; we will assess the fit and suggest the most useful next step."}
+                : "You do not need a finished brief. Share the market, goal, timing and anything already agreed or in place; we will assess the fit and suggest the most useful next step."}
             </p>
           </div>
           <ButtonLink
@@ -389,7 +392,7 @@ export function PartnersJourney({ language }: { language: Language }) {
         "Professional Services",
         "Creators & Talent",
         "Venues & Event Operations",
-        "Local Delivery Specialists"
+        "Local Delivery Teams"
       ];
   const values = zh
     ? [
@@ -430,10 +433,13 @@ export function PartnersJourney({ language }: { language: Language }) {
       ]
     : [
         ["Share the context", "Explain the company, market goal and project timing."],
-        ["Confirm the fit", "Make sure the opportunity creates genuine value for both sides."],
+        ["Confirm the fit", "Assess whether the project creates genuine value for both sides."],
         ["Define the scope", "Agree roles, approvals, timing and deliverables."],
         ["Coordinate delivery", "Connect cross-border communication, approvals and local execution."],
-        ["Build on the work", "Organise outputs and relationships so relevant future work has a strong base."]
+        [
+          "Carry the value forward",
+          "Organise outputs and relationships so relevant future work has a strong base."
+        ]
       ];
 
   return (
@@ -471,9 +477,9 @@ export function PartnersJourney({ language }: { language: Language }) {
         </Container>
       </section>
 
-      <Section className="bg-pearl">
+      <Section id="capabilities-a-project-may-require" className="scroll-mt-24 bg-pearl">
         <Container>
-          <Eyebrow>{zh ? "项目可能需要的能力" : "CAPABILITIES WE COORDINATE"}</Eyebrow>
+          <Eyebrow>{zh ? "项目可能需要的能力" : "CAPABILITIES A PROJECT MAY REQUIRE"}</Eyebrow>
           <h2 className="editorial-heading heading-measure-standard mt-5 max-w-[14ch]">
             {zh ? "由项目目标决定谁需要加入。" : "The project goal determines who needs to be involved."}
           </h2>

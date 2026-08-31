@@ -4,7 +4,7 @@ import { BrandLockup } from "@/components/brand/BrandLockup";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { phase5Navigation } from "@/content/phase5";
 import { withLanguage, type Language } from "@/lib/i18n";
-import { company, areWebsiteTermsApproved } from "@/content/company";
+import { company, getApprovedTradingNameStatement } from "@/content/company";
 
 const links = [
   ["companies", "/companies"],
@@ -17,12 +17,7 @@ const links = [
 
 export function Footer({ language, showWork = true }: { language: Language; showWork?: boolean }) {
   const copy = phase5Navigation[language];
-  const legalStatement =
-    areWebsiteTermsApproved() && company.legalEntityMode === "incorporated"
-      ? language === "zh"
-        ? `Venus Bridge Media 为 ${company.legalName} 的业务品牌。`
-        : `Venus Bridge Media is a trading name of ${company.legalName}.`
-      : "Venus Bridge";
+  const legalStatement = getApprovedTradingNameStatement(language) ?? company.publicBrandName;
   return (
     <footer className="border-t border-pearl/10 bg-ink text-pearl" data-mobile-footer>
       <div className="container-x grid gap-8 py-10 md:gap-10 md:py-12 lg:grid-cols-[1.2fr_.8fr] lg:gap-16 lg:py-24">
@@ -31,7 +26,7 @@ export function Footer({ language, showWork = true }: { language: Language; show
           <p className="mt-5 max-w-lg text-base leading-7 text-pearl/65 lg:mt-6">
             {language === "zh"
               ? "Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。"
-              : "Venus Bridge helps Chinese companies validate, enter and activate in the UK and Europe through local commercial judgement, relevant relationships and integrated execution."}
+              : "Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution."}
           </p>
           <p className="mt-6 text-xs uppercase tracking-editorial text-champagne lg:mt-8">
             London, United Kingdom

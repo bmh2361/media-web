@@ -17,6 +17,12 @@ jobs:
       APPROVED_MEDIA_CONFIRMED: ${{ vars.APPROVED_MEDIA_CONFIRMED }}
       PUBLIC_CASE_EVIDENCE_CONFIRMED: ${{ vars.PUBLIC_CASE_EVIDENCE_CONFIRMED }}
       CONTACT_CHANNELS_CONFIRMED: ${{ vars.CONTACT_CHANNELS_CONFIRMED }}
+      CONTACT_DELIVERY_VERIFIED: ${{ vars.CONTACT_DELIVERY_VERIFIED }}
+      PRIVACY_NOTICE_COMPLETE: ${{ vars.PRIVACY_NOTICE_COMPLETE }}
+      TERMS_NOTICE_COMPLETE: ${{ vars.TERMS_NOTICE_COMPLETE }}
+      RELEASE_INDEXING_ENABLED: ${{ vars.RELEASE_INDEXING_ENABLED }}
+      CF_PAGES_BRANCH: ${{ vars.CF_PAGES_PRODUCTION_BRANCH }}
+      CF_PAGES_PRODUCTION_BRANCH: ${{ vars.CF_PAGES_PRODUCTION_BRANCH }}
       NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
       NEXT_PUBLIC_LEGAL_COMPANY_NAME: ${{ vars.NEXT_PUBLIC_LEGAL_COMPANY_NAME }}
       NEXT_PUBLIC_PRIVACY_CONTROLLER_NAME: ${{ vars.NEXT_PUBLIC_PRIVACY_CONTROLLER_NAME }}
@@ -39,6 +45,13 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run validate:content
+      - run: npm run audit:english-fidelity
       - run: npm test
+      - run: npm audit --omit=dev
       - run: npm run build
+      - run: npm run export:bilingual-copy
+      - run: npm run audit:english-fidelity
+      - run: npm run validate:redirects
+      - run: npm run validate:og
       - run: npm run validate:release:production
+      - run: npm run readiness:production

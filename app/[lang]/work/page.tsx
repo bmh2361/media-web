@@ -41,7 +41,7 @@ export default async function WorkPage({ params }: { params: Promise<{ lang: str
           <p className="type-lede max-w-[26rem] border-t border-ink/15 pt-5 text-ink/65 lg:col-span-4 lg:self-end">
             {zh
               ? "按商业场景浏览项目。每个案例说明项目目标、商业背景、实际职责、本地执行，以及之后留下的可用成果。"
-              : "Browse by commercial situation. Each case explains the objective, business context, our verified role, local delivery and what remained useful."}
+              : "Browse by commercial situation. Each case explains the objective, business context, our actual role, local delivery and what remained useful."}
           </p>
         </Container>
       </section>

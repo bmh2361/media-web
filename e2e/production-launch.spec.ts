@@ -17,7 +17,9 @@ const keyRoutes = [
   "/zh/contact"
 ];
 
-test("public routes expose intentional bilingual metadata and language alternates", async ({ page }) => {
+test("preview routes expose bilingual metadata, language alternates and fail-closed robots", async ({
+  page
+}) => {
   for (const route of keyRoutes) {
     await page.goto(route);
     await expect(page).toHaveTitle(/Venus Bridge/);
@@ -32,23 +34,21 @@ test("public routes expose intentional bilingual metadata and language alternate
     await expect(page.locator('link[rel="alternate"][hreflang="x-default"]')).toHaveCount(1);
     await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", /\/og\//);
     await expect(page.locator('meta[name="twitter:card"]')).toHaveAttribute("content", "summary_large_image");
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
   }
 });
 
-test("static production robots allows indexing and sitemap is data-driven", async ({ request }) => {
+test("owner-empty preview robots blocks indexing and sitemap is empty", async ({ request }) => {
   const robots = await request.get("/robots.txt");
   expect(robots.ok()).toBeTruthy();
   const robotsText = await robots.text();
-  expect(robotsText).toContain("Allow: /");
-  expect(robotsText).toContain("https://www.venusbridge.co.uk/sitemap.xml");
-  expect(robotsText).not.toContain("Disallow: /");
+  expect(robotsText).toContain("Disallow: /");
+  expect(robotsText).not.toContain("Sitemap:");
 
   const sitemap = await request.get("/sitemap.xml");
   expect(sitemap.ok()).toBeTruthy();
   const xml = await sitemap.text();
-  expect(xml).toContain("/en/companies");
-  expect(xml).toContain("/zh/companies");
-  expect(xml).toMatch(/\/en\/work\/[a-z0-9-]+/);
+  expect(xml).not.toContain("<url>");
   expect(xml).not.toContain("localhost");
 });
 
@@ -72,7 +72,7 @@ test("not-found routes provide restrained recovery paths", async ({ page }) => {
   );
 });
 
-test("commercial measurement emits only allow-listed non-sensitive event context", async ({ page }) => {
+test("commercial measurement is a no-op without an approved provider", async ({ page }) => {
   await page.addInitScript(() => {
     window.addEventListener("venus-bridge:measurement", ((event: CustomEvent) => {
       const events = JSON.parse(sessionStorage.getItem("measurement-events") || "[]");
@@ -89,14 +89,10 @@ test("commercial measurement emits only allow-listed non-sensitive event context
     name: string;
     properties: Record<string, unknown>;
   }>;
-  expect(events.some((event: { name: string }) => event.name === "companies_cta_click")).toBeTruthy();
-  const propertyKeys = events.flatMap((event) => Object.keys(event.properties));
-  expect(propertyKeys).not.toEqual(
-    expect.arrayContaining(["project_description", "email", "contact_name", "free_text"])
-  );
+  expect(events).toEqual([]);
 });
 
-test("static release exposes no contact API endpoint", async ({ request }) => {
+test("local static-export harness does not impersonate the Pages Function", async ({ request }) => {
   const malformed = await request.post("/api/contact", {
     headers: { "content-type": "application/json", origin: "http://127.0.0.1:3217" },
     data: "{invalid"

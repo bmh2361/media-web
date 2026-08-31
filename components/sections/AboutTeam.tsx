@@ -13,9 +13,9 @@ export function AboutTeam({ language }: { language: Language }) {
         ["交付", "跨境协调与当地执行"]
       ]
     : [
-        ["CHINA", "Corporate relationships & requirement discovery"],
-        ["MARKET STRATEGY", "Commercial judgement & UK and European context"],
-        ["PARTNERSHIPS", "Buyer, industry, institutional and local stakeholder coordination"],
+        ["CHINA", "Corporate relationships & requirements gathering"],
+        ["MARKET STRATEGY", "Commercial judgement & European market context"],
+        ["PARTNERSHIPS", "Buyer, industry, institutional and local partner coordination"],
         ["CREATIVE", "Brand & production direction"],
         ["DELIVERY", "Cross-border coordination & local execution"]
       ];
@@ -36,7 +36,7 @@ export function AboutTeam({ language }: { language: Language }) {
               id="delivery-system-title"
               className="type-heading-section zh-display-measure heading-measure-standard mt-6 max-w-[11ch]"
             >
-              {zh ? "五种能力，服务同一个市场结果。" : "Five disciplines. One commercial direction."}
+              {zh ? "五种能力，服务同一个市场结果。" : "Five capabilities. One market outcome."}
             </h2>
             <p className="text-ink/58 mt-7 max-w-sm text-base leading-7">
               {zh

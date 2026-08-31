@@ -45,7 +45,7 @@ export const serviceProof: Record<"commercial" | "talent" | "research" | "events
         "统筹制作路径并维护审核与交付计划。"
       ),
       client: l(
-        "Confirms campaign claims, brand references, commercial parameters, rights and final usage.",
+        "Confirms campaign claims, brand references, commercial terms, rights and final usage.",
         "确认广告表述、品牌参考、商业条件、使用权和最终用途。"
       ),
       nextStep: l(
@@ -162,7 +162,7 @@ export const serviceProof: Record<"commercial" | "talent" | "research" | "events
         "统筹可行性、多方接口与执行计划。"
       ),
       client: l(
-        "Owns the event objective, public message, commercial parameters and approval chain.",
+        "Owns the event objective, public message, commercial terms and approval chain.",
         "负责活动目标、公开信息、商业条件和审核链路。"
       ),
       nextStep: l(

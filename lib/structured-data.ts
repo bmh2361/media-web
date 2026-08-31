@@ -1,15 +1,18 @@
 import { brand } from "@/content/brand";
-import { company } from "@/content/company";
+import { company, hasApprovedPublicBusinessEmail } from "@/content/company";
 import type { Language } from "@/lib/i18n";
 import { venusBridgeMedia } from "@/lib/brand/venusBridgeMedia";
+import { getProductionReadiness } from "@/lib/release";
 export type BreadcrumbItem = { name: string; path: string };
 export function organizationJsonLd() {
+  const readiness = getProductionReadiness();
+  if (!readiness.organizationSchemaAllowed) return null;
   return {
     "@context": "https://schema.org",
     "@type": ["Organization", "ProfessionalService"],
     name: brand.name,
     url: brand.domain,
-    email: brand.email,
+    ...(hasApprovedPublicBusinessEmail() ? { email: company.businessEmail } : {}),
     description: brand.strapline.en,
     slogan: venusBridgeMedia.slogan,
     logo: {
@@ -18,8 +21,8 @@ export function organizationJsonLd() {
       width: venusBridgeMedia.logos["full-transparent"].width,
       height: venusBridgeMedia.logos["full-transparent"].height
     },
-    ...(company.legalName ? { legalName: company.legalName } : {}),
-    ...(company.registeredOffice
+    ...(readiness.identityReady && company.legalName ? { legalName: company.legalName } : {}),
+    ...(readiness.identityReady && company.registeredOffice
       ? { address: { "@type": "PostalAddress", streetAddress: company.registeredOffice } }
       : {}),
     sameAs: Object.values(company.socialProfiles).filter((profile): profile is string => Boolean(profile))
@@ -43,7 +46,10 @@ export function serviceJsonLd({
     description,
     url: `${brand.domain}/${lang}${path}`,
     provider: { "@type": "Organization", name: brand.name, url: brand.domain },
-    areaServed: "United Kingdom"
+    areaServed: [
+      { "@type": "Country", name: "United Kingdom" },
+      { "@type": "Continent", name: "Europe" }
+    ]
   };
 }
 export function breadcrumbJsonLd({ lang, items }: { lang: Language; items: BreadcrumbItem[] }) {

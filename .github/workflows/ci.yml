@@ -18,9 +18,16 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run validate:content
+      - run: npm run audit:english-fidelity
       - run: npm test
+      - run: npm audit --omit=dev
+      - run: npm run readiness:report
       - run: npm run validate:release:staging
       - run: npm run build
+      - run: npm run export:bilingual-copy
+      - run: npm run audit:english-fidelity
+      - run: npm run validate:redirects
+      - run: npm run validate:og
       - run: npm exec -- playwright install --with-deps chromium
       - run: npm run test:e2e
       - if: failure()

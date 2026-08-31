@@ -34,13 +34,15 @@ test.describe("canonical information architecture", () => {
       await expect(dialog.getByRole("link", { name: label, exact: true })).toBeVisible();
   });
 
-  test("legacy capability and industry URLs resolve to Companies", async ({ request }) => {
+  test("legacy capability and industry URLs resolve directly to final audience routes", async ({
+    request
+  }) => {
     const redirects = new Map([
       ["/en/capabilities", "/en/companies"],
-      ["/en/services", "/en/capabilities"],
-      ["/en/industries", "/en/capabilities"],
-      ["/en/expertise", "/en/capabilities"],
-      ["/en/talent", "/en/capabilities"]
+      ["/en/services", "/en/companies"],
+      ["/en/industries", "/en/companies"],
+      ["/en/expertise", "/en/companies"],
+      ["/en/talent", "/en/partners#capabilities-a-project-may-require"]
     ]);
     for (const [route, destination] of redirects) {
       const response = await request.get(route, { maxRedirects: 0 });

@@ -1,0 +1,21 @@
+name: Post-deploy smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      origin:
+        description: HTTPS origin to inspect without submitting an enquiry
+        required: true
+        default: https://www.venusbridge.co.uk
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/post-deploy-smoke.mjs
+        env:
+          SMOKE_ORIGIN: ${{ inputs.origin }}

@@ -1,7 +1,21 @@
 import "server-only";
 
 import { hasPartneredMarketEntryNetwork } from "@/content/market-entry";
-import { company, hasCompleteCompanyConfiguration } from "@/content/company";
+import {
+  areWebsiteTermsApproved,
+  company,
+  hasCompleteCompanyConfiguration,
+  isPrivacyNoticeApproved
+} from "@/content/company";
+import {
+  isAnalyticsReady,
+  isContactFormReady,
+  isLegalIdentityReady,
+  isSitePublicationReady,
+  type ReleaseGateInputs
+} from "@/lib/release-policy";
+
+export { isAnalyticsReady, isContactFormReady, isLegalIdentityReady, isSitePublicationReady };
 
 export const releaseProfiles = ["development", "staging", "production"] as const;
 export type ReleaseProfile = (typeof releaseProfiles)[number];
@@ -41,7 +55,20 @@ export type ReleaseConfig = {
   legalReviewConfirmed: boolean;
   publicCompanyDetailsConfirmed: boolean;
   mediaGuidesEnabled: boolean;
+  indexingRequested: boolean;
+  contactFormRequested: boolean;
+  previewDeployment: boolean;
+  previewContactBindingsConfirmed: boolean;
 };
+
+function isPreviewDeployment() {
+  if (process.env.RELEASE_PROFILE !== "production") return true;
+  const branch = process.env.CF_PAGES_BRANCH?.trim();
+  const productionBranch = process.env.CF_PAGES_PRODUCTION_BRANCH?.trim() || "main";
+  // Cloudflare supplies CF_PAGES_BRANCH. A production-labelled build without
+  // that deployment context is treated as a non-indexable preview by default.
+  return !branch || branch !== productionBranch;
+}
 
 export function getReleaseConfig(): ReleaseConfig {
   const configuredProfile = isReleaseProfile(process.env.RELEASE_PROFILE)
@@ -56,7 +83,11 @@ export function getReleaseConfig(): ReleaseConfig {
       : null,
     legalReviewConfirmed: confirmed("LEGAL_REVIEW_CONFIRMED"),
     publicCompanyDetailsConfirmed: confirmed("PUBLIC_COMPANY_DETAILS_CONFIRMED"),
-    mediaGuidesEnabled: process.env.NEXT_PUBLIC_SHOW_MEDIA_GUIDES === "true"
+    mediaGuidesEnabled: process.env.NEXT_PUBLIC_SHOW_MEDIA_GUIDES === "true",
+    indexingRequested: process.env.RELEASE_INDEXING_ENABLED === "true",
+    contactFormRequested: process.env.NEXT_PUBLIC_CONTACT_FORM_ENABLED === "true",
+    previewDeployment: isPreviewDeployment(),
+    previewContactBindingsConfirmed: process.env.PREVIEW_CONTACT_BINDINGS_CONFIRMED === "true"
   };
 }
 
@@ -71,19 +102,60 @@ export function getEffectiveMarketEntryMode(config = getReleaseConfig()): Public
   return requested;
 }
 
+export function getReleaseGateInputs(config = getReleaseConfig()): ReleaseGateInputs {
+  return {
+    productionProfileConfigured: config.configuredProfile === "production",
+    portfolioReady: config.publicWorkMode === "portfolio",
+    legalIdentityComplete: Boolean(company.legalEntityMode) && hasCompleteCompanyConfiguration(),
+    legalReviewConfirmed: config.legalReviewConfirmed,
+    publicDetailsConfirmed: config.publicCompanyDetailsConfirmed,
+    privacyApproved: isPrivacyNoticeApproved(),
+    termsApproved: areWebsiteTermsApproved(),
+    approvedMediaConfirmed: process.env.APPROVED_MEDIA_CONFIRMED === "true",
+    publicCaseEvidenceConfirmed: process.env.PUBLIC_CASE_EVIDENCE_CONFIRMED === "true",
+    contactChannelsConfirmed: process.env.CONTACT_CHANNELS_CONFIRMED === "true",
+    productionUrlReady: isHttpsProductionUrl(company.websiteDomain),
+    indexingRequested: config.indexingRequested,
+    previewDeployment: config.previewDeployment,
+    contactFormRequested: config.contactFormRequested,
+    turnstileSiteKeyConfigured: Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim()),
+    contactDeliveryVerified: process.env.CONTACT_DELIVERY_VERIFIED === "true",
+    previewContactBindingsConfirmed: config.previewContactBindingsConfirmed,
+    analyticsRequested: process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === "true",
+    analyticsProviderConfigured: Boolean(process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER?.trim()),
+    analyticsPropertyConfigured: Boolean(process.env.NEXT_PUBLIC_ANALYTICS_ID?.trim()),
+    analyticsPrivacyApproved: process.env.NEXT_PUBLIC_ANALYTICS_PRIVACY_APPROVED === "true"
+  };
+}
+
 export function isProductionReleaseReady(config = getReleaseConfig()) {
-  return Boolean(
-    config.configuredProfile === "production" &&
-      config.publicWorkMode === "portfolio" &&
-      Boolean(company.legalEntityMode) &&
-      hasCompleteCompanyConfiguration() &&
-      isHttpsProductionUrl(company.websiteDomain) &&
-      process.env.LEGAL_REVIEW_CONFIRMED === "true" &&
-      process.env.PUBLIC_COMPANY_DETAILS_CONFIRMED === "true" &&
-      process.env.APPROVED_MEDIA_CONFIRMED === "true" &&
-      process.env.PUBLIC_CASE_EVIDENCE_CONFIRMED === "true" &&
-      process.env.CONTACT_CHANNELS_CONFIRMED === "true"
-  );
+  return isSitePublicationReady(getReleaseGateInputs(config));
+}
+
+export function getProductionReadiness(config = getReleaseConfig()) {
+  const gates = getReleaseGateInputs(config);
+  const legalIdentityReady = isLegalIdentityReady(gates);
+  const sitePublicationReady = isSitePublicationReady(gates);
+  return {
+    productionReady: sitePublicationReady,
+    sitePublicationReady,
+    identityReady: gates.legalIdentityComplete,
+    legalReady: legalIdentityReady,
+    legalIdentityReady,
+    previewDeployment: config.previewDeployment,
+    indexingAllowed: sitePublicationReady && gates.indexingRequested,
+    organizationSchemaAllowed: sitePublicationReady,
+    contactFormAllowed: isContactFormReady(gates),
+    analyticsAllowed: isAnalyticsReady(gates)
+  };
+}
+
+export function isIndexingAllowed(config = getReleaseConfig()) {
+  return getProductionReadiness(config).indexingAllowed;
+}
+
+export function isContactFormExposed(config = getReleaseConfig()) {
+  return getProductionReadiness(config).contactFormAllowed;
 }
 
 export type WorkPresentation = {
