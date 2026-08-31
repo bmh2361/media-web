@@ -1,6 +1,6 @@
 # Rendered bilingual visible-copy export
 
-Generated: 2026-08-31T15:04:28.120Z
+Generated: 2026-08-31T15:08:59.627Z
 
 ## /
 
