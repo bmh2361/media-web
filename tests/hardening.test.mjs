@@ -279,6 +279,13 @@ test("form activation cannot contradict future-conditional Privacy copy", async 
   assert.match(release, /Boolean\(approvedCurrentFormPrivacyVersion\)/);
 });
 
+test("hidden Work mode remains statically exportable without publishing case routes", async () => {
+  const page = await read("app/[lang]/work/[slug]/page.tsx");
+  assert.match(page, /publishedPortfolioProjects\.map/);
+  assert.doesNotMatch(page, /mode === "hidden" \? \[\]/);
+  assert.match(page, /getEffectiveWorkMode\(\) === "hidden"\) notFound\(\)/);
+});
+
 test("Cloudflare routes source exposes only /api/contact to Functions", async () => {
   const routes = JSON.parse(await read("public/_routes.json"));
   assert.deepEqual(routes.include, ["/api/contact"]);

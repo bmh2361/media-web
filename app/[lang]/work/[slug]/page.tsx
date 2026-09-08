@@ -13,9 +13,8 @@ import { getEffectiveWorkMode } from "@/lib/release";
 import { breadcrumbJsonLd, creativeWorkJsonLd } from "@/lib/structured-data";
 
 export function generateStaticParams() {
-  const mode = getEffectiveWorkMode();
   return languages.flatMap((lang) =>
-    (mode === "hidden" ? [] : publishedPortfolioProjects).map((project) => ({ lang, slug: project.slug }))
+    publishedPortfolioProjects.map((project) => ({ lang, slug: project.slug }))
   );
 }
 
