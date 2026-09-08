@@ -1,11 +1,11 @@
 # Rendered bilingual visible-copy export
 
-Generated: 2026-08-31T15:08:59.627Z
+Generated: 2026-09-08T20:34:53.969Z
 
 ## /
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -33,47 +33,50 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/p[7] | <p> | shared | REAL PROJECTS | 真实项目 |
 | visible/h2[1] | <h2> | shared | Real work, delivered on the ground in the UK and Europe. | 在真实英国与欧洲市场现场完成工作。 |
 | visible/p[8] | <p> | shared | Selected UK and European work showing the commercial context and what Venus Bridge actually did. | 这些代表项目展示实际商业节点，以及 Venus Bridge 经核实的具体职责。 |
-| visible/p[9] | <p> | shared | London, UK · Client Project | London, UK · 客户项目 |
+| visible/p[9] | <p> | shared | London, UK · UK-Specific Product Introduction | London, UK · 英国特定产品发布 |
 | visible/h3[1] | <h3> | shared | BYD BD11 Double-Decker Bus Launch, London | BYD BD11 双层公交车伦敦发布 |
-| visible/p[10] | <p> | shared | On-site visual documentation in London · UK brand evidence | 伦敦发布记录 · 面向英国的品牌证据 |
-| visible/p[11] | <p> | shared | Munich, Germany · Client Project | Munich, Germany · 客户项目 |
-| visible/h3[2] | <h3> | shared | Changan European Brand Launch 2025, Munich | 长安汽车 2025 欧洲品牌发布｜慕尼黑 |
-| visible/p[12] | <p> | shared | Launch-context documentation · Visual assets showing the European setting | 发布场景记录 · 面向欧洲的品牌资产 |
-| visible/p[13] | <p> | shared | Munich, Germany · Client Project | Munich, Germany · 客户项目 |
+| visible/p[10] | <p> | shared | Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence. | Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。 |
+| visible/span[2] | <span> | shared | Verified role | 经核实职责 |
+| visible/p[11] | <p> | shared | Munich, Germany · European Expansion at IAA Mobility | Munich, Germany · IAA Mobility 欧洲市场扩张 |
+| visible/h3[2] | <h3> | shared | Changan at IAA Mobility 2025 — European Expansion | 长安汽车 IAA Mobility 2025｜欧洲市场扩张 |
+| visible/p[12] | <p> | shared | Venus Bridge documented the Munich exhibition setting across the stage, vehicles and guest viewing environment. | Venus Bridge 记录慕尼黑展会现场，覆盖舞台、车辆与嘉宾观看环境。 |
+| visible/span[3] | <span> | shared | Verified role | 经核实职责 |
+| visible/p[13] | <p> | shared | Munich, Germany · European Technology Introduction | Munich, Germany · 欧洲技术发布 |
 | visible/h3[3] | <h3> | shared | CATL Open Day 2025, Munich | CATL Open Day 2025｜慕尼黑 |
-| visible/p[14] | <p> | shared | Event documentation · International communications assets | 活动记录 · 国际传播资产 |
+| visible/p[14] | <p> | shared | Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting. | Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。 |
+| visible/span[4] | <span> | shared | Verified role | 经核实职责 |
 | visible/p[15] | <p> | shared | WHEN COMPANIES BRING US IN | 企业通常在这些时候找到我们 |
 | visible/h2[2] | <h2> | shared | Useful when the UK or European opportunity has become real. | 当英国或欧洲机会已经从想法变成具体任务。 |
 | visible/p[16] | <p> | shared | Five situations typically bring Venus Bridge into a project: commercial intent is clear, while the local path, relationships or execution still need structure. | 企业通常在商业意图已经明确，但本地路径、关系推进或执行方式仍需梳理时，引入 Venus Bridge。以下是五种常见情况。 |
 | visible/p[17] | <p> | shared | 01—05 · UK / EUROPE | 01—05 · 英国 / 欧洲 |
-| visible/span[2] | <span> | shared | 01 | 01 |
+| visible/span[5] | <span> | shared | 01 | 01 |
 | visible/h3[4] | <h3> | shared | Entering the UK or Europe | 准备进入英国或欧洲 |
 | visible/p[18] | <p> | shared | Validate the opportunity, understand the local landscape and decide what should happen first. | 验证市场机会、了解本地格局，并判断第一步应该做什么。 |
-| visible/span[3] | <span> | shared | 02 | 02 |
+| visible/span[6] | <span> | shared | 02 | 02 |
 | visible/h3[5] | <h3> | shared | Preparing a launch or exhibition | 筹备发布或展会 |
 | visible/p[19] | <p> | shared | Build a coordinated programme around a fixed date, before, during and after the event. | 围绕确定日期，统筹活动前、现场及后续跟进。 |
-| visible/span[4] | <span> | shared | 03 | 03 |
+| visible/span[7] | <span> | shared | 03 | 03 |
 | visible/h3[6] | <h3> | shared | Looking for buyers, distributors or partners | 寻找买家、经销商或合作伙伴 |
 | visible/p[20] | <p> | shared | Identify relevant organisations, create the right context and coordinate local engagement. | 识别合适对象、建立商务沟通场景，并推进本地对接。 |
-| visible/span[5] | <span> | shared | 04 | 04 |
+| visible/span[8] | <span> | shared | 04 | 04 |
 | visible/h3[7] | <h3> | shared | Building local industry presence | 建立本地行业影响力 |
 | visible/p[21] | <p> | shared | Engage the right industry, expert, institutional and content channels where they strengthen the commercial goal. | 在有助于商业目标时，引入行业、专家、机构或内容环境。 |
-| visible/span[6] | <span> | shared | 05 | 05 |
+| visible/span[9] | <span> | shared | 05 | 05 |
 | visible/h3[8] | <h3> | shared | When the European team has limited capacity | 欧洲团队人手有限 |
 | visible/p[22] | <p> | shared | Add UK execution capacity without immediately building every function in-house. | 在不急于自建全部职能的情况下，补充英国本地执行能力。 |
 | visible/a[13] | <a> | shared | See How We Help Companies | 了解企业合作 |
 | visible/p[23] | <p> | shared | WHAT WE HELP MAKE HAPPEN | 我们帮助推进什么 |
 | visible/h2[3] | <h2> | shared | Four types of local action built around market outcomes. | 围绕市场结果，形成四类本地行动。 |
-| visible/span[7] | <span> | shared | 0 1 | 0 1 |
+| visible/span[10] | <span> | shared | 0 1 | 0 1 |
 | visible/h3[9] | <h3> | shared | Market Validation & Entry | 市场验证与进入 |
 | visible/p[24] | <p> | shared | Understand the market landscape and opportunity, and decide where to invest before committing heavily. | 看清市场格局与机会，在大规模投入前决定应该把钱和时间放在哪里。 |
-| visible/span[8] | <span> | shared | 0 2 | 0 2 |
-| visible/h3[10] | <h3> | shared | Buyers, Partners & Industry Presence | 买家、伙伴与行业参与 |
+| visible/span[11] | <span> | shared | 0 2 | 0 2 |
+| visible/h3[10] | <h3> | shared | Buyers, Partners & Industry Engagement | 买家、伙伴与行业参与 |
 | visible/p[25] | <p> | shared | Identify and build the commercial relationships that can move the market forward. | 识别并对接能够推动市场进展的商业关系。 |
-| visible/span[9] | <span> | shared | 0 3 | 0 3 |
+| visible/span[12] | <span> | shared | 0 3 | 0 3 |
 | visible/h3[11] | <h3> | shared | Launches, Exhibitions & Local Activation | 发布、展会与本地激活 |
 | visible/p[26] | <p> | shared | Turn a fixed market moment into a coordinated commercial programme. | 把一个固定市场节点变成前后连贯的商务行动。 |
-| visible/span[10] | <span> | shared | 0 4 | 0 4 |
+| visible/span[13] | <span> | shared | 0 4 | 0 4 |
 | visible/h3[12] | <h3> | shared | Industry Presence, Content & Market Assets | 行业影响力、内容与市场资产 |
 | visible/p[27] | <p> | shared | Create evidence and content that remain useful for business communication and market development after the event. | 形成在活动之后仍可用于商务沟通和市场推进的证明与内容。 |
 | visible/p[28] | <p> | shared | LOCAL CAPABILITY | 本地能力 |
@@ -98,41 +101,41 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/p[32] | <p> | shared | CAPABILITY AROUND THE GOAL | 围绕目标配置能力 |
 | visible/h2[6] | <h2> | shared | The project determines the expertise. | 由项目决定需要什么专业能力。 |
 | visible/p[33] | <p> | shared | Venus Bridge retains commercial and delivery responsibility and brings in specialist capability only where it strengthens the result. | Venus Bridge 保留商务与执行责任，仅在有助于结果时引入相应专业能力。 |
-| visible/span[11] | <span> | shared | 0 1 | 0 1 |
+| visible/span[14] | <span> | shared | 0 1 | 0 1 |
 | visible/h3[13] | <h3> | shared | Universities & Researchers | 高校与研究人员 |
-| visible/span[12] | <span> | shared | 0 2 | 0 2 |
+| visible/span[15] | <span> | shared | 0 2 | 0 2 |
 | visible/h3[14] | <h3> | shared | Industry Specialists | 行业专家 |
-| visible/span[13] | <span> | shared | 0 3 | 0 3 |
+| visible/span[16] | <span> | shared | 0 3 | 0 3 |
 | visible/h3[15] | <h3> | shared | Professional Services | 专业服务 |
-| visible/span[14] | <span> | shared | 0 4 | 0 4 |
+| visible/span[17] | <span> | shared | 0 4 | 0 4 |
 | visible/h3[16] | <h3> | shared | Creators & Talent | 创作者与人才 |
-| visible/span[15] | <span> | shared | 0 5 | 0 5 |
+| visible/span[18] | <span> | shared | 0 5 | 0 5 |
 | visible/h3[17] | <h3> | shared | Venues & Event Operations | 场地与活动执行 |
-| visible/span[16] | <span> | shared | 0 6 | 0 6 |
+| visible/span[19] | <span> | shared | 0 6 | 0 6 |
 | visible/h3[18] | <h3> | shared | Local Delivery Teams | 本地交付团队 |
 | visible/p[34] | <p> | shared | EXHIBITION TO PIPELINE | 从展会到商务跟进 |
 | visible/h2[7] | <h2> | shared | Make the market moment useful before, during and after it happens. | 让一个市场节点在活动前、现场和结束后都产生价值。 |
-| visible/span[17] | <span> | shared | 0 1 | 0 1 |
+| visible/span[20] | <span> | shared | 0 1 | 0 1 |
 | visible/h3[19] | <h3> | shared | Before | 活动前 |
 | visible/p[35] | <p> | shared | Define target organisations, priority meetings, the local story and the follow-up plan. | 明确目标机构、重点会面、本地叙事和后续跟进计划。 |
-| visible/span[18] | <span> | shared | 0 2 | 0 2 |
+| visible/span[21] | <span> | shared | 0 2 | 0 2 |
 | visible/h3[20] | <h3> | shared | On the ground | 活动现场 |
 | visible/p[36] | <p> | shared | Coordinate the live environment, stakeholder activity and approved market-facing assets. | 统筹现场环境、利益相关方活动及获准使用的市场内容。 |
-| visible/span[19] | <span> | shared | 0 3 | 0 3 |
+| visible/span[22] | <span> | shared | 0 3 | 0 3 |
 | visible/h3[21] | <h3> | shared | After | 活动后 |
 | visible/p[37] | <p> | shared | Organise follow-up, market information, relationships and reusable content while momentum is fresh. | 及时整理商务跟进、市场信息、合作关系与可复用内容。 |
 | visible/p[38] | <p> | shared | WHY VENUS BRIDGE | 为什么选择 VENUS BRIDGE |
 | visible/h2[8] | <h2> | shared | One market objective. One coordinated local delivery path. | 一个市场目标，一条完整的本地推进路径。 |
 | visible/h3[22] | <h3> | shared | What Chinese headquarters gains | 中国总部获得什么 |
-| visible/span[20] | <span> | shared | Faster credible action | 更快启动可信行动 |
-| visible/span[21] | <span> | shared | Less supplier management | 减少多供应商管理 |
-| visible/span[22] | <span> | shared | Local market context | 获得本地市场语境 |
-| visible/span[23] | <span> | shared | Continuity after the event | 活动后仍有连续性 |
+| visible/span[23] | <span> | shared | Faster credible action | 更快启动可信行动 |
+| visible/span[24] | <span> | shared | Less supplier management | 减少多供应商管理 |
+| visible/span[25] | <span> | shared | Local market context | 获得本地市场语境 |
+| visible/span[26] | <span> | shared | Continuity after the event | 活动后仍有连续性 |
 | visible/h3[23] | <h3> | shared | How the model works | 这种合作模式如何运作 |
-| visible/span[24] | <span> | shared | Understanding the needs of Chinese headquarters | 理解中国端需求 |
-| visible/span[25] | <span> | shared | UK & European judgement | 具备英国与欧洲判断 |
-| visible/span[26] | <span> | shared | Coordinate relevant local relationships | 组织相关本地关系 |
-| visible/span[27] | <span> | shared | Integrated delivery | 一体化推进执行 |
+| visible/span[27] | <span> | shared | Understanding the needs of Chinese headquarters | 理解中国端需求 |
+| visible/span[28] | <span> | shared | UK & European judgement | 具备英国与欧洲判断 |
+| visible/span[29] | <span> | shared | Coordinate relevant local relationships | 组织相关本地关系 |
+| visible/span[30] | <span> | shared | Integrated delivery | 一体化推进执行 |
 | visible/p[39] | <p> | shared | VALUE THAT CONTINUES | 让价值继续 |
 | visible/h3[24] | <h3> | shared | The commercial value should continue after the project ends. | 项目结束，商务价值不应随之停止。 |
 | visible/p[40] | <p> | shared | Where the agreed scope allows, relationships, market information, approved content and project records are organised for the next conversation—not left behind when the event ends. | 在约定范围内，我们会整理合作关系、市场信息、获准使用的内容和项目记录，为下一次商务沟通继续服务。 |
@@ -150,13 +153,13 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[23] | <a> | shared | Contact | 联系 |
 | visible/a[24] | <a> | shared | Privacy | 隐私 |
 | visible/a[25] | <a> | shared | Terms | 条款 |
-| visible/span[28] | <span> | shared | Venus Bridge | Venus Bridge |
-| visible/span[29] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
+| visible/span[31] | <span> | shared | Venus Bridge | Venus Bridge |
+| visible/span[32] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
 
 ## /companies
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -284,7 +287,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /partners
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -392,7 +395,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /work
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -410,18 +413,16 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/p[1] | <p> | shared | CASE STUDIES | 案例研究 |
 | visible/h1[1] | <h1> | shared | Real UK & European projects. Clear objectives. Clear roles. | 真实英国与欧洲项目，清楚目标与职责。 |
 | visible/p[2] | <p> | shared | Browse by commercial situation. Each case explains the objective, business context, our actual role, local delivery and what remained useful. | 按商业场景浏览项目。每个案例说明项目目标、商业背景、实际职责、本地执行，以及之后留下的可用成果。 |
-| visible/button[1] | <button> | shared | All | 全部 |
-| visible/button[2] | <button> | shared | Market Entry & Launch | 市场进入与发布 |
-| visible/button[3] | <button> | shared | Industry & Exhibitions | 行业与展会 |
-| visible/button[4] | <button> | shared | Partnerships & Institutions | 合作与机构 |
-| visible/button[5] | <button> | shared | Brand & Content | 品牌与内容 |
+| visible/p[3] | <p> | shared | 0 1 | 0 1 |
+| visible/h2[1] | <h2> | shared | Commercial Case Studies | 商业案例 |
+| visible/p[4] | <p> | shared | Chinese companies operating at real UK and European market moments, with the commercial context separated clearly from Venus Bridge's verified role. | 中国企业真实发生在英国与欧洲市场节点中的项目，并将商业背景与 Venus Bridge 经核实的职责清楚分开。 |
 | visible/span[2] | <span> | desktop-only | 01 | 01 |
 | visible/span[3] | <span> | desktop-only | BYD BD11 Double-Decker Bus Launch, London | BYD BD11 双层公交车伦敦发布 |
 | visible/span[4] | <span> | desktop-only | Market Entry & Launch | 市场进入与发布 |
 | visible/span[5] | <span> | desktop-only | London, UK | London, UK |
 | visible/a[10] | <a> | desktop-only | ↗ | ↗ |
 | visible/span[6] | <span> | desktop-only | 02 | 02 |
-| visible/span[7] | <span> | desktop-only | Changan European Brand Launch 2025, Munich | 长安汽车 2025 欧洲品牌发布｜慕尼黑 |
+| visible/span[7] | <span> | desktop-only | Changan at IAA Mobility 2025 — European Expansion | 长安汽车 IAA Mobility 2025｜欧洲市场扩张 |
 | visible/span[8] | <span> | desktop-only | Market Entry & Launch | 市场进入与发布 |
 | visible/span[9] | <span> | desktop-only | Munich, Germany · 2025 | Munich, Germany · 2025 |
 | visible/a[11] | <a> | desktop-only | ↗ | ↗ |
@@ -441,113 +442,139 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/span[21] | <span> | desktop-only | Munich, Germany · 2023 | Munich, Germany · 2023 |
 | visible/a[14] | <a> | desktop-only | ↗ | ↗ |
 | visible/span[22] | <span> | desktop-only | 06 | 06 |
-| visible/span[23] | <span> | desktop-only | AGIBOT London Launch | AGIBOT 智元伦敦发布会 |
+| visible/span[23] | <span> | desktop-only | AGIBOT UK Launch 2026, London | AGIBOT 智元英国发布会 2026｜伦敦 |
 | visible/span[24] | <span> | desktop-only | Industry & Exhibitions | 行业与展会 |
-| visible/span[25] | <span> | desktop-only | London, UK | London, UK |
+| visible/span[25] | <span> | desktop-only | London, UK · 2026 | London, UK · 2026 |
 | visible/a[15] | <a> | desktop-only | ↗ | ↗ |
-| visible/span[26] | <span> | desktop-only | 07 | 07 |
-| visible/span[27] | <span> | desktop-only | London Automotive Brand Film | 伦敦汽车品牌影片 |
-| visible/span[28] | <span> | desktop-only | Brand & Content | 品牌与内容 |
-| visible/span[29] | <span> | desktop-only | London and England, UK | London and England, UK |
-| visible/a[16] | <a> | desktop-only | ↗ | ↗ |
-| visible/span[30] | <span> | desktop-only | 08 | 08 |
-| visible/span[31] | <span> | desktop-only | Wang Linkai (Xiao Gui) London Concert 2026 | 王琳凯（小鬼）伦敦演唱会 2026 |
-| visible/span[32] | <span> | desktop-only | Partnerships & Institutions | 合作与机构 |
-| visible/span[33] | <span> | desktop-only | London, UK · 2026 | London, UK · 2026 |
+| visible/p[5] | <p> | desktop-only | Market Entry & Launch | 市场进入与发布 |
+| visible/h2[2] | <h2> | desktop-only | BYD BD11 Double-Decker Bus Launch, London | BYD BD11 双层公交车伦敦发布 |
+| visible/p[6] | <p> | desktop-only | London, UK | London, UK |
+| visible/p[7] | <p> | desktop-only | Market moment | 市场节点 |
+| visible/p[8] | <p> | desktop-only | UK-Specific Product Introduction | 英国特定产品发布 |
+| visible/p[9] | <p> | desktop-only | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
+| visible/p[10] | <p> | desktop-only | Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence. | Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。 |
+| visible/span[26] | <span> | mobile-only | 01 | 01 |
+| visible/span[27] | <span> | mobile-only | Market Entry & Launch | 市场进入与发布 |
+| visible/span[28] | <span> | mobile-only | BYD BD11 Double-Decker Bus Launch, London | BYD BD11 双层公交车伦敦发布 |
+| visible/span[29] | <span> | mobile-only | London, UK | London, UK |
+| visible/p[11] | <p> | mobile-only | Market moment | 市场节点 |
+| visible/p[12] | <p> | mobile-only | UK-Specific Product Introduction | 英国特定产品发布 |
+| visible/p[13] | <p> | mobile-only | Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence. | Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。 |
+| visible/span[30] | <span> | mobile-only | Verified role | 经核实职责 |
+| visible/a[16] | <a> | mobile-only | View full case ↗ | 查看完整案例 ↗ |
+| visible/span[31] | <span> | mobile-only | 02 | 02 |
+| visible/span[32] | <span> | mobile-only | Market Entry & Launch | 市场进入与发布 |
+| visible/span[33] | <span> | mobile-only | Changan at IAA Mobility 2025 — European Expansion | 长安汽车 IAA Mobility 2025｜欧洲市场扩张 |
+| visible/span[34] | <span> | mobile-only | Munich, Germany · 2025 | Munich, Germany · 2025 |
+| visible/span[35] | <span> | mobile-only | 03 | 03 |
+| visible/span[36] | <span> | mobile-only | Market Entry & Launch | 市场进入与发布 |
+| visible/span[37] | <span> | mobile-only | Geely London Brand Launch 2025 | 吉利伦敦品牌发布会 2025 |
+| visible/span[38] | <span> | mobile-only | London, UK · 2025 | London, UK · 2025 |
+| visible/span[39] | <span> | mobile-only | 04 | 04 |
+| visible/span[40] | <span> | mobile-only | Industry & Exhibitions | 行业与展会 |
+| visible/span[41] | <span> | mobile-only | CATL Open Day 2025, Munich | CATL Open Day 2025｜慕尼黑 |
+| visible/span[42] | <span> | mobile-only | Munich, Germany · 2025 | Munich, Germany · 2025 |
+| visible/span[43] | <span> | mobile-only | 05 | 05 |
+| visible/span[44] | <span> | mobile-only | Industry & Exhibitions | 行业与展会 |
+| visible/span[45] | <span> | mobile-only | Leapmotor at IAA Mobility 2023, Munich | 零跑汽车 IAA Mobility 2023｜慕尼黑 |
+| visible/span[46] | <span> | mobile-only | Munich, Germany · 2023 | Munich, Germany · 2023 |
+| visible/span[47] | <span> | mobile-only | 06 | 06 |
+| visible/span[48] | <span> | mobile-only | Industry & Exhibitions | 行业与展会 |
+| visible/span[49] | <span> | mobile-only | AGIBOT UK Launch 2026, London | AGIBOT 智元英国发布会 2026｜伦敦 |
+| visible/span[50] | <span> | mobile-only | London, UK · 2026 | London, UK · 2026 |
+| visible/p[14] | <p> | shared | 0 2 | 0 2 |
+| visible/h2[3] | <h2> | shared | Local Brand & Production Execution | 本地品牌与制作执行 |
+| visible/p[15] | <p> | shared | UK localisation, locations, brand storytelling and production delivery. | 英国本地化、实景协调、品牌叙事与制作执行。 |
+| visible/span[51] | <span> | desktop-only | 01 | 01 |
+| visible/span[52] | <span> | desktop-only | London Automotive Brand Film | 伦敦汽车品牌影片 |
+| visible/span[53] | <span> | desktop-only | Brand & Content | 品牌与内容 |
+| visible/span[54] | <span> | desktop-only | London and England, UK | London and England, UK |
 | visible/a[17] | <a> | desktop-only | ↗ | ↗ |
-| visible/span[34] | <span> | desktop-only | 09 | 09 |
-| visible/span[35] | <span> | desktop-only | Yue Yunpeng London Live 2025 | 岳云鹏伦敦演出 2025 |
-| visible/span[36] | <span> | desktop-only | Partnerships & Institutions | 合作与机构 |
-| visible/span[37] | <span> | desktop-only | London, UK · 2025 | London, UK · 2025 |
-| visible/a[18] | <a> | desktop-only | ↗ | ↗ |
-| visible/span[38] | <span> | desktop-only | 10 | 10 |
-| visible/span[39] | <span> | desktop-only | London Fashion Week 2025 — Editorial & Event Content | 伦敦时装周 2025｜时尚编辑与活动内容 |
-| visible/span[40] | <span> | desktop-only | Brand & Content | 品牌与内容 |
-| visible/span[41] | <span> | desktop-only | London, UK · 2025 | London, UK · 2025 |
+| visible/p[16] | <p> | desktop-only | Brand & Content | 品牌与内容 |
+| visible/h2[4] | <h2> | desktop-only | London Automotive Brand Film | 伦敦汽车品牌影片 |
+| visible/p[17] | <p> | desktop-only | London and England, UK | London and England, UK |
+| visible/p[18] | <p> | desktop-only | Venus Bridge role | Venus Bridge 职责 |
+| visible/p[19] | <p> | desktop-only | Venus Bridge coordinated UK locations and produced automotive imagery across London streets, interview, vehicle-movement and countryside settings. | Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。 |
+| visible/span[55] | <span> | mobile-only | 01 | 01 |
+| visible/span[56] | <span> | mobile-only | Brand & Content | 品牌与内容 |
+| visible/span[57] | <span> | mobile-only | London Automotive Brand Film | 伦敦汽车品牌影片 |
+| visible/span[58] | <span> | mobile-only | London and England, UK | London and England, UK |
+| visible/p[20] | <p> | mobile-only | Venus Bridge role | Venus Bridge 职责 |
+| visible/p[21] | <p> | mobile-only | Venus Bridge coordinated UK locations and produced automotive imagery across London streets, interview, vehicle-movement and countryside settings. | Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。 |
+| visible/a[18] | <a> | mobile-only | View full case ↗ | 查看完整案例 ↗ |
+| visible/p[22] | <p> | shared | 0 3 | 0 3 |
+| visible/h2[5] | <h2> | shared | Creative & Cultural Experience | 创意与文化项目经验 |
+| visible/p[23] | <p> | shared | Creative production, talent environments, fashion and entertainment execution, and local cultural fluency. | 如实呈现创意制作、人才环境、时尚娱乐执行与文化语境能力。 |
+| visible/span[59] | <span> | desktop-only | 01 | 01 |
+| visible/span[60] | <span> | desktop-only | Wang Linkai (Xiao Gui) London Concert 2026 | 王琳凯（小鬼）伦敦演唱会 2026 |
+| visible/span[61] | <span> | desktop-only | Partnerships & Institutions | 合作与机构 |
+| visible/span[62] | <span> | desktop-only | London, UK · 2026 | London, UK · 2026 |
 | visible/a[19] | <a> | desktop-only | ↗ | ↗ |
-| visible/span[42] | <span> | desktop-only | 11 | 11 |
-| visible/span[43] | <span> | desktop-only | Selected Beauty & Fashion Brand Content | 美妆与时尚品牌内容精选 |
-| visible/span[44] | <span> | desktop-only | Brand & Content | 品牌与内容 |
-| visible/span[45] | <span> | desktop-only | UK | UK |
+| visible/span[63] | <span> | desktop-only | 02 | 02 |
+| visible/span[64] | <span> | desktop-only | Yue Yunpeng London Live 2025 | 岳云鹏伦敦演出 2025 |
+| visible/span[65] | <span> | desktop-only | Partnerships & Institutions | 合作与机构 |
+| visible/span[66] | <span> | desktop-only | London, UK · 2025 | London, UK · 2025 |
 | visible/a[20] | <a> | desktop-only | ↗ | ↗ |
-| visible/span[46] | <span> | desktop-only | 12 | 12 |
-| visible/span[47] | <span> | desktop-only | European Automotive Asset Programme | 欧洲汽车品牌资产项目 |
-| visible/span[48] | <span> | desktop-only | Brand & Content | 品牌与内容 |
-| visible/span[49] | <span> | desktop-only | Europe | Europe |
+| visible/span[67] | <span> | desktop-only | 03 | 03 |
+| visible/span[68] | <span> | desktop-only | London Fashion Week 2025 — Editorial & Event Content | 伦敦时装周 2025｜时尚编辑与活动内容 |
+| visible/span[69] | <span> | desktop-only | Brand & Content | 品牌与内容 |
+| visible/span[70] | <span> | desktop-only | London, UK · 2025 | London, UK · 2025 |
 | visible/a[21] | <a> | desktop-only | ↗ | ↗ |
-| visible/p[3] | <p> | desktop-only | Market Entry & Launch | 市场进入与发布 |
-| visible/h2[1] | <h2> | desktop-only | BYD BD11 Double-Decker Bus Launch, London | BYD BD11 双层公交车伦敦发布 |
-| visible/p[4] | <p> | desktop-only | London, UK | London, UK |
-| visible/p[5] | <p> | desktop-only | Venus Bridge role | Venus Bridge 职责 |
-| visible/p[6] | <p> | desktop-only | Venus Bridge delivered on-site visual documentation of the BD11 product introduction in London, covering the vehicle, venue and audience setting. | Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。 |
-| visible/span[50] | <span> | mobile-only | 01 | 01 |
-| visible/span[51] | <span> | mobile-only | Market Entry & Launch | 市场进入与发布 |
-| visible/span[52] | <span> | mobile-only | BYD BD11 Double-Decker Bus Launch, London | BYD BD11 双层公交车伦敦发布 |
-| visible/span[53] | <span> | mobile-only | London, UK | London, UK |
-| visible/p[7] | <p> | mobile-only | Venus Bridge role | Venus Bridge 职责 |
-| visible/p[8] | <p> | mobile-only | Venus Bridge delivered on-site visual documentation of the BD11 product introduction in London, covering the vehicle, venue and audience setting. | Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。 |
-| visible/a[22] | <a> | mobile-only | View full case ↗ | 查看完整案例 ↗ |
-| visible/span[54] | <span> | mobile-only | 02 | 02 |
-| visible/span[55] | <span> | mobile-only | Market Entry & Launch | 市场进入与发布 |
-| visible/span[56] | <span> | mobile-only | Changan European Brand Launch 2025, Munich | 长安汽车 2025 欧洲品牌发布｜慕尼黑 |
-| visible/span[57] | <span> | mobile-only | Munich, Germany · 2025 | Munich, Germany · 2025 |
-| visible/span[58] | <span> | mobile-only | 03 | 03 |
-| visible/span[59] | <span> | mobile-only | Market Entry & Launch | 市场进入与发布 |
-| visible/span[60] | <span> | mobile-only | Geely London Brand Launch 2025 | 吉利伦敦品牌发布会 2025 |
-| visible/span[61] | <span> | mobile-only | London, UK · 2025 | London, UK · 2025 |
-| visible/span[62] | <span> | mobile-only | 04 | 04 |
-| visible/span[63] | <span> | mobile-only | Industry & Exhibitions | 行业与展会 |
-| visible/span[64] | <span> | mobile-only | CATL Open Day 2025, Munich | CATL Open Day 2025｜慕尼黑 |
-| visible/span[65] | <span> | mobile-only | Munich, Germany · 2025 | Munich, Germany · 2025 |
-| visible/span[66] | <span> | mobile-only | 05 | 05 |
-| visible/span[67] | <span> | mobile-only | Industry & Exhibitions | 行业与展会 |
-| visible/span[68] | <span> | mobile-only | Leapmotor at IAA Mobility 2023, Munich | 零跑汽车 IAA Mobility 2023｜慕尼黑 |
-| visible/span[69] | <span> | mobile-only | Munich, Germany · 2023 | Munich, Germany · 2023 |
-| visible/span[70] | <span> | mobile-only | 06 | 06 |
-| visible/span[71] | <span> | mobile-only | Industry & Exhibitions | 行业与展会 |
-| visible/span[72] | <span> | mobile-only | AGIBOT London Launch | AGIBOT 智元伦敦发布会 |
-| visible/span[73] | <span> | mobile-only | London, UK | London, UK |
-| visible/span[74] | <span> | mobile-only | 07 | 07 |
-| visible/span[75] | <span> | mobile-only | Brand & Content | 品牌与内容 |
-| visible/span[76] | <span> | mobile-only | London Automotive Brand Film | 伦敦汽车品牌影片 |
-| visible/span[77] | <span> | mobile-only | London and England, UK | London and England, UK |
-| visible/span[78] | <span> | mobile-only | 08 | 08 |
-| visible/span[79] | <span> | mobile-only | Partnerships & Institutions | 合作与机构 |
-| visible/span[80] | <span> | mobile-only | Wang Linkai (Xiao Gui) London Concert 2026 | 王琳凯（小鬼）伦敦演唱会 2026 |
-| visible/span[81] | <span> | mobile-only | London, UK · 2026 | London, UK · 2026 |
-| visible/span[82] | <span> | mobile-only | 09 | 09 |
-| visible/span[83] | <span> | mobile-only | Partnerships & Institutions | 合作与机构 |
-| visible/span[84] | <span> | mobile-only | Yue Yunpeng London Live 2025 | 岳云鹏伦敦演出 2025 |
-| visible/span[85] | <span> | mobile-only | London, UK · 2025 | London, UK · 2025 |
-| visible/span[86] | <span> | mobile-only | 10 | 10 |
-| visible/span[87] | <span> | mobile-only | Brand & Content | 品牌与内容 |
-| visible/span[88] | <span> | mobile-only | London Fashion Week 2025 — Editorial & Event Content | 伦敦时装周 2025｜时尚编辑与活动内容 |
-| visible/span[89] | <span> | mobile-only | London, UK · 2025 | London, UK · 2025 |
-| visible/span[90] | <span> | mobile-only | 11 | 11 |
-| visible/span[91] | <span> | mobile-only | Capability evidence | 能力证据 |
-| visible/span[92] | <span> | mobile-only | Selected Beauty & Fashion Brand Content | 美妆与时尚品牌内容精选 |
-| visible/span[93] | <span> | mobile-only | UK | UK |
-| visible/span[94] | <span> | mobile-only | 12 | 12 |
-| visible/span[95] | <span> | mobile-only | Capability evidence | 能力证据 |
-| visible/span[96] | <span> | mobile-only | European Automotive Asset Programme | 欧洲汽车品牌资产项目 |
-| visible/span[97] | <span> | mobile-only | Europe | Europe |
-| visible/p[9] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
-| visible/p[10] | <p> | shared | London, United Kingdom | London, United Kingdom |
-| visible/a[23] | <a> | shared | For Companies | 面向企业 |
-| visible/a[24] | <a> | shared | For Partners | 面向合作方 |
-| visible/a[25] | <a> | shared | Case Studies | 案例研究 |
-| visible/a[26] | <a> | shared | How We Work | 工作方式 |
-| visible/a[27] | <a> | shared | About Us | 关于我们 |
-| visible/a[28] | <a> | shared | Contact | 联系 |
-| visible/a[29] | <a> | shared | Privacy | 隐私 |
-| visible/a[30] | <a> | shared | Terms | 条款 |
-| visible/span[98] | <span> | shared | Venus Bridge | Venus Bridge |
-| visible/span[99] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
+| visible/span[71] | <span> | desktop-only | 04 | 04 |
+| visible/span[72] | <span> | desktop-only | Selected Beauty & Fashion Brand Content | 美妆与时尚品牌内容精选 |
+| visible/span[73] | <span> | desktop-only | Brand & Content | 品牌与内容 |
+| visible/span[74] | <span> | desktop-only | UK | UK |
+| visible/a[22] | <a> | desktop-only | ↗ | ↗ |
+| visible/span[75] | <span> | desktop-only | 05 | 05 |
+| visible/span[76] | <span> | desktop-only | European Automotive Asset Programme | 欧洲汽车品牌资产项目 |
+| visible/span[77] | <span> | desktop-only | Brand & Content | 品牌与内容 |
+| visible/span[78] | <span> | desktop-only | Europe | Europe |
+| visible/a[23] | <a> | desktop-only | ↗ | ↗ |
+| visible/p[24] | <p> | desktop-only | Partnerships & Institutions | 合作与机构 |
+| visible/h2[6] | <h2> | desktop-only | Wang Linkai (Xiao Gui) London Concert 2026 | 王琳凯（小鬼）伦敦演唱会 2026 |
+| visible/p[25] | <p> | desktop-only | London, UK · 2026 | London, UK · 2026 |
+| visible/p[26] | <p> | desktop-only | Venus Bridge role | Venus Bridge 职责 |
+| visible/p[27] | <p> | desktop-only | Venus Bridge handled live-event photography and editorial image selection within the London performance setting. | Venus Bridge 负责伦敦演出现场的视觉记录与编辑选片。 |
+| visible/span[79] | <span> | mobile-only | 01 | 01 |
+| visible/span[80] | <span> | mobile-only | Partnerships & Institutions | 合作与机构 |
+| visible/span[81] | <span> | mobile-only | Wang Linkai (Xiao Gui) London Concert 2026 | 王琳凯（小鬼）伦敦演唱会 2026 |
+| visible/span[82] | <span> | mobile-only | London, UK · 2026 | London, UK · 2026 |
+| visible/p[28] | <p> | mobile-only | Venus Bridge role | Venus Bridge 职责 |
+| visible/p[29] | <p> | mobile-only | Venus Bridge handled live-event photography and editorial image selection within the London performance setting. | Venus Bridge 负责伦敦演出现场的视觉记录与编辑选片。 |
+| visible/a[24] | <a> | mobile-only | View full case ↗ | 查看完整案例 ↗ |
+| visible/span[83] | <span> | mobile-only | 02 | 02 |
+| visible/span[84] | <span> | mobile-only | Partnerships & Institutions | 合作与机构 |
+| visible/span[85] | <span> | mobile-only | Yue Yunpeng London Live 2025 | 岳云鹏伦敦演出 2025 |
+| visible/span[86] | <span> | mobile-only | London, UK · 2025 | London, UK · 2025 |
+| visible/span[87] | <span> | mobile-only | 03 | 03 |
+| visible/span[88] | <span> | mobile-only | Brand & Content | 品牌与内容 |
+| visible/span[89] | <span> | mobile-only | London Fashion Week 2025 — Editorial & Event Content | 伦敦时装周 2025｜时尚编辑与活动内容 |
+| visible/span[90] | <span> | mobile-only | London, UK · 2025 | London, UK · 2025 |
+| visible/span[91] | <span> | mobile-only | 04 | 04 |
+| visible/span[92] | <span> | mobile-only | Capability evidence | 能力证据 |
+| visible/span[93] | <span> | mobile-only | Selected Beauty & Fashion Brand Content | 美妆与时尚品牌内容精选 |
+| visible/span[94] | <span> | mobile-only | UK | UK |
+| visible/span[95] | <span> | mobile-only | 05 | 05 |
+| visible/span[96] | <span> | mobile-only | Capability evidence | 能力证据 |
+| visible/span[97] | <span> | mobile-only | European Automotive Asset Programme | 欧洲汽车品牌资产项目 |
+| visible/span[98] | <span> | mobile-only | Europe | Europe |
+| visible/p[30] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
+| visible/p[31] | <p> | shared | London, United Kingdom | London, United Kingdom |
+| visible/a[25] | <a> | shared | For Companies | 面向企业 |
+| visible/a[26] | <a> | shared | For Partners | 面向合作方 |
+| visible/a[27] | <a> | shared | Case Studies | 案例研究 |
+| visible/a[28] | <a> | shared | How We Work | 工作方式 |
+| visible/a[29] | <a> | shared | About Us | 关于我们 |
+| visible/a[30] | <a> | shared | Contact | 联系 |
+| visible/a[31] | <a> | shared | Privacy | 隐私 |
+| visible/a[32] | <a> | shared | Terms | 条款 |
+| visible/span[99] | <span> | shared | Venus Bridge | Venus Bridge |
+| visible/span[100] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
 
 ## /how-we-work
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -651,7 +678,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /about
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -834,7 +861,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /contact
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -889,7 +916,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /privacy
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -927,7 +954,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /terms
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -962,7 +989,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /work/byd-bd11-london
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -978,55 +1005,57 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[9] | <a> | shared | Discuss a Project | 讨论项目 |
 | visible/span[1] | <span> | shared | MENU | 菜单 |
 | visible/a[10] | <a> | shared | Back to case studies | 返回案例研究 |
-| visible/p[1] | <p> | shared | Market Entry & Launch | 市场进入与发布 |
+| visible/p[1] | <p> | shared | UK-Specific Product Introduction | 英国特定产品发布 |
 | visible/h1[1] | <h1> | shared | BYD BD11 Double-Decker Bus Launch, London | BYD BD11 双层公交车伦敦发布 |
-| visible/p[2] | <p> | shared | An approved visual record preserving a recognisable UK product presence and the live presentation setting. | 形成经批准的视觉记录，保留清晰可辨的英国产品亮相与现场发布环境。 |
+| visible/p[2] | <p> | shared | BYD gave the BD11 electric double-decker its global debut at the London Bus Museum, placing a new commercial vehicle directly in the public-transport environment for which it was developed. | BYD 在伦敦巴士博物馆完成 BD11 纯电动双层公交车的全球首发，将一款新商用车型直接置于其面向的伦敦公共交通环境中。 |
 | visible/dt[1] | <dt> | shared | Project / Brand | 项目 / 品牌 |
 | visible/dd[1] | <dd> | shared | BYD | BYD |
 | visible/dt[2] | <dt> | shared | Location / year | 地点 / 年份 |
 | visible/dd[2] | <dd> | shared | London, UK | London, UK |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | UK market-presence documentation | 英国市场落地项目记录 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
-| visible/dd[4] | <dd> | shared | On-site visual documentation in London · UK brand evidence | 伦敦发布记录 · 面向英国的品牌证据 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
+| visible/dd[4] | <dd> | shared | Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence. | Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。 |
 | visible/p[3] | <p> | shared | 01 | 01 |
-| visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
-| visible/p[4] | <p> | shared | Evidence of UK market presence from a London product introduction | 围绕伦敦产品亮相建立英国市场落地证据 |
+| visible/h2[1] | <h2> | shared | Market Moment | 市场节点 |
+| visible/p[4] | <p> | shared | BYD gave the BD11 electric double-decker its global debut at the London Bus Museum, placing a new commercial vehicle directly in the public-transport environment for which it was developed. | BYD 在伦敦巴士博物馆完成 BD11 纯电动双层公交车的全球首发，将一款新商用车型直接置于其面向的伦敦公共交通环境中。 |
 | visible/p[5] | <p> | shared | 02 | 02 |
-| visible/h2[2] | <h2> | shared | Business Context | 商业背景 |
-| visible/p[6] | <p> | shared | Photography covering the BD11 vehicle, venue and audience context. | 覆盖 BD11 车辆、场地与观众环境的摄影记录。 |
-| visible/p[7] | <p> | shared | 03 · Challenge | 03 · 挑战 |
-| visible/p[8] | <p> | shared | Make the product, people and local market setting clear within a time-bound live launch. | 在时间有限的发布现场，同时清楚呈现产品、人物与当地市场环境。 |
-| visible/p[9] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
-| visible/h2[3] | <h2> | shared | The work delivered within this project. | 本项目中实际承担的工作。 |
-| visible/p[10] | <p> | shared | Venus Bridge delivered on-site visual documentation of the BD11 product introduction in London, covering the vehicle, venue and audience setting. | Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。 |
-| visible/li[1] | <li> | shared | Event Documentation | 活动记录 |
-| visible/li[2] | <li> | shared | Brand Presentation | 品牌呈现 |
-| visible/li[3] | <li> | shared | Post-project Assets | 项目后续资产 |
-| visible/p[11] | <p> | shared | Scope on record | 记录中的工作范围 |
-| visible/li[4] | <li> | shared | On-site visual documentation in London | 伦敦发布记录 |
-| visible/li[5] | <li> | shared | UK brand evidence | 面向英国的品牌证据 |
-| visible/p[12] | <p> | shared | 05 · Strategy / Approach | 05 · 策略与方法 |
-| visible/span[2] | <span> | shared | 01 | 01 |
-| visible/p[13] | <p> | shared | Identify the vehicle and venue context | 明确车辆与场地语境 |
-| visible/span[3] | <span> | shared | 02 | 02 |
-| visible/p[14] | <p> | shared | Document product, presentation and audience | 记录产品、演示与观众 |
-| visible/span[4] | <span> | shared | 03 | 03 |
-| visible/p[15] | <p> | shared | Deliver a coherent visual record of the UK setting | 交付连贯的英国场景视觉记录 |
-| visible/p[16] | <p> | shared | 06 · Local Delivery | 06 · 本地执行 |
-| visible/h2[4] | <h2> | shared | On the ground | 现场工作 |
-| visible/p[17] | <p> | shared | Captured the vehicle and presentation setting. | 拍摄车辆与展示现场环境。 |
-| visible/p[18] | <p> | shared | 07 · Outputs / Outcomes | 07 · 交付与成果 |
-| visible/h2[5] | <h2> | shared | 7 approved public project images. | 7 张获准公开使用的项目影像。 |
-| visible/p[19] | <p> | shared | Verified work | 已核实工作 |
-| visible/li[6] | <li> | shared | On-site visual documentation in London | 伦敦发布记录 |
-| visible/li[7] | <li> | shared | UK brand evidence | 面向英国的品牌证据 |
-| visible/p[20] | <p> | shared | 08 · What Remained Useful | 08 · 项目之后仍可使用的价值 |
-| visible/h2[6] | <h2> | shared | An approved visual record preserving a recognisable UK product presence and the live presentation setting. | 形成经批准的视觉记录，保留清晰可辨的英国产品亮相与现场发布环境。 |
+| visible/h2[2] | <h2> | shared | Why It Mattered | 为何重要 |
+| visible/p[6] | <p> | shared | The official launch positioned the BD11 as a new-generation electric double-decker for the UK, linking the product introduction to BYD's established electric-bus activity in London. | 官方发布将 BD11 定位为面向英国的新一代纯电动双层公交车，并把本次产品亮相与 BYD 已有的伦敦电动公交业务联系起来。 |
+| visible/p[7] | <p> | shared | 03 | 03 |
+| visible/h2[3] | <h2> | shared | Project Objective | 项目目标 |
+| visible/p[8] | <p> | shared | Create an approved public record of the vehicle introduction, presentation and recognisable London setting. | 形成一份经批准的公开记录，清楚呈现车辆亮相、发布环节与可识别的伦敦环境。 |
+| visible/p[9] | <p> | shared | Case-specific challenge | 本项目的具体挑战 |
+| visible/p[10] | <p> | shared | Present a UK-specific commercial vehicle with enough product, venue and audience context to make its London public-transport setting immediately legible. | 在产品、场地与观众语境之间建立清晰联系，使这款面向英国的商用车辆能够立即被识别为置身伦敦公共交通环境。 |
+| visible/p[11] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
+| visible/p[12] | <p> | shared | Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence. | Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。 |
+| visible/h2[4] | <h2> | shared | What Venus Bridge did | 实际完成 |
+| visible/li[1] | <li> | shared | On-site visual documentation | 现场视觉记录 |
+| visible/li[2] | <li> | shared | Product, venue and audience coverage | 产品、场地与观众记录 |
+| visible/li[3] | <li> | shared | Approved asset preparation | 获准资产整理 |
+| visible/h2[5] | <h2> | shared | What Venus Bridge did not claim | 不作主张 |
+| visible/li[4] | <li> | shared | Market-entry strategy | 市场进入战略 |
+| visible/li[5] | <li> | shared | Event ownership | 活动主办 |
+| visible/li[6] | <li> | shared | Sales or operator outcomes | 销售或运营商成果 |
+| visible/p[13] | <p> | shared | 05 · Documentation Approach | 05 · 记录方法 |
+| visible/h2[6] | <h2> | shared | Before | 前期 |
+| visible/li[7] | <li> | shared | Brief and coverage priorities | 项目简报与拍摄重点对齐 |
+| visible/h2[7] | <h2> | shared | On the Ground | 现场 |
+| visible/li[8] | <li> | shared | Vehicle, presentation and audience documentation | 车辆、发布与观众现场记录 |
+| visible/h2[8] | <h2> | shared | After | 后续 |
+| visible/li[9] | <li> | shared | Approved public asset selection | 获准公开资产筛选 |
+| visible/p[14] | <p> | shared | 06 · Verified Outputs | 06 · 经核实的交付 |
+| visible/li[10] | <li> | shared | Approved London launch record | 经批准的伦敦发布记录 |
+| visible/li[11] | <li> | shared | Product and presentation imagery | 产品与发布环节影像 |
+| visible/p[15] | <p> | shared | Public evidence available | 公开证据 |
+| visible/p[16] | <p> | shared | 7 approved images | 7 张获准公开使用的影像 |
+| visible/p[17] | <p> | shared | 07 · Verified Result | 07 · 经核实的结果 |
+| visible/h2[9] | <h2> | shared | A coherent, rights-approved record of the BD11 introduction in its visible London market setting. | 形成一套权利获批、连贯呈现 BD11 在伦敦目标市场环境中亮相的记录。 |
+| visible/p[18] | <p> | shared | A reusable record of the product introduction and London setting. | 一套可继续使用的产品亮相与伦敦环境记录。 |
+| visible/p[19] | <p> | shared | 09 · Evidence & Claim Boundary | 09 · 证据与主张边界 |
+| visible/p[20] | <p> | shared | Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge. | 公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。 |
 | visible/p[21] | <p> | shared | Next project | 下一个项目 |
-| visible/span[5] | <span> | shared | Changan European Brand Launch 2025, Munich | 长安汽车 2025 欧洲品牌发布｜慕尼黑 |
-| visible/span[6] | <span> | shared | Market Entry & Launch ↗ | 市场进入与发布 ↗ |
-| visible/a[11] | <a> | shared | Discuss a Similar Market Goal | 讨论类似市场目标 |
+| visible/a[11] | <a> | shared | Changan at IAA Mobility 2025 — European Expansion ↗ | 长安汽车 IAA Mobility 2025｜欧洲市场扩张 ↗ |
 | visible/p[22] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
 | visible/p[23] | <p> | shared | London, United Kingdom | London, United Kingdom |
 | visible/a[12] | <a> | shared | For Companies | 面向企业 |
@@ -1037,13 +1066,13 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[17] | <a> | shared | Contact | 联系 |
 | visible/a[18] | <a> | shared | Privacy | 隐私 |
 | visible/a[19] | <a> | shared | Terms | 条款 |
-| visible/span[7] | <span> | shared | Venus Bridge | Venus Bridge |
-| visible/span[8] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
+| visible/span[2] | <span> | shared | Venus Bridge | Venus Bridge |
+| visible/span[3] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
 
 ## /work/changan-europe-launch-2025
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1059,55 +1088,57 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[9] | <a> | shared | Discuss a Project | 讨论项目 |
 | visible/span[1] | <span> | shared | MENU | 菜单 |
 | visible/a[10] | <a> | shared | Back to case studies | 返回案例研究 |
-| visible/p[1] | <p> | shared | Market Entry & Launch | 市场进入与发布 |
-| visible/h1[1] | <h1> | shared | Changan European Brand Launch 2025, Munich | 长安汽车 2025 欧洲品牌发布｜慕尼黑 |
-| visible/p[2] | <p> | shared | A coherent visual record of Changan's visible European launch presence, spanning product, people and event context. | 形成连贯的欧洲发布现场记录，覆盖产品、人员与活动环境。 |
+| visible/p[1] | <p> | shared | European Expansion at IAA Mobility | IAA Mobility 欧洲市场扩张 |
+| visible/h1[1] | <h1> | shared | Changan at IAA Mobility 2025 — European Expansion | 长安汽车 IAA Mobility 2025｜欧洲市场扩张 |
+| visible/p[2] | <p> | shared | Changan appeared at IAA Mobility 2025 in Munich with CHANGAN, DEEPAL and AVATR, and announced the European market launch of the DEEPAL S05. | 长安汽车携 CHANGAN、DEEPAL 与 AVATR 亮相 2025 慕尼黑国际车展，并宣布 DEEPAL S05 在欧洲上市。 |
 | visible/dt[1] | <dt> | shared | Project / Brand | 项目 / 品牌 |
 | visible/dd[1] | <dd> | shared | Changan | Changan |
 | visible/dt[2] | <dt> | shared | Location / year | 地点 / 年份 |
 | visible/dd[2] | <dd> | shared | Munich, Germany · 2025 | Munich, Germany · 2025 |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | European launch-context brand evidence | 欧洲发布场景品牌证据 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
-| visible/dd[4] | <dd> | shared | Launch-context documentation · Visual assets showing the European setting | 发布场景记录 · 面向欧洲的品牌资产 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
+| visible/dd[4] | <dd> | shared | Venus Bridge documented the Munich exhibition setting across the stage, vehicles and guest viewing environment. | Venus Bridge 记录慕尼黑展会现场，覆盖舞台、车辆与嘉宾观看环境。 |
 | visible/p[3] | <p> | shared | 01 | 01 |
-| visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
-| visible/p[4] | <p> | shared | European-market brand visibility in an international launch setting | 国际发布场景中的欧洲市场品牌可见度 |
+| visible/h2[1] | <h2> | shared | Market Moment | 市场节点 |
+| visible/p[4] | <p> | shared | Changan appeared at IAA Mobility 2025 in Munich with CHANGAN, DEEPAL and AVATR, and announced the European market launch of the DEEPAL S05. | 长安汽车携 CHANGAN、DEEPAL 与 AVATR 亮相 2025 慕尼黑国际车展，并宣布 DEEPAL S05 在欧洲上市。 |
 | visible/p[5] | <p> | shared | 02 | 02 |
-| visible/h2[2] | <h2> | shared | Business Context | 商业背景 |
-| visible/p[6] | <p> | shared | Visual coverage across presentation, vehicle reveal and guest viewing moments. | 欧洲品牌发布的视觉记录，覆盖舞台演示、车辆亮相与嘉宾观看场景。 |
-| visible/p[7] | <p> | shared | 03 · Challenge | 03 · 挑战 |
-| visible/p[8] | <p> | shared | Make the product, people and local market setting clear within a time-bound live launch. | 在时间有限的发布现场，同时清楚呈现产品、人物与当地市场环境。 |
-| visible/p[9] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
-| visible/h2[3] | <h2> | shared | The work delivered within this project. | 本项目中实际承担的工作。 |
-| visible/p[10] | <p> | shared | Venus Bridge documented the Munich launch setting across the stage, vehicle reveal and guest viewing environment. | Venus Bridge 记录慕尼黑发布现场，覆盖舞台、车辆亮相与嘉宾观看环境。 |
-| visible/li[1] | <li> | shared | Event Documentation | 活动记录 |
-| visible/li[2] | <li> | shared | Brand Presentation | 品牌呈现 |
-| visible/li[3] | <li> | shared | Post-project Assets | 项目后续资产 |
-| visible/p[11] | <p> | shared | Scope on record | 记录中的工作范围 |
-| visible/li[4] | <li> | shared | Launch-context documentation | 发布场景记录 |
-| visible/li[5] | <li> | shared | Visual assets showing the European setting | 面向欧洲的品牌资产 |
-| visible/p[12] | <p> | shared | 05 · Strategy / Approach | 05 · 策略与方法 |
-| visible/span[2] | <span> | shared | 01 | 01 |
-| visible/p[13] | <p> | shared | Map the visible launch moments | 梳理可见的发布关键场景 |
-| visible/span[3] | <span> | shared | 02 | 02 |
-| visible/p[14] | <p> | shared | Document stage, vehicles and guest context | 记录舞台、车辆与嘉宾环境 |
-| visible/span[4] | <span> | shared | 03 | 03 |
-| visible/p[15] | <p> | shared | Select a coherent set of visual assets showing the European setting | 筛选连贯的欧洲场景视觉资产 |
-| visible/p[16] | <p> | shared | 06 · Local Delivery | 06 · 本地执行 |
-| visible/h2[4] | <h2> | shared | On the ground | 现场工作 |
-| visible/p[17] | <p> | shared | Captured the stage, vehicles and guest context in Munich. | 在慕尼黑拍摄舞台、车辆与嘉宾环境。 |
-| visible/p[18] | <p> | shared | 07 · Outputs / Outcomes | 07 · 交付与成果 |
-| visible/h2[5] | <h2> | shared | 7 approved public project images. | 7 张获准公开使用的项目影像。 |
-| visible/p[19] | <p> | shared | Verified work | 已核实工作 |
-| visible/li[6] | <li> | shared | Launch-context documentation | 发布场景记录 |
-| visible/li[7] | <li> | shared | Visual assets showing the European setting | 面向欧洲的品牌资产 |
-| visible/p[20] | <p> | shared | 08 · What Remained Useful | 08 · 项目之后仍可使用的价值 |
-| visible/h2[6] | <h2> | shared | A coherent visual record of Changan's visible European launch presence, spanning product, people and event context. | 形成连贯的欧洲发布现场记录，覆盖产品、人员与活动环境。 |
+| visible/h2[2] | <h2> | shared | Why It Mattered | 为何重要 |
+| visible/p[6] | <p> | shared | The Munich activity followed Changan's formal European brand launch in Mainz in March 2025 and made its expansion visible within a major European mobility event. | 慕尼黑活动发生在长安汽车 2025 年 3 月于美因茨完成正式欧洲品牌发布之后，使其欧洲扩张在重要 mobility 行业活动中得到公开呈现。 |
+| visible/p[7] | <p> | shared | 03 | 03 |
+| visible/h2[3] | <h2> | shared | Project Objective | 项目目标 |
+| visible/p[8] | <p> | shared | Create an approved record connecting the vehicles, stage activity and visitor setting at IAA Mobility in Munich. | 形成一套经批准的记录，将慕尼黑 IAA Mobility 的车辆、舞台活动与观众环境联系起来。 |
+| visible/p[9] | <p> | shared | Case-specific challenge | 本项目的具体挑战 |
+| visible/p[10] | <p> | shared | Show Changan's European expansion through the specific IAA Mobility setting without mislabelling the Munich appearance as the earlier formal European brand launch. | 通过明确的 IAA Mobility 场景呈现长安汽车的欧洲扩张，同时避免把慕尼黑亮相误写为此前的正式欧洲品牌发布。 |
+| visible/p[11] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
+| visible/p[12] | <p> | shared | Venus Bridge documented the Munich exhibition setting across the stage, vehicles and guest viewing environment. | Venus Bridge 记录慕尼黑展会现场，覆盖舞台、车辆与嘉宾观看环境。 |
+| visible/h2[4] | <h2> | shared | What Venus Bridge did | 实际完成 |
+| visible/li[1] | <li> | shared | Exhibition documentation | 展会记录 |
+| visible/li[2] | <li> | shared | Vehicle and stage coverage | 车辆与舞台记录 |
+| visible/li[3] | <li> | shared | Visual assets showing the European setting | 呈现欧洲场景的视觉资产 |
+| visible/h2[5] | <h2> | shared | What Venus Bridge did not claim | 不作主张 |
+| visible/li[4] | <li> | shared | Formal European launch ownership | 正式欧洲发布主办 |
+| visible/li[5] | <li> | shared | European expansion strategy | 欧洲扩张战略 |
+| visible/li[6] | <li> | shared | Sales or distribution outcomes | 销售或渠道成果 |
+| visible/p[13] | <p> | shared | 05 · Documentation Approach | 05 · 记录方法 |
+| visible/h2[6] | <h2> | shared | Before | 前期 |
+| visible/li[7] | <li> | shared | Visible event priorities | 可见活动重点梳理 |
+| visible/h2[7] | <h2> | shared | On the Ground | 现场 |
+| visible/li[8] | <li> | shared | Stage, vehicle and visitor documentation | 舞台、车辆与观众记录 |
+| visible/h2[8] | <h2> | shared | After | 后续 |
+| visible/li[9] | <li> | shared | Coherent European event asset selection | 连贯欧洲活动资产筛选 |
+| visible/p[14] | <p> | shared | 06 · Verified Outputs | 06 · 经核实的交付 |
+| visible/li[10] | <li> | shared | IAA Mobility event documentation | IAA Mobility 活动记录 |
+| visible/li[11] | <li> | shared | Vehicle, stage and visitor assets | 车辆、舞台与观众资产 |
+| visible/p[15] | <p> | shared | Public evidence available | 公开证据 |
+| visible/p[16] | <p> | shared | 7 approved images | 7 张获准公开使用的影像 |
+| visible/p[17] | <p> | shared | 07 · Verified Result | 07 · 经核实的结果 |
+| visible/h2[9] | <h2> | shared | A coherent approved record of Changan's visible presence at IAA Mobility 2025. | 形成一套经批准、连贯呈现长安汽车亮相 IAA Mobility 2025 的记录。 |
+| visible/p[18] | <p> | shared | A reusable record of the brand's Munich industry-event presence. | 一套可继续使用的慕尼黑行业活动现场记录。 |
+| visible/p[19] | <p> | shared | 09 · Evidence & Claim Boundary | 09 · 证据与主张边界 |
+| visible/p[20] | <p> | shared | Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge. | 公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。 |
 | visible/p[21] | <p> | shared | Next project | 下一个项目 |
-| visible/span[5] | <span> | shared | Geely London Brand Launch 2025 | 吉利伦敦品牌发布会 2025 |
-| visible/span[6] | <span> | shared | Market Entry & Launch ↗ | 市场进入与发布 ↗ |
-| visible/a[11] | <a> | shared | Discuss a Similar Market Goal | 讨论类似市场目标 |
+| visible/a[11] | <a> | shared | Geely London Brand Launch 2025 ↗ | 吉利伦敦品牌发布会 2025 ↗ |
 | visible/p[22] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
 | visible/p[23] | <p> | shared | London, United Kingdom | London, United Kingdom |
 | visible/a[12] | <a> | shared | For Companies | 面向企业 |
@@ -1118,13 +1149,13 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[17] | <a> | shared | Contact | 联系 |
 | visible/a[18] | <a> | shared | Privacy | 隐私 |
 | visible/a[19] | <a> | shared | Terms | 条款 |
-| visible/span[7] | <span> | shared | Venus Bridge | Venus Bridge |
-| visible/span[8] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
+| visible/span[2] | <span> | shared | Venus Bridge | Venus Bridge |
+| visible/span[3] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
 
 ## /work/geely-london-brand-launch
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1140,57 +1171,62 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[9] | <a> | shared | Discuss a Project | 讨论项目 |
 | visible/span[1] | <span> | shared | MENU | 菜单 |
 | visible/a[10] | <a> | shared | Back to case studies | 返回案例研究 |
-| visible/p[1] | <p> | shared | Market Entry & Launch | 市场进入与发布 |
+| visible/p[1] | <p> | shared | UK Brand Market Entry | 英国品牌市场进入 |
 | visible/h1[1] | <h1> | shared | Geely London Brand Launch 2025 | 吉利伦敦品牌发布会 2025 |
-| visible/p[2] | <p> | shared | An approved set of launch-context assets preserving the product, presentation and visible UK market setting. | 形成一组经批准的发布场景资产，保留产品、演讲与可见的英国市场环境。 |
+| visible/p[2] | <p> | shared | Geely Auto formally launched its namesake brand in the UK in London and introduced the all-electric EX5 as its first UK model. | 吉利汽车在伦敦正式发布其同名品牌进入英国市场，并以纯电 EX5 作为首款英国车型。 |
 | visible/dt[1] | <dt> | shared | Project / Brand | 项目 / 品牌 |
 | visible/dd[1] | <dd> | shared | Geely Auto | Geely Auto |
 | visible/dt[2] | <dt> | shared | Location / year | 地点 / 年份 |
 | visible/dd[2] | <dd> | shared | London, UK · 2025 | London, UK · 2025 |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | UK brand-launch visual documentation | 英国品牌发布视觉记录 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
-| visible/dd[4] | <dd> | shared | Launch-context photography · UK-facing visual documentation | 发布场景摄影 · 面向英国市场的视觉记录 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
+| visible/dd[4] | <dd> | shared | Venus Bridge documented the London launch environment, including the design presentation, EX5 display and audience context. | Venus Bridge 记录伦敦发布现场，包括设计演讲、EX5 展示与观众环境。 |
 | visible/p[3] | <p> | shared | 01 | 01 |
-| visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
-| visible/p[4] | <p> | shared | UK market-presence evidence from Geely's London brand launch | 形成吉利伦敦品牌发布的英国市场落地证据 |
+| visible/h2[1] | <h2> | shared | Market Moment | 市场节点 |
+| visible/p[4] | <p> | shared | Geely Auto formally launched its namesake brand in the UK in London and introduced the all-electric EX5 as its first UK model. | 吉利汽车在伦敦正式发布其同名品牌进入英国市场，并以纯电 EX5 作为首款英国车型。 |
 | visible/p[5] | <p> | shared | 02 | 02 |
-| visible/h2[2] | <h2> | shared | Business Context | 商业背景 |
-| visible/p[6] | <p> | shared | Visual documentation from Geely Auto's London launch, including design presentation, EX5 display and audience context. | 吉利汽车伦敦发布的视觉记录，包括设计演讲、EX5 展示与观众环境。 |
-| visible/p[7] | <p> | shared | 03 · Challenge | 03 · 挑战 |
-| visible/p[8] | <p> | shared | Make the product, people and local market setting clear within a time-bound live launch. | 在时间有限的发布现场，同时清楚呈现产品、人物与当地市场环境。 |
-| visible/p[9] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
-| visible/h2[3] | <h2> | shared | The work delivered within this project. | 本项目中实际承担的工作。 |
-| visible/p[10] | <p> | shared | Venus Bridge delivered visual documentation of the London launch environment, covering the design presentation, EX5 display and audience context. | Venus Bridge 完成伦敦发布现场的视觉记录，覆盖设计演讲、EX5 展示与观众环境。 |
-| visible/li[1] | <li> | shared | Event Documentation | 活动记录 |
-| visible/li[2] | <li> | shared | Brand Presentation | 品牌呈现 |
-| visible/li[3] | <li> | shared | Post-project Assets | 项目后续资产 |
-| visible/p[11] | <p> | shared | Scope on record | 记录中的工作范围 |
-| visible/li[4] | <li> | shared | Launch-context photography | 发布场景摄影 |
-| visible/li[5] | <li> | shared | UK-facing visual documentation | 面向英国市场的视觉记录 |
-| visible/p[12] | <p> | shared | 05 · Strategy / Approach | 05 · 策略与方法 |
-| visible/span[2] | <span> | shared | 01 | 01 |
-| visible/p[13] | <p> | shared | Identify the presentation, product and audience context | 明确演讲、产品与观众环境 |
-| visible/span[3] | <span> | shared | 02 | 02 |
-| visible/p[14] | <p> | shared | Capture the live launch across landscape and portrait formats | 以横竖画幅记录发布现场 |
-| visible/span[4] | <span> | shared | 03 | 03 |
-| visible/p[15] | <p> | shared | Deliver an approved public visual record | 交付获准公开使用的视觉记录 |
-| visible/p[16] | <p> | shared | 06 · Local Delivery | 06 · 本地执行 |
-| visible/h2[4] | <h2> | shared | On the ground | 现场工作 |
-| visible/p[17] | <p> | shared | Captured the presentation, display screens and live audience setting. | 拍摄演讲、展示屏幕与现场观众环境。 |
-| visible/p[18] | <p> | shared | 07 · Outputs / Outcomes | 07 · 交付与成果 |
-| visible/h2[5] | <h2> | shared | 3 approved public project images. | 3 张获准公开使用的项目影像。 |
-| visible/p[19] | <p> | shared | Verified work | 已核实工作 |
-| visible/li[6] | <li> | shared | Launch-context photography | 发布场景摄影 |
-| visible/li[7] | <li> | shared | UK-facing visual documentation | 面向英国市场的视觉记录 |
-| visible/p[20] | <p> | shared | 08 · What Remained Useful | 08 · 项目之后仍可使用的价值 |
-| visible/h2[6] | <h2> | shared | An approved set of launch-context assets preserving the product, presentation and visible UK market setting. | 形成一组经批准的发布场景资产，保留产品、演讲与可见的英国市场环境。 |
-| visible/p[21] | <p> | shared | Next project | 下一个项目 |
-| visible/span[5] | <span> | shared | CATL Open Day 2025, Munich | CATL Open Day 2025｜慕尼黑 |
-| visible/span[6] | <span> | shared | Industry & Exhibitions ↗ | 行业与展会 ↗ |
-| visible/a[11] | <a> | shared | Discuss a Similar Market Goal | 讨论类似市场目标 |
-| visible/p[22] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
-| visible/p[23] | <p> | shared | London, United Kingdom | London, United Kingdom |
+| visible/h2[2] | <h2> | shared | Why It Mattered | 为何重要 |
+| visible/p[6] | <p> | shared | The company described the UK launch as the next phase of its European strategy, giving the London event significance beyond a single product display. | 吉利将英国发布描述为其欧洲战略的下一阶段，因此这场伦敦活动的意义不止于单一车型展示。 |
+| visible/p[7] | <p> | shared | 03 | 03 |
+| visible/h2[3] | <h2> | shared | Project Objective | 项目目标 |
+| visible/p[8] | <p> | shared | Establish an approved visual record of the UK brand launch, EX5 presentation and audience setting. | 建立一套经批准的视觉记录，呈现英国品牌发布、EX5 展示与现场观众环境。 |
+| visible/p[9] | <p> | shared | Case-specific challenge | 本项目的具体挑战 |
+| visible/p[10] | <p> | shared | Create a clear launch record around the arrival of a standalone automotive brand in a mature UK market while keeping the documented role distinct from the client's market-entry programme. | 围绕一个独立汽车品牌进入成熟英国市场的时刻建立清晰发布记录，同时将记录工作与客户自身的市场进入计划明确区分。 |
+| visible/p[11] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
+| visible/p[12] | <p> | shared | Venus Bridge documented the London launch environment, including the design presentation, EX5 display and audience context. | Venus Bridge 记录伦敦发布现场，包括设计演讲、EX5 展示与观众环境。 |
+| visible/h2[4] | <h2> | shared | What Venus Bridge did | 实际完成 |
+| visible/li[1] | <li> | shared | Launch-context photography | 发布场景摄影 |
+| visible/li[2] | <li> | shared | EX5 and presentation coverage | EX5 与演讲记录 |
+| visible/li[3] | <li> | shared | UK-facing visual documentation | 面向英国市场的视觉记录 |
+| visible/h2[5] | <h2> | shared | What Venus Bridge did not claim | 不作主张 |
+| visible/li[4] | <li> | shared | UK market-entry strategy | 英国市场进入战略 |
+| visible/li[5] | <li> | shared | Dealer-network development | 经销网络建设 |
+| visible/li[6] | <li> | shared | Sales outcomes | 销售成果 |
+| visible/p[13] | <p> | shared | 05 · Documentation Approach | 05 · 记录方法 |
+| visible/h2[6] | <h2> | shared | Before | 前期 |
+| visible/li[7] | <li> | shared | Presentation and product priorities | 演讲与产品重点对齐 |
+| visible/h2[7] | <h2> | shared | On the Ground | 现场 |
+| visible/li[8] | <li> | shared | Launch, product and audience coverage | 发布、产品与观众记录 |
+| visible/h2[8] | <h2> | shared | After | 后续 |
+| visible/li[9] | <li> | shared | Approved visual handoff | 获准视觉资产交付 |
+| visible/p[14] | <p> | shared | 06 · Verified Outputs | 06 · 经核实的交付 |
+| visible/li[10] | <li> | shared | Approved UK brand-launch record | 经批准的英国品牌发布记录 |
+| visible/li[11] | <li> | shared | EX5 and presentation assets | EX5 与演讲资产 |
+| visible/p[15] | <p> | shared | Public evidence available | 公开证据 |
+| visible/p[16] | <p> | shared | 3 approved images | 3 张获准公开使用的影像 |
+| visible/p[17] | <p> | shared | 07 · Verified Result | 07 · 经核实的结果 |
+| visible/h2[9] | <h2> | shared | An approved asset set preserving the product, presentation and visible UK launch setting. | 形成一组经批准的资产，保留产品、演讲与可见的英国发布环境。 |
+| visible/p[18] | <p> | shared | A reusable record of Geely Auto's visible UK launch moment. | 一套可继续使用的吉利汽车英国发布现场记录。 |
+| visible/p[19] | <p> | shared | 08 · What Happened Next | 08 · 后续公开发展 |
+| visible/p[20] | <p> | shared | Geely subsequently opened UK ordering for the EX5 and continued developing its announced sales and service network. | 此后，吉利在英国开放 EX5 订购，并继续推进其已公布的销售与服务网络建设。 |
+| visible/p[21] | <p> | shared | This subsequent market development is provided as company context and is not presented as an outcome attributable to Venus Bridge. | 后续市场发展仅作为企业背景信息，不作为可归因于 Venus Bridge 的项目成果。 |
+| visible/p[22] | <p> | shared | 09 · Evidence & Claim Boundary | 09 · 证据与主张边界 |
+| visible/p[23] | <p> | shared | Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge. | 公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。 |
+| visible/p[24] | <p> | shared | Next project | 下一个项目 |
+| visible/a[11] | <a> | shared | CATL Open Day 2025, Munich ↗ | CATL Open Day 2025｜慕尼黑 ↗ |
+| visible/p[25] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
+| visible/p[26] | <p> | shared | London, United Kingdom | London, United Kingdom |
 | visible/a[12] | <a> | shared | For Companies | 面向企业 |
 | visible/a[13] | <a> | shared | For Partners | 面向合作方 |
 | visible/a[14] | <a> | shared | Case Studies | 案例研究 |
@@ -1199,13 +1235,13 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[17] | <a> | shared | Contact | 联系 |
 | visible/a[18] | <a> | shared | Privacy | 隐私 |
 | visible/a[19] | <a> | shared | Terms | 条款 |
-| visible/span[7] | <span> | shared | Venus Bridge | Venus Bridge |
-| visible/span[8] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
+| visible/span[2] | <span> | shared | Venus Bridge | Venus Bridge |
+| visible/span[3] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
 
 ## /work/catl-open-day-2025
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1221,55 +1257,57 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[9] | <a> | shared | Discuss a Project | 讨论项目 |
 | visible/span[1] | <span> | shared | MENU | 菜单 |
 | visible/a[10] | <a> | shared | Back to case studies | 返回案例研究 |
-| visible/p[1] | <p> | shared | Industry & Exhibitions | 行业与展会 |
+| visible/p[1] | <p> | shared | European Technology Introduction | 欧洲技术发布 |
 | visible/h1[1] | <h1> | shared | CATL Open Day 2025, Munich | CATL Open Day 2025｜慕尼黑 |
-| visible/p[2] | <p> | shared | Approved event material preserving CATL's presentation, technical screens and professional stakeholder environment. | 形成经批准的活动内容，保留 CATL 的演讲、技术屏幕与专业利益相关方环境。 |
+| visible/p[2] | <p> | shared | At CATL Open Day in Munich, CATL unveiled Shenxing Pro, an LFP battery product presented as designed for European e-mobility needs ahead of IAA Mobility 2025. | CATL 在慕尼黑 Open Day 发布神行 Pro 磷酸铁锂电池产品，并将其定位为面向欧洲电动出行需求的解决方案，活动发生于 IAA Mobility 2025 前夕。 |
 | visible/dt[1] | <dt> | shared | Project / Brand | 项目 / 品牌 |
 | visible/dd[1] | <dd> | shared | CATL | CATL |
 | visible/dt[2] | <dt> | shared | Location / year | 地点 / 年份 |
 | visible/dd[2] | <dd> | shared | Munich, Germany · 2025 | Munich, Germany · 2025 |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | Visual evidence for European industry communications | 欧洲行业传播视觉证据 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
-| visible/dd[4] | <dd> | shared | Event documentation · International communications assets | 活动记录 · 国际传播资产 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
+| visible/dd[4] | <dd> | shared | Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting. | Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。 |
 | visible/p[3] | <p> | shared | 01 | 01 |
-| visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
-| visible/p[4] | <p> | shared | International communications in a professional stakeholder setting | 专业利益相关方场景中的国际传播 |
+| visible/h2[1] | <h2> | shared | Market Moment | 市场节点 |
+| visible/p[4] | <p> | shared | At CATL Open Day in Munich, CATL unveiled Shenxing Pro, an LFP battery product presented as designed for European e-mobility needs ahead of IAA Mobility 2025. | CATL 在慕尼黑 Open Day 发布神行 Pro 磷酸铁锂电池产品，并将其定位为面向欧洲电动出行需求的解决方案，活动发生于 IAA Mobility 2025 前夕。 |
 | visible/p[5] | <p> | shared | 02 | 02 |
-| visible/h2[2] | <h2> | shared | Business Context | 商业背景 |
-| visible/p[6] | <p> | shared | A live presentation environment including stage, speakers and audience moments. | 现场发布环境，包括舞台、演讲者与观众画面。 |
-| visible/p[7] | <p> | shared | 03 · Challenge | 03 · 挑战 |
-| visible/p[8] | <p> | shared | Connect product or technical detail with the wider European industry setting in one useful record. | 把产品或技术细节与更完整的欧洲行业现场连接在同一组记录中。 |
-| visible/p[9] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
-| visible/h2[3] | <h2> | shared | The work delivered within this project. | 本项目中实际承担的工作。 |
-| visible/p[10] | <p> | shared | Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting. | Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。 |
-| visible/li[1] | <li> | shared | Event Documentation | 活动记录 |
-| visible/li[2] | <li> | shared | Brand Presentation | 品牌呈现 |
-| visible/li[3] | <li> | shared | Post-project Assets | 项目后续资产 |
-| visible/p[11] | <p> | shared | Scope on record | 记录中的工作范围 |
-| visible/li[4] | <li> | shared | Event documentation | 活动记录 |
-| visible/li[5] | <li> | shared | International communications assets | 国际传播资产 |
-| visible/p[12] | <p> | shared | 05 · Strategy / Approach | 05 · 策略与方法 |
-| visible/span[2] | <span> | shared | 01 | 01 |
-| visible/p[13] | <p> | shared | Assess the technical presentation setting | 观察技术演讲环境 |
-| visible/span[3] | <span> | shared | 02 | 02 |
-| visible/p[14] | <p> | shared | Capture speakers, screens and audience context | 记录演讲者、屏幕与观众语境 |
-| visible/span[4] | <span> | shared | 03 | 03 |
-| visible/p[15] | <p> | shared | Preserve a concise public event record | 沉淀精炼的公开活动记录 |
-| visible/p[16] | <p> | shared | 06 · Local Delivery | 06 · 本地执行 |
-| visible/h2[4] | <h2> | shared | On the ground | 现场工作 |
-| visible/p[17] | <p> | shared | Captured the presentation and stakeholder setting in Munich. | 在慕尼黑记录发布与利益相关方现场环境。 |
-| visible/p[18] | <p> | shared | 07 · Outputs / Outcomes | 07 · 交付与成果 |
-| visible/h2[5] | <h2> | shared | 7 approved public project images. | 7 张获准公开使用的项目影像。 |
-| visible/p[19] | <p> | shared | Verified work | 已核实工作 |
-| visible/li[6] | <li> | shared | Event documentation | 活动记录 |
-| visible/li[7] | <li> | shared | International communications assets | 国际传播资产 |
-| visible/p[20] | <p> | shared | 08 · What Remained Useful | 08 · 项目之后仍可使用的价值 |
-| visible/h2[6] | <h2> | shared | Approved event material preserving CATL's presentation, technical screens and professional stakeholder environment. | 形成经批准的活动内容，保留 CATL 的演讲、技术屏幕与专业利益相关方环境。 |
+| visible/h2[2] | <h2> | shared | Why It Mattered | 为何重要 |
+| visible/p[6] | <p> | shared | The event translated battery safety, lifespan, range and charging claims into a European automotive-industry communication setting. | 该活动把电池安全、寿命、续航与充电等技术主张带入欧洲汽车行业传播环境。 |
+| visible/p[7] | <p> | shared | 03 | 03 |
+| visible/h2[3] | <h2> | shared | Project Objective | 项目目标 |
+| visible/p[8] | <p> | shared | Create a clear event record of the technical presentation, speakers, screens and professional audience environment. | 形成清晰活动记录，呈现技术演讲、演讲者、屏幕与专业观众环境。 |
+| visible/p[9] | <p> | shared | Case-specific challenge | 本项目的具体挑战 |
+| visible/p[10] | <p> | shared | Make a complex battery-technology introduction legible through the visible presentation and professional audience setting without claiming ownership of the technical proposition. | 通过可见的演讲与专业观众环境让复杂电池技术发布更易理解，同时不主张 Venus Bridge 对技术命题的所有权。 |
+| visible/p[11] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
+| visible/p[12] | <p> | shared | Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting. | Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。 |
+| visible/h2[4] | <h2> | shared | What Venus Bridge did | 实际完成 |
+| visible/li[1] | <li> | shared | Technical-event documentation | 技术活动记录 |
+| visible/li[2] | <li> | shared | Speaker and screen coverage | 演讲者与屏幕记录 |
+| visible/li[3] | <li> | shared | Professional audience context | 专业观众环境记录 |
+| visible/h2[5] | <h2> | shared | What Venus Bridge did not claim | 不作主张 |
+| visible/li[4] | <li> | shared | Technology strategy | 技术战略 |
+| visible/li[5] | <li> | shared | Product claims ownership | 产品主张所有权 |
+| visible/li[6] | <li> | shared | Customer or partnership outcomes | 客户或合作成果 |
+| visible/p[13] | <p> | shared | 05 · Documentation Approach | 05 · 记录方法 |
+| visible/h2[6] | <h2> | shared | Before | 前期 |
+| visible/li[7] | <li> | shared | Technical presentation priorities | 技术演讲重点对齐 |
+| visible/h2[7] | <h2> | shared | On the Ground | 现场 |
+| visible/li[8] | <li> | shared | Speaker, screen and audience documentation | 演讲者、屏幕与观众记录 |
+| visible/h2[8] | <h2> | shared | After | 后续 |
+| visible/li[9] | <li> | shared | Approved technical-event record | 获准技术活动记录整理 |
+| visible/p[14] | <p> | shared | 06 · Verified Outputs | 06 · 经核实的交付 |
+| visible/li[10] | <li> | shared | Approved CATL Open Day record | 经批准的 CATL Open Day 记录 |
+| visible/li[11] | <li> | shared | Presentation and stakeholder-environment assets | 演讲与利益相关方环境资产 |
+| visible/p[15] | <p> | shared | Public evidence available | 公开证据 |
+| visible/p[16] | <p> | shared | 7 approved images | 7 张获准公开使用的影像 |
+| visible/p[17] | <p> | shared | 07 · Verified Result | 07 · 经核实的结果 |
+| visible/h2[9] | <h2> | shared | A concise approved record of CATL's technology presentation in a European automotive-industry environment. | 形成一套经批准的精炼记录，呈现 CATL 在欧洲汽车行业环境中的技术发布。 |
+| visible/p[18] | <p> | shared | Reusable technical-event and professional-environment assets. | 可继续使用的技术活动与专业环境资产。 |
+| visible/p[19] | <p> | shared | 09 · Evidence & Claim Boundary | 09 · 证据与主张边界 |
+| visible/p[20] | <p> | shared | Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge. | 公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。 |
 | visible/p[21] | <p> | shared | Next project | 下一个项目 |
-| visible/span[5] | <span> | shared | Leapmotor at IAA Mobility 2023, Munich | 零跑汽车 IAA Mobility 2023｜慕尼黑 |
-| visible/span[6] | <span> | shared | Industry & Exhibitions ↗ | 行业与展会 ↗ |
-| visible/a[11] | <a> | shared | Discuss a Similar Market Goal | 讨论类似市场目标 |
+| visible/a[11] | <a> | shared | Leapmotor at IAA Mobility 2023, Munich ↗ | 零跑汽车 IAA Mobility 2023｜慕尼黑 ↗ |
 | visible/p[22] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
 | visible/p[23] | <p> | shared | London, United Kingdom | London, United Kingdom |
 | visible/a[12] | <a> | shared | For Companies | 面向企业 |
@@ -1280,13 +1318,13 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[17] | <a> | shared | Contact | 联系 |
 | visible/a[18] | <a> | shared | Privacy | 隐私 |
 | visible/a[19] | <a> | shared | Terms | 条款 |
-| visible/span[7] | <span> | shared | Venus Bridge | Venus Bridge |
-| visible/span[8] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
+| visible/span[2] | <span> | shared | Venus Bridge | Venus Bridge |
+| visible/span[3] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
 
 ## /work/leapmotor-iaa-2023
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1302,55 +1340,57 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[9] | <a> | shared | Discuss a Project | 讨论项目 |
 | visible/span[1] | <span> | shared | MENU | 菜单 |
 | visible/a[10] | <a> | shared | Back to case studies | 返回案例研究 |
-| visible/p[1] | <p> | shared | Industry & Exhibitions | 行业与展会 |
+| visible/p[1] | <p> | shared | Global Product Debut at IAA Mobility | IAA Mobility 全球产品首发 |
 | visible/h1[1] | <h1> | shared | Leapmotor at IAA Mobility 2023, Munich | 零跑汽车 IAA Mobility 2023｜慕尼黑 |
-| visible/p[2] | <p> | shared | A reusable exhibition record connecting product detail with the wider European industry setting. | 形成可复用的展会记录，将产品细节与欧洲行业现场语境连接起来。 |
+| visible/p[2] | <p> | shared | Leapmotor used IAA Mobility 2023 in Munich for its global strategy press conference and unveiled the C10 as its first global model. | 零跑汽车在慕尼黑 IAA Mobility 2023 举行全球战略发布会，并发布其首款全球化车型 C10。 |
 | visible/dt[1] | <dt> | shared | Project / Brand | 项目 / 品牌 |
 | visible/dd[1] | <dd> | shared | Leapmotor | Leapmotor |
 | visible/dt[2] | <dt> | shared | Location / year | 地点 / 年份 |
 | visible/dd[2] | <dd> | shared | Munich, Germany · 2023 | Munich, Germany · 2023 |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | Brand evidence from a European industry setting | 欧洲行业现场品牌证据 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
-| visible/dd[4] | <dd> | shared | Exhibition documentation · Automotive brand evidence | 展会记录 · 汽车品牌证据 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
+| visible/dd[4] | <dd> | shared | Venus Bridge documented Leapmotor's visible IAA Mobility presence across the stand, vehicles, product details and visitor environment. | Venus Bridge 记录零跑汽车在 IAA Mobility 的现场呈现，覆盖展台、车辆、产品细节与观众环境。 |
 | visible/p[3] | <p> | shared | 01 | 01 |
-| visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
-| visible/p[4] | <p> | shared | European industry presence and stakeholder context | 欧洲行业存在与利益相关方语境 |
+| visible/h2[1] | <h2> | shared | Market Moment | 市场节点 |
+| visible/p[4] | <p> | shared | Leapmotor used IAA Mobility 2023 in Munich for its global strategy press conference and unveiled the C10 as its first global model. | 零跑汽车在慕尼黑 IAA Mobility 2023 举行全球战略发布会，并发布其首款全球化车型 C10。 |
 | visible/p[5] | <p> | shared | 02 | 02 |
-| visible/h2[2] | <h2> | shared | Business Context | 商业背景 |
-| visible/p[6] | <p> | shared | Exhibition-floor coverage including the stand, vehicles, details and visitor interaction. | 展会现场视觉记录，包括展台、车辆、产品细节与观众互动。 |
-| visible/p[7] | <p> | shared | 03 · Challenge | 03 · 挑战 |
-| visible/p[8] | <p> | shared | Connect product or technical detail with the wider European industry setting in one useful record. | 把产品或技术细节与更完整的欧洲行业现场连接在同一组记录中。 |
-| visible/p[9] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
-| visible/h2[3] | <h2> | shared | The work delivered within this project. | 本项目中实际承担的工作。 |
-| visible/p[10] | <p> | shared | Venus Bridge documented Leapmotor's visible IAA Mobility presence across the stand, vehicles, product details and visitor environment. | Venus Bridge 记录零跑汽车在 IAA Mobility 的现场呈现，覆盖展台、车辆、产品细节与观众环境。 |
-| visible/li[1] | <li> | shared | Event Documentation | 活动记录 |
-| visible/li[2] | <li> | shared | Brand Presentation | 品牌呈现 |
-| visible/li[3] | <li> | shared | Post-project Assets | 项目后续资产 |
-| visible/p[11] | <p> | shared | Scope on record | 记录中的工作范围 |
-| visible/li[4] | <li> | shared | Exhibition documentation | 展会记录 |
-| visible/li[5] | <li> | shared | Automotive brand evidence | 汽车品牌证据 |
-| visible/p[12] | <p> | shared | 05 · Strategy / Approach | 05 · 策略与方法 |
-| visible/span[2] | <span> | shared | 01 | 01 |
-| visible/p[13] | <p> | shared | Establish the exhibition and launch context | 建立展会与发布语境 |
-| visible/span[3] | <span> | shared | 02 | 02 |
-| visible/p[14] | <p> | shared | Document stand, vehicles, details and visitors | 记录展台、车辆、细节与观众 |
-| visible/span[4] | <span> | shared | 03 | 03 |
-| visible/p[15] | <p> | shared | Sequence the material from scale to product evidence | 按现场规模到产品证据编排素材 |
-| visible/p[16] | <p> | shared | 06 · Local Delivery | 06 · 本地执行 |
-| visible/h2[4] | <h2> | shared | On the ground | 现场工作 |
-| visible/p[17] | <p> | shared | Captured the exhibition environment and product details. | 拍摄展会环境与产品细节。 |
-| visible/p[18] | <p> | shared | 07 · Outputs / Outcomes | 07 · 交付与成果 |
-| visible/h2[5] | <h2> | shared | 7 approved public project images. | 7 张获准公开使用的项目影像。 |
-| visible/p[19] | <p> | shared | Verified work | 已核实工作 |
-| visible/li[6] | <li> | shared | Exhibition documentation | 展会记录 |
-| visible/li[7] | <li> | shared | Automotive brand evidence | 汽车品牌证据 |
-| visible/p[20] | <p> | shared | 08 · What Remained Useful | 08 · 项目之后仍可使用的价值 |
-| visible/h2[6] | <h2> | shared | A reusable exhibition record connecting product detail with the wider European industry setting. | 形成可复用的展会记录，将产品细节与欧洲行业现场语境连接起来。 |
+| visible/h2[2] | <h2> | shared | Why It Mattered | 为何重要 |
+| visible/p[6] | <p> | shared | The appearance placed Leapmotor's global product and technology proposition within a major European mobility event at an early stage of its international development. | 此次亮相在其国际化发展的早期阶段，将零跑的全球化产品与技术命题置于重要欧洲 mobility 行业活动中。 |
+| visible/p[7] | <p> | shared | 03 | 03 |
+| visible/h2[3] | <h2> | shared | Project Objective | 项目目标 |
+| visible/p[8] | <p> | shared | Create an approved exhibition record spanning the stand, vehicles, product details and visitor environment. | 形成一套经批准的展会记录，覆盖展台、车辆、产品细节与观众环境。 |
+| visible/p[9] | <p> | shared | Case-specific challenge | 本项目的具体挑战 |
+| visible/p[10] | <p> | shared | Present a Chinese EV company's global product debut through both stand-scale context and detailed vehicle evidence in a major European industry environment. | 在重要欧洲行业环境中，通过展台整体语境与车辆细节证据呈现一家中国电动车企的全球化产品首发。 |
+| visible/p[11] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
+| visible/p[12] | <p> | shared | Venus Bridge documented Leapmotor's visible IAA Mobility presence across the stand, vehicles, product details and visitor environment. | Venus Bridge 记录零跑汽车在 IAA Mobility 的现场呈现，覆盖展台、车辆、产品细节与观众环境。 |
+| visible/h2[4] | <h2> | shared | What Venus Bridge did | 实际完成 |
+| visible/li[1] | <li> | shared | Exhibition documentation | 展会记录 |
+| visible/li[2] | <li> | shared | Stand and vehicle coverage | 展台与车辆记录 |
+| visible/li[3] | <li> | shared | Product-detail assets | 产品细节资产 |
+| visible/h2[5] | <h2> | shared | What Venus Bridge did not claim | 不作主张 |
+| visible/li[4] | <li> | shared | Global strategy ownership | 全球战略所有权 |
+| visible/li[5] | <li> | shared | Stellantis transaction | Stellantis 交易 |
+| visible/li[6] | <li> | shared | European distribution outcomes | 欧洲分销成果 |
+| visible/p[13] | <p> | shared | 05 · Documentation Approach | 05 · 记录方法 |
+| visible/h2[6] | <h2> | shared | Before | 前期 |
+| visible/li[7] | <li> | shared | Stand and product priorities | 展台与产品重点对齐 |
+| visible/h2[7] | <h2> | shared | On the Ground | 现场 |
+| visible/li[8] | <li> | shared | Stand, vehicle, detail and visitor coverage | 展台、车辆、细节与观众记录 |
+| visible/h2[8] | <h2> | shared | After | 后续 |
+| visible/li[9] | <li> | shared | Exhibition asset sequence | 展会资产编排 |
+| visible/p[14] | <p> | shared | 06 · Verified Outputs | 06 · 经核实的交付 |
+| visible/li[10] | <li> | shared | IAA Mobility exhibition record | IAA Mobility 展会记录 |
+| visible/li[11] | <li> | shared | Vehicle and product-detail assets | 车辆与产品细节资产 |
+| visible/p[15] | <p> | shared | Public evidence available | 公开证据 |
+| visible/p[16] | <p> | shared | 7 approved images | 7 张获准公开使用的影像 |
+| visible/p[17] | <p> | shared | 07 · Verified Result | 07 · 经核实的结果 |
+| visible/h2[9] | <h2> | shared | A reusable approved record connecting the C10-era exhibition presence with the wider European industry setting. | 形成一套经批准、可复用的记录，将 C10 时期的展会亮相与更广泛的欧洲行业环境联系起来。 |
+| visible/p[18] | <p> | shared | A structured record from exhibition scale to product detail. | 一套从展会规模到产品细节的结构化记录。 |
+| visible/p[19] | <p> | shared | 09 · Evidence & Claim Boundary | 09 · 证据与主张边界 |
+| visible/p[20] | <p> | shared | Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge. | 公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。 |
 | visible/p[21] | <p> | shared | Next project | 下一个项目 |
-| visible/span[5] | <span> | shared | AGIBOT London Launch | AGIBOT 智元伦敦发布会 |
-| visible/span[6] | <span> | shared | Industry & Exhibitions ↗ | 行业与展会 ↗ |
-| visible/a[11] | <a> | shared | Discuss a Similar Market Goal | 讨论类似市场目标 |
+| visible/a[11] | <a> | shared | AGIBOT UK Launch 2026, London ↗ | AGIBOT 智元英国发布会 2026｜伦敦 ↗ |
 | visible/p[22] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
 | visible/p[23] | <p> | shared | London, United Kingdom | London, United Kingdom |
 | visible/a[12] | <a> | shared | For Companies | 面向企业 |
@@ -1361,13 +1401,13 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[17] | <a> | shared | Contact | 联系 |
 | visible/a[18] | <a> | shared | Privacy | 隐私 |
 | visible/a[19] | <a> | shared | Terms | 条款 |
-| visible/span[7] | <span> | shared | Venus Bridge | Venus Bridge |
-| visible/span[8] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
+| visible/span[2] | <span> | shared | Venus Bridge | Venus Bridge |
+| visible/span[3] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
 
 ## /work/agibot-london-launch
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1383,57 +1423,62 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[9] | <a> | shared | Discuss a Project | 讨论项目 |
 | visible/span[1] | <span> | shared | MENU | 菜单 |
 | visible/a[10] | <a> | shared | Back to case studies | 返回案例研究 |
-| visible/p[1] | <p> | shared | Industry & Exhibitions | 行业与展会 |
-| visible/h1[1] | <h1> | shared | AGIBOT London Launch | AGIBOT 智元伦敦发布会 |
-| visible/p[2] | <p> | shared | A concise set of event assets connecting the speaker, robotics products and their London display environment. | 形成精炼活动资产，将演讲者、机器人产品与伦敦展示环境联系起来。 |
+| visible/p[1] | <p> | shared | UK Embodied-Robotics Launch | 英国具身机器人发布 |
+| visible/h1[1] | <h1> | shared | AGIBOT UK Launch 2026, London | AGIBOT 智元英国发布会 2026｜伦敦 |
+| visible/p[2] | <p> | shared | AGIBOT held its UK launch and partner conference in London on 30 June 2026, combining product demonstrations, company presentations and application-focused sessions. | AGIBOT 于 2026 年 6 月 30 日在伦敦举行英国发布与合作伙伴大会，活动包括产品演示、公司介绍与应用场景专题环节。 |
 | visible/dt[1] | <dt> | shared | Project / Brand | 项目 / 品牌 |
 | visible/dd[1] | <dd> | shared | AGIBOT | AGIBOT |
 | visible/dt[2] | <dt> | shared | Location / year | 地点 / 年份 |
-| visible/dd[2] | <dd> | shared | London, UK | London, UK |
+| visible/dd[2] | <dd> | shared | London, UK · 2026 | London, UK · 2026 |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | Robotics launch visual documentation | 机器人发布视觉记录 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
-| visible/dd[4] | <dd> | shared | Technology-event photography · Product display documentation | 科技活动摄影 · 产品展示记录 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
+| visible/dd[4] | <dd> | shared | Venus Bridge documented the London technology-event setting across the technical presentation and product displays. | Venus Bridge 记录伦敦科技活动现场，覆盖技术演讲与产品展示。 |
 | visible/p[3] | <p> | shared | 01 | 01 |
-| visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
-| visible/p[4] | <p> | shared | A visual record of the embodied-robotics brand’s London event | 形成具身机器人品牌伦敦活动的视觉证据 |
+| visible/h2[1] | <h2> | shared | Market Moment | 市场节点 |
+| visible/p[4] | <p> | shared | AGIBOT held its UK launch and partner conference in London on 30 June 2026, combining product demonstrations, company presentations and application-focused sessions. | AGIBOT 于 2026 年 6 月 30 日在伦敦举行英国发布与合作伙伴大会，活动包括产品演示、公司介绍与应用场景专题环节。 |
 | visible/p[5] | <p> | shared | 02 | 02 |
-| visible/h2[2] | <h2> | shared | Business Context | 商业背景 |
-| visible/p[6] | <p> | shared | Event photographs showing a technical presentation and two robots in the display environment. | 活动照片呈现技术演讲与展示环境中的两款机器人。 |
-| visible/p[7] | <p> | shared | 03 · Challenge | 03 · 挑战 |
-| visible/p[8] | <p> | shared | Make the product, people and local market setting clear within a time-bound live launch. | 在时间有限的发布现场，同时清楚呈现产品、人物与当地市场环境。 |
-| visible/p[9] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
-| visible/h2[3] | <h2> | shared | The work delivered within this project. | 本项目中实际承担的工作。 |
-| visible/p[10] | <p> | shared | Venus Bridge documented the London technology-event setting across the technical presentation and two product displays. | Venus Bridge 记录伦敦科技活动现场，覆盖技术演讲与两款产品展示。 |
-| visible/li[1] | <li> | shared | Event Documentation | 活动记录 |
-| visible/li[2] | <li> | shared | Brand Presentation | 品牌呈现 |
-| visible/li[3] | <li> | shared | Post-project Assets | 项目后续资产 |
-| visible/p[11] | <p> | shared | Scope on record | 记录中的工作范围 |
-| visible/li[4] | <li> | shared | Technology-event photography | 科技活动摄影 |
-| visible/li[5] | <li> | shared | Product display documentation | 产品展示记录 |
-| visible/p[12] | <p> | shared | 05 · Strategy / Approach | 05 · 策略与方法 |
-| visible/span[2] | <span> | shared | 01 | 01 |
-| visible/p[13] | <p> | shared | Establish the technical presentation context | 建立技术演讲语境 |
-| visible/span[3] | <span> | shared | 02 | 02 |
-| visible/p[14] | <p> | shared | Capture speaker and product displays | 记录演讲者与产品展示 |
-| visible/span[4] | <span> | shared | 03 | 03 |
-| visible/p[15] | <p> | shared | Balance landscape-format environmental shots with complete portrait-format product views | 用横向环境与完整竖向产品画面形成平衡 |
-| visible/p[16] | <p> | shared | 06 · Local Delivery | 06 · 本地执行 |
-| visible/h2[4] | <h2> | shared | On the ground | 现场工作 |
-| visible/p[17] | <p> | shared | Captured the speaker and product displays across landscape and portrait formats. | 以横幅与竖幅画面记录演讲者与产品展示。 |
-| visible/p[18] | <p> | shared | 07 · Outputs / Outcomes | 07 · 交付与成果 |
-| visible/h2[5] | <h2> | shared | 3 approved public project images. | 3 张获准公开使用的项目影像。 |
-| visible/p[19] | <p> | shared | Verified work | 已核实工作 |
-| visible/li[6] | <li> | shared | Technology-event photography | 科技活动摄影 |
-| visible/li[7] | <li> | shared | Product display documentation | 产品展示记录 |
-| visible/p[20] | <p> | shared | 08 · What Remained Useful | 08 · 项目之后仍可使用的价值 |
-| visible/h2[6] | <h2> | shared | A concise set of event assets connecting the speaker, robotics products and their London display environment. | 形成精炼活动资产，将演讲者、机器人产品与伦敦展示环境联系起来。 |
-| visible/p[21] | <p> | shared | Next project | 下一个项目 |
-| visible/span[5] | <span> | shared | London Automotive Brand Film | 伦敦汽车品牌影片 |
-| visible/span[6] | <span> | shared | Brand & Content ↗ | 品牌与内容 ↗ |
-| visible/a[11] | <a> | shared | Discuss a Similar Market Goal | 讨论类似市场目标 |
-| visible/p[22] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
-| visible/p[23] | <p> | shared | London, United Kingdom | London, United Kingdom |
+| visible/h2[2] | <h2> | shared | Why It Mattered | 为何重要 |
+| visible/p[6] | <p> | shared | The official event introduced AGIBOT's robotics portfolio and UK commercial model within a local environment focused on real-world deployment and partner engagement. | 官方活动在聚焦实际部署与合作伙伴交流的本地环境中，介绍 AGIBOT 的机器人产品组合与英国商业模式。 |
+| visible/p[7] | <p> | shared | 03 | 03 |
+| visible/h2[3] | <h2> | shared | Project Objective | 项目目标 |
+| visible/p[8] | <p> | shared | Create an approved visual record of the London technical presentation and displayed robotics products. | 形成一套经批准的视觉记录，呈现伦敦技术演讲与现场展示的机器人产品。 |
+| visible/p[9] | <p> | shared | Case-specific challenge | 本项目的具体挑战 |
+| visible/p[10] | <p> | shared | Connect the technical presentation with complete product-display views while keeping unverified partner and commercial outcomes outside the case claim. | 把技术演讲与完整产品展示画面联系起来，同时将未经核实的合作伙伴与商业成果排除在案例主张之外。 |
+| visible/p[11] | <p> | shared | 04 · Venus Bridge Role | 04 · Venus Bridge 职责 |
+| visible/p[12] | <p> | shared | Venus Bridge documented the London technology-event setting across the technical presentation and product displays. | Venus Bridge 记录伦敦科技活动现场，覆盖技术演讲与产品展示。 |
+| visible/h2[4] | <h2> | shared | What Venus Bridge did | 实际完成 |
+| visible/li[1] | <li> | shared | Technology-event photography | 科技活动摄影 |
+| visible/li[2] | <li> | shared | Speaker and product-display documentation | 演讲者与产品展示记录 |
+| visible/li[3] | <li> | shared | Landscape and portrait asset coverage | 横竖画幅资产记录 |
+| visible/h2[5] | <h2> | shared | What Venus Bridge did not claim | 不作主张 |
+| visible/li[4] | <li> | shared | UK launch ownership | 英国发布主办 |
+| visible/li[5] | <li> | shared | Partner recruitment | 合作伙伴招募 |
+| visible/li[6] | <li> | shared | Commercial deployment outcomes | 商业部署成果 |
+| visible/p[13] | <p> | shared | 05 · Documentation Approach | 05 · 记录方法 |
+| visible/h2[6] | <h2> | shared | Before | 前期 |
+| visible/li[7] | <li> | shared | Presentation and display priorities | 演讲与展示重点对齐 |
+| visible/h2[7] | <h2> | shared | On the Ground | 现场 |
+| visible/li[8] | <li> | shared | Speaker and robotics-product coverage | 演讲者与机器人产品记录 |
+| visible/h2[8] | <h2> | shared | After | 后续 |
+| visible/li[9] | <li> | shared | Approved event asset selection | 获准活动资产筛选 |
+| visible/p[14] | <p> | shared | 06 · Verified Outputs | 06 · 经核实的交付 |
+| visible/li[10] | <li> | shared | Approved UK launch visual record | 经批准的英国发布视觉记录 |
+| visible/li[11] | <li> | shared | Technical-presentation and product-display assets | 技术演讲与产品展示资产 |
+| visible/p[15] | <p> | shared | Public evidence available | 公开证据 |
+| visible/p[16] | <p> | shared | 3 approved images | 3 张获准公开使用的影像 |
+| visible/p[17] | <p> | shared | 07 · Verified Result | 07 · 经核实的结果 |
+| visible/h2[9] | <h2> | shared | A concise approved record connecting the technical presentation, robotics products and London launch environment. | 形成一套经批准的精炼记录，将技术演讲、机器人产品与伦敦发布环境联系起来。 |
+| visible/p[18] | <p> | shared | Reusable event assets spanning speaker and product views. | 覆盖演讲者与产品视角的可复用活动资产。 |
+| visible/p[19] | <p> | shared | 08 · What Happened Next | 08 · 后续公开发展 |
+| visible/p[20] | <p> | shared | AGIBOT publicly described the event as part of its continuing European growth and local commercial-deployment work. | AGIBOT 公开将该活动描述为其持续推进欧洲增长与本地商业部署工作的一部分。 |
+| visible/p[21] | <p> | shared | This subsequent market development is provided as company context and is not presented as an outcome attributable to Venus Bridge. | 后续市场发展仅作为企业背景信息，不作为可归因于 Venus Bridge 的项目成果。 |
+| visible/p[22] | <p> | shared | 09 · Evidence & Claim Boundary | 09 · 证据与主张边界 |
+| visible/p[23] | <p> | shared | Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge. | 公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。 |
+| visible/p[24] | <p> | shared | Next project | 下一个项目 |
+| visible/a[11] | <a> | shared | London Automotive Brand Film ↗ | 伦敦汽车品牌影片 ↗ |
+| visible/p[25] | <p> | shared | Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution. | Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。 |
+| visible/p[26] | <p> | shared | London, United Kingdom | London, United Kingdom |
 | visible/a[12] | <a> | shared | For Companies | 面向企业 |
 | visible/a[13] | <a> | shared | For Partners | 面向合作方 |
 | visible/a[14] | <a> | shared | Case Studies | 案例研究 |
@@ -1442,13 +1487,13 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/a[17] | <a> | shared | Contact | 联系 |
 | visible/a[18] | <a> | shared | Privacy | 隐私 |
 | visible/a[19] | <a> | shared | Terms | 条款 |
-| visible/span[7] | <span> | shared | Venus Bridge | Venus Bridge |
-| visible/span[8] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
+| visible/span[2] | <span> | shared | Venus Bridge | Venus Bridge |
+| visible/span[3] | <span> | shared | © 2026 Venus Bridge | © 2026 Venus Bridge |
 
 ## /work/london-automotive-brand-film
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1473,7 +1518,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/dd[2] | <dd> | shared | London and England, UK | London and England, UK |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | On-location automotive brand imagery in the UK | 英国实景汽车品牌影像 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
 | visible/dd[4] | <dd> | shared | UK location coordination · Automotive visual production | 英国实景协调 · 汽车视觉制作 |
 | visible/p[3] | <p> | shared | 01 | 01 |
 | visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
@@ -1533,7 +1578,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /work/wang-linkai-london-concert
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1558,7 +1603,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/dd[2] | <dd> | shared | London, UK · 2026 | London, UK · 2026 |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | Live performance visual documentation | 现场演出视觉记录 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
 | visible/dd[4] | <dd> | shared | Live-event photography · Editorial image selection | 现场活动摄影 · 编辑影像筛选 |
 | visible/p[3] | <p> | shared | 01 | 01 |
 | visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
@@ -1614,7 +1659,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /work/yue-yunpeng-london-live
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1639,7 +1684,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/dd[2] | <dd> | shared | London, UK · 2025 | London, UK · 2025 |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | Cultural performance visual documentation | 文化演出视觉记录 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
 | visible/dd[4] | <dd> | shared | Live-performance photography · Visual documentation | 现场演出摄影 · 视觉记录 |
 | visible/p[3] | <p> | shared | 01 | 01 |
 | visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
@@ -1694,7 +1739,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /work/london-fashion-week-2025
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1719,7 +1764,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/dd[2] | <dd> | shared | London, UK · 2025 | London, UK · 2025 |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | Fashion editorial content | 时尚编辑内容 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
 | visible/dd[4] | <dd> | shared | Editorial photography · Image selection | 编辑摄影 · 影像筛选 |
 | visible/p[3] | <p> | shared | 01 | 01 |
 | visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
@@ -1774,7 +1819,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /work/beauty-fashion-brand-content
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1799,7 +1844,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/dd[2] | <dd> | shared | UK | UK |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | Selected visual-content series | 精选视觉内容系列 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
 | visible/dd[4] | <dd> | shared | Photography · Visual-content selection | 摄影 · 视觉内容筛选 |
 | visible/p[3] | <p> | shared | 01 | 01 |
 | visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |
@@ -1854,7 +1899,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 ## /work/european-road-lifestyle
 
 Path parity: PASS
-Chinese source: UNCHANGED
+Chinese source: CHANGED
 Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 
 | Path | Element | Variant | English | 中文 |
@@ -1879,7 +1924,7 @@ Rendered 31 August baseline text: NOT DIRECTLY COMPARABLE
 | visible/dd[2] | <dd> | shared | Europe | Europe |
 | visible/dt[3] | <dt> | shared | Project type | 项目类型 |
 | visible/dd[3] | <dd> | shared | Road and lifestyle automotive photography | 道路与生活方式汽车摄影 |
-| visible/dt[4] | <dt> | shared | Venus Bridge role | Venus Bridge 职责 |
+| visible/dt[4] | <dt> | shared | Verified Venus Bridge role | 经核实的 Venus Bridge 职责 |
 | visible/dd[4] | <dd> | shared | Automotive photography · On-location image making | 汽车摄影 · 实景影像创作 |
 | visible/p[3] | <p> | shared | 01 | 01 |
 | visible/h2[1] | <h2> | shared | Project Objective | 项目目标 |

@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -25,6 +27,8 @@ jobs:
       - run: npm run validate:release:staging
       - run: npm run build
       - run: npm run export:bilingual-copy
+        env:
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
       - run: npm run audit:english-fidelity
       - run: npm run validate:redirects
       - run: npm run validate:og

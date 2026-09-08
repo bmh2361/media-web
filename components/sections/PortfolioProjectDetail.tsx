@@ -72,6 +72,10 @@ export function PortfolioProjectDetail({
   const remainingBlocks = visibleBlocks.slice(1);
   const challenge = caseChallenge(project, zh);
 
+  if (project.commercialNarrative) {
+    return <CommercialProjectDetail project={project} language={language} />;
+  }
+
   return (
     <div
       data-case-archetype={project.archetype}
@@ -283,21 +287,223 @@ export function PortfolioProjectDetail({
   );
 }
 
+function CommercialProjectDetail({ project, language }: { project: PortfolioProject; language: Language }) {
+  const zh = language === "zh";
+  const narrative = project.commercialNarrative!;
+  const visibleBlocks = project.layout.filter((block) =>
+    block.media.some((id) => id !== project.heroMediaId)
+  );
+  const [firstBlock, ...remainingBlocks] = visibleBlocks;
+  const next = getNextPortfolioProject(project);
+  const text = (value: { en: string; zh: string }) => value[language];
+  return (
+    <div
+      data-case-tier="commercial"
+      data-case-archetype={project.archetype}
+      data-case-category={project.category}
+      data-evidence-level={project.evidenceLevel}
+      data-engagement-type={project.engagementType}
+      data-geography={project.geography}
+    >
+      <CaseStudyHero project={project} language={language} />
+      <div className="bg-porcelain text-ink">
+        <section
+          className="container-x grid gap-12 py-16 lg:grid-cols-2 lg:gap-24 lg:py-24"
+          data-case-section="market-context"
+        >
+          <Narrative eyebrow="01" title={zh ? "市场节点" : "Market Moment"}>
+            {text(narrative.marketMoment.text)}
+          </Narrative>
+          <Narrative eyebrow="02" title={zh ? "为何重要" : "Why It Mattered"}>
+            {text(narrative.whyItMattered.text)}
+          </Narrative>
+        </section>
+        <section className="border-y border-ink/15 bg-pearl py-16 lg:py-24" data-case-section="objective">
+          <div className="container-x grid gap-12 lg:grid-cols-12">
+            <div className="lg:col-span-5">
+              <Narrative eyebrow="03" title={zh ? "项目目标" : "Project Objective"}>
+                {text(narrative.projectObjective.text)}
+              </Narrative>
+            </div>
+            <div className="lg:col-span-6 lg:col-start-7">
+              <p className="text-xs uppercase tracking-editorial text-ink/65">
+                {zh ? "本项目的具体挑战" : "Case-specific challenge"}
+              </p>
+              <p className="mt-5 text-2xl leading-9">{text(narrative.challenge.text)}</p>
+            </div>
+          </div>
+        </section>
+        {firstBlock ? (
+          <section className="bg-mist py-10 lg:py-16" data-case-section="first-evidence">
+            <div className="container-x" data-editorial-media-blocks>
+              <EditorialBlock block={firstBlock} project={project} language={language} />
+            </div>
+          </section>
+        ) : null}
+        <section className="bg-pearl py-16 lg:py-24" data-case-section="responsibility">
+          <div className="container-x">
+            <p className="text-xs uppercase tracking-editorial text-ink/70">
+              04 · {zh ? "Venus Bridge 职责" : "Venus Bridge Role"}
+            </p>
+            <p className="mt-6 max-w-4xl text-2xl leading-9">{text(narrative.verifiedVenusRole.text)}</p>
+            <div className="mt-12 grid gap-8 lg:grid-cols-2">
+              <BoundaryList
+                title={zh ? "实际完成" : "What Venus Bridge did"}
+                items={narrative.whatVenusBridgeDid.map(text)}
+              />
+              <BoundaryList
+                title={zh ? "不作主张" : "What Venus Bridge did not claim"}
+                items={narrative.whatVenusBridgeDidNotDo.map(text)}
+                muted
+              />
+            </div>
+          </div>
+        </section>
+        <section className="border-y border-ink/15 py-16 lg:py-24" data-case-section="activity">
+          <div className="container-x">
+            <p className="text-xs uppercase tracking-editorial text-ink/70">
+              05 · {text(narrative.approachLabel)}
+            </p>
+            <div className="mt-10 grid border-y border-ink/15 md:grid-cols-3">
+              {[
+                [zh ? "前期" : "Before", narrative.activity.before],
+                [zh ? "现场" : "On the Ground", narrative.activity.onSite],
+                [zh ? "后续" : "After", narrative.activity.after]
+              ].map(([label, items]) => (
+                <BoundaryList
+                  key={String(label)}
+                  title={String(label)}
+                  items={
+                    (items as { en: string; zh: string }[]).length
+                      ? (items as { en: string; zh: string }[]).map(text)
+                      : [zh ? "不作公开主张" : "Not publicly claimed"]
+                  }
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+        {remainingBlocks.length ? (
+          <section className="bg-mist py-12 lg:py-20" data-case-section="visual-evidence">
+            <div className="container-x space-y-10 lg:space-y-16" data-editorial-media-blocks>
+              {remainingBlocks.map((block, index) => (
+                <EditorialBlock
+                  key={`${block.type}-${index}`}
+                  block={block}
+                  project={project}
+                  language={language}
+                />
+              ))}
+            </div>
+          </section>
+        ) : null}
+        <section className="bg-porcelain py-16 lg:py-24" data-case-section="outputs">
+          <div className="container-x grid gap-12 lg:grid-cols-12">
+            <div className="lg:col-span-7">
+              <p className="text-xs uppercase tracking-editorial text-ink/70">
+                06 · {zh ? "经核实的交付" : "Verified Outputs"}
+              </p>
+              <ul className="mt-6 border-t border-ink/15">
+                {narrative.verifiedOutputs.map((item) => (
+                  <li key={text(item.text)} className="border-b border-ink/15 py-4 text-xl">
+                    {text(item.text)}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="lg:col-span-4 lg:col-start-9">
+              <p className="text-xs uppercase tracking-editorial text-ink/60">
+                {zh ? "公开证据" : "Public evidence available"}
+              </p>
+              <p className="mt-4 text-base">{text(narrative.publicEvidenceAvailable)}</p>
+            </div>
+          </div>
+        </section>
+        <section className="bg-night py-16 text-pearl lg:py-20" data-case-section="result">
+          <div className="container-x">
+            <p className="text-xs uppercase tracking-editorial text-pearl/60">
+              07 · {zh ? "经核实的结果" : "Verified Result"}
+            </p>
+            <h2 className="editorial-heading mt-6 max-w-[18ch]">{text(narrative.verifiedResult.text)}</h2>
+            <p className="mt-8 max-w-2xl text-sm leading-7 text-pearl/65">{text(narrative.continuedValue)}</p>
+          </div>
+        </section>
+        {narrative.subsequentDevelopment ? (
+          <section className="bg-pearl py-16 lg:py-20" data-case-section="subsequent-development">
+            <div className="container-x max-w-4xl">
+              <p className="text-xs uppercase tracking-editorial text-ink/65">
+                08 · {zh ? "后续公开发展" : "What Happened Next"}
+              </p>
+              <p className="mt-6 text-xl leading-8">{text(narrative.subsequentDevelopment.text)}</p>
+              <p className="mt-6 border-l border-champagne pl-4 text-sm leading-7 text-ink/60">
+                {text(narrative.subsequentDisclaimer!)}
+              </p>
+            </div>
+          </section>
+        ) : null}
+        <section className="border-t border-ink/15 bg-porcelain py-14" data-case-section="claim-boundary">
+          <div className="container-x grid gap-5 lg:grid-cols-12">
+            <p className="text-xs uppercase tracking-editorial text-ink/65 lg:col-span-3">
+              09 · {zh ? "证据与主张边界" : "Evidence & Claim Boundary"}
+            </p>
+            <p className="max-w-3xl text-sm leading-7 text-ink/65 lg:col-span-7">
+              {text(narrative.claimBoundary)}
+            </p>
+            <div
+              className="border-t border-ink/15 pt-8 lg:col-span-9 lg:col-start-4"
+              data-case-section="related"
+            >
+              <p className="text-xs uppercase tracking-editorial text-ink/70">
+                {zh ? "下一个项目" : "Next project"}
+              </p>
+              <Link
+                href={withLanguage(`/work/${next.slug}`, language)}
+                className="mt-4 inline-flex min-h-11 items-center border-b border-champagne text-lg hover:text-champagne"
+              >
+                {zh ? next.titleZh : next.titleEn} ↗
+              </Link>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
+}
+
+function BoundaryList({ title, items, muted = false }: { title: string; items: string[]; muted?: boolean }) {
+  return (
+    <div className="border-t border-ink/15 px-0 py-6 md:px-6">
+      <h2 className="text-sm font-medium uppercase tracking-editorial">{title}</h2>
+      <ul className={`mt-5 space-y-3 ${muted ? "text-ink/70" : "text-ink/75"}`}>
+        {items.map((item) => (
+          <li key={item} className="text-base leading-7">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function CaseStudyHero({ project, language }: { project: PortfolioProject; language: Language }) {
   const zh = language === "zh";
   const hero = getProjectHero(project);
   const series = project.contentType === "portfolio-series";
   const split = project.heroLayout === "portrait" || project.heroLayout === "editorial-split";
   const title = zh ? project.titleZh : project.titleEn;
-  const statement = zh ? project.projectValueZh : project.projectValueEn;
+  const statement =
+    project.commercialNarrative?.marketMoment.text[language] ??
+    (zh ? project.projectValueZh : project.projectValueEn);
   const intro = (
     <>
       <p className="text-xs uppercase tracking-editorial text-pearl/70">
-        {series
-          ? zh
-            ? "精选能力项目"
-            : "Selected capability work"
-          : commercialCaseCategories[project.category][language]}
+        {project.commercialNarrative
+          ? project.commercialNarrative.marketMomentLabel[language]
+          : series
+            ? zh
+              ? "精选能力项目"
+              : "Selected capability work"
+            : commercialCaseCategories[project.category][language]}
       </p>
       <h1 className="type-display-page zh-display-measure mt-6 max-w-[14ch] [font-size:clamp(2.65rem,5.6vw,6.2rem)]">
         {title}
@@ -367,8 +573,9 @@ function CaseStudyHero({ project, language }: { project: PortfolioProject; langu
             ],
             [zh ? "项目类型" : "Project type", zh ? project.projectTypeZh : project.projectTypeEn],
             [
-              zh ? "Venus Bridge 职责" : "Venus Bridge role",
-              (zh ? project.venusRoleZh : project.venusRoleEn).join(" · ")
+              zh ? "经核实的 Venus Bridge 职责" : "Verified Venus Bridge role",
+              project.commercialNarrative?.verifiedVenusRole.text[language] ??
+                (zh ? project.venusRoleZh : project.venusRoleEn).join(" · ")
             ]
           ].map(([label, value]) => (
             <div

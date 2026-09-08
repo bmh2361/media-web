@@ -123,13 +123,13 @@ export function CommercialCaseIndex({
 
   useEffect(() => {
     const restoreFromLocation = () => {
-      const queryCategory = new URLSearchParams(window.location.search).get("category");
+      const queryCategory = showFilters ? new URLSearchParams(window.location.search).get("category") : null;
       synchroniseCategory(isCommercialCaseFilter(queryCategory) ? queryCategory : "all");
     };
     restoreFromLocation();
     window.addEventListener("popstate", restoreFromLocation);
     return () => window.removeEventListener("popstate", restoreFromLocation);
-  }, [synchroniseCategory]);
+  }, [showFilters, synchroniseCategory]);
 
   useEffect(() => () => clearDesktopHoverIntent(), [clearDesktopHoverIntent]);
 
@@ -490,6 +490,7 @@ function PreviewVisual({ project, language }: { project: PortfolioProject; langu
 function PreviewCopy({ project, language }: { project: PortfolioProject; language: Language }) {
   const zh = language === "zh";
   const series = project.contentType === "portfolio-series";
+  const narrative = project.commercialNarrative;
   return (
     <div className="grid gap-5 border-t border-ink/15 py-6 xl:grid-cols-[1fr_1.25fr]">
       <div>
@@ -507,11 +508,23 @@ function PreviewCopy({ project, language }: { project: PortfolioProject; languag
       </div>
       <div className="border-l border-ink/15 pl-5">
         <p className="text-[11px] uppercase tracking-editorial text-ink/65">
-          {zh ? "Venus Bridge 职责" : "Venus Bridge role"}
+          {narrative ? (zh ? "市场节点" : "Market moment") : zh ? "Venus Bridge 职责" : "Venus Bridge role"}
         </p>
         <p className="text-ink/68 mt-3 text-sm leading-6">
-          {zh ? project.roleStatementZh : project.roleStatementEn}
+          {narrative
+            ? narrative.marketMomentLabel[language]
+            : zh
+              ? project.roleStatementZh
+              : project.roleStatementEn}
         </p>
+        {narrative ? (
+          <>
+            <p className="mt-4 text-[11px] uppercase tracking-editorial text-ink/70">
+              {zh ? "经核实的 Venus Bridge 职责" : "Verified Venus Bridge role"}
+            </p>
+            <p className="mt-2 text-sm leading-6 text-ink/60">{narrative.verifiedVenusRole.text[language]}</p>
+          </>
+        ) : null}
       </div>
     </div>
   );
@@ -609,11 +622,27 @@ function MobileProjectRow({
                 }}
               >
                 <p className="text-[11px] uppercase tracking-editorial text-ink/65">
-                  {zh ? "Venus Bridge 职责" : "Venus Bridge role"}
+                  {project.commercialNarrative
+                    ? zh
+                      ? "市场节点"
+                      : "Market moment"
+                    : zh
+                      ? "Venus Bridge 职责"
+                      : "Venus Bridge role"}
                 </p>
                 <p className="text-ink/68 mt-3 text-sm leading-6">
-                  {zh ? project.roleStatementZh : project.roleStatementEn}
+                  {project.commercialNarrative?.marketMomentLabel[language] ??
+                    (zh ? project.roleStatementZh : project.roleStatementEn)}
                 </p>
+                {project.commercialNarrative ? (
+                  <p className="mt-3 text-xs leading-5 text-ink/70">
+                    <span className="uppercase tracking-editorial">
+                      {zh ? "经核实职责" : "Verified role"}
+                    </span>
+                    <br />
+                    {project.commercialNarrative.verifiedVenusRole.text[language]}
+                  </p>
+                ) : null}
               </motion.div>
               <Link
                 href={withLanguage(`/work/${project.slug}`, language)}

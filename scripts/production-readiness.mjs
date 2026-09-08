@@ -60,7 +60,11 @@ const formRequested = process.env.NEXT_PUBLIC_CONTACT_FORM_ENABLED === "true";
 const formMissing = formRequested
   ? [
       "NEXT_PUBLIC_TURNSTILE_SITE_KEY",
+      "NEXT_PUBLIC_CONTACT_PRIVACY_PROCESSING_APPROVED",
+      "NEXT_PUBLIC_CONTACT_PUBLIC_IDENTITY_CONFIRMED",
       "CONTACT_FORM_ENABLED",
+      "CONTACT_PRIVACY_PROCESSING_APPROVED",
+      "CONTACT_PUBLIC_IDENTITY_CONFIRMED",
       "CONTACT_DELIVERY_VERIFIED",
       "CONTACT_ALLOWED_ORIGINS",
       "CONTACT_WEBHOOK_URL",
@@ -68,8 +72,8 @@ const formMissing = formRequested
       "TURNSTILE_SECRET_KEY"
     ].filter((key) => !process.env[key]?.trim())
   : [];
-if (formRequested && previewDeployment && process.env.CONTACT_PREVIEW_BINDINGS_CONFIRMED !== "true") {
-  formMissing.push("CONTACT_PREVIEW_BINDINGS_CONFIRMED");
+if (formRequested && previewDeployment && process.env.PREVIEW_CONTACT_BUILD_APPROVED !== "true") {
+  formMissing.push("PREVIEW_CONTACT_BUILD_APPROVED");
 }
 const legalKeys = [
   "LEGAL_ENTITY_MODE",
@@ -122,9 +126,15 @@ const gateInputs = {
   indexingRequested,
   previewDeployment,
   contactFormRequested: formRequested,
+  contactPrivacyProcessingApproved:
+    process.env.NEXT_PUBLIC_CONTACT_PRIVACY_PROCESSING_APPROVED === "true" &&
+    process.env.CONTACT_PRIVACY_PROCESSING_APPROVED === "true",
+  contactPublicIdentityConfirmed:
+    process.env.NEXT_PUBLIC_CONTACT_PUBLIC_IDENTITY_CONFIRMED === "true" &&
+    process.env.CONTACT_PUBLIC_IDENTITY_CONFIRMED === "true",
   turnstileSiteKeyConfigured: Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim()),
   contactDeliveryVerified: process.env.CONTACT_DELIVERY_VERIFIED === "true",
-  previewContactBindingsConfirmed: process.env.PREVIEW_CONTACT_BINDINGS_CONFIRMED === "true",
+  previewContactBuildApproved: process.env.PREVIEW_CONTACT_BUILD_APPROVED === "true",
   analyticsRequested: process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === "true",
   analyticsProviderConfigured: Boolean(process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER?.trim()),
   analyticsPropertyConfigured: Boolean(process.env.NEXT_PUBLIC_ANALYTICS_ID?.trim()),

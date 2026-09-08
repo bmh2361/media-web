@@ -1,5 +1,7 @@
 import generatedMedia from "@/content/portfolio-media.generated.json";
 import type { ExpertiseSector, ProjectPath } from "@/content/information-architecture";
+import { publicCommercialCaseNarratives } from "@/content/evidence/public-case-narratives";
+import type { PublicCommercialCaseNarrative } from "@/content/evidence/public-case-narratives";
 
 export type PortfolioSection = "selected-projects" | "production-experience" | "production-scenarios";
 export type ProjectSector =
@@ -196,6 +198,16 @@ export type PortfolioProject = {
   homepageFeatured: boolean;
   homepageOrder?: number;
   relatedCases?: string[];
+  workTier: 1 | 2 | 3;
+  engagementType:
+    | "launch"
+    | "exhibition"
+    | "industry-event"
+    | "local-production"
+    | "brand-content"
+    | "cultural-event";
+  geography: "UK" | "Germany" | "Europe" | "Multi-market";
+  commercialNarrative?: PublicCommercialCaseNarrative;
 };
 export type ProofTier = "strategic" | "execution" | "capability";
 export type ProofPresentation = {
@@ -332,13 +344,13 @@ const specs: Spec[] = [
   },
   {
     slug: "changan-europe-launch-2025",
-    titleEn: "Changan European Brand Launch 2025, Munich",
-    titleZh: "长安汽车 2025 欧洲品牌发布｜慕尼黑",
+    titleEn: "Changan at IAA Mobility 2025 — European Expansion",
+    titleZh: "长安汽车 IAA Mobility 2025｜欧洲市场扩张",
     clientName: "Changan",
     clientNamePublic: true,
     sector: "automotive",
     category: "market-presence",
-    sortDate: "2025-09-01",
+    sortDate: "2025-09-08",
     year: "2025",
     location: "Munich, Germany",
     projectTypeEn: "European launch-context brand evidence",
@@ -493,7 +505,7 @@ const specs: Spec[] = [
     contextZh: "覆盖 BD11 车辆、场地与观众环境的摄影记录。",
     executionEn: "Captured the vehicle and presentation setting.",
     executionZh: "拍摄车辆与展示现场环境。",
-    rolesEn: ["On-site visual documentation in London", "UK brand evidence"],
+    rolesEn: ["London launch documentation", "UK-facing brand evidence"],
     rolesZh: ["伦敦发布记录", "面向英国的品牌证据"],
     primarySector: "automotive",
     primaryPath: "launch-in-the-uk",
@@ -505,12 +517,14 @@ const specs: Spec[] = [
   },
   {
     slug: "agibot-london-launch",
-    titleEn: "AGIBOT London Launch",
-    titleZh: "AGIBOT 智元伦敦发布会",
+    titleEn: "AGIBOT UK Launch 2026, London",
+    titleZh: "AGIBOT 智元英国发布会 2026｜伦敦",
     clientName: "AGIBOT",
     clientNamePublic: true,
     sector: "technology-ai",
     category: "industry-credibility",
+    sortDate: "2026-06-30",
+    year: "2026",
     location: "London, UK",
     projectTypeEn: "Robotics launch visual documentation",
     projectTypeZh: "机器人发布视觉记录",
@@ -1055,6 +1069,8 @@ export const portfolioProjects: PortfolioProject[] = specs.map((spec, sortIndex)
   const series = spec.contentType === "portfolio-series";
   const media = mediaFor(spec.slug);
   const narrative = caseNarratives[spec.slug];
+  const commercialNarrative = publicCommercialCaseNarratives[spec.slug];
+  const workTier = commercialNarrative ? 1 : spec.slug === "london-automotive-brand-film" ? 2 : 3;
   return {
     id: spec.slug,
     slug: spec.slug,
@@ -1116,7 +1132,19 @@ export const portfolioProjects: PortfolioProject[] = specs.map((spec, sortIndex)
     legalApproved: true,
     homepageFeatured: Boolean(spec.homepageOrder),
     homepageOrder: spec.homepageOrder,
-    market: spec.location
+    market: spec.location,
+    workTier,
+    engagementType:
+      commercialNarrative?.engagementType ??
+      (spec.slug === "london-automotive-brand-film"
+        ? "local-production"
+        : spec.category === "institutional-talent"
+          ? "cultural-event"
+          : "brand-content"),
+    geography:
+      commercialNarrative?.geography ??
+      (spec.location.includes("Germany") ? "Germany" : spec.location.includes("UK") ? "UK" : "Europe"),
+    commercialNarrative
   };
 });
 

@@ -42,7 +42,17 @@ test("capture index preview art direction at required widths", async ({ page }, 
   ]) {
     await page.locator(`[data-case-row="${slug}"]`).hover();
     await page.waitForTimeout(420);
-    await page.locator("[data-case-preview]").screenshot({ path: path.join(output, `preview-${slug}.png`) });
+    const tier = [
+      "geely-london-brand-launch",
+      "changan-europe-launch-2025",
+      "catl-open-day-2025",
+      "agibot-london-launch"
+    ].includes(slug)
+      ? 1
+      : 3;
+    await page.locator(`[data-work-tier="${tier}"] [data-case-preview]`).screenshot({
+      path: path.join(output, `preview-${slug}.png`)
+    });
   }
 });
 

@@ -52,6 +52,8 @@ const makeEnvironment = () => {
   const dedupe = new Map();
   return {
     CONTACT_FORM_ENABLED: "true",
+    CONTACT_PRIVACY_PROCESSING_APPROVED: "true",
+    CONTACT_PUBLIC_IDENTITY_CONFIRMED: "true",
     CONTACT_DELIVERY_VERIFIED: "true",
     CONTACT_CHANNELS_CONFIRMED: "true",
     CONTACT_ALLOWED_ORIGINS: "https://www.venusbridge.co.uk",
@@ -110,6 +112,41 @@ test("contact endpoint verifies Turnstile, signs delivery and deduplicates", asy
   assert.equal(duplicate.status, 409);
 });
 
+test("delivery failure returns a retryable error and the client resets the consumed Turnstile token", async () => {
+  const env = makeEnvironment();
+  const response = await handleContactRequest(makeRequest(), env, async (input) =>
+    String(input).includes("turnstile")
+      ? Response.json({ success: true })
+      : new Response(null, { status: 502 })
+  );
+  assert.equal(response.status, 502);
+  const form = await read("components/sections/EnquiryForm.tsx");
+  assert.match(form, /resetTurnstile\(\)/);
+  assert.match(form, /turnstile\?\.reset\(\)/);
+});
+
+test("a post-delivery KV failure is operationally signalled without telling the user delivery failed", async () => {
+  const env = makeEnvironment();
+  env.CONTACT_DEDUPLICATION.put = async () => {
+    throw new Error("KV unavailable");
+  };
+  const originalError = console.error;
+  const signals = [];
+  console.error = (...args) => signals.push(args);
+  try {
+    const response = await handleContactRequest(makeRequest(), env, async (input) =>
+      String(input).includes("turnstile")
+        ? Response.json({ success: true })
+        : new Response(null, { status: 202 })
+    );
+    assert.equal(response.status, 202);
+    assert.equal((await response.json()).ok, true);
+    assert.equal(signals[0][0], "contact_deduplication_write_failed");
+  } finally {
+    console.error = originalError;
+  }
+});
+
 test("contact endpoint fails closed without required abuse-protection bindings", async () => {
   const env = makeEnvironment();
   delete env.CONTACT_RATE_LIMITER;
@@ -125,7 +162,7 @@ test("preview contact endpoint requires explicit safe preview bindings", async (
     headers: { "content-type": "application/json", origin: "https://www.venusbridge.co.uk" }
   });
   assert.equal((await handleContactRequest(request, env)).status, 503);
-  env.CONTACT_PREVIEW_BINDINGS_CONFIRMED = "true";
+  env.CONTACT_PREVIEW_RUNTIME_APPROVED = "true";
   const response = await handleContactRequest(request, env, async (input) =>
     String(input).includes("turnstile")
       ? Response.json({ success: true })
@@ -164,9 +201,11 @@ const completeGateInput = {
   indexingRequested: true,
   previewDeployment: false,
   contactFormRequested: false,
+  contactPrivacyProcessingApproved: false,
+  contactPublicIdentityConfirmed: false,
   turnstileSiteKeyConfigured: false,
   contactDeliveryVerified: false,
-  previewContactBindingsConfirmed: false,
+  previewContactBuildApproved: false,
   analyticsRequested: false,
   analyticsProviderConfigured: false,
   analyticsPropertyConfigured: false,
@@ -185,6 +224,8 @@ test("scenario B: incomplete contact infrastructure does not change publication"
   const input = {
     ...completeGateInput,
     contactFormRequested: true,
+    contactPrivacyProcessingApproved: true,
+    contactPublicIdentityConfirmed: true,
     turnstileSiteKeyConfigured: true,
     contactDeliveryVerified: false
   };
@@ -197,12 +238,14 @@ test("scenario C: previews are noindex and forms require explicit safe bindings"
     ...completeGateInput,
     previewDeployment: true,
     contactFormRequested: true,
+    contactPrivacyProcessingApproved: true,
+    contactPublicIdentityConfirmed: true,
     turnstileSiteKeyConfigured: true,
     contactDeliveryVerified: true
   };
   assert.equal(isSitePublicationReady(preview), false);
   assert.equal(isContactFormReady(preview), false);
-  assert.equal(isContactFormReady({ ...preview, previewContactBindingsConfirmed: true }), true);
+  assert.equal(isContactFormReady({ ...preview, previewContactBuildApproved: true }), true);
 });
 
 test("scenario D: incomplete legal identity fails publication closed", () => {
@@ -228,6 +271,12 @@ test("release, SEO and schema consume the separated fail-closed gates", async ()
   assert.match(schema, /getProductionReadiness/);
   assert.match(robots, /isIndexingAllowed/);
   assert.match(sitemap, /isIndexingAllowed/);
+});
+
+test("form activation cannot contradict future-conditional Privacy copy", async () => {
+  const release = await read("lib/release.ts");
+  assert.match(release, /approvedCurrentFormPrivacyVersion: string \| null = null/);
+  assert.match(release, /Boolean\(approvedCurrentFormPrivacyVersion\)/);
 });
 
 test("Cloudflare routes source exposes only /api/contact to Functions", async () => {

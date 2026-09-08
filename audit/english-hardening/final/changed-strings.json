@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T15:08:59.730Z",
+  "generatedAt": "2026-09-08T20:34:54.067Z",
   "sourceReview": "audit/english-hardening/baseline/2026-08-31-language-correction-register.md",
   "professionalReviewRowsAccountedFor": 119,
   "renderedRoutePairsChecked": 21,
@@ -1334,7 +1334,7 @@
       "oldEnglish": "Read the technical presentation environment",
       "finalEnglish": "Assess the technical presentation setting",
       "correctionCategory": "COPY_QUALITY",
-      "renderedVerificationResult": "PASS_RECOMMENDED_RENDERING_PRESENT"
+      "renderedVerificationResult": "PASS_OLD_RENDERING_ABSENT_FROM_RENDERED_EXPORT"
     },
     {
       "reviewRow": 112,

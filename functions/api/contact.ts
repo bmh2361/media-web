@@ -28,13 +28,15 @@ type DeduplicationStore = {
 
 export type ContactEnvironment = {
   CONTACT_FORM_ENABLED?: string;
+  CONTACT_PRIVACY_PROCESSING_APPROVED?: string;
+  CONTACT_PUBLIC_IDENTITY_CONFIRMED?: string;
   CONTACT_DELIVERY_VERIFIED?: string;
   CONTACT_CHANNELS_CONFIRMED?: string;
   CONTACT_ALLOWED_ORIGINS?: string;
   CONTACT_WEBHOOK_URL?: string;
   CONTACT_WEBHOOK_SECRET?: string;
   TURNSTILE_SECRET_KEY?: string;
-  CONTACT_PREVIEW_BINDINGS_CONFIRMED?: string;
+  CONTACT_PREVIEW_RUNTIME_APPROVED?: string;
   CONTACT_RATE_LIMITER?: RateLimiter;
   CONTACT_DEDUPLICATION?: DeduplicationStore;
 };
@@ -160,6 +162,8 @@ function json(request: Request, body: object, status: number) {
 
 const configured = (request: Request, env: ContactEnvironment) =>
   env.CONTACT_FORM_ENABLED === "true" &&
+  env.CONTACT_PRIVACY_PROCESSING_APPROVED === "true" &&
+  env.CONTACT_PUBLIC_IDENTITY_CONFIRMED === "true" &&
   env.CONTACT_DELIVERY_VERIFIED === "true" &&
   env.CONTACT_CHANNELS_CONFIRMED === "true" &&
   Boolean(env.TURNSTILE_SECRET_KEY?.trim()) &&
@@ -167,7 +171,7 @@ const configured = (request: Request, env: ContactEnvironment) =>
   Boolean(env.CONTACT_WEBHOOK_SECRET?.trim()) &&
   Boolean(env.CONTACT_RATE_LIMITER) &&
   Boolean(env.CONTACT_DEDUPLICATION) &&
-  (!request.url.includes(".pages.dev") || env.CONTACT_PREVIEW_BINDINGS_CONFIRMED === "true");
+  (!request.url.includes(".pages.dev") || env.CONTACT_PREVIEW_RUNTIME_APPROVED === "true");
 
 export async function handleContactRequest(
   request: Request,
@@ -275,7 +279,7 @@ export async function handleContactRequest(
   try {
     await env.CONTACT_DEDUPLICATION!.put(fingerprint, requestId, { expirationTtl: 600 });
   } catch {
-    return json(request, { error: "duplicate_suppression_unavailable", requestId }, 503);
+    console.error("contact_deduplication_write_failed", { requestId });
   }
   return json(request, { ok: true, requestId }, 202);
 }

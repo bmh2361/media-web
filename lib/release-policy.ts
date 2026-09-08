@@ -13,9 +13,11 @@ export type ReleaseGateInputs = {
   indexingRequested: boolean;
   previewDeployment: boolean;
   contactFormRequested: boolean;
+  contactPrivacyProcessingApproved: boolean;
+  contactPublicIdentityConfirmed: boolean;
   turnstileSiteKeyConfigured: boolean;
   contactDeliveryVerified: boolean;
-  previewContactBindingsConfirmed: boolean;
+  previewContactBuildApproved: boolean;
   analyticsRequested: boolean;
   analyticsProviderConfigured: boolean;
   analyticsPropertyConfigured: boolean;
@@ -64,11 +66,13 @@ export function isSitePublicationReady(input: ReleaseGateInputs) {
 export function isContactFormReady(input: ReleaseGateInputs) {
   return Boolean(
     input.contactFormRequested &&
+      input.contactPrivacyProcessingApproved &&
+      input.contactPublicIdentityConfirmed &&
       isLegalIdentityReady(input) &&
       input.contactChannelsConfirmed &&
       input.turnstileSiteKeyConfigured &&
       input.contactDeliveryVerified &&
-      (!input.previewDeployment || input.previewContactBindingsConfirmed)
+      (!input.previewDeployment || input.previewContactBuildApproved)
   );
 }
 

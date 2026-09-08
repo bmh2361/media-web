@@ -2,6 +2,9 @@ name: Production readiness
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches: [main]
+  merge_group:
 
 jobs:
   validate:
@@ -34,8 +37,17 @@ jobs:
       NEXT_PUBLIC_TERMS_APPROVAL_STATUS: ${{ vars.NEXT_PUBLIC_TERMS_APPROVAL_STATUS }}
       NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE: ${{ vars.NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE }}
       NEXT_PUBLIC_TERMS_EFFECTIVE_DATE: ${{ vars.NEXT_PUBLIC_TERMS_EFFECTIVE_DATE }}
+      NEXT_PUBLIC_CONTACT_FORM_ENABLED: ${{ vars.NEXT_PUBLIC_CONTACT_FORM_ENABLED }}
+      NEXT_PUBLIC_CONTACT_PRIVACY_PROCESSING_APPROVED: ${{ vars.NEXT_PUBLIC_CONTACT_PRIVACY_PROCESSING_APPROVED }}
+      NEXT_PUBLIC_CONTACT_PUBLIC_IDENTITY_CONFIRMED: ${{ vars.NEXT_PUBLIC_CONTACT_PUBLIC_IDENTITY_CONFIRMED }}
+      CONTACT_FORM_ENABLED: ${{ vars.CONTACT_FORM_ENABLED }}
+      CONTACT_PRIVACY_PROCESSING_APPROVED: ${{ vars.CONTACT_PRIVACY_PROCESSING_APPROVED }}
+      CONTACT_PUBLIC_IDENTITY_CONFIRMED: ${{ vars.CONTACT_PUBLIC_IDENTITY_CONFIRMED }}
+      PREVIEW_CONTACT_BUILD_APPROVED: ${{ vars.PREVIEW_CONTACT_BUILD_APPROVED }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -50,6 +62,8 @@ jobs:
       - run: npm audit --omit=dev
       - run: npm run build
       - run: npm run export:bilingual-copy
+        env:
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
       - run: npm run audit:english-fidelity
       - run: npm run validate:redirects
       - run: npm run validate:og

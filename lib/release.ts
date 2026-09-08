@@ -18,6 +18,10 @@ import {
 export { isAnalyticsReady, isContactFormReady, isLegalIdentityReady, isSitePublicationReady };
 
 export const releaseProfiles = ["development", "staging", "production"] as const;
+// This remains null until counsel/owner approves and commits Privacy copy that
+// describes the actual live form workflow. Environment variables alone cannot
+// activate processing while the published notice is still future-conditional.
+export const approvedCurrentFormPrivacyVersion: string | null = null;
 export type ReleaseProfile = (typeof releaseProfiles)[number];
 
 export const publicWorkModes = ["hidden", "scenarios", "portfolio"] as const;
@@ -58,7 +62,7 @@ export type ReleaseConfig = {
   indexingRequested: boolean;
   contactFormRequested: boolean;
   previewDeployment: boolean;
-  previewContactBindingsConfirmed: boolean;
+  previewContactBuildApproved: boolean;
 };
 
 function isPreviewDeployment() {
@@ -87,7 +91,7 @@ export function getReleaseConfig(): ReleaseConfig {
     indexingRequested: process.env.RELEASE_INDEXING_ENABLED === "true",
     contactFormRequested: process.env.NEXT_PUBLIC_CONTACT_FORM_ENABLED === "true",
     previewDeployment: isPreviewDeployment(),
-    previewContactBindingsConfirmed: process.env.PREVIEW_CONTACT_BINDINGS_CONFIRMED === "true"
+    previewContactBuildApproved: process.env.PREVIEW_CONTACT_BUILD_APPROVED === "true"
   };
 }
 
@@ -118,9 +122,13 @@ export function getReleaseGateInputs(config = getReleaseConfig()): ReleaseGateIn
     indexingRequested: config.indexingRequested,
     previewDeployment: config.previewDeployment,
     contactFormRequested: config.contactFormRequested,
+    contactPrivacyProcessingApproved:
+      process.env.NEXT_PUBLIC_CONTACT_PRIVACY_PROCESSING_APPROVED === "true" &&
+      Boolean(approvedCurrentFormPrivacyVersion),
+    contactPublicIdentityConfirmed: process.env.NEXT_PUBLIC_CONTACT_PUBLIC_IDENTITY_CONFIRMED === "true",
     turnstileSiteKeyConfigured: Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY?.trim()),
     contactDeliveryVerified: process.env.CONTACT_DELIVERY_VERIFIED === "true",
-    previewContactBindingsConfirmed: config.previewContactBindingsConfirmed,
+    previewContactBuildApproved: config.previewContactBuildApproved,
     analyticsRequested: process.env.NEXT_PUBLIC_ANALYTICS_ENABLED === "true",
     analyticsProviderConfigured: Boolean(process.env.NEXT_PUBLIC_ANALYTICS_PROVIDER?.trim()),
     analyticsPropertyConfigured: Boolean(process.env.NEXT_PUBLIC_ANALYTICS_ID?.trim()),

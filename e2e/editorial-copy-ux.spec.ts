@@ -68,17 +68,18 @@ for (const locale of ["en", "zh"] as const) {
   });
 }
 
-test("case filters and responsive preview keep their interaction contract", async ({ page }, testInfo) => {
+test("case proof tiers and responsive previews keep their interaction contract", async ({
+  page
+}, testInfo) => {
   test.skip(testInfo.project.name === "mobile");
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto("/en/work");
-  await page.getByRole("button", { name: "Brand & Content", exact: true }).click();
-  await expect(page.locator("[data-case-row]")).toHaveCount(4);
-  await expect(page.locator("[data-case-preview]")).toBeVisible();
-  await page.getByRole("button", { name: "Partnerships & Institutions", exact: true }).click();
-  await expect(page.locator("[data-case-row]")).toHaveCount(2);
+  await expect(page.locator('[data-work-tier="1"] [data-case-row]')).toHaveCount(6);
+  await expect(page.locator('[data-work-tier="2"] [data-case-row]')).toHaveCount(1);
+  await expect(page.locator('[data-work-tier="3"] [data-case-row]')).toHaveCount(5);
+  await expect(page.locator('[data-work-tier="1"] [data-case-preview]')).toBeVisible();
 
   await page.setViewportSize({ width: 375, height: 844 });
   await page.goto("/en/work");
-  await expect(page.locator("[data-case-preview]")).toBeHidden();
+  await expect(page.locator("[data-case-preview]").first()).toBeHidden();
 });

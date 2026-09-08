@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T15:09:00.296Z",
+  "generatedAt": "2026-09-08T20:34:54.455Z",
   "scopes": {
     "activePublicContent": [
       "app/[lang]/about/page.tsx",
@@ -54,6 +54,7 @@
       "audit/og-card-inventory.json"
     ],
     "activeTests": [
+      "tests\\case-study-commercial-narrative.test.mjs",
       "tests\\case-study-commercial-redesign.test.mjs",
       "tests\\case-study-media-presentation.test.mjs",
       "tests\\content-contract.test.mjs",
@@ -76,6 +77,7 @@
       "e2e\\about-team-motion.spec.ts",
       "e2e\\about-us.spec.ts",
       "e2e\\brand-refresh.spec.ts",
+      "e2e\\case-narrative-visual-qa.spec.ts",
       "e2e\\case-studies-portfolio-upgrade.spec.ts",
       "e2e\\case-study-commercial-redesign.spec.ts",
       "e2e\\case-study-media-screenshot-audit.spec.ts",

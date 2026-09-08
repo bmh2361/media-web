@@ -19,18 +19,58 @@ const chineseSourceFiles = [
   "components/globe/CrossBorderGlobe.tsx",
   "components/sections/AboutTeam.tsx",
   "components/sections/Phase5AudiencePages.tsx",
+  "components/sections/CommercialCaseIndex.tsx",
+  "components/sections/Phase5Homepage.tsx",
+  "components/sections/PortfolioWork.tsx",
   "components/sections/PortfolioProjectDetail.tsx",
+  "content/evidence/public-case-narratives.ts",
   "content/phase5.ts",
   "content/portfolio.ts",
   "content/team.ts"
 ];
+const recordedNewChineseCopyFiles = new Set([
+  "components/sections/CommercialCaseIndex.tsx",
+  "components/sections/Phase5Homepage.tsx",
+  "components/sections/PortfolioWork.tsx",
+  "components/sections/PortfolioProjectDetail.tsx",
+  "content/evidence/public-case-narratives.ts",
+  "content/portfolio.ts"
+]);
 const chineseCharacters = (value) =>
   [...value].filter((character) => /[\u3400-\u9fff\u3000-\u303f\uff00-\uffef]/u.test(character)).join("");
-const chineseSourceUnchanged = chineseSourceFiles.every((file) => {
-  const before = execFileSync("git", ["show", `HEAD:${file}`], { cwd: root, encoding: "utf8" });
-  const after = fs.readFileSync(path.join(root, file), "utf8");
-  return chineseCharacters(before) === chineseCharacters(after);
-});
+const resolveChineseBaseline = () => {
+  const candidates = [process.env.GITHUB_BASE_SHA, "origin/main"].filter(Boolean);
+  for (const candidate of candidates) {
+    try {
+      execFileSync("git", ["rev-parse", "--verify", `${candidate}^{commit}`], {
+        cwd: root,
+        stdio: "ignore"
+      });
+      return candidate;
+    } catch {}
+  }
+  return null;
+};
+const chineseSourceBaseline = resolveChineseBaseline();
+const chineseSourceChanges = chineseSourceBaseline
+  ? chineseSourceFiles.flatMap((file) => {
+      try {
+        const before = execFileSync("git", ["show", `${chineseSourceBaseline}:${file}`], {
+          cwd: root,
+          encoding: "utf8",
+          stdio: ["ignore", "pipe", "ignore"]
+        });
+        const after = fs.readFileSync(path.join(root, file), "utf8");
+        return chineseCharacters(before) === chineseCharacters(after) ? [] : [file];
+      } catch {
+        return fs.existsSync(path.join(root, file)) ? [file] : [];
+      }
+    })
+  : [];
+const chineseSourceUnchanged = Boolean(chineseSourceBaseline) && chineseSourceChanges.length === 0;
+const unrecordedChineseSourceChanges = chineseSourceChanges.filter(
+  (file) => !recordedNewChineseCopyFiles.has(file)
+);
 const selectedTags = new Set([
   "a",
   "button",
@@ -62,17 +102,15 @@ const voidTags = new Set([
 ]);
 const ignoredTags = new Set(["head", "script", "style", "svg", "noscript", "template"]);
 
+const namedEntities = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " " };
 const decode = (value) =>
-  value
-    .replace(/&#(x?[0-9a-f]+);/gi, (_, number) =>
-      String.fromCodePoint(Number.parseInt(number.replace(/^x/i, ""), /^x/i.test(number) ? 16 : 10))
-    )
-    .replaceAll("&amp;", "&")
-    .replaceAll("&lt;", "<")
-    .replaceAll("&gt;", ">")
-    .replaceAll("&quot;", '"')
-    .replaceAll("&#39;", "'")
-    .replaceAll("&nbsp;", " ");
+  value.replace(/&(?:#(x?[0-9a-f]+)|([a-z]+));/gi, (entity, number, name) => {
+    if (number) {
+      const point = Number.parseInt(number.replace(/^x/i, ""), /^x/i.test(number) ? 16 : 10);
+      return Number.isSafeInteger(point) && point <= 0x10ffff ? String.fromCodePoint(point) : entity;
+    }
+    return namedEntities[name.toLowerCase()] ?? entity;
+  });
 const normalise = (value) => decode(value).replace(/\s+/g, " ").trim();
 
 function parse(html) {
@@ -215,7 +253,21 @@ function baselineChinese() {
 
 const routes = [...new Set(inventory.cards.map((card) => card.route.replace(/^\/(?:en|zh)/, "") || "/"))];
 const baselineZh = baselineChinese();
-const report = { generatedAt: new Date().toISOString(), chineseSourceUnchanged, routes: [] };
+const report = {
+  generatedAt: new Date().toISOString(),
+  chineseSourceBaseline: chineseSourceBaseline ?? "UNKNOWN",
+  chineseSourceUnchanged,
+  chineseSourceStatus: !chineseSourceBaseline
+    ? "UNKNOWN"
+    : chineseSourceUnchanged
+      ? "UNCHANGED"
+      : unrecordedChineseSourceChanges.length
+        ? "CHANGED_UNRECORDED"
+        : "CHANGED_NEW_COPY_RECORDED",
+  chineseSourceChanges,
+  unrecordedChineseSourceChanges,
+  routes: []
+};
 for (const route of routes) {
   const enRoute = route === "/" ? "/en" : `/en${route}`;
   const zhRoute = route === "/" ? "/zh" : `/zh${route}`;

@@ -39,10 +39,12 @@ export function ContactActions({
           type="button"
           className="min-h-11 rounded-sm border border-pearl/25 px-3 text-xs text-pearl hover:border-champagne hover:text-champagne"
           onClick={copyWechat}
-          aria-live="polite"
         >
-          {copied ? (zh ? "已复制" : "Copied") : zh ? "复制" : "Copy"}
+          {zh ? "复制" : "Copy"}
         </button>
+        <span className="sr-only" role="status" aria-live="polite" aria-atomic="true">
+          {copied ? (zh ? "微信号已复制" : "WeChat ID copied") : ""}
+        </span>
       </div>
       <div
         className="grid grid-cols-[5rem_minmax(0,1fr)] items-baseline gap-4 py-4 sm:grid-cols-[7rem_minmax(0,1fr)]"

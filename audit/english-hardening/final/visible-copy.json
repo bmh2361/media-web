@@ -1,15 +1,26 @@
 {
-  "generatedAt": "2026-08-31T15:08:59.627Z",
-  "chineseSourceUnchanged": true,
+  "generatedAt": "2026-09-08T20:34:53.969Z",
+  "chineseSourceBaseline": "origin/main",
+  "chineseSourceUnchanged": false,
+  "chineseSourceStatus": "CHANGED_NEW_COPY_RECORDED",
+  "chineseSourceChanges": [
+    "components/sections/CommercialCaseIndex.tsx",
+    "components/sections/Phase5Homepage.tsx",
+    "components/sections/PortfolioWork.tsx",
+    "components/sections/PortfolioProjectDetail.tsx",
+    "content/evidence/public-case-narratives.ts",
+    "content/portfolio.ts"
+  ],
+  "unrecordedChineseSourceChanges": [],
   "routes": [
     {
       "route": "/",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 144,
-      "currentChineseCount": 142,
-      "firstChineseMismatch": 54,
+      "currentChineseCount": 145,
+      "firstChineseMismatch": 23,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -176,8 +187,8 @@
           "path": "visible/p[9]",
           "element": "<p>",
           "variant": "shared",
-          "en": "London, UK · Client Project",
-          "zh": "London, UK · 客户项目"
+          "en": "London, UK · UK-Specific Product Introduction",
+          "zh": "London, UK · 英国特定产品发布"
         },
         {
           "path": "visible/h3[1]",
@@ -190,36 +201,50 @@
           "path": "visible/p[10]",
           "element": "<p>",
           "variant": "shared",
-          "en": "On-site visual documentation in London · UK brand evidence",
-          "zh": "伦敦发布记录 · 面向英国的品牌证据"
+          "en": "Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence.",
+          "zh": "Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。"
+        },
+        {
+          "path": "visible/span[2]",
+          "element": "<span>",
+          "variant": "shared",
+          "en": "Verified role",
+          "zh": "经核实职责"
         },
         {
           "path": "visible/p[11]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Munich, Germany · Client Project",
-          "zh": "Munich, Germany · 客户项目"
+          "en": "Munich, Germany · European Expansion at IAA Mobility",
+          "zh": "Munich, Germany · IAA Mobility 欧洲市场扩张"
         },
         {
           "path": "visible/h3[2]",
           "element": "<h3>",
           "variant": "shared",
-          "en": "Changan European Brand Launch 2025, Munich",
-          "zh": "长安汽车 2025 欧洲品牌发布｜慕尼黑"
+          "en": "Changan at IAA Mobility 2025 — European Expansion",
+          "zh": "长安汽车 IAA Mobility 2025｜欧洲市场扩张"
         },
         {
           "path": "visible/p[12]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Launch-context documentation · Visual assets showing the European setting",
-          "zh": "发布场景记录 · 面向欧洲的品牌资产"
+          "en": "Venus Bridge documented the Munich exhibition setting across the stage, vehicles and guest viewing environment.",
+          "zh": "Venus Bridge 记录慕尼黑展会现场，覆盖舞台、车辆与嘉宾观看环境。"
+        },
+        {
+          "path": "visible/span[3]",
+          "element": "<span>",
+          "variant": "shared",
+          "en": "Verified role",
+          "zh": "经核实职责"
         },
         {
           "path": "visible/p[13]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Munich, Germany · Client Project",
-          "zh": "Munich, Germany · 客户项目"
+          "en": "Munich, Germany · European Technology Introduction",
+          "zh": "Munich, Germany · 欧洲技术发布"
         },
         {
           "path": "visible/h3[3]",
@@ -232,8 +257,15 @@
           "path": "visible/p[14]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Event documentation · International communications assets",
-          "zh": "活动记录 · 国际传播资产"
+          "en": "Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting.",
+          "zh": "Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。"
+        },
+        {
+          "path": "visible/span[4]",
+          "element": "<span>",
+          "variant": "shared",
+          "en": "Verified role",
+          "zh": "经核实职责"
         },
         {
           "path": "visible/p[15]",
@@ -264,7 +296,7 @@
           "zh": "01—05 · 英国 / 欧洲"
         },
         {
-          "path": "visible/span[2]",
+          "path": "visible/span[5]",
           "element": "<span>",
           "variant": "shared",
           "en": "01",
@@ -285,7 +317,7 @@
           "zh": "验证市场机会、了解本地格局，并判断第一步应该做什么。"
         },
         {
-          "path": "visible/span[3]",
+          "path": "visible/span[6]",
           "element": "<span>",
           "variant": "shared",
           "en": "02",
@@ -306,7 +338,7 @@
           "zh": "围绕确定日期，统筹活动前、现场及后续跟进。"
         },
         {
-          "path": "visible/span[4]",
+          "path": "visible/span[7]",
           "element": "<span>",
           "variant": "shared",
           "en": "03",
@@ -327,7 +359,7 @@
           "zh": "识别合适对象、建立商务沟通场景，并推进本地对接。"
         },
         {
-          "path": "visible/span[5]",
+          "path": "visible/span[8]",
           "element": "<span>",
           "variant": "shared",
           "en": "04",
@@ -348,7 +380,7 @@
           "zh": "在有助于商业目标时，引入行业、专家、机构或内容环境。"
         },
         {
-          "path": "visible/span[6]",
+          "path": "visible/span[9]",
           "element": "<span>",
           "variant": "shared",
           "en": "05",
@@ -390,7 +422,7 @@
           "zh": "围绕市场结果，形成四类本地行动。"
         },
         {
-          "path": "visible/span[7]",
+          "path": "visible/span[10]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 1",
@@ -411,7 +443,7 @@
           "zh": "看清市场格局与机会，在大规模投入前决定应该把钱和时间放在哪里。"
         },
         {
-          "path": "visible/span[8]",
+          "path": "visible/span[11]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 2",
@@ -421,7 +453,7 @@
           "path": "visible/h3[10]",
           "element": "<h3>",
           "variant": "shared",
-          "en": "Buyers, Partners & Industry Presence",
+          "en": "Buyers, Partners & Industry Engagement",
           "zh": "买家、伙伴与行业参与"
         },
         {
@@ -432,7 +464,7 @@
           "zh": "识别并对接能够推动市场进展的商业关系。"
         },
         {
-          "path": "visible/span[9]",
+          "path": "visible/span[12]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 3",
@@ -453,7 +485,7 @@
           "zh": "把一个固定市场节点变成前后连贯的商务行动。"
         },
         {
-          "path": "visible/span[10]",
+          "path": "visible/span[13]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 4",
@@ -628,7 +660,7 @@
           "zh": "Venus Bridge 保留商务与执行责任，仅在有助于结果时引入相应专业能力。"
         },
         {
-          "path": "visible/span[11]",
+          "path": "visible/span[14]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 1",
@@ -642,7 +674,7 @@
           "zh": "高校与研究人员"
         },
         {
-          "path": "visible/span[12]",
+          "path": "visible/span[15]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 2",
@@ -656,7 +688,7 @@
           "zh": "行业专家"
         },
         {
-          "path": "visible/span[13]",
+          "path": "visible/span[16]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 3",
@@ -670,7 +702,7 @@
           "zh": "专业服务"
         },
         {
-          "path": "visible/span[14]",
+          "path": "visible/span[17]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 4",
@@ -684,7 +716,7 @@
           "zh": "创作者与人才"
         },
         {
-          "path": "visible/span[15]",
+          "path": "visible/span[18]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 5",
@@ -698,7 +730,7 @@
           "zh": "场地与活动执行"
         },
         {
-          "path": "visible/span[16]",
+          "path": "visible/span[19]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 6",
@@ -726,7 +758,7 @@
           "zh": "让一个市场节点在活动前、现场和结束后都产生价值。"
         },
         {
-          "path": "visible/span[17]",
+          "path": "visible/span[20]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 1",
@@ -747,7 +779,7 @@
           "zh": "明确目标机构、重点会面、本地叙事和后续跟进计划。"
         },
         {
-          "path": "visible/span[18]",
+          "path": "visible/span[21]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 2",
@@ -768,7 +800,7 @@
           "zh": "统筹现场环境、利益相关方活动及获准使用的市场内容。"
         },
         {
-          "path": "visible/span[19]",
+          "path": "visible/span[22]",
           "element": "<span>",
           "variant": "shared",
           "en": "0 3",
@@ -810,28 +842,28 @@
           "zh": "中国总部获得什么"
         },
         {
-          "path": "visible/span[20]",
+          "path": "visible/span[23]",
           "element": "<span>",
           "variant": "shared",
           "en": "Faster credible action",
           "zh": "更快启动可信行动"
         },
         {
-          "path": "visible/span[21]",
+          "path": "visible/span[24]",
           "element": "<span>",
           "variant": "shared",
           "en": "Less supplier management",
           "zh": "减少多供应商管理"
         },
         {
-          "path": "visible/span[22]",
+          "path": "visible/span[25]",
           "element": "<span>",
           "variant": "shared",
           "en": "Local market context",
           "zh": "获得本地市场语境"
         },
         {
-          "path": "visible/span[23]",
+          "path": "visible/span[26]",
           "element": "<span>",
           "variant": "shared",
           "en": "Continuity after the event",
@@ -845,28 +877,28 @@
           "zh": "这种合作模式如何运作"
         },
         {
-          "path": "visible/span[24]",
+          "path": "visible/span[27]",
           "element": "<span>",
           "variant": "shared",
           "en": "Understanding the needs of Chinese headquarters",
           "zh": "理解中国端需求"
         },
         {
-          "path": "visible/span[25]",
+          "path": "visible/span[28]",
           "element": "<span>",
           "variant": "shared",
           "en": "UK & European judgement",
           "zh": "具备英国与欧洲判断"
         },
         {
-          "path": "visible/span[26]",
+          "path": "visible/span[29]",
           "element": "<span>",
           "variant": "shared",
           "en": "Coordinate relevant local relationships",
           "zh": "组织相关本地关系"
         },
         {
-          "path": "visible/span[27]",
+          "path": "visible/span[30]",
           "element": "<span>",
           "variant": "shared",
           "en": "Integrated delivery",
@@ -992,14 +1024,14 @@
           "zh": "条款"
         },
         {
-          "path": "visible/span[28]",
+          "path": "visible/span[31]",
           "element": "<span>",
           "variant": "shared",
           "en": "Venus Bridge",
           "zh": "Venus Bridge"
         },
         {
-          "path": "visible/span[29]",
+          "path": "visible/span[32]",
           "element": "<span>",
           "variant": "shared",
           "en": "© 2026 Venus Bridge",
@@ -1010,7 +1042,7 @@
     {
       "route": "/companies",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 123,
       "currentChineseCount": 119,
@@ -1854,7 +1886,7 @@
     {
       "route": "/partners",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 103,
       "currentChineseCount": 99,
@@ -2558,11 +2590,11 @@
     {
       "route": "/work",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 76,
-      "currentChineseCount": 146,
-      "firstChineseMismatch": 18,
+      "currentChineseCount": 170,
+      "firstChineseMismatch": 13,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -2656,39 +2688,25 @@
           "zh": "按商业场景浏览项目。每个案例说明项目目标、商业背景、实际职责、本地执行，以及之后留下的可用成果。"
         },
         {
-          "path": "visible/button[1]",
-          "element": "<button>",
+          "path": "visible/p[3]",
+          "element": "<p>",
           "variant": "shared",
-          "en": "All",
-          "zh": "全部"
+          "en": "0 1",
+          "zh": "0 1"
         },
         {
-          "path": "visible/button[2]",
-          "element": "<button>",
+          "path": "visible/h2[1]",
+          "element": "<h2>",
           "variant": "shared",
-          "en": "Market Entry & Launch",
-          "zh": "市场进入与发布"
+          "en": "Commercial Case Studies",
+          "zh": "商业案例"
         },
         {
-          "path": "visible/button[3]",
-          "element": "<button>",
+          "path": "visible/p[4]",
+          "element": "<p>",
           "variant": "shared",
-          "en": "Industry & Exhibitions",
-          "zh": "行业与展会"
-        },
-        {
-          "path": "visible/button[4]",
-          "element": "<button>",
-          "variant": "shared",
-          "en": "Partnerships & Institutions",
-          "zh": "合作与机构"
-        },
-        {
-          "path": "visible/button[5]",
-          "element": "<button>",
-          "variant": "shared",
-          "en": "Brand & Content",
-          "zh": "品牌与内容"
+          "en": "Chinese companies operating at real UK and European market moments, with the commercial context separated clearly from Venus Bridge's verified role.",
+          "zh": "中国企业真实发生在英国与欧洲市场节点中的项目，并将商业背景与 Venus Bridge 经核实的职责清楚分开。"
         },
         {
           "path": "visible/span[2]",
@@ -2736,8 +2754,8 @@
           "path": "visible/span[7]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "Changan European Brand Launch 2025, Munich",
-          "zh": "长安汽车 2025 欧洲品牌发布｜慕尼黑"
+          "en": "Changan at IAA Mobility 2025 — European Expansion",
+          "zh": "长安汽车 IAA Mobility 2025｜欧洲市场扩张"
         },
         {
           "path": "visible/span[8]",
@@ -2876,8 +2894,8 @@
           "path": "visible/span[23]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "AGIBOT London Launch",
-          "zh": "AGIBOT 智元伦敦发布会"
+          "en": "AGIBOT UK Launch 2026, London",
+          "zh": "AGIBOT 智元英国发布会 2026｜伦敦"
         },
         {
           "path": "visible/span[24]",
@@ -2890,8 +2908,8 @@
           "path": "visible/span[25]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "London, UK",
-          "zh": "London, UK"
+          "en": "London, UK · 2026",
+          "zh": "London, UK · 2026"
         },
         {
           "path": "visible/a[15]",
@@ -2901,67 +2919,305 @@
           "zh": "↗"
         },
         {
+          "path": "visible/p[5]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "Market Entry & Launch",
+          "zh": "市场进入与发布"
+        },
+        {
+          "path": "visible/h2[2]",
+          "element": "<h2>",
+          "variant": "desktop-only",
+          "en": "BYD BD11 Double-Decker Bus Launch, London",
+          "zh": "BYD BD11 双层公交车伦敦发布"
+        },
+        {
+          "path": "visible/p[6]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "London, UK",
+          "zh": "London, UK"
+        },
+        {
+          "path": "visible/p[7]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "Market moment",
+          "zh": "市场节点"
+        },
+        {
+          "path": "visible/p[8]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "UK-Specific Product Introduction",
+          "zh": "英国特定产品发布"
+        },
+        {
+          "path": "visible/p[9]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
+        },
+        {
+          "path": "visible/p[10]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence.",
+          "zh": "Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。"
+        },
+        {
           "path": "visible/span[26]",
           "element": "<span>",
-          "variant": "desktop-only",
-          "en": "07",
-          "zh": "07"
+          "variant": "mobile-only",
+          "en": "01",
+          "zh": "01"
         },
         {
           "path": "visible/span[27]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Market Entry & Launch",
+          "zh": "市场进入与发布"
+        },
+        {
+          "path": "visible/span[28]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "BYD BD11 Double-Decker Bus Launch, London",
+          "zh": "BYD BD11 双层公交车伦敦发布"
+        },
+        {
+          "path": "visible/span[29]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "London, UK",
+          "zh": "London, UK"
+        },
+        {
+          "path": "visible/p[11]",
+          "element": "<p>",
+          "variant": "mobile-only",
+          "en": "Market moment",
+          "zh": "市场节点"
+        },
+        {
+          "path": "visible/p[12]",
+          "element": "<p>",
+          "variant": "mobile-only",
+          "en": "UK-Specific Product Introduction",
+          "zh": "英国特定产品发布"
+        },
+        {
+          "path": "visible/p[13]",
+          "element": "<p>",
+          "variant": "mobile-only",
+          "en": "Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence.",
+          "zh": "Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。"
+        },
+        {
+          "path": "visible/span[30]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Verified role",
+          "zh": "经核实职责"
+        },
+        {
+          "path": "visible/a[16]",
+          "element": "<a>",
+          "variant": "mobile-only",
+          "en": "View full case ↗",
+          "zh": "查看完整案例 ↗"
+        },
+        {
+          "path": "visible/span[31]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "02",
+          "zh": "02"
+        },
+        {
+          "path": "visible/span[32]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Market Entry & Launch",
+          "zh": "市场进入与发布"
+        },
+        {
+          "path": "visible/span[33]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Changan at IAA Mobility 2025 — European Expansion",
+          "zh": "长安汽车 IAA Mobility 2025｜欧洲市场扩张"
+        },
+        {
+          "path": "visible/span[34]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Munich, Germany · 2025",
+          "zh": "Munich, Germany · 2025"
+        },
+        {
+          "path": "visible/span[35]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "03",
+          "zh": "03"
+        },
+        {
+          "path": "visible/span[36]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Market Entry & Launch",
+          "zh": "市场进入与发布"
+        },
+        {
+          "path": "visible/span[37]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Geely London Brand Launch 2025",
+          "zh": "吉利伦敦品牌发布会 2025"
+        },
+        {
+          "path": "visible/span[38]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "London, UK · 2025",
+          "zh": "London, UK · 2025"
+        },
+        {
+          "path": "visible/span[39]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "04",
+          "zh": "04"
+        },
+        {
+          "path": "visible/span[40]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Industry & Exhibitions",
+          "zh": "行业与展会"
+        },
+        {
+          "path": "visible/span[41]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "CATL Open Day 2025, Munich",
+          "zh": "CATL Open Day 2025｜慕尼黑"
+        },
+        {
+          "path": "visible/span[42]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Munich, Germany · 2025",
+          "zh": "Munich, Germany · 2025"
+        },
+        {
+          "path": "visible/span[43]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "05",
+          "zh": "05"
+        },
+        {
+          "path": "visible/span[44]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Industry & Exhibitions",
+          "zh": "行业与展会"
+        },
+        {
+          "path": "visible/span[45]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Leapmotor at IAA Mobility 2023, Munich",
+          "zh": "零跑汽车 IAA Mobility 2023｜慕尼黑"
+        },
+        {
+          "path": "visible/span[46]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Munich, Germany · 2023",
+          "zh": "Munich, Germany · 2023"
+        },
+        {
+          "path": "visible/span[47]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "06",
+          "zh": "06"
+        },
+        {
+          "path": "visible/span[48]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Industry & Exhibitions",
+          "zh": "行业与展会"
+        },
+        {
+          "path": "visible/span[49]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "AGIBOT UK Launch 2026, London",
+          "zh": "AGIBOT 智元英国发布会 2026｜伦敦"
+        },
+        {
+          "path": "visible/span[50]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "London, UK · 2026",
+          "zh": "London, UK · 2026"
+        },
+        {
+          "path": "visible/p[14]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "0 2",
+          "zh": "0 2"
+        },
+        {
+          "path": "visible/h2[3]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "Local Brand & Production Execution",
+          "zh": "本地品牌与制作执行"
+        },
+        {
+          "path": "visible/p[15]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "UK localisation, locations, brand storytelling and production delivery.",
+          "zh": "英国本地化、实景协调、品牌叙事与制作执行。"
+        },
+        {
+          "path": "visible/span[51]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "01",
+          "zh": "01"
+        },
+        {
+          "path": "visible/span[52]",
           "element": "<span>",
           "variant": "desktop-only",
           "en": "London Automotive Brand Film",
           "zh": "伦敦汽车品牌影片"
         },
         {
-          "path": "visible/span[28]",
+          "path": "visible/span[53]",
           "element": "<span>",
           "variant": "desktop-only",
           "en": "Brand & Content",
           "zh": "品牌与内容"
         },
         {
-          "path": "visible/span[29]",
+          "path": "visible/span[54]",
           "element": "<span>",
           "variant": "desktop-only",
           "en": "London and England, UK",
           "zh": "London and England, UK"
-        },
-        {
-          "path": "visible/a[16]",
-          "element": "<a>",
-          "variant": "desktop-only",
-          "en": "↗",
-          "zh": "↗"
-        },
-        {
-          "path": "visible/span[30]",
-          "element": "<span>",
-          "variant": "desktop-only",
-          "en": "08",
-          "zh": "08"
-        },
-        {
-          "path": "visible/span[31]",
-          "element": "<span>",
-          "variant": "desktop-only",
-          "en": "Wang Linkai (Xiao Gui) London Concert 2026",
-          "zh": "王琳凯（小鬼）伦敦演唱会 2026"
-        },
-        {
-          "path": "visible/span[32]",
-          "element": "<span>",
-          "variant": "desktop-only",
-          "en": "Partnerships & Institutions",
-          "zh": "合作与机构"
-        },
-        {
-          "path": "visible/span[33]",
-          "element": "<span>",
-          "variant": "desktop-only",
-          "en": "London, UK · 2026",
-          "zh": "London, UK · 2026"
         },
         {
           "path": "visible/a[17]",
@@ -2971,67 +3227,137 @@
           "zh": "↗"
         },
         {
-          "path": "visible/span[34]",
-          "element": "<span>",
+          "path": "visible/p[16]",
+          "element": "<p>",
           "variant": "desktop-only",
-          "en": "09",
-          "zh": "09"
+          "en": "Brand & Content",
+          "zh": "品牌与内容"
         },
         {
-          "path": "visible/span[35]",
-          "element": "<span>",
+          "path": "visible/h2[4]",
+          "element": "<h2>",
           "variant": "desktop-only",
-          "en": "Yue Yunpeng London Live 2025",
-          "zh": "岳云鹏伦敦演出 2025"
+          "en": "London Automotive Brand Film",
+          "zh": "伦敦汽车品牌影片"
         },
         {
-          "path": "visible/span[36]",
+          "path": "visible/p[17]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "London and England, UK",
+          "zh": "London and England, UK"
+        },
+        {
+          "path": "visible/p[18]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "Venus Bridge role",
+          "zh": "Venus Bridge 职责"
+        },
+        {
+          "path": "visible/p[19]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "Venus Bridge coordinated UK locations and produced automotive imagery across London streets, interview, vehicle-movement and countryside settings.",
+          "zh": "Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。"
+        },
+        {
+          "path": "visible/span[55]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "01",
+          "zh": "01"
+        },
+        {
+          "path": "visible/span[56]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "Brand & Content",
+          "zh": "品牌与内容"
+        },
+        {
+          "path": "visible/span[57]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "London Automotive Brand Film",
+          "zh": "伦敦汽车品牌影片"
+        },
+        {
+          "path": "visible/span[58]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "London and England, UK",
+          "zh": "London and England, UK"
+        },
+        {
+          "path": "visible/p[20]",
+          "element": "<p>",
+          "variant": "mobile-only",
+          "en": "Venus Bridge role",
+          "zh": "Venus Bridge 职责"
+        },
+        {
+          "path": "visible/p[21]",
+          "element": "<p>",
+          "variant": "mobile-only",
+          "en": "Venus Bridge coordinated UK locations and produced automotive imagery across London streets, interview, vehicle-movement and countryside settings.",
+          "zh": "Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。"
+        },
+        {
+          "path": "visible/a[18]",
+          "element": "<a>",
+          "variant": "mobile-only",
+          "en": "View full case ↗",
+          "zh": "查看完整案例 ↗"
+        },
+        {
+          "path": "visible/p[22]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "0 3",
+          "zh": "0 3"
+        },
+        {
+          "path": "visible/h2[5]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "Creative & Cultural Experience",
+          "zh": "创意与文化项目经验"
+        },
+        {
+          "path": "visible/p[23]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Creative production, talent environments, fashion and entertainment execution, and local cultural fluency.",
+          "zh": "如实呈现创意制作、人才环境、时尚娱乐执行与文化语境能力。"
+        },
+        {
+          "path": "visible/span[59]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "01",
+          "zh": "01"
+        },
+        {
+          "path": "visible/span[60]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "Wang Linkai (Xiao Gui) London Concert 2026",
+          "zh": "王琳凯（小鬼）伦敦演唱会 2026"
+        },
+        {
+          "path": "visible/span[61]",
           "element": "<span>",
           "variant": "desktop-only",
           "en": "Partnerships & Institutions",
           "zh": "合作与机构"
         },
         {
-          "path": "visible/span[37]",
+          "path": "visible/span[62]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "London, UK · 2025",
-          "zh": "London, UK · 2025"
-        },
-        {
-          "path": "visible/a[18]",
-          "element": "<a>",
-          "variant": "desktop-only",
-          "en": "↗",
-          "zh": "↗"
-        },
-        {
-          "path": "visible/span[38]",
-          "element": "<span>",
-          "variant": "desktop-only",
-          "en": "10",
-          "zh": "10"
-        },
-        {
-          "path": "visible/span[39]",
-          "element": "<span>",
-          "variant": "desktop-only",
-          "en": "London Fashion Week 2025 — Editorial & Event Content",
-          "zh": "伦敦时装周 2025｜时尚编辑与活动内容"
-        },
-        {
-          "path": "visible/span[40]",
-          "element": "<span>",
-          "variant": "desktop-only",
-          "en": "Brand & Content",
-          "zh": "品牌与内容"
-        },
-        {
-          "path": "visible/span[41]",
-          "element": "<span>",
-          "variant": "desktop-only",
-          "en": "London, UK · 2025",
-          "zh": "London, UK · 2025"
+          "en": "London, UK · 2026",
+          "zh": "London, UK · 2026"
         },
         {
           "path": "visible/a[19]",
@@ -3041,32 +3367,32 @@
           "zh": "↗"
         },
         {
-          "path": "visible/span[42]",
+          "path": "visible/span[63]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "11",
-          "zh": "11"
+          "en": "02",
+          "zh": "02"
         },
         {
-          "path": "visible/span[43]",
+          "path": "visible/span[64]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "Selected Beauty & Fashion Brand Content",
-          "zh": "美妆与时尚品牌内容精选"
+          "en": "Yue Yunpeng London Live 2025",
+          "zh": "岳云鹏伦敦演出 2025"
         },
         {
-          "path": "visible/span[44]",
+          "path": "visible/span[65]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "Brand & Content",
-          "zh": "品牌与内容"
+          "en": "Partnerships & Institutions",
+          "zh": "合作与机构"
         },
         {
-          "path": "visible/span[45]",
+          "path": "visible/span[66]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "UK",
-          "zh": "UK"
+          "en": "London, UK · 2025",
+          "zh": "London, UK · 2025"
         },
         {
           "path": "visible/a[20]",
@@ -3076,32 +3402,32 @@
           "zh": "↗"
         },
         {
-          "path": "visible/span[46]",
+          "path": "visible/span[67]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "12",
-          "zh": "12"
+          "en": "03",
+          "zh": "03"
         },
         {
-          "path": "visible/span[47]",
+          "path": "visible/span[68]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "European Automotive Asset Programme",
-          "zh": "欧洲汽车品牌资产项目"
+          "en": "London Fashion Week 2025 — Editorial & Event Content",
+          "zh": "伦敦时装周 2025｜时尚编辑与活动内容"
         },
         {
-          "path": "visible/span[48]",
+          "path": "visible/span[69]",
           "element": "<span>",
           "variant": "desktop-only",
           "en": "Brand & Content",
           "zh": "品牌与内容"
         },
         {
-          "path": "visible/span[49]",
+          "path": "visible/span[70]",
           "element": "<span>",
           "variant": "desktop-only",
-          "en": "Europe",
-          "zh": "Europe"
+          "en": "London, UK · 2025",
+          "zh": "London, UK · 2025"
         },
         {
           "path": "visible/a[21]",
@@ -3111,476 +3437,350 @@
           "zh": "↗"
         },
         {
-          "path": "visible/p[3]",
-          "element": "<p>",
+          "path": "visible/span[71]",
+          "element": "<span>",
           "variant": "desktop-only",
-          "en": "Market Entry & Launch",
-          "zh": "市场进入与发布"
+          "en": "04",
+          "zh": "04"
         },
         {
-          "path": "visible/h2[1]",
+          "path": "visible/span[72]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "Selected Beauty & Fashion Brand Content",
+          "zh": "美妆与时尚品牌内容精选"
+        },
+        {
+          "path": "visible/span[73]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "Brand & Content",
+          "zh": "品牌与内容"
+        },
+        {
+          "path": "visible/span[74]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "UK",
+          "zh": "UK"
+        },
+        {
+          "path": "visible/a[22]",
+          "element": "<a>",
+          "variant": "desktop-only",
+          "en": "↗",
+          "zh": "↗"
+        },
+        {
+          "path": "visible/span[75]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "05",
+          "zh": "05"
+        },
+        {
+          "path": "visible/span[76]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "European Automotive Asset Programme",
+          "zh": "欧洲汽车品牌资产项目"
+        },
+        {
+          "path": "visible/span[77]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "Brand & Content",
+          "zh": "品牌与内容"
+        },
+        {
+          "path": "visible/span[78]",
+          "element": "<span>",
+          "variant": "desktop-only",
+          "en": "Europe",
+          "zh": "Europe"
+        },
+        {
+          "path": "visible/a[23]",
+          "element": "<a>",
+          "variant": "desktop-only",
+          "en": "↗",
+          "zh": "↗"
+        },
+        {
+          "path": "visible/p[24]",
+          "element": "<p>",
+          "variant": "desktop-only",
+          "en": "Partnerships & Institutions",
+          "zh": "合作与机构"
+        },
+        {
+          "path": "visible/h2[6]",
           "element": "<h2>",
           "variant": "desktop-only",
-          "en": "BYD BD11 Double-Decker Bus Launch, London",
-          "zh": "BYD BD11 双层公交车伦敦发布"
+          "en": "Wang Linkai (Xiao Gui) London Concert 2026",
+          "zh": "王琳凯（小鬼）伦敦演唱会 2026"
         },
         {
-          "path": "visible/p[4]",
+          "path": "visible/p[25]",
           "element": "<p>",
           "variant": "desktop-only",
-          "en": "London, UK",
-          "zh": "London, UK"
+          "en": "London, UK · 2026",
+          "zh": "London, UK · 2026"
         },
         {
-          "path": "visible/p[5]",
+          "path": "visible/p[26]",
           "element": "<p>",
           "variant": "desktop-only",
           "en": "Venus Bridge role",
           "zh": "Venus Bridge 职责"
         },
         {
-          "path": "visible/p[6]",
+          "path": "visible/p[27]",
           "element": "<p>",
           "variant": "desktop-only",
-          "en": "Venus Bridge delivered on-site visual documentation of the BD11 product introduction in London, covering the vehicle, venue and audience setting.",
-          "zh": "Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。"
+          "en": "Venus Bridge handled live-event photography and editorial image selection within the London performance setting.",
+          "zh": "Venus Bridge 负责伦敦演出现场的视觉记录与编辑选片。"
         },
         {
-          "path": "visible/span[50]",
+          "path": "visible/span[79]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "01",
           "zh": "01"
         },
         {
-          "path": "visible/span[51]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Market Entry & Launch",
-          "zh": "市场进入与发布"
-        },
-        {
-          "path": "visible/span[52]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "BYD BD11 Double-Decker Bus Launch, London",
-          "zh": "BYD BD11 双层公交车伦敦发布"
-        },
-        {
-          "path": "visible/span[53]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "London, UK",
-          "zh": "London, UK"
-        },
-        {
-          "path": "visible/p[7]",
-          "element": "<p>",
-          "variant": "mobile-only",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
-        },
-        {
-          "path": "visible/p[8]",
-          "element": "<p>",
-          "variant": "mobile-only",
-          "en": "Venus Bridge delivered on-site visual documentation of the BD11 product introduction in London, covering the vehicle, venue and audience setting.",
-          "zh": "Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。"
-        },
-        {
-          "path": "visible/a[22]",
-          "element": "<a>",
-          "variant": "mobile-only",
-          "en": "View full case ↗",
-          "zh": "查看完整案例 ↗"
-        },
-        {
-          "path": "visible/span[54]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "02",
-          "zh": "02"
-        },
-        {
-          "path": "visible/span[55]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Market Entry & Launch",
-          "zh": "市场进入与发布"
-        },
-        {
-          "path": "visible/span[56]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Changan European Brand Launch 2025, Munich",
-          "zh": "长安汽车 2025 欧洲品牌发布｜慕尼黑"
-        },
-        {
-          "path": "visible/span[57]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Munich, Germany · 2025",
-          "zh": "Munich, Germany · 2025"
-        },
-        {
-          "path": "visible/span[58]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "03",
-          "zh": "03"
-        },
-        {
-          "path": "visible/span[59]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Market Entry & Launch",
-          "zh": "市场进入与发布"
-        },
-        {
-          "path": "visible/span[60]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Geely London Brand Launch 2025",
-          "zh": "吉利伦敦品牌发布会 2025"
-        },
-        {
-          "path": "visible/span[61]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "London, UK · 2025",
-          "zh": "London, UK · 2025"
-        },
-        {
-          "path": "visible/span[62]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "04",
-          "zh": "04"
-        },
-        {
-          "path": "visible/span[63]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Industry & Exhibitions",
-          "zh": "行业与展会"
-        },
-        {
-          "path": "visible/span[64]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "CATL Open Day 2025, Munich",
-          "zh": "CATL Open Day 2025｜慕尼黑"
-        },
-        {
-          "path": "visible/span[65]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Munich, Germany · 2025",
-          "zh": "Munich, Germany · 2025"
-        },
-        {
-          "path": "visible/span[66]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "05",
-          "zh": "05"
-        },
-        {
-          "path": "visible/span[67]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Industry & Exhibitions",
-          "zh": "行业与展会"
-        },
-        {
-          "path": "visible/span[68]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Leapmotor at IAA Mobility 2023, Munich",
-          "zh": "零跑汽车 IAA Mobility 2023｜慕尼黑"
-        },
-        {
-          "path": "visible/span[69]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Munich, Germany · 2023",
-          "zh": "Munich, Germany · 2023"
-        },
-        {
-          "path": "visible/span[70]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "06",
-          "zh": "06"
-        },
-        {
-          "path": "visible/span[71]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Industry & Exhibitions",
-          "zh": "行业与展会"
-        },
-        {
-          "path": "visible/span[72]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "AGIBOT London Launch",
-          "zh": "AGIBOT 智元伦敦发布会"
-        },
-        {
-          "path": "visible/span[73]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "London, UK",
-          "zh": "London, UK"
-        },
-        {
-          "path": "visible/span[74]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "07",
-          "zh": "07"
-        },
-        {
-          "path": "visible/span[75]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "Brand & Content",
-          "zh": "品牌与内容"
-        },
-        {
-          "path": "visible/span[76]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "London Automotive Brand Film",
-          "zh": "伦敦汽车品牌影片"
-        },
-        {
-          "path": "visible/span[77]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "London and England, UK",
-          "zh": "London and England, UK"
-        },
-        {
-          "path": "visible/span[78]",
-          "element": "<span>",
-          "variant": "mobile-only",
-          "en": "08",
-          "zh": "08"
-        },
-        {
-          "path": "visible/span[79]",
+          "path": "visible/span[80]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "Partnerships & Institutions",
           "zh": "合作与机构"
         },
         {
-          "path": "visible/span[80]",
+          "path": "visible/span[81]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "Wang Linkai (Xiao Gui) London Concert 2026",
           "zh": "王琳凯（小鬼）伦敦演唱会 2026"
         },
         {
-          "path": "visible/span[81]",
+          "path": "visible/span[82]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "London, UK · 2026",
           "zh": "London, UK · 2026"
         },
         {
-          "path": "visible/span[82]",
-          "element": "<span>",
+          "path": "visible/p[28]",
+          "element": "<p>",
           "variant": "mobile-only",
-          "en": "09",
-          "zh": "09"
+          "en": "Venus Bridge role",
+          "zh": "Venus Bridge 职责"
+        },
+        {
+          "path": "visible/p[29]",
+          "element": "<p>",
+          "variant": "mobile-only",
+          "en": "Venus Bridge handled live-event photography and editorial image selection within the London performance setting.",
+          "zh": "Venus Bridge 负责伦敦演出现场的视觉记录与编辑选片。"
+        },
+        {
+          "path": "visible/a[24]",
+          "element": "<a>",
+          "variant": "mobile-only",
+          "en": "View full case ↗",
+          "zh": "查看完整案例 ↗"
         },
         {
           "path": "visible/span[83]",
+          "element": "<span>",
+          "variant": "mobile-only",
+          "en": "02",
+          "zh": "02"
+        },
+        {
+          "path": "visible/span[84]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "Partnerships & Institutions",
           "zh": "合作与机构"
         },
         {
-          "path": "visible/span[84]",
+          "path": "visible/span[85]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "Yue Yunpeng London Live 2025",
           "zh": "岳云鹏伦敦演出 2025"
         },
         {
-          "path": "visible/span[85]",
+          "path": "visible/span[86]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "London, UK · 2025",
           "zh": "London, UK · 2025"
         },
         {
-          "path": "visible/span[86]",
+          "path": "visible/span[87]",
           "element": "<span>",
           "variant": "mobile-only",
-          "en": "10",
-          "zh": "10"
+          "en": "03",
+          "zh": "03"
         },
         {
-          "path": "visible/span[87]",
+          "path": "visible/span[88]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "Brand & Content",
           "zh": "品牌与内容"
         },
         {
-          "path": "visible/span[88]",
+          "path": "visible/span[89]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "London Fashion Week 2025 — Editorial & Event Content",
           "zh": "伦敦时装周 2025｜时尚编辑与活动内容"
         },
         {
-          "path": "visible/span[89]",
+          "path": "visible/span[90]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "London, UK · 2025",
           "zh": "London, UK · 2025"
         },
         {
-          "path": "visible/span[90]",
+          "path": "visible/span[91]",
           "element": "<span>",
           "variant": "mobile-only",
-          "en": "11",
-          "zh": "11"
+          "en": "04",
+          "zh": "04"
         },
         {
-          "path": "visible/span[91]",
+          "path": "visible/span[92]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "Capability evidence",
           "zh": "能力证据"
         },
         {
-          "path": "visible/span[92]",
+          "path": "visible/span[93]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "Selected Beauty & Fashion Brand Content",
           "zh": "美妆与时尚品牌内容精选"
         },
         {
-          "path": "visible/span[93]",
+          "path": "visible/span[94]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "UK",
           "zh": "UK"
         },
         {
-          "path": "visible/span[94]",
+          "path": "visible/span[95]",
           "element": "<span>",
           "variant": "mobile-only",
-          "en": "12",
-          "zh": "12"
+          "en": "05",
+          "zh": "05"
         },
         {
-          "path": "visible/span[95]",
+          "path": "visible/span[96]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "Capability evidence",
           "zh": "能力证据"
         },
         {
-          "path": "visible/span[96]",
+          "path": "visible/span[97]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "European Automotive Asset Programme",
           "zh": "欧洲汽车品牌资产项目"
         },
         {
-          "path": "visible/span[97]",
+          "path": "visible/span[98]",
           "element": "<span>",
           "variant": "mobile-only",
           "en": "Europe",
           "zh": "Europe"
         },
         {
-          "path": "visible/p[9]",
+          "path": "visible/p[30]",
           "element": "<p>",
           "variant": "shared",
           "en": "Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution.",
           "zh": "Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。"
         },
         {
-          "path": "visible/p[10]",
+          "path": "visible/p[31]",
           "element": "<p>",
           "variant": "shared",
           "en": "London, United Kingdom",
           "zh": "London, United Kingdom"
         },
         {
-          "path": "visible/a[23]",
+          "path": "visible/a[25]",
           "element": "<a>",
           "variant": "shared",
           "en": "For Companies",
           "zh": "面向企业"
         },
         {
-          "path": "visible/a[24]",
+          "path": "visible/a[26]",
           "element": "<a>",
           "variant": "shared",
           "en": "For Partners",
           "zh": "面向合作方"
         },
         {
-          "path": "visible/a[25]",
+          "path": "visible/a[27]",
           "element": "<a>",
           "variant": "shared",
           "en": "Case Studies",
           "zh": "案例研究"
         },
         {
-          "path": "visible/a[26]",
+          "path": "visible/a[28]",
           "element": "<a>",
           "variant": "shared",
           "en": "How We Work",
           "zh": "工作方式"
         },
         {
-          "path": "visible/a[27]",
+          "path": "visible/a[29]",
           "element": "<a>",
           "variant": "shared",
           "en": "About Us",
           "zh": "关于我们"
         },
         {
-          "path": "visible/a[28]",
+          "path": "visible/a[30]",
           "element": "<a>",
           "variant": "shared",
           "en": "Contact",
           "zh": "联系"
         },
         {
-          "path": "visible/a[29]",
+          "path": "visible/a[31]",
           "element": "<a>",
           "variant": "shared",
           "en": "Privacy",
           "zh": "隐私"
         },
         {
-          "path": "visible/a[30]",
+          "path": "visible/a[32]",
           "element": "<a>",
           "variant": "shared",
           "en": "Terms",
           "zh": "条款"
         },
         {
-          "path": "visible/span[98]",
+          "path": "visible/span[99]",
           "element": "<span>",
           "variant": "shared",
           "en": "Venus Bridge",
           "zh": "Venus Bridge"
         },
         {
-          "path": "visible/span[99]",
+          "path": "visible/span[100]",
           "element": "<span>",
           "variant": "shared",
           "en": "© 2026 Venus Bridge",
@@ -3591,7 +3791,7 @@
     {
       "route": "/how-we-work",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 99,
       "currentChineseCount": 95,
@@ -4267,7 +4467,7 @@
     {
       "route": "/about",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 163,
       "currentChineseCount": 174,
@@ -5496,7 +5696,7 @@
     {
       "route": "/contact",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 47,
       "currentChineseCount": 46,
@@ -5829,7 +6029,7 @@
     {
       "route": "/privacy",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 31,
       "currentChineseCount": 29,
@@ -6043,7 +6243,7 @@
     {
       "route": "/terms",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 28,
       "currentChineseCount": 26,
@@ -6236,11 +6436,11 @@
     {
       "route": "/work/byd-bd11-london",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 73,
-      "currentChineseCount": 72,
-      "firstChineseMismatch": 57,
+      "currentChineseCount": 74,
+      "firstChineseMismatch": 11,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -6323,8 +6523,8 @@
           "path": "visible/p[1]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Market Entry & Launch",
-          "zh": "市场进入与发布"
+          "en": "UK-Specific Product Introduction",
+          "zh": "英国特定产品发布"
         },
         {
           "path": "visible/h1[1]",
@@ -6337,8 +6537,8 @@
           "path": "visible/p[2]",
           "element": "<p>",
           "variant": "shared",
-          "en": "An approved visual record preserving a recognisable UK product presence and the live presentation setting.",
-          "zh": "形成经批准的视觉记录，保留清晰可辨的英国产品亮相与现场发布环境。"
+          "en": "BYD gave the BD11 electric double-decker its global debut at the London Bus Museum, placing a new commercial vehicle directly in the public-transport environment for which it was developed.",
+          "zh": "BYD 在伦敦巴士博物馆完成 BD11 纯电动双层公交车的全球首发，将一款新商用车型直接置于其面向的伦敦公共交通环境中。"
         },
         {
           "path": "visible/dt[1]",
@@ -6386,15 +6586,15 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
           "element": "<dd>",
           "variant": "shared",
-          "en": "On-site visual documentation in London · UK brand evidence",
-          "zh": "伦敦发布记录 · 面向英国的品牌证据"
+          "en": "Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence.",
+          "zh": "Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。"
         },
         {
           "path": "visible/p[3]",
@@ -6407,15 +6607,15 @@
           "path": "visible/h2[1]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Project Objective",
-          "zh": "项目目标"
+          "en": "Market Moment",
+          "zh": "市场节点"
         },
         {
           "path": "visible/p[4]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Evidence of UK market presence from a London product introduction",
-          "zh": "围绕伦敦产品亮相建立英国市场落地证据"
+          "en": "BYD gave the BD11 electric double-decker its global debut at the London Bus Museum, placing a new commercial vehicle directly in the public-transport environment for which it was developed.",
+          "zh": "BYD 在伦敦巴士博物馆完成 BD11 纯电动双层公交车的全球首发，将一款新商用车型直接置于其面向的伦敦公共交通环境中。"
         },
         {
           "path": "visible/p[5]",
@@ -6428,211 +6628,239 @@
           "path": "visible/h2[2]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Business Context",
-          "zh": "商业背景"
+          "en": "Why It Mattered",
+          "zh": "为何重要"
         },
         {
           "path": "visible/p[6]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Photography covering the BD11 vehicle, venue and audience context.",
-          "zh": "覆盖 BD11 车辆、场地与观众环境的摄影记录。"
+          "en": "The official launch positioned the BD11 as a new-generation electric double-decker for the UK, linking the product introduction to BYD's established electric-bus activity in London.",
+          "zh": "官方发布将 BD11 定位为面向英国的新一代纯电动双层公交车，并把本次产品亮相与 BYD 已有的伦敦电动公交业务联系起来。"
         },
         {
           "path": "visible/p[7]",
           "element": "<p>",
           "variant": "shared",
-          "en": "03 · Challenge",
-          "zh": "03 · 挑战"
+          "en": "03",
+          "zh": "03"
+        },
+        {
+          "path": "visible/h2[3]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "Project Objective",
+          "zh": "项目目标"
         },
         {
           "path": "visible/p[8]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Make the product, people and local market setting clear within a time-bound live launch.",
-          "zh": "在时间有限的发布现场，同时清楚呈现产品、人物与当地市场环境。"
+          "en": "Create an approved public record of the vehicle introduction, presentation and recognisable London setting.",
+          "zh": "形成一份经批准的公开记录，清楚呈现车辆亮相、发布环节与可识别的伦敦环境。"
         },
         {
           "path": "visible/p[9]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Case-specific challenge",
+          "zh": "本项目的具体挑战"
+        },
+        {
+          "path": "visible/p[10]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Present a UK-specific commercial vehicle with enough product, venue and audience context to make its London public-transport setting immediately legible.",
+          "zh": "在产品、场地与观众语境之间建立清晰联系，使这款面向英国的商用车辆能够立即被识别为置身伦敦公共交通环境。"
+        },
+        {
+          "path": "visible/p[11]",
           "element": "<p>",
           "variant": "shared",
           "en": "04 · Venus Bridge Role",
           "zh": "04 · Venus Bridge 职责"
         },
         {
-          "path": "visible/h2[3]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "The work delivered within this project.",
-          "zh": "本项目中实际承担的工作。"
-        },
-        {
-          "path": "visible/p[10]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Venus Bridge delivered on-site visual documentation of the BD11 product introduction in London, covering the vehicle, venue and audience setting.",
-          "zh": "Venus Bridge 完成 BD11 产品亮相的伦敦现场视觉记录，覆盖车辆、场地与观众环境。"
-        },
-        {
-          "path": "visible/li[1]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Event Documentation",
-          "zh": "活动记录"
-        },
-        {
-          "path": "visible/li[2]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Brand Presentation",
-          "zh": "品牌呈现"
-        },
-        {
-          "path": "visible/li[3]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Post-project Assets",
-          "zh": "项目后续资产"
-        },
-        {
-          "path": "visible/p[11]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Scope on record",
-          "zh": "记录中的工作范围"
-        },
-        {
-          "path": "visible/li[4]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "On-site visual documentation in London",
-          "zh": "伦敦发布记录"
-        },
-        {
-          "path": "visible/li[5]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "UK brand evidence",
-          "zh": "面向英国的品牌证据"
-        },
-        {
           "path": "visible/p[12]",
           "element": "<p>",
           "variant": "shared",
-          "en": "05 · Strategy / Approach",
-          "zh": "05 · 策略与方法"
-        },
-        {
-          "path": "visible/span[2]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "01",
-          "zh": "01"
-        },
-        {
-          "path": "visible/p[13]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Identify the vehicle and venue context",
-          "zh": "明确车辆与场地语境"
-        },
-        {
-          "path": "visible/span[3]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "02",
-          "zh": "02"
-        },
-        {
-          "path": "visible/p[14]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Document product, presentation and audience",
-          "zh": "记录产品、演示与观众"
-        },
-        {
-          "path": "visible/span[4]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "03",
-          "zh": "03"
-        },
-        {
-          "path": "visible/p[15]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Deliver a coherent visual record of the UK setting",
-          "zh": "交付连贯的英国场景视觉记录"
-        },
-        {
-          "path": "visible/p[16]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "06 · Local Delivery",
-          "zh": "06 · 本地执行"
+          "en": "Venus Bridge delivered on-site visual documentation in London and prepared approved UK-facing brand evidence.",
+          "zh": "Venus Bridge 完成伦敦现场视觉记录，并整理获准使用的面向英国的品牌证据。"
         },
         {
           "path": "visible/h2[4]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "On the ground",
-          "zh": "现场工作"
+          "en": "What Venus Bridge did",
+          "zh": "实际完成"
         },
         {
-          "path": "visible/p[17]",
-          "element": "<p>",
+          "path": "visible/li[1]",
+          "element": "<li>",
           "variant": "shared",
-          "en": "Captured the vehicle and presentation setting.",
-          "zh": "拍摄车辆与展示现场环境。"
+          "en": "On-site visual documentation",
+          "zh": "现场视觉记录"
         },
         {
-          "path": "visible/p[18]",
-          "element": "<p>",
+          "path": "visible/li[2]",
+          "element": "<li>",
           "variant": "shared",
-          "en": "07 · Outputs / Outcomes",
-          "zh": "07 · 交付与成果"
+          "en": "Product, venue and audience coverage",
+          "zh": "产品、场地与观众记录"
+        },
+        {
+          "path": "visible/li[3]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Approved asset preparation",
+          "zh": "获准资产整理"
         },
         {
           "path": "visible/h2[5]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "7 approved public project images.",
-          "zh": "7 张获准公开使用的项目影像。"
+          "en": "What Venus Bridge did not claim",
+          "zh": "不作主张"
         },
         {
-          "path": "visible/p[19]",
-          "element": "<p>",
+          "path": "visible/li[4]",
+          "element": "<li>",
           "variant": "shared",
-          "en": "Verified work",
-          "zh": "已核实工作"
+          "en": "Market-entry strategy",
+          "zh": "市场进入战略"
+        },
+        {
+          "path": "visible/li[5]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Event ownership",
+          "zh": "活动主办"
         },
         {
           "path": "visible/li[6]",
           "element": "<li>",
           "variant": "shared",
-          "en": "On-site visual documentation in London",
-          "zh": "伦敦发布记录"
+          "en": "Sales or operator outcomes",
+          "zh": "销售或运营商成果"
         },
         {
-          "path": "visible/li[7]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "UK brand evidence",
-          "zh": "面向英国的品牌证据"
-        },
-        {
-          "path": "visible/p[20]",
+          "path": "visible/p[13]",
           "element": "<p>",
           "variant": "shared",
-          "en": "08 · What Remained Useful",
-          "zh": "08 · 项目之后仍可使用的价值"
+          "en": "05 · Documentation Approach",
+          "zh": "05 · 记录方法"
         },
         {
           "path": "visible/h2[6]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "An approved visual record preserving a recognisable UK product presence and the live presentation setting.",
-          "zh": "形成经批准的视觉记录，保留清晰可辨的英国产品亮相与现场发布环境。"
+          "en": "Before",
+          "zh": "前期"
+        },
+        {
+          "path": "visible/li[7]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Brief and coverage priorities",
+          "zh": "项目简报与拍摄重点对齐"
+        },
+        {
+          "path": "visible/h2[7]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "On the Ground",
+          "zh": "现场"
+        },
+        {
+          "path": "visible/li[8]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Vehicle, presentation and audience documentation",
+          "zh": "车辆、发布与观众现场记录"
+        },
+        {
+          "path": "visible/h2[8]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "After",
+          "zh": "后续"
+        },
+        {
+          "path": "visible/li[9]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Approved public asset selection",
+          "zh": "获准公开资产筛选"
+        },
+        {
+          "path": "visible/p[14]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "06 · Verified Outputs",
+          "zh": "06 · 经核实的交付"
+        },
+        {
+          "path": "visible/li[10]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Approved London launch record",
+          "zh": "经批准的伦敦发布记录"
+        },
+        {
+          "path": "visible/li[11]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Product and presentation imagery",
+          "zh": "产品与发布环节影像"
+        },
+        {
+          "path": "visible/p[15]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public evidence available",
+          "zh": "公开证据"
+        },
+        {
+          "path": "visible/p[16]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "7 approved images",
+          "zh": "7 张获准公开使用的影像"
+        },
+        {
+          "path": "visible/p[17]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "07 · Verified Result",
+          "zh": "07 · 经核实的结果"
+        },
+        {
+          "path": "visible/h2[9]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "A coherent, rights-approved record of the BD11 introduction in its visible London market setting.",
+          "zh": "形成一套权利获批、连贯呈现 BD11 在伦敦目标市场环境中亮相的记录。"
+        },
+        {
+          "path": "visible/p[18]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "A reusable record of the product introduction and London setting.",
+          "zh": "一套可继续使用的产品亮相与伦敦环境记录。"
+        },
+        {
+          "path": "visible/p[19]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "09 · Evidence & Claim Boundary",
+          "zh": "09 · 证据与主张边界"
+        },
+        {
+          "path": "visible/p[20]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge.",
+          "zh": "公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。"
         },
         {
           "path": "visible/p[21]",
@@ -6642,25 +6870,11 @@
           "zh": "下一个项目"
         },
         {
-          "path": "visible/span[5]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "Changan European Brand Launch 2025, Munich",
-          "zh": "长安汽车 2025 欧洲品牌发布｜慕尼黑"
-        },
-        {
-          "path": "visible/span[6]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "Market Entry & Launch ↗",
-          "zh": "市场进入与发布 ↗"
-        },
-        {
           "path": "visible/a[11]",
           "element": "<a>",
           "variant": "shared",
-          "en": "Discuss a Similar Market Goal",
-          "zh": "讨论类似市场目标"
+          "en": "Changan at IAA Mobility 2025 — European Expansion ↗",
+          "zh": "长安汽车 IAA Mobility 2025｜欧洲市场扩张 ↗"
         },
         {
           "path": "visible/p[22]",
@@ -6733,14 +6947,14 @@
           "zh": "条款"
         },
         {
-          "path": "visible/span[7]",
+          "path": "visible/span[2]",
           "element": "<span>",
           "variant": "shared",
           "en": "Venus Bridge",
           "zh": "Venus Bridge"
         },
         {
-          "path": "visible/span[8]",
+          "path": "visible/span[3]",
           "element": "<span>",
           "variant": "shared",
           "en": "© 2026 Venus Bridge",
@@ -6751,11 +6965,11 @@
     {
       "route": "/work/changan-europe-launch-2025",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 73,
-      "currentChineseCount": 72,
-      "firstChineseMismatch": 57,
+      "currentChineseCount": 74,
+      "firstChineseMismatch": 11,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -6838,22 +7052,22 @@
           "path": "visible/p[1]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Market Entry & Launch",
-          "zh": "市场进入与发布"
+          "en": "European Expansion at IAA Mobility",
+          "zh": "IAA Mobility 欧洲市场扩张"
         },
         {
           "path": "visible/h1[1]",
           "element": "<h1>",
           "variant": "shared",
-          "en": "Changan European Brand Launch 2025, Munich",
-          "zh": "长安汽车 2025 欧洲品牌发布｜慕尼黑"
+          "en": "Changan at IAA Mobility 2025 — European Expansion",
+          "zh": "长安汽车 IAA Mobility 2025｜欧洲市场扩张"
         },
         {
           "path": "visible/p[2]",
           "element": "<p>",
           "variant": "shared",
-          "en": "A coherent visual record of Changan's visible European launch presence, spanning product, people and event context.",
-          "zh": "形成连贯的欧洲发布现场记录，覆盖产品、人员与活动环境。"
+          "en": "Changan appeared at IAA Mobility 2025 in Munich with CHANGAN, DEEPAL and AVATR, and announced the European market launch of the DEEPAL S05.",
+          "zh": "长安汽车携 CHANGAN、DEEPAL 与 AVATR 亮相 2025 慕尼黑国际车展，并宣布 DEEPAL S05 在欧洲上市。"
         },
         {
           "path": "visible/dt[1]",
@@ -6901,15 +7115,15 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
           "element": "<dd>",
           "variant": "shared",
-          "en": "Launch-context documentation · Visual assets showing the European setting",
-          "zh": "发布场景记录 · 面向欧洲的品牌资产"
+          "en": "Venus Bridge documented the Munich exhibition setting across the stage, vehicles and guest viewing environment.",
+          "zh": "Venus Bridge 记录慕尼黑展会现场，覆盖舞台、车辆与嘉宾观看环境。"
         },
         {
           "path": "visible/p[3]",
@@ -6922,15 +7136,15 @@
           "path": "visible/h2[1]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Project Objective",
-          "zh": "项目目标"
+          "en": "Market Moment",
+          "zh": "市场节点"
         },
         {
           "path": "visible/p[4]",
           "element": "<p>",
           "variant": "shared",
-          "en": "European-market brand visibility in an international launch setting",
-          "zh": "国际发布场景中的欧洲市场品牌可见度"
+          "en": "Changan appeared at IAA Mobility 2025 in Munich with CHANGAN, DEEPAL and AVATR, and announced the European market launch of the DEEPAL S05.",
+          "zh": "长安汽车携 CHANGAN、DEEPAL 与 AVATR 亮相 2025 慕尼黑国际车展，并宣布 DEEPAL S05 在欧洲上市。"
         },
         {
           "path": "visible/p[5]",
@@ -6943,211 +7157,239 @@
           "path": "visible/h2[2]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Business Context",
-          "zh": "商业背景"
+          "en": "Why It Mattered",
+          "zh": "为何重要"
         },
         {
           "path": "visible/p[6]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Visual coverage across presentation, vehicle reveal and guest viewing moments.",
-          "zh": "欧洲品牌发布的视觉记录，覆盖舞台演示、车辆亮相与嘉宾观看场景。"
+          "en": "The Munich activity followed Changan's formal European brand launch in Mainz in March 2025 and made its expansion visible within a major European mobility event.",
+          "zh": "慕尼黑活动发生在长安汽车 2025 年 3 月于美因茨完成正式欧洲品牌发布之后，使其欧洲扩张在重要 mobility 行业活动中得到公开呈现。"
         },
         {
           "path": "visible/p[7]",
           "element": "<p>",
           "variant": "shared",
-          "en": "03 · Challenge",
-          "zh": "03 · 挑战"
+          "en": "03",
+          "zh": "03"
+        },
+        {
+          "path": "visible/h2[3]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "Project Objective",
+          "zh": "项目目标"
         },
         {
           "path": "visible/p[8]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Make the product, people and local market setting clear within a time-bound live launch.",
-          "zh": "在时间有限的发布现场，同时清楚呈现产品、人物与当地市场环境。"
+          "en": "Create an approved record connecting the vehicles, stage activity and visitor setting at IAA Mobility in Munich.",
+          "zh": "形成一套经批准的记录，将慕尼黑 IAA Mobility 的车辆、舞台活动与观众环境联系起来。"
         },
         {
           "path": "visible/p[9]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Case-specific challenge",
+          "zh": "本项目的具体挑战"
+        },
+        {
+          "path": "visible/p[10]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Show Changan's European expansion through the specific IAA Mobility setting without mislabelling the Munich appearance as the earlier formal European brand launch.",
+          "zh": "通过明确的 IAA Mobility 场景呈现长安汽车的欧洲扩张，同时避免把慕尼黑亮相误写为此前的正式欧洲品牌发布。"
+        },
+        {
+          "path": "visible/p[11]",
           "element": "<p>",
           "variant": "shared",
           "en": "04 · Venus Bridge Role",
           "zh": "04 · Venus Bridge 职责"
         },
         {
-          "path": "visible/h2[3]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "The work delivered within this project.",
-          "zh": "本项目中实际承担的工作。"
-        },
-        {
-          "path": "visible/p[10]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Venus Bridge documented the Munich launch setting across the stage, vehicle reveal and guest viewing environment.",
-          "zh": "Venus Bridge 记录慕尼黑发布现场，覆盖舞台、车辆亮相与嘉宾观看环境。"
-        },
-        {
-          "path": "visible/li[1]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Event Documentation",
-          "zh": "活动记录"
-        },
-        {
-          "path": "visible/li[2]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Brand Presentation",
-          "zh": "品牌呈现"
-        },
-        {
-          "path": "visible/li[3]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Post-project Assets",
-          "zh": "项目后续资产"
-        },
-        {
-          "path": "visible/p[11]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Scope on record",
-          "zh": "记录中的工作范围"
-        },
-        {
-          "path": "visible/li[4]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Launch-context documentation",
-          "zh": "发布场景记录"
-        },
-        {
-          "path": "visible/li[5]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Visual assets showing the European setting",
-          "zh": "面向欧洲的品牌资产"
-        },
-        {
           "path": "visible/p[12]",
           "element": "<p>",
           "variant": "shared",
-          "en": "05 · Strategy / Approach",
-          "zh": "05 · 策略与方法"
-        },
-        {
-          "path": "visible/span[2]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "01",
-          "zh": "01"
-        },
-        {
-          "path": "visible/p[13]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Map the visible launch moments",
-          "zh": "梳理可见的发布关键场景"
-        },
-        {
-          "path": "visible/span[3]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "02",
-          "zh": "02"
-        },
-        {
-          "path": "visible/p[14]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Document stage, vehicles and guest context",
-          "zh": "记录舞台、车辆与嘉宾环境"
-        },
-        {
-          "path": "visible/span[4]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "03",
-          "zh": "03"
-        },
-        {
-          "path": "visible/p[15]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Select a coherent set of visual assets showing the European setting",
-          "zh": "筛选连贯的欧洲场景视觉资产"
-        },
-        {
-          "path": "visible/p[16]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "06 · Local Delivery",
-          "zh": "06 · 本地执行"
+          "en": "Venus Bridge documented the Munich exhibition setting across the stage, vehicles and guest viewing environment.",
+          "zh": "Venus Bridge 记录慕尼黑展会现场，覆盖舞台、车辆与嘉宾观看环境。"
         },
         {
           "path": "visible/h2[4]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "On the ground",
-          "zh": "现场工作"
+          "en": "What Venus Bridge did",
+          "zh": "实际完成"
         },
         {
-          "path": "visible/p[17]",
-          "element": "<p>",
+          "path": "visible/li[1]",
+          "element": "<li>",
           "variant": "shared",
-          "en": "Captured the stage, vehicles and guest context in Munich.",
-          "zh": "在慕尼黑拍摄舞台、车辆与嘉宾环境。"
+          "en": "Exhibition documentation",
+          "zh": "展会记录"
         },
         {
-          "path": "visible/p[18]",
-          "element": "<p>",
+          "path": "visible/li[2]",
+          "element": "<li>",
           "variant": "shared",
-          "en": "07 · Outputs / Outcomes",
-          "zh": "07 · 交付与成果"
+          "en": "Vehicle and stage coverage",
+          "zh": "车辆与舞台记录"
+        },
+        {
+          "path": "visible/li[3]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Visual assets showing the European setting",
+          "zh": "呈现欧洲场景的视觉资产"
         },
         {
           "path": "visible/h2[5]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "7 approved public project images.",
-          "zh": "7 张获准公开使用的项目影像。"
+          "en": "What Venus Bridge did not claim",
+          "zh": "不作主张"
         },
         {
-          "path": "visible/p[19]",
-          "element": "<p>",
+          "path": "visible/li[4]",
+          "element": "<li>",
           "variant": "shared",
-          "en": "Verified work",
-          "zh": "已核实工作"
+          "en": "Formal European launch ownership",
+          "zh": "正式欧洲发布主办"
+        },
+        {
+          "path": "visible/li[5]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "European expansion strategy",
+          "zh": "欧洲扩张战略"
         },
         {
           "path": "visible/li[6]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Launch-context documentation",
-          "zh": "发布场景记录"
+          "en": "Sales or distribution outcomes",
+          "zh": "销售或渠道成果"
         },
         {
-          "path": "visible/li[7]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Visual assets showing the European setting",
-          "zh": "面向欧洲的品牌资产"
-        },
-        {
-          "path": "visible/p[20]",
+          "path": "visible/p[13]",
           "element": "<p>",
           "variant": "shared",
-          "en": "08 · What Remained Useful",
-          "zh": "08 · 项目之后仍可使用的价值"
+          "en": "05 · Documentation Approach",
+          "zh": "05 · 记录方法"
         },
         {
           "path": "visible/h2[6]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "A coherent visual record of Changan's visible European launch presence, spanning product, people and event context.",
-          "zh": "形成连贯的欧洲发布现场记录，覆盖产品、人员与活动环境。"
+          "en": "Before",
+          "zh": "前期"
+        },
+        {
+          "path": "visible/li[7]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Visible event priorities",
+          "zh": "可见活动重点梳理"
+        },
+        {
+          "path": "visible/h2[7]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "On the Ground",
+          "zh": "现场"
+        },
+        {
+          "path": "visible/li[8]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Stage, vehicle and visitor documentation",
+          "zh": "舞台、车辆与观众记录"
+        },
+        {
+          "path": "visible/h2[8]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "After",
+          "zh": "后续"
+        },
+        {
+          "path": "visible/li[9]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Coherent European event asset selection",
+          "zh": "连贯欧洲活动资产筛选"
+        },
+        {
+          "path": "visible/p[14]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "06 · Verified Outputs",
+          "zh": "06 · 经核实的交付"
+        },
+        {
+          "path": "visible/li[10]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "IAA Mobility event documentation",
+          "zh": "IAA Mobility 活动记录"
+        },
+        {
+          "path": "visible/li[11]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Vehicle, stage and visitor assets",
+          "zh": "车辆、舞台与观众资产"
+        },
+        {
+          "path": "visible/p[15]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public evidence available",
+          "zh": "公开证据"
+        },
+        {
+          "path": "visible/p[16]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "7 approved images",
+          "zh": "7 张获准公开使用的影像"
+        },
+        {
+          "path": "visible/p[17]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "07 · Verified Result",
+          "zh": "07 · 经核实的结果"
+        },
+        {
+          "path": "visible/h2[9]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "A coherent approved record of Changan's visible presence at IAA Mobility 2025.",
+          "zh": "形成一套经批准、连贯呈现长安汽车亮相 IAA Mobility 2025 的记录。"
+        },
+        {
+          "path": "visible/p[18]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "A reusable record of the brand's Munich industry-event presence.",
+          "zh": "一套可继续使用的慕尼黑行业活动现场记录。"
+        },
+        {
+          "path": "visible/p[19]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "09 · Evidence & Claim Boundary",
+          "zh": "09 · 证据与主张边界"
+        },
+        {
+          "path": "visible/p[20]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge.",
+          "zh": "公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。"
         },
         {
           "path": "visible/p[21]",
@@ -7157,25 +7399,11 @@
           "zh": "下一个项目"
         },
         {
-          "path": "visible/span[5]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "Geely London Brand Launch 2025",
-          "zh": "吉利伦敦品牌发布会 2025"
-        },
-        {
-          "path": "visible/span[6]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "Market Entry & Launch ↗",
-          "zh": "市场进入与发布 ↗"
-        },
-        {
           "path": "visible/a[11]",
           "element": "<a>",
           "variant": "shared",
-          "en": "Discuss a Similar Market Goal",
-          "zh": "讨论类似市场目标"
+          "en": "Geely London Brand Launch 2025 ↗",
+          "zh": "吉利伦敦品牌发布会 2025 ↗"
         },
         {
           "path": "visible/p[22]",
@@ -7248,14 +7476,14 @@
           "zh": "条款"
         },
         {
-          "path": "visible/span[7]",
+          "path": "visible/span[2]",
           "element": "<span>",
           "variant": "shared",
           "en": "Venus Bridge",
           "zh": "Venus Bridge"
         },
         {
-          "path": "visible/span[8]",
+          "path": "visible/span[3]",
           "element": "<span>",
           "variant": "shared",
           "en": "© 2026 Venus Bridge",
@@ -7266,11 +7494,11 @@
     {
       "route": "/work/geely-london-brand-launch",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 73,
-      "currentChineseCount": 72,
-      "firstChineseMismatch": 57,
+      "currentChineseCount": 77,
+      "firstChineseMismatch": 11,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -7353,8 +7581,8 @@
           "path": "visible/p[1]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Market Entry & Launch",
-          "zh": "市场进入与发布"
+          "en": "UK Brand Market Entry",
+          "zh": "英国品牌市场进入"
         },
         {
           "path": "visible/h1[1]",
@@ -7367,8 +7595,8 @@
           "path": "visible/p[2]",
           "element": "<p>",
           "variant": "shared",
-          "en": "An approved set of launch-context assets preserving the product, presentation and visible UK market setting.",
-          "zh": "形成一组经批准的发布场景资产，保留产品、演讲与可见的英国市场环境。"
+          "en": "Geely Auto formally launched its namesake brand in the UK in London and introduced the all-electric EX5 as its first UK model.",
+          "zh": "吉利汽车在伦敦正式发布其同名品牌进入英国市场，并以纯电 EX5 作为首款英国车型。"
         },
         {
           "path": "visible/dt[1]",
@@ -7416,15 +7644,15 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
           "element": "<dd>",
           "variant": "shared",
-          "en": "Launch-context photography · UK-facing visual documentation",
-          "zh": "发布场景摄影 · 面向英国市场的视觉记录"
+          "en": "Venus Bridge documented the London launch environment, including the design presentation, EX5 display and audience context.",
+          "zh": "Venus Bridge 记录伦敦发布现场，包括设计演讲、EX5 展示与观众环境。"
         },
         {
           "path": "visible/p[3]",
@@ -7437,15 +7665,15 @@
           "path": "visible/h2[1]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Project Objective",
-          "zh": "项目目标"
+          "en": "Market Moment",
+          "zh": "市场节点"
         },
         {
           "path": "visible/p[4]",
           "element": "<p>",
           "variant": "shared",
-          "en": "UK market-presence evidence from Geely's London brand launch",
-          "zh": "形成吉利伦敦品牌发布的英国市场落地证据"
+          "en": "Geely Auto formally launched its namesake brand in the UK in London and introduced the all-electric EX5 as its first UK model.",
+          "zh": "吉利汽车在伦敦正式发布其同名品牌进入英国市场，并以纯电 EX5 作为首款英国车型。"
         },
         {
           "path": "visible/p[5]",
@@ -7458,249 +7686,284 @@
           "path": "visible/h2[2]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Business Context",
-          "zh": "商业背景"
+          "en": "Why It Mattered",
+          "zh": "为何重要"
         },
         {
           "path": "visible/p[6]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Visual documentation from Geely Auto's London launch, including design presentation, EX5 display and audience context.",
-          "zh": "吉利汽车伦敦发布的视觉记录，包括设计演讲、EX5 展示与观众环境。"
+          "en": "The company described the UK launch as the next phase of its European strategy, giving the London event significance beyond a single product display.",
+          "zh": "吉利将英国发布描述为其欧洲战略的下一阶段，因此这场伦敦活动的意义不止于单一车型展示。"
         },
         {
           "path": "visible/p[7]",
           "element": "<p>",
           "variant": "shared",
-          "en": "03 · Challenge",
-          "zh": "03 · 挑战"
+          "en": "03",
+          "zh": "03"
+        },
+        {
+          "path": "visible/h2[3]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "Project Objective",
+          "zh": "项目目标"
         },
         {
           "path": "visible/p[8]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Make the product, people and local market setting clear within a time-bound live launch.",
-          "zh": "在时间有限的发布现场，同时清楚呈现产品、人物与当地市场环境。"
+          "en": "Establish an approved visual record of the UK brand launch, EX5 presentation and audience setting.",
+          "zh": "建立一套经批准的视觉记录，呈现英国品牌发布、EX5 展示与现场观众环境。"
         },
         {
           "path": "visible/p[9]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Case-specific challenge",
+          "zh": "本项目的具体挑战"
+        },
+        {
+          "path": "visible/p[10]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Create a clear launch record around the arrival of a standalone automotive brand in a mature UK market while keeping the documented role distinct from the client's market-entry programme.",
+          "zh": "围绕一个独立汽车品牌进入成熟英国市场的时刻建立清晰发布记录，同时将记录工作与客户自身的市场进入计划明确区分。"
+        },
+        {
+          "path": "visible/p[11]",
           "element": "<p>",
           "variant": "shared",
           "en": "04 · Venus Bridge Role",
           "zh": "04 · Venus Bridge 职责"
         },
         {
-          "path": "visible/h2[3]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "The work delivered within this project.",
-          "zh": "本项目中实际承担的工作。"
-        },
-        {
-          "path": "visible/p[10]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Venus Bridge delivered visual documentation of the London launch environment, covering the design presentation, EX5 display and audience context.",
-          "zh": "Venus Bridge 完成伦敦发布现场的视觉记录，覆盖设计演讲、EX5 展示与观众环境。"
-        },
-        {
-          "path": "visible/li[1]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Event Documentation",
-          "zh": "活动记录"
-        },
-        {
-          "path": "visible/li[2]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Brand Presentation",
-          "zh": "品牌呈现"
-        },
-        {
-          "path": "visible/li[3]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Post-project Assets",
-          "zh": "项目后续资产"
-        },
-        {
-          "path": "visible/p[11]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Scope on record",
-          "zh": "记录中的工作范围"
-        },
-        {
-          "path": "visible/li[4]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Launch-context photography",
-          "zh": "发布场景摄影"
-        },
-        {
-          "path": "visible/li[5]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "UK-facing visual documentation",
-          "zh": "面向英国市场的视觉记录"
-        },
-        {
           "path": "visible/p[12]",
           "element": "<p>",
           "variant": "shared",
-          "en": "05 · Strategy / Approach",
-          "zh": "05 · 策略与方法"
-        },
-        {
-          "path": "visible/span[2]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "01",
-          "zh": "01"
-        },
-        {
-          "path": "visible/p[13]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Identify the presentation, product and audience context",
-          "zh": "明确演讲、产品与观众环境"
-        },
-        {
-          "path": "visible/span[3]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "02",
-          "zh": "02"
-        },
-        {
-          "path": "visible/p[14]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Capture the live launch across landscape and portrait formats",
-          "zh": "以横竖画幅记录发布现场"
-        },
-        {
-          "path": "visible/span[4]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "03",
-          "zh": "03"
-        },
-        {
-          "path": "visible/p[15]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Deliver an approved public visual record",
-          "zh": "交付获准公开使用的视觉记录"
-        },
-        {
-          "path": "visible/p[16]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "06 · Local Delivery",
-          "zh": "06 · 本地执行"
+          "en": "Venus Bridge documented the London launch environment, including the design presentation, EX5 display and audience context.",
+          "zh": "Venus Bridge 记录伦敦发布现场，包括设计演讲、EX5 展示与观众环境。"
         },
         {
           "path": "visible/h2[4]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "On the ground",
-          "zh": "现场工作"
+          "en": "What Venus Bridge did",
+          "zh": "实际完成"
         },
         {
-          "path": "visible/p[17]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Captured the presentation, display screens and live audience setting.",
-          "zh": "拍摄演讲、展示屏幕与现场观众环境。"
-        },
-        {
-          "path": "visible/p[18]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "07 · Outputs / Outcomes",
-          "zh": "07 · 交付与成果"
-        },
-        {
-          "path": "visible/h2[5]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "3 approved public project images.",
-          "zh": "3 张获准公开使用的项目影像。"
-        },
-        {
-          "path": "visible/p[19]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Verified work",
-          "zh": "已核实工作"
-        },
-        {
-          "path": "visible/li[6]",
+          "path": "visible/li[1]",
           "element": "<li>",
           "variant": "shared",
           "en": "Launch-context photography",
           "zh": "发布场景摄影"
         },
         {
-          "path": "visible/li[7]",
+          "path": "visible/li[2]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "EX5 and presentation coverage",
+          "zh": "EX5 与演讲记录"
+        },
+        {
+          "path": "visible/li[3]",
           "element": "<li>",
           "variant": "shared",
           "en": "UK-facing visual documentation",
           "zh": "面向英国市场的视觉记录"
         },
         {
-          "path": "visible/p[20]",
+          "path": "visible/h2[5]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "What Venus Bridge did not claim",
+          "zh": "不作主张"
+        },
+        {
+          "path": "visible/li[4]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "UK market-entry strategy",
+          "zh": "英国市场进入战略"
+        },
+        {
+          "path": "visible/li[5]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Dealer-network development",
+          "zh": "经销网络建设"
+        },
+        {
+          "path": "visible/li[6]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Sales outcomes",
+          "zh": "销售成果"
+        },
+        {
+          "path": "visible/p[13]",
           "element": "<p>",
           "variant": "shared",
-          "en": "08 · What Remained Useful",
-          "zh": "08 · 项目之后仍可使用的价值"
+          "en": "05 · Documentation Approach",
+          "zh": "05 · 记录方法"
         },
         {
           "path": "visible/h2[6]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "An approved set of launch-context assets preserving the product, presentation and visible UK market setting.",
-          "zh": "形成一组经批准的发布场景资产，保留产品、演讲与可见的英国市场环境。"
+          "en": "Before",
+          "zh": "前期"
+        },
+        {
+          "path": "visible/li[7]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Presentation and product priorities",
+          "zh": "演讲与产品重点对齐"
+        },
+        {
+          "path": "visible/h2[7]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "On the Ground",
+          "zh": "现场"
+        },
+        {
+          "path": "visible/li[8]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Launch, product and audience coverage",
+          "zh": "发布、产品与观众记录"
+        },
+        {
+          "path": "visible/h2[8]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "After",
+          "zh": "后续"
+        },
+        {
+          "path": "visible/li[9]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Approved visual handoff",
+          "zh": "获准视觉资产交付"
+        },
+        {
+          "path": "visible/p[14]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "06 · Verified Outputs",
+          "zh": "06 · 经核实的交付"
+        },
+        {
+          "path": "visible/li[10]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Approved UK brand-launch record",
+          "zh": "经批准的英国品牌发布记录"
+        },
+        {
+          "path": "visible/li[11]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "EX5 and presentation assets",
+          "zh": "EX5 与演讲资产"
+        },
+        {
+          "path": "visible/p[15]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public evidence available",
+          "zh": "公开证据"
+        },
+        {
+          "path": "visible/p[16]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "3 approved images",
+          "zh": "3 张获准公开使用的影像"
+        },
+        {
+          "path": "visible/p[17]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "07 · Verified Result",
+          "zh": "07 · 经核实的结果"
+        },
+        {
+          "path": "visible/h2[9]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "An approved asset set preserving the product, presentation and visible UK launch setting.",
+          "zh": "形成一组经批准的资产，保留产品、演讲与可见的英国发布环境。"
+        },
+        {
+          "path": "visible/p[18]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "A reusable record of Geely Auto's visible UK launch moment.",
+          "zh": "一套可继续使用的吉利汽车英国发布现场记录。"
+        },
+        {
+          "path": "visible/p[19]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "08 · What Happened Next",
+          "zh": "08 · 后续公开发展"
+        },
+        {
+          "path": "visible/p[20]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Geely subsequently opened UK ordering for the EX5 and continued developing its announced sales and service network.",
+          "zh": "此后，吉利在英国开放 EX5 订购，并继续推进其已公布的销售与服务网络建设。"
         },
         {
           "path": "visible/p[21]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "This subsequent market development is provided as company context and is not presented as an outcome attributable to Venus Bridge.",
+          "zh": "后续市场发展仅作为企业背景信息，不作为可归因于 Venus Bridge 的项目成果。"
+        },
+        {
+          "path": "visible/p[22]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "09 · Evidence & Claim Boundary",
+          "zh": "09 · 证据与主张边界"
+        },
+        {
+          "path": "visible/p[23]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge.",
+          "zh": "公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。"
+        },
+        {
+          "path": "visible/p[24]",
           "element": "<p>",
           "variant": "shared",
           "en": "Next project",
           "zh": "下一个项目"
         },
         {
-          "path": "visible/span[5]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "CATL Open Day 2025, Munich",
-          "zh": "CATL Open Day 2025｜慕尼黑"
-        },
-        {
-          "path": "visible/span[6]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "Industry & Exhibitions ↗",
-          "zh": "行业与展会 ↗"
-        },
-        {
           "path": "visible/a[11]",
           "element": "<a>",
           "variant": "shared",
-          "en": "Discuss a Similar Market Goal",
-          "zh": "讨论类似市场目标"
+          "en": "CATL Open Day 2025, Munich ↗",
+          "zh": "CATL Open Day 2025｜慕尼黑 ↗"
         },
         {
-          "path": "visible/p[22]",
+          "path": "visible/p[25]",
           "element": "<p>",
           "variant": "shared",
           "en": "Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution.",
           "zh": "Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。"
         },
         {
-          "path": "visible/p[23]",
+          "path": "visible/p[26]",
           "element": "<p>",
           "variant": "shared",
           "en": "London, United Kingdom",
@@ -7763,14 +8026,14 @@
           "zh": "条款"
         },
         {
-          "path": "visible/span[7]",
+          "path": "visible/span[2]",
           "element": "<span>",
           "variant": "shared",
           "en": "Venus Bridge",
           "zh": "Venus Bridge"
         },
         {
-          "path": "visible/span[8]",
+          "path": "visible/span[3]",
           "element": "<span>",
           "variant": "shared",
           "en": "© 2026 Venus Bridge",
@@ -7781,11 +8044,11 @@
     {
       "route": "/work/catl-open-day-2025",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 73,
-      "currentChineseCount": 72,
-      "firstChineseMismatch": 57,
+      "currentChineseCount": 74,
+      "firstChineseMismatch": 11,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -7868,8 +8131,8 @@
           "path": "visible/p[1]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Industry & Exhibitions",
-          "zh": "行业与展会"
+          "en": "European Technology Introduction",
+          "zh": "欧洲技术发布"
         },
         {
           "path": "visible/h1[1]",
@@ -7882,8 +8145,8 @@
           "path": "visible/p[2]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Approved event material preserving CATL's presentation, technical screens and professional stakeholder environment.",
-          "zh": "形成经批准的活动内容，保留 CATL 的演讲、技术屏幕与专业利益相关方环境。"
+          "en": "At CATL Open Day in Munich, CATL unveiled Shenxing Pro, an LFP battery product presented as designed for European e-mobility needs ahead of IAA Mobility 2025.",
+          "zh": "CATL 在慕尼黑 Open Day 发布神行 Pro 磷酸铁锂电池产品，并将其定位为面向欧洲电动出行需求的解决方案，活动发生于 IAA Mobility 2025 前夕。"
         },
         {
           "path": "visible/dt[1]",
@@ -7931,15 +8194,15 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
           "element": "<dd>",
           "variant": "shared",
-          "en": "Event documentation · International communications assets",
-          "zh": "活动记录 · 国际传播资产"
+          "en": "Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting.",
+          "zh": "Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。"
         },
         {
           "path": "visible/p[3]",
@@ -7952,15 +8215,15 @@
           "path": "visible/h2[1]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Project Objective",
-          "zh": "项目目标"
+          "en": "Market Moment",
+          "zh": "市场节点"
         },
         {
           "path": "visible/p[4]",
           "element": "<p>",
           "variant": "shared",
-          "en": "International communications in a professional stakeholder setting",
-          "zh": "专业利益相关方场景中的国际传播"
+          "en": "At CATL Open Day in Munich, CATL unveiled Shenxing Pro, an LFP battery product presented as designed for European e-mobility needs ahead of IAA Mobility 2025.",
+          "zh": "CATL 在慕尼黑 Open Day 发布神行 Pro 磷酸铁锂电池产品，并将其定位为面向欧洲电动出行需求的解决方案，活动发生于 IAA Mobility 2025 前夕。"
         },
         {
           "path": "visible/p[5]",
@@ -7973,211 +8236,239 @@
           "path": "visible/h2[2]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Business Context",
-          "zh": "商业背景"
+          "en": "Why It Mattered",
+          "zh": "为何重要"
         },
         {
           "path": "visible/p[6]",
           "element": "<p>",
           "variant": "shared",
-          "en": "A live presentation environment including stage, speakers and audience moments.",
-          "zh": "现场发布环境，包括舞台、演讲者与观众画面。"
+          "en": "The event translated battery safety, lifespan, range and charging claims into a European automotive-industry communication setting.",
+          "zh": "该活动把电池安全、寿命、续航与充电等技术主张带入欧洲汽车行业传播环境。"
         },
         {
           "path": "visible/p[7]",
           "element": "<p>",
           "variant": "shared",
-          "en": "03 · Challenge",
-          "zh": "03 · 挑战"
+          "en": "03",
+          "zh": "03"
+        },
+        {
+          "path": "visible/h2[3]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "Project Objective",
+          "zh": "项目目标"
         },
         {
           "path": "visible/p[8]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Connect product or technical detail with the wider European industry setting in one useful record.",
-          "zh": "把产品或技术细节与更完整的欧洲行业现场连接在同一组记录中。"
+          "en": "Create a clear event record of the technical presentation, speakers, screens and professional audience environment.",
+          "zh": "形成清晰活动记录，呈现技术演讲、演讲者、屏幕与专业观众环境。"
         },
         {
           "path": "visible/p[9]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Case-specific challenge",
+          "zh": "本项目的具体挑战"
+        },
+        {
+          "path": "visible/p[10]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Make a complex battery-technology introduction legible through the visible presentation and professional audience setting without claiming ownership of the technical proposition.",
+          "zh": "通过可见的演讲与专业观众环境让复杂电池技术发布更易理解，同时不主张 Venus Bridge 对技术命题的所有权。"
+        },
+        {
+          "path": "visible/p[11]",
           "element": "<p>",
           "variant": "shared",
           "en": "04 · Venus Bridge Role",
           "zh": "04 · Venus Bridge 职责"
         },
         {
-          "path": "visible/h2[3]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "The work delivered within this project.",
-          "zh": "本项目中实际承担的工作。"
-        },
-        {
-          "path": "visible/p[10]",
+          "path": "visible/p[12]",
           "element": "<p>",
           "variant": "shared",
           "en": "Venus Bridge documented the Munich presentation environment, including speakers, technical screens and the professional audience setting.",
           "zh": "Venus Bridge 记录慕尼黑发布环境，包括演讲者、技术屏幕与专业观众现场。"
         },
         {
+          "path": "visible/h2[4]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "What Venus Bridge did",
+          "zh": "实际完成"
+        },
+        {
           "path": "visible/li[1]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Event Documentation",
-          "zh": "活动记录"
+          "en": "Technical-event documentation",
+          "zh": "技术活动记录"
         },
         {
           "path": "visible/li[2]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Brand Presentation",
-          "zh": "品牌呈现"
+          "en": "Speaker and screen coverage",
+          "zh": "演讲者与屏幕记录"
         },
         {
           "path": "visible/li[3]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Post-project Assets",
-          "zh": "项目后续资产"
-        },
-        {
-          "path": "visible/p[11]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Scope on record",
-          "zh": "记录中的工作范围"
-        },
-        {
-          "path": "visible/li[4]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Event documentation",
-          "zh": "活动记录"
-        },
-        {
-          "path": "visible/li[5]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "International communications assets",
-          "zh": "国际传播资产"
-        },
-        {
-          "path": "visible/p[12]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "05 · Strategy / Approach",
-          "zh": "05 · 策略与方法"
-        },
-        {
-          "path": "visible/span[2]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "01",
-          "zh": "01"
-        },
-        {
-          "path": "visible/p[13]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Assess the technical presentation setting",
-          "zh": "观察技术演讲环境"
-        },
-        {
-          "path": "visible/span[3]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "02",
-          "zh": "02"
-        },
-        {
-          "path": "visible/p[14]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Capture speakers, screens and audience context",
-          "zh": "记录演讲者、屏幕与观众语境"
-        },
-        {
-          "path": "visible/span[4]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "03",
-          "zh": "03"
-        },
-        {
-          "path": "visible/p[15]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Preserve a concise public event record",
-          "zh": "沉淀精炼的公开活动记录"
-        },
-        {
-          "path": "visible/p[16]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "06 · Local Delivery",
-          "zh": "06 · 本地执行"
-        },
-        {
-          "path": "visible/h2[4]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "On the ground",
-          "zh": "现场工作"
-        },
-        {
-          "path": "visible/p[17]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Captured the presentation and stakeholder setting in Munich.",
-          "zh": "在慕尼黑记录发布与利益相关方现场环境。"
-        },
-        {
-          "path": "visible/p[18]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "07 · Outputs / Outcomes",
-          "zh": "07 · 交付与成果"
+          "en": "Professional audience context",
+          "zh": "专业观众环境记录"
         },
         {
           "path": "visible/h2[5]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "7 approved public project images.",
-          "zh": "7 张获准公开使用的项目影像。"
+          "en": "What Venus Bridge did not claim",
+          "zh": "不作主张"
         },
         {
-          "path": "visible/p[19]",
-          "element": "<p>",
+          "path": "visible/li[4]",
+          "element": "<li>",
           "variant": "shared",
-          "en": "Verified work",
-          "zh": "已核实工作"
+          "en": "Technology strategy",
+          "zh": "技术战略"
+        },
+        {
+          "path": "visible/li[5]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Product claims ownership",
+          "zh": "产品主张所有权"
         },
         {
           "path": "visible/li[6]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Event documentation",
-          "zh": "活动记录"
+          "en": "Customer or partnership outcomes",
+          "zh": "客户或合作成果"
         },
         {
-          "path": "visible/li[7]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "International communications assets",
-          "zh": "国际传播资产"
-        },
-        {
-          "path": "visible/p[20]",
+          "path": "visible/p[13]",
           "element": "<p>",
           "variant": "shared",
-          "en": "08 · What Remained Useful",
-          "zh": "08 · 项目之后仍可使用的价值"
+          "en": "05 · Documentation Approach",
+          "zh": "05 · 记录方法"
         },
         {
           "path": "visible/h2[6]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Approved event material preserving CATL's presentation, technical screens and professional stakeholder environment.",
-          "zh": "形成经批准的活动内容，保留 CATL 的演讲、技术屏幕与专业利益相关方环境。"
+          "en": "Before",
+          "zh": "前期"
+        },
+        {
+          "path": "visible/li[7]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Technical presentation priorities",
+          "zh": "技术演讲重点对齐"
+        },
+        {
+          "path": "visible/h2[7]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "On the Ground",
+          "zh": "现场"
+        },
+        {
+          "path": "visible/li[8]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Speaker, screen and audience documentation",
+          "zh": "演讲者、屏幕与观众记录"
+        },
+        {
+          "path": "visible/h2[8]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "After",
+          "zh": "后续"
+        },
+        {
+          "path": "visible/li[9]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Approved technical-event record",
+          "zh": "获准技术活动记录整理"
+        },
+        {
+          "path": "visible/p[14]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "06 · Verified Outputs",
+          "zh": "06 · 经核实的交付"
+        },
+        {
+          "path": "visible/li[10]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Approved CATL Open Day record",
+          "zh": "经批准的 CATL Open Day 记录"
+        },
+        {
+          "path": "visible/li[11]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Presentation and stakeholder-environment assets",
+          "zh": "演讲与利益相关方环境资产"
+        },
+        {
+          "path": "visible/p[15]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public evidence available",
+          "zh": "公开证据"
+        },
+        {
+          "path": "visible/p[16]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "7 approved images",
+          "zh": "7 张获准公开使用的影像"
+        },
+        {
+          "path": "visible/p[17]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "07 · Verified Result",
+          "zh": "07 · 经核实的结果"
+        },
+        {
+          "path": "visible/h2[9]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "A concise approved record of CATL's technology presentation in a European automotive-industry environment.",
+          "zh": "形成一套经批准的精炼记录，呈现 CATL 在欧洲汽车行业环境中的技术发布。"
+        },
+        {
+          "path": "visible/p[18]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Reusable technical-event and professional-environment assets.",
+          "zh": "可继续使用的技术活动与专业环境资产。"
+        },
+        {
+          "path": "visible/p[19]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "09 · Evidence & Claim Boundary",
+          "zh": "09 · 证据与主张边界"
+        },
+        {
+          "path": "visible/p[20]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge.",
+          "zh": "公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。"
         },
         {
           "path": "visible/p[21]",
@@ -8187,25 +8478,11 @@
           "zh": "下一个项目"
         },
         {
-          "path": "visible/span[5]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "Leapmotor at IAA Mobility 2023, Munich",
-          "zh": "零跑汽车 IAA Mobility 2023｜慕尼黑"
-        },
-        {
-          "path": "visible/span[6]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "Industry & Exhibitions ↗",
-          "zh": "行业与展会 ↗"
-        },
-        {
           "path": "visible/a[11]",
           "element": "<a>",
           "variant": "shared",
-          "en": "Discuss a Similar Market Goal",
-          "zh": "讨论类似市场目标"
+          "en": "Leapmotor at IAA Mobility 2023, Munich ↗",
+          "zh": "零跑汽车 IAA Mobility 2023｜慕尼黑 ↗"
         },
         {
           "path": "visible/p[22]",
@@ -8278,14 +8555,14 @@
           "zh": "条款"
         },
         {
-          "path": "visible/span[7]",
+          "path": "visible/span[2]",
           "element": "<span>",
           "variant": "shared",
           "en": "Venus Bridge",
           "zh": "Venus Bridge"
         },
         {
-          "path": "visible/span[8]",
+          "path": "visible/span[3]",
           "element": "<span>",
           "variant": "shared",
           "en": "© 2026 Venus Bridge",
@@ -8296,11 +8573,11 @@
     {
       "route": "/work/leapmotor-iaa-2023",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 73,
-      "currentChineseCount": 72,
-      "firstChineseMismatch": 57,
+      "currentChineseCount": 74,
+      "firstChineseMismatch": 11,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -8383,8 +8660,8 @@
           "path": "visible/p[1]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Industry & Exhibitions",
-          "zh": "行业与展会"
+          "en": "Global Product Debut at IAA Mobility",
+          "zh": "IAA Mobility 全球产品首发"
         },
         {
           "path": "visible/h1[1]",
@@ -8397,8 +8674,8 @@
           "path": "visible/p[2]",
           "element": "<p>",
           "variant": "shared",
-          "en": "A reusable exhibition record connecting product detail with the wider European industry setting.",
-          "zh": "形成可复用的展会记录，将产品细节与欧洲行业现场语境连接起来。"
+          "en": "Leapmotor used IAA Mobility 2023 in Munich for its global strategy press conference and unveiled the C10 as its first global model.",
+          "zh": "零跑汽车在慕尼黑 IAA Mobility 2023 举行全球战略发布会，并发布其首款全球化车型 C10。"
         },
         {
           "path": "visible/dt[1]",
@@ -8446,15 +8723,15 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
           "element": "<dd>",
           "variant": "shared",
-          "en": "Exhibition documentation · Automotive brand evidence",
-          "zh": "展会记录 · 汽车品牌证据"
+          "en": "Venus Bridge documented Leapmotor's visible IAA Mobility presence across the stand, vehicles, product details and visitor environment.",
+          "zh": "Venus Bridge 记录零跑汽车在 IAA Mobility 的现场呈现，覆盖展台、车辆、产品细节与观众环境。"
         },
         {
           "path": "visible/p[3]",
@@ -8467,15 +8744,15 @@
           "path": "visible/h2[1]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Project Objective",
-          "zh": "项目目标"
+          "en": "Market Moment",
+          "zh": "市场节点"
         },
         {
           "path": "visible/p[4]",
           "element": "<p>",
           "variant": "shared",
-          "en": "European industry presence and stakeholder context",
-          "zh": "欧洲行业存在与利益相关方语境"
+          "en": "Leapmotor used IAA Mobility 2023 in Munich for its global strategy press conference and unveiled the C10 as its first global model.",
+          "zh": "零跑汽车在慕尼黑 IAA Mobility 2023 举行全球战略发布会，并发布其首款全球化车型 C10。"
         },
         {
           "path": "visible/p[5]",
@@ -8488,211 +8765,239 @@
           "path": "visible/h2[2]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Business Context",
-          "zh": "商业背景"
+          "en": "Why It Mattered",
+          "zh": "为何重要"
         },
         {
           "path": "visible/p[6]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Exhibition-floor coverage including the stand, vehicles, details and visitor interaction.",
-          "zh": "展会现场视觉记录，包括展台、车辆、产品细节与观众互动。"
+          "en": "The appearance placed Leapmotor's global product and technology proposition within a major European mobility event at an early stage of its international development.",
+          "zh": "此次亮相在其国际化发展的早期阶段，将零跑的全球化产品与技术命题置于重要欧洲 mobility 行业活动中。"
         },
         {
           "path": "visible/p[7]",
           "element": "<p>",
           "variant": "shared",
-          "en": "03 · Challenge",
-          "zh": "03 · 挑战"
+          "en": "03",
+          "zh": "03"
+        },
+        {
+          "path": "visible/h2[3]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "Project Objective",
+          "zh": "项目目标"
         },
         {
           "path": "visible/p[8]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Connect product or technical detail with the wider European industry setting in one useful record.",
-          "zh": "把产品或技术细节与更完整的欧洲行业现场连接在同一组记录中。"
+          "en": "Create an approved exhibition record spanning the stand, vehicles, product details and visitor environment.",
+          "zh": "形成一套经批准的展会记录，覆盖展台、车辆、产品细节与观众环境。"
         },
         {
           "path": "visible/p[9]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Case-specific challenge",
+          "zh": "本项目的具体挑战"
+        },
+        {
+          "path": "visible/p[10]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Present a Chinese EV company's global product debut through both stand-scale context and detailed vehicle evidence in a major European industry environment.",
+          "zh": "在重要欧洲行业环境中，通过展台整体语境与车辆细节证据呈现一家中国电动车企的全球化产品首发。"
+        },
+        {
+          "path": "visible/p[11]",
           "element": "<p>",
           "variant": "shared",
           "en": "04 · Venus Bridge Role",
           "zh": "04 · Venus Bridge 职责"
         },
         {
-          "path": "visible/h2[3]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "The work delivered within this project.",
-          "zh": "本项目中实际承担的工作。"
-        },
-        {
-          "path": "visible/p[10]",
+          "path": "visible/p[12]",
           "element": "<p>",
           "variant": "shared",
           "en": "Venus Bridge documented Leapmotor's visible IAA Mobility presence across the stand, vehicles, product details and visitor environment.",
           "zh": "Venus Bridge 记录零跑汽车在 IAA Mobility 的现场呈现，覆盖展台、车辆、产品细节与观众环境。"
         },
         {
+          "path": "visible/h2[4]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "What Venus Bridge did",
+          "zh": "实际完成"
+        },
+        {
           "path": "visible/li[1]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Event Documentation",
-          "zh": "活动记录"
+          "en": "Exhibition documentation",
+          "zh": "展会记录"
         },
         {
           "path": "visible/li[2]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Brand Presentation",
-          "zh": "品牌呈现"
+          "en": "Stand and vehicle coverage",
+          "zh": "展台与车辆记录"
         },
         {
           "path": "visible/li[3]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Post-project Assets",
-          "zh": "项目后续资产"
-        },
-        {
-          "path": "visible/p[11]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Scope on record",
-          "zh": "记录中的工作范围"
-        },
-        {
-          "path": "visible/li[4]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Exhibition documentation",
-          "zh": "展会记录"
-        },
-        {
-          "path": "visible/li[5]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Automotive brand evidence",
-          "zh": "汽车品牌证据"
-        },
-        {
-          "path": "visible/p[12]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "05 · Strategy / Approach",
-          "zh": "05 · 策略与方法"
-        },
-        {
-          "path": "visible/span[2]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "01",
-          "zh": "01"
-        },
-        {
-          "path": "visible/p[13]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Establish the exhibition and launch context",
-          "zh": "建立展会与发布语境"
-        },
-        {
-          "path": "visible/span[3]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "02",
-          "zh": "02"
-        },
-        {
-          "path": "visible/p[14]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Document stand, vehicles, details and visitors",
-          "zh": "记录展台、车辆、细节与观众"
-        },
-        {
-          "path": "visible/span[4]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "03",
-          "zh": "03"
-        },
-        {
-          "path": "visible/p[15]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Sequence the material from scale to product evidence",
-          "zh": "按现场规模到产品证据编排素材"
-        },
-        {
-          "path": "visible/p[16]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "06 · Local Delivery",
-          "zh": "06 · 本地执行"
-        },
-        {
-          "path": "visible/h2[4]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "On the ground",
-          "zh": "现场工作"
-        },
-        {
-          "path": "visible/p[17]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Captured the exhibition environment and product details.",
-          "zh": "拍摄展会环境与产品细节。"
-        },
-        {
-          "path": "visible/p[18]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "07 · Outputs / Outcomes",
-          "zh": "07 · 交付与成果"
+          "en": "Product-detail assets",
+          "zh": "产品细节资产"
         },
         {
           "path": "visible/h2[5]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "7 approved public project images.",
-          "zh": "7 张获准公开使用的项目影像。"
+          "en": "What Venus Bridge did not claim",
+          "zh": "不作主张"
         },
         {
-          "path": "visible/p[19]",
-          "element": "<p>",
+          "path": "visible/li[4]",
+          "element": "<li>",
           "variant": "shared",
-          "en": "Verified work",
-          "zh": "已核实工作"
+          "en": "Global strategy ownership",
+          "zh": "全球战略所有权"
+        },
+        {
+          "path": "visible/li[5]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Stellantis transaction",
+          "zh": "Stellantis 交易"
         },
         {
           "path": "visible/li[6]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Exhibition documentation",
-          "zh": "展会记录"
+          "en": "European distribution outcomes",
+          "zh": "欧洲分销成果"
         },
         {
-          "path": "visible/li[7]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Automotive brand evidence",
-          "zh": "汽车品牌证据"
-        },
-        {
-          "path": "visible/p[20]",
+          "path": "visible/p[13]",
           "element": "<p>",
           "variant": "shared",
-          "en": "08 · What Remained Useful",
-          "zh": "08 · 项目之后仍可使用的价值"
+          "en": "05 · Documentation Approach",
+          "zh": "05 · 记录方法"
         },
         {
           "path": "visible/h2[6]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "A reusable exhibition record connecting product detail with the wider European industry setting.",
-          "zh": "形成可复用的展会记录，将产品细节与欧洲行业现场语境连接起来。"
+          "en": "Before",
+          "zh": "前期"
+        },
+        {
+          "path": "visible/li[7]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Stand and product priorities",
+          "zh": "展台与产品重点对齐"
+        },
+        {
+          "path": "visible/h2[7]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "On the Ground",
+          "zh": "现场"
+        },
+        {
+          "path": "visible/li[8]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Stand, vehicle, detail and visitor coverage",
+          "zh": "展台、车辆、细节与观众记录"
+        },
+        {
+          "path": "visible/h2[8]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "After",
+          "zh": "后续"
+        },
+        {
+          "path": "visible/li[9]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Exhibition asset sequence",
+          "zh": "展会资产编排"
+        },
+        {
+          "path": "visible/p[14]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "06 · Verified Outputs",
+          "zh": "06 · 经核实的交付"
+        },
+        {
+          "path": "visible/li[10]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "IAA Mobility exhibition record",
+          "zh": "IAA Mobility 展会记录"
+        },
+        {
+          "path": "visible/li[11]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Vehicle and product-detail assets",
+          "zh": "车辆与产品细节资产"
+        },
+        {
+          "path": "visible/p[15]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public evidence available",
+          "zh": "公开证据"
+        },
+        {
+          "path": "visible/p[16]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "7 approved images",
+          "zh": "7 张获准公开使用的影像"
+        },
+        {
+          "path": "visible/p[17]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "07 · Verified Result",
+          "zh": "07 · 经核实的结果"
+        },
+        {
+          "path": "visible/h2[9]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "A reusable approved record connecting the C10-era exhibition presence with the wider European industry setting.",
+          "zh": "形成一套经批准、可复用的记录，将 C10 时期的展会亮相与更广泛的欧洲行业环境联系起来。"
+        },
+        {
+          "path": "visible/p[18]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "A structured record from exhibition scale to product detail.",
+          "zh": "一套从展会规模到产品细节的结构化记录。"
+        },
+        {
+          "path": "visible/p[19]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "09 · Evidence & Claim Boundary",
+          "zh": "09 · 证据与主张边界"
+        },
+        {
+          "path": "visible/p[20]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge.",
+          "zh": "公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。"
         },
         {
           "path": "visible/p[21]",
@@ -8702,25 +9007,11 @@
           "zh": "下一个项目"
         },
         {
-          "path": "visible/span[5]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "AGIBOT London Launch",
-          "zh": "AGIBOT 智元伦敦发布会"
-        },
-        {
-          "path": "visible/span[6]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "Industry & Exhibitions ↗",
-          "zh": "行业与展会 ↗"
-        },
-        {
           "path": "visible/a[11]",
           "element": "<a>",
           "variant": "shared",
-          "en": "Discuss a Similar Market Goal",
-          "zh": "讨论类似市场目标"
+          "en": "AGIBOT UK Launch 2026, London ↗",
+          "zh": "AGIBOT 智元英国发布会 2026｜伦敦 ↗"
         },
         {
           "path": "visible/p[22]",
@@ -8793,14 +9084,14 @@
           "zh": "条款"
         },
         {
-          "path": "visible/span[7]",
+          "path": "visible/span[2]",
           "element": "<span>",
           "variant": "shared",
           "en": "Venus Bridge",
           "zh": "Venus Bridge"
         },
         {
-          "path": "visible/span[8]",
+          "path": "visible/span[3]",
           "element": "<span>",
           "variant": "shared",
           "en": "© 2026 Venus Bridge",
@@ -8811,11 +9102,11 @@
     {
       "route": "/work/agibot-london-launch",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 73,
-      "currentChineseCount": 72,
-      "firstChineseMismatch": 57,
+      "currentChineseCount": 77,
+      "firstChineseMismatch": 11,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -8898,22 +9189,22 @@
           "path": "visible/p[1]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Industry & Exhibitions",
-          "zh": "行业与展会"
+          "en": "UK Embodied-Robotics Launch",
+          "zh": "英国具身机器人发布"
         },
         {
           "path": "visible/h1[1]",
           "element": "<h1>",
           "variant": "shared",
-          "en": "AGIBOT London Launch",
-          "zh": "AGIBOT 智元伦敦发布会"
+          "en": "AGIBOT UK Launch 2026, London",
+          "zh": "AGIBOT 智元英国发布会 2026｜伦敦"
         },
         {
           "path": "visible/p[2]",
           "element": "<p>",
           "variant": "shared",
-          "en": "A concise set of event assets connecting the speaker, robotics products and their London display environment.",
-          "zh": "形成精炼活动资产，将演讲者、机器人产品与伦敦展示环境联系起来。"
+          "en": "AGIBOT held its UK launch and partner conference in London on 30 June 2026, combining product demonstrations, company presentations and application-focused sessions.",
+          "zh": "AGIBOT 于 2026 年 6 月 30 日在伦敦举行英国发布与合作伙伴大会，活动包括产品演示、公司介绍与应用场景专题环节。"
         },
         {
           "path": "visible/dt[1]",
@@ -8940,8 +9231,8 @@
           "path": "visible/dd[2]",
           "element": "<dd>",
           "variant": "shared",
-          "en": "London, UK",
-          "zh": "London, UK"
+          "en": "London, UK · 2026",
+          "zh": "London, UK · 2026"
         },
         {
           "path": "visible/dt[3]",
@@ -8961,15 +9252,15 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
           "element": "<dd>",
           "variant": "shared",
-          "en": "Technology-event photography · Product display documentation",
-          "zh": "科技活动摄影 · 产品展示记录"
+          "en": "Venus Bridge documented the London technology-event setting across the technical presentation and product displays.",
+          "zh": "Venus Bridge 记录伦敦科技活动现场，覆盖技术演讲与产品展示。"
         },
         {
           "path": "visible/p[3]",
@@ -8982,15 +9273,15 @@
           "path": "visible/h2[1]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Project Objective",
-          "zh": "项目目标"
+          "en": "Market Moment",
+          "zh": "市场节点"
         },
         {
           "path": "visible/p[4]",
           "element": "<p>",
           "variant": "shared",
-          "en": "A visual record of the embodied-robotics brand’s London event",
-          "zh": "形成具身机器人品牌伦敦活动的视觉证据"
+          "en": "AGIBOT held its UK launch and partner conference in London on 30 June 2026, combining product demonstrations, company presentations and application-focused sessions.",
+          "zh": "AGIBOT 于 2026 年 6 月 30 日在伦敦举行英国发布与合作伙伴大会，活动包括产品演示、公司介绍与应用场景专题环节。"
         },
         {
           "path": "visible/p[5]",
@@ -9003,249 +9294,284 @@
           "path": "visible/h2[2]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "Business Context",
-          "zh": "商业背景"
+          "en": "Why It Mattered",
+          "zh": "为何重要"
         },
         {
           "path": "visible/p[6]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Event photographs showing a technical presentation and two robots in the display environment.",
-          "zh": "活动照片呈现技术演讲与展示环境中的两款机器人。"
+          "en": "The official event introduced AGIBOT's robotics portfolio and UK commercial model within a local environment focused on real-world deployment and partner engagement.",
+          "zh": "官方活动在聚焦实际部署与合作伙伴交流的本地环境中，介绍 AGIBOT 的机器人产品组合与英国商业模式。"
         },
         {
           "path": "visible/p[7]",
           "element": "<p>",
           "variant": "shared",
-          "en": "03 · Challenge",
-          "zh": "03 · 挑战"
+          "en": "03",
+          "zh": "03"
+        },
+        {
+          "path": "visible/h2[3]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "Project Objective",
+          "zh": "项目目标"
         },
         {
           "path": "visible/p[8]",
           "element": "<p>",
           "variant": "shared",
-          "en": "Make the product, people and local market setting clear within a time-bound live launch.",
-          "zh": "在时间有限的发布现场，同时清楚呈现产品、人物与当地市场环境。"
+          "en": "Create an approved visual record of the London technical presentation and displayed robotics products.",
+          "zh": "形成一套经批准的视觉记录，呈现伦敦技术演讲与现场展示的机器人产品。"
         },
         {
           "path": "visible/p[9]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Case-specific challenge",
+          "zh": "本项目的具体挑战"
+        },
+        {
+          "path": "visible/p[10]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Connect the technical presentation with complete product-display views while keeping unverified partner and commercial outcomes outside the case claim.",
+          "zh": "把技术演讲与完整产品展示画面联系起来，同时将未经核实的合作伙伴与商业成果排除在案例主张之外。"
+        },
+        {
+          "path": "visible/p[11]",
           "element": "<p>",
           "variant": "shared",
           "en": "04 · Venus Bridge Role",
           "zh": "04 · Venus Bridge 职责"
         },
         {
-          "path": "visible/h2[3]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "The work delivered within this project.",
-          "zh": "本项目中实际承担的工作。"
-        },
-        {
-          "path": "visible/p[10]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Venus Bridge documented the London technology-event setting across the technical presentation and two product displays.",
-          "zh": "Venus Bridge 记录伦敦科技活动现场，覆盖技术演讲与两款产品展示。"
-        },
-        {
-          "path": "visible/li[1]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Event Documentation",
-          "zh": "活动记录"
-        },
-        {
-          "path": "visible/li[2]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Brand Presentation",
-          "zh": "品牌呈现"
-        },
-        {
-          "path": "visible/li[3]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Post-project Assets",
-          "zh": "项目后续资产"
-        },
-        {
-          "path": "visible/p[11]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Scope on record",
-          "zh": "记录中的工作范围"
-        },
-        {
-          "path": "visible/li[4]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Technology-event photography",
-          "zh": "科技活动摄影"
-        },
-        {
-          "path": "visible/li[5]",
-          "element": "<li>",
-          "variant": "shared",
-          "en": "Product display documentation",
-          "zh": "产品展示记录"
-        },
-        {
           "path": "visible/p[12]",
           "element": "<p>",
           "variant": "shared",
-          "en": "05 · Strategy / Approach",
-          "zh": "05 · 策略与方法"
-        },
-        {
-          "path": "visible/span[2]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "01",
-          "zh": "01"
-        },
-        {
-          "path": "visible/p[13]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Establish the technical presentation context",
-          "zh": "建立技术演讲语境"
-        },
-        {
-          "path": "visible/span[3]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "02",
-          "zh": "02"
-        },
-        {
-          "path": "visible/p[14]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Capture speaker and product displays",
-          "zh": "记录演讲者与产品展示"
-        },
-        {
-          "path": "visible/span[4]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "03",
-          "zh": "03"
-        },
-        {
-          "path": "visible/p[15]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Balance landscape-format environmental shots with complete portrait-format product views",
-          "zh": "用横向环境与完整竖向产品画面形成平衡"
-        },
-        {
-          "path": "visible/p[16]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "06 · Local Delivery",
-          "zh": "06 · 本地执行"
+          "en": "Venus Bridge documented the London technology-event setting across the technical presentation and product displays.",
+          "zh": "Venus Bridge 记录伦敦科技活动现场，覆盖技术演讲与产品展示。"
         },
         {
           "path": "visible/h2[4]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "On the ground",
-          "zh": "现场工作"
+          "en": "What Venus Bridge did",
+          "zh": "实际完成"
         },
         {
-          "path": "visible/p[17]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Captured the speaker and product displays across landscape and portrait formats.",
-          "zh": "以横幅与竖幅画面记录演讲者与产品展示。"
-        },
-        {
-          "path": "visible/p[18]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "07 · Outputs / Outcomes",
-          "zh": "07 · 交付与成果"
-        },
-        {
-          "path": "visible/h2[5]",
-          "element": "<h2>",
-          "variant": "shared",
-          "en": "3 approved public project images.",
-          "zh": "3 张获准公开使用的项目影像。"
-        },
-        {
-          "path": "visible/p[19]",
-          "element": "<p>",
-          "variant": "shared",
-          "en": "Verified work",
-          "zh": "已核实工作"
-        },
-        {
-          "path": "visible/li[6]",
+          "path": "visible/li[1]",
           "element": "<li>",
           "variant": "shared",
           "en": "Technology-event photography",
           "zh": "科技活动摄影"
         },
         {
-          "path": "visible/li[7]",
+          "path": "visible/li[2]",
           "element": "<li>",
           "variant": "shared",
-          "en": "Product display documentation",
-          "zh": "产品展示记录"
+          "en": "Speaker and product-display documentation",
+          "zh": "演讲者与产品展示记录"
         },
         {
-          "path": "visible/p[20]",
+          "path": "visible/li[3]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Landscape and portrait asset coverage",
+          "zh": "横竖画幅资产记录"
+        },
+        {
+          "path": "visible/h2[5]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "What Venus Bridge did not claim",
+          "zh": "不作主张"
+        },
+        {
+          "path": "visible/li[4]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "UK launch ownership",
+          "zh": "英国发布主办"
+        },
+        {
+          "path": "visible/li[5]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Partner recruitment",
+          "zh": "合作伙伴招募"
+        },
+        {
+          "path": "visible/li[6]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Commercial deployment outcomes",
+          "zh": "商业部署成果"
+        },
+        {
+          "path": "visible/p[13]",
           "element": "<p>",
           "variant": "shared",
-          "en": "08 · What Remained Useful",
-          "zh": "08 · 项目之后仍可使用的价值"
+          "en": "05 · Documentation Approach",
+          "zh": "05 · 记录方法"
         },
         {
           "path": "visible/h2[6]",
           "element": "<h2>",
           "variant": "shared",
-          "en": "A concise set of event assets connecting the speaker, robotics products and their London display environment.",
-          "zh": "形成精炼活动资产，将演讲者、机器人产品与伦敦展示环境联系起来。"
+          "en": "Before",
+          "zh": "前期"
+        },
+        {
+          "path": "visible/li[7]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Presentation and display priorities",
+          "zh": "演讲与展示重点对齐"
+        },
+        {
+          "path": "visible/h2[7]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "On the Ground",
+          "zh": "现场"
+        },
+        {
+          "path": "visible/li[8]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Speaker and robotics-product coverage",
+          "zh": "演讲者与机器人产品记录"
+        },
+        {
+          "path": "visible/h2[8]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "After",
+          "zh": "后续"
+        },
+        {
+          "path": "visible/li[9]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Approved event asset selection",
+          "zh": "获准活动资产筛选"
+        },
+        {
+          "path": "visible/p[14]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "06 · Verified Outputs",
+          "zh": "06 · 经核实的交付"
+        },
+        {
+          "path": "visible/li[10]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Approved UK launch visual record",
+          "zh": "经批准的英国发布视觉记录"
+        },
+        {
+          "path": "visible/li[11]",
+          "element": "<li>",
+          "variant": "shared",
+          "en": "Technical-presentation and product-display assets",
+          "zh": "技术演讲与产品展示资产"
+        },
+        {
+          "path": "visible/p[15]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public evidence available",
+          "zh": "公开证据"
+        },
+        {
+          "path": "visible/p[16]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "3 approved images",
+          "zh": "3 张获准公开使用的影像"
+        },
+        {
+          "path": "visible/p[17]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "07 · Verified Result",
+          "zh": "07 · 经核实的结果"
+        },
+        {
+          "path": "visible/h2[9]",
+          "element": "<h2>",
+          "variant": "shared",
+          "en": "A concise approved record connecting the technical presentation, robotics products and London launch environment.",
+          "zh": "形成一套经批准的精炼记录，将技术演讲、机器人产品与伦敦发布环境联系起来。"
+        },
+        {
+          "path": "visible/p[18]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Reusable event assets spanning speaker and product views.",
+          "zh": "覆盖演讲者与产品视角的可复用活动资产。"
+        },
+        {
+          "path": "visible/p[19]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "08 · What Happened Next",
+          "zh": "08 · 后续公开发展"
+        },
+        {
+          "path": "visible/p[20]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "AGIBOT publicly described the event as part of its continuing European growth and local commercial-deployment work.",
+          "zh": "AGIBOT 公开将该活动描述为其持续推进欧洲增长与本地商业部署工作的一部分。"
         },
         {
           "path": "visible/p[21]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "This subsequent market development is provided as company context and is not presented as an outcome attributable to Venus Bridge.",
+          "zh": "后续市场发展仅作为企业背景信息，不作为可归因于 Venus Bridge 的项目成果。"
+        },
+        {
+          "path": "visible/p[22]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "09 · Evidence & Claim Boundary",
+          "zh": "09 · 证据与主张边界"
+        },
+        {
+          "path": "visible/p[23]",
+          "element": "<p>",
+          "variant": "shared",
+          "en": "Public sources support the market context; approved project media and the owner record support the stated Venus Bridge role. Wider strategy, commercial outcomes and subsequent developments are not attributed to Venus Bridge.",
+          "zh": "公开来源支持市场背景；经批准的项目影像与所有者记录支持所述 Venus Bridge 职责。更广泛的企业战略、商业成果及后续发展均不归因于 Venus Bridge。"
+        },
+        {
+          "path": "visible/p[24]",
           "element": "<p>",
           "variant": "shared",
           "en": "Next project",
           "zh": "下一个项目"
         },
         {
-          "path": "visible/span[5]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "London Automotive Brand Film",
-          "zh": "伦敦汽车品牌影片"
-        },
-        {
-          "path": "visible/span[6]",
-          "element": "<span>",
-          "variant": "shared",
-          "en": "Brand & Content ↗",
-          "zh": "品牌与内容 ↗"
-        },
-        {
           "path": "visible/a[11]",
           "element": "<a>",
           "variant": "shared",
-          "en": "Discuss a Similar Market Goal",
-          "zh": "讨论类似市场目标"
+          "en": "London Automotive Brand Film ↗",
+          "zh": "伦敦汽车品牌影片 ↗"
         },
         {
-          "path": "visible/p[22]",
+          "path": "visible/p[25]",
           "element": "<p>",
           "variant": "shared",
           "en": "Venus Bridge helps Chinese companies validate, enter and grow in the UK and Europe through local commercial judgement, relevant relationships and integrated execution.",
           "zh": "Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。"
         },
         {
-          "path": "visible/p[23]",
+          "path": "visible/p[26]",
           "element": "<p>",
           "variant": "shared",
           "en": "London, United Kingdom",
@@ -9308,14 +9634,14 @@
           "zh": "条款"
         },
         {
-          "path": "visible/span[7]",
+          "path": "visible/span[2]",
           "element": "<span>",
           "variant": "shared",
           "en": "Venus Bridge",
           "zh": "Venus Bridge"
         },
         {
-          "path": "visible/span[8]",
+          "path": "visible/span[3]",
           "element": "<span>",
           "variant": "shared",
           "en": "© 2026 Venus Bridge",
@@ -9326,11 +9652,11 @@
     {
       "route": "/work/london-automotive-brand-film",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 77,
       "currentChineseCount": 76,
-      "firstChineseMismatch": 61,
+      "firstChineseMismatch": 20,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -9476,8 +9802,8 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
@@ -9869,11 +10195,11 @@
     {
       "route": "/work/wang-linkai-london-concert",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 73,
       "currentChineseCount": 72,
-      "firstChineseMismatch": 57,
+      "firstChineseMismatch": 20,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -10019,8 +10345,8 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
@@ -10384,11 +10710,11 @@
     {
       "route": "/work/yue-yunpeng-london-live",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 72,
       "currentChineseCount": 71,
-      "firstChineseMismatch": 56,
+      "firstChineseMismatch": 20,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -10534,8 +10860,8 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
@@ -10892,11 +11218,11 @@
     {
       "route": "/work/london-fashion-week-2025",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 72,
       "currentChineseCount": 71,
-      "firstChineseMismatch": 56,
+      "firstChineseMismatch": 20,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -11042,8 +11368,8 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
@@ -11400,11 +11726,11 @@
     {
       "route": "/work/beauty-fashion-brand-content",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 72,
       "currentChineseCount": 71,
-      "firstChineseMismatch": 56,
+      "firstChineseMismatch": 20,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -11550,8 +11876,8 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",
@@ -11908,11 +12234,11 @@
     {
       "route": "/work/european-road-lifestyle",
       "pathParity": true,
-      "chineseSourceUnchanged": true,
+      "chineseSourceUnchanged": false,
       "renderedBaselineTextMatch": false,
       "baselineChineseCount": 72,
       "currentChineseCount": 71,
-      "firstChineseMismatch": 56,
+      "firstChineseMismatch": 20,
       "rows": [
         {
           "path": "visible/a[1]",
@@ -12058,8 +12384,8 @@
           "path": "visible/dt[4]",
           "element": "<dt>",
           "variant": "shared",
-          "en": "Venus Bridge role",
-          "zh": "Venus Bridge 职责"
+          "en": "Verified Venus Bridge role",
+          "zh": "经核实的 Venus Bridge 职责"
         },
         {
           "path": "visible/dd[4]",

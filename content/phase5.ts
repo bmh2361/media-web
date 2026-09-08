@@ -79,7 +79,7 @@ const en = {
         text: "Understand the market landscape and opportunity, and decide where to invest before committing heavily."
       },
       {
-        title: "Buyers, Partners & Industry Presence",
+        title: "Buyers, Partners & Industry Engagement",
         text: "Identify and build the commercial relationships that can move the market forward."
       },
       {

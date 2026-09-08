@@ -66,24 +66,22 @@ test("every Work row resolves to exactly one explicit cover", async ({ page }) =
 
   for (let index = 0; index < 12; index += 1) {
     const row = rows.nth(index);
+    const tier = row.locator("xpath=ancestor::*[@data-work-tier][1]");
+    const previewStage = tier.locator("[data-case-preview] [data-preview-media-stage]");
     await row.locator("button").click();
     await expect(row).toHaveAttribute("data-active-case", "true");
-    await expect(page.locator("[data-case-preview] [data-preview-media-stage] img")).toHaveCount(1);
-    await expect(page.locator("[data-case-preview] [data-preview-media-stage]")).toHaveAttribute(
-      "data-preview-image-count",
-      "1"
+    await expect(previewStage.locator("img")).toHaveCount(1);
+    await expect(previewStage).toHaveAttribute("data-preview-image-count", "1");
+    expect(await previewStage.evaluate((node) => getComputedStyle(node).backgroundColor)).not.toBe(
+      "rgb(0, 0, 0)"
     );
-    expect(
-      await page
-        .locator("[data-case-preview] [data-preview-media-stage]")
-        .evaluate((node) => getComputedStyle(node).backgroundColor)
-    ).not.toBe("rgb(0, 0, 0)");
   }
 
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/en/work");
-  await page.locator("[data-mobile-case-row] button").first().click();
-  await page.locator("[data-mobile-case-row] button").nth(1).click();
-  await expect(page.locator('[data-mobile-case-row] button[aria-expanded="true"]')).toHaveCount(1);
-  await expect(page.locator("[data-mobile-case-cover] img")).toHaveCount(1);
+  const tierOne = page.locator('[data-work-tier="1"]');
+  await tierOne.locator("[data-mobile-case-row] button").first().click();
+  await tierOne.locator("[data-mobile-case-row] button").nth(1).click();
+  await expect(tierOne.locator('[data-mobile-case-row] button[aria-expanded="true"]')).toHaveCount(1);
+  await expect(tierOne.locator("[data-mobile-case-cover] img")).toHaveCount(1);
 });

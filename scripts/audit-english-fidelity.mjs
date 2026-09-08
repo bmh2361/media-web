@@ -108,10 +108,11 @@ const forbiddenResults = prohibited.map((phrase) => {
   if (occurrences.length) failures.push(`Prohibited phrase in active scope: ${phrase}`);
   return { phrase, pass: occurrences.length === 0, occurrences };
 });
-if (!report.chineseSourceUnchanged) failures.push("Chinese source characters changed from HEAD.");
+if (report.chineseSourceBaseline === "UNKNOWN") failures.push("CHINESE_SOURCE_BASELINE = UNKNOWN");
+if (report.chineseSourceStatus === "CHANGED_UNRECORDED")
+  failures.push(`Unrecorded Chinese source changes: ${report.unrecordedChineseSourceChanges.join(", ")}`);
 for (const route of report.routes) {
   if (!route.pathParity) failures.push(`Visible element path mismatch: ${route.route}`);
-  if (!route.chineseSourceUnchanged) failures.push(`Chinese source changed: ${route.route}`);
 }
 const changedStrings = JSON.parse(fs.readFileSync(changedStringsPath, "utf8"));
 if (changedStrings.professionalReviewRowsAccountedFor !== 119) {

@@ -51,11 +51,11 @@ test.describe("canonical information architecture", () => {
     }
   });
 
-  test("Work filtering is URL-initialised and fail-closed", async ({ page }) => {
+  test("Work hierarchy is canonical even when a legacy filter query is present", async ({ page }) => {
     await page.goto("/en/work?category=brand-evidence");
-    await expect(page.locator('[data-case-filter="brand-evidence"]')).toHaveAttribute("aria-pressed", "true");
-    await expect(page.locator("[data-case-row]")).toHaveCount(4);
-    await page.goto("/en/work?category=institutional-talent");
-    await expect(page.locator("[data-case-row]")).toHaveCount(2);
+    await expect(page.locator('[data-work-tier="1"] [data-case-row]')).toHaveCount(6);
+    await expect(page.locator('[data-work-tier="2"] [data-case-row]')).toHaveCount(1);
+    await expect(page.locator('[data-work-tier="3"] [data-case-row]')).toHaveCount(5);
+    await expect(page.locator("[data-case-filters]")).toHaveCount(0);
   });
 });

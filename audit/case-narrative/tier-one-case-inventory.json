@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-09-09",
+  "tier": "Commercial Case Studies",
+  "cases": [
+    {
+      "slug": "byd-bd11-london",
+      "marketMoment": "UK-Specific Product Introduction",
+      "geography": "UK",
+      "engagementType": "launch"
+    },
+    {
+      "slug": "geely-london-brand-launch",
+      "marketMoment": "UK Brand Market Entry",
+      "geography": "UK",
+      "engagementType": "launch"
+    },
+    {
+      "slug": "changan-europe-launch-2025",
+      "marketMoment": "European Expansion at IAA Mobility",
+      "geography": "Germany",
+      "engagementType": "exhibition"
+    },
+    {
+      "slug": "catl-open-day-2025",
+      "marketMoment": "European Technology Introduction",
+      "geography": "Germany",
+      "engagementType": "industry-event"
+    },
+    {
+      "slug": "leapmotor-iaa-2023",
+      "marketMoment": "Global Product Debut at IAA Mobility",
+      "geography": "Germany",
+      "engagementType": "exhibition"
+    },
+    {
+      "slug": "agibot-london-launch",
+      "marketMoment": "UK Embodied-Robotics Launch",
+      "geography": "UK",
+      "engagementType": "launch"
+    }
+  ]
+}

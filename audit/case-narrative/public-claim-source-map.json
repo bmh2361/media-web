@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-09-09",
+  "governedBy": ["content/evidence/public-case-sources.ts", "content/evidence/public-case-narratives.ts"],
+  "cases": {
+    "byd-bd11-london": ["byd-bd11-global-launch", "byd-bd11-london-owner-scope"],
+    "geely-london-brand-launch": ["geely-ex5-uk-launch", "geely-london-brand-launch-owner-scope"],
+    "changan-europe-launch-2025": [
+      "changan-iaa-2025",
+      "changan-europe-launch-mainz",
+      "changan-europe-launch-2025-owner-scope"
+    ],
+    "catl-open-day-2025": ["catl-shenxing-pro-open-day", "catl-open-day-2025-owner-scope"],
+    "leapmotor-iaa-2023": ["leapmotor-2023-annual-report", "leapmotor-iaa-2023-owner-scope"],
+    "agibot-london-launch": ["agibot-uk-launch-2026", "agibot-london-launch-owner-scope"]
+  },
+  "rejectedClaims": [
+    "Venus Bridge caused market entry, sales, dealer or distributor growth",
+    "Venus Bridge owned any of the six events or client strategies",
+    "Venus Bridge caused later Stellantis, network, partner or deployment developments",
+    "The Changan Munich media depicts the formal March 2025 Mainz European brand launch"
+  ]
+}

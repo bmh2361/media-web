@@ -72,19 +72,17 @@ test("home exposes distinct full-bleed, touch-rail, dark-grid and compact-proof 
 test("case archive activates one project through scroll, tap and focus", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/en/work");
-  const rows = page.locator("[data-mobile-case-row]");
+  const tierOne = page.locator('[data-work-tier="1"]');
+  const rows = tierOne.locator("[data-mobile-case-row]");
   await rows.nth(2).scrollIntoViewIfNeeded();
   await expect
-    .poll(() => page.locator('[data-mobile-case-row] button[aria-expanded="true"]').count())
+    .poll(() => tierOne.locator('[data-mobile-case-row] button[aria-expanded="true"]').count())
     .toBe(1);
   await rows.nth(2).locator("button").focus();
   await expect(rows.nth(2).locator("button")).toHaveAttribute("aria-expanded", "true");
   await rows.nth(1).locator("button").click();
   await expect(rows.nth(1).locator("button")).toHaveAttribute("aria-expanded", "true");
-  await expect(page.locator('[data-case-filters] button[aria-pressed="true"]')).toHaveCSS(
-    "border-radius",
-    "0px"
-  );
+  await expect(page.locator("[data-case-filters]")).toHaveCount(0);
 });
 
 test("team is a native semantic swipe rail on phones and stays a desktop grid", async ({ page }) => {

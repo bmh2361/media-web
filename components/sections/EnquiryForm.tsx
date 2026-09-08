@@ -27,6 +27,11 @@ export function EnquiryForm({
   const formRef = useRef<HTMLFormElement>(null);
   const zh = language === "zh";
 
+  function resetTurnstile() {
+    const turnstile = (window as typeof window & { turnstile?: { reset: () => void } }).turnstile;
+    turnstile?.reset();
+  }
+
   useEffect(() => {
     const requested = new URLSearchParams(window.location.search).get("intent");
     const selected: Intent = intents.includes(requested as Intent) ? (requested as Intent) : "other";
@@ -102,6 +107,7 @@ export function EnquiryForm({
       trackMeasurement("contact_submit_success", { contact_intent: intent });
       formRef.current?.reset();
     } catch (error) {
+      resetTurnstile();
       setState("error");
       const safeClass =
         error instanceof Error && error.message === "rate_limited" ? "rate_limited" : "delivery";
