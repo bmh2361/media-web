@@ -237,12 +237,14 @@ test("UK Fit Call and Execution Brief use distinct required fields", async () =>
   assert.match(forms, /Approval owner/);
 });
 
-test("static production requires direct contact and complete human confirmations", async () => {
+test("static production keeps direct contact while gating the Pages Function form", async () => {
   const contact = await source("components/sections/ContactExperience.tsx");
+  const company = await source("content/company.ts");
   const releaseValidator = await source("scripts/validate-release.mjs");
-  assert.match(contact, /data-contact-delivery="direct-only"/);
-  assert.match(contact, /Venusbridge/);
-  assert.match(contact, /venusbridge\.co\.uk@gmail\.com/);
+  assert.match(contact, /data-contact-delivery=\{formEnabled \? "form-and-direct" : "direct-only"\}/);
+  assert.match(contact, /isContactFormExposed/);
+  assert.match(company, /Venusbridge/);
+  assert.match(company, /venusbridge\.co\.uk@gmail\.com/);
   assert.doesNotMatch(contact, /<form|fetch\(/);
   for (const key of [
     "APPROVED_MEDIA_CONFIRMED",

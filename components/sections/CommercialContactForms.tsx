@@ -230,8 +230,8 @@ export function CommercialContactForm({ language, kind }: { language: Language; 
         <input name="consent" type="checkbox" required className="mt-0.5 size-6 shrink-0" />
         <span>
           {zh
-            ? "我同意 Venus Bridge Media 为回复本次咨询而处理以上信息。"
-            : "I consent to Venus Bridge Media processing this information to respond to this enquiry."}
+            ? "我同意 Venus Bridge 为回复本次咨询而处理以上信息。"
+            : "I consent to Venus Bridge processing this information to respond to this enquiry."}
         </span>
       </label>
       <button

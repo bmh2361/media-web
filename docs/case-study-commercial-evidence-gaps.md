@@ -1,0 +1,15 @@
+# Case-study commercial evidence gaps
+
+| Case                                                               | Status                            | Gap / decision                                                                                                                                   |
+| ------------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| BYD BD11 London                                                    | OWNER_CONFIRMATION_REQUIRED       | Tier 1 is safe at the current narrow scope. Additional pre-event coordination requires owner evidence.                                           |
+| Geely London Brand Launch                                          | NONE                              | Official event identity and narrow Venus Bridge documentation role are sufficient.                                                               |
+| Changan IAA Mobility 2025                                          | EVENT_IDENTITY_UNCLEAR (RESOLVED) | Previous title conflated Munich IAA activity with the formal Mainz European launch; corrected. Any broader launch role needs owner confirmation. |
+| CATL Open Day Munich                                               | NONE                              | Official event context and narrow documentation role are sufficient.                                                                             |
+| Leapmotor IAA Mobility 2023                                        | NONE                              | Official event identity and narrow documentation role are sufficient. Later corporate developments are intentionally omitted.                    |
+| AGIBOT UK Launch 2026                                              | OWNER_CONFIRMATION_REQUIRED       | Media and official event identity match. Any event production, partner or deployment role remains unverified.                                    |
+| London Automotive Brand Film                                       | NONE                              | Suitable for Tier 2 local brand and production execution, not Tier 1 market-entry proof.                                                         |
+| Wang Linkai / Yue Yunpeng / London Fashion Week / Beauty & Fashion | NOT_SUITABLE_FOR_COMMERCIAL_CASE  | Retained honestly as Tier 3 creative and cultural experience.                                                                                    |
+| European Automotive Asset Programme                                | NOT_SUITABLE_FOR_COMMERCIAL_CASE  | Retained as creative/production evidence; client, commission and outcomes are not verified.                                                      |
+
+The classification records what is missing; it does not prevent a narrow, evidence-safe Tier 1 narrative where the required public context and Venus Bridge role are independently supported.

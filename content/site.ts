@@ -478,7 +478,7 @@ export const process = [
   {
     title: { en: "Clarify the brief", zh: "梳理项目需求" },
     text: {
-      en: "We align campaign goals, required formats, usage rights, timeline, commercial parameters and Chinese market expectations before production begins.",
+      en: "We align campaign goals, required formats, usage rights, timeline, commercial terms and Chinese market expectations before production begins.",
       zh: "在制作前明确传播目标、内容规格、使用范围、时间节点、商业条件与中国市场传播语境。"
     }
   },
@@ -743,7 +743,7 @@ export const servicesPage = {
         ],
         deliverables: [
           "Production route",
-          "Commercial parameters note",
+          "Commercial terms note",
           "Local resource map",
           "Risk and logistics notes"
         ],

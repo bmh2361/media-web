@@ -5,12 +5,13 @@ import test from "node:test";
 const root = new URL("../", import.meta.url);
 const source = async (path) => readFile(new URL(path, root), "utf8");
 
-test("the static release exposes direct contact without a server submission path", async () => {
+test("the static release exposes direct contact with a gated Pages Function path", async () => {
   const contact = await source("components/sections/ContactExperience.tsx");
-  assert.match(contact, /data-contact-delivery="direct-only"/);
-  assert.match(contact, /Venusbridge/);
-  assert.match(contact, /mailto:\$\{CONTACT_EMAIL\}/);
-  assert.doesNotMatch(contact, /<form|fetch\(|\/api\/contact/);
+  const actions = await source("components/sections/ContactActions.tsx");
+  assert.match(contact, /data-contact-delivery=\{formEnabled \? "form-and-direct" : "direct-only"\}/);
+  assert.match(contact, /isContactFormExposed/);
+  assert.match(actions, /mailto:\$\{email\}/);
+  assert.doesNotMatch(contact, /<form|fetch\(/);
 });
 
 test("production validation separates canonical blockers from retired findings", async () => {

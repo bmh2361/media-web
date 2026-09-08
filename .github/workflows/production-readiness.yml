@@ -2,6 +2,9 @@ name: Production readiness
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches: [main]
+  merge_group:
 
 jobs:
   validate:
@@ -17,6 +20,12 @@ jobs:
       APPROVED_MEDIA_CONFIRMED: ${{ vars.APPROVED_MEDIA_CONFIRMED }}
       PUBLIC_CASE_EVIDENCE_CONFIRMED: ${{ vars.PUBLIC_CASE_EVIDENCE_CONFIRMED }}
       CONTACT_CHANNELS_CONFIRMED: ${{ vars.CONTACT_CHANNELS_CONFIRMED }}
+      CONTACT_DELIVERY_VERIFIED: ${{ vars.CONTACT_DELIVERY_VERIFIED }}
+      PRIVACY_NOTICE_COMPLETE: ${{ vars.PRIVACY_NOTICE_COMPLETE }}
+      TERMS_NOTICE_COMPLETE: ${{ vars.TERMS_NOTICE_COMPLETE }}
+      RELEASE_INDEXING_ENABLED: ${{ vars.RELEASE_INDEXING_ENABLED }}
+      CF_PAGES_BRANCH: ${{ vars.CF_PAGES_PRODUCTION_BRANCH }}
+      CF_PAGES_PRODUCTION_BRANCH: ${{ vars.CF_PAGES_PRODUCTION_BRANCH }}
       NEXT_PUBLIC_SITE_URL: ${{ vars.NEXT_PUBLIC_SITE_URL }}
       NEXT_PUBLIC_LEGAL_COMPANY_NAME: ${{ vars.NEXT_PUBLIC_LEGAL_COMPANY_NAME }}
       NEXT_PUBLIC_PRIVACY_CONTROLLER_NAME: ${{ vars.NEXT_PUBLIC_PRIVACY_CONTROLLER_NAME }}
@@ -28,8 +37,17 @@ jobs:
       NEXT_PUBLIC_TERMS_APPROVAL_STATUS: ${{ vars.NEXT_PUBLIC_TERMS_APPROVAL_STATUS }}
       NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE: ${{ vars.NEXT_PUBLIC_PRIVACY_EFFECTIVE_DATE }}
       NEXT_PUBLIC_TERMS_EFFECTIVE_DATE: ${{ vars.NEXT_PUBLIC_TERMS_EFFECTIVE_DATE }}
+      NEXT_PUBLIC_CONTACT_FORM_ENABLED: ${{ vars.NEXT_PUBLIC_CONTACT_FORM_ENABLED }}
+      NEXT_PUBLIC_CONTACT_PRIVACY_PROCESSING_APPROVED: ${{ vars.NEXT_PUBLIC_CONTACT_PRIVACY_PROCESSING_APPROVED }}
+      NEXT_PUBLIC_CONTACT_PUBLIC_IDENTITY_CONFIRMED: ${{ vars.NEXT_PUBLIC_CONTACT_PUBLIC_IDENTITY_CONFIRMED }}
+      CONTACT_FORM_ENABLED: ${{ vars.CONTACT_FORM_ENABLED }}
+      CONTACT_PRIVACY_PROCESSING_APPROVED: ${{ vars.CONTACT_PRIVACY_PROCESSING_APPROVED }}
+      CONTACT_PUBLIC_IDENTITY_CONFIRMED: ${{ vars.CONTACT_PUBLIC_IDENTITY_CONFIRMED }}
+      PREVIEW_CONTACT_BUILD_APPROVED: ${{ vars.PREVIEW_CONTACT_BUILD_APPROVED }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -39,6 +57,19 @@ jobs:
       - run: npm run lint
       - run: npm run typecheck
       - run: npm run validate:content
+      - run: npm run audit:english-fidelity
       - run: npm test
+      - run: npm audit --omit=dev
       - run: npm run build
+        env:
+          # Build a complete artifact so structural validators can run. The
+          # later production gates still validate the owner-controlled mode.
+          PUBLIC_WORK_MODE: portfolio
+      - run: npm run export:bilingual-copy
+        env:
+          GITHUB_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+      - run: npm run audit:english-fidelity
+      - run: npm run validate:redirects
+      - run: npm run validate:og
       - run: npm run validate:release:production
+      - run: npm run readiness:production

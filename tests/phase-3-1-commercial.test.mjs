@@ -59,11 +59,13 @@ test("homepage stays at eight sections without overloading capability cards", as
   assert.doesNotMatch(page, /item\.examples\.slice\(0, 3\)/);
 });
 
-test("static contact stays low-friction and exposes both direct channels", async () => {
+test("static contact stays low-friction and release-gates the optional form", async () => {
   const contact = await source("components/sections/ContactExperience.tsx");
-  assert.match(contact, /data-contact-delivery="direct-only"/);
-  assert.match(contact, /Venusbridge/);
-  assert.match(contact, /venusbridge\.co\.uk@gmail\.com/);
+  const company = await source("content/company.ts");
+  assert.match(contact, /data-contact-delivery=\{formEnabled \? "form-and-direct" : "direct-only"\}/);
+  assert.match(contact, /ContactActions/);
+  assert.match(company, /Venusbridge/);
+  assert.match(company, /venusbridge\.co\.uk@gmail\.com/);
   assert.doesNotMatch(contact, /<form|fetch\(/);
   assert.doesNotMatch(contact, /budget|pricing|package/i);
 });

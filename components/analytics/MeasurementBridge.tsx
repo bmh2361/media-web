@@ -14,7 +14,7 @@ export function MeasurementBridge() {
     if (caseMatch) {
       trackMeasurement("case_view", {
         case_slug: caseMatch[1],
-        category: document.querySelector<HTMLElement>("[data-case-category]")?.dataset.caseCategory
+        case_category: document.querySelector<HTMLElement>("[data-case-category]")?.dataset.caseCategory
       });
     }
   }, [pathname, searchParams]);
@@ -27,7 +27,7 @@ export function MeasurementBridge() {
       const path = href.split("?")[0];
       const ctaLocation = link.dataset.analyticsLocation || pathname;
       if (link.dataset.analytics === "language-switch") {
-        trackMeasurement("language_switch", { destination: path });
+        trackMeasurement("language_switch", { cta_location: path });
       } else if (/\/(?:en|zh)\/work\/[^/]+$/.test(path)) {
         trackMeasurement("case_detail_open", {
           case_slug: path.split("/").at(-1),
@@ -38,7 +38,11 @@ export function MeasurementBridge() {
       } else if (path.endsWith("/partners")) {
         trackMeasurement("partners_cta_click", { cta_location: ctaLocation });
       } else if (path.endsWith("/contact")) {
-        trackMeasurement("discuss_project_click", { cta_location: ctaLocation });
+        const intent = new URL(link.href).searchParams.get("intent");
+        trackMeasurement("contact_intent", {
+          cta_location: ctaLocation,
+          contact_intent: intent === "company" || intent === "partner" ? intent : "other"
+        });
       }
     };
     document.addEventListener("click", onClick);

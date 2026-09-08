@@ -154,8 +154,8 @@ export function QuickEnquiryForm({ language }: { language: Language }) {
         />
         <span>
           {zh
-            ? "我同意 Venus Bridge Media 使用以上信息评估并跟进本次咨询。"
-            : "I consent to Venus Bridge Media using this information to assess and follow up this enquiry."}
+            ? "我同意 Venus Bridge 使用以上信息评估并跟进本次咨询。"
+            : "I consent to Venus Bridge using this information to assess and follow up this enquiry."}
           {errors.consent && (
             <span id="consent-error" className="mt-1 block text-red-700">
               {errorText("consent")}
@@ -170,7 +170,7 @@ export function QuickEnquiryForm({ language }: { language: Language }) {
         <p role="alert" className="text-sm text-ink/70 md:col-span-2">
           {zh
             ? "在线提交尚未配置，信息未发送。"
-            : "Online delivery is not configured, so your information was not sent."}{" "}
+            : "Online submission is not configured, so your information was not sent."}{" "}
           <a className="text-blue" href={`mailto:${brand.email}`}>
             {brand.email}
           </a>

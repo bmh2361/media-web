@@ -83,12 +83,13 @@ test("four mobile journeys use the shared bounded sticky story", async ({ page }
 test("case archive touch reveal and case-detail media remain spatially continuous", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/en/work");
-  const rows = page.locator("[data-mobile-case-row]");
+  const tierOne = page.locator('[data-work-tier="1"]');
+  const rows = tierOne.locator("[data-mobile-case-row]");
   await rows.nth(0).locator("button").click();
   await expect(rows.nth(0).locator("button")).toHaveAttribute("aria-expanded", "true");
   await expect(rows.nth(0).locator("img")).toBeVisible();
   await rows.nth(1).locator("button").click();
-  await expect(page.locator('[data-mobile-case-row] button[aria-expanded="true"]')).toHaveCount(1);
+  await expect(tierOne.locator('[data-mobile-case-row] button[aria-expanded="true"]')).toHaveCount(1);
 
   await page.goto("/en/work/byd-bd11-london");
   const firstEvidence = page.locator('[data-case-section="first-evidence"] [data-mobile-reveal]').first();

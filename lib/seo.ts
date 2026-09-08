@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import type { Language } from "@/lib/i18n";
 import { company } from "@/content/company";
+import { isIndexingAllowed } from "@/lib/release";
 
 const siteUrl = company.websiteDomain;
-const indexable = true;
-const ogImagePath = () => "/og/venus-bridge.png";
+const indexable = isIndexingAllowed();
+const ogVersion = "v20260831";
+const ogImagePath = (lang: Language, path: string) => {
+  const route = path === "/" ? "home" : path.replace(/^\//, "").replaceAll("/", "-");
+  return `/og/${ogVersion}/${lang}/${route}.png`;
+};
 
 export const seoDescriptions = {
   en: "UK and European market validation, buyer and partner engagement, launches and local execution for Chinese companies.",
@@ -31,7 +36,8 @@ export function buildMetadata({
   allowIndex?: boolean;
 }): Metadata {
   const localizedPath = `/${lang}${path === "/" ? "" : path}`;
-  const resolvedOgImage = ogImage ?? ogImagePath();
+  const resolvedOgImage = ogImage ?? ogImagePath(lang, path);
+  const absolute = (value: string) => (value.startsWith("http") ? value : `${siteUrl}${value}`);
   return {
     title: { absolute: title },
     description,
@@ -40,11 +46,11 @@ export function buildMetadata({
       ? { index: true, follow: true }
       : { index: false, follow: false, noarchive: true, nocache: true },
     alternates: {
-      canonical: localizedPath,
+      canonical: absolute(localizedPath),
       languages: {
-        "en-GB": `/en${path === "/" ? "" : path}`,
-        "zh-CN": `/zh${path === "/" ? "" : path}`,
-        "x-default": `/en${path === "/" ? "" : path}`
+        "en-GB": absolute(`/en${path === "/" ? "" : path}`),
+        "zh-CN": absolute(`/zh${path === "/" ? "" : path}`),
+        "x-default": absolute(`/en${path === "/" ? "" : path}`)
       }
     },
     openGraph: {
@@ -55,8 +61,8 @@ export function buildMetadata({
       type: "website",
       locale: lang === "zh" ? "zh_CN" : "en_GB",
       alternateLocale: lang === "zh" ? ["en_GB"] : ["zh_CN"],
-      images: [{ url: resolvedOgImage, width: 1200, height: 630, alt: ogAlt ?? title }]
+      images: [{ url: absolute(resolvedOgImage), width: 1200, height: 630, alt: ogAlt ?? title }]
     },
-    twitter: { card: "summary_large_image", title, description, images: [resolvedOgImage] }
+    twitter: { card: "summary_large_image", title, description, images: [absolute(resolvedOgImage)] }
   };
 }

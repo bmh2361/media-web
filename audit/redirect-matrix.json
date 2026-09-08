@@ -1,0 +1,560 @@
+{
+  "generatedAt": "2026-08-31T15:08:38.310Z",
+  "rootLanguageRedirect": {
+    "status": 307,
+    "decision": "temporary-language-entry"
+  },
+  "redirectCount": 61,
+  "failures": [],
+  "entries": [
+    {
+      "oldRoute": "/",
+      "currentFirstHop": "/en",
+      "requiredFinalDestination": "/en",
+      "status": 307,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/capabilities",
+      "currentFirstHop": "/en/companies",
+      "requiredFinalDestination": "/en/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/capabilities",
+      "currentFirstHop": "/zh/companies",
+      "requiredFinalDestination": "/zh/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/what-we-do",
+      "currentFirstHop": "/en/companies",
+      "requiredFinalDestination": "/en/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/what-we-do",
+      "currentFirstHop": "/zh/companies",
+      "requiredFinalDestination": "/zh/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/what-we-do/enter-the-uk",
+      "currentFirstHop": "/en/companies#market-validation-entry",
+      "requiredFinalDestination": "/en/companies#market-validation-entry",
+      "status": 308,
+      "targetAnchor": "market-validation-entry",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/what-we-do/enter-the-uk",
+      "currentFirstHop": "/zh/companies#market-validation-entry",
+      "requiredFinalDestination": "/zh/companies#market-validation-entry",
+      "status": 308,
+      "targetAnchor": "market-validation-entry",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/what-we-do/building-uk-presence",
+      "currentFirstHop": "/en/companies#local-team-capability",
+      "requiredFinalDestination": "/en/companies#local-team-capability",
+      "status": 308,
+      "targetAnchor": "local-team-capability",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/what-we-do/building-uk-presence",
+      "currentFirstHop": "/zh/companies#local-team-capability",
+      "requiredFinalDestination": "/zh/companies#local-team-capability",
+      "status": 308,
+      "targetAnchor": "local-team-capability",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/what-we-do/launch-in-the-uk",
+      "currentFirstHop": "/en/companies#industry-presence-events",
+      "requiredFinalDestination": "/en/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/what-we-do/launch-in-the-uk",
+      "currentFirstHop": "/zh/companies#industry-presence-events",
+      "requiredFinalDestination": "/zh/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/what-we-do/create-in-the-uk",
+      "currentFirstHop": "/en/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/en/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/what-we-do/create-in-the-uk",
+      "currentFirstHop": "/zh/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/zh/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/services",
+      "currentFirstHop": "/en/companies",
+      "requiredFinalDestination": "/en/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/services",
+      "currentFirstHop": "/zh/companies",
+      "requiredFinalDestination": "/zh/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/services/uk-market-entry",
+      "currentFirstHop": "/en/companies#market-validation-entry",
+      "requiredFinalDestination": "/en/companies#market-validation-entry",
+      "status": 308,
+      "targetAnchor": "market-validation-entry",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/services/uk-market-entry",
+      "currentFirstHop": "/zh/companies#market-validation-entry",
+      "requiredFinalDestination": "/zh/companies#market-validation-entry",
+      "status": 308,
+      "targetAnchor": "market-validation-entry",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/services/events-exhibitions",
+      "currentFirstHop": "/en/companies#industry-presence-events",
+      "requiredFinalDestination": "/en/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/services/events-exhibitions",
+      "currentFirstHop": "/zh/companies#industry-presence-events",
+      "requiredFinalDestination": "/zh/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/services/commercial-production",
+      "currentFirstHop": "/en/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/en/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/services/commercial-production",
+      "currentFirstHop": "/zh/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/zh/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/services/research-innovation",
+      "currentFirstHop": "/en/partners#capabilities-a-project-may-require",
+      "requiredFinalDestination": "/en/partners#capabilities-a-project-may-require",
+      "status": 308,
+      "targetAnchor": "capabilities-a-project-may-require",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/services/research-innovation",
+      "currentFirstHop": "/zh/partners#capabilities-a-project-may-require",
+      "requiredFinalDestination": "/zh/partners#capabilities-a-project-may-require",
+      "status": 308,
+      "targetAnchor": "capabilities-a-project-may-require",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/industries",
+      "currentFirstHop": "/en/companies",
+      "requiredFinalDestination": "/en/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/industries",
+      "currentFirstHop": "/zh/companies",
+      "requiredFinalDestination": "/zh/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/industries/*",
+      "currentFirstHop": "/en/companies",
+      "requiredFinalDestination": "/en/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/industries/*",
+      "currentFirstHop": "/zh/companies",
+      "requiredFinalDestination": "/zh/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/expertise",
+      "currentFirstHop": "/en/companies",
+      "requiredFinalDestination": "/en/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/expertise",
+      "currentFirstHop": "/zh/companies",
+      "requiredFinalDestination": "/zh/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/expertise/*",
+      "currentFirstHop": "/en/companies",
+      "requiredFinalDestination": "/en/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/expertise/*",
+      "currentFirstHop": "/zh/companies",
+      "requiredFinalDestination": "/zh/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/talent",
+      "currentFirstHop": "/en/partners#capabilities-a-project-may-require",
+      "requiredFinalDestination": "/en/partners#capabilities-a-project-may-require",
+      "status": 308,
+      "targetAnchor": "capabilities-a-project-may-require",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/talent",
+      "currentFirstHop": "/zh/partners#capabilities-a-project-may-require",
+      "requiredFinalDestination": "/zh/partners#capabilities-a-project-may-require",
+      "status": 308,
+      "targetAnchor": "capabilities-a-project-may-require",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/for-agencies",
+      "currentFirstHop": "/en/partners",
+      "requiredFinalDestination": "/en/partners",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/for-agencies",
+      "currentFirstHop": "/zh/partners",
+      "requiredFinalDestination": "/zh/partners",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/london-celebrity-event-coverage",
+      "currentFirstHop": "/en/work",
+      "requiredFinalDestination": "/en/work",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/london-celebrity-event-coverage",
+      "currentFirstHop": "/zh/work",
+      "requiredFinalDestination": "/zh/work",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/fashion-campaign-production-london",
+      "currentFirstHop": "/en/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/en/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/fashion-campaign-production-london",
+      "currentFirstHop": "/zh/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/zh/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/ai-product-video-uk-market",
+      "currentFirstHop": "/en/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/en/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/ai-product-video-uk-market",
+      "currentFirstHop": "/zh/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/zh/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/beauty-creator-content-sprint",
+      "currentFirstHop": "/en/partners#capabilities-a-project-may-require",
+      "requiredFinalDestination": "/en/partners#capabilities-a-project-may-require",
+      "status": 308,
+      "targetAnchor": "capabilities-a-project-may-require",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/beauty-creator-content-sprint",
+      "currentFirstHop": "/zh/partners#capabilities-a-project-may-require",
+      "requiredFinalDestination": "/zh/partners#capabilities-a-project-may-require",
+      "status": 308,
+      "targetAnchor": "capabilities-a-project-may-require",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/automotive-event-presenter-support",
+      "currentFirstHop": "/en/companies#industry-presence-events",
+      "requiredFinalDestination": "/en/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/automotive-event-presenter-support",
+      "currentFirstHop": "/zh/companies#industry-presence-events",
+      "requiredFinalDestination": "/zh/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/jewellery-editorial-shoot",
+      "currentFirstHop": "/en/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/en/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/jewellery-editorial-shoot",
+      "currentFirstHop": "/zh/companies#creative-production-brand-assets",
+      "requiredFinalDestination": "/zh/companies#creative-production-brand-assets",
+      "status": 308,
+      "targetAnchor": "creative-production-brand-assets",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/uk-brand-launch-roadshow",
+      "currentFirstHop": "/en/companies#industry-presence-events",
+      "requiredFinalDestination": "/en/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/uk-brand-launch-roadshow",
+      "currentFirstHop": "/zh/companies#industry-presence-events",
+      "requiredFinalDestination": "/zh/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/investor-strategic-partner-roadshow-production",
+      "currentFirstHop": "/en/companies",
+      "requiredFinalDestination": "/en/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/investor-strategic-partner-roadshow-production",
+      "currentFirstHop": "/zh/companies",
+      "requiredFinalDestination": "/zh/companies",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/product-demonstration-buyer-roadshow",
+      "currentFirstHop": "/en/companies#industry-presence-events",
+      "requiredFinalDestination": "/en/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/product-demonstration-buyer-roadshow",
+      "currentFirstHop": "/zh/companies#industry-presence-events",
+      "requiredFinalDestination": "/zh/companies#industry-presence-events",
+      "status": 308,
+      "targetAnchor": "industry-presence-events",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/innovation-university-industry-roadshow",
+      "currentFirstHop": "/en/partners#capabilities-a-project-may-require",
+      "requiredFinalDestination": "/en/partners#capabilities-a-project-may-require",
+      "status": 308,
+      "targetAnchor": "capabilities-a-project-may-require",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/innovation-university-industry-roadshow",
+      "currentFirstHop": "/zh/partners#capabilities-a-project-may-require",
+      "requiredFinalDestination": "/zh/partners#capabilities-a-project-may-require",
+      "status": 308,
+      "targetAnchor": "capabilities-a-project-may-require",
+      "anchorExists": true,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/teal-editorial-series",
+      "currentFirstHop": "/en/work",
+      "requiredFinalDestination": "/en/work",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/teal-editorial-series",
+      "currentFirstHop": "/zh/work",
+      "requiredFinalDestination": "/zh/work",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/commercial-fashion-styling",
+      "currentFirstHop": "/en/work",
+      "requiredFinalDestination": "/en/work",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/commercial-fashion-styling",
+      "currentFirstHop": "/zh/work",
+      "requiredFinalDestination": "/zh/work",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/en/work/creative-beauty-makeup",
+      "currentFirstHop": "/en/work",
+      "requiredFinalDestination": "/en/work",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    },
+    {
+      "oldRoute": "/zh/work/creative-beauty-makeup",
+      "currentFirstHop": "/zh/work",
+      "requiredFinalDestination": "/zh/work",
+      "status": 308,
+      "targetAnchor": null,
+      "anchorExists": null,
+      "oneHop": true
+    }
+  ]
+}

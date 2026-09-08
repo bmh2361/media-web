@@ -42,8 +42,8 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
     ? ["商业方向一致", "本地关系有人推进", "现场执行有人负责", "项目结束后继续跟进"]
     : [
         "Aligned commercial direction",
-        "Local relationships advanced",
-        "Live delivery owned",
+        "Local relationships actively managed",
+        "Clear ownership of on-site delivery",
         "Follow-through after the project"
       ];
   const operatingFrame = zh
@@ -54,8 +54,9 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
       ]
     : [
         {
-          title: "Headquarters intent",
-          description: "Define the commercial problem the company needs to solve in the UK and Europe."
+          title: "Headquarters commercial objectives",
+          description:
+            "Define the commercial problem the company needs to solve when entering the UK and European markets."
         },
         {
           title: "UK & European market judgement",
@@ -75,7 +76,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
       >
         <div className="container-x relative py-8 md:py-9 lg:py-5">
           <div className="text-ink/42 flex items-center justify-between border-b border-ink/15 pb-4 text-[11px] uppercase tracking-editorial">
-            <span>01 / {zh ? "跨境市场运营" : "CROSS-BORDER OPERATIONS"}</span>
+            <span>01 / {zh ? "跨境市场运营" : "CROSS-BORDER MARKET OPERATIONS"}</span>
             <span className="hidden sm:inline">BEIJING · LONDON · EUROPE</span>
           </div>
 
@@ -103,15 +104,17 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
               className={`max-w-md border-l border-ink/20 pl-5 lg:mt-14 lg:pl-7 ${zh ? "lg:col-span-4 lg:col-start-9" : "lg:col-span-5 lg:col-start-8"}`}
               delay={0.08}
             >
-              <p className="text-ink/68 text-base leading-7 md:text-lg md:leading-8">
+              <p
+                className={`text-ink/68 text-base leading-7 md:text-lg md:leading-8 ${zh ? "" : "lg:text-base lg:leading-7"}`}
+              >
                 {zh
                   ? "Venus Bridge 是面向中国企业的跨境商业合作与英国、欧洲市场执行团队，将总部目标、相关商业关系与本地交付连接成协同行动。"
-                  : "Venus Bridge is a cross-border commercial partnerships and market-execution team, connecting Chinese headquarters goals, relevant relationships and delivery on the ground across the UK and Europe."}
+                  : "Venus Bridge is a cross-border team focused on commercial partnerships and market execution, connecting Chinese headquarters goals, relevant relationships and delivery on the ground across the UK and Europe."}
               </p>
               <p className="mt-4 text-sm leading-6 text-ink/65">
                 {zh
                   ? "从总部目标，到市场判断，再到本地执行。"
-                  : "From headquarters intent to market judgement and local delivery."}
+                  : "From headquarters commercial objectives to market judgement and local delivery."}
               </p>
             </EditorialReveal>
           </div>
@@ -163,7 +166,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
               <p className="text-ink/66 text-lg leading-8">
                 {zh
                   ? "进入新市场可能涉及买家、经销商、行业机构、专业能力、内容、现场执行与后续跟进。商业目标决定哪些关系与能力真正重要；Venus Bridge 把这些环节连接到同一个市场结果。"
-                  : "Entering a new market can involve buyers, distributors, industry organisations, specialist capability, content, live delivery and follow-up. The commercial objective determines which relationships matter; Venus Bridge connects them to one market result."}
+                  : "Entering a new market can involve buyers, distributors, industry organisations, specialist capability, content, live delivery and follow-up. The commercial objective determines which relationships and capabilities matter; Venus Bridge connects them to one market result."}
               </p>
               <ul
                 className="mt-7 border-t border-ink/15"
@@ -209,12 +212,12 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             >
               {zh
                 ? "从最初市场判断到现场执行与后续跟进，工作始终保持连接。"
-                : "Connected from the first market decision through live delivery and follow-through."}
+                : "Connected from the initial market assessment through on-site delivery and follow-through."}
             </h2>
             <p className="text-ink/56 max-w-sm text-base leading-7 lg:col-span-3 lg:col-start-10">
               {zh
                 ? "一个本地协调点，让总部更快掌握进展。"
-                : "One local coordination point keeps headquarters close to progress."}
+                : "One local coordination point helps headquarters track progress more quickly."}
             </p>
           </div>
           <ol className="mt-12 grid grid-cols-2 border-y border-ink/15 lg:grid-cols-4">

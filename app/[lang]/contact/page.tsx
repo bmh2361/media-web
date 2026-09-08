@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     description:
       lang === "zh"
         ? "告诉我们市场、目标、时间和已经确定的条件；我们会判断是否匹配并建议下一步。"
-        : "Share the market, goal, timing and anything already committed. We will assess the fit and suggest the most useful next step."
+        : "Share the market, goal, timing and what is already in place. We will assess the fit and suggest the most useful next step."
   });
 }
 
@@ -64,9 +64,9 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
                 ]
               : [
                   ["Market", "UK, Europe or a specific city."],
-                  ["Goal", "Launch, partnership, credibility, activation or local execution."],
+                  ["Goal", "Launches, partnerships, credibility-building, events or local execution."],
                   ["Timing", "Target date or decision window."],
-                  ["Existing commitments", "Partners, venues, agencies or resources already involved."]
+                  ["What is already in place", "Partners, venues, agencies or resources already involved."]
                 ]
             ).map(([title, description], index) => (
               <li

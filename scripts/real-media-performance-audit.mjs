@@ -12,7 +12,7 @@ const manifest = JSON.parse(await fs.readFile(path.join(fixtureDir, "manifest.js
 const fixtureBytesByName = new Map(manifest.assets.map((asset) => [asset.name, asset.bytes]));
 const server = spawn(
   process.execPath,
-  [path.join(root, "node_modules", "next", "dist", "bin", "next"), "start", "-p", String(port)],
+  [path.join(root, "scripts", "serve-static-export.mjs"), "--port", String(port)],
   { cwd: root, stdio: "inherit", env: process.env }
 );
 for (let attempt = 0; attempt < 80; attempt += 1) {

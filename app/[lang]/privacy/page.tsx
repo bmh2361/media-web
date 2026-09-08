@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return buildMetadata({
     lang,
     path: "/privacy",
-    title: lang === "zh" ? "隐私说明 | Venus Bridge Media" : "Privacy Notice | Venus Bridge Media",
+    title: lang === "zh" ? "隐私说明 | Venus Bridge" : "Privacy Notice | Venus Bridge",
     description:
       lang === "zh"
         ? "了解项目咨询信息的收集与使用方式。"
@@ -35,7 +35,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
             ? `${zh ? "生效日期" : "Effective"}: ${company.privacyEffectiveDate}`
             : zh
               ? "当前为发布前审核版本；生产发布需补充生效日期与控制者信息。"
-              : "Pre-release review version. An effective date and final controller details are required for production."}
+              : "Pre-release review version. An effective date and controller details are required before production release."}
         </p>
         {approved && company.legalEntityMode === "incorporated" ? (
           <p className="mt-8 text-lg leading-8 text-ink/70">
@@ -55,9 +55,9 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
               "如需了解或更正已提交的项目信息，请通过网站公布的联系邮箱与我们沟通。"
             ]
           : [
-              "We may collect your name, organisation, work email, contact details, project scope, dates, location, relevant commercial parameters and other information you choose to provide.",
-              "This information is used to respond to enquiries, assess projects, prepare proposals and coordinate resources. If online delivery is configured in future, information may be sent to the website operator’s designated workflow provider.",
-              "Personal information is not placed in analytics attributes. Please do not submit unnecessary sensitive or confidential material in an initial enquiry.",
+              "We may collect your name, company, work email address, contact details, project scope, dates, location, relevant commercial terms or conditions, and other information you choose to provide.",
+              "This information is used to respond to enquiries, assess projects, prepare proposals and coordinate resources. If online submission is enabled in future, information may be sent to a workflow provider designated by the website operator.",
+              "We do not transmit personal information through analytics attributes. Please do not submit unnecessary sensitive or confidential material in an initial enquiry.",
               "To ask about or correct submitted project information, contact us through the email published on this website."
             ]
         ).map((x) => (

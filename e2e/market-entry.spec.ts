@@ -9,7 +9,7 @@ test.describe("retired market-entry routes follow the canonical commercial archi
         test.skip(testInfo.project.name === "mobile");
         await page.setViewportSize({ width, height: width < 700 ? 844 : 1000 });
         await page.goto(`/${language}/services/uk-market-entry`);
-        await expect(page).toHaveURL(new RegExp(`/${language}/companies$`));
+        await expect(page).toHaveURL(new RegExp(`/${language}/companies#market-validation-entry$`));
         await expect(page.locator("h1")).toContainText(
           language === "zh"
             ? "以本地商业执行，进入并拓展英国与欧洲市场。"

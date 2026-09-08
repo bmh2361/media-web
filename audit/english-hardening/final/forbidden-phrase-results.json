@@ -1,0 +1,271 @@
+{
+  "generatedAt": "2026-09-08T20:34:54.455Z",
+  "scopes": {
+    "activePublicContent": [
+      "app/[lang]/about/page.tsx",
+      "app/[lang]/contact/page.tsx",
+      "app/[lang]/how-we-work/page.tsx",
+      "app/[lang]/privacy/page.tsx",
+      "app/[lang]/terms/page.tsx",
+      "app/[lang]/work/page.tsx",
+      "components/globe/CrossBorderGlobe.tsx",
+      "components/layout/Footer.tsx",
+      "components/sections/AboutTeam.tsx",
+      "components/sections/Phase5AudiencePages.tsx",
+      "components/sections/PortfolioProjectDetail.tsx",
+      "content/brand.ts",
+      "content/company.ts",
+      "content/phase5.ts",
+      "content/portfolio.ts",
+      "content/team.ts"
+    ],
+    "metadataAndStructuredData": [
+      "lib/seo.ts",
+      "lib/structured-data.ts",
+      "app\\[lang]\\page.tsx",
+      "app\\[lang]\\about\\page.tsx",
+      "app\\[lang]\\capabilities\\page.tsx",
+      "app\\[lang]\\companies\\page.tsx",
+      "app\\[lang]\\contact\\page.tsx",
+      "app\\[lang]\\expertise\\page.tsx",
+      "app\\[lang]\\for-agencies\\page.tsx",
+      "app\\[lang]\\how-we-work\\page.tsx",
+      "app\\[lang]\\industries\\page.tsx",
+      "app\\[lang]\\partners\\page.tsx",
+      "app\\[lang]\\privacy\\page.tsx",
+      "app\\[lang]\\services\\page.tsx",
+      "app\\[lang]\\talent\\page.tsx",
+      "app\\[lang]\\terms\\page.tsx",
+      "app\\[lang]\\what-we-do\\page.tsx",
+      "app\\[lang]\\work\\page.tsx",
+      "app\\[lang]\\expertise\\[sector]\\page.tsx",
+      "app\\[lang]\\industries\\automotive\\page.tsx",
+      "app\\[lang]\\industries\\fashion-beauty-apparel\\page.tsx",
+      "app\\[lang]\\industries\\[sector]\\page.tsx",
+      "app\\[lang]\\services\\commercial-production\\page.tsx",
+      "app\\[lang]\\services\\events-exhibitions\\page.tsx",
+      "app\\[lang]\\services\\research-innovation\\page.tsx",
+      "app\\[lang]\\services\\uk-market-entry\\page.tsx",
+      "app\\[lang]\\what-we-do\\building-uk-presence\\page.tsx",
+      "app\\[lang]\\what-we-do\\[path]\\page.tsx",
+      "app\\[lang]\\work\\[slug]\\page.tsx"
+    ],
+    "currentOgText": [
+      "audit/og-card-inventory.json"
+    ],
+    "activeTests": [
+      "tests\\case-study-commercial-narrative.test.mjs",
+      "tests\\case-study-commercial-redesign.test.mjs",
+      "tests\\case-study-media-presentation.test.mjs",
+      "tests\\content-contract.test.mjs",
+      "tests\\hardening.test.mjs",
+      "tests\\market-entry.test.mjs",
+      "tests\\phase-12-ia.test.mjs",
+      "tests\\phase-13-media.test.mjs",
+      "tests\\phase-14-image-system.test.mjs",
+      "tests\\phase-3-1-commercial.test.mjs",
+      "tests\\phase-3-2-evidence.test.mjs",
+      "tests\\phase-3-2b-presentation.test.mjs",
+      "tests\\phase-3-2c-experience.test.mjs",
+      "tests\\phase-3-3-commercial-alignment.test.mjs",
+      "tests\\phase-3-4-release-readiness.test.mjs",
+      "tests\\phase-3-repositioning.test.mjs",
+      "tests\\phase-4-commercial-architecture.test.mjs",
+      "tests\\phase-5-dual-audience.test.mjs",
+      "tests\\portfolio.test.mjs",
+      "tests\\scalable-commercial-case-system.test.mjs",
+      "e2e\\about-team-motion.spec.ts",
+      "e2e\\about-us.spec.ts",
+      "e2e\\brand-refresh.spec.ts",
+      "e2e\\case-narrative-visual-qa.spec.ts",
+      "e2e\\case-studies-portfolio-upgrade.spec.ts",
+      "e2e\\case-study-commercial-redesign.spec.ts",
+      "e2e\\case-study-media-screenshot-audit.spec.ts",
+      "e2e\\commercial-evidence-university.spec.ts",
+      "e2e\\editorial-copy-ux.spec.ts",
+      "e2e\\hardening.spec.ts",
+      "e2e\\homepage-desktop-composition.spec.ts",
+      "e2e\\market-entry.spec.ts",
+      "e2e\\mobile-case-preview-polish.spec.ts",
+      "e2e\\mobile-experience-phase-2.spec.ts",
+      "e2e\\mobile-experience-transformation.spec.ts",
+      "e2e\\motion-correction.spec.ts",
+      "e2e\\motion.spec.ts",
+      "e2e\\phase-11-portfolio.spec.ts",
+      "e2e\\phase-12-ia.spec.ts",
+      "e2e\\phase-3-2c.spec.ts",
+      "e2e\\phase-3-4-release-readiness.spec.ts",
+      "e2e\\production-launch.spec.ts",
+      "e2e\\release.spec.ts",
+      "e2e\\sitewide-desktop-editorial-grid.spec.ts",
+      "e2e\\team-carousel-refinement.spec.ts",
+      "e2e\\visual-architecture-correction.spec.ts",
+      "e2e\\visual-regression.spec.ts"
+    ]
+  },
+  "prohibitedPhraseCount": 22,
+  "requiredRenderedPhraseCount": 12,
+  "requiredRenderedResults": [
+    {
+      "phrase": "service commitment",
+      "present": true
+    },
+    {
+      "phrase": "cooperation agreement",
+      "present": true
+    },
+    {
+      "phrase": "agreed by both parties",
+      "present": true
+    },
+    {
+      "phrase": "validate, enter and grow in the UK and Europe",
+      "present": true
+    },
+    {
+      "phrase": "Bilingual Chinese–English communication",
+      "present": true
+    },
+    {
+      "phrase": "China–Europe communication",
+      "present": true
+    },
+    {
+      "phrase": "on-site visual documentation in London",
+      "present": true
+    },
+    {
+      "phrase": "on-the-ground judgement",
+      "present": true
+    },
+    {
+      "phrase": "real-time judgement",
+      "present": true
+    },
+    {
+      "phrase": "official company details",
+      "present": true
+    },
+    {
+      "phrase": "online submission",
+      "present": true
+    },
+    {
+      "phrase": "commercial terms or conditions",
+      "present": true
+    }
+  ],
+  "forbiddenPhraseResults": [
+    {
+      "phrase": "service guarantee",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "binding project agreement",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "China-to-Europe translation",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "Bilingual China-to-Europe communication",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "rather than simply translating headquarters instructions",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "London-side visual documentation",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "exhibition and press context",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "validate, enter and activate in the UK and Europe",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "online delivery is configured",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "commercial parameters",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "Personal information is not placed in analytics attributes",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "final controller details are required for production",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "Final company details and an effective date",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "Venus Bridge Media",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "buyer meetings; opportunity framing",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "live decisions",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "immediate decisions",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "One commercial lead",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "European-facing asset set",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "UK-facing visual record",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "London recognition",
+      "pass": true,
+      "occurrences": []
+    },
+    {
+      "phrase": "Editorial fashion evidence",
+      "pass": true,
+      "occurrences": []
+    }
+  ],
+  "failures": []
+}

@@ -46,7 +46,7 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
           "Relationships & delivery",
           "Advance the required local relationships and manage timing, communication, approvals and live work."
         ],
-        ["Follow-through", "Organise relationships, market learning, approved material and next actions."]
+        ["Follow-through", "Organise relationships, market information, approved material and next actions."]
       ];
   const stages = zh
     ? [
@@ -57,16 +57,19 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
         ["跟进", "整理商务关系、市场信息、项目资产与下一步行动。"]
       ]
     : [
-        ["Understand", "Clarify the commercial goal, market stage, timing and anything already committed."],
+        [
+          "Understand",
+          "Clarify the commercial goal, market stage, timing and anything already agreed or in place."
+        ],
         ["Design", "Create a locally relevant route that can move the goal forward."],
         [
           "Activate",
           "Engage the required buyer, partner, industry or specialist relationships around a clear scope."
         ],
-        ["Deliver", "Manage local execution, communication, approvals and live decisions."],
+        ["Deliver", "Manage local execution, communication, approvals and on-the-ground judgement."],
         [
           "Follow Through",
-          "Organise commercial relationships, market learning, project assets and next actions."
+          "Organise commercial relationships, market information, project assets and next actions."
         ]
       ];
   const timings = zh
@@ -79,7 +82,7 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
         ["Before", "Target relationships, priority meetings, local narrative, schedule and follow-up plan."],
         [
           "On the ground",
-          "Stakeholder coordination, live delivery, immediate decisions and approved content."
+          "Stakeholder coordination, on-site delivery, real-time judgement and approved content."
         ],
         [
           "After",

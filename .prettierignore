@@ -4,4 +4,8 @@ out
 dist
 coverage
 public/images
+audit/english-hardening/baseline
+audit/english-hardening/final
+docs/english-hardening-change-register.md
+audit/performance/phase-7-results.json
 package-lock.json

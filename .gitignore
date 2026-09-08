@@ -24,6 +24,7 @@ Thumbs.db
 .dev.vars*
 .cloudflared/
 audit/**/*.png
+!audit/english-hardening/final/og-contact-sheet.png
 audit/**/*.jpg
 audit/**/*.jpeg
 audit/**/*.webm

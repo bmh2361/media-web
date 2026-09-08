@@ -55,11 +55,14 @@ test("capabilities expose exactly four outcome-led pillars", async () => {
   assert.match(content, /WHAT ARE YOU TRYING TO ACHIEVE/);
 });
 
-test("legacy commercial routes resolve through the secondary capabilities redirect and stay absent from sitemap", async () => {
+test("legacy commercial routes resolve directly to final audience routes and stay absent from sitemap", async () => {
   const redirects = await source("public/_redirects");
   const sitemap = await source("app/sitemap.ts");
   for (const legacy of ["/what-we-do", "/services", "/industries", "/expertise", "/talent", "/for-agencies"])
-    assert.match(redirects, new RegExp(`/en${legacy.replaceAll("/", "\\/")} .*\\/en\\/capabilities`));
+    assert.match(
+      redirects,
+      new RegExp(`/en${legacy.replaceAll("/", "\\/")} .*\\/en\\/(?:companies|partners)`)
+    );
   assert.match(redirects, /\/en\/capabilities \/en\/companies 308/);
   for (const route of ["/companies", "/partners", "/work", "/about", "/contact"])
     assert.match(sitemap, new RegExp(route));
@@ -74,10 +77,11 @@ test("claim governance blocks endorsement and full market-entry claims", async (
   assert.match(claims, /portfolio-role[\s\S]*VERIFIED/);
 });
 
-test("contact uses direct channels without an active submission route", async () => {
+test("contact keeps direct channels while the submission route is gated", async () => {
   const contact = await source("components/sections/ContactExperience.tsx");
-  assert.match(contact, /data-contact-delivery="direct-only"/);
-  assert.match(contact, /mailto:\$\{CONTACT_EMAIL\}/);
+  const actions = await source("components/sections/ContactActions.tsx");
+  assert.match(contact, /data-contact-delivery=\{formEnabled \? "form-and-direct" : "direct-only"\}/);
+  assert.match(actions, /mailto:\$\{email\}/);
   assert.doesNotMatch(contact, /<form|fetch\(|type="submit"/);
 });
 

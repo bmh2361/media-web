@@ -134,13 +134,19 @@ export function Phase5Homepage({ language }: { language: Language }) {
                   mediaRole="card-landscape"
                 />
                 <p className="mt-4 text-xs uppercase tracking-editorial text-slate">
-                  {item.location} · {getProofPresentation(item).label[language]}
+                  {item.location} ·{" "}
+                  {item.commercialNarrative?.marketMomentLabel[language] ??
+                    getProofPresentation(item).label[language]}
                 </p>
                 <h3 className="mt-2 text-lg font-medium group-hover:text-champagne">
                   {zh ? item.titleZh : item.titleEn}
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-ink/60">
-                  {(zh ? item.venusRoleZh : item.venusRoleEn).join(" · ")}
+                  <span className="block text-[10px] uppercase tracking-editorial text-ink/70">
+                    {zh ? "经核实职责" : "Verified role"}
+                  </span>
+                  {item.commercialNarrative?.verifiedVenusRole.text[language] ??
+                    (zh ? item.venusRoleZh : item.venusRoleEn).join(" · ")}
                 </p>
               </Link>
             ))}

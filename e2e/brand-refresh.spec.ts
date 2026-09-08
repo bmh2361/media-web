@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 const viewports = [390, 430, 768, 1024, 1440, 1920];
 const copy = {
   en: {
-    headline: "Move your UK or European ambitions forward—on the ground.",
+    headline: "Move your UK and European market plans forward on the ground.",
     company: "For Companies",
     partner: "For Partners"
   },

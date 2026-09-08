@@ -52,8 +52,8 @@ const nextConfigSource = read("next.config.mjs");
 const redirectsSource = read("public/_redirects");
 const headersSource = read("public/_headers");
 const marketEntryRetired =
-  redirectsSource.includes("/en/services/uk-market-entry /en/capabilities 308") &&
-  redirectsSource.includes("/en/what-we-do/enter-the-uk /en/capabilities 308");
+  redirectsSource.includes("/en/services/uk-market-entry /en/companies#market-validation-entry 308") &&
+  redirectsSource.includes("/en/what-we-do/enter-the-uk /en/companies#market-validation-entry 308");
 
 if (!profiles.has(profile)) fail("release-profile", `Unsupported profile '${profile}'.`, ".env.example");
 else pass("release-profile", `Using ${profile}.`);
@@ -82,25 +82,30 @@ if (!failed.some((item) => item.check === "cloudflare-headers"))
   pass("cloudflare-headers", "Cloudflare Pages preserves the required production security headers.");
 const directContactSource = read("components/sections/ContactExperience.tsx");
 const directContactReady =
-  directContactSource.includes('data-contact-delivery="direct-only"') &&
-  directContactSource.includes("Venusbridge") &&
-  directContactSource.includes("venusbridge.co.uk@gmail.com") &&
+  directContactSource.includes("isContactFormExposed") &&
+  directContactSource.includes("ContactActions") &&
   !directContactSource.includes("<form") &&
   !directContactSource.includes("fetch(") &&
-  !fs.existsSync(path.join(root, "app/api/contact/route.ts"));
+  !fs.existsSync(path.join(root, "app/api/contact/route.ts")) &&
+  fs.existsSync(path.join(root, "functions/api/contact.ts"));
 if (!directContactReady)
   fail(
     "static-contact",
-    "Static release must expose direct contact without an active form or API route.",
+    "Static release must keep direct contact and gate the Pages Function form.",
     "app/[lang]/contact/page.tsx"
   );
-else pass("static-contact", "Contact is direct-only and has no server delivery dependency.");
+else pass("static-contact", "Direct contact remains available and the Pages Function form is release-gated.");
 if (
   fs.existsSync(path.join(root, "app/og/[lang]/[page]/route.tsx")) ||
-  !read("lib/seo.ts").includes("/og/venus-bridge.png")
+  !read("lib/seo.ts").includes('const ogVersion = "v20260831"') ||
+  !fs.existsSync(path.join(root, "audit/og-card-inventory.json"))
 )
-  fail("static-open-graph", "Open Graph metadata must use the static production image.", "lib/seo.ts");
-else pass("static-open-graph", "Open Graph metadata uses a static production image.");
+  fail(
+    "static-open-graph",
+    "Open Graph metadata must use versioned route-specific static cards.",
+    "lib/seo.ts"
+  );
+else pass("static-open-graph", "Open Graph metadata uses versioned route-specific static cards.");
 
 const workMode = process.env.PUBLIC_WORK_MODE;
 if (profile === "production" && workMode !== "portfolio")

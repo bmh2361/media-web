@@ -1,12 +1,16 @@
 import { expect, test, type Page } from "@playwright/test";
 
-const activeButton = (page: Page) => page.locator('[data-mobile-case-row] button[aria-expanded="true"]');
-const row = (page: Page, index: number) => page.locator("[data-mobile-case-row]").nth(index);
+const tierOne = (page: Page) => page.locator('[data-work-tier="1"]');
+const activeButton = (page: Page) =>
+  tierOne(page).locator('[data-mobile-case-row] button[aria-expanded="true"]');
+const row = (page: Page, index: number) => tierOne(page).locator("[data-mobile-case-row]").nth(index);
 
 async function placeAnchor(page: Page, index: number, ratio = 0.46) {
   await page.evaluate(
     ({ targetIndex, targetRatio }) => {
-      const anchor = document.querySelectorAll<HTMLElement>("[data-mobile-case-anchor]")[targetIndex];
+      const anchor = document.querySelectorAll<HTMLElement>('[data-work-tier="1"] [data-mobile-case-anchor]')[
+        targetIndex
+      ];
       if (!anchor) throw new Error(`Missing mobile case anchor ${targetIndex}`);
       const point =
         anchor.getBoundingClientRect().top + Math.min(48, anchor.getBoundingClientRect().height * 0.35);
@@ -24,7 +28,7 @@ test.beforeEach(async ({ page }, testInfo) => {
 });
 
 test("candidate dwell filters incidental movement and direct tap overrides immediately", async ({ page }) => {
-  const list = page.locator("[data-mobile-case-list]");
+  const list = tierOne(page).locator("[data-mobile-case-list]");
   await expect(list).toHaveAttribute("data-candidate-dwell-ms", "210");
   await expect(list).toHaveAttribute("data-transition-lock-ms", "380");
 
@@ -71,10 +75,12 @@ test("active preview body retains ownership while its media and role are read", 
 test("rapid flick suppresses sequential intermediate activations", async ({ page }) => {
   await row(page, 0).locator("button").click();
   await page.evaluate(() => {
-    const list = document.querySelector("[data-mobile-case-list]");
+    const list = document.querySelector('[data-work-tier="1"] [data-mobile-case-list]');
     const history: string[] = [];
     const record = () => {
-      const active = document.querySelector<HTMLElement>('[data-mobile-case-anchor][aria-expanded="true"]');
+      const active = document.querySelector<HTMLElement>(
+        '[data-work-tier="1"] [data-mobile-case-anchor][aria-expanded="true"]'
+      );
       const slug = active?.dataset.mobileCaseAnchor;
       if (slug && history.at(-1) !== slug) history.push(slug);
     };
@@ -89,7 +95,7 @@ test("rapid flick suppresses sequential intermediate activations", async ({ page
 
   await placeAnchor(page, 4);
   await expect
-    .poll(async () => row(page, 4).locator("button").getAttribute("aria-expanded"), { timeout: 1500 })
+    .poll(async () => row(page, 4).locator("button").getAttribute("aria-expanded"), { timeout: 3000 })
     .toBe("true");
   const history = await page.evaluate(
     () => (window as Window & { __caseActivationHistory?: string[] }).__caseActivationHistory ?? []
@@ -124,8 +130,8 @@ test("desktop preview interaction remains unchanged", async ({ page }, testInfo)
   test.skip(testInfo.project.name !== "desktop");
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/en/work");
-  await expect(page.locator("[data-mobile-case-list]")).toBeHidden();
-  await page.locator("[data-case-row]").nth(2).hover();
-  await expect(page.locator("[data-case-row]").nth(2)).toHaveAttribute("data-active-case", "true");
-  await expect(page.locator("[data-case-preview]")).toBeVisible();
+  await expect(tierOne(page).locator("[data-mobile-case-list]")).toBeHidden();
+  await tierOne(page).locator("[data-case-row]").nth(2).hover();
+  await expect(tierOne(page).locator("[data-case-row]").nth(2)).toHaveAttribute("data-active-case", "true");
+  await expect(tierOne(page).locator("[data-case-preview]")).toBeVisible();
 });

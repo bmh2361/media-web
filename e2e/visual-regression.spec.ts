@@ -14,7 +14,7 @@ for (const locale of ["en", "zh"] as const) {
         name:
           locale === "zh"
             ? "在真实英国与欧洲市场现场完成工作。"
-            : "Serious market activity, delivered on the ground."
+            : "Real work, delivered on the ground in the UK and Europe."
       })
     ).toBeVisible();
     const capture = await page.screenshot({ fullPage: true, animations: "disabled" });

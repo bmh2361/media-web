@@ -17,27 +17,24 @@ test.describe("scalable commercial case evidence", () => {
       test.skip(testInfo.project.name === "mobile");
       await page.setViewportSize(viewports[0]);
       await page.goto(`/${locale}/work`);
-      const rows = page.locator("[data-case-row]");
-      await expect(rows).toHaveCount(12);
-      await expect(page.locator("[data-case-preview]")).toBeVisible();
+      const tierOne = page.locator('[data-work-tier="1"]');
+      const rows = tierOne.locator("[data-case-row]");
+      await expect(rows).toHaveCount(6);
+      await expect(page.locator("[data-case-row]")).toHaveCount(12);
+      await expect(tierOne.locator("[data-case-preview]")).toBeVisible();
       await rows.nth(1).hover();
-      await expect(page.locator("[data-case-preview]")).toContainText(
-        locale === "zh" ? "记录慕尼黑发布现场" : "documented the Munich launch setting"
+      await expect(tierOne.locator("[data-case-preview]")).toContainText(
+        locale === "zh" ? "IAA Mobility 欧洲市场扩张" : "European Expansion at IAA Mobility"
       );
       await rows.first().getByRole("button").focus();
       await expect(rows.first().getByRole("button")).toBeFocused();
-
-      await page.locator('[data-case-filter="market-presence"]').click();
-      await expect(rows).toHaveCount(3);
       await expect(rows.first().getByRole("link")).toHaveAttribute("href", `/${locale}/work/byd-bd11-london`);
-
-      await page.locator('[data-case-filter="institutional-talent"]').click();
-      await expect(rows).toHaveCount(2);
+      await expect(tierOne).not.toContainText("Wang Linkai");
       await expect(page.locator("body")).not.toContainText("Cambridge Student-Community Cultural Programme");
 
       await page.setViewportSize(viewports.at(-1)!);
       await page.goto(`/${locale}/work`);
-      await expect(page.locator("[data-case-preview]")).toBeHidden();
+      await expect(page.locator("[data-case-preview]").first()).toBeHidden();
     });
 
     test(`${locale} home, archive and two details remain responsive at six breakpoints`, async ({
@@ -71,12 +68,14 @@ test.describe("scalable commercial case evidence", () => {
       await page.goto(`/${locale}/work/byd-bd11-london`);
       for (const section of [
         "hero",
+        "market-context",
         "objective",
-        "challenge",
         "responsibility",
-        "structure",
+        "activity",
         "visual-evidence",
         "outputs",
+        "result",
+        "claim-boundary",
         "related"
       ])
         await expect(page.locator(`[data-case-section="${section}"]`)).toBeVisible();

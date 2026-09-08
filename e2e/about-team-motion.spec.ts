@@ -8,7 +8,8 @@ test.describe("About Us geographic story", () => {
     await page.goto("/en/about");
     const globe = page.locator('[data-connection-globe="cobe-hybrid"]');
     await expect(globe).toBeVisible();
-    await expect(globe).toContainText("China-side context. UK & European project reach.");
+    await expect(globe).toContainText("China-side business context");
+    await expect(globe).toContainText("UK & European project reach");
     for (const city of ["Beijing", "Shanghai", "Shenzhen", "Guangzhou", "Hangzhou"])
       await expect(globe.getByText(city, { exact: false }).first()).toBeVisible();
     for (const city of ["Paris", "Berlin", "Brussels", "Rome", "Madrid", "Amsterdam", "Vienna"])

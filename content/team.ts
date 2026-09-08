@@ -83,7 +83,7 @@ export const teamMembers: TeamMember[] = [
     role: l("China Corporate Relations & Project Development", "中国企业关系与项目拓展"),
     specialism: l("China–UK requirement discovery & coordination", "中英需求发现与项目协调"),
     contribution: l(
-      "Leads early China-side engagement, clarifies enterprise requirements and translates them into an executable UK delivery brief.",
+      "Leads early China-side engagement, clarifies enterprise requirements and turns those goals into an executable project plan for the UK team.",
       "负责中国端前期企业对接与需求澄清，并将目标转化为英国团队可执行的项目路径。"
     ),
     expertiseSummary: l(
@@ -124,7 +124,7 @@ export const teamMembers: TeamMember[] = [
     role: l("Co-Founder · Technology Strategy & Architecture", "联合创始人 · 技术战略与架构"),
     specialism: l("AI systems, digital platforms & governance", "AI 系统、数字平台与治理"),
     contribution: l(
-      "Defines the technology architecture, governance and delivery planning that allow digital and AI capabilities to support complex projects.",
+      "Defines the technology architecture, governance and delivery planning that allow digital and AI capabilities to support the practical objectives of complex projects.",
       "负责定义技术架构、治理与交付规划，使数字与 AI 能力服务于复杂项目的实际目标。"
     ),
     expertiseSummary: l(
@@ -202,7 +202,7 @@ export const teamMembers: TeamMember[] = [
     role: l("European Commercial Strategy & Finance", "欧洲商业战略与财务"),
     specialism: l("Commercial feasibility, structure & risk", "商业可行性、结构与风险"),
     contribution: l(
-      "Frames European opportunities through commercial feasibility, financial structure, risk and long-term partnership considerations.",
+      "Assesses European market opportunities in terms of commercial feasibility, financial structure, risk and long-term partnership considerations.",
       "从商业可行性、财务结构、风险与长期合作角度判断欧洲市场机会。"
     ),
     expertiseSummary: l(

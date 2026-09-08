@@ -17,7 +17,7 @@ test("new bilingual project pages render every approved image without overflow",
       for (const slug of newSlugs) {
         await page.goto(`/${language}/work/${slug}`);
         await expect(page.locator("h1")).toBeVisible();
-        await expect(page.locator("[data-editorial-media-blocks]")).toBeVisible();
+        await expect(page.locator("[data-editorial-media-blocks]").first()).toBeVisible();
         const health = await page.evaluate(() => ({
           overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
           broken: [...document.images].filter((image) => image.complete && image.naturalWidth === 0).length,
@@ -33,9 +33,9 @@ test("index taxonomy, preview and retired redirects follow the new contract", as
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/zh/work");
   await expect(page.locator("[data-case-row]")).toHaveCount(12);
-  for (const label of ["全部", "市场进入与发布", "行业与展会", "合作与机构", "品牌与内容"])
-    await expect(page.getByRole("button", { name: label, exact: true })).toBeVisible();
-  await expect(page.locator("[data-case-preview] img")).toBeVisible();
+  for (const label of ["商业案例", "本地品牌与制作执行", "创意与文化项目经验"])
+    await expect(page.getByRole("heading", { name: label, exact: true })).toBeVisible();
+  await expect(page.locator('[data-work-tier="1"] [data-case-preview] img')).toBeVisible();
   const accessibility = await new AxeBuilder({ page: page as never }).include("main").analyze();
   expect(accessibility.violations).toEqual([]);
   for (const slug of ["teal-editorial-series", "commercial-fashion-styling", "creative-beauty-makeup"]) {

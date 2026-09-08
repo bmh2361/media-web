@@ -538,7 +538,9 @@ export function ContactForm({
         <F
           id="commercialParameters"
           label={
-            zh ? "相关商业条件（选填，自由填写）" : "Relevant commercial parameters (optional, free text)"
+            zh
+              ? "相关商业条件（选填，自由填写）"
+              : "Relevant commercial terms or conditions (optional, free text)"
           }
           language={language}
           wide
@@ -563,8 +565,8 @@ export function ContactForm({
           />
           <span>
             {zh
-              ? "我同意 Venus Bridge Media 使用以上信息评估并跟进本次项目需求。"
-              : "I consent to Venus Bridge Media using this information to assess and follow up this enquiry."}
+              ? "我同意 Venus Bridge 使用以上信息评估并跟进本次项目需求。"
+              : "I consent to Venus Bridge using this information to assess and follow up this enquiry."}
             {errors.consent && (
               <span id="consent-error" className="block text-red-700">
                 {messages[language][errors.consent as keyof typeof messages.en]}
@@ -579,7 +581,7 @@ export function ContactForm({
           <p role="alert" className="text-sm text-ink/70 md:col-span-2">
             {zh
               ? "在线提交尚未配置，您的信息并未发送。"
-              : "Online delivery is not configured, so your information was not sent."}{" "}
+              : "Online submission is not configured, so your information was not sent."}{" "}
             <a className="text-blue" href={`mailto:${brand.email}`}>
               {brand.email}
             </a>

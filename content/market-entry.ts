@@ -149,8 +149,8 @@ export const marketEntryContent = {
     "我们协助中国品牌、代理与国际团队梳理进入英国所需的实际工作，包括公司设立准备、专业机构对接、传播合规协调、发布内容、路演与英国本地执行。"
   ),
   boundary: l(
-    "Venus Bridge Media provides project coordination, bilingual communications and production support. Legal, tax, accounting and regulated advice is provided by appropriately qualified independent specialists where required.",
-    "Venus Bridge Media 提供项目协调、中英双语沟通与制作执行支持。法律、税务、会计及其他受监管专业意见，需由具备相应资质的独立专业机构提供。"
+    "Venus Bridge provides project coordination, bilingual communications and production support. Legal, tax, accounting and regulated advice is provided by appropriately qualified independent specialists where required.",
+    "Venus Bridge 提供项目协调、中英双语沟通与制作执行支持。法律、税务、会计及其他受监管专业意见，需由具备相应资质的独立专业机构提供。"
   ),
   primaryCta: l("Discuss UK market entry", "咨询英国市场进入"),
   secondaryCta: l("View the coordination scope", "查看协同范围"),
@@ -237,8 +237,8 @@ export const marketEntryContent = {
         l("Cross-provider timeline", "跨服务商时间表")
       ],
       boundary: l(
-        "Venus Bridge Media does not decide VAT liability, tax rates, customs classifications, permanent establishment, employment tax or banking approval.",
-        "Venus Bridge Media 不判断 VAT 注册义务、税率、关税分类、常设机构、雇佣税或银行审批结果。"
+        "Venus Bridge does not decide VAT liability, tax rates, customs classifications, permanent establishment, employment tax or banking approval.",
+        "Venus Bridge 不判断 VAT 注册义务、税率、关税分类、常设机构、雇佣税或银行审批结果。"
       )
     },
     {

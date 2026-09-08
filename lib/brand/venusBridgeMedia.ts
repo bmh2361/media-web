@@ -7,10 +7,7 @@ export const venusBridgeMedia = {
     en: "UK and European market validation, partnerships and local execution for Chinese companies.",
     zh: "为中国企业提供英国与欧洲市场验证、商务合作与本地执行。"
   },
-  legalTradingStatement: {
-    en: "Venus Bridge Media is a trading name of Vivian Adventure Ltd.",
-    zh: "Venus Bridge Media 为 Vivian Adventure Ltd 旗下业务品牌。"
-  },
+  legalTradingStatement: null,
   colors: {
     black: "#0a0b0d",
     graphite: "#15171a",

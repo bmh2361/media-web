@@ -7,7 +7,7 @@ const en = {
     eyebrow: "Who we are",
     title: "A London production partner for cross-market projects",
     body: [
-      "Venus Bridge Media is the B2B trading brand of Vivian Adventure Ltd, based in the UK with London as the main centre for project delivery.",
+      "Venus Bridge is a cross-border team focused on commercial partnerships and market execution across the UK and Europe.",
       "We work with brands, agency and PR teams, creators, technology companies and research teams that need a practical UK route with Chinese–English coordination.",
       "Without approved team photography, this page stays focused on responsibilities, operating model and accountability rather than presenting unrelated people as staff."
     ]
@@ -100,7 +100,7 @@ const zh = {
     eyebrow: "我们是谁",
     title: "面向跨市场项目的伦敦制作伙伴",
     body: [
-      "Venus Bridge Media 是 Vivian Adventure Ltd 旗下 B2B 业务品牌，公司位于英国，以伦敦为主要项目执行中心。",
+      "Venus Bridge 是面向英国与欧洲市场商业合作与执行的跨境团队。",
       "我们服务需要英国本地制作路径和中英双语协调的品牌、代理与公关团队、创作者、科技企业和科研团队。",
       "在真实团队工作照获批前，本页以责任、工作模式与项目问责为主，不使用无关人物照片充当员工。"
     ]
