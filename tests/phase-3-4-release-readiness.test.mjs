@@ -40,7 +40,12 @@ test("five priority cases deepen only supported execution evidence", async () =>
     assert.match(record, /evidenceCreatedEn:/, `${slug} needs evidence-created detail`);
     assert.doesNotMatch(record, /deliverablesEn:/, `${slug} must not invent deliverables`);
     assert.doesNotMatch(record, /commercialUseEn:/, `${slug} must not invent commercial use`);
-    assert.doesNotMatch(record, /continuedValueEn:/, `${slug} must not invent outcomes`);
+    assert.doesNotMatch(
+      record,
+      /observedOutcomes(?:En|Zh):|conversionRate:|salesGrowth:/,
+      `${slug} must not invent outcomes`
+    );
+    assert.match(await source("components/sections/PortfolioProjectDetail.tsx"), /Potential use/);
   }
 });
 

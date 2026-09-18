@@ -72,10 +72,10 @@ test("case filters and responsive preview keep their interaction contract", asyn
   test.skip(testInfo.project.name === "mobile");
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto("/en/work");
-  await page.getByRole("button", { name: "Brand & Content", exact: true }).click();
+  await page.getByRole("button", { name: "Brand Localisation & Campaign Content", exact: true }).click();
   await expect(page.locator("[data-case-row]")).toHaveCount(4);
   await expect(page.locator("[data-case-preview]")).toBeVisible();
-  await page.getByRole("button", { name: "Partnerships & Institutions", exact: true }).click();
+  await page.getByRole("button", { name: "Culture, Talent & Brand Experiences", exact: true }).click();
   await expect(page.locator("[data-case-row]")).toHaveCount(2);
 
   await page.setViewportSize({ width: 375, height: 844 });

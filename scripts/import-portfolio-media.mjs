@@ -163,7 +163,7 @@ const alt = {
     "Launch group assembled in front of the red double-decker bus."
   ],
   "changan-europe-launch-2025": [
-    "Presenter introducing Changan vehicles on a blue-lit Munich stage.",
+    "Presenter introducing Changan vehicles on a blue-lit Mainz stage.",
     "Guests exploring Changan vehicles inside the European brand launch venue.",
     "Vehicle reveal on the Changan European launch stage.",
     "Guests viewing vehicles in an outdoor product display area.",
@@ -236,7 +236,7 @@ const alt = {
 const altZh = {
   "catl-open-day-2025": "慕尼黑 CATL Open Day 发布活动现场影像。",
   "byd-bd11-london": "伦敦 BYD BD11 双层公交车发布活动现场。",
-  "changan-europe-launch-2025": "慕尼黑长安汽车欧洲品牌发布活动现场。",
+  "changan-europe-launch-2025": "美因茨长安汽车欧洲品牌发布活动现场。",
   "leapmotor-iaa-2023": "慕尼黑 IAA Mobility 2023 零跑汽车展会现场。",
   "london-automotive-brand-film": "伦敦汽车品牌故事影片现场画面。",
   "european-road-lifestyle": "欧洲道路与城市汽车生活方式影像。",

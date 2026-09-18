@@ -47,7 +47,8 @@ test("case archive rows are accessible links with filters and a non-following de
   assert.match(index, /lg:grid-cols-\[minmax\(0,54fr\)_minmax\(0,46fr\)\]/);
   assert.match(index, /useReducedMotion/);
   assert.match(index, /padStart\(2, "0"\)/);
-  assert.match(index, /will not appear as public cases until verified/);
+  assert.match(index, /No projects are currently listed in this category/);
+  assert.match(await source("content/portfolio.ts"), /filter\(isPublishedPortfolioProject\)/);
   assert.doesNotMatch(index, /clientX|clientY|mousemove|pointermove/i);
 });
 
@@ -68,11 +69,9 @@ test("detail pages use data-driven editorial blocks and chronological next-proje
   const detail = await source("components/sections/PortfolioProjectDetail.tsx");
   for (const section of [
     "hero",
-    "objective",
-    "challenge",
+    "market",
     "responsibility",
     "first-evidence",
-    "structure",
     "visual-evidence",
     "outputs",
     "related"

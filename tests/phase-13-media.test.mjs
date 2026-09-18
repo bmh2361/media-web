@@ -85,7 +85,7 @@ test("homepage expertise uses four distinct visual sources", async () => {
 });
 
 test("Enter uses one editorial image instead of a repeated gallery", async () => {
-  const content = await source("content/information-architecture.ts");
+  const content = (await source("content/information-architecture.ts")).replaceAll("\r\n", "\n");
   const enterBlock = content.match(/slug: "enter-the-uk"([\s\S]*?)\n  }\n\];/)?.[1] ?? "";
   assert.match(enterBlock, /mediaIds: \["vbm-023"\]/);
   assert.doesNotMatch(enterBlock, /mediaIds: \["vbm-023",/);

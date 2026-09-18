@@ -992,7 +992,7 @@ const approvedPortfolioMediaById: Partial<Record<MediaId, Partial<MediaSlotDefin
     "/media/portfolio/automotive/changan-europe-launch-2025/01-hero.webp",
     "/media/portfolio/automotive/changan-europe-launch-2025/01-hero-mobile.webp",
     "changan-europe-launch-2025",
-    { en: "Automotive European brand launch stage in Munich.", zh: "慕尼黑汽车欧洲品牌发布舞台。" }
+    { en: "Automotive European brand launch stage in Mainz.", zh: "美因茨汽车欧洲品牌发布舞台。" }
   ),
   "events-stage": approvedPortfolio(
     "/media/portfolio/automotive/catl-open-day-2025/05-gallery.webp",

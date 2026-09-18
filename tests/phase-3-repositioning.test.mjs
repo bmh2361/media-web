@@ -84,19 +84,20 @@ test("contact uses direct channels without an active submission route", async ()
 test("work detail uses the required truth-gated case structure", async () => {
   const detail = await source("components/sections/PortfolioProjectDetail.tsx");
   for (const marker of [
-    "Project Objective",
-    "Business Context",
+    "The Market Moment",
+    "The Content Context",
     "Challenge",
-    "Venus Bridge Role",
-    "Strategy / Approach",
-    "Local Delivery",
-    "Outputs / Outcomes",
-    "What Remained Useful",
+    "Our Contribution",
+    "Project Challenge",
+    "Delivery & Project Value",
+    "Relevance to Future Projects",
+    "Related Opportunity",
     "Next project"
   ])
     assert.match(detail, new RegExp(marker));
   assert.match(detail, /Project \/ Brand/);
   assert.match(detail, /project\.roleStatementEn/);
   assert.match(detail, /data-editorial-media-blocks/);
-  assert.doesNotMatch(detail, /Market Entry|full campaign agency/i);
+  assert.doesNotMatch(detail, /full campaign agency/i);
+  assert.doesNotMatch(detail, /project\.media\.length|function caseChallenge/);
 });

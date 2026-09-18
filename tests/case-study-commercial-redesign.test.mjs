@@ -22,11 +22,8 @@ test("all four case archetypes and capability collections are explicit", () => {
   ])
     assert.match(portfolio, new RegExp(archetype));
   assert.match(detail, /Selected capability work/);
-  assert.match(portfolio, /capability selection brings together photography and visual-content curation/);
-  assert.match(
-    portfolio,
-    /capability selection brings together automotive photography and on-location image making/
-  );
+  assert.match(portfolio, /photography and visual-content selection across separate pieces of work/);
+  assert.match(portfolio, /automotive photography and on-location image making across separate works/);
 });
 
 test("the index uses one preload and one intrinsic-ratio cover per project", () => {
@@ -42,14 +39,14 @@ test("the index uses one preload and one intrinsic-ratio cover per project", () 
 
 test("detail pages lead with commercial context, verified responsibility and continued value", () => {
   for (const marker of [
-    "Project Objective",
-    "Business Context",
+    "The Market Moment",
+    "The Content Context",
     "Challenge",
-    "Venus Bridge Role",
-    "Strategy / Approach",
-    "Local Delivery",
-    "Outputs / Outcomes",
-    "What Remained Useful"
+    "Our Contribution",
+    "Project Challenge",
+    "Delivery & Project Value",
+    "Relevance to Future Projects",
+    "Related Opportunity"
   ])
     assert.match(detail, new RegExp(marker));
   assert.match(detail, /Project \/ Brand/);

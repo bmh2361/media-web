@@ -22,7 +22,7 @@ test.describe("scalable commercial case evidence", () => {
       await expect(page.locator("[data-case-preview]")).toBeVisible();
       await rows.nth(1).hover();
       await expect(page.locator("[data-case-preview]")).toContainText(
-        locale === "zh" ? "记录慕尼黑发布现场" : "documented the Munich launch setting"
+        locale === "zh" ? "美因茨发布现场摄影" : "photographed the Mainz launch"
       );
       await rows.first().getByRole("button").focus();
       await expect(rows.first().getByRole("button")).toBeFocused();
@@ -64,21 +64,10 @@ test.describe("scalable commercial case evidence", () => {
       expect(errors).toEqual([]);
     });
 
-    test(`${locale} detail has eight-part commercial narrative and related links`, async ({
-      page
-    }, testInfo) => {
+    test(`${locale} detail has commercial narrative and related links`, async ({ page }, testInfo) => {
       test.skip(testInfo.project.name === "mobile");
       await page.goto(`/${locale}/work/byd-bd11-london`);
-      for (const section of [
-        "hero",
-        "objective",
-        "challenge",
-        "responsibility",
-        "structure",
-        "visual-evidence",
-        "outputs",
-        "related"
-      ])
+      for (const section of ["hero", "market", "responsibility", "visual-evidence", "outputs", "related"])
         await expect(page.locator(`[data-case-section="${section}"]`)).toBeVisible();
       await expect(page.locator('[data-case-section="related"] a[href*="/work/"]')).toHaveCount(1);
       await expect(page.locator("h1")).toContainText(

@@ -16,11 +16,11 @@ test.describe("current motion correction", () => {
     await page.goto("/en/work");
     const preview = page.locator("[data-case-preview]");
     await page.locator('[data-case-row="changan-europe-launch-2025"]').hover();
-    await expect(preview).toContainText("documented the Munich launch setting");
+    await expect(preview).toContainText("photographed the Mainz launch");
     const catl = page.locator('[data-case-row="catl-open-day-2025"] button');
     await catl.focus();
     await expect(catl).toBeFocused();
-    await expect(preview).toContainText("technical screens and the professional audience setting");
+    await expect(preview).toContainText("technical presentations and audience setting in Munich");
   });
 
   test("reduced motion skips the opening overlay", async ({ page }) => {

@@ -61,7 +61,8 @@ test("Work uses filters over the published dataset and keeps institutional evide
     "brand-evidence"
   ])
     assert.match(portfolio, new RegExp(category));
-  assert.match(index, /will not appear as public cases until verified/);
+  assert.match(index, /No projects are currently listed in this category/);
+  assert.match(portfolio, /filter\(isPublishedPortfolioProject\)/);
   assert.doesNotMatch(work, /universityTalentCases|commercial-evidence/);
   const cases = read("content/commercial-evidence.ts");
   for (const slug of [

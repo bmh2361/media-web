@@ -24,32 +24,6 @@ const capabilityZh: Record<CaseCapability, string> = {
   "Post-project Assets": "项目后续资产"
 };
 
-function caseChallenge(project: PortfolioProject, zh: boolean) {
-  if (project.contentType === "portfolio-series") {
-    return zh
-      ? "把不同内容形式整理成一组连贯、易于判断的能力证明。"
-      : "Bring distinct content formats together as one coherent, useful view of capability.";
-  }
-  if (project.archetype === "market-presence-launch") {
-    return zh
-      ? "在时间有限的发布现场，同时清楚呈现产品、人物与当地市场环境。"
-      : "Make the product, people and local market setting clear within a time-bound live launch.";
-  }
-  if (project.archetype === "industry-event-presence") {
-    return zh
-      ? "把产品或技术细节与更完整的欧洲行业现场连接在同一组记录中。"
-      : "Connect product or technical detail with the wider European industry setting in one useful record.";
-  }
-  if (project.archetype === "talent-activation") {
-    return zh
-      ? "在精炼的公开内容中，同时保留演出主体、现场氛围与伦敦环境。"
-      : "Preserve the performer, live atmosphere and London setting in a concise public selection.";
-  }
-  return zh
-    ? "让不同实景、人物或内容形式形成统一、可继续使用的品牌表达。"
-    : "Turn distinct locations, people or content formats into a coherent set of reusable brand material.";
-}
-
 export function PortfolioProjectDetail({
   project,
   language
@@ -60,17 +34,12 @@ export function PortfolioProjectDetail({
   const zh = language === "zh";
   const next = getNextPortfolioProject(project);
   const series = project.contentType === "portfolio-series";
-  const context = zh ? project.contextZh : project.contextEn;
-  const objective = zh ? project.commercialObjectiveZh : project.commercialObjectiveEn;
-  const execution = zh ? project.executionZh : project.executionEn;
   const roles = zh ? project.venusRoleZh : project.venusRoleEn;
-  const structure = zh ? project.structureZh : project.structureEn;
+  const value = zh ? project.continuedValueZh : project.continuedValueEn;
   const visibleBlocks = project.layout.filter((block) =>
     block.media.some((id) => id !== project.heroMediaId)
   );
-  const firstBlock = visibleBlocks[0];
-  const remainingBlocks = visibleBlocks.slice(1);
-  const challenge = caseChallenge(project, zh);
+  const [firstBlock, ...remainingBlocks] = visibleBlocks;
 
   return (
     <div
@@ -79,27 +48,23 @@ export function PortfolioProjectDetail({
       data-evidence-level={project.evidenceLevel}
     >
       <CaseStudyHero project={project} language={language} />
-
       <div className="bg-porcelain text-ink">
         <section
           className="container-x grid gap-12 py-16 md:grid-cols-2 lg:gap-24 lg:py-24"
-          data-case-section="objective"
+          data-case-section="market"
         >
-          <Narrative eyebrow="01" title={zh ? "项目目标" : "Project Objective"}>
-            {objective}
+          <Narrative
+            eyebrow="01"
+            title={series ? (zh ? "内容语境" : "The Content Context") : zh ? "市场背景" : "The Market Moment"}
+          >
+            {zh ? project.contextZh : project.contextEn}
           </Narrative>
-          <Narrative eyebrow="02" title={zh ? "商业背景" : "Business Context"}>
-            {context ?? (zh ? project.projectTypeZh : project.projectTypeEn)}
+          <Narrative
+            eyebrow={zh ? "沟通重点" : "Communication focus"}
+            title={zh ? "项目挑战" : "Project Challenge"}
+          >
+            {zh ? project.projectChallengeZh : project.projectChallengeEn}
           </Narrative>
-        </section>
-
-        <section className="border-y border-ink/15 bg-pearl py-14 lg:py-20" data-case-section="challenge">
-          <div className="container-x grid gap-8 lg:grid-cols-12">
-            <p className="text-xs uppercase tracking-editorial text-ink/70 lg:col-span-3">
-              03 · {zh ? "挑战" : "Challenge"}
-            </p>
-            <p className="max-w-3xl text-2xl leading-9 lg:col-span-7 lg:col-start-5">{challenge}</p>
-          </div>
         </section>
 
         {firstBlock ? (
@@ -117,24 +82,22 @@ export function PortfolioProjectDetail({
           <div className="container-x grid gap-12 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <p className="text-xs uppercase tracking-editorial text-ink/70">
-                04 · {zh ? "Venus Bridge 职责" : "Venus Bridge Role"}
+                02 · {zh ? "团队贡献" : "Our Contribution"}
               </p>
-              <h2 className="editorial-heading mt-5 max-w-[12ch]">
-                {series
-                  ? zh
-                    ? "经核实的内容能力。"
-                    : "Verified content capability."
-                  : zh
-                    ? "本项目中实际承担的工作。"
-                    : "The work delivered within this project."}
+              <h2 className="editorial-heading mt-5 max-w-[16ch]">
+                {zh ? "在项目中承担的工作。" : "Our part in the project."}
               </h2>
             </div>
             <div className="lg:col-span-6 lg:col-start-7">
               <p className="text-2xl leading-9">{zh ? project.roleStatementZh : project.roleStatementEn}</p>
-              <ul
-                className="mt-8 flex flex-wrap gap-2"
-                aria-label={zh ? "已核实能力" : "Verified capabilities"}
-              >
+              <ul className="mt-8 grid gap-3 border-t border-ink/15 pt-6 sm:grid-cols-2">
+                {roles.map((role) => (
+                  <li key={role} className="text-lg leading-7">
+                    {role}
+                  </li>
+                ))}
+              </ul>
+              <ul className="mt-8 flex flex-wrap gap-2" aria-label={zh ? "项目能力" : "Project capabilities"}>
                 {project.capabilities.map((capability) => (
                   <li
                     key={capability}
@@ -144,114 +107,61 @@ export function PortfolioProjectDetail({
                   </li>
                 ))}
               </ul>
-              <div className="mt-10 border-t border-ink/15 pt-6">
-                <p className="text-xs uppercase tracking-editorial text-ink/70">
-                  {zh ? "记录中的工作范围" : "Scope on record"}
-                </p>
-                <ul className="mt-5 grid gap-3 sm:grid-cols-2">
-                  {roles.map((role) => (
-                    <li key={role} className="text-lg leading-7">
-                      {role}
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           </div>
         </section>
 
-        <section className="border-y border-ink/15 py-16 lg:py-24" data-case-section="structure">
-          <div className="container-x">
-            <p className="text-xs uppercase tracking-editorial text-ink/70">
-              05 · {zh ? "策略与方法" : "Strategy / Approach"}
-            </p>
-            <ol className="mt-10 grid border-y border-ink/15 md:grid-cols-3">
-              {structure.map((step, index) => (
-                <li
-                  key={step}
-                  className="border-b border-ink/15 py-7 md:border-b-0 md:border-r md:px-7 md:first:pl-0 md:last:border-r-0 lg:min-h-48"
-                >
-                  <span className="text-xs tabular-nums text-ink/65">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <p className="mt-8 text-xl leading-8 lg:mt-10">{step}</p>
-                </li>
+        <section className="border-y border-ink/15 py-16 lg:py-24" data-case-section="outputs">
+          <div className="container-x grid gap-12 md:grid-cols-2 lg:gap-24">
+            <Narrative eyebrow="03" title={zh ? "执行与项目价值" : "Delivery & Project Value"}>
+              {zh ? project.executionZh : project.executionEn}
+            </Narrative>
+            <Narrative
+              eyebrow={zh ? "后续用途" : "Potential use"}
+              title={zh ? "与未来项目的关系" : "Relevance to Future Projects"}
+            >
+              {value?.join(" ")}
+            </Narrative>
+          </div>
+        </section>
+
+        {remainingBlocks.length ? (
+          <section
+            className="bg-mist py-16 lg:py-24"
+            data-case-section="visual-evidence"
+            aria-label={zh ? "项目影像" : "Project imagery"}
+          >
+            <div className="container-x space-y-10 lg:space-y-16">
+              {remainingBlocks.map((block, index) => (
+                <EditorialBlock
+                  key={`${block.type}-${index}`}
+                  block={block}
+                  project={project}
+                  language={language}
+                />
               ))}
-            </ol>
-          </div>
-        </section>
-
-        <section className="bg-mist py-16 lg:py-24" data-case-section="visual-evidence">
-          <div className="container-x">
-            <div className="grid gap-8 border-b border-ink/15 pb-7 lg:grid-cols-12 lg:items-end">
-              <div className="lg:col-span-7">
-                <p className="text-xs uppercase tracking-editorial text-ink/70">
-                  06 · {zh ? "本地执行" : "Local Delivery"}
-                </p>
-                <h2 className="editorial-heading mt-4">
-                  {series
-                    ? zh
-                      ? "内容制作与筛选"
-                      : "Content production and selection"
-                    : zh
-                      ? "现场工作"
-                      : "On the ground"}
-                </h2>
-              </div>
-              <p className="max-w-[44ch] text-base leading-7 text-ink/70 lg:col-span-4 lg:col-start-9">
-                {execution}
-              </p>
             </div>
-            {remainingBlocks.length ? (
-              <div className="mt-12 space-y-10 lg:space-y-16">
-                {remainingBlocks.map((block, index) => (
-                  <EditorialBlock
-                    key={`${block.type}-${index}`}
-                    block={block}
-                    project={project}
-                    language={language}
-                  />
-                ))}
-              </div>
-            ) : null}
-          </div>
-        </section>
-
-        <section className="bg-porcelain py-16 lg:py-24" data-case-section="outputs">
-          <div className="container-x grid gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-7">
-              <p className="text-xs uppercase tracking-editorial text-ink/70">
-                07 · {zh ? "交付与成果" : "Outputs / Outcomes"}
-              </p>
-              <h2 className="editorial-heading mt-5 max-w-[14ch]">
-                {zh
-                  ? `${project.media.length} 张获准公开使用的项目影像。`
-                  : `${project.media.length} approved public project images.`}
-              </h2>
-            </div>
-            <div className="lg:col-span-4 lg:col-start-9">
-              <p className="text-xs uppercase tracking-editorial text-ink/70">
-                {zh ? "已核实工作" : "Verified work"}
-              </p>
-              <ul className="mt-5 border-t border-ink/15">
-                {roles.map((role) => (
-                  <li key={role} className="border-b border-ink/15 py-4 text-base">
-                    {role}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
+          </section>
+        ) : null}
 
         <section className="bg-night py-16 text-pearl lg:py-20" data-case-section="related">
           <div className="container-x">
             <p className="text-xs uppercase tracking-editorial text-pearl/60">
-              08 · {zh ? "项目之后仍可使用的价值" : "What Remained Useful"}
+              04 · {zh ? "合作入口" : "Related Opportunity"}
             </p>
-            <h2 className="editorial-heading mt-6 max-w-[16ch]">
-              {zh ? project.projectValueZh : project.projectValueEn}
+            <h2 className="editorial-heading mt-6 max-w-[22ch]">
+              {zh ? "筹备你的英国或欧洲项目。" : "Plan your next UK or European project."}
             </h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-pearl/75">
+              {zh
+                ? "从目标受众、市场场景与实际交付需求开始，讨论适合此次项目的内容与本地执行安排。"
+                : "Start with the audience, market setting and delivery needs, then discuss the content and local execution appropriate to your project."}
+            </p>
+            <div className="mt-8">
+              <ButtonLink href={withLanguage("/contact?intent=company", language)} showArrow>
+                {zh ? "讨论下一次项目" : "Discuss Your Next Project"}
+              </ButtonLink>
+            </div>
             <div className="mt-12 border-t border-pearl/20 pt-8">
               <p className="text-xs uppercase tracking-editorial text-pearl/60">
                 {zh ? "下一个项目" : "Next project"}
@@ -264,17 +174,12 @@ export function PortfolioProjectDetail({
                 <span className="text-xs uppercase tracking-editorial">
                   {next.contentType === "portfolio-series"
                     ? zh
-                      ? "能力证据"
-                      : "Capability evidence"
+                      ? "作品选集"
+                      : "Portfolio series"
                     : commercialCaseCategories[next.category][language]}{" "}
                   ↗
                 </span>
               </Link>
-            </div>
-            <div className="mt-8">
-              <ButtonLink href={withLanguage("/contact?intent=company", language)} showArrow>
-                {zh ? "讨论类似市场目标" : "Discuss a Similar Market Goal"}
-              </ButtonLink>
             </div>
           </div>
         </section>
@@ -299,6 +204,9 @@ function CaseStudyHero({ project, language }: { project: PortfolioProject; langu
             : "Selected capability work"
           : commercialCaseCategories[project.category][language]}
       </p>
+      {!series ? (
+        <p className="mt-3 text-xs text-pearl/60">{zh ? "团队项目经验" : "Selected team experience"}</p>
+      ) : null}
       <h1 className="type-display-page zh-display-measure mt-6 max-w-[14ch] [font-size:clamp(2.65rem,5.6vw,6.2rem)]">
         {title}
       </h1>
@@ -367,7 +275,7 @@ function CaseStudyHero({ project, language }: { project: PortfolioProject; langu
             ],
             [zh ? "项目类型" : "Project type", zh ? project.projectTypeZh : project.projectTypeEn],
             [
-              zh ? "Venus Bridge 职责" : "Venus Bridge role",
+              zh ? "团队贡献" : "Team contribution",
               (zh ? project.venusRoleZh : project.venusRoleEn).join(" · ")
             ]
           ].map(([label, value]) => (

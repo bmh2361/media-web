@@ -369,13 +369,7 @@ export function CommercialCaseIndex({
       ) : (
         <div className="border-b border-ink/15 py-16" data-case-empty={category}>
           <p className="max-w-[48ch] text-lg leading-8 text-ink/65">
-            {category === "institutional-talent"
-              ? zh
-                ? "机构与人才项目只有在证据和公开许可核验完成后才会发布。"
-                : "Institutional and talent records will not appear as public cases until verified and publication-approved."
-              : zh
-                ? "该分类暂时没有已核验并获准公开的案例。"
-                : "No verified, publication-approved cases are available in this category yet."}
+            {zh ? "此分类暂未收录项目。" : "No projects are currently listed in this category."}
           </p>
         </div>
       )}
@@ -486,8 +480,8 @@ function PreviewCopy({ project, language }: { project: PortfolioProject; languag
         <p className="text-[11px] uppercase tracking-editorial text-champagne">
           {series
             ? zh
-              ? "能力证据"
-              : "Capability evidence"
+              ? "作品选集"
+              : "Portfolio series"
             : commercialCaseCategories[project.category][language]}
         </p>
         <h2 className="mt-3 text-2xl font-medium leading-tight">{zh ? project.titleZh : project.titleEn}</h2>
@@ -497,9 +491,15 @@ function PreviewCopy({ project, language }: { project: PortfolioProject; languag
       </div>
       <div className="border-l border-ink/15 pl-5">
         <p className="text-[11px] uppercase tracking-editorial text-ink/65">
-          {zh ? "Venus Bridge 职责" : "Venus Bridge role"}
+          {zh ? "项目主题" : "Project focus"}
         </p>
         <p className="text-ink/68 mt-3 text-sm leading-6">
+          {zh ? project.commercialObjectiveZh : project.commercialObjectiveEn}
+        </p>
+        <p className="mt-4 text-xs uppercase tracking-editorial text-ink/65">
+          {zh ? "团队贡献" : "Team contribution"}
+        </p>
+        <p className="mt-2 text-sm leading-6 text-ink/65">
           {zh ? project.roleStatementZh : project.roleStatementEn}
         </p>
       </div>
@@ -540,8 +540,8 @@ function MobileProjectRow({
           <span className="block text-[11px] uppercase tracking-editorial text-ink/70">
             {project.contentType === "portfolio-series"
               ? zh
-                ? "能力证据"
-                : "Capability evidence"
+                ? "作品选集"
+                : "Portfolio series"
               : commercialCaseCategories[project.category][language]}
           </span>
           <span className="mt-2 block text-[clamp(1.45rem,6vw,2rem)] font-medium leading-[1.08]">
@@ -599,9 +599,15 @@ function MobileProjectRow({
                 }}
               >
                 <p className="text-[11px] uppercase tracking-editorial text-ink/65">
-                  {zh ? "Venus Bridge 职责" : "Venus Bridge role"}
+                  {zh ? "项目主题" : "Project focus"}
                 </p>
                 <p className="text-ink/68 mt-3 text-sm leading-6">
+                  {zh ? project.commercialObjectiveZh : project.commercialObjectiveEn}
+                </p>
+                <p className="mt-4 text-xs uppercase tracking-editorial text-ink/65">
+                  {zh ? "团队贡献" : "Team contribution"}
+                </p>
+                <p className="mt-2 text-sm leading-6 text-ink/65">
                   {zh ? project.roleStatementZh : project.roleStatementEn}
                 </p>
               </motion.div>
