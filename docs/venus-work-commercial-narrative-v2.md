@@ -1,6 +1,6 @@
 # Venus Bridge 案例商业表达：本地审阅报告
 
-2026-09-19 · 本地修改与预览完成；后续获用户授权，提交并推送工作分支 `codex/venus-commercial-expression`。不合并 main，不执行正式部署。
+2026-09-19 · 本地修改与预览完成；后续获用户授权，提交并推送工作分支 `codex/venus-commercial-expression`。随后用户明确授权推送 main 并发布到正式网站；下文测试与本地阶段记录保留，线上状态以发布后的验证结果为准。
 
 开始前已 fetch 远端：`origin/main` 最新为 `2739a54b66de7593950f9f4de66fb244d2fb6243`，与参考提交相同。工作位于 `D:/media web/venus-work-narrative-v2`，独立分支 `codex/venus-commercial-expression`。原 `media-web` 工作区及 `codex/venus-english-hardening` 分支未改动。
 
