@@ -140,7 +140,7 @@ export function Phase5Homepage({ language }: { language: Language }) {
                   {zh ? item.titleZh : item.titleEn}
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-ink/60">
-                  {(zh ? item.venusRoleZh : item.venusRoleEn).join(" · ")}
+                  {zh ? item.participationSummaryZh : item.participationSummaryEn}
                 </p>
               </Link>
             ))}

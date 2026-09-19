@@ -39,7 +39,7 @@ const en = {
   proof: {
     eyebrow: "REAL PROJECTS",
     title: "Serious market activity, delivered on the ground.",
-    body: "Selected UK and European work showing the business moment and Venus Bridge’s verified role."
+    body: "Selected UK and European projects showing the brand context and the team’s specific contribution."
   },
   journeys: {
     eyebrow: "WHEN COMPANIES BRING US IN",
@@ -192,7 +192,7 @@ const zh = {
   proof: {
     eyebrow: "真实项目",
     title: "在真实英国与欧洲市场现场完成工作。",
-    body: "这些代表项目展示实际商业节点，以及 Venus Bridge 经核实的具体职责。"
+    body: "这些英国与欧洲精选项目展示品牌场景，以及团队在其中的具体参与经验。"
   },
   journeys: {
     eyebrow: "企业通常在这些时候找到我们",

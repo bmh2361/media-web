@@ -45,7 +45,14 @@ test("five priority cases deepen only supported execution evidence", async () =>
       /observedOutcomes(?:En|Zh):|conversionRate:|salesGrowth:/,
       `${slug} must not invent outcomes`
     );
-    assert.match(await source("components/sections/PortfolioProjectDetail.tsx"), /Potential use/);
+    assert.match(
+      await source("components/sections/PortfolioProjectDetail.tsx"),
+      /Responsibilities, collaborators and deliverables are agreed for the new project/
+    );
+    assert.doesNotMatch(
+      await source("components/sections/PortfolioProjectDetail.tsx"),
+      /Potential use|Relevance to Future Projects/
+    );
   }
 });
 

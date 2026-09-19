@@ -124,7 +124,7 @@ export function Phase4Homepage({ language }: { language: Language }) {
                   {zh ? project.titleZh : project.titleEn}
                 </h3>
                 <p className="mt-2 text-sm text-ink/60">
-                  {(zh ? project.venusRoleZh : project.venusRoleEn).join(" · ")}
+                  {zh ? project.participationSummaryZh : project.participationSummaryEn}
                 </p>
               </Link>
             );
@@ -256,7 +256,7 @@ export function Phase4Homepage({ language }: { language: Language }) {
                   {zh ? project.titleZh : project.titleEn}
                 </h3>
                 <p className="mt-2 text-sm text-ink/60">
-                  {project.location} · {(zh ? project.venusRoleZh : project.venusRoleEn).join(" · ")}
+                  {project.location} · {zh ? project.participationSummaryZh : project.participationSummaryEn}
                 </p>
               </Link>
             ))}

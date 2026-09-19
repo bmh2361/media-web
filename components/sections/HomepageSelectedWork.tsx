@@ -36,7 +36,7 @@ export function HomepageSelectedWork({ language }: { language: Language }) {
                     {[project.location, project.year].filter(Boolean).join(" · ")}
                   </p>
                   <p className="mt-2 text-sm leading-6 text-ink/55">
-                    {(zh ? project.venusRoleZh : project.venusRoleEn)[0]}
+                    {zh ? project.participationSummaryZh : project.participationSummaryEn}
                   </p>
                 </div>
                 <span className="inline-flex min-h-11 items-center text-sm font-semibold">

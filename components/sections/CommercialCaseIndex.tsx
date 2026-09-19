@@ -413,7 +413,7 @@ function ProjectRow({
         type="button"
         onClick={onActivate}
         onFocus={onActivate}
-        className="grid grid-cols-[3rem_minmax(0,1.6fr)_minmax(8rem,.68fr)_minmax(7rem,.55fr)] items-center gap-x-4 self-stretch text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-champagne"
+        className="grid grid-cols-[2rem_minmax(0,1fr)] items-center gap-x-4 self-stretch text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-champagne"
         aria-pressed={active}
         aria-label={`${zh ? project.titleZh : project.titleEn}, ${commercialCaseCategories[project.category][language]}`}
       >
@@ -421,10 +421,10 @@ function ProjectRow({
         <span className="text-[clamp(1.25rem,1.7vw,1.75rem)] font-medium leading-[1.12]">
           {zh ? project.titleZh : project.titleEn}
         </span>
-        <span className="text-[11px] uppercase tracking-editorial text-ink/65">
+        <span className="col-start-2 mt-3 text-[11px] uppercase tracking-editorial text-ink/65">
           {commercialCaseCategories[project.category][language]}
         </span>
-        <span className="text-sm leading-5 text-ink/70">
+        <span className="col-start-2 mt-1 text-xs leading-5 text-ink/70">
           {[project.location, project.year].filter(Boolean).join(" · ")}
         </span>
       </button>
@@ -475,7 +475,7 @@ function PreviewCopy({ project, language }: { project: PortfolioProject; languag
   const zh = language === "zh";
   const series = project.contentType === "portfolio-series";
   return (
-    <div className="grid gap-5 border-t border-ink/15 py-6 xl:grid-cols-[1fr_1.25fr]">
+    <div className="grid gap-5 border-t border-ink/15 py-6">
       <div>
         <p className="text-[11px] uppercase tracking-editorial text-champagne">
           {series
@@ -500,7 +500,7 @@ function PreviewCopy({ project, language }: { project: PortfolioProject; languag
           {zh ? "团队贡献" : "Team contribution"}
         </p>
         <p className="mt-2 text-sm leading-6 text-ink/65">
-          {zh ? project.roleStatementZh : project.roleStatementEn}
+          {zh ? project.participationSummaryZh : project.participationSummaryEn}
         </p>
       </div>
     </div>
@@ -544,7 +544,7 @@ function MobileProjectRow({
                 : "Portfolio series"
               : commercialCaseCategories[project.category][language]}
           </span>
-          <span className="mt-2 block text-[clamp(1.45rem,6vw,2rem)] font-medium leading-[1.08]">
+          <span className="mt-2 block text-balance text-[clamp(1.45rem,6vw,2rem)] font-medium leading-[1.08]">
             {zh ? project.titleZh : project.titleEn}
           </span>
           <span className="mt-3 block text-sm text-ink/70">
@@ -608,7 +608,7 @@ function MobileProjectRow({
                   {zh ? "团队贡献" : "Team contribution"}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-ink/65">
-                  {zh ? project.roleStatementZh : project.roleStatementEn}
+                  {zh ? project.participationSummaryZh : project.participationSummaryEn}
                 </p>
               </motion.div>
               <Link

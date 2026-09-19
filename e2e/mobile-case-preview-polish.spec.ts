@@ -88,8 +88,13 @@ test("rapid flick suppresses sequential intermediate activations", async ({ page
   });
 
   await placeAnchor(page, 4);
+  // Sample throughout the same deadline: default poll backoff can jump from
+  // 850 ms past 1500 ms while the CSS smooth scroll is still settling.
   await expect
-    .poll(async () => row(page, 4).locator("button").getAttribute("aria-expanded"), { timeout: 1500 })
+    .poll(async () => row(page, 4).locator("button").getAttribute("aria-expanded"), {
+      timeout: 1500,
+      intervals: [50]
+    })
     .toBe("true");
   const history = await page.evaluate(
     () => (window as Window & { __caseActivationHistory?: string[] }).__caseActivationHistory ?? []

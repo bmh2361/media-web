@@ -41,7 +41,7 @@ export function HomepageEarlyProof({ language }: { language: Language }) {
             <div>
               <p className="text-sm leading-6 text-pearl/70">{featuredProof.businessObjective[language]}</p>
               <p className="mt-2 text-sm leading-6 text-pearl/55">
-                {(zh ? featured.venusRoleZh : featured.venusRoleEn)[0]}
+                {zh ? featured.participationSummaryZh : featured.participationSummaryEn}
               </p>
               <span className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-champagne">
                 {zh ? "查看项目 →" : "View project →"}

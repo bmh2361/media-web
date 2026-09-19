@@ -38,7 +38,7 @@ test("four case archetypes remain evidence-led, accessible and reduced-motion sa
       await page.goto(`/en/work/${slug}`);
       await expect(page.locator("[data-evidence-level=confirmed]")).toBeVisible();
       await expect(page.locator("[data-case-section=responsibility]")).toBeVisible();
-      await expect(page.locator("[data-case-section=outputs]")).toBeVisible();
+      await expect(page.locator("[data-case-section=visual-evidence]")).toBeVisible();
       await expect(page.locator("[data-editorial-media-blocks]").first()).toBeVisible();
       expect(
         await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)

@@ -100,7 +100,7 @@ export default async function FashionBeautyApparelPage({ params }: { params: Pro
                   />
                   <h3 className="mt-5 text-2xl font-medium">{zh ? project.titleZh : project.titleEn}</h3>
                   <p className="mt-4 text-sm leading-6 text-ink/60">
-                    {(zh ? project.venusRoleZh : project.venusRoleEn).join(" · ")}
+                    {zh ? project.participationSummaryZh : project.participationSummaryEn}
                   </p>
                   <ButtonLink
                     href={withLanguage(`/work/${project.slug}`, language)}

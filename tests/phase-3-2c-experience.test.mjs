@@ -94,14 +94,13 @@ test("public surfaces remove internal proof vocabulary", async () => {
 test("case details retain the shared narrative and data-driven visual system", async () => {
   const detail = await source("components/sections/PortfolioProjectDetail.tsx");
   for (const marker of [
-    "The Market Moment",
-    "The Content Context",
-    "Challenge",
-    "Our Contribution",
-    "Project Challenge",
-    "Delivery & Project Value",
-    "Relevance to Future Projects",
-    "Related Opportunity",
+    "Project Context & Communication Focus",
+    "In This Selection",
+    "Team Contribution",
+    "Project Imagery",
+    "Your Next Project",
+    "Responsibilities, collaborators and deliverables are agreed for the new project",
+    'data-case-section="related"',
     "Next project"
   ])
     assert.match(detail, new RegExp(marker));

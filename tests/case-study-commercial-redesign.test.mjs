@@ -21,7 +21,7 @@ test("all four case archetypes and capability collections are explicit", () => {
     "brand-content-system"
   ])
     assert.match(portfolio, new RegExp(archetype));
-  assert.match(detail, /Selected capability work/);
+  assert.match(detail, /Independent works/);
   assert.match(portfolio, /photography and visual-content selection across separate pieces of work/);
   assert.match(portfolio, /automotive photography and on-location image making across separate works/);
 });
@@ -37,16 +37,15 @@ test("the index uses one preload and one intrinsic-ratio cover per project", () 
   assert.match(index, /aria-expanded=\{expanded\}/);
 });
 
-test("detail pages lead with commercial context, verified responsibility and continued value", () => {
+test("detail pages lead with commercial context, specific responsibility and separate future services", () => {
   for (const marker of [
-    "The Market Moment",
-    "The Content Context",
-    "Challenge",
-    "Our Contribution",
-    "Project Challenge",
-    "Delivery & Project Value",
-    "Relevance to Future Projects",
-    "Related Opportunity"
+    "Project Context & Communication Focus",
+    "In This Selection",
+    "Team Contribution",
+    "Project Imagery",
+    "Your Next Project",
+    "Responsibilities, collaborators and deliverables are agreed for the new project",
+    'data-case-section="related"'
   ])
     assert.match(detail, new RegExp(marker));
   assert.match(detail, /Project \/ Brand/);

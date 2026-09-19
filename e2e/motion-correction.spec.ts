@@ -16,11 +16,15 @@ test.describe("current motion correction", () => {
     await page.goto("/en/work");
     const preview = page.locator("[data-case-preview]");
     await page.locator('[data-case-row="changan-europe-launch-2025"]').hover();
-    await expect(preview).toContainText("photographed the Mainz launch");
+    await expect(preview).toContainText(
+      "Launch photography across the brand presentations and vehicle displays."
+    );
     const catl = page.locator('[data-case-row="catl-open-day-2025"] button');
     await catl.focus();
     await expect(catl).toBeFocused();
-    await expect(preview).toContainText("technical presentations and audience setting in Munich");
+    await expect(preview).toContainText(
+      "Event photography of speakers, technical material and the audience setting."
+    );
   });
 
   test("reduced motion skips the opening overlay", async ({ page }) => {

@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { PortfolioProjectDetail } from "@/components/sections/PortfolioProjectDetail";
 import {
-  commercialCaseCategories,
   findPublishedPortfolioProject,
   getProjectCover,
   publishedPortfolioProjects
@@ -27,10 +26,10 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   return buildMetadata({
     lang,
     path: `/work/${slug}`,
-    title: `${lang === "zh" ? project.titleZh : project.titleEn} | ${commercialCaseCategories[project.category][lang]} | Venus Bridge`,
+    title: `${lang === "zh" ? project.titleZh : project.titleEn} | Venus Bridge`,
     description: [
       lang === "zh" ? project.commercialObjectiveZh : project.commercialObjectiveEn,
-      lang === "zh" ? project.roleStatementZh : project.roleStatementEn,
+      lang === "zh" ? project.participationSummaryZh : project.participationSummaryEn,
       project.location
     ]
       .filter(Boolean)
@@ -48,7 +47,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string;
   const name = lang === "zh" ? project.titleZh : project.titleEn;
   const description = [
     lang === "zh" ? project.commercialObjectiveZh : project.commercialObjectiveEn,
-    lang === "zh" ? project.roleStatementZh : project.roleStatementEn,
+    lang === "zh" ? project.participationSummaryZh : project.participationSummaryEn,
     project.location
   ]
     .filter(Boolean)

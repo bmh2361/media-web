@@ -58,24 +58,17 @@ test("case routes, metadata and sitemap are published-only and case-specific", a
   const seo = await source("lib/seo.ts");
   assert.match(route, /publishedPortfolioProjects/);
   assert.match(route, /findPublishedPortfolioProject/);
-  assert.match(route, /commercialCaseCategories\[project\.category\]/);
+  assert.match(route, /project\.titleEn/);
+  assert.match(route, /project\.participationSummaryEn/);
   assert.match(route, /ogImage: getProjectCover\(project\)\?\.publicPath/);
   assert.match(sitemap, /publishedPortfolioProjects/);
   assert.match(seo, /ogImage\?: string/);
   assert.match(seo, /resolvedOgImage/);
 });
 
-test("detail pages use data-driven editorial blocks and chronological next-project navigation", async () => {
+test("detail pages use data-driven editorial blocks and ordered next-project navigation", async () => {
   const detail = await source("components/sections/PortfolioProjectDetail.tsx");
-  for (const section of [
-    "hero",
-    "market",
-    "responsibility",
-    "first-evidence",
-    "visual-evidence",
-    "outputs",
-    "related"
-  ])
+  for (const section of ["hero", "market", "responsibility", "visual-evidence", "related"])
     assert.match(detail, new RegExp(`data-case-section=\\"${section}\\"`));
   for (const number of ["01", "02", "03"])
     assert.match(detail, new RegExp(`>\\s*${number}(?:\\s*·)?|eyebrow=\\"${number}\\"`));

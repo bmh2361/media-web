@@ -177,7 +177,7 @@ export function Phase3Homepage({ language }: { language: Language }) {
                       {zh ? project.titleZh : project.titleEn}
                     </h3>
                     <p className="mt-3 text-sm leading-6 text-ink/60">
-                      {(zh ? project.venusRoleZh : project.venusRoleEn).join(" · ")}
+                      {zh ? project.participationSummaryZh : project.participationSummaryEn}
                     </p>
                   </div>
                 </div>

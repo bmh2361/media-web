@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         : "UK & European Brand Launches, Exhibitions & Culture | Venus Bridge",
     description:
       lang === "zh"
-        ? "浏览英国与欧洲品牌发布、行业展会和文化项目，了解市场背景、团队贡献与项目价值。"
-        : "Explore UK and European brand launches, exhibitions and cultural projects through their market context, team contribution and project value."
+        ? "浏览英国与欧洲品牌发布、行业展会和文化项目，了解项目内容、团队参与及下一次合作方向。"
+        : "Explore UK and European brand launches, exhibitions and cultural projects through their project context, team contributions and opportunities for your next brief."
   });
 }
 
@@ -40,9 +40,21 @@ export default async function WorkPage({ params }: { params: Promise<{ lang: str
           </h1>
           <p className="type-lede max-w-[26rem] border-t border-ink/15 pt-5 text-ink/65 lg:col-span-4 lg:self-end">
             {zh
-              ? "这些英国与欧洲的品牌发布、行业展会和文化项目，展示不同市场场景中的团队贡献，以及这份经验与下一次项目的关系。"
-              : "Brand launches, industry exhibitions and cultural projects across the UK and Europe. Explore the market setting, our team’s contribution and the relevance to your next project."}
+              ? "Venus Bridge 面向中国企业的英国与欧洲品牌项目，围绕品牌发布、行业活动、当地传播和执行资源展开合作。"
+              : "Venus Bridge works with Chinese companies on UK and European brand projects, from launches and industry events to local communications and execution resources."}
           </p>
+          <div className="border-t border-ink/15 pt-6 lg:col-span-12" data-work-introduction>
+            <p className="max-w-3xl text-base leading-7 text-ink/70">
+              {zh
+                ? "以下精选项目与独立作品展示团队的实际参与经验。正在筹备类似项目，可从受众、活动内容与当地执行需求开始讨论。"
+                : "The projects and independent works below show the team’s specific contributions. Planning something similar? Start with your audience, event content and local delivery needs."}
+            </p>
+            <div className="mt-5">
+              <ButtonLink href={withLanguage("/contact?intent=company", lang)} showArrow>
+                {zh ? "讨论下一次项目" : "Discuss Your Next Project"}
+              </ButtonLink>
+            </div>
+          </div>
         </Container>
       </section>
       <PortfolioWork language={lang} />

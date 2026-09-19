@@ -115,6 +115,10 @@ export type PortfolioProject = {
   slug: string;
   titleEn: string;
   titleZh: string;
+  eventNameEn: string;
+  eventNameZh: string;
+  participationSummaryEn: string;
+  participationSummaryZh: string;
   contentType: PortfolioContentType;
   clientName?: string;
   clientNamePublic: boolean;
@@ -146,8 +150,6 @@ export type PortfolioProject = {
   evidenceCreatedZh?: string[];
   commercialUseEn?: string[];
   commercialUseZh?: string[];
-  continuedValueEn?: string[];
-  continuedValueZh?: string[];
   institutionalContext?: InstitutionalEvidenceContext;
   institutionalRelationshipLevel?: "A" | "B" | "C" | "unverified";
   scopeBoundaryEn: string;
@@ -176,12 +178,8 @@ export type PortfolioProject = {
   evidenceLevel: CaseEvidenceLevel;
   scope: CaseScope[];
   capabilities: CaseCapability[];
-  projectChallengeEn: string;
-  projectChallengeZh: string;
   roleStatementEn: string;
   roleStatementZh: string;
-  projectValueEn: string;
-  projectValueZh: string;
   mediaDecisions: CaseStudyMediaDecision[];
   mediaStatus: "ready" | "pending" | "none";
   evidenceStatus: "verified" | "partial" | "pending";
@@ -223,18 +221,19 @@ const rightsEvidence: EvidenceRecord = {
 const id = (slug: string, order: number, role: "hero" | "cover" | "gallery") =>
   `${slug}-${String(order).padStart(2, "0")}-${role}`;
 const boundary = {
-  caseEn:
-    "The public record supports photography and visual documentation of the visible project setting. It does not claim event ownership, wider campaign strategy or measured commercial outcomes.",
-  caseZh:
-    "公开记录仅支持可见项目场景的摄影与视觉记录，不代表 Venus Bridge 负责活动主办、整体传播策略或量化商业成果。",
-  seriesEn:
-    "This selection demonstrates photography and visual-content capability. Client identity, commission scope, distribution and outcomes are not claimed where they are not verified.",
-  seriesZh: "本选集用于展示摄影与视觉内容能力；未经核验的客户身份、委托范围、传播渠道与项目成果不作公开主张。"
+  caseEn: "Selected team experience. The contribution shown is described for this project.",
+  caseZh: "团队项目经验；本页说明团队在该项目中参与的具体工作。",
+  seriesEn: "Independent works selected from the team’s portfolio.",
+  seriesZh: "选自团队作品的独立内容，保留各自项目属性。"
 };
 type Spec = {
   slug: string;
   titleEn: string;
   titleZh: string;
+  eventNameEn: string;
+  eventNameZh: string;
+  participationSummaryEn: string;
+  participationSummaryZh: string;
   contentType?: PortfolioContentType;
   clientName?: string;
   clientNamePublic?: boolean;
@@ -277,13 +276,16 @@ const layouts = {
 const specs: Spec[] = [
   {
     slug: "wang-linkai-london-concert",
-    titleEn: "Wang Linkai (Xiao Gui) London Concert 2026",
-    titleZh: "王琳凯（小鬼）伦敦演唱会 2026",
+    titleEn: "Wang Linkai | London Concert",
+    titleZh: "王琳凯（小鬼）｜伦敦演唱会",
+    eventNameEn: "Wang Linkai (Xiao Gui) London Concert 2026",
+    eventNameZh: "王琳凯（小鬼）伦敦演唱会 2026",
+    participationSummaryEn: "Concert photography and editorial image selection.",
+    participationSummaryZh: "团队参与演唱会摄影与编辑选片。",
     clientName: "Wang Linkai (Xiao Gui)",
     clientNamePublic: true,
     sector: "events-roadshows",
     category: "institutional-talent",
-    sortDate: "2026-01-01",
     year: "2026",
     location: "London, UK",
     projectTypeEn: "Overseas live music event",
@@ -295,8 +297,8 @@ const specs: Spec[] = [
     contextZh:
       "王琳凯伦敦演唱会将艺人的舞台表现放进海外观众的现场体验。表演本身与共同参与的氛围，是理解文化内容如何在海外呈现的两个重要部分。",
     executionEn:
-      "The selection brings artist portraits and the shared live setting together as a concise account of the performance.",
-    executionZh: "选集将艺人肖像与现场共同参与的场景连接起来，形成精炼的演出内容。",
+      "Artist portraits and the wider live setting create a short visual account of the performance and its closing moments.",
+    executionZh: "艺人肖像与较完整的现场场景，呈现表演及收官时刻。",
     rolesEn: ["Live-event photography", "Editorial image selection"],
     rolesZh: ["现场活动摄影", "编辑影像筛选"],
     primarySector: "media-entertainment",
@@ -306,8 +308,12 @@ const specs: Spec[] = [
   },
   {
     slug: "geely-london-brand-launch",
-    titleEn: "Geely London Brand Launch 2025",
-    titleZh: "吉利伦敦品牌发布会 2025",
+    titleEn: "Geely | UK Brand Launch",
+    titleZh: "吉利汽车｜英国品牌发布",
+    eventNameEn: "Geely London Brand Launch 2025",
+    eventNameZh: "吉利伦敦品牌发布会 2025",
+    participationSummaryEn: "Launch photography connecting the design presentation and EX5 display.",
+    participationSummaryZh: "团队参与设计介绍与 EX5 展示的发布现场摄影。",
     clientName: "Geely Auto",
     clientNamePublic: true,
     sector: "automotive",
@@ -320,12 +326,12 @@ const specs: Spec[] = [
     objectiveEn: "Making an international automotive brand relevant to a British audience.",
     objectiveZh: "让国际汽车品牌的表达与英国受众建立联系。",
     contextEn:
-      "Geely launched its namesake brand in the UK in London on 23 October 2025, introducing the EX5 as its first UK model. The event brought design, product and brand together at the point where a wider international business needed a distinct introduction to British consumers.",
+      "Geely launched its namesake brand in the UK in London on 23 October 2025, introducing the EX5 as its first UK model. The London presentation brought the brand’s design perspective and the EX5 into the same introduction for a British audience.",
     contextZh:
-      "2025 年 10 月 23 日，吉利在伦敦发布其同名品牌进入英国市场，并介绍首款英国车型 EX5。对一个已有国际业务基础的汽车品牌，这场发布需要把设计、产品与品牌身份转化为英国消费者能够理解的介绍。",
+      "2025 年 10 月 23 日，吉利在伦敦发布其同名品牌进入英国市场，并介绍首款英国车型 EX5。这场伦敦发布将设计、产品与品牌身份放在同一次面向英国受众的介绍中。",
     executionEn:
-      "The project imagery places the design speaker, product presentation and launch audience in a connected sequence. It shows how the brand and its first UK model were presented together in London.",
-    executionZh: "项目影像串联设计演讲、产品介绍与现场观众，呈现品牌和首款英国车型如何在伦敦共同亮相。",
+      "The selection connects the Geely Global Design presentation, EX5 and the London launch audience.",
+    executionZh: "选集将 Geely Global Design 设计演讲、EX5 与伦敦发布现场观众连接起来。",
     rolesEn: ["Launch photography", "Design and product imagery"],
     rolesZh: ["发布现场摄影", "设计与产品影像"],
     primarySector: "automotive",
@@ -336,8 +342,12 @@ const specs: Spec[] = [
   },
   {
     slug: "changan-europe-launch-2025",
-    titleEn: "Changan European Brand Launch 2025, Mainz",
-    titleZh: "长安汽车 2025 欧洲品牌发布｜美因茨",
+    titleEn: "Changan | European Brand Launch",
+    titleZh: "长安汽车｜欧洲品牌发布",
+    eventNameEn: "Changan European Brand Launch 2025, Mainz",
+    eventNameZh: "长安汽车 2025 欧洲品牌发布｜美因茨",
+    participationSummaryEn: "Launch photography across the brand presentations and vehicle displays.",
+    participationSummaryZh: "团队参与品牌介绍与车辆展示的发布现场摄影。",
     clientName: "Changan",
     clientNamePublic: true,
     sector: "automotive",
@@ -352,11 +362,10 @@ const specs: Spec[] = [
     contextEn:
       "On 21 March 2025, Changan introduced CHANGAN, DEEPAL and AVATR in Mainz at its Sharing the Future European brand launch. Presenting several brands together made the relationship between group ambition, brand identity and individual vehicles central to the event.",
     contextZh:
-      "2025 年 3 月 21 日，长安在德国美因茨举行 Sharing the Future 欧洲品牌发布会，介绍 CHANGAN、DEEPAL 与 AVATR。多个品牌共同亮相，需要让受众理解集团方向、各品牌定位与具体车型之间的关系。",
+      "2025 年 3 月 21 日，长安在德国美因茨举行 Sharing the Future 欧洲品牌发布会，介绍 CHANGAN、DEEPAL 与 AVATR。多个品牌共同亮相，集团介绍、各品牌身份与具体车型构成此次发布的不同层次。",
     executionEn:
-      "The selected material connects the main presentation with individual brand and vehicle moments, including the Sharing the Future stage and AVATR presentation. It preserves how the launch introduced the range within one event.",
-    executionZh:
-      "项目内容将主舞台与各品牌、车型的展示联系起来，包括 Sharing the Future 舞台与 AVATR 介绍，保留了同一场活动中品牌阵容的呈现关系。",
+      "The Sharing the Future stage and AVATR presentation appear alongside vehicle imagery, showing the relationship between the collective launch and individual brands.",
+    executionZh: "Sharing the Future 主舞台、AVATR 介绍与车辆影像共同呈现整体发布与各品牌之间的关系。",
     rolesEn: ["Launch photography", "Brand and product imagery"],
     rolesZh: ["发布现场摄影", "品牌与产品影像"],
     primarySector: "automotive",
@@ -368,8 +377,12 @@ const specs: Spec[] = [
   },
   {
     slug: "catl-open-day-2025",
-    titleEn: "CATL Open Day 2025, Munich",
-    titleZh: "CATL Open Day 2025｜慕尼黑",
+    titleEn: "CATL | Munich Technology Launch",
+    titleZh: "宁德时代｜慕尼黑技术发布",
+    eventNameEn: "CATL Open Day 2025, Munich",
+    eventNameZh: "CATL Open Day 2025｜慕尼黑",
+    participationSummaryEn: "Event photography of speakers, technical material and the audience setting.",
+    participationSummaryZh: "团队参与演讲、技术内容与观众环境的活动摄影。",
     clientName: "CATL",
     clientNamePublic: true,
     sector: "automotive",
@@ -386,9 +399,9 @@ const specs: Spec[] = [
     contextZh:
       "CATL 在慕尼黑 2025 Open Day 中，围绕欧洲电动出行需求介绍神行 Pro，涉及安全、寿命、续航和充电。活动将技术主张与汽车产业沟通中需要回答的实际问题连接起来。",
     executionEn:
-      "The project material includes presentation imagery around battery design and safety alongside the wider event setting. These are event communication assets; the technology and product claims are CATL’s.",
+      "Battery design and safety presentations, including Wave Cell + CTB and No Propagation 3.0, appear within CATL’s event setting.",
     executionZh:
-      "项目影像包括电池设计、安全等技术介绍及整体活动场景，属于活动传播内容；技术与产品主张均来自 CATL。",
+      "电池设计与安全介绍，包括 Wave Cell + CTB 和 No Propagation 3.0，出现在宁德时代的活动现场画面中。",
     rolesEn: ["Event photography", "Technical presentation imagery"],
     rolesZh: ["活动现场摄影", "技术发布影像"],
     primarySector: "automotive",
@@ -400,13 +413,16 @@ const specs: Spec[] = [
   },
   {
     slug: "yue-yunpeng-london-live",
-    titleEn: "Yue Yunpeng London Live 2025",
-    titleZh: "岳云鹏伦敦演出 2025",
+    titleEn: "Yue Yunpeng | London Live",
+    titleZh: "岳云鹏｜伦敦演出",
+    eventNameEn: "Yue Yunpeng London Live 2025",
+    eventNameZh: "岳云鹏伦敦演出 2025",
+    participationSummaryEn: "Live-performance photography of the performers and stage.",
+    participationSummaryZh: "团队参与演出人员与舞台场景的现场摄影。",
     clientName: "Yue Yunpeng",
     clientNamePublic: true,
     sector: "events-roadshows",
     category: "institutional-talent",
-    sortDate: "2025-06-01",
     year: "2025",
     location: "London, UK",
     projectTypeEn: "Chinese-language cultural performance",
@@ -414,12 +430,10 @@ const specs: Spec[] = [
     objectiveEn: "Chinese-language performance in a London audience context.",
     objectiveZh: "华语文化内容在伦敦的现场表达。",
     contextEn:
-      "Yue Yunpeng’s London performance brought Chinese-language live entertainment into a British cultural setting. The performers and stage identity help communicate the form of the event without substituting attendance or box-office claims for its content.",
-    contextZh:
-      "岳云鹏伦敦演出将华语现场娱乐带到英国文化场景。演出人员与舞台识别共同说明活动的内容形态，无需用未经核实的观众规模或票房来替代项目本身。",
-    executionEn:
-      "The selected stage imagery preserves the relationship between the performers and the event’s visual identity.",
-    executionZh: "所选舞台内容保留了演出人员与活动视觉识别之间的关系。",
+      "Yue Yunpeng’s London performance brought Chinese-language live entertainment into a British cultural setting. The performers and stage identity communicate the form of the live show.",
+    contextZh: "岳云鹏伦敦演出将华语现场娱乐带到英国文化场景。演出人员与舞台识别共同说明活动的内容形态。",
+    executionEn: "The selected stage images focus on performers together within the show’s visual setting.",
+    executionZh: "所选舞台影像以同台演出人员及演出视觉环境为中心。",
     rolesEn: ["Live-performance photography", "Visual documentation"],
     rolesZh: ["现场演出摄影", "视觉记录"],
     primarySector: "media-entertainment",
@@ -436,11 +450,14 @@ const specs: Spec[] = [
   },
   {
     slug: "london-fashion-week-2025",
-    titleEn: "London Fashion Week 2025 — Editorial Portraits",
-    titleZh: "伦敦时装周 2025｜编辑肖像",
+    titleEn: "London Fashion | Editorial Portraits",
+    titleZh: "伦敦时尚｜编辑肖像",
+    eventNameEn: "London Fashion Week 2025 — Editorial Portraits",
+    eventNameZh: "伦敦时装周 2025｜编辑肖像",
+    participationSummaryEn: "Editorial portrait photography and image selection.",
+    participationSummaryZh: "团队参与编辑肖像摄影与影像筛选。",
     sector: "fashion-beauty-apparel",
     category: "brand-evidence",
-    sortDate: "2025-02-01",
     year: "2025",
     location: "London, UK",
     projectTypeEn: "London fashion editorial portraits",
@@ -448,12 +465,11 @@ const specs: Spec[] = [
     objectiveEn: "Editorial fashion expression through a London setting.",
     objectiveZh: "通过伦敦场景形成时尚编辑表达。",
     contextEn:
-      "This selection consists of editorial portraits made in the London Fashion Week context, using indoor and outdoor locations. It is portrait-led fashion content, rather than a record of runway or backstage production.",
-    contextZh:
-      "这组选集是在伦敦时装周语境中创作的室内外编辑肖像，以人物与服装表达为主，属于时尚编辑内容，并非秀场或后台制作记录。",
+      "This selection consists of editorial portraits made in the London Fashion Week context, using indoor and outdoor locations. People, clothing and the London setting are the subjects of this editorial work.",
+    contextZh: "这组选集是在伦敦时装周语境中创作的室内外编辑肖像，以人物与服装表达为主，属于时尚编辑内容。",
     executionEn:
-      "The paired portraits use contrasting environments to give the styling a distinct editorial character.",
-    executionZh: "肖像通过不同环境的对照，为服装与造型形成具有辨识度的编辑表达。",
+      "The paired portraits contrast an outdoor London setting with an interior, while keeping people and clothing at the centre.",
+    executionZh: "两组肖像以伦敦户外与室内环境形成对照，人物与服装始终是画面主体。",
     rolesEn: ["Editorial photography", "Image selection"],
     rolesZh: ["编辑摄影", "影像筛选"],
     primarySector: "fashion-beauty-apparel",
@@ -468,13 +484,16 @@ const specs: Spec[] = [
   },
   {
     slug: "leapmotor-iaa-2023",
-    titleEn: "Leapmotor at IAA Mobility 2023, Munich",
-    titleZh: "零跑汽车 IAA Mobility 2023｜慕尼黑",
+    titleEn: "Leapmotor | IAA Mobility",
+    titleZh: "零跑汽车｜IAA Mobility",
+    eventNameEn: "Leapmotor at IAA Mobility 2023, Munich",
+    eventNameZh: "零跑汽车 IAA Mobility 2023｜慕尼黑",
+    participationSummaryEn: "Exhibition photography of vehicles, product details and the stand environment.",
+    participationSummaryZh: "团队参与车辆、产品细节与展台环境的展会摄影。",
     clientName: "Leapmotor",
     clientNamePublic: true,
     sector: "automotive",
     category: "industry-credibility",
-    sortDate: "2023-09-01",
     year: "2023",
     location: "Munich, Germany",
     projectTypeEn: "Automotive industry exhibition",
@@ -486,9 +505,8 @@ const specs: Spec[] = [
     contextZh:
       "IAA Mobility 2023 在慕尼黑汇集汽车与出行企业。零跑的产品展示置于这一行业场景中，车型细节、品牌识别与展台环境共同构成面向欧洲受众的介绍。",
     executionEn:
-      "The selected exhibition imagery links vehicle presentation with stand identity and the surrounding event. The contribution was content capture, with no stand design, construction or exhibition management role claimed.",
-    executionZh:
-      "项目内容将车辆展示、展台识别与周边展会场景相互连接。团队贡献是现场内容拍摄，不包含展台设计、搭建或展会统筹。",
+      "Stand views, vehicle images and close product details describe different scales of the same exhibition presence.",
+    executionZh: "展台场景、整车画面与产品细节，从不同尺度呈现同一次参展。",
     rolesEn: ["Exhibition photography", "Automotive product imagery"],
     rolesZh: ["展会摄影", "汽车产品影像"],
     primarySector: "automotive",
@@ -500,8 +518,13 @@ const specs: Spec[] = [
   },
   {
     slug: "byd-bd11-london",
-    titleEn: "BYD BD11 Double-Decker Bus Launch, London",
-    titleZh: "BYD BD11 双层公交车伦敦发布",
+    year: "2024",
+    titleEn: "BYD BD11 | London Product Launch",
+    titleZh: "BYD BD11｜伦敦产品发布",
+    eventNameEn: "BYD BD11 Double-Decker Bus Launch, London",
+    eventNameZh: "BYD BD11 双层公交车伦敦发布",
+    participationSummaryEn: "Launch photography of the BD11, venue and audience.",
+    participationSummaryZh: "团队参与 BD11 发布摄影，涵盖车辆、场地与观众。",
     clientName: "BYD",
     clientNamePublic: true,
     sector: "automotive",
@@ -512,13 +535,12 @@ const specs: Spec[] = [
     objectiveEn: "Electric mobility in the language of British public transport.",
     objectiveZh: "让新能源产品进入英国公共交通的具体语境。",
     contextEn:
-      "BYD introduced the BD11 at the London Bus Museum in May 2024 as an electric double-decker designed for the UK. The setting connected battery technology with a familiar transport format. For an industry audience, the market question was how the vehicle fitted the practical context of British bus travel.",
+      "BYD introduced the BD11 at the London Bus Museum in May 2024 as an electric double-decker designed for the UK. The setting connected battery technology with a familiar transport format. The venue placed the new model within Britain’s established bus culture.",
     contextZh:
       "2024 年 5 月，BYD 在伦敦巴士博物馆发布面向英国的 BD11 纯电动双层公交车。熟悉的公交车型与当地交通场景，让电池技术不再只是参数介绍，也让行业受众能够从英国公共交通的实际需求理解这款产品。",
     executionEn:
-      "The project selection brings the BD11 presentation and its British transport setting together. Product and event imagery gives the launch a clear context beyond a stand-alone vehicle photograph.",
-    executionZh:
-      "项目影像将 BD11 的发布环节与英国交通场景连接起来，使产品介绍保留了现场语境，而不只是孤立的车辆展示。",
+      "The selection moves between the BD11 display, the launch venue and people gathered around the vehicle. Together they show the scale and setting of the product introduction.",
+    executionZh: "所选内容包括 BD11 展示、发布场地与车辆周围的人群，共同呈现这款产品亮相时的尺度与环境。",
     rolesEn: ["London launch photography", "Product and venue imagery"],
     rolesZh: ["伦敦发布摄影", "产品与场地影像"],
     primarySector: "automotive",
@@ -531,8 +553,12 @@ const specs: Spec[] = [
   },
   {
     slug: "agibot-london-launch",
-    titleEn: "AGIBOT London Launch",
-    titleZh: "AGIBOT 智元伦敦发布会",
+    titleEn: "AGIBOT | London Product Launch",
+    titleZh: "AGIBOT 智元｜伦敦产品发布",
+    eventNameEn: "AGIBOT London Launch",
+    eventNameZh: "AGIBOT 智元伦敦发布会",
+    participationSummaryEn: "Photography of the technical presentation and robot displays.",
+    participationSummaryZh: "团队参与技术演讲与机器人展示的现场摄影。",
     clientName: "AGIBOT",
     clientNamePublic: true,
     sector: "technology-ai",
@@ -540,15 +566,15 @@ const specs: Spec[] = [
     location: "London, UK",
     projectTypeEn: "Robotics product introduction",
     projectTypeZh: "机器人产品介绍活动",
-    objectiveEn: "Making embodied intelligence tangible in a London technology setting.",
-    objectiveZh: "在伦敦科技活动中，让具身智能拥有具体的产品表达。",
+    objectiveEn: "Connecting technical explanation and real product displays in a clear brand introduction.",
+    objectiveZh: "让技术介绍与真实产品展示形成清晰的品牌表达。",
     contextEn:
       "The AGIBOT London event brought a technical presentation and robot displays into the same setting. For a complex product category, this offers a way to connect an explanation of the technology with a visible product form.",
     contextZh:
       "AGIBOT 伦敦活动将技术演讲与机器人展示安排在同一场景。对于具身智能这一复杂产品类别，现场表达可以把技术介绍与具体产品形态联系起来。",
     executionEn:
-      "The project imagery connects the speaker-led introduction with robots in the display environment. It provides a concrete view of how the products appeared at the event.",
-    executionZh: "项目影像将演讲介绍与展示环境中的机器人连接起来，呈现产品在此次活动中的具体亮相方式。",
+      "Speaker-led presentation images sit alongside robots in the display area, showing both the technical introduction and the physical products.",
+    executionZh: "技术演讲与展示区内的机器人相互对应，既呈现介绍内容，也呈现真实产品形态。",
     rolesEn: ["Technology-event photography", "Robot display imagery"],
     rolesZh: ["科技活动摄影", "机器人展示影像"],
     primarySector: "technology-ai-research",
@@ -560,8 +586,12 @@ const specs: Spec[] = [
   },
   {
     slug: "london-automotive-brand-film",
-    titleEn: "London Automotive Brand Film",
-    titleZh: "伦敦汽车品牌影片",
+    titleEn: "Automotive Film | UK Locations",
+    titleZh: "汽车品牌影片｜英国实景",
+    eventNameEn: "London Automotive Brand Film",
+    eventNameZh: "伦敦汽车品牌影片",
+    participationSummaryEn: "UK location coordination, local production and automotive imagery.",
+    participationSummaryZh: "团队参与英国实景协调、本地制作与汽车视觉制作。",
     clientName: "BYD",
     clientNamePublic: true,
     sector: "automotive",
@@ -576,9 +606,9 @@ const specs: Spec[] = [
     contextZh:
       "伦敦街景与英格兰乡村，为汽车品牌提供了具体的当地生活参照。人物、道路与行驶场景让产品进入可识别的英国环境，使本地化表达超越单纯更换城市背景。",
     executionEn:
-      "The available project material links London streets, interview imagery, vehicle movement and countryside locations. The team contribution described here is local production and imagery, without claiming the final edit or distribution.",
+      "The material shown combines London street scenes, interview imagery, vehicle movement and countryside locations. These different settings give the film’s automotive subject an everyday British context.",
     executionZh:
-      "现有项目内容连接伦敦街道、人物采访、车辆行驶与乡村实景。此处展示的团队贡献为本地制作与影像，不延伸至成片剪辑或投放发行。",
+      "现有项目内容包括伦敦街景、人物采访画面、车辆行驶与乡村实景，以不同环境呈现汽车与英国日常生活的联系。",
     rolesEn: ["UK location coordination", "Automotive visual production"],
     rolesZh: ["英国实景协调", "汽车视觉制作"],
     primarySector: "automotive",
@@ -608,8 +638,12 @@ const specs: Spec[] = [
   },
   {
     slug: "beauty-fashion-brand-content",
-    titleEn: "Selected Beauty & Fashion Brand Content",
-    titleZh: "美妆与时尚品牌内容精选",
+    titleEn: "Beauty & Fashion | Selected Work",
+    titleZh: "美妆与时尚｜独立作品选集",
+    eventNameEn: "Selected Beauty & Fashion Brand Content",
+    eventNameZh: "美妆与时尚品牌内容精选",
+    participationSummaryEn: "Photography and visual selection across separate works.",
+    participationSummaryZh: "选集展示不同作品中的摄影与视觉内容筛选。",
     contentType: "portfolio-series",
     sector: "fashion-beauty-apparel",
     category: "brand-evidence",
@@ -623,9 +657,8 @@ const specs: Spec[] = [
     contextZh:
       "涵盖美妆、护肤、时尚与零售影像的作品选集，汇集不同项目与表现形式，展示产品与人物如何共同构成画面。",
     executionEn:
-      "The selection spans product-led portraits, beauty imagery, apparel and retail settings. These are separate works, not one commissioned brand campaign.",
-    executionZh:
-      "选集包括以产品为核心的肖像、美妆、服装与零售场景，各作品相互独立，并非一次受托完成的整合品牌 campaign。",
+      "Product emphasis, styling and retail context vary across this selection of independent works.",
+    executionZh: "不同独立作品分别侧重产品、造型和零售环境，展示多种内容形式。",
     rolesEn: ["Photography", "Visual-content selection"],
     rolesZh: ["摄影", "视觉内容筛选"],
     primarySector: "fashion-beauty-apparel",
@@ -654,8 +687,12 @@ const specs: Spec[] = [
   },
   {
     slug: "european-road-lifestyle",
-    titleEn: "European Road & Lifestyle — Selected Work",
-    titleZh: "欧洲汽车与生活方式影像选集",
+    titleEn: "European Roads | Selected Work",
+    titleZh: "欧洲汽车与生活方式｜独立作品选集",
+    eventNameEn: "European Road & Lifestyle — Selected Work",
+    eventNameZh: "欧洲汽车与生活方式影像选集",
+    participationSummaryEn: "Automotive photography and location imagery across separate works.",
+    participationSummaryZh: "选集展示不同作品中的汽车摄影与实景影像创作。",
     contentType: "portfolio-series",
     sector: "automotive",
     category: "brand-evidence",
@@ -669,8 +706,8 @@ const specs: Spec[] = [
     contextZh:
       "汇集欧洲道路与城市场景中的汽车影像，展示车辆、行驶状态与周边环境如何共同建立品牌内容的当地语境。",
     executionEn:
-      "Selected road and city imagery shows different ways of placing vehicles within a European environment. The series is not presented as a continuing commissioned programme.",
-    executionZh: "所选道路与城市影像展示了车辆进入欧洲环境的不同方式，不将其包装为持续委托的长期项目。",
+      "Road and city images give each vehicle a different relationship with its surroundings in this selection of independent works.",
+    executionZh: "道路与城市影像呈现车辆和周围环境的不同关系，各幅内容来自独立作品。",
     rolesEn: ["Automotive photography", "On-location image making"],
     rolesZh: ["汽车摄影", "实景影像创作"],
     primarySector: "automotive",
@@ -682,204 +719,100 @@ const specs: Spec[] = [
 
 type CaseNarrative = Pick<
   PortfolioProject,
-  | "archetype"
-  | "evidenceLevel"
-  | "scope"
-  | "capabilities"
-  | "projectChallengeEn"
-  | "projectChallengeZh"
-  | "continuedValueEn"
-  | "continuedValueZh"
-  | "roleStatementEn"
-  | "roleStatementZh"
-  | "projectValueEn"
-  | "projectValueZh"
+  "archetype" | "evidenceLevel" | "scope" | "capabilities" | "roleStatementEn" | "roleStatementZh"
 >;
 const caseNarratives: Record<string, CaseNarrative> = {
   "wang-linkai-london-concert": {
-    projectChallengeEn:
-      "Retain the artist’s performance identity alongside the atmosphere of a London live event.",
-    continuedValueEn: [
-      "This experience can inform future conversations about cultural content and brand relevance. Any talent or brand collaboration would be a separate future scope."
-    ],
-    projectChallengeZh: "在呈现艺人舞台形象的同时，保留伦敦演出现场的氛围。",
-    continuedValueZh: [
-      "这份经验可为未来文化内容与品牌相关性的讨论提供参考；艺人或品牌合作应作为新的项目范围单独沟通。"
-    ],
     archetype: "talent-activation",
     evidenceLevel: "confirmed",
     scope: ["visual-documentation", "editorial-selection"],
     capabilities: ["Event Documentation", "Content Production", "Post-project Assets"],
     roleStatementEn:
-      "Our team contributed concert photography and editorial selection, covering the performer, stage atmosphere and finale.",
-    roleStatementZh: "团队承担演唱会摄影与编辑选片，覆盖艺人表演、舞台氛围与收官场景。",
-    projectValueEn: "A Chinese artist’s live identity in an overseas cultural setting.",
-    projectValueZh: "中国艺人在海外文化现场的形象表达。"
+      "Concert photography and editorial selection covered the performer, stage atmosphere and finale. The team’s selected images pair the artist’s stage presence with the shared experience of the London show.",
+    roleStatementZh:
+      "团队承担演唱会摄影与编辑选片，涵盖艺人表演、舞台氛围与收官场景。所选影像将艺人的舞台表现与伦敦演出的共同参与感联系起来。"
   },
   "geely-london-brand-launch": {
-    projectChallengeEn:
-      "The challenge was to make the relationship between Geely design and the EX5 clear within the London launch, giving the product a local introduction without losing the wider brand story.",
-    continuedValueEn: [
-      "The material can support later introductions that need to connect product design with the UK launch setting."
-    ],
-    projectChallengeZh:
-      "传播需要在伦敦发布场景中讲清吉利设计与 EX5 的关系，让产品拥有面向当地的介绍，同时保留完整的品牌背景。",
-    continuedValueZh: ["这些内容可用于需要联系产品设计与英国发布场景的后续介绍。"],
     archetype: "market-presence-launch",
     evidenceLevel: "confirmed",
     scope: ["visual-documentation", "content-production"],
     capabilities: ["Event Documentation", "Brand Presentation", "Post-project Assets"],
     roleStatementEn:
-      "Our team covered the design presentation, EX5 display and audience environment through launch photography.",
-    roleStatementZh: "团队以发布现场摄影覆盖设计介绍、EX5 展示与观众环境。",
-    projectValueEn: "Making an international automotive brand relevant to a British audience.",
-    projectValueZh: "让国际汽车品牌的表达与英国受众建立联系。"
+      "Launch photography covered the Geely design presentation, EX5 display and audience environment. The team’s contribution keeps the design discussion alongside the vehicle introduced to the UK audience.",
+    roleStatementZh:
+      "团队以发布现场摄影覆盖吉利设计介绍、EX5 展示与观众环境。在这组内容中，设计演讲与车型展示相互参照，呈现品牌如何介绍其英国市场产品。"
   },
   "changan-europe-launch-2025": {
-    projectChallengeEn:
-      "A multi-brand launch needs both a coherent group story and recognisable product identities. The communication challenge was to keep that hierarchy legible across the stage presentation and vehicle displays.",
-    continuedValueEn: [
-      "This kind of launch content can give later brand and product introductions a consistent reference point."
-    ],
-    projectChallengeZh:
-      "多品牌发布既需要统一的集团叙事，也需要清晰的品牌与产品识别。现场传播的难点，是让舞台介绍与车辆展示共同表达这层关系。",
-    continuedValueZh: ["这类发布内容可为后续品牌与产品介绍提供一致的参照。"],
     archetype: "market-presence-launch",
     evidenceLevel: "confirmed",
     scope: ["visual-documentation", "content-production"],
     capabilities: ["Event Documentation", "Brand Presentation", "Post-project Assets"],
     roleStatementEn:
-      "Our team photographed the Mainz launch across presentations, vehicle reveals and guest viewing areas.",
-    roleStatementZh: "团队承担美因茨发布现场摄影，覆盖品牌介绍、车辆亮相与嘉宾观看区域。",
-    projectValueEn: "A European introduction connecting brand architecture with the product range.",
-    projectValueZh: "把品牌架构与产品阵容放进同一场欧洲市场介绍。"
+      "The team photographed the Mainz launch, from brand presentations and vehicle reveals to guest viewing areas. The coverage brings the shared launch setting and individual vehicle displays into one account of the event.",
+    roleStatementZh:
+      "团队承担美因茨发布现场摄影，涵盖品牌介绍、车辆亮相与嘉宾观看区域。拍摄内容同时保留共同发布场景与各车型展示，使多品牌亮相的关系在影像中清楚可见。"
   },
   "catl-open-day-2025": {
-    projectChallengeEn:
-      "Technical presentations need enough context to explain why a feature matters. The communication challenge was to retain the relationship between the speaker, technical material and industry setting.",
-    continuedValueEn: [
-      "Keeping technical content in its presentation context can support later industry briefings and project introductions."
-    ],
-    projectChallengeZh:
-      "技术发布不能只留下参数与术语。传播难点在于保留演讲者、技术内容与行业场景之间的关系，让受众看见技术议题所回应的需求。",
-    continuedValueZh: ["保留技术内容的发布语境，可为后续行业介绍与项目沟通提供素材。"],
     archetype: "industry-event-presence",
     evidenceLevel: "confirmed",
     scope: ["visual-documentation", "content-production"],
     capabilities: ["Event Documentation", "Brand Presentation", "Post-project Assets"],
     roleStatementEn:
-      "Our team provided event photography of the speakers, technical presentations and audience setting in Munich.",
-    roleStatementZh: "团队承担慕尼黑活动现场摄影，覆盖演讲者、技术发布内容与观众环境。",
-    projectValueEn: "Battery technology presented through Europe’s electric-mobility priorities.",
-    projectValueZh: "把电池技术放进欧洲电动出行的产业议题。"
+      "The team photographed speakers, technical presentation material and the audience at the Munich event. The resulting selection places CATL’s battery explanations within the live industry discussion.",
+    roleStatementZh:
+      "团队承担慕尼黑活动现场摄影，拍摄演讲者、技术发布内容与观众环境。所选内容将宁德时代的电池技术介绍放回现场交流语境，保留讲解内容与活动场景的联系。"
   },
   "yue-yunpeng-london-live": {
-    projectChallengeEn:
-      "Make the performance format and stage relationship clear within a concise selection.",
-    continuedValueEn: [
-      "For future cultural projects, this experience is relevant to presenting the live format clearly in later introductions."
-    ],
-    projectChallengeZh: "以精炼内容呈现演出形式与舞台关系。",
-    continuedValueZh: ["对于未来文化项目，这份经验与如何在后续介绍中清晰呈现演出形式有关。"],
     archetype: "talent-activation",
     evidenceLevel: "confirmed",
     scope: ["visual-documentation"],
     capabilities: ["Event Documentation", "Content Production"],
     roleStatementEn:
-      "Our team contributed live-performance photography showing the performers and stage environment.",
-    roleStatementZh: "团队承担现场演出摄影，呈现演出人员与舞台环境。",
-    projectValueEn: "Chinese-language performance in a London audience context.",
-    projectValueZh: "华语文化内容在伦敦的现场表达。"
+      "The team photographed the live performance, concentrating on the performers and stage environment. The images show the relationship between the people on stage and the event’s visual identity.",
+    roleStatementZh:
+      "团队承担现场演出摄影，以演出人员及舞台环境为主要内容。画面呈现表演者之间的舞台关系，并保留活动自身的视觉识别。"
   },
   "london-fashion-week-2025": {
-    projectChallengeEn:
-      "Keep clothing, character and a sense of place in balance across contrasting settings.",
-    continuedValueEn: [
-      "The selection can help frame future fashion and brand-content briefs. It carries no claim of an official fashion-week appointment or show-production role."
-    ],
-    projectChallengeZh: "在不同场景中平衡服装、人物气质与地点感。",
-    continuedValueZh: [
-      "这组选集可作为未来时尚与品牌内容需求的沟通参考，不主张时装周官方委任或秀场制作身份。"
-    ],
     archetype: "brand-content-system",
     evidenceLevel: "confirmed",
     scope: ["content-production", "editorial-selection"],
     capabilities: ["Content Production", "Post-project Assets"],
     roleStatementEn:
-      "Our team contributed editorial photography and image selection for the London portraits.",
-    roleStatementZh: "团队承担伦敦编辑肖像摄影与影像筛选。",
-    projectValueEn: "Editorial fashion expression through a London setting.",
-    projectValueZh: "通过伦敦场景形成时尚编辑表达。"
+      "The team contributed editorial portrait photography and image selection in London. Indoor and outdoor portraits give clothing, pose and surroundings different weight within the frame.",
+    roleStatementZh:
+      "团队承担伦敦编辑肖像摄影与影像筛选。室内外肖像分别呈现服装、人物姿态与周边环境在画面中的不同关系。"
   },
   "leapmotor-iaa-2023": {
-    projectChallengeEn:
-      "In a busy exhibition, close product detail can lose its context and wide stand views can lose the product story. The communication task was to retain both the vehicle and its place within the industry event.",
-    continuedValueEn: [
-      "For exhibitors, a connected account of product and setting can support post-show introductions and internal reference."
-    ],
-    projectChallengeZh:
-      "展会中，产品特写容易失去场景，展台全景又可能弱化产品信息。传播需要兼顾车辆本身与其所处的行业现场。",
-    continuedValueZh: ["对于参展品牌，产品与场景相互关联的内容可用于展后介绍及内部参考。"],
     archetype: "industry-event-presence",
     evidenceLevel: "confirmed",
     scope: ["visual-documentation", "content-production"],
     capabilities: ["Event Documentation", "Brand Presentation", "Post-project Assets"],
     roleStatementEn:
-      "Our team contributed exhibition photography of the stand, vehicles, product details and visitor setting.",
-    roleStatementZh: "团队承担展会摄影，覆盖展台、车辆、产品细节与观众环境。",
-    projectValueEn: "A product story within Europe’s automotive exhibition landscape.",
-    projectValueZh: "在欧洲汽车行业展会中呈现产品与品牌。"
+      "The team’s exhibition photography covered the stand, vehicles, product details and visitor setting. Wide views establish Leapmotor’s presence at IAA Mobility; closer images concentrate on the vehicles within that setting.",
+    roleStatementZh:
+      "团队承担展会摄影，涵盖展台、车辆、产品细节与观众环境。全景交代零跑在 IAA Mobility 的展示场景，近景则把注意力带回其中的车辆与产品信息。"
   },
   "byd-bd11-london": {
-    projectChallengeEn:
-      "The communication challenge was to connect a new vehicle and its technology with an established public-transport setting, without reducing the launch to a product display.",
-    continuedValueEn: [
-      "For a brand planning a similar introduction, content of this kind can support product presentations and follow-up conversations about local relevance."
-    ],
-    projectChallengeZh:
-      "这类发布的沟通难点，是把新车型与技术特点放进当地成熟的公交语境，而不止于展示一辆新车。",
-    continuedValueZh: [
-      "对于筹备同类发布的品牌，这类内容可用于产品介绍及后续沟通，帮助说明产品与当地需求的关系。"
-    ],
     archetype: "market-presence-launch",
     evidenceLevel: "confirmed",
     scope: ["visual-documentation", "content-production"],
     capabilities: ["Event Documentation", "Brand Presentation", "Post-project Assets"],
     roleStatementEn:
-      "Our team contributed launch photography, bringing together the vehicle presentation, venue and audience setting.",
-    roleStatementZh: "团队承担发布现场摄影，将车辆展示、场地与观众环境纳入同一组内容。",
-    projectValueEn: "Electric mobility in the language of British public transport.",
-    projectValueZh: "让新能源产品进入英国公共交通的具体语境。"
+      "The team photographed the BD11 launch, covering the vehicle presentation, museum setting and audience. Bringing those subjects into the same body of work places the product introduction within its British public-transport setting.",
+    roleStatementZh:
+      "团队承担 BD11 发布现场摄影，拍摄车辆展示、博物馆场地与观众环境。这组内容把产品亮相与英国公共交通场景放在一起，保留了此次介绍的当地背景。"
   },
   "agibot-london-launch": {
-    projectChallengeEn:
-      "The communication challenge was to connect the technical presentation with the robots on display without implying that a demonstration proved commercial readiness or buyer demand.",
-    continuedValueEn: [
-      "Such material can help a future product introduction explain both the technology topic and the event setting."
-    ],
-    projectChallengeZh:
-      "沟通难点是连接技术介绍与机器人展示，同时不把一次活动演示等同于商业成熟度或购买需求的验证。",
-    continuedValueZh: ["这类内容可为后续产品介绍提供技术议题与活动场景的共同参照。"],
     archetype: "market-presence-launch",
     evidenceLevel: "confirmed",
     scope: ["visual-documentation", "content-production"],
     capabilities: ["Event Documentation", "Brand Presentation", "Post-project Assets"],
     roleStatementEn:
-      "Our team photographed the technology presentation and robot displays within the London event.",
-    roleStatementZh: "团队承担伦敦活动中的技术演讲与机器人展示摄影。",
-    projectValueEn: "Making embodied intelligence tangible in a London technology setting.",
-    projectValueZh: "在伦敦科技活动中，让具身智能拥有具体的产品表达。"
+      "The team contributed photography to the launch’s visual content, covering the technical talk, robot displays and event environment. The work shown here connects the product explanation with the robots presented in the room.",
+    roleStatementZh:
+      "团队参与发布现场的视觉内容制作，围绕技术演讲、机器人展示与活动环境呈现产品信息。本案例展示的具体工作为现场摄影与展示内容记录。"
   },
   "london-automotive-brand-film": {
-    projectChallengeEn:
-      "The production challenge was to maintain a coherent vehicle story across urban, interview and countryside settings.",
-    continuedValueEn: [
-      "For brands planning UK content, this experience is relevant to making locations part of the product story and organising production around them."
-    ],
-    projectChallengeZh: "制作需要在城市、人物采访与乡村等不同场景之间，保留连贯的车辆与品牌表达。",
-    continuedValueZh: [
-      "对于计划在英国制作内容的品牌，这份经验与如何让场地服务产品表达、如何围绕实景组织制作有关。"
-    ],
     archetype: "brand-content-system",
     evidenceLevel: "confirmed",
     scope: ["location-coordination", "local-production", "content-production"],
@@ -891,46 +824,29 @@ const caseNarratives: Record<string, CaseNarrative> = {
       "Post-project Assets"
     ],
     roleStatementEn:
-      "Selected team experience in UK location coordination and automotive visual production across London streets, interview settings and the English countryside.",
-    roleStatementZh: "团队过往经验涵盖英国实景协调与汽车影像制作，涉及伦敦街道、人物采访与英格兰乡村场景。",
-    projectValueEn: "An automotive brand story grounded in recognisable British places.",
-    projectValueZh: "以可识别的英国实景，承接汽车品牌的本地表达。"
+      "The team’s experience on this film covers UK location coordination, local production and automotive visual production. The work spans London streets, interview settings and the English countryside, grounding the vehicle imagery in recognisable British places.",
+    roleStatementZh:
+      "团队在该影片中的经验涵盖英国实景协调、本地制作与汽车视觉制作。工作涉及伦敦街道、人物采访和英格兰乡村场景，让车辆影像与具体的英国环境形成联系。"
   },
   "beauty-fashion-brand-content": {
-    projectChallengeEn:
-      "Show the range of content approaches while preserving each image’s separate project context.",
-    continuedValueEn: [
-      "Useful as a reference for future briefs on product emphasis, styling and content format."
-    ],
-    projectChallengeZh: "展示内容形式的跨度，同时保留不同作品各自的项目属性。",
-    continuedValueZh: ["可为未来项目中的产品重点、造型与内容形式提供参考。"],
     archetype: "brand-content-system",
     evidenceLevel: "confirmed",
     scope: ["content-production", "editorial-selection"],
     capabilities: ["Content Production", "Post-project Assets"],
     roleStatementEn:
-      "The team’s contribution represented in this series is photography and visual-content selection across separate pieces of work.",
-    roleStatementZh: "这组选集展示团队在不同作品中的摄影与视觉内容筛选能力。",
-    projectValueEn: "Product, people and styling across consumer-brand content.",
-    projectValueZh: "以产品、人物与造型，展示消费品牌的内容表达能力。"
+      "The team’s photography and visual-content selection across separate pieces of work brings together product-led portraits, beauty, apparel and retail imagery. Each piece retains its own subject and setting.",
+    roleStatementZh:
+      "团队在不同作品中参与摄影与视觉内容筛选。选集汇集产品肖像、美妆、服装与零售影像，各自保留独立的主体与场景。"
   },
   "european-road-lifestyle": {
-    projectChallengeEn:
-      "Keep the vehicle central while allowing each road or city setting to contribute to the story.",
-    continuedValueEn: [
-      "For a future localisation brief, these works can provide a reference for setting, vehicle movement and tone."
-    ],
-    projectChallengeZh: "以车辆为主体，同时让道路与城市环境参与表达。",
-    continuedValueZh: ["对于未来本地化内容需求，这些作品可作为场景、车辆动态与表达基调的参考。"],
     archetype: "brand-content-system",
     evidenceLevel: "confirmed",
     scope: ["content-production", "editorial-selection"],
     capabilities: ["Content Production", "Post-project Assets"],
     roleStatementEn:
-      "The team’s contribution represented here is automotive photography and on-location image making across separate works.",
-    roleStatementZh: "这组选集展示团队在不同作品中的汽车摄影与实景影像制作。",
-    projectValueEn: "Automotive lifestyle content with a European sense of place.",
-    projectValueZh: "以欧洲道路与生活场景，呈现汽车品牌的当地相关性。"
+      "This selection represents the team’s automotive photography and on-location image making across separate works. Vehicles are shown in relation to roads, movement and urban surroundings.",
+    roleStatementZh:
+      "选集展示团队在不同作品中的汽车摄影与实景影像创作，呈现车辆与道路、行驶状态及城市环境的关系。"
   }
 };
 const commercialOrder = [
@@ -1106,6 +1022,10 @@ export const portfolioProjects: PortfolioProject[] = specs.map((spec, sortIndex)
     slug: spec.slug,
     titleEn: spec.titleEn,
     titleZh: spec.titleZh,
+    eventNameEn: spec.eventNameEn,
+    eventNameZh: spec.eventNameZh,
+    participationSummaryEn: spec.participationSummaryEn,
+    participationSummaryZh: spec.participationSummaryZh,
     contentType: spec.contentType ?? "case-study",
     clientName: spec.clientName,
     clientNamePublic: spec.clientNamePublic ?? false,
