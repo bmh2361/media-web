@@ -64,6 +64,9 @@ export function Footer({ language, showWork = true }: { language: Language; show
           >
             {language === "zh" ? "条款" : "Terms"}
           </Link>
+          <Link href="/radar" className="min-h-11 py-3 text-sm text-pearl/70 hover:text-pearl">
+            {language === "zh" ? "商业研究雷达" : "Business Radar"}
+          </Link>
         </nav>
       </div>
       <div className="container-x flex flex-wrap items-center justify-between gap-4 border-t border-pearl/10 py-3 text-xs text-pearl/50 lg:py-6">
