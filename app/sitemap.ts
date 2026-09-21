@@ -34,5 +34,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6
     }))
   );
-  return [...routes, ...projects];
+  return [
+    ...routes,
+    ...projects,
+    ...["radar", "privacy", "terms"].map((path) => ({
+      url: `${brand.domain}/${path}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.5
+    }))
+  ];
 }
