@@ -62,8 +62,8 @@ test("homepage stays at eight sections without overloading capability cards", as
 test("static contact stays low-friction and exposes both direct channels", async () => {
   const contact = await source("components/sections/ContactExperience.tsx");
   assert.match(contact, /data-contact-delivery="direct-only"/);
-  assert.match(contact, /Venusbridge/);
-  assert.match(contact, /venusbridge\.co\.uk@gmail\.com/);
+  assert.match(contact, /company\.contactMethods\.wechat/);
+  assert.match(contact, /company\.businessEmail/);
   assert.doesNotMatch(contact, /<form|fetch\(/);
   assert.doesNotMatch(contact, /budget|pricing|package/i);
 });

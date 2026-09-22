@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         : "About Venus Bridge | China–UK & Europe Market Execution",
     description:
       lang === "zh"
-        ? "认识连接中国总部目标与英国、欧洲本地市场行动的跨境运营团队。"
-        : "Meet the cross-border operating team connecting Chinese headquarters goals with market action in the UK and Europe."
+        ? "认识连接中国总部目标与英国市场行动的团队，结合工程、能源系统与应用人工智能研究背景，以及本地沟通和交付能力。"
+        : "Meet the team connecting Chinese headquarters goals with UK market action, bringing engineering, energy systems and applied AI research backgrounds alongside local communication and delivery."
   });
 }
 
@@ -49,7 +49,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
   const operatingFrame = zh
     ? [
         { title: "总部商业目标", description: "明确企业进入英国与欧洲所要解决的商业问题。" },
-        { title: "英国与欧洲市场判断", description: "判断市场、合作关系与行动优先级。" },
+        { title: "英国市场判断", description: "判断市场、合作关系与行动优先级。" },
         { title: "本地协同推进", description: "协调相关合作方与本地执行。" }
       ]
     : [
@@ -58,7 +58,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
           description: "Define the commercial problem the company needs to solve in the UK and Europe."
         },
         {
-          title: "UK & European market judgement",
+          title: "UK market judgement",
           description: "Assess the market, relevant relationships and priorities for action."
         },
         {
@@ -76,7 +76,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
         <div className="container-x relative py-8 md:py-9 lg:py-5">
           <div className="text-ink/42 flex items-center justify-between border-b border-ink/15 pb-4 text-[11px] uppercase tracking-editorial">
             <span>01 / {zh ? "跨境市场运营" : "CROSS-BORDER OPERATIONS"}</span>
-            <span className="hidden sm:inline">BEIJING · LONDON · EUROPE</span>
+            <span className="hidden sm:inline">UK-LED · SELECTED EUROPEAN PROJECTS</span>
           </div>
 
           <div className="mt-7 grid gap-x-8 gap-y-8 lg:grid-cols-12 lg:gap-y-0">
@@ -89,12 +89,12 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
               >
                 {zh ? (
                   <>
-                    <span className="block">服务中国企业</span>
-                    <span className="block">英国与欧洲发展的</span>
+                    <span className="block">服务中国科技企业</span>
+                    <span className="block">英国市场进入的</span>
                     <span className="block">跨境运营团队。</span>
                   </>
                 ) : (
-                  "A cross-border operating team for Chinese companies building in the UK and Europe."
+                  "A UK-led market-entry and partnership team for Chinese technology companies."
                 )}
               </h1>
             </EditorialReveal>
@@ -105,8 +105,8 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             >
               <p className="text-ink/68 text-base leading-7 md:text-lg md:leading-8">
                 {zh
-                  ? "Venus Bridge 是面向中国企业的跨境商业合作与英国、欧洲市场执行团队，将总部目标、相关商业关系与本地交付连接成协同行动。"
-                  : "Venus Bridge is a cross-border commercial partnerships and market-execution team, connecting Chinese headquarters goals, relevant relationships and delivery on the ground across the UK and Europe."}
+                  ? "Venus Bridge 面向中国科技企业，把总部目标转化为英国市场判断、本地化表达与范围明确的本地项目，并按需开展欧洲工作。"
+                  : "Venus Bridge combines technology understanding, cross-border coordination and brand delivery to turn a UK market objective into a scoped local programme, with selected European work."}
               </p>
               <p className="mt-4 text-sm leading-6 text-ink/65">
                 {zh
@@ -162,8 +162,8 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
             <div className="lg:col-span-5 lg:col-start-8">
               <p className="text-ink/66 text-lg leading-8">
                 {zh
-                  ? "进入新市场可能涉及买家、经销商、行业机构、专业能力、内容、现场执行与后续跟进。商业目标决定哪些关系与能力真正重要；Venus Bridge 把这些环节连接到同一个市场结果。"
-                  : "Entering a new market can involve buyers, distributors, industry organisations, specialist capability, content, live delivery and follow-up. The commercial objective determines which relationships matter; Venus Bridge connects them to one market result."}
+                  ? "进入新市场可能涉及买家、经销商、行业机构、专业能力、内容、现场执行与后续跟进。商业目标决定哪些关系与能力真正重要；Venus Bridge 围绕约定的目标、范围与交付协调这些环节。"
+                  : "Entering a new market can involve buyers, distributors, industry organisations, specialist capability, content, live delivery and follow-up. The commercial objective determines which relationships matter; Venus Bridge coordinates the agreed work around that objective."}
               </p>
               <ul
                 className="mt-7 border-t border-ink/15"
@@ -181,8 +181,8 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
               </ul>
               <p className="mt-7 border-l border-champagne pl-6 text-xl leading-8 text-ink">
                 {zh
-                  ? "对中国总部来说，我们是英国与欧洲市场行动的本地运营层。"
-                  : "For Chinese headquarters, we provide the local operating layer for UK and European market activity."}
+                  ? "对中国总部来说，我们为范围明确的英国项目提供本地协调与交付。"
+                  : "For Chinese headquarters, we provide local coordination and delivery for a defined UK project."}
               </p>
             </div>
           </div>
@@ -241,7 +241,7 @@ export default async function AboutPage({ params }: { params: Promise<{ lang: st
               {zh ? "从你希望真正推进的项目开始。" : "Start with the project you are trying to make happen."}
             </h2>
             <ButtonLink
-              href={withLanguage("/how-we-work", lang)}
+              href={withLanguage("/services#process", lang)}
               variant="ghost"
               className="mt-5 px-0 text-pearl"
               showArrow

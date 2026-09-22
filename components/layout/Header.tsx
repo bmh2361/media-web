@@ -17,8 +17,8 @@ const navItems = [
   ["home", "/"],
   ["companies", "/companies"],
   ["partners", "/partners"],
+  ["how", "/services"],
   ["work", "/work"],
-  ["how", "/how-we-work"],
   ["about", "/about"],
   ["contact", "/contact"]
 ] as const;
@@ -96,8 +96,13 @@ export function Header({ language, showWork = true }: { language: Language; show
             aria-label="Venus Bridge home"
             className="inline-flex min-h-11 min-w-11 items-center"
           >
-            <BrandMark surface="dark" className="w-9 xl:hidden" priority />
-            <BrandLockup variant="header" surface="dark" className="hidden xl:inline-flex" priority />
+            <BrandMark surface="dark" className="w-9 min-[1536px]:hidden" priority />
+            <BrandLockup
+              variant="header"
+              surface="dark"
+              className="hidden min-[1536px]:inline-flex"
+              priority
+            />
           </Link>
           <nav className="hidden items-center gap-0 xl:flex" aria-label="Primary navigation">
             {items.map(([key, path]) => {
@@ -110,7 +115,7 @@ export function Header({ language, showWork = true }: { language: Language; show
                   href={href}
                   aria-current={active ? "page" : undefined}
                   className={cn(
-                    "relative min-h-11 px-3 py-3 text-[14px] text-pearl/65 transition after:absolute after:inset-x-3 after:bottom-1 after:h-px after:origin-left after:bg-champagne after:transition-transform after:duration-300 hover:text-pearl",
+                    "relative min-h-11 px-2 py-3 text-[13px] text-pearl/65 transition after:absolute after:inset-x-3 after:bottom-1 after:h-px after:origin-left after:bg-champagne after:transition-transform after:duration-300 hover:text-pearl",
                     active ? "text-pearl after:scale-x-100" : "after:scale-x-0 hover:after:scale-x-100"
                   )}
                 >
@@ -128,7 +133,7 @@ export function Header({ language, showWork = true }: { language: Language; show
             </Suspense>
             <ButtonLink
               href={withLanguage("/contact", language)}
-              className="border-champagne bg-transparent px-5 py-2 text-pearl hover:bg-champagne hover:text-ink"
+              className="hidden border-champagne bg-transparent px-5 py-2 text-pearl hover:bg-champagne hover:text-ink min-[1536px]:inline-flex"
             >
               {copy.cta}
             </ButtonLink>

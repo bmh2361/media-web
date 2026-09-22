@@ -1484,3 +1484,39 @@ a {
     opacity: 1;
   }
 }
+/* Commercial pages retain the existing editorial palette and image system. */
+.commercial-hero-title {
+  max-width: 21ch;
+  font-size: clamp(2.3rem, 3.6vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.09;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+.commercial-heading {
+  max-width: 26ch;
+  font-size: clamp(1.85rem, 2.8vw, 3rem);
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+:lang(zh) .commercial-hero-title {
+  max-width: 15em;
+  line-height: 1.23;
+  letter-spacing: -0.02em;
+}
+:lang(zh) .commercial-heading {
+  max-width: 20em;
+  line-height: 1.35;
+}
+@media (max-width: 430px) {
+  .commercial-hero-title {
+    font-size: 2.25rem;
+  }
+  .commercial-hero [data-home-hero-copy] > p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}

@@ -14,7 +14,7 @@ test("primary navigation is flat and exposes both Phase 5 audiences", async () =
   assert.match(header, /\["about", "\/about"\]/);
   assert.match(header, /\["contact", "\/contact"\]/);
   assert.doesNotMatch(header, /megaMenus|How We Help|Industries|Solutions/);
-  assert.match(copy, /Discuss a Project/);
+  assert.match(copy, /Discuss a UK Project/);
   assert.doesNotMatch(header, /Fit Call|Execution Brief|Market Entry/);
 });
 
@@ -55,15 +55,22 @@ test("capabilities expose exactly four outcome-led pillars", async () => {
   assert.match(content, /WHAT ARE YOU TRYING TO ACHIEVE/);
 });
 
-test("legacy commercial routes resolve through the secondary capabilities redirect and stay absent from sitemap", async () => {
+test("legacy commercial routes resolve directly to Services and stay absent from sitemap", async () => {
   const redirects = await source("public/_redirects");
   const sitemap = await source("app/sitemap.ts");
-  for (const legacy of ["/what-we-do", "/services", "/industries", "/expertise", "/talent", "/for-agencies"])
-    assert.match(redirects, new RegExp(`/en${legacy.replaceAll("/", "\\/")} .*\\/en\\/capabilities`));
-  assert.match(redirects, /\/en\/capabilities \/en\/companies 308/);
-  for (const route of ["/companies", "/partners", "/work", "/about", "/contact"])
+  for (const legacy of [
+    "/what-we-do",
+    "/how-we-work",
+    "/industries",
+    "/expertise",
+    "/talent",
+    "/for-agencies"
+  ])
+    assert.match(redirects, new RegExp(`/en${legacy.replaceAll("/", "\\/")} .*\\/en\\/services`));
+  assert.match(redirects, /\/en\/capabilities \/en\/services 308/);
+  for (const route of ["/companies", "/partners", "/services", "/work", "/about", "/contact"])
     assert.match(sitemap, new RegExp(route));
-  assert.doesNotMatch(sitemap, /"\/(?:what-we-do|services|industries|expertise|talent|for-agencies)/);
+  assert.doesNotMatch(sitemap, /"\/(?:what-we-do|how-we-work|industries|expertise|talent|for-agencies)/);
 });
 
 test("claim governance blocks endorsement and full market-entry claims", async () => {
@@ -84,9 +91,9 @@ test("contact uses direct channels without an active submission route", async ()
 test("work detail uses the required truth-gated case structure", async () => {
   const detail = await source("components/sections/PortfolioProjectDetail.tsx");
   for (const marker of [
-    "Project Context & Communication Focus",
-    "In This Selection",
-    "Team Contribution",
+    "Project Context",
+    "Delivery",
+    "Actual Team Role",
     "Project Imagery",
     "Your Next Project",
     "Responsibilities, collaborators and deliverables are agreed for the new project",

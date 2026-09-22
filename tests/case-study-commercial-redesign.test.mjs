@@ -39,9 +39,9 @@ test("the index uses one preload and one intrinsic-ratio cover per project", () 
 
 test("detail pages lead with commercial context, specific responsibility and separate future services", () => {
   for (const marker of [
-    "Project Context & Communication Focus",
-    "In This Selection",
-    "Team Contribution",
+    "Project Context",
+    "Delivery",
+    "Actual Team Role",
     "Project Imagery",
     "Your Next Project",
     "Responsibilities, collaborators and deliverables are agreed for the new project",

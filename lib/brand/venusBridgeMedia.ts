@@ -2,10 +2,10 @@ export const venusBridgeMedia = {
   name: "Venus Bridge",
   shortName: "Venus Bridge",
   monogram: "VB",
-  slogan: "BRIDGING VISION. ELEVATING BRANDS.",
+  slogan: "UK MARKET ENTRY. COMMERCIAL PARTNERSHIPS.",
   positioning: {
-    en: "UK and European market validation, partnerships and local execution for Chinese companies.",
-    zh: "为中国企业提供英国与欧洲市场验证、商务合作与本地执行。"
+    en: "UK market entry and partnerships for Chinese technology companies.",
+    zh: "帮助中国科技企业在英国建立市场与合作。"
   },
   legalTradingStatement: {
     en: "Venus Bridge Media is a trading name of Vivian Adventure Ltd.",

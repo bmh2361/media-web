@@ -29,9 +29,9 @@ test("one canonical dataset governs case publication, order, categories and rela
 test("homepage and Work consume the canonical published collection without duplicate case lists", async () => {
   const homepage = await source("components/sections/Phase5Homepage.tsx");
   const work = await source("components/sections/PortfolioWork.tsx");
-  assert.match(homepage, /homepagePortfolioProjects/);
-  assert.match(homepage, /homepagePortfolioProjects\.slice\(0, 3\)\.map/);
-  assert.equal((homepage.match(/data-phase5-section=/g) ?? []).length, 9);
+  assert.match(homepage, /findPublishedPortfolioProject/);
+  assert.match(await source("components/sections/CommercialSections.tsx"), /findPublishedPortfolioProject/);
+  assert.match(homepage, /SelectedCommercialExperience/);
   assert.match(work, /publishedPortfolioProjects/);
   assert.match(work, /CommercialCaseIndex/);
   assert.doesNotMatch(work, /universityTalentCases|commercial-evidence/);
@@ -80,7 +80,7 @@ test("detail pages use data-driven editorial blocks and ordered next-project nav
 test("audience pages link to evidence while About avoids a duplicate case-study module", async () => {
   const audiences = await source("components/sections/Phase5AudiencePages.tsx");
   const about = await source("app/[lang]/about/page.tsx");
-  for (const category of ["market-presence", "industry-credibility", "brand-evidence"])
-    assert.match(audiences, new RegExp(`/work\\?category=${category}`));
+  assert.match(audiences, /SelectedCommercialExperience/);
+  assert.match(await source("components/sections/CommercialSections.tsx"), /withLanguage\(`\/work\//);
   assert.doesNotMatch(about, /publishedPortfolioProjects|AboutProjectProof|View case/);
 });

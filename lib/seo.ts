@@ -7,8 +7,8 @@ const indexable = true;
 const ogImagePath = () => "/og/venus-bridge.png";
 
 export const seoDescriptions = {
-  en: "UK and European market validation, buyer and partner engagement, launches and local execution for Chinese companies.",
-  zh: "帮助中国企业验证英国与欧洲市场机会、对接买家与合作方，并推进发布、展会和本地执行。"
+  en: "UK market entry and partnerships for Chinese technology companies. UK-led, with selected European projects.",
+  zh: "帮助中国科技企业在英国建立市场与合作，并按项目开展欧洲工作。"
 };
 
 export function buildMetadata({

@@ -11,16 +11,16 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     path: "/",
     title:
       lang === "zh"
-        ? "中国企业英国与欧洲市场进入及本地执行 | Venus Bridge"
-        : "UK Market Entry, Partnerships & Local Execution for Chinese Companies | Venus Bridge",
+        ? "帮助中国科技企业在英国建立市场与合作 | Venus Bridge"
+        : "UK Market Entry for Chinese Technology Companies | Venus Bridge",
     description:
       lang === "zh"
-        ? "帮助中国企业验证英国与欧洲市场机会、对接买家与合作方，并落地发布、展会及本地市场行动。"
-        : "Venus Bridge helps Chinese companies validate UK and European opportunities, engage buyers and partners, and deliver launches, exhibitions and market activity on the ground.",
+        ? "英国市场判断、品牌本地化、市场启动与合作推进。以英国为起点，按项目开展欧洲工作。"
+        : "UK market readiness, brand localisation, launch programmes and partnership development for Chinese technology companies. UK-led, with selected European projects.",
     keywords: [
       "UK market entry for Chinese companies",
-      "Europe expansion",
-      "buyer and distributor engagement",
+      "Chinese technology companies UK",
+      "China UK commercial partnerships",
       "UK local execution"
     ]
   });

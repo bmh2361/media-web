@@ -8,34 +8,42 @@ test("Phase 5 exposes the required dual-audience navigation", () => {
   const navigation = read("content/phase5.ts");
   for (const label of [
     "Home",
-    "For Companies",
-    "For Partners",
+    "For Chinese Companies",
+    "For UK & European Partners",
     "Case Studies",
-    "How We Work",
+    "Services",
     "Contact",
-    "Discuss a Project"
+    "Discuss a UK Project"
   ])
     assert.match(navigation, new RegExp(label));
   for (const route of ["app/[lang]/companies/page.tsx", "app/[lang]/partners/page.tsx"])
     assert.equal(fs.existsSync(route), true);
 });
 
-test("homepage implements the ordered two-sided commercial story", () => {
+test("homepage orders problems, offers, process, evidence and demand", () => {
   const home = read("components/sections/Phase5Homepage.tsx");
-  const order = ["hero", "proof", "journeys", "model", "value", "participants", "work", "compound", "cta"];
+  const order = [
+    'data-phase5-section="hero"',
+    "<Situations ",
+    "<Engagements ",
+    "<CommercialProcess ",
+    "<SelectedCommercialExperience ",
+    'data-commercial-section="why"',
+    "<DemandInvitation "
+  ];
   let cursor = -1;
   for (const section of order) {
-    const next = home.indexOf(`data-phase5-section=\"${section}\"`);
-    assert.ok(next > cursor, `${section} must follow the previous section`);
+    const next = home.indexOf(section);
+    assert.ok(next > cursor, section + " must follow the previous section");
     cursor = next;
   }
 });
 
-test("capabilities is secondary and redirects to Companies", () => {
+test("capabilities is secondary and redirects to Services", () => {
   const redirects = read("public/_redirects");
-  assert.match(redirects, /\/en\/capabilities \/en\/companies 308/);
-  assert.match(redirects, /\/zh\/capabilities \/zh\/companies 308/);
-  assert.match(read("app/[lang]/capabilities/page.tsx"), /redirect\(withLanguage\("\/companies"/);
+  assert.match(redirects, /\/en\/capabilities \/en\/services 308/);
+  assert.match(redirects, /\/zh\/capabilities \/zh\/services 308/);
+  assert.match(read("app/[lang]/capabilities/page.tsx"), /redirect\(withLanguage\("\/services"/);
 });
 
 test("partner claims fail closed and contact uses direct static channels", () => {
@@ -44,7 +52,7 @@ test("partner claims fail closed and contact uses direct static channels", () =>
   assert.match(collaborators, /publicDisplayPermission && item\.relationshipStatus !== "D-target-only"/);
   const contact = read("components/sections/ContactExperience.tsx");
   assert.match(contact, /data-contact-delivery="direct-only"/);
-  assert.match(contact, /Venusbridge/);
+  assert.match(contact, /company\.contactMethods\.wechat/);
   assert.match(contact, /mailto:\$\{CONTACT_EMAIL\}/);
   assert.doesNotMatch(contact, /<form|fetch\(/);
 });

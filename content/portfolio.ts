@@ -1,3 +1,4 @@
+import type { CommercialProgress } from "@/content/cases/commercial-template";
 import generatedMedia from "@/content/portfolio-media.generated.json";
 import type { ExpertiseSector, ProjectPath } from "@/content/information-architecture";
 
@@ -30,7 +31,14 @@ export type CaseScope =
   | "content-production"
   | "editorial-selection"
   | "local-production"
-  | "location-coordination";
+  | "location-coordination"
+  | "market-research"
+  | "proposition-localisation"
+  | "stakeholder-research"
+  | "stakeholder-outreach"
+  | "partnership-coordination"
+  | "pilot-coordination"
+  | "commercial-follow-up";
 export type CaseCapability =
   | "Event Documentation"
   | "Content Production"
@@ -111,6 +119,7 @@ export type InstitutionalEvidenceContext = {
 };
 
 export type PortfolioProject = {
+  commercialProgress?: CommercialProgress;
   id: string;
   slug: string;
   titleEn: string;
@@ -227,6 +236,7 @@ const boundary = {
   seriesZh: "选自团队作品的独立内容，保留各自项目属性。"
 };
 type Spec = {
+  commercialProgress?: CommercialProgress;
   slug: string;
   titleEn: string;
   titleZh: string;
@@ -1034,6 +1044,7 @@ export const portfolioProjects: PortfolioProject[] = specs.map((spec, sortIndex)
     section: sortIndex < 7 ? "selected-projects" : "production-experience",
     sortDate: spec.sortDate,
     sortOrder: commercialOrder.indexOf(spec.slug) + 1,
+    commercialProgress: spec.commercialProgress,
     year: spec.year,
     location: spec.location,
     projectTypeEn: spec.projectTypeEn,
@@ -1087,10 +1098,10 @@ export const portfolioProjects: PortfolioProject[] = specs.map((spec, sortIndex)
 });
 
 export const commercialCaseCategories: Record<CommercialCaseCategory, Record<"en" | "zh", string>> = {
-  "market-presence": { en: "Market Entry & Brand Launches", zh: "市场进入与品牌发布" },
-  "industry-credibility": { en: "Exhibitions & Industry Engagement", zh: "展会与行业交流" },
+  "market-presence": { en: "Brand Launch Documentation", zh: "品牌发布影像" },
+  "industry-credibility": { en: "Exhibitions & Industry Events", zh: "展会与行业交流" },
   "institutional-talent": { en: "Culture, Talent & Brand Experiences", zh: "文化、艺人与品牌体验" },
-  "brand-evidence": { en: "Brand Localisation & Campaign Content", zh: "品牌本地化与传播内容" }
+  "brand-evidence": { en: "Brand & Campaign Content", zh: "品牌与传播内容" }
 };
 export const commercialCaseFilters = [
   { value: "all", label: { en: "All", zh: "全部" } },

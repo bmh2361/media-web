@@ -1,3 +1,4 @@
+import { publicCommercialEvidence } from "@/content/cases/commercial-template";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { PortfolioImage } from "@/components/media/PortfolioImage";
@@ -22,6 +23,7 @@ export function PortfolioProjectDetail({
   language: Language;
 }) {
   const zh = language === "zh";
+  const commercialEvidence = publicCommercialEvidence(project.commercialProgress);
   const next = getNextPortfolioProject(project);
   const series = project.contentType === "portfolio-series";
   const visibleBlocks = project.layout.filter((block) =>
@@ -37,7 +39,7 @@ export function PortfolioProjectDetail({
       <CaseStudyHero project={project} language={language} />
       <div className="bg-porcelain text-ink">
         <section className="container-x py-12 lg:py-16" data-case-section="market">
-          <Narrative eyebrow="01" title={zh ? "项目背景与沟通重点" : "Project Context & Communication Focus"}>
+          <Narrative eyebrow="01" title={zh ? "项目背景" : "Project Context"}>
             {zh ? project.contextZh : project.contextEn}
           </Narrative>
         </section>
@@ -47,7 +49,7 @@ export function PortfolioProjectDetail({
           data-case-section="responsibility"
         >
           <div className="container-x grid gap-8 lg:grid-cols-2 lg:gap-16">
-            <Narrative eyebrow="02" title={zh ? "团队参与与具体内容" : "Team Contribution"}>
+            <Narrative eyebrow="02" title={zh ? "团队实际角色" : "Actual Team Role"}>
               {zh ? project.roleStatementZh : project.roleStatementEn}
             </Narrative>
             <Narrative
@@ -60,13 +62,47 @@ export function PortfolioProjectDetail({
                     ? "团队项目经验"
                     : "Selected team experience"
               }
-              title={zh ? "本页内容" : "In This Selection"}
+              title={zh ? "交付内容" : "Delivery"}
             >
               {zh ? project.executionZh : project.executionEn}
             </Narrative>
           </div>
         </section>
 
+        <section className="container-x py-10 lg:py-14" data-case-section="relevance">
+          <Narrative eyebrow="03" title={zh ? "这段经验说明什么" : "Why This Experience Is Relevant"}>
+            {zh
+              ? project.scope.includes("location-coordination")
+                ? "这段实际工作展示团队在英国实景中组织品牌内容制作与本地协调的能力。"
+                : "案例中的实际工作展示团队在国际活动或品牌场景中，把现场内容转化为清楚影像表达的能力。"
+              : project.scope.includes("location-coordination")
+                ? "This work demonstrates brand content production and local coordination in real UK locations."
+                : "The documented work demonstrates the team's ability to translate a live event or brand setting into clear visual communication."}
+          </Narrative>
+          <p className="mt-5 max-w-3xl text-sm leading-7 text-ink/65">
+            {zh
+              ? "此处展示的影像工作本身不证明市场进入战略、买家开发或分销工作，也不构成销售、投资或机构背书的证据。"
+              : "The visual work shown here does not in itself establish market-entry strategy, buyer development or distribution work, or claims of sales, investment or institutional endorsement."}
+          </p>
+        </section>
+        {commercialEvidence.length > 0 && (
+          <section
+            className="container-x border-t border-ink/15 py-10"
+            data-case-section="commercial-evidence"
+          >
+            <h2 className="text-2xl font-medium">
+              {zh ? "已核实的商业项目记录" : "Verified Commercial Project Record"}
+            </h2>
+            <dl className="mt-6 grid gap-7 md:grid-cols-2">
+              {commercialEvidence.map((record) => (
+                <div key={record.key}>
+                  <dt className="text-sm font-semibold">{record.label[language]}</dt>
+                  <dd className="mt-3 text-base leading-7 text-ink/70">{record.text[language]}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
         {visibleBlocks.length ? (
           <section
             className="bg-mist py-12 lg:py-16"
@@ -75,7 +111,7 @@ export function PortfolioProjectDetail({
           >
             <div className="container-x space-y-10 lg:space-y-16" data-editorial-media-blocks>
               <h2 className="text-sm uppercase tracking-editorial">
-                03 · {zh ? "项目影像" : "Project Imagery"}
+                04 · {zh ? "项目影像" : "Project Imagery"}
               </h2>
               {visibleBlocks.map((block, index) => (
                 <div
@@ -92,7 +128,7 @@ export function PortfolioProjectDetail({
         <section className="bg-night py-16 text-pearl lg:py-20" data-case-section="related">
           <div className="container-x">
             <p className="text-xs uppercase tracking-editorial text-pearl/60">
-              04 · {zh ? "下一次合作" : "Your Next Project"}
+              05 · {zh ? "下一次合作" : "Your Next Project"}
             </p>
             <h2 className="editorial-heading mt-6 max-w-[22ch]">
               {zh ? "筹备你的英国或欧洲项目。" : "Plan your next UK or European project."}

@@ -112,11 +112,7 @@ test("existing scopes stay case-specific and public copy separates contribution 
   assert.match(detail, /Responsibilities, collaborators and deliverables are agreed for the new project/);
   assert.match(detail, /\/contact\?intent=company/);
   assert.equal((detail.match(/project\.roleStatementEn/g) ?? []).length, 1);
-  for (const file of [
-    "components/sections/CommercialCaseIndex.tsx",
-    "app/[lang]/work/[slug]/page.tsx",
-    "components/sections/Phase5Homepage.tsx"
-  ]) {
+  for (const file of ["components/sections/CommercialCaseIndex.tsx", "app/[lang]/work/[slug]/page.tsx"]) {
     assert.match(read(file), /participationSummaryEn/);
     assert.doesNotMatch(read(file), /roleStatement|projectValue|continuedValue/);
   }
@@ -145,7 +141,7 @@ test("titles, event names and genuine dates have distinct purposes", () => {
   assert.match(read("content/portfolio.ts"), /a.sortOrder - b.sortOrder/);
   const work = read("app/[lang]/work/page.tsx");
   assert.ok(work.indexOf("data-work-introduction") < work.indexOf("<PortfolioWork"));
-  assert.match(work, /Chinese companies on UK and European brand projects/);
+  assert.match(work, /Selected team experience in visual production/);
 });
 
 test("event identity, series boundaries and cultural taxonomy remain explicit", () => {

@@ -121,33 +121,33 @@ export const teamMembers: TeamMember[] = [
     slug: "minghan",
     name: "Dr. Minghan Bao",
     displayNameZh: "包铭涵 博士",
-    role: l("Co-Founder · Technology Strategy & Architecture", "联合创始人 · 技术战略与架构"),
-    specialism: l("AI systems, digital platforms & governance", "AI 系统、数字平台与治理"),
+    role: l("Co-Founder · Energy, AI & Technology Strategy", "联合创始人 · 能源、人工智能与技术战略"),
+    specialism: l("Energy systems, applied AI & industrial technology", "能源系统、应用人工智能与工业技术"),
     contribution: l(
-      "Defines the technology architecture, governance and delivery planning that allow digital and AI capabilities to support complex projects.",
-      "负责定义技术架构、治理与交付规划，使数字与 AI 能力服务于复杂项目的实际目标。"
+      "Minghan brings an engineering and applied AI perspective to energy systems and industrial technology, helping connect technical capability with commercial relevance.",
+      "铭涵以工程与应用人工智能背景理解能源系统和工业技术，帮助企业把技术能力与实际商业需求联系起来。"
     ),
     expertiseSummary: l(
-      "AI system architecture, digital platforms, intelligent production workflows and technical coordination.",
-      "专长涵盖 AI 系统架构、数字平台、智能生产流程与技术协同。"
+      "His doctoral research applied machine learning and AI to industrial sensing and multiphase-flow measurement. His background also includes data systems and railway microgrid research. This is personal research experience, not Venus Bridge client delivery.",
+      "博士研究将机器学习与人工智能应用于工业传感和多相流测量，背景亦涵盖数据系统与铁路微电网研究。这些属于个人研究经历，不代表 Venus Bridge 的客户交付项目。"
     ),
     credential: l(
-      "PhD · Artificial Intelligence; Royal Academy of Engineering GTV Global Talent recipient",
-      "博士 · 人工智能；英国皇家工程院 GTV 全球人才获得者"
+      "PhD in Chemical & Process Engineering, University of Leeds. Global Talent Visa holder, endorsed by the Royal Academy of Engineering — a personal visa endorsement, not an endorsement of Venus Bridge.",
+      "利兹大学化学与过程工程博士。英国皇家工程院背书全球人才签证持有人；此为个人签证背书，不代表对 Venus Bridge 的背书。"
     ),
     projectResponsibility: l(
-      "Leads technology strategy, digital systems and technical planning across complex delivery.",
-      "负责技术战略、数字系统与复杂项目的技术规划。"
+      "Leads energy, AI and technology strategy, translating complex technical propositions into clearer evaluation and discussion with potential UK stakeholders. Technical commercialisation here means making technology easier to assess, not claiming sales outcomes.",
+      "负责能源、人工智能与技术战略，帮助潜在英国合作方更清晰地评估和讨论复杂技术方案。技术商业化在此指把技术转化为可判断、可沟通的表达，不代表已实现销售成果。"
     ),
     clientValue: l(
-      "Technical decisions that are structured around the delivery objective, not technology for its own sake.",
-      "让技术决策围绕交付目标，而不是为技术而技术。"
+      "Helps technology companies explain technically complex products in a form that UK commercial, research and industry stakeholders can evaluate more effectively.",
+      "帮助技术企业把复杂产品和技术能力转化为英国商业、科研及产业合作方更容易判断和讨论的表达。"
     ),
     expertise: [
-      l("Technology strategy", "技术战略"),
-      l("AI workflows", "AI 工作流"),
-      l("Digital systems", "数字系统"),
-      l("Technical governance", "技术治理")
+      l("Energy Systems", "能源系统"),
+      l("Applied AI", "应用人工智能"),
+      l("Industrial Technology", "工业技术"),
+      l("Technical Commercialisation", "技术商业化")
     ],
     image: "/people/minghan-bao.jpg",
     imageAlt: l("Colour portrait of Dr. Minghan Bao.", "包铭涵博士彩色肖像。"),

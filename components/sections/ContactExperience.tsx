@@ -1,7 +1,9 @@
 import type { Language } from "@/lib/i18n";
 
-const CONTACT_EMAIL = "venusbridge.co.uk@gmail.com";
-const CONTACT_WECHAT = "Venusbridge";
+import { company } from "@/content/company";
+
+const CONTACT_EMAIL = company.businessEmail;
+const CONTACT_WECHAT = company.contactMethods.wechat;
 
 export function ContactExperience({ language }: { language: Language }) {
   const zh = language === "zh";

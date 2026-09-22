@@ -8,7 +8,7 @@ const source = async (path) => readFile(new URL(path, root), "utf8");
 test("the static release exposes direct contact without a server submission path", async () => {
   const contact = await source("components/sections/ContactExperience.tsx");
   assert.match(contact, /data-contact-delivery="direct-only"/);
-  assert.match(contact, /Venusbridge/);
+  assert.match(contact, /company\.contactMethods\.wechat/);
   assert.match(contact, /mailto:\$\{CONTACT_EMAIL\}/);
   assert.doesNotMatch(contact, /<form|fetch\(|\/api\/contact/);
 });

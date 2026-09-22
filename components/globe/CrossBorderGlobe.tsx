@@ -50,8 +50,8 @@ export function CrossBorderGlobe({ language }: { language: Language }) {
           </h2>
           <p className="text-pearl/62 mt-6 max-w-[34rem] text-base leading-7 md:mt-7 md:text-lg md:leading-8">
             {zh
-              ? "Venus Bridge 从中国总部的商业目标出发，在伦敦及英国、欧洲市场组织所需关系、专业能力与本地执行。"
-              : "Venus Bridge starts with the commercial goal in China, then coordinates the relationships, specialist capability and local execution required in London and across the UK and Europe."}
+              ? "Venus Bridge 从中国总部的目标出发，以英国为起点，按具体项目开展欧洲工作。图中城市表示市场语境，不代表办公室、固定团队或已建立的合作网络。"
+              : "Venus Bridge starts with the objective in China and plans UK-led work, with selected European projects. Cities illustrate market context, not offices, permanent teams or an established partner network."}
           </p>
 
           <div

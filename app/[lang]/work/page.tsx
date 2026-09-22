@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     path: "/work",
     title:
       lang === "zh"
-        ? "英国与欧洲品牌发布、展会与文化项目 | Venus Bridge"
-        : "UK & European Brand Launches, Exhibitions & Culture | Venus Bridge",
+        ? "案例：科技与汽车发布的真实团队经验 | Venus Bridge"
+        : "Case Studies: Technology & Mobility Launch Experience | Venus Bridge",
     description:
       lang === "zh"
-        ? "浏览英国与欧洲品牌发布、行业展会和文化项目，了解项目内容、团队参与及下一次合作方向。"
-        : "Explore UK and European brand launches, exhibitions and cultural projects through their project context, team contributions and opportunities for your next brief."
+        ? "查看团队在科技、汽车与国际活动中的实际影像制作、本地执行职责与具体交付。"
+        : "Explore the team’s actual visual production and local delivery roles in technology, mobility and international events. Clear context, contributions and deliverables."
   });
 }
 
@@ -36,18 +36,18 @@ export default async function WorkPage({ params }: { params: Promise<{ lang: str
         <Container className="container-editorial editorial-grid py-16 lg:items-end lg:py-24">
           <Eyebrow className="lg:col-span-12">{zh ? "案例研究" : "CASE STUDIES"}</Eyebrow>
           <h1 className="type-display-page editorial-display-measure zh-display-measure lg:col-span-8">
-            {zh ? "让国际化目标，成为有当地相关性的品牌实践。" : "International ambition. Local relevance."}
+            {zh ? "真实项目中的具体参与。" : "Real projects. Clearly defined roles."}
           </h1>
           <p className="type-lede max-w-[26rem] border-t border-ink/15 pt-5 text-ink/65 lg:col-span-4 lg:self-end">
             {zh
-              ? "Venus Bridge 面向中国企业的英国与欧洲品牌项目，围绕品牌发布、行业活动、当地传播和执行资源展开合作。"
-              : "Venus Bridge works with Chinese companies on UK and European brand projects, from launches and industry events to local communications and execution resources."}
+              ? "团队在英国与欧洲的科技、汽车及国际活动中，承担影像制作、品牌内容与本地执行工作。具体范围以每个案例为准。"
+              : "Selected team experience in visual production, brand content and local delivery across UK and European technology, mobility and international events. Each case identifies the actual scope."}
           </p>
           <div className="border-t border-ink/15 pt-6 lg:col-span-12" data-work-introduction>
             <p className="max-w-3xl text-base leading-7 text-ink/70">
               {zh
-                ? "以下精选项目与独立作品展示团队的实际参与经验。正在筹备类似项目，可从受众、活动内容与当地执行需求开始讨论。"
-                : "The projects and independent works below show the team’s specific contributions. Planning something similar? Start with your audience, event content and local delivery needs."}
+                ? "这些项目与历史独立作品展示真实参与，不证明市场战略、买家开发、销售结果或品牌代理关系。未来商业项目将以实际沟通、反馈和后续行动记录为依据。"
+                : "These projects and historical independent works show specific contributions, not market strategy, buyer development, sales outcomes or brand representation. Future commercial cases will be grounded in documented conversations, feedback and next steps."}
             </p>
             <div className="mt-5">
               <ButtonLink href={withLanguage("/contact?intent=company", lang)} showArrow>

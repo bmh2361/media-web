@@ -241,8 +241,8 @@ test("static production requires direct contact and complete human confirmations
   const contact = await source("components/sections/ContactExperience.tsx");
   const releaseValidator = await source("scripts/validate-release.mjs");
   assert.match(contact, /data-contact-delivery="direct-only"/);
-  assert.match(contact, /Venusbridge/);
-  assert.match(contact, /venusbridge\.co\.uk@gmail\.com/);
+  assert.match(contact, /company\.contactMethods\.wechat/);
+  assert.match(contact, /company\.businessEmail/);
   assert.doesNotMatch(contact, /<form|fetch\(/);
   for (const key of [
     "APPROVED_MEDIA_CONFIRMED",

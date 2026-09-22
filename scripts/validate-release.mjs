@@ -1,3 +1,4 @@
+import { containsPublicPricing } from "./public-pricing-policy.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
@@ -52,8 +53,8 @@ const nextConfigSource = read("next.config.mjs");
 const redirectsSource = read("public/_redirects");
 const headersSource = read("public/_headers");
 const marketEntryRetired =
-  redirectsSource.includes("/en/services/uk-market-entry /en/capabilities 308") &&
-  redirectsSource.includes("/en/what-we-do/enter-the-uk /en/capabilities 308");
+  redirectsSource.includes("/en/services/uk-market-entry /en/services 308") &&
+  redirectsSource.includes("/en/what-we-do/enter-the-uk /en/services 308");
 
 if (!profiles.has(profile)) fail("release-profile", `Unsupported profile '${profile}'.`, ".env.example");
 else pass("release-profile", `Using ${profile}.`);
@@ -67,7 +68,7 @@ if (profile === "production" && process.env.RELEASE_PROFILE !== "production")
 if (!nextConfigSource.includes('output: "export"') || !nextConfigSource.includes("unoptimized: true"))
   fail("static-export", "Next.js must use output export with unoptimized static images.", "next.config.mjs");
 else pass("static-export", "Next.js is configured for a static export without an image runtime.");
-if (!redirectsSource.includes("/en/capabilities /en/companies 308"))
+if (!redirectsSource.includes("/en/capabilities /en/services 308"))
   fail("cloudflare-redirects", "Canonical legacy redirects are missing.", "public/_redirects");
 else pass("cloudflare-redirects", "Cloudflare Pages redirects cover the canonical legacy routes.");
 for (const header of [
@@ -83,8 +84,8 @@ if (!failed.some((item) => item.check === "cloudflare-headers"))
 const directContactSource = read("components/sections/ContactExperience.tsx");
 const directContactReady =
   directContactSource.includes('data-contact-delivery="direct-only"') &&
-  directContactSource.includes("Venusbridge") &&
-  directContactSource.includes("venusbridge.co.uk@gmail.com") &&
+  directContactSource.includes("company.contactMethods.wechat") &&
+  directContactSource.includes("company.businessEmail") &&
   !directContactSource.includes("<form") &&
   !directContactSource.includes("fetch(") &&
   !fs.existsSync(path.join(root, "app/api/contact/route.ts"));
@@ -356,25 +357,20 @@ if (profile === "production" && process.env.NEXT_PUBLIC_SHOW_DEMO_MEDIA === "tru
   fail("demo-media", "NEXT_PUBLIC_SHOW_DEMO_MEDIA must not be enabled in production.", ".env.example");
 else pass("demo-media", "Demo media is not enabled for this release profile.");
 
-const pricingPattern =
-  /\b(?:pricing|prices?|packages?|budgets?|starting from)\b|(?:报价|价格|预算|套餐|起价|费用|价位|收费)/i;
-const stripApprovedScopeDisclaimer = (value) =>
-  value
-    .replace(
-      /Each project is scoped around the actual brief\. We do not force clients into fixed public packages\./g,
-      ""
-    )
-    .replace(/每个项目均根据真实需求单独定义，不通过公开固定套餐限制项目范围。/g, "");
 const pricingFiles = ["app", "components", "content", "lib"]
   .flatMap(sourceFiles)
-  .filter((file) => pricingPattern.test(stripApprovedScopeDisclaimer(read(file))));
+  .filter((file) => containsPublicPricing(read(file)));
 if (pricingFiles.length)
   fail(
     "public-pricing",
     `Public pricing or package language remains in ${pricingFiles.length} source file(s).`,
     pricingFiles.join(", ")
   );
-else pass("public-pricing", "No public pricing, package or predefined budget language remains.");
+else
+  pass(
+    "public-pricing",
+    "No public prices or fixed packages; project-specific fees and optional client budgets are permitted."
+  );
 
 const casesSource = read("content/cases/index.ts");
 const portfolioSource = read("content/portfolio.ts");

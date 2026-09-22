@@ -9,8 +9,8 @@ import { company, areWebsiteTermsApproved } from "@/content/company";
 const links = [
   ["companies", "/companies"],
   ["partners", "/partners"],
+  ["how", "/services"],
   ["work", "/work"],
-  ["how", "/how-we-work"],
   ["about", "/about"],
   ["contact", "/contact"]
 ] as const;
@@ -30,8 +30,8 @@ export function Footer({ language, showWork = true }: { language: Language; show
           <BrandLockup variant="footer" surface="dark" className="w-72" />
           <p className="mt-5 max-w-lg text-base leading-7 text-pearl/65 lg:mt-6">
             {language === "zh"
-              ? "Venus Bridge 帮助中国企业验证、进入并拓展英国与欧洲市场，通过本地商业判断、相关合作关系与一体化执行推动行动落地。"
-              : "Venus Bridge helps Chinese companies validate, enter and activate in the UK and Europe through local commercial judgement, relevant relationships and integrated execution."}
+              ? "帮助中国科技企业在英国建立市场与合作。围绕市场判断、品牌本地化、启动与合作推进，组织范围明确的项目，并按需开展欧洲工作。"
+              : "UK market entry and partnerships for Chinese technology companies. Market readiness, brand localisation, launch programmes and local follow-up. UK-led, with selected European projects."}
           </p>
           <p className="mt-6 text-xs uppercase tracking-editorial text-champagne lg:mt-8">
             London, United Kingdom
