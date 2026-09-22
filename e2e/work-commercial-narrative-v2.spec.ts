@@ -8,15 +8,11 @@ const slugs = [
   "leapmotor-iaa-2023",
   "agibot-london-launch",
   "london-automotive-brand-film",
-  "wang-linkai-london-concert",
-  "yue-yunpeng-london-live",
-  "london-fashion-week-2025",
-  "beauty-fashion-brand-content",
   "european-road-lifestyle"
 ];
 
 for (const language of ["en", "zh"]) {
-  test(`${language}: all twelve narratives, metadata, imagery and next-project links`, async ({
+  test(`${language}: all eight public narratives, metadata, imagery and next-project links`, async ({
     page
   }, testInfo) => {
     test.setTimeout(240000);
@@ -100,11 +96,10 @@ for (const language of ["en", "zh"]) {
     await page.goto(`/${language}/work`);
     const mobile = testInfo.project.name === "mobile";
     for (const [category, count] of [
-      ["all", 12],
+      ["all", 8],
       ["market-presence", 3],
       ["industry-credibility", 3],
-      ["institutional-talent", 2],
-      ["brand-evidence", 4]
+      ["brand-evidence", 2]
     ] as const) {
       const filter = page.locator(`[data-case-filter="${category}"]`);
       await filter.click();

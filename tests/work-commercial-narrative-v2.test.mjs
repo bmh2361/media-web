@@ -29,8 +29,9 @@ const corporate = [
   "agibot-london-launch"
 ];
 
-test("twelve bilingual narratives preserve publication gates and put corporate cases first", () => {
-  assert.equal(projects.length, 12);
+test("eight public narratives and twelve historical records preserve facts and publication gates", () => {
+  assert.equal(projects.length, 8);
+  assert.equal(exports.portfolioProjects.length, 12);
   assert.deepEqual(
     Array.from(projects.slice(0, 6), (p) => p.slug),
     corporate
@@ -77,7 +78,7 @@ test("existing scopes stay case-specific and public copy separates contribution 
     "european-road-lifestyle": ["content-production", "editorial-selection"]
   };
   for (const [slug, expected] of Object.entries(baselineScopes)) {
-    const p = projects.find((item) => item.slug === slug);
+    const p = exports.portfolioProjects.find((item) => item.slug === slug);
     assert.deepEqual(Array.from(p.scope), expected, slug);
     const copy = [
       p.commercialObjectiveEn,
@@ -137,7 +138,7 @@ test("titles, event names and genuine dates have distinct purposes", () => {
     "london-fashion-week-2025",
     "leapmotor-iaa-2023"
   ])
-    assert.equal(projects.find((p) => p.slug === slug).sortDate, undefined);
+    assert.equal(exports.portfolioProjects.find((p) => p.slug === slug).sortDate, undefined);
   assert.match(read("content/portfolio.ts"), /a.sortOrder - b.sortOrder/);
   const work = read("app/[lang]/work/page.tsx");
   assert.ok(work.indexOf("data-work-introduction") < work.indexOf("<PortfolioWork"));
@@ -161,7 +162,7 @@ test("event identity, series boundaries and cultural taxonomy remain explicit", 
     /Munich|IAA/
   );
   for (const slug of ["beauty-fashion-brand-content", "european-road-lifestyle"])
-    assert.equal(projects.find((p) => p.slug === slug).contentType, "portfolio-series");
+    assert.equal(exports.portfolioProjects.find((p) => p.slug === slug).contentType, "portfolio-series");
   assert.doesNotMatch(
     projects.find((p) => p.slug === "european-road-lifestyle").titleEn,
     /Programme|Campaign/
@@ -170,7 +171,7 @@ test("event identity, series boundaries and cultural taxonomy remain explicit", 
     exports.commercialCaseCategories["institutional-talent"].en,
     "Culture, Talent & Brand Experiences"
   );
-  const fashion = projects.find((p) => p.slug === "london-fashion-week-2025");
+  const fashion = exports.portfolioProjects.find((p) => p.slug === "london-fashion-week-2025");
   assert.match(fashion.titleEn, /Editorial Portraits/);
   assert.match(
     projects.find((p) => p.slug === "london-automotive-brand-film").roleStatementEn,

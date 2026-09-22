@@ -66,8 +66,8 @@ export default async function WorkPage({ params }: { params: Promise<{ lang: str
           </h2>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-pearl/75">
             {zh
-              ? "Venus Bridge 面向中国企业，连接英国与欧洲的品牌表达、本地制作与合作资源。对于正在筹备品牌发布、展会或文化项目的团队，我们可以从市场与受众需求出发，讨论活动内容策划、展会传播、本地制作及相关资源协调，并按项目明确职责与交付。"
-              : "Venus Bridge connects Chinese businesses with brand expression, local production and collaboration resources in the UK and Europe. For brands planning a launch, exhibition or cultural project, we can discuss audience needs, event content planning, exhibition communications, local production and relevant resource coordination, with scope and delivery agreed for the project."}
+              ? "Venus Bridge 面向中国企业，连接英国与欧洲的品牌表达、本地制作与合作资源。对于正在筹备科技发布、展会或技术演示的团队，我们可以从市场与受众需求出发，讨论活动内容策划、展会传播、本地制作及相关资源协调，并按项目明确职责与交付。"
+              : "Venus Bridge connects Chinese businesses with brand expression, local production and collaboration resources in the UK and Europe. For brands planning a technology launch, exhibition or demonstration, we can discuss audience needs, event content planning, exhibition communications, local production and relevant resource coordination, with scope and delivery agreed for the project."}
           </p>
           <div className="mt-8">
             <ButtonLink href={withLanguage("/contact?intent=company", lang)} showArrow>

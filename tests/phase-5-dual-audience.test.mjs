@@ -20,17 +20,17 @@ test("Phase 5 exposes the required dual-audience navigation", () => {
     assert.equal(fs.existsSync(route), true);
 });
 
-test("homepage orders problems, offers, process, evidence and demand", () => {
+test("homepage routes audiences through technology focus, evidence and team credibility", () => {
   const home = read("components/sections/Phase5Homepage.tsx");
   const order = [
     'data-phase5-section="hero"',
-    "<Situations ",
-    "<Engagements ",
-    "<CommercialProcess ",
+    'id="priority-areas"',
     "<SelectedCommercialExperience ",
-    'data-commercial-section="why"',
-    "<DemandInvitation "
+    "PEOPLE & RESPONSIBILITY"
   ];
+  assert.doesNotMatch(home, /<Situations|<Engagements|<CommercialProcess/);
+  assert.match(home, /withLanguage\("\/companies"/);
+  assert.match(home, /withLanguage\("\/partners"/);
   let cursor = -1;
   for (const section of order) {
     const next = home.indexOf(section);

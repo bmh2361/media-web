@@ -58,15 +58,10 @@ test("capabilities expose exactly four outcome-led pillars", async () => {
 test("legacy commercial routes resolve directly to Services and stay absent from sitemap", async () => {
   const redirects = await source("public/_redirects");
   const sitemap = await source("app/sitemap.ts");
-  for (const legacy of [
-    "/what-we-do",
-    "/how-we-work",
-    "/industries",
-    "/expertise",
-    "/talent",
-    "/for-agencies"
-  ])
+  for (const legacy of ["/what-we-do", "/how-we-work", "/talent", "/for-agencies"])
     assert.match(redirects, new RegExp(`/en${legacy.replaceAll("/", "\\/")} .*\\/en\\/services`));
+  for (const route of ["industries", "expertise"])
+    assert.ok(redirects.includes(`/en/${route} /en/#priority-areas 308`));
   assert.match(redirects, /\/en\/capabilities \/en\/services 308/);
   for (const route of ["/companies", "/partners", "/services", "/work", "/about", "/contact"])
     assert.match(sitemap, new RegExp(route));

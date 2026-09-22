@@ -3,13 +3,7 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Section } from "@/components/ui/Section";
 import { HomeHeroExperience, type HomeHeroScene } from "@/components/sections/phase32c/HomeHeroExperience";
-import {
-  CommercialProcess,
-  DemandInvitation,
-  Engagements,
-  SelectedCommercialExperience,
-  Situations
-} from "@/components/sections/CommercialSections";
+import { SelectedCommercialExperience } from "@/components/sections/CommercialSections";
 import { commercial } from "@/content/commercial";
 import { findPublishedPortfolioProject, getProjectHero } from "@/content/portfolio";
 import { withLanguage, type Language } from "@/lib/i18n";
@@ -61,8 +55,8 @@ export function Phase5Homepage({ language }: { language: Language }) {
             </p>
             <p className="mt-4 text-sm leading-7 text-pearl/65">{commercial.geography[language]}</p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <ButtonLink href={withLanguage("/contact?intent=company#company", language)} showArrow>
-                {commercial.companyCta[language]}
+              <ButtonLink href={withLanguage("/companies", language)} showArrow>
+                {zh ? "中国企业的市场行动" : "For Chinese Companies"}
               </ButtonLink>
               <ButtonLink
                 href={withLanguage("/partners", language)}
@@ -83,40 +77,44 @@ export function Phase5Homepage({ language }: { language: Language }) {
           </div>
         </Container>
       </section>
-      <Situations language={language} />
-      <Engagements language={language} />
-      <CommercialProcess language={language} />
-      <SelectedCommercialExperience language={language} />
-      <Section className="bg-porcelain" data-commercial-section="why">
+      <Section className="bg-porcelain" id="priority-areas">
         <Container>
-          <Eyebrow>{zh ? "为什么选择 Venus Bridge" : "WHY VENUS BRIDGE"}</Eyebrow>
+          <Eyebrow>{zh ? "技术重点" : "TECHNOLOGY PRIORITIES"}</Eyebrow>
           <h2 className="commercial-heading mt-5">
-            {zh
-              ? "理解技术，也把本地工作做具体。"
-              : "Technical understanding, clear communication and local delivery."}
+            {zh ? "聚焦科技与产业创新。" : "Technology with a UK market context."}
           </h2>
-          <div className="mt-10 grid gap-x-12 border-t border-ink/15 md:grid-cols-2">
-            {commercial.advantages[language].map(([title, text]) => (
-              <article key={title} className="border-b border-ink/15 py-7">
-                <h3 className="text-xl font-medium">{title}</h3>
-                <p className="mt-4 max-w-xl text-base leading-7 text-ink/70">{text}</p>
-              </article>
+          <ol className="brief-flow mt-8">
+            {commercial.sectors[language].map((sector, index) => (
+              <li key={sector} className="border-t border-ink/20 pt-5">
+                <span className="text-sm text-slate">0{index + 1}</span>
+                <h3 className="mt-4 text-2xl leading-snug">{sector}</h3>
+              </li>
             ))}
+          </ol>
+          <p className="mt-7 text-base leading-7 text-ink/70">{commercial.adjacent[language]}</p>
+        </Container>
+      </Section>
+      <SelectedCommercialExperience language={language} />
+      <Section className="bg-night text-pearl">
+        <Container className="grid gap-8 lg:grid-cols-2">
+          <div>
+            <Eyebrow className="text-champagne">{zh ? "团队与责任" : "PEOPLE & RESPONSIBILITY"}</Eyebrow>
+            <h2 className="commercial-heading mt-5">
+              {zh ? "懂技术，讲清楚，落到现场。" : "Understand the technology. Make the work concrete."}
+            </h2>
           </div>
-          <div className="mt-10 grid gap-5 lg:grid-cols-2">
-            <h3 className="text-xl font-medium">
-              {zh ? "聚焦科技与产业创新" : "Technology & Industrial Innovation"}
-            </h3>
-            <ul className="space-y-3 text-sm leading-7 text-ink/75">
-              {commercial.sectors[language].map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-            <p className="text-sm leading-7 text-ink/65 lg:col-start-2">{commercial.adjacent[language]}</p>
+          <div>
+            <p className="text-lg leading-8 text-pearl/80">
+              {zh
+                ? "工程、能源系统与应用 AI 研究背景，结合客户沟通、品牌表达与英国本地交付。了解各位成员的专业背景与项目职责。"
+                : "Engineering, energy systems and applied AI research backgrounds alongside client communication, brand expression and UK delivery. Meet the people and see who owns each responsibility."}
+            </p>
+            <ButtonLink className="mt-6" href={withLanguage("/about", language)} showArrow>
+              {zh ? "了解团队" : "Meet the team"}
+            </ButtonLink>
           </div>
         </Container>
       </Section>
-      <DemandInvitation language={language} />
     </>
   );
 }

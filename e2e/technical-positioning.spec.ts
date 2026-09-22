@@ -50,22 +50,20 @@ for (const lang of ["en", "zh"]) {
     );
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
     await profile.screenshot({ path: `tmp/second-pass/${lang}-minghan-${test.info().project.name}.png` });
-    await page.goto(`/${lang}/services`);
-    const priorities = page.locator("#priority-areas li");
+    await page.goto(`/${lang}`);
+    const priorities = page.locator("#priority-areas li h3");
     await expect(priorities).toHaveText(
       lang === "en"
         ? [
-            "1. AI, Robotics & Intelligent Systems",
-            "2. Energy & Smart Infrastructure",
-            "3. Mobility & Automotive Technology"
+            "AI, Robotics & Intelligent Systems",
+            "Energy & Smart Infrastructure",
+            "Mobility & Automotive Technology"
           ]
-        : ["1. 人工智能、机器人与智能系统", "2. 能源与智慧基础设施", "3. 出行与汽车技术"]
+        : ["人工智能、机器人与智能系统", "能源与智慧基础设施", "出行与汽车技术"]
     );
     await page.goto(`/${lang}/partners`);
     await expect(page.locator("h1")).toHaveText(
-      lang === "en"
-        ? "Start with your UK or European business requirement."
-        : "先说清楚你的英国或欧洲业务需求。"
+      lang === "en" ? "What does your next project need?" : "从你的业务需求，寻找合适的合作。"
     );
     await expect(page.locator("main")).toContainText(
       lang === "en"
@@ -75,12 +73,12 @@ for (const lang of ["en", "zh"]) {
   });
 }
 
-test("legacy priority routes reach the focused services section", async ({ request }) => {
+test("legacy priority routes reach the focused homepage section", async ({ request }) => {
   for (const lang of ["en", "zh"]) {
     for (const route of ["industries", "expertise", "industries/automotive", "expertise/automotive"]) {
       const response = await request.get(`/${lang}/${route}`, { maxRedirects: 0 });
       expect(response.status()).toBe(308);
-      expect(response.headers().location).toBe(`/${lang}/services#priority-areas`);
+      expect(response.headers().location).toBe(`/${lang}/#priority-areas`);
     }
   }
 });

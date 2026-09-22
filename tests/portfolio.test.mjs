@@ -97,7 +97,8 @@ test("public portfolio surfaces contain no external source label or inflated cla
     "components/sections/PortfolioProjectDetail.tsx",
     "components/sections/HomepageSelectedWork.tsx",
     "app/[lang]/industries/automotive/page.tsx",
-    "app/[lang]/industries/fashion-beauty-apparel/page.tsx"
+    "components/sections/Phase5AudiencePages.tsx",
+    "components/sections/CommercialSections.tsx"
   ];
   const banned =
     /Xhouse|partner production|third-party material|external production|licensed experience|official partner|world-class|award-winning/i;

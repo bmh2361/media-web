@@ -1107,10 +1107,19 @@ export const commercialCaseFilters = [
   { value: "all", label: { en: "All", zh: "全部" } },
   { value: "market-presence", label: commercialCaseCategories["market-presence"] },
   { value: "industry-credibility", label: commercialCaseCategories["industry-credibility"] },
-  { value: "institutional-talent", label: commercialCaseCategories["institutional-talent"] },
   { value: "brand-evidence", label: commercialCaseCategories["brand-evidence"] }
 ] as const;
+// Brand relevance is independent of the original rights and evidence approvals.
+export const retiredPortfolioSlugs = new Set([
+  "wang-linkai-london-concert",
+  "yue-yunpeng-london-live",
+  "london-fashion-week-2025",
+  "beauty-fashion-brand-content"
+]);
+export const isBrandEligiblePortfolioProject = (project: PortfolioProject) =>
+  !retiredPortfolioSlugs.has(project.slug);
 export const isPublishedPortfolioProject = (project: PortfolioProject) =>
+  isBrandEligiblePortfolioProject(project) &&
   project.publicStatus === "published" &&
   project.evidenceStatus === "verified" &&
   Boolean(project.evidenceLevel) &&
@@ -1172,7 +1181,7 @@ export const homepageEarlyProofProjects = [
   .map((slug) => publishedPortfolioProjects.find((project) => project.slug === slug))
   .filter((project): project is PortfolioProject => Boolean(project));
 export const findPortfolioProject = (slug: string) =>
-  portfolioProjects.find((project) => project.slug === slug);
+  publishedPortfolioProjects.find((project) => project.slug === slug);
 export const findPublishedPortfolioProject = (slug: string) =>
   publishedPortfolioProjects.find((project) => project.slug === slug);
 export const getRelatedPortfolioProjects = (project: PortfolioProject, limit = 3) =>
@@ -1180,12 +1189,14 @@ export const getRelatedPortfolioProjects = (project: PortfolioProject, limit = 3
 export const findPortfolioMedia = (
   projectId: string,
   preferredCategory: PortfolioMedia["category"] = "hero"
-) =>
-  portfolioMediaManifest.records.find(
-    (record) => record.projectId === projectId && record.category === preferredCategory
-  ) ?? portfolioMediaManifest.records.find((record) => record.projectId === projectId);
+) => {
+  const project = findPublishedPortfolioProject(projectId);
+  return project?.media.find((record) => record.category === preferredCategory) ?? project?.media[0];
+};
 export const portfolioMediaForPage = (path: string) =>
-  portfolioMediaManifest.records.filter((record) => record.allowedPages.includes(path));
+  publishedPortfolioProjects
+    .flatMap((project) => project.media)
+    .filter((record) => record.allowedPages.includes(path));
 export const portfolioSectionLabels = {
   "selected-projects": { en: "Selected Projects", zh: "精选项目" },
   "production-experience": { en: "Production Experience", zh: "制作经验" },

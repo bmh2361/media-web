@@ -43,7 +43,9 @@ test("new service architecture preserves all legacy redirects without chains or 
     .map((line) => line.split(/\s+/));
   const sources = new Set(rules.map(([from]) => from));
   const serviceSource =
-    read("app/[lang]/services/page.tsx") + read("components/sections/CommercialSections.tsx");
+    read("app/[lang]/services/page.tsx") +
+    read("components/sections/CommercialSections.tsx") +
+    read("components/sections/Phase5Homepage.tsx");
   for (const [from, to] of rules) {
     if (from === "/") continue;
     assert.equal(sources.has(to.split("#")[0]), false, `${from} has a redirect chain`);
@@ -57,21 +59,21 @@ test("new service architecture preserves all legacy redirects without chains or 
   }
   for (const lang of ["en", "zh"]) assert.equal(sources.has(`/${lang}/services`), false);
 });
-test("engagements and partner tracks have substantive bilingual scope", () => {
-  const { commercial, engagements, partnerTracks } = load("content/commercial.ts");
+test("shared engagements retain bilingual scope, inputs and deliverable structures", () => {
+  const { engagements } = load("content/commercial.ts");
   assert.equal(engagements.length, 3);
-  assert.equal(partnerTracks.length, 3);
   for (const lang of ["en", "zh"]) {
-    assert.equal(commercial.steps[lang].length, 5);
     for (const offer of engagements) {
       assert.ok(offer.title[lang]);
+      assert.ok(offer.inputs[lang]);
+      assert.equal(offer.formatFields[lang].length, 4);
       assert.ok(offer.scope[lang].length >= 4);
       assert.ok(offer.outputs[lang].length >= 3);
     }
   }
   assert.match(engagements[1].title.en, /Launch & Partnership/);
-  assert.match(partnerTracks[1].body.en, /not brand endorsement/);
-  assert.match(partnerTracks[2].body.en, /commercial terms/);
+  assert.match(read("components/sections/Phase5AudiencePages.tsx"), /not brand endorsement/);
+  assert.match(read("components/sections/Phase5AudiencePages.tsx"), /approval route/);
 });
 
 test("pricing checks allow scoped fees and client budget prompts but reject published prices", async () => {

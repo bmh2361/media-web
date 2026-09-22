@@ -16,10 +16,6 @@ export const commercial = {
   companyCta: l("Discuss a UK Market Project", "沟通英国市场项目"),
   demandCta: l("Share a Commercial Requirement", "提交商业需求"),
   specialistCta: l("Introduce Your Capability", "介绍专业能力"),
-  scopeNote: l(
-    "Each engagement has an agreed scope, deliverables, timeline, responsibilities and fee. Research and outreach do not guarantee introductions, buyer interest, sales, investment or media coverage.",
-    "每个项目单独确认范围、交付、时间、职责和费用。研究与沟通不等于保证引荐、买家意向、销售、投资或媒体报道。"
-  ),
   sectors: l(
     [
       "AI, Robotics & Intelligent Systems",
@@ -35,126 +31,22 @@ export const commercial = {
   demandIntroduction: l(
     "Start with the UK or European requirement, then assess whether a relevant Chinese technology or company is worth progressing.",
     "先理解英国或欧洲企业的真实业务需求，再判断是否存在值得推进的中国技术或企业。"
-  ),
-  situations: l(
-    [
-      [
-        "Considering the UK, but unsure where to start?",
-        "Test the market assumptions, application context and evidence gaps before committing to a launch."
-      ],
-      [
-        "An exhibition needs value beyond the event?",
-        "Define the audience and proposition beforehand, coordinate local activity, then organise feedback and next actions."
-      ],
-      [
-        "Looking for buyers, partners or pilot environments?",
-        "Clarify which organisations could be relevant and scope the research and outreach needed to test that fit."
-      ],
-      [
-        "China headquarters needs a UK execution layer?",
-        "Give a defined project a local coordinator, clear approvals and practical reporting."
-      ]
-    ],
-    [
-      ["想进入英国，但不知道从哪里开始？", "先判断应用场景、市场假设和证据缺口，再决定是否投入发布或拓展。"],
-      [
-        "已经订了展会，希望留下的不只是照片？",
-        "展前明确受众与表达，展中推进本地行动，展后整理反馈和下一步。"
-      ],
-      ["需要买家、合作方或试点场景？", "先明确哪些机构值得接触，再按范围开展研究与沟通，验证合作可能。"],
-      ["中国总部需要一个英国执行接口？", "为具体项目安排本地协调，明确审批流程、责任和汇报节奏。"]
-    ]
-  ),
-  steps: l(
-    [
-      ["Understand", "Clarify the objective, application context and evidence needed."],
-      ["Position", "Make the product and proposition relevant to UK stakeholders."],
-      [
-        "Connect",
-        "Identify and approach relevant organisations where included in scope; participation depends on fit and interest."
-      ],
-      [
-        "Deliver",
-        "Coordinate the agreed launch, meetings, exhibition, communication assets or local activity."
-      ],
-      ["Follow Through", "Capture feedback, organise contacts and define the next commercial action."]
-    ],
-    [
-      ["判断", "明确商业目标、应用场景和需要补足的证据。"],
-      ["定位", "把技术与产品优势转化为英国受众听得懂、愿意讨论的价值。"],
-      ["沟通", "按约定范围研究并接触相关机构，是否参与取决于匹配度与双方意愿。"],
-      ["落地", "统筹已确认的发布、会议、展会、传播素材或本地行动。"],
-      ["跟进", "整理反馈与联系记录，明确下一项商业行动。"]
-    ]
-  ),
-  advantages: l(
-    [
-      [
-        "China-to-UK translation",
-        "Translate expectations, decisions and briefs between China headquarters and UK delivery teams."
-      ],
-      [
-        "Technology-informed commercial translation",
-        "Our engineering, energy systems and applied AI research backgrounds help us understand complex products, ask useful questions and frame clearer commercial conversations."
-      ],
-      [
-        "Brand and local execution",
-        "Connect the intended message with the assets, approvals and on-the-ground work needed to deliver it. Selected cases show the team's actual production role."
-      ],
-      [
-        "Specialists when the brief needs them",
-        "Coordinate relevant professional, technical or creative input subject to availability and fit. Specialist responsibilities are agreed separately."
-      ]
-    ],
-    [
-      ["理解中英双方的工作方式", "把中国总部的目标、决策与项目要求转化为英国团队可执行的安排。"],
-      [
-        "懂技术，也重视商业表达",
-        "工程、能源系统与应用人工智能研究背景帮助我们理解复杂产品、提出有效问题，并把技术优势讲清楚。"
-      ],
-      ["把品牌表达落实到现场", "连接传播目标、素材、审批与本地交付。案例展示的是团队实际承担的制作工作。"],
-      ["按需组织专业能力", "根据项目需要协调专业、技术或创意支持，具体人选取决于适配与可用性，职责另行确认。"]
-    ]
-  ),
-  goodFit: l(
-    [
-      "A real product, technology or operating business",
-      "A defined UK ambition or selected European objective",
-      "A decision maker involved in the brief and approvals",
-      "A realistic timeframe for market entry",
-      "Willingness to adapt the proposition to local requirements",
-      "Capacity for market validation and sustained follow-up"
-    ],
-    [
-      "已有真实产品、技术或运营业务",
-      "有明确的英国目标或具体欧洲项目",
-      "决策者参与需求沟通与审批",
-      "市场进入时间安排合理",
-      "愿意根据当地需求调整产品表达",
-      "接受验证与持续跟进所需的投入"
-    ]
-  ),
-  notFit: l(
-    [
-      "Guaranteed buyers without market preparation",
-      "Guaranteed sales, media coverage or investment",
-      "Requests to claim institutional endorsement",
-      "A product or business not ready for external discussion",
-      "Regulated legal, tax or compliance advice from Venus Bridge"
-    ],
-    [
-      "不做市场准备，只要求保证买家",
-      "要求保证销售、媒体报道或投资",
-      "要求借机构名义作背书",
-      "产品或业务尚不适合对外讨论",
-      "要求 Venus Bridge 直接出具法律、税务或合规意见"
-    ]
   )
 };
 
 export const engagements = [
   {
     id: "readiness",
+    stage: l("Explore", "探索机会"),
+    question: l("Is the UK opportunity worth pursuing?", "英国市场是否值得进入？"),
+    action: l("Assess the application and audience", "判断应用与受众"),
+    mapOutput: l("First action recommendations", "首轮行动建议"),
+    inputs: l("Product overview, target application and UK ambition.", "产品简介、目标应用与英国市场计划。"),
+    formatTitle: l("Market & partnership brief", "市场与合作简报"),
+    formatFields: l(
+      ["Application question", "Stakeholder categories", "Evidence gaps", "Next action"],
+      ["应用问题", "相关方类别", "证据缺口", "下一步"]
+    ),
     title: l("UK Market & Partnership Readiness", "英国市场与合作准备"),
     audience: l(
       "For companies deciding whether, where and how to enter the UK.",
@@ -186,6 +78,16 @@ export const engagements = [
   },
   {
     id: "launch",
+    stage: l("Launch", "筹备启动"),
+    question: l("How can a launch create useful next steps?", "一次发布如何更有价值？"),
+    action: l("Coordinate messaging and local activity", "组织表达与本地行动"),
+    mapOutput: l("Launch plan and delivery materials", "启动计划与交付材料"),
+    inputs: l("Launch objective, date, audience and available assets.", "启动目标、日期、受众与现有素材。"),
+    formatTitle: l("Launch project board", "启动项目板"),
+    formatFields: l(
+      ["Target audience", "On-site arrangements", "Materials", "Responsibility"],
+      ["目标受众", "现场安排", "材料", "责任位置"]
+    ),
     title: l("UK Launch & Partnership Programme", "英国市场启动与合作项目"),
     audience: l(
       "Our primary offer for a launch, exhibition, delegation visit, product demonstration or defined market-entry objective.",
@@ -222,6 +124,16 @@ export const engagements = [
   },
   {
     id: "development",
+    stage: l("Develop", "持续推进"),
+    question: l("What should happen after the meeting?", "会面后如何继续？"),
+    action: l("Organise feedback and next actions", "整理反馈与下一步"),
+    mapOutput: l("Partnership follow-up record", "合作跟进记录"),
+    inputs: l("Previous activity, contact records and open questions.", "前期活动、联系记录与待解决问题。"),
+    formatTitle: l("Follow-up record", "跟进记录"),
+    formatFields: l(
+      ["Discussion topic", "Feedback", "To confirm", "Next action"],
+      ["议题", "反馈", "待确认项", "下一步"]
+    ),
     title: l("UK Partnership Development", "英国合作推进"),
     audience: l(
       "For companies that need defined local follow-up after an initial market activity.",
@@ -244,78 +156,6 @@ export const engagements = [
         "Next-step recommendations within a defined term"
       ],
       ["约定的目标机构与行动清单", "会议与回应记录", "阶段进展汇报", "项目期内的下一步建议"]
-    )
-  }
-];
-
-export const partnerTracks = [
-  {
-    id: "commercial-demand",
-    intent: "demand",
-    title: l("Commercial demand", "商业需求"),
-    audience: l(
-      "Buyers, distributors, importers, operators, system integrators, corporate innovation teams and potential pilot customers.",
-      "面向买家、分销商、进口商、运营方、系统集成商、企业创新团队与潜在试点客户。"
-    ),
-    body: l(
-      "Start with the UK or European requirement, then assess whether a relevant Chinese technology or company is worth progressing. Research depth, outreach, responsibilities and commercial terms are scoped before work begins.",
-      "先理解英国或欧洲企业的真实业务需求，再判断是否存在值得推进的中国技术或企业。研究深度、对接范围、职责与商业条款在启动前确认。"
-    ),
-    examples: l(
-      [
-        "Robotics for a hospitality or operational environment",
-        "A distribution opportunity in intelligent hardware",
-        "A manufacturing or technology supplier brief",
-        "A transport, commercial property or infrastructure pilot"
-      ],
-      [
-        "酒店或运营场景中的机器人应用",
-        "智能硬件产品的分销机会",
-        "制造或技术供应商需求",
-        "交通、商业地产或基础设施试点"
-      ]
-    )
-  },
-  {
-    id: "research",
-    intent: "research",
-    title: l("Technology & research collaboration", "技术与研究合作"),
-    audience: l(
-      "Researchers, universities, innovation programmes, technical experts, R&D teams, labs and applied research organisations.",
-      "面向研究人员、高校、创新项目、技术专家、企业研发团队、实验室与应用研究机构。"
-    ),
-    body: l(
-      "Where the technical proposition is relevant and both sides see value, we can help structure the brief, initial communication and practical next steps. Research participation is not brand endorsement; any introduction is subject to availability, fit and institutional approval where required.",
-      "当技术方向匹配、双方认可合作价值时，我们可协助明确研究需求、组织初步沟通与下一步安排。研究参与不等于品牌背书；引荐取决于适配、可用性，以及必要的机构审批。"
-    ),
-    examples: l(
-      [
-        "An applied technical question with an identifiable use case",
-        "A demonstration or feasibility discussion",
-        "A mutually relevant research brief"
-      ],
-      ["有明确应用场景的技术问题", "演示或可行性讨论", "双方均有兴趣的研究课题"]
-    )
-  },
-  {
-    id: "delivery-partners",
-    intent: "specialist",
-    title: l("Professional & delivery partners", "专业与执行合作方"),
-    audience: l(
-      "Legal, tax, accounting, compliance, certification, logistics, industry specialists, venues, event teams and creative or technical suppliers.",
-      "面向法律、税务、会计、合规、认证、物流、行业专家、场地、活动及创意或技术团队。"
-    ),
-    body: l(
-      "We involve specialists when a project needs their expertise. Before work starts, we agree the commercial context, scope, responsibilities, timeline, approval route and relevant commercial terms. Regulated advice remains the responsibility of the appointed qualified provider.",
-      "只在项目确有需要时组织专业支持。开始工作前，明确商业背景、范围、职责、时间、审批路径及适用商业条款。受监管的专业意见由受聘且具备相应资质的服务方负责。"
-    ),
-    examples: l(
-      [
-        "A scoped specialist brief",
-        "An agreed point of contact and approval route",
-        "Clear delivery and commercial terms"
-      ],
-      ["范围明确的专业需求", "确认项目接口与审批路径", "清楚的交付与商业条款"]
     )
   }
 ];

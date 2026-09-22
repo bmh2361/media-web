@@ -45,11 +45,10 @@ test("retired partnered copy remains governed without blocking the canonical rel
   assert.doesNotMatch(result.stdout, /Partnered mode requires at least one fully verified/);
 });
 
-test("market entry uses Service schema and excludes professional-service schemas and guarantees", async () => {
+test("legacy market entry redirects to canonical services and excludes professional claims", async () => {
   const page = await source("app/[lang]/services/uk-market-entry/page.tsx");
   const content = await source("content/market-entry.ts");
-  assert.match(page, /serviceJsonLd/);
-  assert.match(page, /FAQPage/);
+  assert.match(page, /redirect\(withLanguage\("\/services"/);
   assert.doesNotMatch(page, /LegalService|AccountingService|FinancialService|InvestmentService/);
   for (const value of [
     "guaranteed compliance",

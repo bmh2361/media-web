@@ -64,7 +64,7 @@ test("personal research and visa endorsement are distinct from company delivery 
 });
 
 test("priority hierarchy is focused and the European route starts with the requirement", () => {
-  const { commercial, partnerTracks } = load("content/commercial.ts");
+  const { commercial } = load("content/commercial.ts");
   assert.deepEqual(Array.from(commercial.sectors.en), [
     "AI, Robotics & Intelligent Systems",
     "Energy & Smart Infrastructure",
@@ -76,7 +76,7 @@ test("priority hierarchy is focused and the European route starts with the requi
     /Start with the UK or European requirement, then assess whether/
   );
   assert.match(
-    partnerTracks[0].body.en,
+    commercial.demandIntroduction.en,
     /whether a relevant Chinese technology or company is worth progressing/
   );
 });

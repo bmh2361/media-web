@@ -77,23 +77,24 @@ for (const lang of ["en", "zh"]) {
         ? "帮助中国科技企业，在英国建立市场与合作。"
         : "UK market entry and partnerships for Chinese technology companies.";
     await expect(page.locator("h1")).toHaveText(expected);
-    await expect(page.locator('[data-commercial-section="engagements"] #readiness')).toContainText(
-      lang === "zh" ? "市场进入简报" : "Market-entry brief"
-    );
+    await expect(page.locator('[data-commercial-section="engagements"]')).toHaveCount(0);
+    await expect(page.locator('main a[href="/' + lang + '/companies"]')).toBeVisible();
+    await page.goto(`/${lang}/companies`);
+    await expect(page.locator('#market-action-map a[href="/' + lang + '/services#readiness"]')).toBeVisible();
     await page.goto(`/${lang}/services`);
     await expect(page.locator("#launch")).toContainText(
       lang === "zh" ? "项目后：反馈记录" : "After: feedback record"
     );
     await page.goto(`/${lang}/partners`);
-    await expect(page.locator("#commercial-demand")).toContainText(lang === "zh" ? "分销商" : "distributors");
-    await expect(page.locator("#research")).toContainText(
+    await expect(page.locator("#commercial-demand")).toContainText(lang === "zh" ? "分销商" : "Distributors");
+    await expect(page.locator("#requirement-map")).toContainText(
       lang === "zh" ? "研究参与不等于品牌背书" : "Research participation is not brand endorsement"
     );
     await expect(page.locator("#delivery-partners")).toContainText(
       lang === "zh" ? "审批路径" : "approval route"
     );
     await page.goto(`/${lang}/contact?intent=demand#demand`);
-    for (const route of ["company", "demand", "specialist"]) {
+    for (const route of ["company", "demand", "research", "specialist"]) {
       const link = page.locator(`[data-enquiry-email="${route}"]`);
       const href = await link.getAttribute("href");
       expect(href).toMatch(/^mailto:/);

@@ -4,8 +4,8 @@ import { expect, test } from "@playwright/test";
 const representativeCases = [
   "byd-bd11-london",
   "catl-open-day-2025",
-  "wang-linkai-london-concert",
-  "beauty-fashion-brand-content"
+  "agibot-london-launch",
+  "london-automotive-brand-film"
 ];
 
 test("case index is stable at every required viewport", async ({ page }) => {
@@ -16,7 +16,7 @@ test("case index is stable at every required viewport", async ({ page }) => {
   for (const width of [1440, 1280, 1024, 768, 430, 390, 375]) {
     await page.setViewportSize({ width, height: width < 768 ? 844 : 1000 });
     await page.goto("/en/work");
-    await expect(page.locator("[data-case-row]")).toHaveCount(12);
+    await expect(page.locator("[data-case-row]")).toHaveCount(8);
     const health = await page.evaluate(() => ({
       overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
       broken: [...document.images].filter((image) => image.complete && image.naturalWidth === 0).length
@@ -26,7 +26,7 @@ test("case index is stable at every required viewport", async ({ page }) => {
   expect(consoleErrors).toEqual([]);
 });
 
-test("four case archetypes remain evidence-led, accessible and reduced-motion safe", async ({ page }) => {
+test("retained case types remain evidence-led, accessible and reduced-motion safe", async ({ page }) => {
   const consoleErrors: string[] = [];
   page.on("console", (message) => {
     if (message.type() === "error") consoleErrors.push(message.text());

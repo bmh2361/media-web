@@ -4,137 +4,9 @@ import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Section } from "@/components/ui/Section";
 import { EditorialScene } from "@/components/sections/phase32c/EditorialScene";
-import { commercial, engagements } from "@/content/commercial";
+import { engagements } from "@/content/commercial";
 import { findPublishedPortfolioProject, getProjectHero } from "@/content/portfolio";
 import { withLanguage, type Language } from "@/lib/i18n";
-
-export function Engagements({ language, detailed = false }: { language: Language; detailed?: boolean }) {
-  const zh = language === "zh";
-  return (
-    <Section className="bg-porcelain" data-commercial-section="engagements">
-      <Container>
-        <Eyebrow>{zh ? "三种合作方式" : "THREE ENGAGEMENT MODELS"}</Eyebrow>
-        <h2 className="commercial-heading mt-5">
-          {zh ? "从市场判断，到启动与持续推进。" : "Choose the work your next decision needs."}
-        </h2>
-        <div className="mt-10 border-t border-ink/20">
-          {engagements.map((offer, index) => (
-            <article
-              key={offer.id}
-              id={offer.id}
-              className={`commercial-offer grid scroll-mt-28 gap-6 border-b border-ink/20 py-8 lg:grid-cols-12 lg:gap-10 ${index === 1 ? "border-l-2 border-l-champagne pl-5 lg:pl-8" : ""}`}
-            >
-              <div className="lg:col-span-5">
-                <p className="text-xs uppercase tracking-editorial text-slate">
-                  0{index + 1}
-                  {index === 1 ? (zh ? " · 核心服务" : " · PRIMARY OFFER") : ""}
-                </p>
-                <h3 className="mt-4 text-2xl font-medium leading-tight md:text-3xl">
-                  {offer.title[language]}
-                </h3>
-                <p className="mt-4 text-base leading-7 text-ink/70">{offer.audience[language]}</p>
-              </div>
-              <div className="lg:col-span-7">
-                {detailed && (
-                  <>
-                    <h4 className="text-sm font-semibold">{zh ? "可约定的范围" : "Possible scope"}</h4>
-                    <ul className="mt-3 space-y-2 text-sm leading-6 text-ink/75">
-                      {offer.scope[language].map((item) => (
-                        <li key={item}>— {item}</li>
-                      ))}
-                    </ul>
-                  </>
-                )}
-                <h4 className={`text-sm font-semibold ${detailed ? "mt-6" : ""}`}>
-                  {zh ? "可交付成果" : "Possible outputs"}
-                </h4>
-                <ul className="mt-3 space-y-2 text-base leading-7 text-ink/75">
-                  {offer.outputs[language].map((item) => (
-                    <li key={item}>— {item}</li>
-                  ))}
-                </ul>
-                <Link
-                  className="mt-5 inline-flex min-h-11 items-center text-sm underline underline-offset-4"
-                  href={withLanguage(
-                    detailed
-                      ? `/contact?intent=company&service=${offer.id}#company`
-                      : `/services#${offer.id}`,
-                    language
-                  )}
-                >
-                  {zh
-                    ? detailed
-                      ? "沟通这个项目"
-                      : "了解服务范围"
-                    : detailed
-                      ? "Discuss this engagement"
-                      : "Explore the scope"}{" "}
-                  →
-                </Link>
-              </div>
-            </article>
-          ))}
-        </div>
-        <p className="mt-7 max-w-4xl text-sm leading-7 text-ink/65">{commercial.scopeNote[language]}</p>
-        <p className="mt-3 max-w-4xl text-sm leading-7 text-ink/65">
-          {zh
-            ? "合作推进以约定期限和任务开展，不构成无限期销售代理；买家、媒体、高校或分销商并非每个项目的固定配置。"
-            : "Partnership development is a defined engagement, not open-ended sales representation. Buyers, media, universities and distributors are not standard inclusions in every project."}
-        </p>
-      </Container>
-    </Section>
-  );
-}
-
-export function Situations({ language }: { language: Language }) {
-  return (
-    <Section className="bg-pearl" data-commercial-section="situations">
-      <Container>
-        <Eyebrow>{language === "zh" ? "从你的实际问题开始" : "START WITH YOUR SITUATION"}</Eyebrow>
-        <h2 className="commercial-heading mt-5">
-          {language === "zh"
-            ? "有市场目标，也需要清楚的行动路径。"
-            : "A market objective needs a practical local plan."}
-        </h2>
-        <div className="mt-10 grid gap-x-12 border-t border-ink/15 md:grid-cols-2">
-          {commercial.situations[language].map(([title, body], i) => (
-            <article key={title} className="border-b border-ink/15 py-7">
-              <p className="text-xs text-slate">0{i + 1}</p>
-              <h3 className="mt-4 text-xl font-medium">{title}</h3>
-              <p className="mt-3 max-w-xl text-base leading-7 text-ink/70">{body}</p>
-            </article>
-          ))}
-        </div>
-      </Container>
-    </Section>
-  );
-}
-
-export function CommercialProcess({ language }: { language: Language }) {
-  return (
-    <Section className="bg-night text-pearl" id="process" data-commercial-section="process">
-      <Container>
-        <Eyebrow className="text-champagne">
-          {language === "zh" ? "项目如何推进" : "HOW VALUE IS CREATED"}
-        </Eyebrow>
-        <h2 className="commercial-heading mt-5">
-          {language === "zh"
-            ? "每一步，都对应具体工作。"
-            : "From an initial question to the next commercial action."}
-        </h2>
-        <ol className="mt-10 grid gap-x-7 border-t border-pearl/20 md:grid-cols-2 xl:grid-cols-5">
-          {commercial.steps[language].map(([title, text], i) => (
-            <li key={title} className="border-b border-pearl/20 py-7">
-              <p className="text-xs text-champagne">0{i + 1}</p>
-              <h3 className="mt-5 text-xl font-medium">{title}</h3>
-              <p className="mt-4 text-sm leading-7 text-pearl/75">{text}</p>
-            </li>
-          ))}
-        </ol>
-      </Container>
-    </Section>
-  );
-}
 
 export function SelectedCommercialExperience({ language }: { language: Language }) {
   const zh = language === "zh";
@@ -186,28 +58,115 @@ export function SelectedCommercialExperience({ language }: { language: Language 
   );
 }
 
-export function DemandInvitation({ language }: { language: Language }) {
+export function ServiceComparison({ language }: { language: Language }) {
   const zh = language === "zh";
   return (
-    <Section className="bg-graphite text-pearl" data-commercial-section="demand">
-      <Container className="grid gap-8 lg:grid-cols-12">
-        <div className="lg:col-span-7">
-          <Eyebrow className="text-champagne">
-            {zh ? "面向英国与欧洲企业" : "FOR UK & EUROPEAN PARTNERS"}
-          </Eyebrow>
-          <h2 className="commercial-heading mt-5">
-            {zh ? "你的英国或欧洲项目，需要解决什么问题？" : "What does your UK or European project need?"}
-          </h2>
+    <Section className="bg-porcelain" data-commercial-section="engagements">
+      <Container>
+        <Eyebrow>{zh ? "三种可独立开展的服务" : "THREE INDEPENDENT ENGAGEMENTS"}</Eyebrow>
+        <div className="service-comparison mt-7">
+          {engagements.map((offer, index) => (
+            <article
+              key={offer.id}
+              id={offer.id}
+              className={`scroll-mt-28 ${index === 1 ? "service-primary" : ""}`}
+            >
+              <p className="text-sm uppercase tracking-editorial text-slate">
+                0{index + 1} / {offer.stage[language]}
+                {index === 1 ? (zh ? " · 主推服务" : " · PRIMARY OFFER") : ""}
+              </p>
+              <h2 className="mt-5 text-2xl font-medium leading-snug">{offer.title[language]}</h2>
+              <dl className="service-dimensions mt-7 text-base leading-7">
+                <div>
+                  <dt>{zh ? "适用阶段" : "Stage"}</dt>
+                  <dd>
+                    {zh
+                      ? ["准备判断英国机会", "筹备发布、展会或演示", "首轮活动之后"][index]
+                      : [
+                          "Assessing a UK opportunity",
+                          "Preparing a launch, exhibition or demonstration",
+                          "Following an initial market activity"
+                        ][index]}
+                  </dd>
+                </div>
+                <div>
+                  <dt>{zh ? "核心问题" : "Core question"}</dt>
+                  <dd>{offer.question[language]}</dd>
+                </div>
+                <div>
+                  <dt>{zh ? "三项主要交付" : "Three main deliverables"}</dt>
+                  <dd>
+                    <ul className="space-y-2">
+                      {offer.outputs[language].slice(0, 3).map((item) => (
+                        <li key={item}>— {item}</li>
+                      ))}
+                    </ul>
+                  </dd>
+                </div>
+                <div>
+                  <dt>{zh ? "你需要提供" : "Your input"}</dt>
+                  <dd>{offer.inputs[language]}</dd>
+                </div>
+                <div>
+                  <dt>{zh ? "如何启动" : "Starting the work"}</dt>
+                  <dd>
+                    {zh
+                      ? "先沟通简报，再确认范围、时间、职责与费用。"
+                      : "Discuss the brief, then agree scope, timing, responsibilities and fee."}
+                  </dd>
+                </div>
+              </dl>
+              <ButtonLink
+                className="mt-6"
+                variant={index === 1 ? "primary" : "ghost"}
+                href={withLanguage(`/contact?intent=company&service=${offer.id}#company`, language)}
+                showArrow
+              >
+                {zh ? "沟通这项服务" : "Discuss this engagement"}
+              </ButtonLink>
+            </article>
+          ))}
         </div>
-        <div className="lg:col-span-5 lg:self-end">
-          <p className="text-base leading-8 text-pearl/80">{commercial.demandIntroduction[language]}</p>
-          <ButtonLink
-            href={withLanguage("/contact?intent=demand#demand", language)}
-            className="mt-7"
-            showArrow
-          >
-            {commercial.demandCta[language]}
-          </ButtonLink>
+      </Container>
+    </Section>
+  );
+}
+
+export function DeliverableWorkbench({ language }: { language: Language }) {
+  const zh = language === "zh";
+  return (
+    <Section className="bg-night text-pearl" id="deliverable-workbench">
+      <Container>
+        <Eyebrow className="text-champagne">
+          {zh ? "交付格式示意" : "ILLUSTRATIVE DELIVERABLE FORMAT"}
+        </Eyebrow>
+        <h2 className="commercial-heading mt-5">
+          {zh ? "看见工作的具体形状。" : "See the shape of the work."}
+        </h2>
+        <p className="mt-5 max-w-3xl text-base leading-7 text-pearl/75">
+          {zh
+            ? "以下为文档结构示意，仅展示字段，不包含客户、买家或会议数据。实际内容按项目约定。"
+            : "Document structures showing fields only, without client, buyer or meeting data. Actual contents are agreed for each project."}
+        </p>
+        <div className="deliverable-desk mt-10">
+          {engagements.map((offer, index) => (
+            <figure key={offer.id} className={`deliverable-paper deliverable-paper-${index}`}>
+              <figcaption>
+                <span className="text-sm text-slate">
+                  0{index + 1} / {zh ? "交付格式示意" : "FORMAT STUDY"}
+                </span>
+                <h3 className="mt-4 text-2xl font-medium leading-snug">{offer.formatTitle[language]}</h3>
+              </figcaption>
+              <ol className="mt-7">
+                {offer.formatFields[language].map((field, i) => (
+                  <li key={field}>
+                    <span className="text-sm text-slate">0{i + 1}</span>
+                    <span>{field}</span>
+                  </li>
+                ))}
+              </ol>
+            </figure>
+          ))}
         </div>
       </Container>
     </Section>

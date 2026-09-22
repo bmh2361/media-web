@@ -42,8 +42,8 @@ export const teamMembers: TeamMember[] = [
     role: l("Co-Founder · Client & Creative Direction", "联合创始人 · 客户与创意方向"),
     specialism: l("Brand presentation & production standards", "品牌呈现与制作标准"),
     contribution: l(
-      "Turns client objectives into a clear creative route and maintains the visual and production standard through delivery.",
-      "将客户目标转化为清晰的创意路径，并在项目交付全过程把控制作与视觉标准。"
+      "Shapes brand expression and client communication for technology projects, maintaining the creative and production standard through delivery.",
+      "负责科技项目的品牌表达与客户沟通，并在创意交付全过程把控制作与视觉标准。"
     ),
     expertiseSummary: l(
       "Creative direction, brand presentation and visual production across film, fashion and commercial settings.",
@@ -54,8 +54,8 @@ export const teamMembers: TeamMember[] = [
       "国际影视、时尚与商业视觉方向经验"
     ),
     projectResponsibility: l(
-      "Leads client-facing direction and the creative standard from brief through production.",
-      "负责面向客户的项目方向，并从需求到制作把控创意标准。"
+      "Leads client communication, brand presentation and creative delivery for technology projects.",
+      "负责科技项目的客户沟通、品牌表达与创意交付。"
     ),
     clientValue: l(
       "A clear creative route that remains accountable to the commercial objective.",
@@ -136,8 +136,8 @@ export const teamMembers: TeamMember[] = [
       "利兹大学化学与过程工程博士。英国皇家工程院背书全球人才签证持有人；此为个人签证背书，不代表对 Venus Bridge 的背书。"
     ),
     projectResponsibility: l(
-      "Leads energy, AI and technology strategy, translating complex technical propositions into clearer evaluation and discussion with potential UK stakeholders. Technical commercialisation here means making technology easier to assess, not claiming sales outcomes.",
-      "负责能源、人工智能与技术战略，帮助潜在英国合作方更清晰地评估和讨论复杂技术方案。技术商业化在此指把技术转化为可判断、可沟通的表达，不代表已实现销售成果。"
+      "Leads energy, AI and technology strategy, translating complex technical propositions into clearer evaluation and discussion with potential UK stakeholders.",
+      "负责能源、人工智能与技术战略，帮助潜在英国合作方更清晰地评估和讨论复杂技术方案。"
     ),
     clientValue: l(
       "Helps technology companies explain technically complex products in a form that UK commercial, research and industry stakeholders can evaluate more effectively.",

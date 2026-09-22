@@ -27,10 +27,12 @@ test("duplicates are registered once and capability media cannot enter Work or s
   assert.doesNotMatch(sitemap, /capabilityMedia|media-review/);
 });
 
-test("Entertainment and Technology pages use purpose-built controlled content", async () => {
+test("legacy expertise routes retain controlled technology routes and retire entertainment", async () => {
   const route = await source("app/[lang]/expertise/[sector]/page.tsx");
   const pages = await source("components/sections/CapabilityExpertisePages.tsx");
-  assert.match(route, /ExpertiseDetailPage/);
+  assert.match(route, /redirect/);
+  assert.match(route, /technology-ai-research/);
+  assert.doesNotMatch(route, /entertainment-culture|fashion-beauty-apparel/);
   assert.match(pages, /EntertainmentCulturePage/);
   assert.match(pages, /TechnologyAiResearchPage/);
   assert.match(pages, /Talent availability and usage are confirmed per project/);

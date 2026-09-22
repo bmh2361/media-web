@@ -1,43 +1,47 @@
+import Link from "next/link";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Section } from "@/components/ui/Section";
-import { EditorialScene } from "@/components/sections/phase32c/EditorialScene";
-import {
-  CommercialProcess,
-  Engagements,
-  SelectedCommercialExperience,
-  Situations
-} from "@/components/sections/CommercialSections";
-import { commercial, partnerTracks } from "@/content/commercial";
-import { findPublishedPortfolioProject, getProjectHero } from "@/content/portfolio";
+import { PortfolioImage } from "@/components/media/PortfolioImage";
+import { commercial, engagements } from "@/content/commercial";
+import { findPublishedPortfolioProject, findPortfolioMedia } from "@/content/portfolio";
 import { withLanguage, type Language } from "@/lib/i18n";
 
 export function CompaniesJourney({ language }: { language: Language }) {
   const zh = language === "zh";
-  const project = findPublishedPortfolioProject("agibot-london-launch")!;
+  const hero = findPortfolioMedia("geely-london-brand-launch");
+  const stories = ["agibot-london-launch", "catl-open-day-2025"].flatMap((slug) => {
+    const project = findPublishedPortfolioProject(slug);
+    const media = findPortfolioMedia(slug, slug === "catl-open-day-2025" ? "cover" : "hero");
+    return project && media ? [{ project, media }] : [];
+  });
   return (
     <>
       <section
         className="commercial-hero bg-ink pt-[76px] text-pearl lg:pt-[88px]"
         data-audience-page="companies"
       >
-        <Container className="grid gap-10 py-14 lg:grid-cols-12 lg:items-center lg:py-20">
-          <div className="lg:col-span-7">
+        <Container className="grid gap-10 py-12 lg:grid-cols-2 lg:items-center lg:py-16">
+          <div>
             <Eyebrow className="text-champagne">
               {zh ? "面向中国科技企业" : "FOR CHINESE TECHNOLOGY COMPANIES"}
             </Eyebrow>
             <h1 className="commercial-hero-title mt-6">
-              {zh
-                ? "把英国市场目标，变成可执行的项目。"
-                : "Turn your UK market objective into an executable project."}
+              {zh ? (
+                <>
+                  <span className="inline-block">让你的英国市场计划，</span>
+                  <span className="inline-block">开始落地。</span>
+                </>
+              ) : (
+                "Make your next UK market move."
+              )}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-pearl/80">
+            <p className="mt-6 max-w-xl text-lg leading-8 text-pearl/80">
               {zh
-                ? "你已经有产品或技术，需要决定英国机会是否值得投入，或者让一次发布、展会、来访真正服务于市场目标。我们从需求判断开始，约定工作范围，再组织本地行动。"
-                : "You have a real product or technology. You need to assess the UK opportunity, or make a launch, exhibition or visit serve a clear market objective. We start with the decision you need to make, agree the scope and organise local action."}
+                ? "从产品与目标出发，找到当前最值得推进的英国市场行动。我们协助判断、表达与当地执行；欧洲合作按具体项目延伸。"
+                : "Start with your product and objective. Identify the UK action worth taking next, with support for assessment, messaging and local execution. European work follows a defined project need."}
             </p>
-            <p className="mt-4 text-sm leading-7 text-pearl/65">{commercial.geography[language]}</p>
             <ButtonLink
               href={withLanguage("/contact?intent=company#company", language)}
               className="mt-7"
@@ -46,128 +50,164 @@ export function CompaniesJourney({ language }: { language: Language }) {
               {commercial.companyCta[language]}
             </ButtonLink>
           </div>
-          <div className="min-w-0 lg:col-span-5" data-audience-hero-media>
-            <EditorialScene
-              scene={{
-                kind: "portfolio",
-                media: project.media.find((media) => media.category === "cover") ?? getProjectHero(project)
-              }}
-              language={language}
-              priority
-              sizes="(min-width:1024px) 42vw, 100vw"
-              mediaRole="hero-landscape"
-            />
-            <p className="mt-4 text-xs leading-6 text-pearl/65">
-              {zh
-                ? "AGIBOT 伦敦发布 · 团队现场影像经验"
-                : "AGIBOT London launch · Team on-site visual production experience"}
-            </p>
-          </div>
+          {hero && (
+            <figure data-audience-hero-media>
+              <PortfolioImage
+                media={hero}
+                language={language}
+                priority
+                fit="natural"
+                sizes="(min-width:1024px) 50vw, 100vw"
+              />
+              <figcaption className="mt-3 text-sm leading-6 text-pearl/70">
+                {zh
+                  ? "吉利伦敦品牌发布 · 团队现场影像经验"
+                  : "Geely London brand launch · Team on-site visual production"}
+              </figcaption>
+            </figure>
+          )}
         </Container>
       </section>
-      <Section className="bg-pearl">
+      <Section className="bg-porcelain" id="market-action-map">
         <Container>
-          <Eyebrow>{zh ? "技术优先领域" : "TECHNOLOGY PRIORITIES"}</Eyebrow>
-          <ol className="mt-5 space-y-3 text-lg leading-8">
-            {commercial.sectors[language].map((sector, index) => (
-              <li key={sector}>
-                {index + 1}. {sector}
+          <Eyebrow>{zh ? "市场行动路径" : "MARKET ACTION MAP"}</Eyebrow>
+          <h2 className="commercial-heading mt-5">
+            {zh ? "从你现在的阶段开始。" : "Begin where your business is now."}
+          </h2>
+          <p className="mt-5 text-base leading-7 text-ink/70">
+            {zh
+              ? "三项服务可独立开展，无需依次购买。选择当前需要回答的问题。"
+              : "Each engagement stands alone. Choose the question you need to answer; this is not a sequence of required purchases."}
+          </p>
+          <ol className="action-map mt-10">
+            {engagements.map((offer, index) => (
+              <li key={offer.id}>
+                <p className="text-sm uppercase tracking-editorial text-slate">
+                  0{index + 1} / {offer.stage[language]}
+                </p>
+                <h3 className="mt-5 text-2xl font-medium leading-snug">{offer.question[language]}</h3>
+                <dl className="mt-7 space-y-5 text-base leading-7">
+                  <div>
+                    <dt className="text-slate">{zh ? "关键动作" : "Action"}</dt>
+                    <dd>{offer.action[language]}</dd>
+                  </div>
+                  <div>
+                    <dt className="text-slate">{zh ? "有形输出" : "Output"}</dt>
+                    <dd>{offer.mapOutput[language]}</dd>
+                  </div>
+                </dl>
+                <Link
+                  className="mt-6 inline-flex min-h-11 items-center underline underline-offset-4"
+                  href={withLanguage(`/services#${offer.id}`, language)}
+                >
+                  {zh ? "查看对应服务" : "See this engagement"} →
+                </Link>
               </li>
             ))}
           </ol>
-          <p className="mt-5 text-sm leading-7 text-ink/70">{commercial.adjacent[language]}</p>
-          <ButtonLink
-            href={withLanguage("/services#priority-areas", language)}
-            variant="ghost"
-            className="mt-5"
-            showArrow
-          >
-            {zh ? "查看项目范围" : "Explore project scope"}
-          </ButtonLink>
         </Container>
       </Section>
-      <Situations language={language} />
-      <Engagements language={language} />
-      <Section className="bg-pearl">
+      <Section className="bg-pearl" data-company-stories>
         <Container>
-          <Eyebrow>{zh ? "项目包含什么" : "WHAT A PROJECT INCLUDES"}</Eyebrow>
+          <Eyebrow>{zh ? "真实项目中的参与" : "REAL PROJECT SETTINGS"}</Eyebrow>
           <h2 className="commercial-heading mt-5">
-            {zh
-              ? "工作、责任和验收，启动前说清楚。"
-              : "Agree the work, responsibilities and acceptance criteria first."}
+            {zh ? "不同技术场景，明确参与范围。" : "Different technologies. Specific contributions."}
           </h2>
-          <div className="mt-10 grid gap-10 lg:grid-cols-3">
+          <div className="mt-10 space-y-14">
+            {stories.map(({ project, media }, index) => (
+              <article key={project.slug} className="grid items-center gap-8 lg:grid-cols-12">
+                <div className={`lg:col-span-8 ${index === 1 ? "lg:order-2" : ""}`}>
+                  <PortfolioImage
+                    media={media}
+                    language={language}
+                    fit="natural"
+                    sizes="(min-width:1024px) 66vw, 100vw"
+                  />
+                </div>
+                <div className="lg:col-span-4">
+                  <h3 className="text-2xl font-medium leading-snug">
+                    {zh ? project.titleZh : project.titleEn}
+                  </h3>
+                  <p className="mt-5 text-base leading-7 text-ink/70">
+                    {project.slug === "agibot-london-launch"
+                      ? zh
+                        ? "机器人品牌的伦敦发布现场。"
+                        : "A robotics brand in a London launch setting."
+                      : zh
+                        ? "电池技术企业开放日的现场交流。"
+                        : "On-site communication at a battery technology open day."}
+                  </p>
+                  <p className="mt-4 text-base leading-7">
+                    {zh ? project.roleStatementZh : project.roleStatementEn}
+                  </p>
+                  <Link
+                    className="mt-5 inline-flex min-h-11 items-center underline underline-offset-4"
+                    href={withLanguage(`/work/${project.slug}`, language)}
+                  >
+                    {zh ? "核对案例与交付" : "View scope and deliverables"} →
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </Section>
+      <Section className="bg-porcelain">
+        <Container>
+          <Eyebrow>{zh ? "开始项目需要什么" : "STARTING THE WORK"}</Eyebrow>
+          <h2 className="commercial-heading mt-5">
+            {zh ? "把计划变成清楚的工作简报。" : "Turn your plan into a working brief."}
+          </h2>
+          <dl className="brief-flow mt-10">
             {(zh
               ? [
-                  [
-                    "一份明确的项目约定",
-                    "商业目标、优先受众、工作范围、交付清单、时间、费用、审批人与验收标准。具体买家沟通、专家参与或演示安排，均需单独纳入范围。"
-                  ],
-                  [
-                    "Venus Bridge 直接负责",
-                    "需求梳理、产品与传播表达、项目规划、双语沟通、约定的本地执行与反馈整理。我们根据确认的范围向中国总部汇报。"
-                  ],
-                  [
-                    "专业方分别负责",
-                    "法律、税务、合规、认证、物流或专业研究，由项目所需的合资格服务方提供。我们协调需求和接口，专业意见与责任由该服务方承担。"
-                  ]
+                  ["你提供", "产品、目标、时间"],
+                  ["我们组织", "判断、表达、约定的当地行动"],
+                  ["你获得", "材料、反馈和下一步"]
                 ]
               : [
-                  [
-                    "A defined project agreement",
-                    "The objective, priority audience, scope, deliverables, timeline, fee, approval owner and acceptance criteria. Buyer outreach, expert participation and demonstrations must be specifically scoped."
-                  ],
-                  [
-                    "What Venus Bridge does directly",
-                    "Requirement discovery, proposition and communication work, project planning, bilingual coordination, agreed local execution and feedback reporting to China headquarters."
-                  ],
-                  [
-                    "What specialists deliver",
-                    "Legal, tax, compliance, certification, logistics or specialist research is provided by appropriately qualified providers where needed. We coordinate the brief; the specialist owns their advice and professional responsibilities."
-                  ]
+                  ["You provide", "Product, objective, timing"],
+                  ["We organise", "Assessment, messaging, agreed local activity"],
+                  ["You receive", "Materials, feedback, next actions"]
                 ]
-            ).map(([title, text]) => (
-              <article key={title} className="border-t border-ink/20 pt-6">
-                <h3 className="text-xl font-medium">{title}</h3>
-                <p className="mt-4 text-base leading-7 text-ink/70">{text}</p>
-              </article>
+            ).map(([label, value]) => (
+              <div key={label}>
+                <dt className="text-slate">{label}</dt>
+                <dd className="mt-3 text-xl leading-8">{value}</dd>
+              </div>
             ))}
-          </div>
+          </dl>
+          <ul className="mt-8 space-y-2 text-base leading-7 text-ink/70">
+            {(zh
+              ? [
+                  "已有可对外讨论的产品或技术。",
+                  "决策者参与需求与审批。",
+                  "愿意根据当地反馈调整，并持续跟进。"
+                ]
+              : [
+                  "A product or technology ready for external discussion.",
+                  "A decision maker involved in the brief and approvals.",
+                  "Capacity to adapt to local feedback and sustain follow-up."
+                ]
+            ).map((item) => (
+              <li key={item}>— {item}</li>
+            ))}
+          </ul>
         </Container>
       </Section>
-      <SelectedCommercialExperience language={language} />
-      <CommercialProcess language={language} />
-      <Section className="bg-porcelain" data-commercial-section="fit">
+      <Section className="bg-night text-pearl">
         <Container>
-          <Eyebrow>{zh ? "项目匹配" : "PROJECT FIT"}</Eyebrow>
-          <h2 className="commercial-heading mt-5">
-            {zh ? "什么情况下，我们适合合作？" : "A useful engagement starts with realistic expectations."}
+          <h2 className="commercial-heading">
+            {zh ? "发来产品、目标和时间。" : "Send your product, objective and timing."}
           </h2>
-          <div className="mt-10 grid gap-10 md:grid-cols-2">
-            {[
-              { title: zh ? "适合合作" : "Good fit", items: commercial.goodFit[language] },
-              { title: zh ? "不适合的需求" : "Not the right fit", items: commercial.notFit[language] }
-            ].map((group) => (
-              <article key={group.title} className="border-t border-ink/20 pt-6">
-                <h3 className="text-2xl font-medium">{group.title}</h3>
-                <ul className="mt-6 divide-y divide-ink/10">
-                  {group.items.map((item) => (
-                    <li key={item} className="py-3 text-base leading-7 text-ink/75">
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
-          <p className="mt-8 max-w-3xl text-base leading-7 text-ink/70">
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-pearl/75">
             {zh
-              ? "请带上产品介绍、目标市场、希望实现的结果、时间和现有英国活动。我们会先判断是否匹配，再建议准备、启动或跟进项目。"
-              : "Bring your product brief, target market, objective, timing and existing UK activity. We first assess fit, then recommend readiness, launch or follow-up work."}
+              ? "附上产品介绍或网站，以及希望在英国解决的问题。我们先判断适配，再约定范围与费用。"
+              : "Include a product overview or website and the question you want to resolve in the UK. We assess fit before agreeing scope and fees."}
           </p>
           <ButtonLink
-            href={withLanguage("/contact?intent=company#company", language)}
             className="mt-7"
+            href={withLanguage("/contact?intent=company#company", language)}
             showArrow
           >
             {commercial.companyCta[language]}
@@ -180,118 +220,223 @@ export function CompaniesJourney({ language }: { language: Language }) {
 
 export function PartnersJourney({ language }: { language: Language }) {
   const zh = language === "zh";
-  const project = findPublishedPortfolioProject("catl-open-day-2025")!;
+  const routes = [
+    {
+      id: "commercial-demand",
+      intent: "demand",
+      title: zh ? "商业与应用需求" : "Commercial requirements",
+      body: zh
+        ? "提出运营、采购或分销问题；先判断应用要求，再考虑相关技术。"
+        : "Bring an operating, procurement or distribution question. Application requirements come before a technology shortlist.",
+      tags: zh ? ["运营方", "买家", "分销商"] : ["Operators", "Buyers", "Distributors"],
+      cta: commercial.demandCta[language]
+    },
+    {
+      id: "research",
+      intent: "research",
+      title: zh ? "技术与研究合作" : "Research & technical collaboration",
+      body: zh
+        ? "说明研究问题、技术条件与合作兴趣，由双方判断是否适配。"
+        : "Describe a research question, technical conditions and collaboration interest for both sides to assess.",
+      tags: zh ? ["高校", "研发团队", "技术专家"] : ["Universities", "R&D teams", "Technical experts"],
+      cta: zh ? "讨论研究方向" : "Discuss a research question"
+    },
+    {
+      id: "delivery-partners",
+      intent: "specialist",
+      title: zh ? "专业与交付合作" : "Specialist delivery",
+      body: zh
+        ? "介绍专业能力、可用时间和服务范围，按具体项目约定职责与审批路径。"
+        : "Share your expertise, availability and scope. Responsibilities and the approval route are agreed for a specific project.",
+      tags: zh
+        ? ["专业顾问", "技术支持", "本地执行"]
+        : ["Professional advice", "Technical support", "Local delivery"],
+      cta: commercial.specialistCta[language]
+    }
+  ];
   return (
     <>
       <section
         className="commercial-hero bg-ink pt-[76px] text-pearl lg:pt-[88px]"
         data-audience-page="partners"
       >
-        <Container className="grid gap-10 py-14 lg:grid-cols-12 lg:items-center lg:py-20">
-          <div className="lg:col-span-7">
+        <Container className="grid items-center gap-10 py-14 lg:grid-cols-2 lg:py-20">
+          <div>
             <Eyebrow className="text-champagne">
-              {zh ? "英国与欧洲商业及技术合作" : "FOR UK & EUROPEAN PARTNERS"}
+              {zh ? "面向英国与欧洲合作方" : "FOR UK & EUROPEAN PARTNERS"}
             </Eyebrow>
             <h1 className="commercial-hero-title mt-6">
-              {zh
-                ? "先说清楚你的英国或欧洲业务需求。"
-                : "Start with your UK or European business requirement."}
+              {zh ? "从你的业务需求，寻找合适的合作。" : "What does your next project need?"}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-pearl/80">
-              {commercial.demandIntroduction[language]}
-            </p>
+            <p className="mt-6 text-lg leading-8 text-pearl/80">{commercial.demandIntroduction[language]}</p>
             <ButtonLink
-              href={withLanguage("/contact?intent=demand#demand", language)}
               className="mt-7"
+              href={withLanguage("/contact?intent=demand#demand", language)}
               showArrow
             >
               {commercial.demandCta[language]}
             </ButtonLink>
           </div>
-          <div className="min-w-0 lg:col-span-5" data-audience-hero-media>
-            <EditorialScene
-              scene={{ kind: "portfolio", media: getProjectHero(project) }}
-              language={language}
-              priority
-              sizes="(min-width:1024px) 42vw, 100vw"
-              mediaRole="hero-landscape"
-            />
-            <p className="mt-4 text-xs leading-6 text-pearl/65">
+          <figure
+            className="requirement-orbit"
+            aria-label={zh ? "需求匹配关系" : "Requirement matching relationship"}
+          >
+            <div className="orbit-node">{zh ? "你的应用环境" : "Your application"}</div>
+            <div className="orbit-connection" aria-hidden="true">
+              ↓
+            </div>
+            <div className="orbit-centre">
+              <span className="text-sm uppercase tracking-editorial text-champagne">Venus Bridge</span>
+              <p className="mt-3 text-2xl">{zh ? "澄清问题 · 判断相关性" : "Clarify · Assess relevance"}</p>
+            </div>
+            <div className="orbit-connection" aria-hidden="true">
+              ↕
+            </div>
+            <div className="orbit-node">
+              {zh ? "可能相关的技术或企业" : "Potentially relevant technology or company"}
+            </div>
+            <figcaption className="mt-6 text-center text-base leading-7 text-pearl/70">
               {zh
-                ? "CATL 活动影像 · 历史制作经验，不代表供应或代理关系"
-                : "CATL event imagery · Historical production experience, not a supply or representation relationship"}
-            </p>
-          </div>
+                ? "以需求为起点，由双方决定下一步。"
+                : "Led by the requirement. Progress depends on mutual fit."}
+            </figcaption>
+          </figure>
         </Container>
       </section>
-      {partnerTracks.map((track, i) => (
-        <Section
-          key={track.id}
-          id={track.id}
-          className={`scroll-mt-24 ${i === 1 ? "bg-night text-pearl" : "bg-porcelain"}`}
-          data-partner-track={track.id}
-        >
-          <Container className="grid gap-8 lg:grid-cols-12">
-            <div className="lg:col-span-5">
-              <Eyebrow className={i === 1 ? "text-champagne" : ""}>
-                {String.fromCharCode(65 + i)} · {zh ? "合作路径" : "PARTNERSHIP ROUTE"}
-              </Eyebrow>
-              <h2 className="commercial-heading mt-5">{track.title[language]}</h2>
-              <p className={`mt-6 text-base leading-7 ${i === 1 ? "text-pearl/75" : "text-ink/70"}`}>
-                {track.audience[language]}
-              </p>
-            </div>
-            <div className="lg:col-span-6 lg:col-start-7">
-              <p className={`text-lg leading-8 ${i === 1 ? "text-pearl/80" : "text-ink/80"}`}>
-                {track.body[language]}
-              </p>
-              <ul
-                className={`mt-6 divide-y border-y ${i === 1 ? "divide-pearl/20 border-pearl/20" : "divide-ink/15 border-ink/15"}`}
-              >
-                {track.examples[language].map((item) => (
-                  <li key={item} className="py-4 text-sm leading-7">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <ButtonLink
-                href={withLanguage(
-                  `/contact?intent=${track.intent}#${track.intent === "research" ? "demand" : track.intent}`,
-                  language
-                )}
-                className="mt-7"
-                showArrow
-              >
-                {i === 0
-                  ? commercial.demandCta[language]
-                  : i === 1
-                    ? zh
-                      ? "沟通技术合作需求"
-                      : "Discuss a Research Brief"
-                    : commercial.specialistCta[language]}
-              </ButtonLink>
-            </div>
-          </Container>
-        </Section>
-      ))}
+      <Section className="bg-porcelain">
+        <Container>
+          <Eyebrow>{zh ? "选择参与方式" : "CHOOSE YOUR ROUTE"}</Eyebrow>
+          <div className="mt-6 divide-y divide-ink/20">
+            {routes.map((route, index) => (
+              <article key={route.id} id={route.id} className="grid scroll-mt-28 gap-6 py-8 lg:grid-cols-12">
+                <div className="lg:col-span-4">
+                  <p className="text-sm text-slate">0{index + 1}</p>
+                  <h2 className="mt-3 text-2xl font-medium leading-snug">{route.title}</h2>
+                </div>
+                <div className="lg:col-span-5">
+                  <p className="text-base leading-7 text-ink/75">{route.body}</p>
+                  <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-base text-slate">
+                    {route.tags.map((tag) => (
+                      <li key={tag}>{tag}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="lg:col-span-3 lg:self-center">
+                  <ButtonLink
+                    variant="ghost"
+                    href={withLanguage(`/contact?intent=${route.intent}#${route.intent}`, language)}
+                    showArrow
+                  >
+                    {route.cta}
+                  </ButtonLink>
+                </div>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </Section>
+      <Section className="bg-night text-pearl" id="requirement-map">
+        <Container>
+          <Eyebrow className="text-champagne">{zh ? "从需求到决定" : "FROM REQUIREMENT TO DECISION"}</Eyebrow>
+          <h2 className="commercial-heading mt-5">
+            {zh ? "每一次推进，都有判断依据。" : "A decision at each connection."}
+          </h2>
+          <ol className="decision-map mt-10">
+            {(zh
+              ? ["需求", "相关性研究", "双方判断", "约定下一步"]
+              : ["Requirement", "Relevance check", "Mutual fit", "Agreed next step"]
+            ).map((label, index) => (
+              <li key={label}>
+                <span className="text-sm text-champagne">0{index + 1}</span>
+                <p className="mt-3 text-xl leading-7">{label}</p>
+              </li>
+            ))}
+          </ol>
+          <div className="decision-branches">
+            <p>{zh ? "信息不足 → 补充信息，再评估" : "Information missing → Clarify, then reassess"}</p>
+            <p>{zh ? "不适配 → 暂不推进" : "No mutual fit → Do not progress"}</p>
+          </div>
+          <p className="mt-8 max-w-3xl text-base leading-7 text-pearl/75">
+            {zh
+              ? "外部参与取决于适配、意愿和必要的机构审批。研究参与不等于品牌背书；不保证引荐、采购或订单。"
+              : "Participation depends on fit, interest and any required institutional approval. Research participation is not brand endorsement. Introductions, procurement and orders are not guaranteed."}
+          </p>
+        </Container>
+      </Section>
       <Section className="bg-pearl">
         <Container>
-          <Eyebrow>{zh ? "从需求到决定" : "FROM REQUIREMENT TO DECISION"}</Eyebrow>
+          <Eyebrow>{zh ? "合作形式示意" : "ILLUSTRATIVE COLLABORATION FORMATS"}</Eyebrow>
           <h2 className="commercial-heading mt-5">
-            {zh
-              ? "先确认相关性，再约定下一步。"
-              : "A clear requirement, a fit assessment, then an agreed next step."}
+            {zh ? "先定义评估条件。" : "Define what would make a fit."}
           </h2>
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-ink/70">
+          <p className="mt-5 text-base leading-7 text-ink/70">
             {zh
-              ? "我们会先查看你的应用、地区、时间与评估标准。若存在值得继续的方向，再确认研究与沟通范围、双方责任和费用。是否采购、分销、开展试点或研究，由相关各方自行评估和决定。"
-              : "We review your application, geography, timing and assessment criteria. If there is a useful route forward, we agree the research and communication scope, responsibilities and fees. Procurement, distribution, pilot and research decisions remain with the participating parties."}
+              ? "以下仅展示讨论结构，并非客户案例、现有采购需求或正在进行的项目。"
+              : "Discussion structures only, not client cases, live procurement requirements or active projects."}
           </p>
-          <p className="mt-5 max-w-3xl text-sm leading-7 text-ink/65">
+          <div className="mt-8 grid gap-10 md:grid-cols-2">
+            {(zh
+              ? [
+                  ["运营自动化", "运营环境", "任务、接口与安全要求", "自动化技术可行性讨论"],
+                  ["能源与智能系统", "企业能源数据应用", "数据条件与使用目标", "技术评估或研究讨论"]
+                ]
+              : [
+                  [
+                    "Operational automation",
+                    "An operating environment",
+                    "Tasks, interfaces and safety requirements",
+                    "Automation feasibility discussion"
+                  ],
+                  [
+                    "Energy & intelligent systems",
+                    "Enterprise energy data application",
+                    "Data conditions and intended use",
+                    "Technical evaluation or research discussion"
+                  ]
+                ]
+            ).map(([title, ...values]) => (
+              <article key={title} className="border-t border-ink/25 pt-6">
+                <h3 className="text-2xl font-medium">{title}</h3>
+                <dl className="mt-5 space-y-4">
+                  {values.map((value, index) => (
+                    <div key={value}>
+                      <dt className="text-base text-slate">
+                        {
+                          (zh
+                            ? ["应用环境", "评估条件", "合作方式"]
+                            : ["Application", "Evaluation conditions", "Collaboration format"])[index]
+                        }
+                      </dt>
+                      <dd className="mt-1 text-lg leading-7">{value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </Section>
+      <Section className="bg-porcelain">
+        <Container>
+          <h2 className="commercial-heading">
+            {zh ? "带着一个清楚的问题开始。" : "Start with a clear question."}
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-ink/70">
             {zh
-              ? "Venus Bridge 不提供无限范围的免费采购搜寻，也不以分销商、采购担保人或机构代理身份行事。"
-              : "Venus Bridge does not offer unlimited free sourcing or act as a distributor, procurement guarantor or institutional representative."}
+              ? "说明应用环境、需要解决的问题与时间；研究和专业服务请使用对应入口。"
+              : "Share the application, the problem and timing. Research and specialist enquiries have their own briefs."}
           </p>
+          <div className="mt-7 flex flex-wrap gap-4">
+            {routes.map((route) => (
+              <ButtonLink
+                key={route.id}
+                variant={route.intent === "demand" ? "primary" : "ghost"}
+                href={withLanguage(`/contact?intent=${route.intent}#${route.intent}`, language)}
+              >
+                {route.cta}
+              </ButtonLink>
+            ))}
+          </div>
         </Container>
       </Section>
     </>

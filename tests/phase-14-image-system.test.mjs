@@ -103,11 +103,11 @@ test("homepage expertise uses four distinct source identities", () => {
   assert.equal(new Set(values).size, 4);
 });
 
-test("industry heroes use deliberate and distinct media", () => {
+test("legacy industries cannot render retired brand media", () => {
   const automotive = read("app/[lang]/industries/automotive/page.tsx");
-  const fashion = read("app/[lang]/industries/fashion-beauty-apparel/page.tsx");
-  assert.match(automotive, /slug === "byd-bd11-london"/);
-  assert.match(fashion, /slug === "beauty-fashion-brand-content"/);
+  const fashion = fs.existsSync("app/[lang]/industries/fashion-beauty-apparel/page.tsx");
+  assert.match(automotive, /redirect/);
+  assert.equal(fashion, false);
   assert.doesNotMatch(automotive, /slug === "beauty-fashion-brand-content"/);
 });
 

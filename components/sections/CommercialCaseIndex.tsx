@@ -54,7 +54,7 @@ export function CommercialCaseIndex({
     [cases, category]
   );
   const activeCase = filteredCases.find((item) => item.slug === activeSlug) ?? filteredCases[0] ?? null;
-  const initialCover = getProjectCover(cases[0]);
+  const initialCover = cases[0] ? getProjectCover(cases[0]) : undefined;
 
   const clearMobileCandidate = useCallback(() => {
     mobileCandidateRef.current = null;
@@ -292,18 +292,22 @@ export function CommercialCaseIndex({
           aria-label={zh ? "案例分类" : "Case categories"}
           data-case-filters
         >
-          {commercialCaseFilters.map((filter) => (
-            <button
-              key={filter.value}
-              type="button"
-              data-case-filter={filter.value}
-              aria-pressed={category === filter.value}
-              onClick={() => chooseCategory(filter.value)}
-              className="min-h-11 shrink-0 rounded-full border border-ink/20 px-4 py-2 text-xs uppercase tracking-[0.12em] text-ink/65 transition-colors hover:border-ink/50 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-pearl"
-            >
-              {filter.label[language]}
-            </button>
-          ))}
+          {commercialCaseFilters
+            .filter(
+              (filter) => filter.value === "all" || cases.some((item) => item.category === filter.value)
+            )
+            .map((filter) => (
+              <button
+                key={filter.value}
+                type="button"
+                data-case-filter={filter.value}
+                aria-pressed={category === filter.value}
+                onClick={() => chooseCategory(filter.value)}
+                className="min-h-11 shrink-0 rounded-full border border-ink/20 px-4 py-2 text-xs uppercase tracking-[0.12em] text-ink/65 transition-colors hover:border-ink/50 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-pearl"
+              >
+                {filter.label[language]}
+              </button>
+            ))}
         </div>
       ) : null}
 

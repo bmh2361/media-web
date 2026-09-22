@@ -1520,3 +1520,173 @@ a {
     line-height: 1.7;
   }
 }
+/* Purpose-specific commercial diagrams: readable without interaction. */
+.action-map,
+.brief-flow,
+.decision-map {
+  display: grid;
+  gap: 2rem;
+}
+.action-map > li {
+  position: relative;
+  border-top: 2px solid #b89970;
+  padding-top: 1.5rem;
+}
+.brief-flow > div {
+  border-top: 1px solid rgb(20 22 24 / 20%);
+  padding-top: 1.5rem;
+}
+.requirement-orbit {
+  padding: 1.5rem;
+  border: 1px solid rgb(250 247 241 / 25%);
+}
+.orbit-node {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid rgb(250 247 241 / 35%);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.orbit-centre {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border: 1px solid #b89970;
+}
+.orbit-connection {
+  text-align: center;
+  color: #b89970;
+  font-size: 1.5rem;
+  padding: 0.4rem;
+}
+.decision-map > li {
+  border-top: 1px solid #b89970;
+  padding-top: 1.25rem;
+  position: relative;
+}
+.decision-branches {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  border-left: 1px dashed #b89970;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.service-comparison,
+.deliverable-desk {
+  display: grid;
+  gap: 1.5rem;
+}
+.service-comparison > article {
+  min-width: 0;
+  padding: 1.5rem;
+  border-top: 2px solid rgb(20 22 24 / 25%);
+}
+.service-comparison > .service-primary {
+  border-color: #b89970;
+  background: #ece7df;
+}
+.service-dimensions > div {
+  padding: 1rem 0;
+  border-top: 1px solid rgb(20 22 24 / 15%);
+}
+.service-dimensions dt {
+  color: #555b62;
+  margin-bottom: 0.5rem;
+}
+.deliverable-paper {
+  background: #f5f1e9;
+  color: #151719;
+  padding: 1.5rem;
+  border-top: 4px solid #b89970;
+}
+.deliverable-paper li {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 0.75rem;
+  border-top: 1px solid rgb(20 22 24 / 20%);
+  padding: 1.25rem 0;
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+.responsibility-ledger > div {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgb(20 22 24 / 20%);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.responsibility-ledger dt {
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .brief-flow {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .decision-map {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .decision-branches {
+    margin-left: 26%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .responsibility-ledger > div {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+@media (min-width: 1024px) {
+  .action-map,
+  .service-comparison,
+  .deliverable-desk {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .action-map > li:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -1.4rem;
+    top: -1rem;
+    background: #f5f1e9;
+    color: #806540;
+  }
+  .service-comparison {
+    gap: 0;
+  }
+  .service-comparison > article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 8;
+    row-gap: 1rem;
+    padding: 1.75rem;
+  }
+  .service-dimensions {
+    display: contents;
+  }
+  .deliverable-paper-1 {
+    margin-top: 2rem;
+  }
+  .deliverable-paper-2 {
+    margin-top: 4rem;
+  }
+}
+
+.decision-map > li:not(:last-child)::after {
+  content: "↓";
+  display: block;
+  margin-top: 1.5rem;
+  color: theme("colors.champagne");
+}
+@media (min-width: 768px) {
+  .decision-map > li:not(:last-child)::after {
+    content: "→";
+    position: absolute;
+    right: -1.5rem;
+    top: 1.5rem;
+    margin: 0;
+  }
+}
+@media (min-width: 1024px) {
+  :lang(zh) [data-audience-page="companies"] .commercial-hero-title {
+    font-size: clamp(2.25rem, 3.1vw, 3.2rem);
+  }
+}

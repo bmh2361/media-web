@@ -1,28 +1,7 @@
-import { AgencySupportExperience } from "@/components/sections/experiences/AgencySupportExperience";
-import { agenciesPage } from "@/content/site";
-import type { Language } from "@/lib/i18n";
-import { buildMetadata } from "@/lib/seo";
-
-export async function generateMetadata({ params }: { params: Promise<{ lang: Language }> }) {
+import { notFound, redirect } from "next/navigation";
+import { isSupportedLocale, withLanguage } from "@/lib/i18n";
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  const copy = agenciesPage[lang];
-  return buildMetadata({
-    lang,
-    path: "/for-agencies",
-    title:
-      lang === "zh"
-        ? `${copy.title} | 英国制作与本地落地执行`
-        : `${copy.title} | UK Production & Local Execution`,
-    description: copy.intro,
-    keywords: [
-      "UK production partner for Chinese agencies",
-      "London local production team",
-      "Bilingual production coordinator UK"
-    ]
-  });
-}
-
-export default async function ForAgenciesPage({ params }: { params: Promise<{ lang: Language }> }) {
-  const { lang } = await params;
-  return <AgencySupportExperience language={lang} />;
+  if (!isSupportedLocale(lang)) notFound();
+  redirect(withLanguage("/services", lang));
 }

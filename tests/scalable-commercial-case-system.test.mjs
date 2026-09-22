@@ -80,7 +80,9 @@ test("detail pages use data-driven editorial blocks and ordered next-project nav
 test("audience pages link to evidence while About avoids a duplicate case-study module", async () => {
   const audiences = await source("components/sections/Phase5AudiencePages.tsx");
   const about = await source("app/[lang]/about/page.tsx");
-  assert.match(audiences, /SelectedCommercialExperience/);
+  assert.match(audiences, /data-company-stories/);
+  assert.match(audiences, /withLanguage\(`\/work\//);
+  assert.doesNotMatch(audiences, /SelectedCommercialExperience/);
   assert.match(await source("components/sections/CommercialSections.tsx"), /withLanguage\(`\/work\//);
   assert.doesNotMatch(about, /publishedPortfolioProjects|AboutProjectProof|View case/);
 });

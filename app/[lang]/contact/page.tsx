@@ -1,3 +1,4 @@
+import { EnquiryEmail } from "@/components/sections/EnquiryEmail";
 import { notFound } from "next/navigation";
 import { ContactExperience } from "@/components/sections/ContactExperience";
 import { Container } from "@/components/ui/Container";
@@ -62,7 +63,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
     {
       id: "demand",
       title: commercial.demandCta[lang],
-      audience: zh ? "英国与欧洲企业及研究团队" : "UK & European companies and research teams",
+      audience: zh ? "英国与欧洲企业" : "UK & European companies",
       fields: zh
         ? [
             "机构",
@@ -80,6 +81,23 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
             "Product / technology category",
             "Geography / application location",
             "Interest (distribution / procurement / pilot / research / other)",
+            "Timing",
+            "Name / role",
+            "Contact information"
+          ]
+    },
+    {
+      id: "research",
+      title: zh ? "讨论研究方向" : "Discuss a research question",
+      audience: zh ? "高校、研发团队与技术专家" : "Universities, R&D teams and technical experts",
+      fields: zh
+        ? ["机构", "研究问题", "应用环境", "技术条件", "期望合作方式", "时间", "姓名 / 职务", "联系方式"]
+        : [
+            "Organisation",
+            "Research question",
+            "Application",
+            "Technical conditions",
+            "Collaboration interest",
             "Timing",
             "Name / role",
             "Contact information"
@@ -144,8 +162,6 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
       <section className="bg-porcelain py-12 lg:py-16">
         <Container>
           {routes.map((route, index) => {
-            const body = route.fields.map((field) => `${field}: `).join("\r\n\r\n");
-            const mailto = `mailto:${company.businessEmail}?subject=${encodeURIComponent(`Venus Bridge — ${route.title}`)}&body=${encodeURIComponent(body)}`;
             return (
               <article
                 key={route.id}
@@ -158,13 +174,13 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
                     0{index + 1} · {route.audience}
                   </Eyebrow>
                   <h2 className="commercial-heading mt-5">{route.title}</h2>
-                  <a
-                    href={mailto}
-                    className="mt-7 inline-flex min-h-12 items-center bg-ink px-6 py-4 text-sm font-medium text-pearl hover:bg-graphite"
-                    data-enquiry-email={route.id}
-                  >
-                    {zh ? "打开邮件并填写需求" : "Open email with this brief"} →
-                  </a>
+                  <EnquiryEmail
+                    email={company.businessEmail}
+                    title={route.title}
+                    fields={route.fields}
+                    route={route.id}
+                    language={lang}
+                  />
                   <p className="mt-4 max-w-md text-sm leading-7 text-ink/65">
                     {zh
                       ? "此链接打开你的邮件应用，不会自动发送。若无法打开，请复制本页提纲发至下方邮箱或微信。"
