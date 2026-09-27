@@ -87,7 +87,7 @@ const en = {
         text: "Turn a fixed market moment into a coordinated commercial programme."
       },
       {
-        title: "Credibility, Content & Market Assets",
+        title: "Market Credibility & Strategic Communications",
         text: "Create proof and material that remain useful after the live activity."
       }
     ]
@@ -215,7 +215,7 @@ const zh = {
       { title: "市场验证与进入", text: "看清市场格局与机会，在大规模投入前决定应该把钱和时间放在哪里。" },
       { title: "买家、伙伴与行业参与", text: "识别并对接能够推动市场进展的商业关系。" },
       { title: "发布、展会与本地激活", text: "把一个固定市场节点变成前后连贯的商务行动。" },
-      { title: "行业影响力、内容与市场资产", text: "形成在活动之后仍可用于商务沟通和市场推进的证明与内容。" }
+      { title: "市场公信力与战略传播", text: "形成在活动之后仍可用于商务沟通和市场推进的证明与内容。" }
     ]
   },
   company: {

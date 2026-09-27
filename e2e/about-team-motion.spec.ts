@@ -102,7 +102,9 @@ test.describe("About Us geographic story", () => {
     await page.goto("/en/about");
     const visual = page.locator("[data-connection-visual]");
     await visual.scrollIntoViewIfNeeded();
-    await expect(visual).toHaveAttribute("data-globe-stage", /origin|primary/, { timeout: 1800 });
+    // Wait for the observer and animation to start on slower CI renderers before testing pause/resume.
+    await expect(visual).toHaveAttribute("data-globe-paused", "false");
+    await expect(visual).toHaveAttribute("data-globe-stage", /origin|primary/);
     await page.locator('[data-about-chapter="identity"]').scrollIntoViewIfNeeded();
     await expect(visual).toHaveAttribute("data-globe-paused", "true");
     const pausedStage = await visual.getAttribute("data-globe-stage");
@@ -114,6 +116,7 @@ test.describe("About Us geographic story", () => {
       pausedOffset
     );
     await visual.scrollIntoViewIfNeeded();
+    await expect(visual).toHaveAttribute("data-globe-paused", "false");
     await expect(visual).toHaveAttribute("data-globe-stage", "settled", {
       timeout: SETTLED_STAGE_TIMEOUT_MS
     });

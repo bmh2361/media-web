@@ -1,3 +1,5 @@
+import { EuropeanMediaCollaboration } from "@/components/sections/EuropeanMediaCollaboration";
+import { MarketVoiceCoverage } from "@/components/sections/MarketVoiceCoverage";
 import Link from "next/link";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -227,6 +229,8 @@ export function Phase5Homepage({ language }: { language: Language }) {
         </Container>
       </Section>
 
+      <EuropeanMediaCollaboration language={language} />
+
       <Section className="bg-pearl" data-phase5-section="value">
         <Container>
           <div className="grid gap-16 lg:grid-cols-2">
@@ -387,6 +391,8 @@ export function Phase5Homepage({ language }: { language: Language }) {
           </div>
         </Container>
       </Section>
+
+      <MarketVoiceCoverage language={language} />
 
       <Section className="bg-ink text-pearl" data-phase5-section="cta">
         <Container>

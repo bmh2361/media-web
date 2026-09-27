@@ -27,8 +27,8 @@ test("desktop homepage composition remains intentional across large breakpoints"
     await expect(cards).toHaveCount(5);
 
     const geometry = await page.evaluate(() => {
-      const sections = [...document.querySelectorAll("main > section")];
-      const journey = sections[2]!;
+      const section = (name: string) => document.querySelector(`[data-phase5-section="${name}"]`)!;
+      const journey = section("journeys");
       const bodyTops = [...journey.querySelectorAll("[data-home-journey-card] p")].map((body) =>
         Math.round(body.getBoundingClientRect().top)
       );
@@ -36,8 +36,8 @@ test("desktop homepage composition remains intentional across large breakpoints"
         overflow: document.documentElement.scrollWidth - innerWidth,
         journeyHeight: Math.round(journey.getBoundingClientRect().height),
         journeyHeadingWidth: Math.round(journey.querySelector("h2")!.getBoundingClientRect().width),
-        modelHeadingX: Math.round(sections[3]!.querySelector("h2")!.getBoundingClientRect().left),
-        workHeadingX: Math.round(sections[6]!.querySelector("h2")!.getBoundingClientRect().left),
+        modelHeadingX: Math.round(section("model").querySelector("h2")!.getBoundingClientRect().left),
+        workHeadingX: Math.round(section("work").querySelector("h2")!.getBoundingClientRect().left),
         bodyTopSpread: Math.max(...bodyTops) - Math.min(...bodyTops)
       };
     });
@@ -68,11 +68,11 @@ test("mobile and tablet retain the approved homepage composition", async ({ page
 
     await expect(page.locator("[data-home-journey-context]")).toBeHidden();
     const geometry = await page.evaluate(() => {
-      const sections = [...document.querySelectorAll("main > section")];
+      const section = (name: string) => document.querySelector(`[data-phase5-section="${name}"]`)!;
       return {
         overflow: document.documentElement.scrollWidth - innerWidth,
-        modelHeadingX: Math.round(sections[3]!.querySelector("h2")!.getBoundingClientRect().left),
-        workHeadingX: Math.round(sections[6]!.querySelector("h2")!.getBoundingClientRect().left)
+        modelHeadingX: Math.round(section("model").querySelector("h2")!.getBoundingClientRect().left),
+        workHeadingX: Math.round(section("work").querySelector("h2")!.getBoundingClientRect().left)
       };
     });
 

@@ -52,21 +52,24 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
     ? [
         ["理解", "明确商业目标、市场阶段、时间及已经确定的条件。"],
         ["设计", "形成适合当地市场、能够真正推进目标的行动路径。"],
-        ["激活", "启动相关买家、伙伴、行业或专业关系，并统一工作范围。"],
+        [
+          "激活",
+          "启动相关买家、伙伴、行业或专业关系；在与市场目标匹配时，协调编辑与媒体沟通，并统一工作范围。"
+        ],
         ["交付", "管理本地执行、沟通、审批与现场判断。"],
-        ["跟进", "整理商务关系、市场信息、项目资产与下一步行动。"]
+        ["跟进", "整理商务关系、市场信息与获准的公信力资产，支持后续利益相关方沟通与商业推进。"]
       ]
     : [
         ["Understand", "Clarify the commercial goal, market stage, timing and anything already committed."],
         ["Design", "Create a locally relevant route that can move the goal forward."],
         [
           "Activate",
-          "Engage the required buyer, partner, industry or specialist relationships around a clear scope."
+          "Engage the required buyer, partner, industry or specialist relationships around a clear scope, including editorial engagement where it supports the market objective."
         ],
         ["Deliver", "Manage local execution, communication, approvals and live decisions."],
         [
           "Follow Through",
-          "Organise commercial relationships, market learning, project assets and next actions."
+          "Organise commercial relationships, market learning and approved credibility assets for continued stakeholder conversations and commercial follow-through."
         ]
       ];
   const timings = zh

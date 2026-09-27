@@ -1,3 +1,4 @@
+import { marketCredibility } from "@/content/market-credibility";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Eyebrow } from "@/components/ui/Eyebrow";
@@ -31,6 +32,7 @@ const portfolio = (slug: string, category: "hero" | "cover" | "gallery" = "hero"
 
 export function CompaniesJourney({ language }: { language: Language }) {
   const zh = language === "zh";
+  const credibility = marketCredibility[language];
   const situations = zh
     ? [
         ["验证市场", "判断英国或欧洲机会是否值得投入、从哪里开始，以及下一步需要验证什么。"],
@@ -78,11 +80,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
           "展会计划、发布活动、场地、本地团队、现场统筹与利益相关方协调。",
           "把一次市场节点变成完整的商务计划。"
         ],
-        [
-          "行业影响力、内容与市场资产",
-          "在适用时组织专家、高校、创作者、摄影、影片、采访与项目记录。",
-          "留下可用于销售、传播和后续跟进的资产。"
-        ]
+        [credibility.routeTitle, credibility.intro, credibility.outcome]
       ]
     : [
         [
@@ -100,11 +98,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
           "Exhibition planning, launches, venues, local teams, on-site coordination and stakeholder activity.",
           "Turn a market moment into a complete commercial programme."
         ],
-        [
-          "Credibility, Content & Market Assets",
-          "Expert, university or creator engagement where relevant, plus photography, film, interviews and project records.",
-          "Leave with assets that support sales, communications and follow-up."
-        ]
+        [credibility.routeTitle, credibility.intro, credibility.outcome]
       ];
   const benefits = zh
     ? [
@@ -235,14 +229,32 @@ export function CompaniesJourney({ language }: { language: Language }) {
             {solutions.map(([title, scope, value], index) => (
               <article
                 key={title}
+                data-company-route={index + 1}
                 className="border-b border-ink/15 py-8 md:px-8 md:odd:border-r md:odd:pl-0 lg:min-h-80"
               >
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-9 text-2xl font-medium">{title}</h3>
                 <p className="mt-5 max-w-xl text-base leading-7 text-ink/65">{scope}</p>
+                {index === 3 && (
+                  <p className="mt-4 max-w-xl text-sm leading-7 text-ink/65">{credibility.mechanisms}</p>
+                )}
                 <p className="mt-7 border-l border-champagne pl-4 text-sm font-medium leading-6">{value}</p>
               </article>
             ))}
+          </div>
+          <div className="mt-9 border-b border-ink/15 pb-9" data-market-credibility-framework>
+            <h3 className="text-sm font-medium uppercase tracking-editorial text-slate">
+              04 · {credibility.frameworkTitle}
+            </h3>
+            <ol className="mt-6 grid gap-x-12 gap-y-8 md:grid-cols-2">
+              {credibility.framework.map(([title, text], index) => (
+                <li key={title} className="border-t border-ink/15 pt-5">
+                  <p className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</p>
+                  <h4 className="mt-3 text-xl font-medium">{title}</h4>
+                  <p className="mt-3 max-w-xl text-sm leading-7 text-ink/65">{text}</p>
+                </li>
+              ))}
+            </ol>
           </div>
           <div className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-2 text-sm">
             <span className="text-ink/70">{zh ? "查看相关项目" : "See relevant projects"}</span>
@@ -265,7 +277,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
               variant="ghost"
               showArrow
             >
-              {zh ? "品牌与内容" : "Brand & Content"}
+              {zh ? "本地化与市场落地" : "Localisation & Market Activation"}
             </ButtonLink>
           </div>
         </Container>
@@ -381,6 +393,7 @@ export function CompaniesJourney({ language }: { language: Language }) {
 
 export function PartnersJourney({ language }: { language: Language }) {
   const zh = language === "zh";
+  const credibility = marketCredibility[language];
   const types = zh
     ? ["高校与研究人员", "行业专家", "专业服务机构", "创作者与人才", "场地与活动执行", "本地交付团队"]
     : [
@@ -492,6 +505,16 @@ export function PartnersJourney({ language }: { language: Language }) {
                 <h3 className="mt-9 text-xl font-medium">{item}</h3>
               </li>
             ))}
+            <li
+              className="col-span-full grid gap-5 border-b border-ink/15 p-7 md:grid-cols-2 md:gap-12"
+              data-partner-media
+            >
+              <div>
+                <span className="text-xs text-champagne">07</span>
+                <h3 className="mt-9 text-xl font-medium">{credibility.partnerTitle}</h3>
+              </div>
+              <p className="max-w-xl self-end text-sm leading-7 text-ink/65">{credibility.partnerBody}</p>
+            </li>
           </ul>
         </Container>
       </Section>
