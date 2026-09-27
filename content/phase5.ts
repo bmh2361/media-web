@@ -39,7 +39,7 @@ const en = {
   proof: {
     eyebrow: "REAL PROJECTS",
     title: "Serious market activity, delivered on the ground.",
-    body: "Selected UK and European projects showing the brand context and the team’s specific contribution."
+    body: "UK and European projects reflecting our team’s experience in market entry, industry engagement and local execution."
   },
   journeys: {
     eyebrow: "WHEN COMPANIES BRING US IN",
@@ -192,7 +192,7 @@ const zh = {
   proof: {
     eyebrow: "真实项目",
     title: "在真实英国与欧洲市场现场完成工作。",
-    body: "这些英国与欧洲精选项目展示品牌场景，以及团队在其中的具体参与经验。"
+    body: "这些英国与欧洲项目体现团队参与市场进入、产业交流与本地落地的经验。"
   },
   journeys: {
     eyebrow: "企业通常在这些时候找到我们",

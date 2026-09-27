@@ -62,9 +62,9 @@ test("every Work row resolves to exactly one explicit cover", async ({ page }) =
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/en/work");
   const rows = page.locator("[data-case-row]");
-  await expect(rows).toHaveCount(12);
+  await expect(rows).toHaveCount(10);
 
-  for (let index = 0; index < 12; index += 1) {
+  for (let index = 0; index < 10; index += 1) {
     const row = rows.nth(index);
     await row.locator("button").click();
     await expect(row).toHaveAttribute("data-active-case", "true");

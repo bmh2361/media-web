@@ -9,9 +9,7 @@ const caseSlugs = [
   "leapmotor-iaa-2023",
   "london-automotive-brand-film",
   "european-road-lifestyle",
-  "wang-linkai-london-concert",
   "geely-london-brand-launch",
-  "yue-yunpeng-london-live",
   "london-fashion-week-2025",
   "agibot-london-launch",
   "beauty-fashion-brand-content"
@@ -72,11 +70,12 @@ test("case filters and responsive preview keep their interaction contract", asyn
   test.skip(testInfo.project.name === "mobile");
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto("/en/work");
-  await page.getByRole("button", { name: "Brand Localisation & Campaign Content", exact: true }).click();
+  await page.getByRole("button", { name: "Localisation & Market Activation", exact: true }).click();
   await expect(page.locator("[data-case-row]")).toHaveCount(4);
   await expect(page.locator("[data-case-preview]")).toBeVisible();
-  await page.getByRole("button", { name: "Culture, Talent & Brand Experiences", exact: true }).click();
-  await expect(page.locator("[data-case-row]")).toHaveCount(2);
+  await expect(page.getByRole("button", { name: "Culture & Audience Engagement", exact: true })).toHaveCount(
+    0
+  );
 
   await page.setViewportSize({ width: 375, height: 844 });
   await page.goto("/en/work");

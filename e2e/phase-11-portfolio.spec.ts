@@ -7,12 +7,12 @@ test.describe("current portfolio archive", () => {
     await expect(page.locator("body")).not.toContainText(/Xhouse|FrameBridge/i);
     if (testInfo.project.name === "mobile") {
       const rows = page.locator("[data-mobile-case-row]");
-      await expect(rows).toHaveCount(12);
+      await expect(rows).toHaveCount(10);
       await rows.first().getByRole("button").click();
       await expect(rows.first().getByRole("link")).toHaveAttribute("href", /\/en\/work\/[a-z0-9-]+/);
     } else {
       const rows = page.locator("[data-case-row]");
-      await expect(rows).toHaveCount(12);
+      await expect(rows).toHaveCount(10);
       for (const row of await rows.all())
         await expect(row.getByRole("link")).toHaveAttribute("href", /\/en\/work\/[a-z0-9-]+/);
     }
@@ -27,7 +27,7 @@ test.describe("current portfolio archive", () => {
       for (const path of [
         "/en/work",
         "/en/work/changan-europe-launch-2025",
-        "/zh/work/wang-linkai-london-concert",
+        "/zh/work/agibot-london-launch",
         "/en/work/beauty-fashion-brand-content"
       ]) {
         await page.goto(path);

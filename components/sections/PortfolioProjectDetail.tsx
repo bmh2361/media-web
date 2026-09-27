@@ -23,7 +23,6 @@ export function PortfolioProjectDetail({
 }) {
   const zh = language === "zh";
   const next = getNextPortfolioProject(project);
-  const series = project.contentType === "portfolio-series";
   const visibleBlocks = project.layout.filter((block) =>
     block.media.some((id) => id !== project.heroMediaId)
   );
@@ -37,9 +36,14 @@ export function PortfolioProjectDetail({
       <CaseStudyHero project={project} language={language} />
       <div className="bg-porcelain text-ink">
         <section className="container-x py-12 lg:py-16" data-case-section="market">
-          <Narrative eyebrow="01" title={zh ? "项目背景与沟通重点" : "Project Context & Communication Focus"}>
+          <Narrative eyebrow="01" title={zh ? "市场背景" : "The Market Context"}>
             {zh ? project.contextZh : project.contextEn}
           </Narrative>
+          <div className="mt-8">
+            <Narrative eyebrow="02" title={zh ? "客户目标" : "The Client Objective"}>
+              {zh ? project.objectiveZh : project.objectiveEn}
+            </Narrative>
+          </div>
         </section>
 
         <section
@@ -47,22 +51,24 @@ export function PortfolioProjectDetail({
           data-case-section="responsibility"
         >
           <div className="container-x grid gap-8 lg:grid-cols-2 lg:gap-16">
-            <Narrative eyebrow="02" title={zh ? "团队参与与具体内容" : "Team Contribution"}>
+            <Narrative eyebrow="03" title={zh ? "我们的参与" : "Our Role"}>
               {zh ? project.roleStatementZh : project.roleStatementEn}
             </Narrative>
-            <Narrative
-              eyebrow={
-                series
-                  ? zh
-                    ? "独立作品选集"
-                    : "Independent works"
-                  : zh
-                    ? "团队项目经验"
-                    : "Selected team experience"
-              }
-              title={zh ? "本页内容" : "In This Selection"}
-            >
+            <Narrative eyebrow="04" title={zh ? "本地执行" : "Local Execution"}>
               {zh ? project.executionZh : project.executionEn}
+            </Narrative>
+          </div>
+        </section>
+
+        <section className="container-x py-12 lg:py-16" data-case-section="outcome">
+          <div className="border-l-2 border-champagne pl-6 lg:pl-10">
+            <Narrative eyebrow="05" title={zh ? "市场结果" : "Market Outcome"}>
+              {zh ? project.marketOutcomeZh : project.marketOutcomeEn}
+            </Narrative>
+          </div>
+          <div className="mt-10">
+            <Narrative eyebrow="06" title={zh ? "战略意义" : "Why It Matters"}>
+              {zh ? project.strategicRelevanceZh : project.strategicRelevanceEn}
             </Narrative>
           </div>
         </section>
@@ -74,9 +80,7 @@ export function PortfolioProjectDetail({
             aria-label={zh ? "项目影像" : "Project imagery"}
           >
             <div className="container-x space-y-10 lg:space-y-16" data-editorial-media-blocks>
-              <h2 className="text-sm uppercase tracking-editorial">
-                03 · {zh ? "项目影像" : "Project Imagery"}
-              </h2>
+              <h2 className="text-sm uppercase tracking-editorial">{zh ? "市场现场" : "In the Market"}</h2>
               {visibleBlocks.map((block, index) => (
                 <div
                   key={`${block.type}-${index}`}
@@ -92,15 +96,15 @@ export function PortfolioProjectDetail({
         <section className="bg-night py-16 text-pearl lg:py-20" data-case-section="related">
           <div className="container-x">
             <p className="text-xs uppercase tracking-editorial text-pearl/60">
-              04 · {zh ? "下一次合作" : "Your Next Project"}
+              {zh ? "下一次合作" : "Your Next Project"}
             </p>
             <h2 className="editorial-heading mt-6 max-w-[22ch]">
               {zh ? "筹备你的英国或欧洲项目。" : "Plan your next UK or European project."}
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-pearl/75">
               {zh
-                ? "为下一次品牌发布、行业活动或当地传播需求，与 Venus Bridge 讨论活动内容策划、现场内容制作、英国实景协调及本地执行资源。具体职责、合作方与交付按新项目确认。"
-                : "For your next launch, industry event or local communications brief, discuss event content planning, on-site content production, UK locations and local execution resources with Venus Bridge. Responsibilities, collaborators and deliverables are agreed for the new project."}
+                ? "与 Venus Bridge 讨论你的英国与欧洲市场进入计划：从本地定位、产业语境及利益相关方沟通，到合作路径与英国端落地执行。"
+                : "Discuss your UK and European market plans with Venus Bridge: local positioning, industry context, stakeholder engagement, partnership pathways and UK-side execution."}
             </p>
             <div className="mt-8">
               <ButtonLink href={withLanguage("/contact?intent=company", language)} showArrow>
@@ -119,8 +123,8 @@ export function PortfolioProjectDetail({
                 <span className="text-xs uppercase tracking-editorial">
                   {next.contentType === "portfolio-series"
                     ? zh
-                      ? "作品选集"
-                      : "Portfolio series"
+                      ? "本地化经验"
+                      : "Localisation experience"
                     : commercialCaseCategories[next.category][language]}{" "}
                   ↗
                 </span>
@@ -145,8 +149,8 @@ function CaseStudyHero({ project, language }: { project: PortfolioProject; langu
       <p className="text-xs uppercase tracking-editorial text-pearl/70">
         {series
           ? zh
-            ? "独立作品选集"
-            : "Independent works"
+            ? "独立项目经验"
+            : "Independent project experience"
           : commercialCaseCategories[project.category][language]}
       </p>
       {!series ? (
@@ -217,7 +221,7 @@ function CaseStudyHero({ project, language }: { project: PortfolioProject; langu
             ],
             [zh ? "项目类型" : "Project type", zh ? project.projectTypeZh : project.projectTypeEn],
             [
-              zh ? "团队贡献" : "Team contribution",
+              zh ? "我们的参与" : "Our role",
               zh ? project.participationSummaryZh : project.participationSummaryEn
             ]
           ].map(([label, value]) => (

@@ -54,6 +54,6 @@ test.describe("canonical information architecture", () => {
     await expect(page.locator('[data-case-filter="brand-evidence"]')).toHaveAttribute("aria-pressed", "true");
     await expect(page.locator("[data-case-row]")).toHaveCount(4);
     await page.goto("/en/work?category=institutional-talent");
-    await expect(page.locator("[data-case-row]")).toHaveCount(2);
+    await expect(page.locator("[data-case-row]")).toHaveCount(0);
   });
 });

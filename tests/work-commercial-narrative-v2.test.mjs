@@ -29,8 +29,8 @@ const corporate = [
   "agibot-london-launch"
 ];
 
-test("twelve bilingual narratives preserve publication gates and put corporate cases first", () => {
-  assert.equal(projects.length, 12);
+test("ten bilingual narratives preserve publication gates and put corporate cases first", () => {
+  assert.equal(projects.length, 10);
   assert.deepEqual(
     Array.from(projects.slice(0, 6), (p) => p.slug),
     corporate
@@ -60,21 +60,19 @@ test("twelve bilingual narratives preserve publication gates and put corporate c
 });
 
 test("existing scopes stay case-specific and public copy separates contribution from future services", () => {
-  // These twelve historic scopes require project-specific confirmation and sources
-  // before expansion. This fixture does not constrain future projects globally.
+  // Commercial labels retain the same twelve case-specific participation boundaries.
+  // Reframing does not establish additional appointments, introductions or delivery responsibilities.
   const baselineScopes = {
-    "byd-bd11-london": ["visual-documentation", "content-production"],
-    "changan-europe-launch-2025": ["visual-documentation", "content-production"],
-    "geely-london-brand-launch": ["visual-documentation", "content-production"],
-    "catl-open-day-2025": ["visual-documentation", "content-production"],
-    "leapmotor-iaa-2023": ["visual-documentation", "content-production"],
-    "agibot-london-launch": ["visual-documentation", "content-production"],
-    "london-automotive-brand-film": ["location-coordination", "local-production", "content-production"],
-    "wang-linkai-london-concert": ["visual-documentation", "editorial-selection"],
-    "yue-yunpeng-london-live": ["visual-documentation"],
-    "london-fashion-week-2025": ["content-production", "editorial-selection"],
-    "beauty-fashion-brand-content": ["content-production", "editorial-selection"],
-    "european-road-lifestyle": ["content-production", "editorial-selection"]
+    "byd-bd11-london": ["market-facing-presentation", "brand-presentation"],
+    "changan-europe-launch-2025": ["market-facing-presentation", "brand-presentation"],
+    "geely-london-brand-launch": ["market-facing-presentation", "brand-presentation"],
+    "catl-open-day-2025": ["market-facing-presentation", "brand-presentation"],
+    "leapmotor-iaa-2023": ["market-facing-presentation", "brand-presentation"],
+    "agibot-london-launch": ["market-facing-presentation", "brand-presentation"],
+    "london-automotive-brand-film": ["location-coordination", "local-execution", "brand-presentation"],
+    "london-fashion-week-2025": ["brand-presentation", "presentation-selection"],
+    "beauty-fashion-brand-content": ["brand-presentation", "presentation-selection"],
+    "european-road-lifestyle": ["brand-presentation", "presentation-selection"]
   };
   for (const [slug, expected] of Object.entries(baselineScopes)) {
     const p = projects.find((item) => item.slug === slug);
@@ -108,8 +106,8 @@ test("existing scopes stay case-specific and public copy separates contribution 
     /media\.length|caseChallenge\(|Potential use|Relevance to Future Projects|projectValue|continuedValue|capabilities.map/
   );
   assert.match(detail, /Selected team experience/);
-  assert.match(detail, /Independent works/);
-  assert.match(detail, /Responsibilities, collaborators and deliverables are agreed for the new project/);
+  assert.match(detail, /Independent project experience/);
+  assert.match(detail, /partnership pathways and UK-side execution/);
   assert.match(detail, /\/contact\?intent=company/);
   assert.equal((detail.match(/project\.roleStatementEn/g) ?? []).length, 1);
   for (const file of [
@@ -135,17 +133,12 @@ test("titles, event names and genuine dates have distinct purposes", () => {
     Array.from(projects.slice(0, 6), (p) => p.titleZh),
     expected
   );
-  for (const slug of [
-    "wang-linkai-london-concert",
-    "yue-yunpeng-london-live",
-    "london-fashion-week-2025",
-    "leapmotor-iaa-2023"
-  ])
+  for (const slug of ["london-fashion-week-2025", "leapmotor-iaa-2023"])
     assert.equal(projects.find((p) => p.slug === slug).sortDate, undefined);
   assert.match(read("content/portfolio.ts"), /a.sortOrder - b.sortOrder/);
   const work = read("app/[lang]/work/page.tsx");
   assert.ok(work.indexOf("data-work-introduction") < work.indexOf("<PortfolioWork"));
-  assert.match(work, /Chinese companies on UK and European brand projects/);
+  assert.match(work, /Chinese technology and industrial companies/);
 });
 
 test("event identity, series boundaries and cultural taxonomy remain explicit", () => {
@@ -170,14 +163,11 @@ test("event identity, series boundaries and cultural taxonomy remain explicit", 
     projects.find((p) => p.slug === "european-road-lifestyle").titleEn,
     /Programme|Campaign/
   );
-  assert.equal(
-    exports.commercialCaseCategories["institutional-talent"].en,
-    "Culture, Talent & Brand Experiences"
-  );
+  assert.equal(exports.commercialCaseCategories["institutional-talent"].en, "Culture & Audience Engagement");
   const fashion = projects.find((p) => p.slug === "london-fashion-week-2025");
-  assert.match(fashion.titleEn, /Editorial Portraits/);
+  assert.match(fashion.titleEn, /Local Market Expression/);
   assert.match(
     projects.find((p) => p.slug === "london-automotive-brand-film").roleStatementEn,
-    /UK location coordination, local production and automotive visual production/
+    /UK location coordination and on-the-ground support/
   );
 });

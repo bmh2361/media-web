@@ -84,12 +84,12 @@ test("contact uses direct channels without an active submission route", async ()
 test("work detail uses the required truth-gated case structure", async () => {
   const detail = await source("components/sections/PortfolioProjectDetail.tsx");
   for (const marker of [
-    "Project Context & Communication Focus",
-    "In This Selection",
-    "Team Contribution",
-    "Project Imagery",
+    "The Market Context",
+    "Local Execution",
+    "Our Role",
+    "In the Market",
     "Your Next Project",
-    "Responsibilities, collaborators and deliverables are agreed for the new project",
+    "partnership pathways and UK-side execution",
     'data-case-section="related"',
     "Next project"
   ])

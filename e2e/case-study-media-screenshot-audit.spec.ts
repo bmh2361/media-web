@@ -3,11 +3,9 @@ import path from "node:path";
 import { expect, test } from "@playwright/test";
 
 const slugs = [
-  "wang-linkai-london-concert",
   "geely-london-brand-launch",
   "changan-europe-launch-2025",
   "catl-open-day-2025",
-  "yue-yunpeng-london-live",
   "london-fashion-week-2025",
   "leapmotor-iaa-2023",
   "byd-bd11-london",
@@ -33,7 +31,6 @@ test("capture index preview art direction at required widths", async ({ page }, 
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/en/work");
   for (const slug of [
-    "wang-linkai-london-concert",
     "geely-london-brand-launch",
     "changan-europe-launch-2025",
     "catl-open-day-2025",

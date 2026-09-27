@@ -18,13 +18,13 @@ test.describe("scalable commercial case evidence", () => {
       await page.setViewportSize(viewports[0]);
       await page.goto(`/${locale}/work`);
       const rows = page.locator("[data-case-row]");
-      await expect(rows).toHaveCount(12);
+      await expect(rows).toHaveCount(10);
       await expect(page.locator("[data-case-preview]")).toBeVisible();
       await rows.nth(1).hover();
       await expect(page.locator("[data-case-preview]")).toContainText(
         locale === "zh"
-          ? "团队参与品牌介绍与车辆展示的发布现场摄影。"
-          : "Launch photography across the brand presentations and vehicle displays."
+          ? "团队参与长安面向欧洲的品牌与产品呈现，衔接集团布局与当地市场认知。"
+          : "Our team contributed to the European-facing presentation of Changan’s brands and product range."
       );
       await rows.first().getByRole("button").focus();
       await expect(rows.first().getByRole("button")).toBeFocused();
@@ -33,8 +33,7 @@ test.describe("scalable commercial case evidence", () => {
       await expect(rows).toHaveCount(3);
       await expect(rows.first().getByRole("link")).toHaveAttribute("href", `/${locale}/work/byd-bd11-london`);
 
-      await page.locator('[data-case-filter="institutional-talent"]').click();
-      await expect(rows).toHaveCount(2);
+      await expect(page.locator('[data-case-filter="institutional-talent"]')).toHaveCount(0);
       await expect(page.locator("body")).not.toContainText("Cambridge Student-Community Cultural Programme");
 
       await page.setViewportSize(viewports.at(-1)!);

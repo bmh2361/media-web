@@ -2,9 +2,7 @@ import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
 const newSlugs = [
-  "wang-linkai-london-concert",
   "geely-london-brand-launch",
-  "yue-yunpeng-london-live",
   "london-fashion-week-2025",
   "agibot-london-launch",
   "beauty-fashion-brand-content"
@@ -32,14 +30,8 @@ test("new bilingual project pages render every approved image without overflow",
 test("index taxonomy, preview and retired redirects follow the new contract", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
   await page.goto("/zh/work");
-  await expect(page.locator("[data-case-row]")).toHaveCount(12);
-  for (const label of [
-    "全部",
-    "市场进入与品牌发布",
-    "展会与行业交流",
-    "文化、艺人与品牌体验",
-    "品牌本地化与传播内容"
-  ])
+  await expect(page.locator("[data-case-row]")).toHaveCount(10);
+  for (const label of ["全部", "市场进入与发布", "产业与生态交流", "本地化与市场落地"])
     await expect(page.getByRole("button", { name: label, exact: true })).toBeVisible();
   await expect(page.locator("[data-case-preview] img")).toBeVisible();
   const accessibility = await new AxeBuilder({ page: page as never }).include("main").analyze();

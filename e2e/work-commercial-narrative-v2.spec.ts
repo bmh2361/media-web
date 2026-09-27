@@ -8,15 +8,13 @@ const slugs = [
   "leapmotor-iaa-2023",
   "agibot-london-launch",
   "london-automotive-brand-film",
-  "wang-linkai-london-concert",
-  "yue-yunpeng-london-live",
   "london-fashion-week-2025",
   "beauty-fashion-brand-content",
   "european-road-lifestyle"
 ];
 
 for (const language of ["en", "zh"]) {
-  test(`${language}: all twelve narratives, metadata, imagery and next-project links`, async ({
+  test(`${language}: all ten narratives, metadata, imagery and next-project links`, async ({
     page
   }, testInfo) => {
     test.setTimeout(240000);
@@ -37,15 +35,26 @@ for (const language of ["en", "zh"]) {
           `/${language === "zh" ? "en" : "zh"}/work/${slug}`
         );
         await expect(page.locator("main")).not.toContainText(
-          /Potential use|Relevance to Future Projects|事件文档|将于\s*2025/
+          /photograph|videograph|filming|content (?:capture|production|documentation)|event documentation|摄影|拍摄|影视制作|作品集|Potential use|事件文档/i
         );
+        for (const heading of language === "zh"
+          ? ["市场背景", "客户目标", "我们的参与", "本地执行", "市场结果", "战略意义"]
+          : [
+              "The Market Context",
+              "The Client Objective",
+              "Our Role",
+              "Local Execution",
+              "Market Outcome",
+              "Why It Matters"
+            ])
+          await expect(page.getByRole("heading", { name: heading, exact: true })).toBeVisible();
         const positions = await page
           .locator(
             '[data-case-section="market"], [data-case-section="responsibility"], [data-case-section="visual-evidence"], [data-case-section="related"]'
           )
           .evaluateAll((nodes) => nodes.map((n) => n.getBoundingClientRect().top));
         expect(positions).toEqual([...positions].sort((a, b) => a - b));
-        for (const section of ["market", "responsibility", "visual-evidence", "related"])
+        for (const section of ["market", "responsibility", "outcome", "visual-evidence", "related"])
           await expect(page.locator(`[data-case-section="${section}"]`)).toBeVisible();
         await expect(page.locator('[data-case-section="responsibility"]')).not.toContainText(
           /\d+ (approved public project images|张获准)/
@@ -60,6 +69,9 @@ for (const language of ["en", "zh"]) {
             new RegExp(`/${locale.slice(0, 2)}/work/${slug}$`)
           );
         const description = await page.locator('meta[name="description"]').getAttribute("content");
+        expect(description).not.toMatch(/photograph|videograph|filming|摄影|拍摄/i);
+        for (const image of await page.locator("main img").all())
+          expect(await image.getAttribute("alt")).not.toMatch(/photograph|videograph|filming|摄影|拍摄/i);
         await expect(page.locator('meta[property="og:description"]')).toHaveAttribute(
           "content",
           description!
@@ -84,11 +96,17 @@ for (const language of ["en", "zh"]) {
             () => document.documentElement.scrollWidth - document.documentElement.clientWidth
           )
         ).toBeLessThanOrEqual(1);
-        if (["changan-europe-launch-2025", "beauty-fashion-brand-content"].includes(slug))
+        if (["byd-bd11-london", "catl-open-day-2025", "agibot-london-launch"].includes(slug)) {
+          await page.evaluate(() => {
+            if (document.activeElement instanceof HTMLElement) document.activeElement.blur();
+            window.scrollTo({ top: 0, behavior: "instant" });
+          });
+          await page.waitForTimeout(400);
           await page.screenshot({
-            path: testInfo.outputPath(`${language}-${width}-${slug}.png`),
+            path: `audit/market-repositioning/screenshots/${language}-${width}-${slug}.png`,
             fullPage: true
           });
+        }
       }
     }
     expect(errors).toEqual([]);
@@ -97,13 +115,13 @@ for (const language of ["en", "zh"]) {
   test(`${language}: category filters, visible contribution and cooperation CTA`, async ({
     page
   }, testInfo) => {
+    await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto(`/${language}/work`);
     const mobile = testInfo.project.name === "mobile";
     for (const [category, count] of [
-      ["all", 12],
+      ["all", 10],
       ["market-presence", 3],
       ["industry-credibility", 3],
-      ["institutional-talent", 2],
       ["brand-evidence", 4]
     ] as const) {
       const filter = page.locator(`[data-case-filter="${category}"]`);
@@ -111,7 +129,10 @@ for (const language of ["en", "zh"]) {
       await expect(filter).toHaveAttribute("aria-pressed", "true");
       await expect(page.locator(mobile ? "[data-mobile-case-row]" : "[data-case-row]")).toHaveCount(count);
       await expect(page.locator(mobile ? "[data-mobile-case-meta]" : "[data-case-preview]")).toContainText(
-        language === "zh" ? "团队贡献" : "Team contribution"
+        language === "zh" ? "我们的参与" : "Our role"
+      );
+      await expect(page.locator(mobile ? "[data-mobile-case-meta]" : "[data-case-preview]")).toContainText(
+        language === "zh" ? "市场结果" : "Market outcome"
       );
     }
     await expect(page.locator("[data-work-opportunity] a")).toHaveAttribute(
@@ -121,6 +142,22 @@ for (const language of ["en", "zh"]) {
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
     ).toBeLessThanOrEqual(1);
-    await page.screenshot({ path: testInfo.outputPath(`${language}-work.png`), fullPage: true });
+    await page.locator('[data-case-filter="all"]').click();
+    await expect(
+      page.locator(mobile ? "[data-mobile-case-meta]" : "[data-case-preview] article")
+    ).toHaveCount(1);
+    await page.evaluate(() => document.fonts.ready);
+    await expect(page.locator("main")).not.toContainText(/photograph|videograph|filming|摄影|拍摄|作品集/i);
+    // Capture the initial overview after interaction checks, with no outgoing preview or sticky-header scroll state.
+    await page.goto(`/${language}/work`);
+    await expect(
+      page.locator(mobile ? "[data-mobile-case-meta]" : "[data-case-preview] article")
+    ).toHaveCount(1);
+    await page.evaluate(() => document.fonts.ready);
+    await page.waitForTimeout(400);
+    await page.screenshot({
+      path: `audit/market-repositioning/screenshots/${language}-${mobile ? 390 : 1440}-work.png`,
+      fullPage: true
+    });
   });
 }

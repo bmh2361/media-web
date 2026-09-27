@@ -11,7 +11,7 @@ test("one canonical dataset governs case publication, order, categories and rela
   assert.match(portfolio, /sortOrder: commercialOrder\.indexOf\(spec\.slug\) \+ 1/);
   assert.match(portfolio, /evidenceLevel/);
   assert.match(portfolio, /scope: CaseScope\[\]/);
-  assert.match(portfolio, /publicStatus: "published"/);
+  assert.match(portfolio, /publicStatus: spec.publicStatus \?\? "published"/);
   assert.match(portfolio, /evidenceStatus === "verified"/);
   assert.match(portfolio, /websiteUseApproved/);
   assert.match(portfolio, /publishedPortfolioProjects/);

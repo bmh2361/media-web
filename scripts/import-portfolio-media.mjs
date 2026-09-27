@@ -181,13 +181,13 @@ const alt = {
     "Visitors viewing a Leapmotor vehicle at the exhibition."
   ],
   "london-automotive-brand-film": [
-    "London street frame with a red bus from an automotive brand film.",
+    "A red bus on a London street.",
     "Aerial view of an automotive gathering in the English countryside.",
     "Interview subject standing beside an electric vehicle.",
     "Aerial city view used within the London automotive story.",
     "Aerial view of vehicles and a painted venue building.",
     "Electric vehicle driving through a London street.",
-    "Vehicle travelling along a rural road in an aerial film frame."
+    "Aerial view of a vehicle travelling along a rural road."
   ],
   "european-road-lifestyle": [
     "Performance car travelling on an open European road.",
@@ -238,7 +238,7 @@ const altZh = {
   "byd-bd11-london": "伦敦 BYD BD11 双层公交车发布活动现场。",
   "changan-europe-launch-2025": "美因茨长安汽车欧洲品牌发布活动现场。",
   "leapmotor-iaa-2023": "慕尼黑 IAA Mobility 2023 零跑汽车展会现场。",
-  "london-automotive-brand-film": "伦敦汽车品牌故事影片现场画面。",
+  "london-automotive-brand-film": "英国汽车品牌本地化项目中的车辆与当地环境。",
   "european-road-lifestyle": "欧洲道路与城市汽车生活方式影像。",
   "teal-editorial-series": "青绿色造型与城市建筑结合的时尚编辑影像。",
   "commercial-fashion-styling": "服装廓形与造型清晰可见的商业时尚影像。",

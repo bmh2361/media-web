@@ -17,13 +17,13 @@ test.describe("current motion correction", () => {
     const preview = page.locator("[data-case-preview]");
     await page.locator('[data-case-row="changan-europe-launch-2025"]').hover();
     await expect(preview).toContainText(
-      "Launch photography across the brand presentations and vehicle displays."
+      "Our team contributed to the European-facing presentation of Changan’s brands and product range."
     );
     const catl = page.locator('[data-case-row="catl-open-day-2025"] button');
     await catl.focus();
     await expect(catl).toBeFocused();
     await expect(preview).toContainText(
-      "Event photography of speakers, technical material and the audience setting."
+      "Our team supported CATL’s technology presentation within Munich’s European mobility industry context."
     );
   });
 
@@ -37,7 +37,7 @@ test.describe("current motion correction", () => {
   test("mobile archive has rows without a hover preview", async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto("/en/work");
-    await expect(page.locator("[data-mobile-case-row]")).toHaveCount(12);
+    await expect(page.locator("[data-mobile-case-row]")).toHaveCount(10);
     await expect(page.locator("[data-case-preview]")).toBeHidden();
     expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth)).toBeLessThanOrEqual(
       1

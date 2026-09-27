@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     description: [
       lang === "zh" ? project.commercialObjectiveZh : project.commercialObjectiveEn,
       lang === "zh" ? project.participationSummaryZh : project.participationSummaryEn,
+      lang === "zh" ? project.marketOutcomeZh : project.marketOutcomeEn,
       project.location
     ]
       .filter(Boolean)
@@ -48,6 +49,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string;
   const description = [
     lang === "zh" ? project.commercialObjectiveZh : project.commercialObjectiveEn,
     lang === "zh" ? project.participationSummaryZh : project.participationSummaryEn,
+    lang === "zh" ? project.marketOutcomeZh : project.marketOutcomeEn,
     project.location
   ]
     .filter(Boolean)

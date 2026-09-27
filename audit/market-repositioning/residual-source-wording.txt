@@ -1,0 +1,959 @@
+app/[lang]/for-agencies/page.tsx:19:      "London local production team",
+app/[lang]/industries/automotive/page.tsx:47:        ? ["发布活动摄影", "舞台与演讲记录", "嘉宾与车辆互动"]
+app/[lang]/industries/automotive/page.tsx:48:        : ["Launch photography", "Stage and speaker capture", "Guest and vehicle interaction"]
+app/[lang]/industries/automotive/page.tsx:62:        ? "在英国或欧洲城市、公路与生活方式环境中拍摄车辆与地点之间的关系。"
+app/[lang]/industries/automotive/page.tsx:65:        ? ["道路影像", "城市环境", "现场车辆拍摄"]
+app/[lang]/industries/automotive/page.tsx:71:        ? "将展台、产品、演讲、采访与观众互动纳入一套有序的现场拍摄计划。"
+app/[lang]/industries/automotive/page.tsx:74:        ? ["展会摄影", "采访与主持", "社交与公关素材"]
+app/[lang]/industries/automotive/page.tsx:75:        : ["Exhibition photography", "Interview and presenter content", "Social and press assets"]
+app/[lang]/industries/automotive/page.tsx:189:                  "摄影与视频",
+app/[lang]/industries/automotive/page.tsx:201:                  "Photography and video",
+app/[lang]/industries/automotive/page.tsx:203:                  "Multi-city local production",
+app/[lang]/industries/fashion-beauty-apparel/page.tsx:27:        ? "在伦敦统筹时尚、美妆与服装广告拍摄、模特选角、妆发造型、场地、社交内容与中英双语英国制作。"
+app/[lang]/services/page.tsx:16:        : "Brand and localisation, launch and activation, creative production and UK local delivery."
+audit/case-study-media-presentation/source-media-inventory.md:11:| 2026王琳凯(小鬼)伦敦演唱会/live-performer-stage-01.jpg  |    958×1438 | 0.666 | portrait    | Wang Linkai photographed from the stage during the London concert.  |
+audit/case-study-media-presentation/source-media-inventory.md:108:| 美妆和服装产品/beauty-product-editorial-02.jpg  |   1080×1580 | 0.684 | portrait    | Footwear product editorial photographed against a blue background. |
+audit/final-prelaunch/rendered-route-audit.json:2334:      "description": "A reusable visual record of a London live performance — Venus Bridge handled live-event photography and editorial image selection within the London performance setting. — London, UK",
+audit/final-prelaunch/rendered-route-audit.json:2378:      "description": "A reusable visual record of a London live performance — Venus Bridge handled live-event photography and editorial image selection within the London performance setting. — London, UK",
+audit/final-prelaunch/rendered-route-audit.json:2425:      "description": "A reusable visual record of a London live performance — Venus Bridge handled live-event photography and editorial image selection within the London performance setting. — London, UK",
+audit/final-prelaunch/rendered-route-audit.json:3669:      "description": "A selected view of beauty, product, fashion and retail-content capability — This capability selection brings together photography and visual-content curation across beauty, product, fashion and retail formats. — UK",
+audit/final-prelaunch/rendered-route-audit.json:3680:        "Content production and selection",
+audit/final-prelaunch/rendered-route-audit.json:3713:      "description": "A selected view of beauty, product, fashion and retail-content capability — This capability selection brings together photography and visual-content curation across beauty, product, fashion and retail formats. — UK",
+audit/final-prelaunch/rendered-route-audit.json:3724:        "Content production and selection",
+audit/final-prelaunch/rendered-route-audit.json:3760:      "description": "A selected view of beauty, product, fashion and retail-content capability — This capability selection brings together photography and visual-content curation across beauty, product, fashion and retail formats. — UK",
+audit/final-prelaunch/rendered-route-audit.json:3771:        "Content production and selection",
+audit/final-prelaunch/rendered-route-audit.json:3804:      "description": "A selected programme of European automotive brand assets — This capability selection brings together automotive photography and on-location image making across European road and city settings. — Europe",
+audit/final-prelaunch/rendered-route-audit.json:3815:        "Content production and selection",
+audit/final-prelaunch/rendered-route-audit.json:3848:      "description": "A selected programme of European automotive brand assets — This capability selection brings together automotive photography and on-location image making across European road and city settings. — Europe",
+audit/final-prelaunch/rendered-route-audit.json:3859:        "Content production and selection",
+audit/final-prelaunch/rendered-route-audit.json:3892:      "description": "A selected programme of European automotive brand assets — This capability selection brings together automotive photography and on-location image making across European road and city settings. — Europe",
+audit/final-prelaunch/rendered-route-audit.json:3903:        "Content production and selection",
+audit/final-prelaunch/rendered-route-audit.json:6398:      "description": "伦敦本地化国际品牌证据 — Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。 — London and England, UK",
+audit/final-prelaunch/rendered-route-audit.json:6442:      "description": "伦敦本地化国际品牌证据 — Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。 — London and England, UK",
+audit/final-prelaunch/rendered-route-audit.json:6489:      "description": "伦敦本地化国际品牌证据 — Venus Bridge 协调英国实景，并在伦敦街道、人物采访、车辆行驶与乡村场景中完成汽车影像制作。 — London and England, UK",
+audit/final-prelaunch/rendered-route-audit.json:6533:      "description": "集中展示美妆、产品、时尚与零售内容能力 — 本能力选集汇集美妆、产品、时尚与零售形式中的摄影及视觉内容筛选。 — UK",
+audit/final-prelaunch/rendered-route-audit.json:6577:      "description": "集中展示美妆、产品、时尚与零售内容能力 — 本能力选集汇集美妆、产品、时尚与零售形式中的摄影及视觉内容筛选。 — UK",
+audit/final-prelaunch/rendered-route-audit.json:6624:      "description": "集中展示美妆、产品、时尚与零售内容能力 — 本能力选集汇集美妆、产品、时尚与零售形式中的摄影及视觉内容筛选。 — UK",
+audit/final-prelaunch/rendered-route-audit.json:6668:      "description": "欧洲汽车品牌资产精选项目 — 本能力选集汇集欧洲公路与城市环境中的汽车摄影及实景影像创作。 — Europe",
+audit/final-prelaunch/rendered-route-audit.json:6712:      "description": "欧洲汽车品牌资产精选项目 — 本能力选集汇集欧洲公路与城市环境中的汽车摄影及实景影像创作。 — Europe",
+audit/final-prelaunch/rendered-route-audit.json:6759:      "description": "欧洲汽车品牌资产精选项目 — 本能力选集汇集欧洲公路与城市环境中的汽车摄影及实景影像创作。 — Europe",
+audit/motion-correction/reference-browser-audit.json:5:    "status": "Builders Club – Creative Production Studio",
+audit/phase-14-browser/after-matrix.json:124:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:150:    "title": "Venus Bridge Media | UK Creative Production & Local Execution",
+audit/phase-14-browser/after-matrix.json:270:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:278:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:438:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:536:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:636:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:950:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/after-matrix.json:966:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:974:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:998:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:1014:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/after-matrix.json:1396:    "title": "About Us | Venus Bridge Media — London Creative Production",
+audit/phase-14-browser/after-matrix.json:2908:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/after-matrix.json:2924:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/after-matrix.json:2956:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/after-matrix.json:3242:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:3268:    "title": "Venus Bridge Media | UK Creative Production & Local Execution",
+audit/phase-14-browser/after-matrix.json:3388:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:3396:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:3556:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:3659:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:3759:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:4078:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/after-matrix.json:4094:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:4102:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:4126:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:4142:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/after-matrix.json:4524:    "title": "About Us | Venus Bridge Media — London Creative Production",
+audit/phase-14-browser/after-matrix.json:6061:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/after-matrix.json:6077:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/after-matrix.json:6109:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/after-matrix.json:6395:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:6421:    "title": "Venus Bridge Media | UK Creative Production & Local Execution",
+audit/phase-14-browser/after-matrix.json:6551:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:6559:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:6719:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:6822:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:6922:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:7231:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/after-matrix.json:7247:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:7255:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:7279:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:7295:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/after-matrix.json:7672:    "title": "About Us | Venus Bridge Media — London Creative Production",
+audit/phase-14-browser/after-matrix.json:9184:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/after-matrix.json:9200:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/after-matrix.json:9232:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/after-matrix.json:9518:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:9544:    "title": "Venus Bridge Media | UK Creative Production & Local Execution",
+audit/phase-14-browser/after-matrix.json:9669:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:9677:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:9842:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:9945:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:10045:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:10364:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/after-matrix.json:10380:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:10388:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:10412:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:10428:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/after-matrix.json:10810:    "title": "About Us | Venus Bridge Media — London Creative Production",
+audit/phase-14-browser/after-matrix.json:12352:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/after-matrix.json:12368:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/after-matrix.json:12400:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/after-matrix.json:12686:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:12712:    "title": "Venus Bridge Media | UK Creative Production & Local Execution",
+audit/phase-14-browser/after-matrix.json:12837:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:12845:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:13005:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:13108:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:13213:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:13532:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/after-matrix.json:13548:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:13556:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:13580:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:13596:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/after-matrix.json:13973:    "title": "About Us | Venus Bridge Media — London Creative Production",
+audit/phase-14-browser/after-matrix.json:15510:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/after-matrix.json:15526:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/after-matrix.json:15558:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/after-matrix.json:15849:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:15875:    "title": "Venus Bridge Media | UK Creative Production & Local Execution",
+audit/phase-14-browser/after-matrix.json:16000:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:16008:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:16173:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:16276:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:16376:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/after-matrix.json:16700:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/after-matrix.json:16716:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/after-matrix.json:16724:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/after-matrix.json:16748:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/after-matrix.json:16764:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/after-matrix.json:17151:    "title": "About Us | Venus Bridge Media — London Creative Production",
+audit/phase-14-browser/after-matrix.json:18688:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/after-matrix.json:18704:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/after-matrix.json:18736:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/before-matrix.json:135:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:315:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:495:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:675:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:855:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:1035:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:1525:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:1539:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:1689:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:1703:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:1853:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:1867:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:2017:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:2031:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:2181:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:2195:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:2345:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:2359:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:2551:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:2729:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:2907:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:3085:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:3263:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:3441:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:3577:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:3671:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:3765:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:3859:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:3953:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:4047:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:4169:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:4291:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:4413:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:4535:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:4657:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:4779:        "alt": "An artist photographed outdoors in an editorial composition.",
+audit/phase-14-browser/before-matrix.json:6337:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/before-matrix.json:6365:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:6379:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:6421:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:6449:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/before-matrix.json:6529:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/before-matrix.json:6557:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:6571:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:6613:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:6641:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/before-matrix.json:6721:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/before-matrix.json:6749:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:6763:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:6805:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:6833:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/before-matrix.json:6913:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/before-matrix.json:6941:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:6955:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:6997:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:7025:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/before-matrix.json:7105:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/before-matrix.json:7133:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:7147:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:7189:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:7217:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/before-matrix.json:7297:        "alt": "An artist photographed in a dramatic live-performance setting.",
+audit/phase-14-browser/before-matrix.json:7325:        "alt": "A live performer photographed under stage lighting.",
+audit/phase-14-browser/before-matrix.json:7339:        "alt": "A creator in striped apparel photographed for editorial content.",
+audit/phase-14-browser/before-matrix.json:7381:        "alt": "A cast photographed during a UK location production.",
+audit/phase-14-browser/before-matrix.json:7409:        "alt": "Performers and attendees gathered for a live event photograph.",
+audit/phase-14-browser/before-matrix.json:20291:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/before-matrix.json:20319:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/before-matrix.json:20375:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/before-matrix.json:20483:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/before-matrix.json:20511:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/before-matrix.json:20567:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/before-matrix.json:20675:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/before-matrix.json:20703:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/before-matrix.json:20759:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/before-matrix.json:20869:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/before-matrix.json:20897:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/before-matrix.json:20953:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/before-matrix.json:21061:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/before-matrix.json:21089:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/before-matrix.json:21145:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-14-browser/before-matrix.json:21253:        "alt": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+audit/phase-14-browser/before-matrix.json:21281:        "alt": "舞台灯光下拍摄的现场表演者。",
+audit/phase-14-browser/before-matrix.json:21337:        "alt": "英国外景制作期间拍摄的演员群像。",
+audit/phase-3-2c/pre-implementation/public-media-inventory.json:4:  "reviewSourcePhotographs": 107,
+audit/route-report.json:37:      "description": "From models, campaign photography and brand films to research collaboration, technology showcases and exhibition delivery, we coordinate the people, production and on-the-ground execution in the UK.",
+audit/route-report.json:63:      "description": "从海外模特、商业摄影和品牌视频，到科研资源协作、科技展会与媒体传播，由中英双语团队统筹英国本地执行。",
+audit/route-report.json:171:      "description": "从创意理解、选角与现场制作，到使用权规划及成片交付，统一管理英国拍摄流程。",
+audit/route-report.json:227:      "description": "我们根据品牌项目需求，匹配适合的模特、演员、主持人、达人、妆造师、摄影摄像与制作团队。",
+audit/route-report.json:313:      "description": "We coordinate the format, contributors, venue production and communication assets—not simply event photography.",
+audit/route-report.json:343:      "description": "服务范围不仅是活动摄影，还包括形式策划、嘉宾、场地制作、舞台视听、现场流程与会后传播。",
+audit/route-report.json:373:      "description": "We support agencies with local production, talent, styling, photography, video, event coverage and bilingual coordination across the UK.",
+audit/route-report.json:399:      "description": "我们为媒体、广告、公关和MCN团队提供英国本地拍摄、模特达人、妆造造型、摄影摄像、活动内容和中英双语执行支持。",
+audit/route-report.json:971:      "description": "用于说明如何整合车辆进场、主持人准备、动态拍摄与天气预案的概念项目模式。",
+components/globe/VenusGlobeVisual.tsx:21:    camera: 2900
+components/globe/VenusGlobeVisual.tsx:23:  mobile: { cycle: 11000, origin: 250, primary: 900, london: 3800, europe: 4200, settled: 5900, camera: 2250 }
+components/globe/VenusGlobeVisual.tsx:80:  const cameraElapsedRef = useRef(0);
+components/globe/VenusGlobeVisual.tsx:169:      cameraElapsedRef.current = Math.min(timing.camera, cameraElapsedRef.current + delta);
+components/globe/VenusGlobeVisual.tsx:170:      const cameraProgress = easeOutCubic(cameraElapsedRef.current / timing.camera);
+components/globe/VenusGlobeVisual.tsx:171:      const driftProgress = Math.max(0, cameraProgress - 0.92) / 0.08;
+components/globe/VenusGlobeVisual.tsx:173:        phi: globeView.phi - (1 - cameraProgress) * 0.045 + Math.sin(time / 22000) * 0.007 * driftProgress,
+components/globe/VenusGlobeVisual.tsx:175:          globeView.theta + (1 - cameraProgress) * 0.012 + Math.sin(time / 31000) * 0.0025 * driftProgress
+components/sections/CapabilityExpertisePages.tsx:49:            ? "围绕演出、舞台和伦敦内容，提供演唱会摄影、现场表演记录、经批准的后台内容、社交优先精选与活动文档。图片仅说明视觉与制作能力，不代表官方身份或艺人管理关系。"
+components/sections/CapabilityExpertisePages.tsx:50:            : "Concert photography, stage content, live-performance capture, approved backstage content, tour and London content, social-first selects and event documentation. Visuals demonstrate capability, not official status or artist management."
+components/sections/CapabilityExpertisePages.tsx:54:            ? ["演唱会与舞台摄影", "现场表演记录", "社交优先精选", "活动文档"]
+components/sections/CapabilityExpertisePages.tsx:56:                "Concert photography",
+components/sections/CapabilityExpertisePages.tsx:59:                "Event documentation"
+components/sections/CapabilityExpertisePages.tsx:90:            ? "为艺人、创作者和编辑式对谈规划长内容与社交短版；按项目范围协调摄影、灯光与收音。群像只用于说明外景制作或演员协同，不作为采访证据。"
+components/sections/CapabilityExpertisePages.tsx:91:            : "Artist and creator interviews, editorial conversations, long-form content and social cutdowns, with camera, lighting and sound coordination where included. Group location imagery is not presented as interview evidence."
+components/sections/CapabilityExpertisePages.tsx:95:            ? ["艺人与创作者采访", "编辑式对谈", "长内容与社交短版", "摄影、灯光与收音"]
+components/sections/CapabilityExpertisePages.tsx:100:                "Camera, light and sound"
+components/sections/CapabilityExpertisePages.tsx:135:            ? "为演出、文化活动、粉丝活动、创作者活动和媒体区域协调现场采访、摄影、视频与本地执行。核心视觉不使用汽车或纯行业会议画面。"
+components/sections/CapabilityExpertisePages.tsx:136:            : "Concerts, cultural events, fan and creator events, media areas, live interviews, photography, video and local coordination, using entertainment-relevant visual evidence."
+components/sections/CapabilityExpertisePages.tsx:140:            ? ["演出与文化活动", "粉丝与创作者活动", "现场采访", "摄影、视频与本地协调"]
+components/sections/CapabilityExpertisePages.tsx:231:            ? "支持产品发布、科技展示、展览、演示拍摄、演讲内容、相关方活动与创新路演，并与“英国发布与现场执行”路径衔接。"
+components/sections/CapabilityExpertisePages.tsx:236:            ? ["产品发布", "科技展示与展览", "演示拍摄", "演讲与相关方活动"]
+components/sections/CommercialArchitecturePages.tsx:111:              { en: "Local production and approval flow", zh: "本地制作与审批流程" }
+components/sections/CommercialArchitecturePages.tsx:127:                en: "Content planning and local production",
+components/sections/ContactForm.tsx:38:  "local-production": { en: "Local production support", zh: "英国本地制作支持" }
+components/sections/ContactForm.tsx:43:    ["shootDays", "Number of shoot days", "拍摄天数", "number"],
+components/sections/ContactForm.tsx:51:    ["shootDays", "Number of shoot days", "拍摄天数", "number"],
+components/sections/ContactForm.tsx:69:    ["filmingEvent", "Filming or event requirement", "拍摄或活动需求", "text"]
+components/sections/ContactForm.tsx:76:    ["mediaContent", "Photography or video requirement", "摄影或视频需求", "text"],
+components/sections/ContactForm.tsx:83:    ["localScope", "Local production scope", "本地制作范围", "text"],
+components/sections/ContactForm.tsx:509:            <option value="photography">{zh ? "摄影" : "Photography"}</option>
+components/sections/ContactForm.tsx:511:            <option value="mixed">{zh ? "图片与视频" : "Photography and video"}</option>
+components/sections/InformationArchitecturePages.tsx:49:            : "Creative production, talent, live delivery, local execution and bilingual coordination in one project system."
+components/sections/Phase3Capabilities.tsx:79:        : "London setting · vehicle presentation · event documentation",
+components/sections/Phase3Capabilities.tsx:112:      meta: zh ? "专业议题 · 现场受众 · 内容记录" : "Industry topic · live audience · content documentation",
+components/sections/Phase3Capabilities.tsx:366:                  ? "把行业活动、专业对谈与创作者合作，转化为能够继续服务品牌沟通的影片、摄影、访谈与社交内容。"
+components/sections/Phase3Capabilities.tsx:367:                  : "Turn industry activity, expert conversations and creator collaborations into film, photography, interviews and social content that keep working for the brand."}
+components/sections/Phase5AudiencePages.tsx:83:          "在适用时组织专家、高校、创作者、摄影、影片、采访与项目记录。",
+components/sections/Phase5AudiencePages.tsx:105:          "Expert, university or creator engagement where relevant, plus photography, film, interviews and project records.",
+components/sections/experiences/CommercialProductionExperience.tsx:66:                ? "正式发布前需要替换为已获授权的作品集影片、海报与字幕文件；页面不会自动播放声音。"
+components/sections/experiences/EventsExhibitionsExperience.tsx:92:            eyebrow={zh ? "多机位内容系统" : "Multi-camera content system"}
+components/sections/experiences/EventsExhibitionsExperience.tsx:95:                ? "把舞台、观众、访谈与展区纳入同一拍摄计划。"
+components/sections/experiences/EventsExhibitionsExperience.tsx:229:                  "摄影、视频与会后素材交接"
+components/sections/experiences/EventsExhibitionsExperience.tsx:236:                  "Photography, video and asset handoff"
+components/sections/experiences/TalentExperience.tsx:17:        "Language and on-camera expression",
+content/capability-media.generated.json:293:      "altEn": "A live performer photographed under stage lighting.",
+content/capability-media.generated.json:294:      "altZh": "舞台灯光下拍摄的现场表演者。",
+content/capability-media.generated.json:446:      "altEn": "Performers and attendees gathered for a live event photograph.",
+content/capability-media.generated.json:548:      "altEn": "A creator in striped apparel photographed for editorial content.",
+content/capability-media.generated.json:650:      "altEn": "A creator photographed beside a car on a city street.",
+content/capability-media.generated.json:651:      "altZh": "城市街道上在汽车旁拍摄的创作者。",
+content/capability-media.generated.json:905:      "altEn": "A fashion retail display photographed as commercial content.",
+content/capability-media.generated.json:906:      "altZh": "作为商业内容拍摄的时尚零售陈列。",
+content/capability-media.generated.json:1003:      "altEn": "An artist photographed in a dramatic live-performance setting.",
+content/capability-media.generated.json:1004:      "altZh": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+content/capability-media.generated.json:1050:      "altEn": "An artist photographed outdoors in an editorial composition.",
+content/capability-media.generated.json:1097:      "altEn": "An artist photographed in a fashion-led editorial setting.",
+content/capability-media.generated.json:1098:      "altZh": "时尚导向编辑场景中拍摄的艺人。",
+content/capability-media.generated.json:1144:      "altEn": "A cast photographed during a UK location production.",
+content/capability-media.generated.json:1145:      "altZh": "英国外景制作期间拍摄的演员群像。",
+content/cases/index.ts:88:      l("Capture permissions and edit selection route", "拍摄许可与素材筛选路径")
+content/cases/index.ts:96:      l("Event stills", "活动摄影"),
+content/cases/index.ts:105:        "Venue access windows and guest photography consent must be agreed before the capture plan is locked.",
+content/cases/index.ts:106:        "确定拍摄方案前，须确认场地进场窗口及嘉宾拍摄同意。"
+content/cases/index.ts:133:      "季节系列需要在不增加拍摄天数的前提下，利用英国场景和模特兼顾编辑图片与付费社媒素材。"
+content/cases/index.ts:149:      "Venus Bridge 可将需求转化为选角标准、造型审批、场地备选、拍摄顺序及交付规格。"
+content/cases/index.ts:154:      l("Stills and motion shot order", "图片与视频拍摄顺序")
+content/cases/index.ts:202:      "Build an approval route for product terminology, interface capture and expert interview answers before filming.",
+content/cases/index.ts:203:      "在拍摄前建立产品术语、界面录制和专家访谈回答的审核路径。"
+content/cases/index.ts:241:    location: l("UK studio or client-approved workspace", "英国摄影棚或经客户确认的工作场地"),
+content/cases/index.ts:329:      "用于说明如何整合车辆进场、主持人准备、动态拍摄与天气预案的概念项目模式。"
+content/cases/index.ts:336:      "A vehicle launch needs moving and static coverage, but access, safety, weather and presenter timings all affect the shooting order.",
+content/cases/index.ts:337:      "汽车发布需要动态与静态内容，但进场、安全、天气和主持人时间都会影响拍摄顺序。"
+content/cases/index.ts:340:      "Confirm safe vehicle access and a weather-aware run sheet before scheduling presenter and camera calls.",
+content/cases/index.ts:341:      "在安排主持人与摄影团队到场前，确认安全的车辆进场方式和考虑天气的现场流程表。"
+content/cases/index.ts:358:      l("Weather contingency and capture order", "天气预案与拍摄顺序")
+content/cases/index.ts:378:        "Vehicle movement, filming zones, insurance and weather fallback must be agreed with the venue and vehicle owner.",
+content/cases/index.ts:379:        "须与场地及车辆所有方确认车辆移动、拍摄区域、保险和天气备用方案。"
+content/cases/index.ts:453:      "经产品安全审核的伦敦摄影棚或自然光场地"
+content/commercial-architecture.ts:61:      en: "Turn the brief into an accountable local production plan.",
+content/commercial-architecture.ts:88:    title: { en: "Creative Production", zh: "创意内容制作" },
+content/commercial-architecture.ts:189:  { en: "Film & Photography", zh: "影片与摄影" },
+content/evidence/case-evidence.ts:16:  "Creative Production & Brand Assets"
+content/evidence/case-evidence.ts:23:  "UK Brand Content Production"
+content/evidence/case-evidence.ts:50:  "Commercial Photography",
+content/evidence/case-evidence.ts:131:  photography: string | null;
+content/information-architecture.ts:102:          "Photography, film and social-first content shaped around the brief, audience and intended channels.",
+content/information-architecture.ts:103:          "围绕项目需求、受众与使用渠道，制作摄影、影片和社交优先内容。"
+content/information-architecture.ts:115:          ["Editorial structure", "Camera, light and sound", "Bilingual coordination"],
+content/information-architecture.ts:116:          ["编辑结构", "摄影、灯光与收音", "双语协调"]
+content/information-architecture.ts:170:          ["Photography or film", "Interview master", "Channel cutdowns"],
+content/information-architecture.ts:171:          ["摄影或影片", "采访主片", "渠道短版"]
+content/information-architecture.ts:213:          "统筹进场、排期、现场拍摄与会后精选，不暗示艺人代理关系。"
+content/information-architecture.ts:230:          "Schedules, suppliers, guest flow, photography, video and bilingual communication managed on site.",
+content/information-architecture.ts:231:          "在现场统筹排期、供应商、嘉宾动线、摄影、摄像与双语沟通。"
+content/information-architecture.ts:234:          ["Speakers and interviews", "Photography and video", "Local coordination"],
+content/information-architecture.ts:235:          ["演讲与采访", "摄影与视频", "本地协调"]
+content/information-architecture.ts:253:          ["场地与流程", "演讲者或表演者", "现场拍摄"]
+content/information-architecture.ts:256:          ["Event documentation", "Speaker content", "Post-event selects"],
+content/information-architecture.ts:307:          "Translate the agreed route into local production teams, locations, schedules and communications.",
+content/information-architecture.ts:311:          ["Local production", "On-site coordination", "Structured handoff"],
+content/information-architecture.ts:341:          ["Responsibility map", "Specialist briefs", "Local production plan"],
+content/information-architecture.ts:415:      ["Campaign and editorial photography", "Beauty and social-first content", "UK launch assets"],
+content/information-architecture.ts:416:      ["宣传与编辑摄影", "美妆与社交优先内容", "英国发布素材"]
+content/market-entry.ts:313:        l("Packaging, label, photography and evidence collection", "包装、标签、图片与证明资料收集"),
+content/market-entry.ts:336:        l("UK-facing websites, campaigns, photography and film", "面向英国的网站、传播活动、摄影与影片"),
+content/media.ts:54:  | "service-commercial-photography"
+content/media.ts:397:      en: "Cinematic placeholder for a London creative production hero visual.",
+content/media.ts:402:      zh: "建议替换为伦敦品牌拍摄、制作花絮、模特片场、活动记录或抽象广告影像。"
+content/media.ts:493:      zh: "建议替换为 moodboard、制作方案或拍摄规划素材。"
+content/media.ts:496:  "service-commercial-photography": {
+content/media.ts:499:      en: "Placeholder for commercial model or product photography.",
+content/media.ts:500:      zh: "商业模特或产品摄影占位图。"
+content/media.ts:504:      zh: "建议替换为模特或产品拍摄画面。"
+content/media.ts:510:      en: "Placeholder for video production camera, monitor or set.",
+content/media.ts:514:      en: "Replace with camera, monitor, set or production BTS footage.",
+content/media.ts:515:      zh: "建议替换为摄影机、监视器、片场或制作花絮。"
+content/media.ts:532:      en: "Placeholder for makeup, wardrobe and on-camera prep.",
+content/media.ts:536:      en: "Replace with makeup, wardrobe or on-camera prep imagery.",
+content/media.ts:555:      zh: "时尚编辑式模特拍摄占位图。"
+content/media.ts:559:      zh: "建议替换为编辑式模特拍摄画面。"
+content/media.ts:676:      zh: "珠宝编辑式拍摄案例主视觉占位图。"
+content/media.ts:680:      zh: "建议替换为珠宝编辑式拍摄主图。"
+content/media.ts:919:  "service-commercial-photography": approvedPortfolio(
+content/media.ts:1111:  "service-commercial-photography": "/media/demo/fashion-crop.webp",
+content/media.ts:1170:  "service-commercial-photography",
+content/media/presentation-profiles.json:7326:      "altEn": "A live performer photographed under stage lighting.",
+content/media/presentation-profiles.json:7327:      "altZh": "舞台灯光下拍摄的现场表演者。",
+content/media/presentation-profiles.json:7620:      "altEn": "Performers and attendees gathered for a live event photograph.",
+content/media/presentation-profiles.json:7816:      "altEn": "A creator in striped apparel photographed for editorial content.",
+content/media/presentation-profiles.json:8012:      "altEn": "An artist photographed in a dramatic live-performance setting.",
+content/media/presentation-profiles.json:8013:      "altZh": "在具有戏剧感的现场表演环境中拍摄的艺人。",
+content/media/presentation-profiles.json:8110:      "altEn": "An artist photographed outdoors in an editorial composition.",
+content/media/presentation-profiles.json:8208:      "altEn": "A cast photographed during a UK location production.",
+content/media/presentation-profiles.json:8209:      "altZh": "英国外景制作期间拍摄的演员群像。",
+content/pages/about.ts:12:      "Without approved team photography, this page stays focused on responsibilities, operating model and accountability rather than presenting unrelated people as staff."
+content/pages/about.ts:19:      title: "Creative Production",
+content/pages/about.ts:22:      deliverables: "Photography, film, interviews and multi-format assets where agreed.",
+content/pages/about.ts:27:      problem: "On-camera people and styling must match usage, schedule and audience.",
+content/pages/about.ts:42:      responsibility: "We organise responsibilities, specialist inputs, information and local production.",
+content/pages/about.ts:77:    { title: "Agency and PR Support", text: "Discreet local production behind an agency relationship." },
+content/pages/about.ts:115:      deliverables: "按约定交付摄影、影片、采访与多格式素材。",
+content/pages/fashion-beauty-apparel.ts:20:    "Photographer, videographer and production crew",
+content/pages/fashion-beauty-apparel.ts:32:    "Campaign photography and selected stills",
+content/pages/fashion-beauty-apparel.ts:60:    "Venus Bridge 为时尚、美妆与服装品牌统筹英国拍摄，将制作、模特、妆发、服装造型、场地与中英双语现场执行纳入已确认的项目范围。",
+content/pages/fashion-beauty-apparel.ts:63:    "英国广告或编辑拍摄",
+content/pages/fashion-beauty-apparel.ts:75:    "摄影师、摄像师与制作团队",
+content/pages/fashion-beauty-apparel.ts:86:    "广告摄影与精选图片",
+content/pages/industries.ts:63:      l("Campaign photography and image selects", "广告摄影与精选图片"),
+content/pages/industries.ts:68:      l("UK campaign, editorial or lookbook shoot", "英国广告、编辑或型录拍摄"),
+content/pages/industries.ts:151:      l("Campus and workshop filming", "校园与工作坊拍摄")
+content/pages/industries.ts:171:      l("Fast-turn content capture", "快速内容采集")
+content/pages/service-details.ts:35:      "Commercial photography",
+content/pages/service-details.ts:56:    ctaTitle: "Planning a UK campaign or content production?",
+content/pages/service-details.ts:62:    intro: "从创意理解、选角与现场制作，到使用权规划及成片交付，统一管理英国拍摄流程。",
+content/pages/service-details.ts:65:      "商业摄影",
+content/pages/service-details.ts:109:      "Filming that depends on separately approved access"
+content/pages/service-details.ts:141:      "规划依赖单独审批进入权限的拍摄"
+content/pages/service-details.ts:163:      "We coordinate the format, contributors, venue production and communication assets—not simply event photography.",
+content/pages/service-details.ts:186:      "Interview, photography and video assets",
+content/pages/service-details.ts:199:    intro: "服务范围不仅是活动摄影，还包括形式策划、嘉宾、场地制作、舞台视听、现场流程与会后传播。",
+content/pages/service-details.ts:222:      "访谈、摄影与视频素材",
+content/pages/services.ts:21:        "Creative planning, photography, brand films, product and social content",
+content/pages/services.ts:22:        "创意策划、商业摄影、品牌视频、产品与社交内容"
+content/phase3.ts:62:    body: "Named launches and content production, with place and role made explicit so the evidence is not asked to prove more than it can.",
+content/phase3.ts:79:        text: "Turn the real activity into approved film, photography and stakeholder content."
+content/phase3.ts:121:        "Event documentation"
+content/phase3.ts:141:      title: "Creative Production & Brand Assets",
+content/phase3.ts:142:      short: "Photography and film that turn UK activity into reusable commercial assets.",
+content/phase3.ts:145:        "We plan and execute the agreed creative production, from local crew and locations through capture and delivery.",
+content/phase3.ts:146:      outputs: "Photography, film, interviews, event and stakeholder content.",
+content/phase3.ts:148:        "Commercial photography",
+content/phase3.ts:205:        outputs: "Discussion records, interviews, photography or film.",
+content/phase3.ts:206:        capabilities: ["Institutional & Expert Collaboration", "Creative Production & Brand Assets"],
+content/phase3.ts:216:        outputs: "Event documentation and China-facing stakeholder assets.",
+content/phase3.ts:217:        capabilities: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+content/phase3.ts:220:          label: "Related work: European launch content production"
+content/phase3.ts:227:        outputs: "Activation photography, short-form film and campaign assets.",
+content/phase3.ts:228:        capabilities: ["Creators, Talent & Cultural Partnerships", "Creative Production & Brand Assets"],
+content/phase3.ts:235:        title: "UK Brand Content Production",
+content/phase3.ts:237:        activity: "May include commercial photography, interviews, brand film or event documentation.",
+content/phase3.ts:239:        capabilities: ["Creative Production & Brand Assets"],
+content/phase3.ts:276:      { title: "制作可持续使用的资产", text: "把真实活动转化为经批准的影片、摄影与利益相关方内容。" },
+content/phase3.ts:317:      short: "用摄影与影片把英国行动变成可持续使用的商业资产。",
+content/phase3.ts:319:      coordination: "我们从本地团队和场地到拍摄与交付，规划并执行已确认的创意制作范围。",
+content/phase3.ts:320:      outputs: "摄影、影片、访谈、活动记录与传播素材。",
+content/phase3.ts:321:      examples: ["商业摄影", "品牌影片与访谈", "活动记录", "适用于中国市场的海外内容"]
+content/phase3.ts:360:        outputs: "讨论记录、访谈、摄影或影片。",
+content/phase3.ts:376:        outputs: "活动摄影、短片与 campaign 素材。",
+content/phase3.ts:383:        activity: "可包括商业摄影、访谈、品牌影片或活动记录。",
+content/phase3.ts:397:    en: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+content/phase3.ts:401:    en: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+content/phase3.ts:405:    en: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+content/phase3.ts:409:    en: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+content/phase3.ts:412:  "london-automotive-brand-film": { en: ["Creative Production & Brand Assets"], zh: ["创意制作与品牌资产"] },
+content/phase3.ts:413:  "european-road-lifestyle": { en: ["Creative Production & Brand Assets"], zh: ["创意制作与品牌资产"] },
+content/phase3.ts:415:    en: ["Creators, Talent & Cultural Partnerships", "Creative Production & Brand Assets"],
+content/phase3.ts:419:    en: ["Creators, Talent & Cultural Partnerships", "Creative Production & Brand Assets"],
+content/phase4.ts:12:    body: "Each project states the location and our recorded role. Photography and production evidence is never used to imply ownership of a wider launch or commercial result."
+content/phase4.ts:36:        text: "Turn real activity into film, photography, interviews and press-ready materials.",
+content/phase4.ts:71:        deliver: "Commissioned participation and content production.",
+content/phase4.ts:78:        deliver: "Film, photography and modular content.",
+content/phase4.ts:164:    body: "每个项目均明确地点与已登记角色。摄影与制作证据不会被扩大解释为活动主办、整体策略或商业成果。"
+content/phase4.ts:188:        text: "把真实行动转化为影片、摄影、采访与媒体可用素材。",
+content/phase4.ts:230:        deliver: "影片、摄影与模块化内容。",
+content/roadshows.ts:63:      "Photography, film, interviews and post-event content"
+content/roadshows.ts:69:      "摄影、视频、采访与会后内容"
+content/roadshows.ts:75:      "Event photography, short films and interviews",
+content/roadshows.ts:82:      "活动摄影、短片与采访",
+content/roadshows.ts:116:      "Photography, film, interviews and on-site delivery"
+content/roadshows.ts:122:      "摄影、视频、采访与现场执行"
+content/roadshows.ts:211:      "Demonstration, interview, photography and film production",
+content/roadshows.ts:217:      "演示、采访、摄影与视频制作",
+content/roadshows.ts:312:      l("Photography and film", "摄影与视频"),
+content/service-proof.ts:22:      title: l("Set decisions before the shoot day.", "在拍摄日前明确关键决策。"),
+content/service-proof.ts:25:        "广告项目需要在拍摄前按渠道规划图片与视频，而非拍摄后再补救。"
+content/service-proof.ts:64:        "A team needs suitable on-camera people without treating a public page as a live roster.",
+content/service-proof.ts:145:        "Format planning, venue feasibility, run-of-show, supplier coordination and content capture.",
+content/service-proof.ts:157:        "Public claims, stage content, speaker participation, filming permissions and final selects.",
+content/service-proof.ts:158:        "公开表述、舞台内容、嘉宾参与、拍摄许可与最终精选素材。"
+content/site.ts:9:    en: "UK Creative Production for Chinese Brands Going Global.",
+content/site.ts:48:    title: "UK Creative Production for Chinese Brands Going Global",
+content/site.ts:50:      "We help brands create campaign-ready content in the UK through photography, video, styling, models, creators, events and bilingual local production.",
+content/site.ts:75:        "Venus Bridge works with UK-based models, actors, presenters, Chinese creators, stylists, makeup artists, photographers and videographers, matching each role to the brand, script, audience and platform.",
+content/site.ts:98:        title: "Creative Production",
+content/site.ts:102:        title: "Commercial Photography",
+content/site.ts:115:        text: "On-camera makeup, wardrobe, product styling and image direction for premium commercial standards."
+content/site.ts:141:          "Red-carpet photo coverage, short video clips, bilingual coordination and PR-ready assets.",
+content/site.ts:150:          "Creative production, model casting, styling, location planning, campaign stills and social cuts.",
+content/site.ts:178:      "Photographers",
+content/site.ts:179:      "Videographers"
+content/site.ts:186:    intro: "我们帮助品牌在英国完成商业拍摄、短视频、模特达人、妆造造型、活动内容和海外传播素材交付。",
+content/site.ts:194:      "商业摄影、视频与活动内容",
+content/site.ts:210:        "Venus Bridge长期协作英国本地模特、演员、主持人、华人创作者、造型师、化妆师、摄影师与摄像团队，并根据品牌调性、脚本、受众与平台需求进行匹配。",
+content/site.ts:213:      finalTitle: "正在计划英国品牌拍摄、活动或海外宣传内容？",
+content/site.ts:233:        text: "提供创意方向、制作策划、团队、场地与拍摄日程管理，支持品牌在英国顺利落地。"
+content/site.ts:236:        title: "商业摄影",
+content/site.ts:237:        text: "完成广告、画册、产品、静物与社媒视觉拍摄，并保持精致造型与商业交付标准。"
+content/site.ts:296:      "在英国完成拍摄",
+content/site.ts:299:    talentNetwork: ["模特", "演员", "主持人", "华人创作者", "造型师", "化妆师", "摄影师", "摄像师"],
+content/site.ts:323:    title: { en: "Creative production", zh: "创意制作" },
+content/site.ts:326:      zh: "提供创意方向、拍摄策划、团队搭建、场地协调与英国本地现场制片管理。"
+content/site.ts:331:    title: { en: "Commercial photography", zh: "商业摄影" },
+content/site.ts:334:      zh: "完成广告大片、画册、电商、静物与社媒视觉拍摄，并配合专业造型与交付规范。"
+content/site.ts:360:    tag: { en: "People on camera", zh: "镜头前人才" }
+content/site.ts:365:      en: "On-camera makeup, wardrobe, product styling, event coverage, exhibition documentation and PR-ready content capture.",
+content/site.ts:366:      zh: "支持镜头妆造、服装造型、产品陈列、活动记录、展会拍摄与公关传播素材采集。"
+content/site.ts:409:      en: "Lifestyle films, local production support and event-ready visual assets.",
+content/site.ts:426:    title: { en: "London editorial shoot for a China launch", zh: "面向中国上市的伦敦编辑式拍摄" },
+content/site.ts:464:      en: "Bilingual on-camera talent for product demos, launch films, interviews and event coverage.",
+content/site.ts:496:      zh: "执行拍摄并交付适用于品牌审核、代理交接、广告投放、公关传播与社媒发布的内容资产。"
+content/site.ts:504:    label: { en: "Local production network", zh: "本地制作网络" }
+content/site.ts:565:      title: "Talent, creators and on-camera specialists.",
+content/site.ts:580:        "A curated portfolio area for commercial photography, brand film, social video, event coverage and creator-led content."
+content/site.ts:585:      intro: "这里将展示商业摄影、品牌影片、社媒视频、活动记录与创作者内容等精选项目。"
+content/site.ts:598:      intro: "帮助广告、公关、媒体与 MCN 团队完成英国拍摄、本地人才协调与达人项目，无需自行搭建本地办公室。"
+content/site.ts:606:        "Venus Bridge coordinates creative production, talent, events and UK execution for Chinese brands, agencies and international teams."
+content/site.ts:639:      "We bring together creative planning, production, talent, styling, photography, video and local execution in the UK.",
+content/site.ts:651:        name: "Creative Production",
+content/site.ts:665:        name: "Commercial Photography",
+content/site.ts:716:        name: "On-camera Makeup & Styling",
+content/site.ts:718:          "Camera-ready makeup, wardrobe, product styling and image direction for commercial shoots and events.",
+content/site.ts:729:        deliverables: ["Event photography", "Highlight clips", "PR selects", "Fast social edits"],
+content/site.ts:758:    intro: "我们整合策划、制作、模特达人、妆造造型、摄影摄像与英国本地执行，帮助品牌高效完成商业内容交付。",
+content/site.ts:778:        name: "商业摄影",
+content/site.ts:781:        deliverables: ["拍摄清单", "视觉指导", "精修图片", "渠道适配导出"],
+content/site.ts:783:        caseStudy: "面向中国上市的伦敦编辑式拍摄"
+content/site.ts:789:        deliverables: ["脚本或方案", "拍摄团队", "主视频成片", "短版剪辑"],
+content/site.ts:803:        explanation: "支持时尚拍摄、汽车讲解、美妆广告、AI 产品演示与活动主持的人才匹配。",
+content/site.ts:804:        usefulFor: ["时尚拍摄", "汽车讲解", "美妆广告", "AI 产品演示", "活动主持"],
+content/site.ts:819:        explanation: "为商业拍摄、广告视觉、艺人、主持人、模特与活动提供镜头妆造、服装和产品造型。",
+content/site.ts:820:        usefulFor: ["商业拍摄", "广告视觉", "艺人", "主持人", "模特", "活动"],
+content/site.ts:829:        deliverables: ["活动摄影", "高光视频", "公关精选图", "快速社媒剪辑"],
+content/site.ts:861:    title: "Content production shaped around your industry.",
+content/site.ts:886:          "We combine casting, styling, locations, art direction, photography and motion to produce assets that can move from campaign launch to social proof.",
+content/site.ts:895:          "Creative Production",
+content/site.ts:896:          "Commercial Photography",
+content/site.ts:910:          "Detail-focused photography",
+content/site.ts:922:        relatedServices: ["Commercial Photography", "Video & Brand Films", "On-camera Makeup & Styling"]
+content/site.ts:948:          "Commercial Photography",
+content/site.ts:1018:        relatedServices: ["Creative Production", "Commercial Photography", "Creator Coordination"]
+content/site.ts:1033:          "We operate as a quiet local production desk for agency teams, handling UK execution, talent, crew, styling, content capture and bilingual updates.",
+content/site.ts:1045:          "Creative Production"
+content/site.ts:1067:        needs: ["Lookbook", "广告视觉", "模特试穿内容", "街拍风格", "伦敦编辑式拍摄", "短视频社媒内容"],
+content/site.ts:1068:        delivers: "我们整合选角、造型、场地、视觉指导、摄影与动态内容，帮助素材从广告上线延展到社媒种草。",
+content/site.ts:1070:        relatedServices: ["创意制作", "商业摄影", "人才选角", "妆造与造型"]
+content/site.ts:1075:        needs: ["模特编辑图", "佩戴图", "产品特写", "高级生活方式场景", "细节摄影", "短视觉故事"],
+content/site.ts:1076:        delivers: "我们搭建可控拍摄环境，协调模特、产品 handling、造型与精细静物或短动态素材。",
+content/site.ts:1078:        relatedServices: ["商业摄影", "视频与品牌影片", "镜头妆造与造型"]
+content/site.ts:1093:        relatedServices: ["创作者协调", "妆造与造型", "商业摄影", "短视频制作"]
+content/site.ts:1131:        relatedServices: ["创意制作", "商业摄影", "创作者协调"]
+content/site.ts:1196:          "China-facing campaigns that need culturally relevant faces and clear on-camera communication.",
+content/site.ts:1227:        suitableFor: "Camera-ready makeup for models, presenters, artists, beauty campaigns and live events.",
+content/site.ts:1238:        name: "Photographers and Videographers",
+content/site.ts:1265:    intro: "我们根据品牌项目需求，匹配适合的模特、演员、主持人、达人、妆造师、摄影摄像与制作团队。",
+content/site.ts:1280:        useCases: ["时尚画册", "生活方式产品拍摄", "汽车内容", "品牌上市视觉"],
+content/site.ts:1286:        useCases: ["美妆广告", "电商内容", "试穿视频", "编辑式拍摄"],
+content/site.ts:1310:        useCases: ["美妆造型", "主持人妆容", "活动补妆", "广告拍摄"],
+content/site.ts:1320:        name: "摄影师与摄像师",
+content/site.ts:1337:      "协调拍摄与交付"
+content/site.ts:1362:      "Structured examples of how Venus Bridge supports Chinese brands and agencies with UK-based creative production.",
+content/site.ts:1398:        delivered: "Event photography, backstage content, highlight visuals, social media assets.",
+content/site.ts:1402:          "The team needed a discreet local production partner able to capture talent moments, atmosphere, backstage detail and audience-facing highlights.",
+content/site.ts:1404:          "Venus Bridge coordinated event content capture, shot priorities, backstage access needs and delivery formats for social and PR use.",
+content/site.ts:1407:          "Event photography",
+content/site.ts:1420:        relatedServices: ["Event & PR Coverage", "Commercial Photography", "Video & Brand Films"]
+content/site.ts:1429:          "Model casting, styling, makeup, photography, short-form video and London location production.",
+content/site.ts:1437:          "Creative production",
+content/site.ts:1441:          "Photography and short-form capture"
+content/site.ts:1447:          "Creative Production",
+content/site.ts:1448:          "Commercial Photography",
+content/site.ts:1519:        challenge: "A car brand needed on-camera talent and event content support for a UK activation.",
+content/site.ts:1522:          "An automotive activation required confident on-camera explanation, local event capture and fast content for post-event communication.",
+content/site.ts:1544:        delivered: "Model styling, makeup, editorial photography, close-ups and social media crops.",
+content/site.ts:1550:          "Venus Bridge coordinated model styling, makeup, photography direction, close-up capture and export formats.",
+content/site.ts:1554:          "Editorial photography",
+content/site.ts:1566:        relatedServices: ["Commercial Photography", "Makeup & Styling", "Creative Production"]
+content/site.ts:1572:    title: "覆盖品牌拍摄、活动内容、产品宣传与达人模特项目的精选案例。",
+content/site.ts:1598:        delivered: "活动摄影、后台内容、高光视觉、社交媒体素材。",
+content/site.ts:1601:        ourRole: "Venus Bridge协调活动内容采集、拍摄重点、后台动线需求与社媒公关交付规格。",
+content/site.ts:1602:        productionScope: ["活动前拍摄规划", "活动摄影", "后台内容记录", "高光视觉采集", "社媒素材筛选"],
+content/site.ts:1605:        relatedServices: ["活动与公关记录", "商业摄影", "视频与品牌影片"]
+content/site.ts:1613:        delivered: "模特选角、造型、妆造、摄影、短视频与伦敦场地制作。",
+content/site.ts:1617:        ourRole: "Venus Bridge统筹模特选角、造型协调、拍摄规划、团队搭建与广告素材交付。",
+content/site.ts:1621:        relatedServices: ["创意制作", "商业摄影", "人才选角", "妆造与造型"]
+content/site.ts:1632:        ourRole: "Venus Bridge协调出镜人才、办公室场景、产品演示拍摄与中英双语制作管理。",
+content/site.ts:1662:        ourRole: "Venus Bridge支持主持人筛选、拍摄流程、现场内容重点与短视频交付。",
+content/site.ts:1663:        productionScope: ["主持人 shortlist", "活动采集", "Walkaround 规划", "短视频拍摄", "素材交付"],
+content/site.ts:1670:        title: "珠宝编辑式拍摄",
+content/site.ts:1674:        delivered: "模特造型、妆造、编辑式摄影、产品特写与社媒裁切。",
+content/site.ts:1675:        overview: "珠宝拍摄需要细节导向的图像、优雅佩戴场景和适合上市与公关的高级视觉氛围。",
+content/site.ts:1676:        clientNeed: "品牌需要一场可控的英国拍摄，完成模特造型、产品特写与社媒适配素材。",
+content/site.ts:1677:        ourRole: "Venus Bridge协调模特造型、妆造、摄影方向、特写拍摄与导出规格。",
+content/site.ts:1678:        productionScope: ["模特与造型协调", "产品 handling", "编辑式摄影", "细节特写", "社媒裁切交付"],
+content/site.ts:1681:        relatedServices: ["商业摄影", "妆造与造型", "创意制作"]
+content/site.ts:1710:  en: "Venus Bridge is a London-based creative production and talent partner supporting Chinese brands, agencies and PR teams with UK content production, commercial visuals and local execution.",
+content/site.ts:1740:      "Commercial photography",
+content/site.ts:1794:      "英国本地拍摄执行",
+content/site.ts:1798:      "商业摄影",
+content/team.ts:172:      "Applied AI, machine-learning optimisation, intelligent systems and creative production workflows.",
+content/team.ts:305:  ["creative", "Creative production", "创意制作"],
+docs/about-density-correction.md:20:- Preserved all approved copy and introduced no photography or decorative filler.
+docs/about-team-motion-visual-upgrade.md:50:Five supplied names and photographs are published. No role, biography, employer, education, award, office, project involvement or institutional relationship was inferred. The project-proof section refers to published team functions and existing portfolio records rather than assigning unverified individuals to cases.
+docs/about-team-motion-visual-upgrade.md:76:- there is no camera movement, traversal or continuous rotation;
+docs/about-team-motion-visual-upgrade.md:122:All five are rendered in a consistent 4:5 frame with `next/image`, responsive `sizes`, meaningful bilingual alt text and a maximum hover scale of `1.015`. The page no longer reuses capability photography as About-page identity imagery, reducing repeated hero-level media.
+docs/about-us-globe-reference-audit.md:23:- **What Venus Bridge can learn:** Use COBE for the sphere and land field, keep a deliberately fixed China–Europe camera, and let site-native DOM/SVG handle hierarchy, labels and route timing.
+docs/about-us-globe-reference-audit.md:33:- **Visual weaknesses:** Defaults read as NASA/data visualisation. Country polygons, atmosphere and tube routes quickly become over-decorated. The renderer, camera and scene still need to be owned separately.
+docs/about-us-globe-reference-audit.md:43:- **Relevant technique:** React Three Fiber binding around three-globe for a user-owned Canvas, camera, lighting, controls, labels and render lifecycle.
+docs/about-us-globe-reference-audit.md:44:- **Visual strengths:** Best route to a bespoke Three/R3F scene when custom camera choreography and lighting are essential.
+docs/about-us-globe-reference-audit.md:46:- **Performance implications:** Adds R3F and a Three scene runtime on top of three-globe. Canvas lifecycle, renderer size and camera synchronisation remain implementation work.
+docs/about-us-globe-reference-audit.md:47:- **What Venus Bridge can learn:** Separate scene, camera, lighting and label concerns; pause animation and deliberately own the point of view.
+docs/about-us-globe-reference-audit.md:67:- **Relevant technique:** React, Three, R3F/Drei and custom GLSL; constrained spherical camera; GSAP scene direction; great-circle route reveal with geometry draw ranges; billboard labels; adaptive DPR; shared geometry/materials and allocation-conscious rendering.
+docs/about-us-globe-reference-audit.md:71:- **What Venus Bridge can learn:** Use one-shot route drawing, delta-time updates, constrained camera movement, resource reuse and explicit DPR tiers. Reject the ambience and HUD.
+docs/about-us-globe-reference-audit.md:133:This option has the highest geometry, country and camera capability, but the current project has no Three or R3F runtime. The added dependency graph, GPU lifecycle, build compatibility and visual-regression surface are not justified unless precise country geometry or custom camera choreography produces a demonstrable improvement. Neither is needed for this fixed narrative.
+docs/about-us-redesign.md:57:### Art direction and camera
+docs/about-us-redesign.md:59:- Fixed conceptual camera centre: approximately 52°E / 34°N.
+docs/about-us-redesign.md:79:Mobile uses a shorter 3.3s sequence (60ms / 280ms / 2.15s stage thresholds), reduced route/label density and shorter route transitions. Profiling showed that 6,800 samples are sufficient for the deliberately sparse cartography at every width, so desktop also uses that restrained tier. SVG route animations use a pausable CSS timeline so leaving the viewport or hiding the page pauses both camera progression and active route drawing without desynchronising the story. Reduced motion skips the sequence and shows the completed static network immediately.
+docs/about-us-redesign.md:85:- The short camera loop pauses outside the viewport and on `document.hidden`, is cancelled on cleanup, and stops permanently after the settled state.
+docs/about-us-redesign.md:88:- React state changes only at five narrative stages; camera frames update COBE imperatively.
+docs/about-us-redesign.md:113:The first near-viewport WebGL setup produced one 72ms desktop / 53ms mobile long task in headless Chromium. It occurs before the section is visible because of the load margin. No long tasks were observed during the finite camera sequence, off-screen sample or settled sample. These measurements are local Chromium diagnostics rather than promises for every device.
+docs/about-us-redesign.md:119:Three compositions were tested against the supplied photography:
+docs/about-us-redesign.md:129:No face or identity was generated, replaced or materially altered. CSS monochrome treatment, consistent framing and per-person focal points unify the supplied photographs. Source derivatives are sized so the active layout does not force unsafe enlargement; Richard uses `contain` plus inset rather than cropping or upscaling his 649px square source.
+docs/about-us-redesign.md:209:- Visible: 58.3 fps desktop and 60.8 fps mobile in the local headless Chromium sample; finite camera/render sequence only, with no rotation or permanent particle loop and no animation long task.
+docs/about-us-redesign.md:212:- Reduced motion: completed network immediately, with no traversal or camera choreography.
+docs/case-studies-portfolio-system-upgrade.md:9:Six supplied groups were integrated from `D:\media web\作品集`, comprising 20 source images and responsive WebP/AVIF derivatives. Project titles and slugs are:
+docs/case-study-media-audit.md:7:The image numbers below follow source order in the inventory. `F/P/B/E` means faces, product, branding and important edge content. `Y`, `N`, and `L` mean yes, no, and limited. Focal coordinates are normalised `x,y`. Every gallery placement uses natural ratio; `cover` is allowed only for the explicitly safe Changan preview. Quality reflects the safe display size, not photographic merit.
+docs/case-study-media-presentation-audit.md:5:The index and detail templates treated portrait, landscape, square, people, product and stage photographs too uniformly. Fixed aspect wrappers and default cover behaviour removed context and promoted some detail frames beyond their narrative importance.
+docs/case-study-media-presentation-audit.md:13:`heroMediaId` is independent of preview media. `wide`, `cinematic`, `portrait`, `editorial-split`, `natural`, and `contained` are data-level hero modes. Wide imagery stays wide without a universal ratio; portrait and editorial-split modes pair contextual typography with a complete, narrower photograph. The hero loads eagerly and uses known source dimensions.
+docs/commercial-architecture-homepage-spec.md:153:- 三个词分别对应商业结果、关键时刻和执行机制，不是摄影/视频工种清单。
+docs/commercial-architecture-homepage-spec.md:200:客户购买的不是摄影、活动或“market entry”这个标签，而是：
+docs/commercial-architecture-homepage-spec.md:219:| Photography              | “我们需要适合英国传播的商业影像。”                      | 现有图片没有英国语境或渠道规格               | UK campaign and launch imagery                   |
+docs/commercial-architecture-homepage-spec.md:224:| Exhibition               | “参展之后要留下内容、关系和后续动作。”                  | 把展会当成单日摄影任务                       | Exhibition readiness and content system          |
+docs/commercial-architecture-homepage-spec.md:368:| Brand & Content Localisation Review | Building Presence   | **PILOT FIRST**                    | 把现有制作升级为问题解决                  | campaign、film、photography、creator、Founder content |
+docs/commercial-architecture-homepage-spec.md:584:- UK campaign photography/film；
+docs/commercial-architecture-homepage-spec.md:612:Creative Production
+docs/commercial-architecture-homepage-spec.md:620:Photography / Film / Interviews / Models / Casting / Styling /
+docs/commercial-architecture-homepage-spec.md:636:- Photography 不与 Market Exploration 处于同一导航层；
+docs/commercial-architecture-homepage-spec.md:646:| Creative Production                | 获得可使用的英国资产         | photography、film、interviews、post-production               | published projects                    | Core              |
+docs/commercial-architecture-homepage-spec.md:731:Local Production 作为跨类别 proof attribute，不另建一个塞满所有项目的分类。
+docs/commercial-architecture-homepage-spec.md:738:| CATL Open Day Munich             | Preparing to Launch | 技术/汽车发布与 stakeholder content   | speaker、stage、audience、event capture                  | 已确认 photography/content scope       | PR result、business outcome                | Tier 2 technology/event proof |
+docs/commercial-architecture-homepage-spec.md:739:| BYD BD11 London                  | Preparing to Launch | 伦敦车辆展示/发布内容                 | UK local event documentation                             | London、vehicle/venue/audience capture | 完整 launch management、sales impact       | Tier 2 China-to-UK proof      |
+docs/commercial-architecture-homepage-spec.md:740:| Leapmotor IAA                    | Preparing to Launch | 展会现场品牌与产品内容                | exhibition floor、vehicle、visitor interaction           | 已确认 exhibition photography          | stand strategy、lead generation            | Tier 2 exhibition proof       |
+docs/commercial-architecture-homepage-spec.md:742:| European Road & Lifestyle        | Building Presence   | 欧洲环境车辆内容                      | movement/location photography                            | approved visual scope                  | market-entry outcome、named client         | Tier 2/3 supporting proof     |
+docs/commercial-architecture-homepage-spec.md:743:| Teal Editorial Fashion           | Building Presence   | 欧洲视觉语法的 fashion assets         | location、styling、fashion photography                   | approved production experience         | client/campaign outcome                    | Tier 3 until facts supplied   |
+docs/commercial-architecture-homepage-spec.md:758:| Influencer    | 达人内容           | creator fit、platform format、audience-facing content        | 英国 Creator campaign                  | Creator content production and coordination       |
+docs/commercial-architecture-homepage-spec.md:866:Review / plan / local production / network coordination
+docs/commercial-architecture-homepage-spec.md:921:**What must NOT appear:** 摄影、视频、模特等 capability list；第五个 University 状态。
+docs/commercial-architecture-homepage-spec.md:949:**Content required:** 5 个主 solutions：Market Exploration、Brand & Localisation、Launch & Activation、Creative Production、Local Delivery；Creator/Talent 与 Innovation 作为 cross-cutting modules。
+docs/commercial-architecture-homepage-spec.md:997:**Content required:** 6 capability clusters：Content、Film/Photography、Talent/Creator、Events/Exhibitions、Interviews/Experts、UK Production Management。
+docs/commercial-architecture-homepage-spec.md:1107:Creative Production
+docs/commercial-architecture-homepage-spec.md:1128:Content | Film/Photography | Talent/Creator
+docs/commercial-architecture-homepage-spec.md:1305:| NETWORK-DELIVERED  | crew、talent、supplier network 在 Venus 管理下交付 | photographers、film crew、models、HMU、venue/AV                                    | `We assemble and manage`                       |
+docs/commercial-architecture-homepage-spec.md:1376:├─ Creative Production
+docs/commercial-architecture-homepage-spec.md:1411:| `/what-we-do/create-in-the-uk`       | content production path        | Ready for Local Delivery / Creative Production   |                   |   ✓   |      evaluate canonical route      |     ✓      |
+docs/commercial-architecture-homepage-spec.md:1415:| `/services/commercial-production`    | production service             | Creative Production solution                     | ✓ for SEO equity  |   ✓   |              optional              |     ✓      |
+docs/commercial-architecture-homepage-spec.md:1479:| 9. Turning an exhibition into more than stand photography                           | Launch         | 无后续内容与 learning             | Exhibition/Launch Review |
+docs/commercial-architecture-homepage-spec.md:1489:| 19. Planning interviews across camera, sound, claims and cutdowns                   | Execute        | 把采访当单一拍摄                  | Execution Brief          |
+docs/commercial-architecture-homepage-spec.md:1581:- UK creative production；
+docs/commercial-architecture-homepage-spec.md:1623:Creative Production / Local Delivery
+docs/commercial-architecture-homepage-spec.md:1628:Photography / Film / Interviews / Talent / Creator / Events /
+docs/commercial-architecture-homepage-spec.md:1645:2. 不把 Photography 与 Market Exploration 并列。
+docs/commercial-evidence-university-reframing-audit.md:18:- Companies: a four-card strip led with events, photography, talent and media, recreating a supplier catalogue directly beneath an outcome-led page introduction.
+docs/commercial-evidence-university-reframing-audit.md:20:- Work: the page hierarchy ended with “Selected Creative Production”; project metadata led with photography, event or exhibition language; fashion and beauty work therefore determined the final category impression.
+docs/commercial-evidence-university-reframing-audit.md:50:Photography, film, events, exhibitions, creators and production remain execution methods below those groups.
+docs/commercial-evidence-university-reframing-audit.md:140:| Photography-company perception | 2.8 / 10 |
+docs/commercial-evidence-university-reframing-audit.md:154:6. Photography-company perception: **2.8 / 10**
+docs/commercial-truth-and-rights-gate.md:20:| Event photography and identifiable people | RIGHTS CONFIRMATION REQUIRED       | Confirm photographer copyright, event/client permission and model/participant releases where applicable.                                          |
+docs/commercial-truth-and-rights-gate.md:21:| Team portraits                            | RIGHTS CONFIRMATION REQUIRED       | Confirm photographer/source rights and subject consent.                                                                                           |
+docs/content-migration-map.md:7:| Creative & Commercial Production     | merged / rewritten              | Create in the UK                 | 保留摄影、影片、访谈、产品与多格式交付事实                         |
+docs/final-commercial-messaging-phase.md:39:Photography-agency perception:
+docs/final-media-replacement-checklist.md:9:| `production-hero`     | Commercial Production / hero           | 2400×1500                                | ≤350KB                           | 16:10 and mobile 4:5 option                                        | Authentic camera, set, monitor, crew or campaign scene             | No autoplay audio; approved rights and alt                                   | Placeholder              |
+docs/final-media-replacement-checklist.md:13:| `agency-hero`         | Agency / hero                          | 2400×1500                                | ≤300KB                           | 16:10                                                              | Discreet workflow, local production or handoff                     | Remove visible confidential information; approval required                   | Placeholder              |
+docs/final-prelaunch-commercial-audit.md:81:The site should repel buyers seeking commodity photography, speculative introductions, guaranteed access, public rate cards or isolated supplier booking. That is commercially healthy.
+docs/final-prelaunch-commercial-audit.md:175:| Photography company     |   5.5 | Most published outcomes are approved photographs/assets; later archive cases are explicitly photographic.  |
+docs/final-prelaunch-full-website-audit.md:9:The current website is strategically and visually good enough to launch. It clearly positions Venus Bridge as a flexible UK/European market execution and local delivery layer for Chinese companies—not primarily as a photographer, event agency, talent broker or generic consultant. Within the first viewport, the visitor can identify audience, geography, local execution value, real proof and a next step. Companies, Partners, How We Work and About each have a distinct commercial role and are credible sales-enablement assets.
+docs/final-prelaunch-full-website-audit.md:15:Biggest weakness: the proof library is honest but commercially narrower than the promise. Most cases prove photography, documentation or visual assets in real UK/European settings, not market validation, buyer/distributor engagement, partnerships or measurable follow-through.
+docs/final-prelaunch-full-website-audit.md:33:Desired perception is strong: UK market execution partner 9.0/10; China–UK commercial operating partner 8.8; integrated local delivery team 9.0; premium professional-services firm 8.8. Unwanted perception remains moderate for photography company 5.5, creative agency 4.8 and event agency 4.2 because the archive’s outcomes are primarily visual documentation/assets. Resource broker 2.8, generic consultancy 3.0, talent broker 1.8 and university intermediary 1.7 are well controlled.
+docs/final-prelaunch-full-website-audit.md:74:Wang Linkai, Yue Yunpeng, London Fashion Week and Beauty/Fashion are strong creative proof but increase photography-company perception. Keep them lower in the archive; future commercial cases should supersede them naturally. Do not relabel visual outputs as commercial outcomes.
+docs/final-prelaunch-issue-registry.md:26:| P0-05 | `/og/[lang]/[page]` social cards                               | Chinese buyer; sales; partner     | Generated social previews contradict the current site. Non-Work cards say “Creative production, talent and UK execution”; Work is labelled “Concept Project Model / Illustrative project planning” although it now contains real approved cases; Chinese non-Work cards retain English supporting copy. Titles are raw lowercase route slugs. | Direct browser inspection of `/og/en/home`; all four sampled endpoints returned valid PNGs but obsolete content.                                                                                                                                            | Links shared in WeChat, LinkedIn, email or messaging reintroduce creative-agency perception and can misstate real work as conceptual. | Align OG titles and bilingual descriptors with each page’s current metadata and real/verified Work status; visually QA Home, Companies, Work and About in both languages.                                                                         | Commercial High / User High / Small / Low. **Fix now.**           | Approve the final short share-card line.                                                  | `app/og/[lang]/[page]/route.tsx`                                                                                                              |
+docs/final-prelaunch-issue-registry.md:32:| P1-01 | `/work` and 12 cases         | CEO; overseas director; procurement | The case library proves real UK/European presence and strong visual delivery, but mostly proves photography/documentation rather than market validation, buyer/distributor engagement, partnership formation or commercial follow-through. | 12/12 cases are truth-gated and role-specific; most roles are documentation/content. Outcomes are usually approved images or assets; no quantified pipeline, buyer, distributor, repeat-engagement or market-decision evidence is public. | The promise is broader than the available proof. A skeptical buyer may conclude “strong photographer/event documenter” rather than “commercial operating partner.” | Do not inflate current cases. Keep ordering led by BYD/Changan/Geely/CATL/Leapmotor/AGIBOT and deliberately collect commercial evidence on future engagements.                             | Commercial High / User High / Large real-world effort / Low website risk. **Start after launch; monitor sales objections.** | Decide which future projects may collect/approve commercial outcomes. | `en-work-desktop.png`; `content/portfolio.ts`                                                        |
+docs/final-prelaunch-page-scorecard.md:56:- **Weaknesses:** commercial proof below the claims is still inherited from the photography-heavy case library; procurement still needs a scoped proposal rather than relying on the site.
+docs/final-prelaunch-page-scorecard.md:78:- **Weaknesses:** later concert/fashion/beauty work increases photography-company perception; offscreen filter choices have a weak continuation cue; the preview/list structure creates one duplicated BYD H2 in rendered semantics.
+docs/final-prelaunch-page-scorecard.md:164:Photography-agency risk is scored 10 = strongest unwanted perception.
+docs/final-prelaunch-page-scorecard.md:186:- The principal media problem is strategic balance, not technical image quality: automotive/event imagery communicates real international activity; concert/fashion/beauty imagery increases creative/photography perception when encountered in sequence.
+docs/final-prelaunch-visual-ux-audit.md:67:Risk remains at archive depth: four later cases (concert, performance, fashion, beauty) can make a visitor interpret Venus Bridge as a photography/content company. This is an evidence-mix issue, not an image-quality defect. Do not remove truthful work simply to hide the current business history; let better future cases supersede it.
+docs/institutional-project-evidence-intake.md:46:- Can photographs be used?
+docs/institutional-project-evidence-intake.md:62:- [ ] Photography
+docs/motion-reference-audit.md:5:## 1. Builders Club — creative production
+docs/page-motion-map.md:19:| events                | multi-camera grid   | in-view                               | media reveal                                 | 760ms                  | editorial         | asymmetrical live-feed grid         | stacked grid                   | static               | medium            | low                             | communicate operational coverage                       |
+docs/phase-11-final-report.md:7:Phase 11 已实际接入仓库。网站现以真实、已获网站使用许可的汽车、时尚、美妆与人才分类影像建立作品集，并将真实项目、制作经验与概念制作场景明确分开。公开页面不显示第三方来源、合作制作或摄影署名，也不推断未提供的客户 Brief、完整职责、交付数量或项目结果。
+docs/phase-11-final-report.md:23:## 作品集分类
+docs/phase-11-final-report.md:74:- Industries index：Fashion、Beauty、Automotive 与 Lifestyle 使用不同的已批准作品集图片。
+docs/phase-12-final-report.md:27:1. Create in the UK：商业摄影、影片、访谈、产品内容、多格式交付，以及人才、选角、造型和英国制作支持。
+docs/phase-12-information-architecture-report.md:11:- Services 将摄影、影片、人才、活动、科研与本地执行拆成六个入口，客户必须先理解内部分类。
+docs/phase-13-capability-to-case-gaps.md:11:| Interview & Editorial          | Selected Visual Experience | Interview subject authority; production date; location; camera/light/sound scope; final edit list; published output                     |
+docs/phase-13-final-report.md:31:- No named team profile or team photograph can publish until identity, role, biography, real imagery and public approval are complete.
+docs/phase-13-image-placement-map.md:16:| About Us                           | Brand logo and graphic system                                 | None                               | No people imagery until genuine team photography is approved                     |
+docs/phase-14-before-after-report.md:31:| About          | No safe team photography existed.                                                   | The brand lock-up, accountable roles and operating model carry the page without invented staff photography.                       |
+docs/phase-14-final-report.md:46:- **About:** brand, responsibilities and delivery model replace unsupported team photography.
+docs/phase-14-image-placement-map.md:79:| vbm-006                                 | /media/expertise/entertainment-culture/live-events/live-performer-stage-01.webp              | /media/art-directed/vbm-006/desktop.avif                                 | /expertise/entertainment-culture, /what-we-do/launch-in-the-uk                                        | events-exhibitions-roadshows | 16 / 9  | 4 / 3  | 4 / 3  | graphite     | 50% 30%         | A live performer photographed under stage lighting.                       |      13 KB | new crop |
+docs/phase-14-image-placement-map.md:82:| vbm-009                                 | /media/expertise/entertainment-culture/live-events/live-event-group-wide-04.webp             | /media/art-directed/vbm-009/desktop.avif                                 | /expertise/entertainment-culture                                                                      | events-exhibitions-roadshows | 16 / 9  | 4 / 3  | 4 / 3  | graphite     | 50% 50%         | Performers and attendees gathered for a live event photograph.            |      97 KB | new crop |
+docs/phase-14-image-placement-map.md:84:| vbm-011                                 | /media/expertise/entertainment-culture/creator-commercial/creator-fashion-editorial-01.webp  | /media/art-directed/vbm-011/desktop.avif                                 | /expertise/entertainment-culture, /what-we-do/create-in-the-uk                                        | creator-commercial-content   | 4 / 5   | 4 / 5  | 4 / 5  | soft-ivory   | 50% 30%         | A creator in striped apparel photographed for editorial content.          |     106 KB | new crop |
+docs/phase-14-image-placement-map.md:86:| vbm-020                                 | /media/expertise/entertainment-culture/live-performance/artist-live-editorial-01.webp        | /media/art-directed/vbm-020/desktop.avif                                 | /expertise/entertainment-culture                                                                      | artist-live-performance      | 4 / 5   | 4 / 5  | 4 / 5  | graphite     | 52% 34%         | An artist photographed in a dramatic live-performance setting.            |      75 KB | new crop |
+docs/phase-14-image-placement-map.md:87:| vbm-021                                 | /media/expertise/entertainment-culture/live-performance/artist-editorial-reflection-02.webp  | /media/art-directed/vbm-021/desktop.avif                                 | /                                                                                                     | artist-live-performance      | 4 / 5   | 4 / 5  | 4 / 5  | soft-ivory   | 50% 34%         | An artist photographed outdoors in an editorial composition.              |      43 KB | new crop |
+docs/phase-14-image-placement-map.md:88:| vbm-023                                 | /media/expertise/entertainment-culture/interviews/uk-location-cast-production-duplicate.webp | /media/art-directed/vbm-023/desktop.avif                                 | /expertise/entertainment-culture, /what-we-do/create-in-the-uk, /what-we-do/enter-the-uk              | artist-creator-interviews    | 16 / 9  | 4 / 3  | 4 / 3  | graphite     | 48% 45%         | A cast photographed during a UK location production.                      |      52 KB | new crop |
+docs/phase-2-5-commercial-ux-visual-audit.md:36:It no longer feels mainly like a photography/video studio. Real automotive launch images, bilingual positioning and the local-delivery model move it beyond a production-only identity.
+docs/phase-2-5-commercial-ux-visual-audit.md:79:- it can deliver launches, content and local production;
+docs/phase-2-5-commercial-ux-visual-audit.md:271:The current homepage Entertainment image is an editorial portrait. It is visually distinctive but proves editorial production more than live execution. If later testing shows the site still feels too photography-led, a live event or stage image would communicate commercial scale more directly. This is a media-selection P2/P1 test, not a truth defect.
+docs/phase-2-5-commercial-ux-visual-audit.md:327:- Creative Production;
+docs/phase-2-5-commercial-ux-visual-audit.md:337:- visually prioritise Launch, Creative Production and Local Delivery;
+docs/phase-2-6-proof-first-conversion-refinement.md:42:| Dominant visual   | Changan European Brand Launch 2025, Munich | European brand launch visual coverage | Event and brand content capture      |
+docs/phase-2-commercial-architecture-implementation.md:106:3. Creative Production — core delivery
+docs/phase-2-commercial-architecture-implementation.md:305:Port 3000 had no listening service. In accordance with the closeout constraint, no additional detached, background-process or repeated localhost troubleshooting was performed.
+docs/phase-3-1-commercial-audit.md:4:Baseline: Phase 3 local production build, measured from rendered English main content before Phase 3.1 edits.
+docs/phase-3-1-commercial-audit.md:26:The public portfolio directly proves event/exhibition content, automotive photography, UK-located brand-content production and fashion/beauty image production. It provides adjacent operating proof for talent/styling coordination and multi-component brand activation. It does not directly prove institutional partnerships, academic programmes, endorsement, complete event orchestration or measurable brand outcomes.
+docs/phase-3-1-commercial-audit.md:43:4. UK Brand Content Production
+docs/phase-3-1-final-report.md:26:4. UK Brand Content Production
+docs/phase-3-1-final-report.md:29:[event and exhibition content capture; automotive photography; UK-located brand-film and interview imagery; fashion, apparel and beauty image production; event-presence plus production orchestration]
+docs/phase-3-1-final-report.md:32:[institutional/expert-format production components; talent and styling within production; multi-component brand activation; wider event coordination beyond documented content capture]
+docs/phase-3-1-owner-evidence-pipeline.md:29:- Approved photographs and video with rights owner, permitted territories/channels and expiry.
+docs/phase-3-1-owner-evidence-pipeline.md:58:- Venus Bridge role, separated into strategy, coordination, staffing, production, photography, film and handoff as applicable.
+docs/phase-3-1-owner-evidence-pipeline.md:60:- Photography/video rights and any attendee-release constraints.
+docs/phase-3-1-owner-evidence-pipeline.md:82:## Creative Production
+docs/phase-3-1-owner-evidence-pipeline.md:88:- Exact production scope: direction, photography, film, crew, casting, styling, locations, post-production and delivery.
+docs/phase-3-1-persona-commercial-test.md:22:- **Likely hesitation:** Exact boundary between local event coordination and event-content production.
+docs/phase-3-1-persona-commercial-test.md:48:- **10-second interpretation:** Venus Bridge can execute UK-located photography, film, interviews or event documentation and deliver reusable commercial assets.
+docs/phase-3-1-persona-commercial-test.md:49:- **Trust section:** UK Brand Content Production and the London automotive film/event cases.
+docs/phase-3-1-persona-commercial-test.md:50:- **Likely project:** UK Brand Content Production.
+docs/phase-3-1-persona-commercial-test.md:54:- **Adversarial verdict:** Strong direct-proof fit. Project framing prevents the site reading as a standalone photographer portfolio.
+docs/phase-3-1-persona-commercial-test.md:63:- **£1,000 photographer perception:** Reduced but not eliminated by the proof library. Project types, strategic ordering and capability metadata frame production as the asset engine behind wider activity.
+docs/phase-3-1-persona-commercial-test.md:65:- **Substantive multi-component B2B project perception:** High enough for serious scoping conversations, strongest for industry presence and brand-content production. Institutional/expert and creator-led programmes need Level A owner evidence to reach the same confidence.
+docs/phase-3-1-proof-matrix.md:18:| Institutional & Expert Collaboration     | Venus Bridge can document a professional conversation through interviews, photography or film.      | London Automotive Brand Story Film: interview imagery and UK-located brand-content capture.                                                                                        | Rights-approved project record                               | Website, media and copyright approval recorded                                         | Level B                                                            | Yes, as adjacent production proof only           | Capabilities programme proof              | “Adjacent proof: UK-located interview and brand-content production.”                                                                  | Does not prove an expert or academic participant.                                                   |
+docs/phase-3-1-proof-matrix.md:19:| Industry Presence & Events               | Venus Bridge delivers event and exhibition content capture.                                         | Changan 2025, BYD BD11 London, CATL Open Day 2025, Leapmotor IAA 2023.                                                                                                             | Rights-approved named execution cases                        | Website, media and copyright approval recorded                                         | Level A                                                            | Yes                                              | Early proof, Work, case pages             | Use exact labels: event documentation, launch content, exhibition content, automotive photography.                                    | None for the narrow capture claim.                                                                  |
+docs/phase-3-1-proof-matrix.md:20:| Industry Presence & Events               | Venus Bridge owns full event strategy, guest programme, staffing or campaign delivery.              | Public cases prove visual/event documentation, not complete event ownership.                                                                                                       | Adjacent operating proof at most                             | No full-scope evidence recorded                                                        | Level B / C                                                        | Only as “may coordinate” when operationally true | Capabilities detail                       | “Depending on scope, local coordination may include venue, staffing, participant and production interfaces.”                          | **PROOF GAP — OWNER ACTION:** record a complete event-delivery scope.                               |
+docs/phase-3-1-proof-matrix.md:24:| Creative Production & Brand Assets       | Venus Bridge delivers automotive photography, event imagery and exhibition content.                 | Changan, BYD, CATL and Leapmotor cases.                                                                                                                                            | Rights-approved named execution cases                        | Website, media and copyright approval recorded                                         | Level A                                                            | Yes                                              | Homepage, Work, case pages, project types | Use each case’s existing narrow role labels.                                                                                          | None for the recorded production roles.                                                             |
+docs/phase-3-1-proof-matrix.md:25:| Creative Production & Brand Assets       | Venus Bridge delivers UK-located brand-film and interview imagery.                                  | London Automotive Brand Story Film.                                                                                                                                                | Rights-approved named execution case                         | Website, media and copyright approval recorded                                         | Level A                                                            | Yes                                              | Selected Work; programme proof            | “On-location visual content production and automotive brand-content capture.”                                                         | No verified campaign result or distribution KPI.                                                    |
+docs/phase-3-1-proof-matrix.md:26:| Creative Production & Brand Assets       | Venus Bridge delivers fashion, apparel and beauty image production.                                 | Teal Editorial, Commercial Fashion & Apparel, Creative Beauty & Makeup.                                                                                                            | Rights-approved capability evidence                          | Website, media and copyright approval recorded; unnamed client/talent                  | Level A for image production; Level B for wider campaign ownership | Yes, at the narrow level                         | Work capability evidence                  | Photography, visual-content production and styling/talent-facing production only.                                                     | No named brand campaign or measured outcome.                                                        |
+docs/phase-3-1-proof-matrix.md:27:| Creative Production & Brand Assets       | Assets create measurable international brand credibility or commercial uplift.                      | No verified measurement record.                                                                                                                                                    | Unsupported outcome claim                                    | None                                                                                   | Level D                                                            | No                                               | Excluded                                  | Describe intended commercial use, not a guaranteed result.                                                                            | Collect approved usage context and measurable outcomes where available.                             |
+docs/phase-3-1-proof-matrix.md:28:| Cross-capability orchestration           | Venus Bridge can combine event presence and production into one project logic.                      | Changan/BYD/CATL/Leapmotor prove both a commercial event environment and documentation/asset capture.                                                                              | Multiple rights-approved execution cases                     | Website, media and copyright approval recorded                                         | Level A for event + production combination                         | Yes                                              | UK Industry Presence Project              | “Combine industry presence with local content production and reusable event assets.”                                                  | Does not prove every optional component such as staffing or networking.                             |
+docs/phase-3-1-release-owner-checklist.md:6:No local production credentials or owner confirmations were fabricated. Only `.env.example` is present; no local environment file supplies deployment values.
+docs/phase-3-2-case-placement-system.md:64:No logo wall is generated from the register. A logo requires explicit permission, clear relationship wording, recognition and commercial relevance. Attendance, venue access, photography or third-party participation cannot become “As seen at”, “Partnered with”, “Trusted by” or “Worked with” without evidence for that exact claim.
+docs/phase-3-2-case-schema.md:82:Event records have fields for the event context, city/country, booth or activation scope, staffing, talent, creators, executive content, photography, video, stakeholder content, China-facing outputs and client-facing deliverables. Empty fields remain empty. A photography record cannot be expanded into full event ownership without verification.
+docs/phase-3-2-evidence-flywheel.md:32:- Record filename, date, location, photographer/source, rights and the fact the image proves.
+docs/phase-3-2-evidence-flywheel.md:85:- **Creative Production & Brand Assets:** objective, production scope, selected outputs, use channels, licensing and measurable results where available.
+docs/phase-3-2-evidence-register.md:8:| Changan European Brand Launch 2025, Munich   | A_DIRECT_VERIFIED                                                                        | Product / Brand Launch      | UK Industry Presence Project                                   | Industry Presence & Events; Creative Production & Brand Assets               | Homepage Early Proof; Capabilities project-type proof; Work index; dedicated case  | Current registry approvals are true; re-confirm exact scope and reuse before new placement  | HERO               | Public evidence proves launch/event content capture, not complete launch strategy or event ownership | Supply objective, agreed scope, deliverable list and any broader role evidence                                                              |
+docs/phase-3-2-evidence-register.md:9:| BYD BD11 Double-Decker Bus Launch, London    | A_DIRECT_VERIFIED                                                                        | Product / Brand Launch      | UK Industry Presence Project; UK Brand Content Production      | Industry Presence & Events; Creative Production & Brand Assets               | Homepage Early Proof; Capabilities project-type proof; Work index; dedicated case  | Current registry approvals are true; re-confirm exact scope and reuse before new placement  | HERO               | No approved objective, output quantities or wider launch responsibility                              | Supply brief, deliverables and approved commercial context                                                                                  |
+docs/phase-3-2-evidence-register.md:10:| CATL Open Day 2025, Munich                   | A_DIRECT_VERIFIED                                                                        | Industry Presence           | UK Industry Presence Project                                   | Industry Presence & Events; Creative Production & Brand Assets               | Homepage Early Proof; Work index; dedicated case                                   | Current registry approvals are true; re-confirm exact scope and reuse before new placement  | CORE               | Event documentation is proven; broader local coordination and outcomes are not                       | Supply client objective, role boundary, outputs and any stakeholder-content evidence                                                        |
+docs/phase-3-2-evidence-register.md:11:| Leapmotor at IAA Mobility 2023, Munich       | A_DIRECT_VERIFIED                                                                        | Industry Presence           | UK Industry Presence Project                                   | Industry Presence & Events; Creative Production & Brand Assets               | Homepage Selected Work; Work index; dedicated case                                 | Current registry approvals are true; re-confirm event-name and brand-name reuse             | CORE               | Photography is proven; exhibition support, staffing and commercial outcomes are not                  | Supply exact commission, deliverables and event-role evidence                                                                               |
+docs/phase-3-2-evidence-register.md:12:| London Automotive Brand Story Film           | A_DIRECT_VERIFIED for production; B_ADJACENT_OPERATING_PROOF for credibility engagement  | International Brand Content | International Credibility Project; UK Brand Content Production | Creative Production & Brand Assets                                           | Homepage Selected Work; Capabilities credibility proof; Work index; dedicated case | Current registry approvals are true; re-confirm interview participant and usage permissions | CORE               | Does not prove an expert/academic engagement or measurable brand outcome                             | Supply objective, interview/participant context, final deliverables and usage evidence                                                      |
+docs/phase-3-2-evidence-register.md:13:| European Automotive Road & Lifestyle Content | A_DIRECT_VERIFIED for narrow image production                                            | International Brand Content | UK Brand Content Production                                    | Creative Production & Brand Assets                                           | Work index; dedicated case                                                         | Current registry approvals are true; client remains unnamed                                 | VISUAL             | Client, objective, outputs and commercial use are not public                                         | Supply permissioned commercial context or retain as supporting/visual evidence                                                              |
+docs/phase-3-2-evidence-register.md:14:| Teal Editorial Fashion Series                | A_DIRECT_VERIFIED for image production; B_ADJACENT_OPERATING_PROOF for talent activation | Talent-Led Production       | International Brand Activation                                 | Creators, Talent & Cultural Partnerships; Creative Production & Brand Assets | Homepage Selected Work; Capabilities activation proof; Work index; dedicated case  | Current registry approvals are true; client/talent remain unnamed                           | VISUAL             | Does not prove a creator campaign or end-to-end brand activation                                     | Supply client objective, commissioned relationships, casting/styling role and usage rights; replace when a stronger activation case arrives |
+docs/phase-3-2-evidence-register.md:15:| Commercial Fashion & Apparel Image Series    | A_DIRECT_VERIFIED for narrow image production                                            | Talent-Led Production       | UK Brand Content Production                                    | Creators, Talent & Cultural Partnerships; Creative Production & Brand Assets | Work index; dedicated case                                                         | Current registry approvals are true; client/talent remain unnamed                           | VISUAL             | Commercial objective, talent relationship and distribution are not public                            | Supply approved brand context and talent/usage evidence or retain as visual support                                                         |
+docs/phase-3-2-evidence-register.md:16:| Creative Beauty & Makeup Image Series        | A_DIRECT_VERIFIED for narrow image production                                            | Talent-Led Production       | UK Brand Content Production                                    | Creators, Talent & Cultural Partnerships; Creative Production & Brand Assets | Work index; dedicated case                                                         | Current registry approvals are true; client/talent remain unnamed                           | VISUAL             | Does not prove a creator activation, client campaign or commercial outcome                           | Supply approved client/creator context and deliverables or retain as visual support                                                         |
+docs/phase-3-2-owner-case-intake-template.md:117:[Institutional & Expert Collaboration / Industry Presence & Events / Creators, Talent & Cultural Partnerships / Creative Production & Brand Assets]
+docs/phase-3-2-owner-case-intake-template.md:120:[International Credibility Project / UK Industry Presence Project / International Brand Activation / UK Brand Content Production]
+docs/phase-3-2-proof-gap-analysis.md:10:| Institutional & Expert Collaboration     | WEAK           | Level B UK interview/content production and Level C conservative operating formats                            | No Level A institution, academic or expert engagement; no formal relationship; no endorsement                      | A permissioned company + institution/expert project with exact relationship, objective, Venus Bridge coordination, outputs and approved participant/institution wording |
+docs/phase-3-2-proof-gap-analysis.md:11:| Industry Presence & Events               | STRONG         | Multiple Level A automotive launch, exhibition and event-content records in credible European/UK environments | Complete event strategy, staffing, guest programme, stakeholder outcomes and broad local execution remain unproved | A trade show or industry event case documenting the full verified local scope beyond photography                                                                        |
+docs/phase-3-2-proof-gap-analysis.md:13:| Creative Production & Brand Assets       | STRONG         | Level A automotive, event, brand-film, fashion and beauty production                                          | Approved distribution context, deliverable quantities and measured commercial outcomes are generally absent        | A UK production case with a clear client objective, multi-format delivery and approved China-facing commercial use                                                      |
+docs/phase-3-2-proof-gap-analysis.md:22:| UK Brand Content Production       | STRONG         | London brand film, event imagery and multiple commercial photography records                        | Distribution, usage and measurable business relevance are under-documented               | UK production + approved China-facing commercial assets and usage evidence                               |
+docs/phase-3-2-proof-gap-analysis.md:28:- Level A broader event orchestration beyond content capture: **MISSING**.
+docs/phase-3-2-proof-gap-analysis.md:29:- Level A creative production: **STRONG**.
+docs/phase-3-2b-client-psychology-test.md:33:Expected conclusion: "They can create high-quality international assets, but they are more than a photography company."
+docs/phase-3-2b-client-psychology-test.md:37:The presentation combines commercial environments, relationship/process capability and creative output. Photography is evidence of execution quality rather than the primary category.
+docs/phase-3-2b-client-psychology-test.md:42:- Photography-studio perception: LOW
+docs/phase-3-2b-final-report.md:39:Photography-studio perception:
+docs/phase-3-2c-final-commercial-visual-audit.md:4:Runtime reviewed: local production build
+docs/phase-3-2c-final-commercial-visual-audit.md:54:| Photography studio                | LOW          |
+docs/phase-3-2c-final-commercial-visual-audit.md:67:- 107 highest-fidelity source photographs were visually reviewed, representing 91 distinct photographic moments.
+docs/phase-3-2c-final-commercial-visual-audit.md:68:- 87 logical photographic masters are now used across public routes: 67 portfolio masters, 16 previously active capability masters and four newly surfaced creator/product masters.
+docs/phase-3-2c-full-portfolio-visual-audit.md:9:The audit inspected every image file under `public/`, then reviewed the highest-fidelity representative of each photographic moment rather than scoring responsive derivatives as if they were different photographs.
+docs/phase-3-2c-full-portfolio-visual-audit.md:12:- 107 source photographs were visually reviewed: 83 art-directed desktop masters and 24 expertise originals.
+docs/phase-3-2c-full-portfolio-visual-audit.md:13:- Sixteen expertise originals already have art-directed equivalents, leaving 91 distinct photographic moments.
+docs/phase-3-2c-full-portfolio-visual-audit.md:65:| BYD BD11                     | Industry Presence; Creative Production                  | UK Industry Presence; UK Brand Content                     | VISUAL / EXECUTION           | Automotive/energy leadership, marketing directors             | BYD and identifiable attendees; rights-approved named case; LOW within recorded role                         | Strong desktop/mobile context; group frames need contain treatment                  | Home hero/early proof, Work, case, Capabilities                | Repeated heavily; contributes to automotive dominance                     | Keep Work/case authority; remove from Home hero and reduce repeated covers                                         |
+docs/phase-3-2c-full-portfolio-visual-audit.md:66:| CATL Open Day                | Industry Presence; Creative Production                  | UK Industry Presence; International Credibility            | VISUAL / EXECUTION           | Energy, battery, technology companies                         | CATL, speakers and audience; rights-approved named case; LOW within recorded role                            | Strong wide stages; several 4:3 assets require letterbox/contain on narrow screens  | Home early proof, Work, case                                   | Similar stage frames; one hero duplicate within series                    | Reframe as technology-energy environment; use one contextual scene high on Home                                    |
+docs/phase-3-2c-full-portfolio-visual-audit.md:67:| Changan launch               | Industry Presence; Creative Production                  | UK Industry Presence; UK Brand Content                     | VISUAL / EXECUTION           | Automotive and major-brand leadership                         | Changan, vehicles and participants; rights-approved named case; LOW                                          | Strong wide/event crops; group needs protected-area handling                        | Home hero/early proof, Work, case, Capabilities                | Very frequent, but strongest launch authority                             | Retain one Home early-proof moment and Work feature; do not monopolise hero                                        |
+docs/phase-3-2c-full-portfolio-visual-audit.md:68:| European road lifestyle      | Creative Production                                     | International Brand Activation; UK Brand Content           | VISUAL                       | Lifestyle, automotive and content buyers                      | Recognisable premium vehicles and public participants; approved case, MEDIUM implication risk                | Portrait sources are weak for wide crops; mobile often stronger                     | Work/case                                                      | Visually distinct but commercial role is less evident                     | Keep as supporting Work project; do not use in high-level hero                                                     |
+docs/phase-3-2c-full-portfolio-visual-audit.md:69:| Leapmotor IAA                | Industry Presence; Creative Production                  | UK Industry Presence; International Credibility            | VISUAL / EXECUTION           | Technology/automotive exhibitors                              | Leapmotor branding and executives; approved case, LOW                                                        | Excellent booth/environment frames across breakpoints                               | Home Selected Work, Work/case                                  | Less overused than Changan/BYD                                            | Promote within Industry chapter and Work feature rotation                                                          |
+docs/phase-3-2c-full-portfolio-visual-audit.md:70:| London automotive brand film | Creative Production                                     | UK Brand Content; International Credibility                | VISUAL / PROCESS / EXECUTION | Marketing directors and content teams                         | Brand/product/participants; approved case, LOW                                                               | Film frames are wide and crop-resilient; subtitles must not be cut                  | Home Selected Work, Work/case, Capabilities                    | Repeated but supports a different role from event cases                   | Use to explain the asset engine and case video-led grammar                                                         |
+docs/phase-3-2c-full-portfolio-visual-audit.md:71:| Commercial fashion styling   | Creators/Talent; Creative Production                    | International Brand Activation; UK Brand Content           | VISUAL / EXECUTION           | Fashion/beauty brand directors                                | Identifiable talent; approved capability case; MEDIUM if presented as roster                                 | Portrait-led; strong mobile and editorial split, weak full-bleed wide               | Work/case                                                      | Some visual overlap with talent categories                                | Use two campaign-context frames; avoid isolated headshots                                                          |
+docs/phase-3-2c-full-portfolio-visual-audit.md:72:| Creative beauty makeup       | Creators/Talent; Creative Production                    | International Brand Activation; UK Brand Content           | VISUAL / EXECUTION           | Beauty and creative directors                                 | Identifiable talent; approved capability case; MEDIUM                                                        | Excellent portrait, mosaic and mobile use; poor wide hero fit                       | Work/case                                                      | Low current high-level use                                                | Use as creative-output range, not consumer beauty service                                                          |
+docs/phase-3-2c-full-portfolio-visual-audit.md:73:| Talent categories            | Creators/Talent; Creative Production                    | International Brand Activation                             | VISUAL                       | Producers needing casting/talent coordination                 | Identifiable talent; approved visual capability; MEDIUM/HIGH directory implication                           | Portrait-safe; poor contextual evidence                                             | Work/case                                                      | Overlaps fashion and teal portraits                                       | Supporting only; never build roster/profile architecture                                                           |
+docs/phase-3-2c-full-portfolio-visual-audit.md:74:| Teal editorial               | Creators/Talent; Creative Production                    | International Brand Activation; UK Brand Content           | VISUAL / EXECUTION           | Fashion/beauty and global brand teams                         | Identifiable talent; approved capability case; MEDIUM                                                        | Mixed series supports adaptive portrait/wide layouts                                | Home Selected Work, Work/case, Capabilities                    | One of few high-level non-automotive projects                             | Promote as premium production, with objective/role/output nearby                                                   |
+docs/phase-3-2c-full-portfolio-visual-audit.md:75:| Robotics exhibition          | Industry Presence; Creative Production                  | UK Industry Presence; UK Brand Content                     | VISUAL                       | AI/robotics founders and Chinese technology marketing leaders | Products and exhibition branding; rights-approved capability media; MEDIUM because not case-ready            | Portrait assets suit split hero/mosaic; contain on wide screens                     | Legacy expertise routes only; one prior homepage-expertise use | Three near-subject variations, not exact duplicates                       | Select `vbm-003` and `vbm-002` for Home/Capabilities; label environment, never client case                         |
+docs/phase-3-2c-full-portfolio-visual-audit.md:77:| Live events                  | Creators/Talent; Industry Presence; Creative Production | International Brand Activation; UK Industry Presence       | VISUAL / EXECUTION           | Culture, event and activation buyers                          | Performers/audiences identifiable; rights approved; MEDIUM                                                   | Wide crowd scenes strong desktop; performance portrait strong mobile                | Legacy expertise routes                                        | Some selected art-directed copies                                         | One wide stage scene can support cultural breadth; archive repetitive group/performance frames from high-level use |
+docs/phase-3-2c-full-portfolio-visual-audit.md:78:| Creator commercial           | Creators/Talent; Creative Production                    | International Brand Activation; UK Brand Content           | VISUAL / EXECUTION           | Beauty/fashion/product marketing directors                    | Models/products/brands visible; rights approved; capability-only; MEDIUM, no organic endorsement implication | Strong portrait/mobile; product and auto lifestyle assets support editorial mosaics | Four selected assets on legacy routes; five unused publicly    | Several beauty portraits are similar; product context differentiates them | Select `vbm-013`, `015`, `018`, `019` plus retained `014`; reject generic beauty-only frames from hero             |
+docs/phase-3-2c-full-portfolio-visual-audit.md:79:| Artist editorial             | Creators/Talent; Creative Production                    | International Brand Activation                             | VISUAL                       | Culture and fashion production buyers                         | Artist identifiable; approved capability media; MEDIUM                                                       | Mixed crop resilience; dramatic frames need contained treatment                     | Legacy expertise; one prior homepage-expertise image           | Selected art-directed copies for two assets                               | Supporting cultural texture only; do not imply artist management                                                   |
+docs/phase-3-2c-full-portfolio-visual-audit.md:80:| Interview / cast             | Creators/Talent; Creative Production                    | International Credibility; Brand Activation; Brand Content | VISUAL / PROCESS             | Marketing directors, content and production buyers            | iQOO branding and identifiable cast; rights approved, capability-only; MEDIUM                                | Strong landscape/tablet; good protected areas                                       | Legacy expertise routes                                        | Both have art-directed copies                                             | Use interview panel for outcome/output context and cast frame on About with a precise production caption           |
+docs/phase-3-2c-media-strategy-matrix.md:13:| Institutional Capability       | No media; numbered formats/process plus future `SelectedEngagements` infrastructure                          | Absence of photography becomes intentional editorial credibility                                                                        | Render no engagement row until approved evidence exists                                                                       |
+docs/phase-3-2c-media-strategy-matrix.md:16:| Creative Production Capability | London film `01/03/04`; `vbm-024`; `vbm-015`; Teal `03`; creative beauty `03`; CATL `03`                     | Demonstrates film, interview, creator content, fashion/beauty and event output as one asset engine                                      | Labels describe output types, not unsupported campaign ownership                                                              |
+docs/phase-3-2d-adversarial-design-review.md:30:- Photography-studio risk: low; imagery is consistently paired with objectives, roles, outputs and project context.
+docs/phase-3-2d-art-direction-system.md:12:It must not resolve into a photography portfolio, talent agency, management-consultancy template, SaaS dashboard, hospitality palette or generic luxury theme.
+docs/phase-3-2d-page-redesign-decisions.md:37:- Removed the people image that could be read as a team photograph.
+docs/phase-3-3-case-evidence-gap-register.md:10:| BYD BD11, London                           | Named London vehicle-launch photography; vehicle, venue and audience context         | Client project / UK execution           | Original brief and launch objective | Exact commission; date/year; formats and quantities      | Delivery/publication record; commercial use; results            | Promote as early UK proof; state only event documentation and visual capture                   |
+docs/phase-3-3-case-evidence-gap-register.md:13:| CATL Open Day 2025, Munich                 | Named event documentation of stage, speakers and audience                            | Client project / European execution     | Client brief                        | Date; exact scope; outputs/quantities                    | Stakeholder use; publication; outcomes                          | Keep as European project proof with a narrow role boundary                                     |
+docs/phase-3-3-case-evidence-gap-register.md:14:| Leapmotor, IAA Mobility 2023, Munich       | Named exhibition photography                                                         | Client project / European execution     | Supplied brief                      | Exact commission; shoot date; outputs                    | Delivery/publication; outcomes                                  | Supporting Work proof; no exhibition-management claim                                          |
+docs/phase-3-3-case-evidence-gap-register.md:15:| European Road & Lifestyle                  | Real automotive photography in Europe; client withheld                               | Client-confidential production evidence | Client objective                    | Client, places, date/year, deliverables                  | Commercial use and outcome                                      | Restore to the Work index as supporting evidence; keep client anonymous                        |
+docs/phase-3-3-case-evidence-gap-register.md:16:| Teal Editorial                             | Real fashion photography and visual production                                       | Creative capability                     | Client/campaign objective           | Client, date, location, commissioned roles, deliverables | Usage rights beyond recorded website media; publication/outcome | Retain as creative-capability evidence, not end-to-end activation proof                        |
+docs/phase-3-3-case-evidence-gap-register.md:22:The detail template may show confirmed context, activity, role and visible evidence. It must omit unknown objectives, deliverables and outcomes rather than substituting the Venus Bridge role into those fields. Each page should state the supported role boundary so photography or content capture is not read as ownership of the wider event, campaign or strategy.
+docs/phase-3-3-commercial-ia-plan.md:8:Secondary: **premium creative production and project delivery**.
+docs/phase-3-3-commercial-ia-plan.md:14:2. **Capabilities** — four controlled capabilities ordered by current evidence strength: industry presence; creative production; creators/talent; institutional/research/expert collaboration. Keep the four engagement models but qualify the credibility model until direct evidence exists.
+docs/phase-3-3-commercial-ia-plan.md:26:5. Selected work: a compact mix of UK execution, European event execution and creative production.
+docs/phase-3-3-commercial-ia-plan.md:38:| UK Brand Content Production       | STRENGTHEN            | Strong UK-location and wider production evidence with low claim risk                               |
+docs/phase-3-3-institutional-evidence-register.md:11:| CEIBS Cambridge module / Primetime Group                                               | same PDF, p.61, visually checked                                        | A 2023 Cambridge-based programme is shown with event, speaker and group photography                       | B — real activity, role not fully evidenced                        | General experience documenting expert and education-led programmes            | Client/commissioning entity; precise role; deliverables; participant and institution naming permission; logo permission; publication evidence   |
+docs/phase-3-3-institutional-evidence-register.md:12:| Huawei × Hunan University AI forum link                                                | same PDF, p.71, visually checked                                        | A 2024 technical forum connection is shown with live-production equipment and remote presentation screens | B — real technical/event activity, commercial relationship unclear | General capability in live, expert and technology content production          | Contracting entity; venue; exact role; output list; Huawei/Hunan University naming approval; speaker permissions; delivery/publication evidence |
+docs/phase-3-3-pre-implementation-commercial-audit.md:9:**Commercial verdict:** the strategic hypothesis is already implemented in the current communication hierarchy, not merely latent. Credibility is primary, execution is secondary, and access/partnerships are supporting. This is directionally stronger than a broad UK-market-entry claim and materially reduces overpromise. The present constraint is proof alignment: the copy sells institutional access, expert engagement, international credibility and project orchestration, while public evidence overwhelmingly proves photography, event documentation and visual production.
+docs/phase-3-3-pre-implementation-commercial-audit.md:30:3. **Evidence:** launches, event photography, brand-film imagery, fashion and beauty production.
+docs/phase-3-3-pre-implementation-commercial-audit.md:34:The site sits between a credible B2B project partner and a premium creative/local-execution company, but currently nearer the creative side because the proof is image-led and roles are mostly “capture”, “photography” and “visual content production.”
+docs/phase-3-3-pre-implementation-commercial-audit.md:55:| B. Automotive/mobility brand                    | UK/European launch and automotive content partner; Work first                                                | Industry Presence, activation, launch documentation, brand content      | Changan, CATL, BYD and Leapmotor provide strongest recognition; exact responsibility remains narrow                                         | Yes, especially for photography/event content                                       |    9/10 |
+docs/phase-3-3-pre-implementation-commercial-audit.md:56:| C. Fashion/beauty/lifestyle brand               | London creative production, talent and styling partner; Work/Capabilities                                    | Brand activation, creator/talent production, international content      | Strong aesthetic proof but anonymous clients, no usage/outcome evidence                                                                     | Yes for production; uncertain for broader activation                                |    8/10 |
+docs/phase-3-3-pre-implementation-commercial-audit.md:69:**Four current capabilities:** Institutional & Expert Collaboration; Industry Presence & Events; Creators, Talent & Cultural Partnerships; Creative Production & Brand Assets.
+docs/phase-3-3-pre-implementation-commercial-audit.md:71:**Four current project models:** International Credibility Project; UK Industry Presence Project; International Brand Activation; UK Brand Content Production.
+docs/phase-3-3-pre-implementation-commercial-audit.md:78:| UK Brand Content Production       | Concrete production offer     | Yes       | Mostly       | Strong: multiple automotive/fashion/beauty examples                        |
+docs/phase-3-3-pre-implementation-commercial-audit.md:93:| UK Brand Content Production       |         9 |     9 |         9 |             9 |               5 |                2 |            9 |              6 |      7 |
+docs/phase-3-3-pre-implementation-commercial-audit.md:130:- Strong: Changan, CATL, BYD and Leapmotor activity; London locations; visible event/industry environments; photography/film outputs.
+docs/phase-3-3-pre-implementation-commercial-audit.md:139:**Creative-agency perception: 7/10.** Hero imagery, Selected Work, Capabilities and case galleries strongly emphasise photography, fashion, beauty, talent and cinematic editorial treatment. Of nine projects, all are primarily visual-production records; the named automotive roles are event capture, photography and content production.
+docs/phase-3-3-pre-implementation-commercial-audit.md:176:| Changan 2025 Munich                       | Client, visual, execution, participation | A        | Home, Work, industry presence         | Medium: “UK” label; role limited to capture/photography                              |
+docs/phase-3-3-pre-implementation-commercial-audit.md:181:| Teal fashion series                       | Visual/capability                        | B        | Creative production/talent            | Medium: no client, location or commercial outcome                                    |
+docs/phase-3-3-pre-implementation-commercial-audit.md:251:- EN perception: international credibility/UK project partner **8/10**; creative production **7/10**; consultancy **4/10**.
+docs/phase-3-3-pre-implementation-commercial-audit.md:274:| Creative Production & Brand Assets       | Extensive cases and images                              | **CORE**                                        |
+docs/phase-3-3-pre-implementation-commercial-audit.md:494:| Creative production positioning | Strongest proof                 | Preserve as commercial engine       | Tie to outcomes                                       | Secondary, not hidden                                 | No                | 9/10 creative credibility      |
+docs/phase-3-4-final-report.md:9:- Strategic position: unchanged. International credibility and UK execution remain primary; premium creative production and project delivery remain secondary.
+docs/phase-3-4-human-release-inputs.md:47:- Photograph approved: `HUMAN_INPUT_REQUIRED`
+docs/phase-3-4-leadership-profile-input.md:11:- Public photograph: `HUMAN_INPUT_REQUIRED`
+docs/phase-3-4-priority-case-evidence-requests.md:40:- exact role beyond the currently supported photography/content capture, if any;
+docs/phase-3-4-priority-case-evidence-requests.md:53:- precise responsibility for stage, speaker, audience and brand-content capture;
+docs/phase-3-4-priority-case-evidence-requests.md:67:- exact photography/documentation scope;
+docs/phase-3-4-priority-case-evidence-requests.md:76:Do not infer deliverables from normal industry practice. A visible photograph proves that an image exists; it does not by itself prove the contracted library, delivery quantity, publication channel or commercial outcome.
+docs/phase-3-copy-system.md:42:| Create Proof That Travels       | 让海外成果持续产生价值   | Turn UK activity into reusable photography, film, interviews and stakeholder assets.  |
+docs/phase-3-copy-system.md:58:### Creative Production & Brand Assets / 创意制作与品牌资产
+docs/phase-3-copy-system.md:60:Convert UK activity into commercial photography, films, interviews, event coverage, social content and stakeholder material designed for continued use in China, Asia and international conversations.
+docs/phase-3-copy-system.md:75:- Use `collaboration`, `engagement`, `participation`, `commissioned work`, `production support` and `event documentation` precisely.
+docs/phase-3-final-commercial-audit.md:4:Implementation state: production build passed; visual validation completed against the local production server.
+docs/phase-3-final-commercial-audit.md:42:Partially and credibly. Changan, BYD, CATL and Leapmotor support industry presence, event/exhibition documentation and creative execution. The London automotive film and anonymous fashion/beauty records support creative production and talent/styling capability. They do not yet prove institutional/expert collaboration or strategic commercial outcomes, and the site does not imply otherwise.
+docs/phase-3-final-commercial-audit.md:54:Yes. Each pillar has a distinct problem, coordination role, outputs and representative engagement formats. Creative Production is the asset layer that can document the other three without collapsing them into one service taxonomy.
+docs/phase-3-information-architecture.md:62:6. Creative Production & Brand Assets
+docs/phase-3-strategic-repositioning-audit.md:12:The current promise places market-entry strategy, compliance responsibility, specialist referrals, localisation, launch readiness and local delivery beside proven creative/event execution. This can reasonably be read as responsibility for legal, tax, certification, logistics, distribution and long-term market operations. The public proof set supports photography, event/exhibition documentation, UK-located production and brand-content execution; it does not support ownership of the full market-entry lifecycle.
+docs/phase-3-strategic-repositioning-audit.md:39:- UK-located photography, film, interviews and brand-content production
+docs/phase-3-strategic-repositioning-audit.md:49:- Changan European Brand Launch 2025: event and brand-content capture; automotive launch photography.
+docs/phase-3-strategic-repositioning-audit.md:50:- BYD BD11 London: event documentation; photography and visual-content capture.
+docs/phase-3-strategic-repositioning-audit.md:51:- CATL Open Day 2025: event and brand-content capture; photography and visual-content production.
+docs/phase-3-strategic-repositioning-audit.md:52:- Leapmotor at IAA Mobility 2023: exhibition-content capture; automotive photography.
+docs/phase-3-strategic-repositioning-audit.md:53:- London Automotive Brand Story Film: on-location visual-content production; automotive brand-content capture.
+docs/phase-3-strategic-repositioning-audit.md:79:4. Creative Production & Brand Assets
+docs/phase-4-commercial-architecture-visual-system.md:82:- BYD, Changan, CATL and Leapmotor are described only using approved photography/content roles; no event ownership, market-entry ownership or commercial result is implied.
+docs/phase-5-dual-audience-commercial-architecture.md:20:- Work places BYD, Changan, CATL, Leapmotor and the London automotive film before selected creative production.
+docs/phase-5-dual-audience-commercial-architecture.md:29:- Team profiles remain fail-closed until genuine identity, role, biography, photograph and public approval are supplied.
+docs/phase-5-dual-audience-commercial-architecture.md:61:3. Supply and approve leadership name, role, biography and genuine photograph if a named profile should be published.
+docs/phase-7-motion-refinement.md:9:- Events: multi-camera and run-of-show choreography.
+docs/phase-8-final-report.md:38:> UK creative production, talent and local execution — coordinated from London.
+docs/phase-9-venus-bridge-brand-refresh.md:8:The public site now presents **Venus Bridge Media** as a London-based bilingual creative production, talent and UK execution company. The old public FrameBridge identity has been removed, the four supplied logo artworks have been converted into a governed web asset system, and the homepage Hero has been rebuilt around a business-relevant Production System Canvas.
+docs/phase-9-venus-bridge-brand-refresh.md:61:No approved public Hero photography was available. The old unrelated placeholder geometry was therefore replaced with a **Production System Canvas** containing four connected capability nodes:
+docs/phase-9-venus-bridge-brand-refresh.md:75:- `Creative production, talent and UK execution — coordinated from London.`
+docs/portfolio-content-review.md:7:| CATL Open Day 2025, Munich                   | `car.pdf`, p.2                         | Munich / 2025 / CATL                          | Automotive launch event photography       | Event and brand content capture; photography and visual content production | Client brief, quantities, outcome                               | Selected Projects     | No           | `catl-open-day-2025-01-hero` + 6 gallery assets           |
+docs/portfolio-content-review.md:8:| BYD BD11 Double-Decker Bus Launch, London    | `car.pdf`, p.3                         | London / year not stated / BYD                | Vehicle launch event photography          | Event documentation; photography and visual content capture                | Exact date, brief, quantities, outcome                          | Production Experience | No           | `byd-bd11-london-01-hero` + 6 gallery assets              |
+docs/portfolio-content-review.md:9:| Changan European Brand Launch 2025, Munich   | `car.pdf`, p.4                         | Munich / 2025 / Changan                       | European brand launch visual production   | Event and brand content capture; automotive launch photography             | Client brief, quantities, outcome                               | Selected Projects     | Yes, order 1 | `changan-europe-launch-2025-01-hero` + 6 gallery assets   |
+docs/portfolio-content-review.md:10:| Leapmotor at IAA Mobility 2023, Munich       | `car.pdf`, p.5                         | Munich / 2023 / Leapmotor                     | Automotive exhibition photography         | Exhibition content capture; automotive photography                         | Client brief, quantities, outcome                               | Selected Projects     | No           | `leapmotor-iaa-2023-01-hero` + 6 gallery assets           |
+docs/portfolio-content-review.md:11:| London Automotive Brand Story Film           | `car.pdf`, p.6 and curated asset index | London and England / year not stated / BYD    | Automotive brand-film imagery             | On-location visual content production; automotive brand content capture    | Year, brief, exact deliverables, outcome                        | Production Experience | Yes, order 3 | `london-automotive-brand-film-01-hero` + 6 gallery assets |
+docs/portfolio-content-review.md:12:| European Automotive Road & Lifestyle Content | `car.pdf`, pp.7–8                      | Europe / year not stated / brand not stated   | Road and lifestyle automotive photography | Automotive campaign imagery; on-location photography                       | Client name, exact location, year, brief, deliverables, outcome | Production Experience | No           | `european-road-lifestyle-01-hero` + 6 gallery assets      |
+docs/portfolio-content-review.md:13:| Teal Editorial Fashion Series                | `fashion.pdf`, visual review           | Place, year and public client name not stated | Editorial fashion photography             | Photography; fashion visual content production                             | Project identity, date, location, brief, deliverables, outcome  | Production Experience | Yes, order 2 | `teal-editorial-series-01-hero` + 6 gallery assets        |
+docs/portfolio-content-review.md:14:| Commercial Fashion & Apparel Image Series    | `fashion.pdf`, visual review           | Place, year and public client name not stated | Commercial fashion and apparel imagery    | Photography; visual content production                                     | Project identity, date, location, brief, deliverables, outcome  | Production Experience | No           | `commercial-fashion-styling-01-hero` + 7 gallery assets   |
+docs/portfolio-content-review.md:15:| Creative Beauty & Makeup Image Series        | `fashion.pdf`, visual review           | Place, year and public client name not stated | Creative beauty and makeup photography    | Photography; beauty visual content production                              | Project identity, date, location, brief, deliverables, outcome  | Production Experience | No           | `creative-beauty-makeup-01-hero` + 3 gallery assets       |
+docs/portfolio-missing-information.md:11:- **London Automotive Brand Story Film:** year and exact dates; precise filming locations; supplied brief; confirmed deliverables; any outcome that may be published.
+docs/portfolio-missing-information.md:23:- any named production roles beyond photography/visual content production;
+docs/release-closure-checklist.md:56:- [x] full local production E2E rerun: 105 passed, 53 intentionally skipped, 0 failed;
+docs/scalable-commercial-case-evidence-system.md:65:12. **Photography-company perception:** 2/10
+docs/scalable-commercial-case-evidence-system.md:131:A future case should be published only when it helps a prospective client identify a relevant business situation and understand Venus Bridge's evidenced responsibility. Records that mainly demonstrate photography, event coverage, production craft or access to people remain supporting evidence until a verified commercial context and role boundary are available.
+docs/service-page-art-direction.md:5:Film and photography production desk. Uses a poster-led reel slot, storyboard/contact-sheet media, delivery ratios, timecode and production disciplines. Audio never autoplays.
+docs/service-page-art-direction.md:13:Live operations system. Uses event architecture, run-of-show, multi-camera coverage and an authored responsibility matrix. Flashing and microphone-reactive effects are excluded.
+docs/sitewide-commercial-copy-editorial-audit.md:8:The positioning remains **Cross-Border Collaboration & Market Presence Partner**. The work did not redesign the site, change URLs, alter the Case Evidence System, add service packages or expand any verified claim. Photography, film, events, talent and production remain project methods rather than the company category.
+docs/sitewide-commercial-copy-editorial-audit.md:196:- confirmed public team names, roles, biographies, genuine photographs and permissions;
+docs/strategic-website-audit.md:26:一个设计完成度较高、真实性治理严谨的 **London bilingual creative production and local delivery company** 网站。它已经不只是摄影作品集，但客户仍会主要把它理解为“能在英国拍摄、做活动、找人才并双语协调的制作公司”。
+docs/strategic-website-audit.md:53:第一决策人通常是 Founder、CEO、Overseas/International Business Director、CMO、Brand/Marketing/PR Director，而不是只负责采购摄影的执行人员。
+docs/strategic-website-audit.md:59:这比“我们在英国提供摄影、视频、人才与活动”更接近客户购买原因，也不超出当前真实能力边界。
+docs/strategic-website-audit.md:85:London bilingual creative production & project-delivery company
+docs/strategic-website-audit.md:120:汽车发布、展会、英国拍摄、时尚商业制作、娱乐与现场环境
+docs/strategic-website-audit.md:163:- 三条客户路径比传统摄影/视频服务表更接近客户目标。
+docs/strategic-website-audit.md:187:| Capability         | 摄影、视频、人才、造型、采访、现场等手段 | 表达最充分，反而主导了认知                        |
+docs/strategic-website-audit.md:190:Photography 不是产品；“UK Brand Content Production”才可能是产品。University introductions 不是 outcome；“为英国创新合作建立一组经过筛选且获准接洽的研究者/机构路径”才是可交付结果。
+docs/strategic-website-audit.md:196:1. London creative production company；
+docs/strategic-website-audit.md:198:3. events / launches / photography supplier；
+docs/strategic-website-audit.md:306:5. **Solution architecture** — Market entry orchestration、Brand & Localisation、Creative Production、Events & Activation、Ecosystem Connection。
+docs/strategic-website-audit.md:307:6. **Execution system** — 人才、Creator、采访、摄影、视频、活动、现场、双语项目控制。
+docs/strategic-website-audit.md:362:├─ Creative Production
+docs/strategic-website-audit.md:414:研究、准备度梳理、责任地图、信息包、品牌叙事、本地内容、摄影、视频、采访、Founder content、人才、造型、Creator、活动制作、展会内容、现场管理、双语协调、获准的介绍与转介。
+docs/strategic-website-audit.md:422:| Creative & Commercial Production    | 本地无人把 brief 转为英国资产            | UK Brand Content Production          | photography、film、interviews、multi-format assets          | 已发布制作项目和 confirmed scope              | Send an Execution Brief   |
+docs/strategic-website-audit.md:434:| Capability | Photography、casting、bilingual coordination        | 作为执行手段，不作为一级购买理由       |
+docs/strategic-website-audit.md:435:| Service    | UK commercial content production                    | 说明工作范围和责任                     |
+docs/strategic-website-audit.md:450:| CATL Open Day 2025             | 活动与品牌内容摄影         | 在欧洲技术/汽车发布环境中处理舞台、演讲者、观众和时效内容  | 中国科技/汽车企业需要欧洲发布内容与现场记录         | Launch proof；需补 brief、现场责任、交付和使用证据      |
+docs/strategic-website-audit.md:451:| BYD BD11 London launch         | 伦敦车辆发布摄影           | 中国品牌在英国本地发布环境的车辆、场地与观众内容执行       | 英国新品发布、本地团队和媒体资产                    | China-to-UK local execution proof                       |
+docs/strategic-website-audit.md:453:| Leapmotor IAA                  | 展会摄影                   | 展台、产品、细节与访客互动的展会内容捕捉                   | 参展品牌需要展期内容和会后传播资产                  | Exhibition readiness / activation proof                 |
+docs/strategic-website-audit.md:455:| European road & lifestyle      | 道路与生活方式摄影         | 跨地点车辆运动与环境语境                                   | 欧洲 campaign visual assets                         | Production capability proof；不应暗示市场结果           |
+docs/strategic-website-audit.md:456:| Teal editorial fashion         | 时尚编辑摄影               | 地点、造型、服装、动作和视觉方向                           | 服装品牌需要欧洲视觉语法与 campaign assets          | Fashion localisation / production proof                 |
+docs/strategic-website-audit.md:467:| Concert            | 演唱会摄影         | 低光、大规模现场、不可重来时刻、快速选片                | Live activation、real-time/social content    |
+docs/strategic-website-audit.md:472:| Automotive         | 汽车摄影           | 车辆 access、安全、展会/发布、运动和地点协调            | 中国汽车品牌英国/欧洲落地                    |
+docs/strategic-website-audit.md:475:| Corporate event    | 活动摄影           | run of show、嘉宾、舞台、现场多方协调                   | Launch、stakeholder event、local delivery    |
+docs/strategic-website-audit.md:547:| Company attending UK exhibition              | 展前故事、现场 capture、展后 follow-up      | 只订摄影无法形成完整 pipeline                             | Exhibition Readiness & Content Plan       | 展会、speaker、采访、快速交付               |
+docs/strategic-website-audit.md:747:- 过多 capability photography 会把品牌拉回 production-company category。
+docs/strategic-website-audit.md:758:- Fashion / beauty 显示制作质量，但如果缺商业 context，容易像 photographer portfolio；
+docs/strategic-website-audit.md:796:| UK creative production            | 汽车、时尚、品牌片、Capability Media         | 直接统筹内容制作                   | 按规模补 crew/supplier                    | Promote Now                           | 高                   |
+docs/strategic-website-audit.md:797:| Photography / video / interviews  | 多项目与媒体                                 | 直接交付或管理                     | 专项 crew 视 brief                        | Promote Now                           | 高                   |
+docs/strategic-website-audit.md:822:| Commercial photography / film         | NOW   |        High | 多个公开项目                 | Direct / managed crew          | 核心执行能力               |
+docs/strategic-website-audit.md:823:| UK local production                   | NOW   |        High | London/UK 项目               | Direct coordination            | 核心差异化                 |
+docs/strategic-website-audit.md:828:| Brand content localisation            | NOW   |      Medium | 英国品牌片与本地制作         | Creative production            | 先聚焦内容本地化           |
+docs/strategic-website-audit.md:854:| C 中国服装品牌进入欧洲     | 本地视觉、人才、rights、market test               | Fashion制作与 UK network              | 发现 creator/localisation/launch需求              | 在看到测试方案后 | 部分；像作品集，缺 market test |
+docs/strategic-website-audit.md:855:| D 中国美妆品牌测试英国     | 小预算验证、Creator fit、claim/usage              | Beauty production + transparent scope | 从拍摄扩展到 audience test                        | 在 diagnostic 后 | 较弱；目前只有视觉能力         |
+docs/strategic-website-audit.md:963:- **网站表现阶段：** Level 2.5 — Creative Production + Integrated Delivery Agency。
+docs/strategic-website-audit.md:1009:| P2 Medium   | Entertainment/Fashion context 仍偏作品 | 强人物和 editorial 视觉                               | 企业客户误判为摄影/艺人公司        | 用业务能力标签和 use case 重构                        |
+docs/team-portrait-guidelines.md:14:Avoid strong coloured or busy backgrounds, full-body photographs, event photographs, extreme angles, heavy beauty filters and low-resolution screenshots.
+docs/university-evidence-intake.md:3:Use this intake before changing any public institutional case from text-led, publication-limited evidence to a named case with media. One record is required per programme. Unknown fields remain blank; they must never be inferred from photographs, venue geography or informal participation.
+docs/venus-bridge-about-us-report.md:7:The `/about` route has been retained and rebuilt as **About Us / 关于我们**. The page now explains who Venus Bridge Media is, why it exists, who it serves, what it coordinates, how teams are assembled, how it differs from a photographer/intermediary/single supplier, its relationship to Vivian Adventure Ltd and how a client starts a project.
+docs/venus-bridge-about-us-report.md:28:- `extendedProductionRoles` describes photographers, videographers, makeup, hair, wardrobe, performers, presenters, event crew, post-production and logistics as project-network roles.
+docs/venus-bridge-about-us-report.md:57:  - `About Us | Venus Bridge Media — London Creative Production`
+docs/venus-bridge-about-us-report.md:67:The page continues the black/ivory/champagne identity, uses the approved tagline lockup rather than stock team imagery and prioritises editorial information structure. Team roles and operational pathways provide a useful no-photo state. AI-generated people, random offices, skyline stock and fake team photographs are excluded.
+docs/venus-bridge-brand-architecture.md:58:Media is a capability, not the company category. Retain the term where it describes photography, film, interviews, event documentation, paid or social media, launch assets or other genuine outputs. The hierarchy is commercial objective, market and relationship strategy, local execution, then creative or media production where required.
+docs/venus-bridge-case-placement-matrix.md:22:| Founder/brand interview, two-camera 4K  | Unconfirmed / hidden   | Technical direction is described, but client, date, final edit, delivery and approval are absent  | Confirm delivery and approval; likely B until evidence is supplied                  |
+docs/venus-bridge-case-placement-matrix.md:33:| Creative & Commercial Production | Campaign, concert imagery, founder interview, short-form or multi-format delivery              | Production role, crew/scope, formats, review and handoff                          | Final frames plus controlled BTS                           | Personal photography relabelled as a commercial campaign                |
+docs/venus-bridge-case-placement-matrix.md:35:| Events, PR & Exhibitions         | Brand event, exhibition, concert, interview programme, livestream or event documentation       | Venue/supplier/talent/media interfaces and event outputs                          | Wide event frame, working frame, final output              | Quoted events, unconfirmed official status or audience claims           |
+docs/venus-bridge-case-placement-matrix.md:46:1. **Founder or brand interview** — potentially the cleanest route to show commercial production, two-camera capture, audio, long-form and social cutdowns. Confirm whether editing was delivered.
+docs/venus-bridge-content-diagnosis.md:57:- **Current purpose:** Explain campaign, photography, film, interview and social production.
+docs/venus-bridge-content-diagnosis.md:62:- **Best case studies to add:** artist concert imagery; two-camera 4K founder interview; fashion/apparel campaign.
+docs/venus-bridge-content-diagnosis.md:65:- **Required data:** crew role, cameras/audio only if accurate, shoot date, edit scope, channels and delivery timing.
+docs/venus-bridge-content-diagnosis.md:79:- **Required client approval:** talent, agent, client and photographer permissions; usage territory/duration.
+docs/venus-bridge-content-diagnosis.md:87:- **Current purpose:** Explain feasibility, venue/supplier coordination, live delivery and content capture.
+docs/venus-bridge-content-diagnosis.md:107:- **Best case studies to add:** white-label local production; venue/crew coordination; overseas creative executed in the UK.
+docs/venus-bridge-content-diagnosis.md:122:- **Best case studies to add:** two-camera founder interview; approved AI product demo; expert panel capture.
+docs/venus-bridge-content-diagnosis.md:151:- **Missing proof:** approved clothing, beauty or fashion brand project; personal consumer photography is not sufficient.
+docs/venus-bridge-content-diagnosis.md:165:- **Missing deliverables:** presenter scripts, live segments, exterior/interior content, social edits and event documentation where actually delivered.
+docs/venus-bridge-content-diagnosis.md:188:- **Recommended next action:** intake the two-camera interview direction and verify editing/delivery scope.
+docs/venus-bridge-content-diagnosis.md:217:- **Production blocker:** no named member profile or team photography is approved.
+docs/venus-bridge-content-diagnosis.md:270:- Consumer makeup/photography presented as a B2B brand campaign.
+docs/venus-bridge-content-required.md:39:- [ ] Photography
+docs/venus-bridge-content-required.md:40:- [ ] Videography
+docs/venus-bridge-content-required.md:68:- Number of final photographs:
+docs/venus-bridge-content-required.md:140:- [ ] Photographer/videographer copyright licence
+docs/venus-bridge-content-required.md:144:- [ ] Venue/location filming approval
+docs/venus-bridge-content-required.md:166:- Was two-camera 4K capture and lavalier audio actually used?
+docs/venus-bridge-content-required.md:174:- Was hosting, livestream, filming, logistics or client hospitality actually in scope?
+docs/venus-bridge-global-partnerships-brand-migration.md:42:No retained occurrence describes Venus Bridge as a media company, photography company or media agency.
+docs/venus-bridge-market-entry-scope.md:9:UK Market Entry & Compliance Coordination connects practical UK setup preparation with bilingual communications, content production, launches, roadshows and local delivery. It is not a legal, tax, accounting, investment or company-formation agency service.
+docs/venus-bridge-market-entry-scope.md:16:- Brand communications, websites, campaign content, photography, film and interviews.
+docs/venus-bridge-phase-10-report.md:16:- Compliance is not top-level navigation because the brand’s primary promise remains creative production, talent, live activation and UK execution; a top-level compliance label would overstate the current professional-service role.
+docs/venus-bridge-roadshow-scenarios.md:7:For a first UK launch, multi-city meetings, product presentation and brand experience. Scope can include route and venue planning, guest communications, presenters, talent, suppliers, bilingual live production, photography, film, interviews and post-event handoff. Claims, rights and venue gates must be approved.
+docs/venus-bridge-team-content-required.md:37:- Photographer/copyright owner:
+docs/venus-bridge-team-content-required.md:85:Photographers, videographers, makeup artists, hair stylists, fashion stylists, models, actors, presenters, interview teams, event crew, editors, post-production specialists, drivers and local suppliers should normally be described as the **Extended Production Network**.
+docs/venus-bridge-team-content-required.md:99:- camera, lighting or sound setup with people working;
+docs/venus-work-commercial-narrative-v2.md:32:| BYD          | 长标题“BYD BD11 双层公交车伦敦发布”；完整摄影职责在多处重复，再接“后续沟通可用” | **BYD BD11｜伦敦产品发布 / BYD BD11 \| London Product Launch**。主题保留英国公共交通语境；摘要为“团队参与 BD11 发布摄影，涵盖车辆、场地与观众。”／“Launch photography of the BD11, venue and audience.”；完整说明交代这些内容如何保留当地发布背景                            |
+docs/venus-work-commercial-narrative-v2.md:33:| AGIBOT       | “让具身智能拥有具体的产品表达”；挑战段夹带“购买需求验证”否定，随后写假想用途    | **AGIBOT 智元｜伦敦产品发布 / AGIBOT \| London Product Launch**。主题：“让技术介绍与真实产品展示形成清晰的品牌表达。”／“Connecting technical explanation and real product displays in a clear brand introduction.”；完整说明保留技术演讲、机器人展示、现场摄影与展示内容记录 |
+docs/venus-work-commercial-narrative-v2.md:34:| 英国汽车影片 | 泛称伦敦汽车品牌影片；正文反复否定成片剪辑／投放，再解释未来参考用途            | **汽车品牌影片｜英国实景 / Automotive Film \| UK Locations**。摘要明确英国实景协调、本地制作与汽车视觉制作；正文对应伦敦街道、采访画面及英格兰乡村。EN：“UK location coordination, local production and automotive imagery.”；不新增剪辑、发行或 campaign 职责               |
+docs/venus-work-commercial-narrative-v2.md:81:| 两场演出                 | 确切日期及是否存在摄影之外的演出统筹、艺人经纪或品牌合作职责；不从活动身份推导团队身份                           |
+docs/visual-architecture-correction-audit.md:7:The preceding visual-architecture pass applied a single preservation strategy to three different page roles. It placed media inside dark stages, used `contain` or natural-ratio imagery inside fixed presentation areas, and combined primary/supporting images in Work previews. The result protected complete source frames but diminished the photography through letterboxing, nested framing, black matte areas and uneven split compositions.
+e2e/work-commercial-narrative-v2.spec.ts:40:          /photograph|videograph|filming|content (?:capture|production|documentation)|event documentation|摄影|拍摄|影视制作|作品集|Potential use|事件文档/i
+e2e/work-commercial-narrative-v2.spec.ts:74:        expect(description).not.toMatch(/photograph|videograph|filming|摄影|拍摄/i);
+e2e/work-commercial-narrative-v2.spec.ts:76:          expect(await image.getAttribute("alt")).not.toMatch(/photograph|videograph|filming|摄影|拍摄/i);
+e2e/work-commercial-narrative-v2.spec.ts:153:    await expect(page.locator("main")).not.toContainText(/photograph|videograph|filming|摄影|拍摄|作品集/i);
+lib/contact/validation.ts:36:export const formatKeys = ["photography", "video", "mixed", "event-assets", "other"] as const;
+lib/contact/validation.ts:62:    "filmingEvent"
+lib/release.ts:123:  navigationLabel: { en: "Portfolio", zh: "作品集" },
+lib/release.ts:124:  pageTitle: { en: "Selected Portfolio", zh: "精选作品集" },
+lib/release.ts:129:  sectionHeading: { en: "Selected Portfolio", zh: "精选作品集" },
+lib/release.ts:130:  ctaLabel: { en: "Explore Portfolio", zh: "查看作品集" },
+lib/release.ts:131:  metadataTitle: { en: "Portfolio | Venus Bridge", zh: "作品集｜Venus Bridge" }
+public/_headers:4:  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+scripts/generate-phase13-reports.mjs:101:| Interview & Editorial | Selected Visual Experience | Interview subject authority; production date; location; camera/light/sound scope; final edit list; published output |
+scripts/generate-phase13-reports.mjs:144:| About Us | Brand logo and graphic system | None | No people imagery until genuine team photography is approved |
+scripts/generate-phase13-reports.mjs:182:- No named team profile or team photograph can publish until identity, role, biography, real imagery and public approval are complete.
+scripts/import-case-study-upgrade-media.mjs:5:const suppliedRoot = "D:/media web/作品集";
+scripts/import-phase13-media.mjs:64:  "vbm-006": ["A live performer photographed under stage lighting.", "舞台灯光下拍摄的现场表演者。"],
+scripts/import-phase13-media.mjs:68:    "Performers and attendees gathered for a live event photograph.",
+scripts/import-phase13-media.mjs:73:    "A creator in striped apparel photographed for editorial content.",
+scripts/import-phase13-media.mjs:77:  "vbm-013": ["A creator photographed beside a car on a city street.", "城市街道上在汽车旁拍摄的创作者。"],
+scripts/import-phase13-media.mjs:89:    "A fashion retail display photographed as commercial content.",
+scripts/import-phase13-media.mjs:90:    "作为商业内容拍摄的时尚零售陈列。"
+scripts/import-phase13-media.mjs:94:    "An artist photographed in a dramatic live-performance setting.",
+scripts/import-phase13-media.mjs:95:    "在具有戏剧感的现场表演环境中拍摄的艺人。"
+scripts/import-phase13-media.mjs:97:  "vbm-021": ["An artist photographed outdoors in an editorial composition.", "户外编辑式构图中的艺人。"],
+scripts/import-phase13-media.mjs:98:  "vbm-022": ["An artist photographed in a fashion-led editorial setting.", "时尚导向编辑场景中拍摄的艺人。"],
+scripts/import-phase13-media.mjs:99:  "vbm-023": ["A cast photographed during a UK location production.", "英国外景制作期间拍摄的演员群像。"],
+scripts/phase32c-media-intelligence.mjs:177:  reviewSourcePhotographs: reviewSources.length,
+scripts/phase32c-media-intelligence.mjs:193:      reviewSourcePhotographs: report.reviewSourcePhotographs,
+tests/phase-3-1-commercial.test.mjs:14:    "UK Brand Content Production"
+tests/phase-3-2-evidence.test.mjs:60:        photography: "Event photography",
+tests/phase-3-2-evidence.test.mjs:71:    productionElements: ["Photography"]
+tests/phase-3-2-evidence.test.mjs:74:    venusRole: { en: "Event documentation." },
+tests/phase-3-2-evidence.test.mjs:75:    scope: { en: "Photography." },
+tests/phase-3-2-evidence.test.mjs:77:    productionRole: { en: "Photography and image delivery." },
+tests/phase-3-2-evidence.test.mjs:89:    capabilities: ["Industry Presence & Events", "Creative Production & Brand Assets"],
+tests/phase-3-2c-experience.test.mjs:21:  assert.equal(inventory.reviewSourcePhotographs, 107);
+tests/phase-3-2c-experience.test.mjs:23:  assert.match(audit, /91 distinct photographic moments/);
+tests/phase-3-repositioning.test.mjs:44:    "Creative Production & Brand Assets"

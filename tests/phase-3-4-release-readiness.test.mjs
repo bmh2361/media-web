@@ -47,7 +47,7 @@ test("five priority cases deepen only supported execution evidence", async () =>
     );
     assert.match(
       await source("components/sections/PortfolioProjectDetail.tsx"),
-      /Responsibilities, collaborators and deliverables are agreed for the new project/
+      /partnership pathways and UK-side execution/
     );
     assert.doesNotMatch(
       await source("components/sections/PortfolioProjectDetail.tsx"),

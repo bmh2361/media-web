@@ -292,18 +292,22 @@ export function CommercialCaseIndex({
           aria-label={zh ? "案例分类" : "Case categories"}
           data-case-filters
         >
-          {commercialCaseFilters.map((filter) => (
-            <button
-              key={filter.value}
-              type="button"
-              data-case-filter={filter.value}
-              aria-pressed={category === filter.value}
-              onClick={() => chooseCategory(filter.value)}
-              className="min-h-11 shrink-0 rounded-full border border-ink/20 px-4 py-2 text-xs uppercase tracking-[0.12em] text-ink/65 transition-colors hover:border-ink/50 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-pearl"
-            >
-              {filter.label[language]}
-            </button>
-          ))}
+          {commercialCaseFilters
+            .filter(
+              (filter) => filter.value === "all" || cases.some((project) => project.category === filter.value)
+            )
+            .map((filter) => (
+              <button
+                key={filter.value}
+                type="button"
+                data-case-filter={filter.value}
+                aria-pressed={category === filter.value}
+                onClick={() => chooseCategory(filter.value)}
+                className="min-h-11 shrink-0 rounded-full border border-ink/20 px-4 py-2 text-xs uppercase tracking-[0.12em] text-ink/65 transition-colors hover:border-ink/50 hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-champagne aria-pressed:border-ink aria-pressed:bg-ink aria-pressed:text-pearl"
+              >
+                {filter.label[language]}
+              </button>
+            ))}
         </div>
       ) : null}
 
@@ -480,8 +484,8 @@ function PreviewCopy({ project, language }: { project: PortfolioProject; languag
         <p className="text-[11px] uppercase tracking-editorial text-champagne">
           {series
             ? zh
-              ? "作品选集"
-              : "Portfolio series"
+              ? "本地化经验"
+              : "Localisation experience"
             : commercialCaseCategories[project.category][language]}
         </p>
         <h2 className="mt-3 text-2xl font-medium leading-tight">{zh ? project.titleZh : project.titleEn}</h2>
@@ -491,17 +495,25 @@ function PreviewCopy({ project, language }: { project: PortfolioProject; languag
       </div>
       <div className="border-l border-ink/15 pl-5">
         <p className="text-[11px] uppercase tracking-editorial text-ink/65">
-          {zh ? "项目主题" : "Project focus"}
+          {zh ? "市场背景" : "Market context"}
         </p>
         <p className="text-ink/68 mt-3 text-sm leading-6">
           {zh ? project.commercialObjectiveZh : project.commercialObjectiveEn}
         </p>
         <p className="mt-4 text-xs uppercase tracking-editorial text-ink/65">
-          {zh ? "团队贡献" : "Team contribution"}
+          {zh ? "我们的参与" : "Our role"}
         </p>
         <p className="mt-2 text-sm leading-6 text-ink/65">
           {zh ? project.participationSummaryZh : project.participationSummaryEn}
         </p>
+        <div className="mt-5 border-l-2 border-champagne pl-4" data-preview-outcome>
+          <p className="text-xs font-semibold uppercase tracking-editorial text-ink">
+            {zh ? "市场结果" : "Market outcome"}
+          </p>
+          <p className="mt-2 text-base font-medium leading-7 text-ink">
+            {zh ? project.marketOutcomeZh : project.marketOutcomeEn}
+          </p>
+        </div>
       </div>
     </div>
   );
@@ -540,8 +552,8 @@ function MobileProjectRow({
           <span className="block text-[11px] uppercase tracking-editorial text-ink/70">
             {project.contentType === "portfolio-series"
               ? zh
-                ? "作品选集"
-                : "Portfolio series"
+                ? "本地化经验"
+                : "Localisation experience"
               : commercialCaseCategories[project.category][language]}
           </span>
           <span className="mt-2 block text-balance text-[clamp(1.45rem,6vw,2rem)] font-medium leading-[1.08]">
@@ -599,17 +611,25 @@ function MobileProjectRow({
                 }}
               >
                 <p className="text-[11px] uppercase tracking-editorial text-ink/65">
-                  {zh ? "项目主题" : "Project focus"}
+                  {zh ? "市场背景" : "Market context"}
                 </p>
                 <p className="text-ink/68 mt-3 text-sm leading-6">
                   {zh ? project.commercialObjectiveZh : project.commercialObjectiveEn}
                 </p>
                 <p className="mt-4 text-xs uppercase tracking-editorial text-ink/65">
-                  {zh ? "团队贡献" : "Team contribution"}
+                  {zh ? "我们的参与" : "Our role"}
                 </p>
                 <p className="mt-2 text-sm leading-6 text-ink/65">
                   {zh ? project.participationSummaryZh : project.participationSummaryEn}
                 </p>
+                <div className="mt-5 border-l-2 border-champagne pl-4" data-preview-outcome>
+                  <p className="text-xs font-semibold uppercase tracking-editorial text-ink">
+                    {zh ? "市场结果" : "Market outcome"}
+                  </p>
+                  <p className="mt-2 text-base font-medium leading-7 text-ink">
+                    {zh ? project.marketOutcomeZh : project.marketOutcomeEn}
+                  </p>
+                </div>
               </motion.div>
               <Link
                 href={withLanguage(`/work/${project.slug}`, language)}

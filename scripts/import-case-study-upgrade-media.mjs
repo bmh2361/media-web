@@ -17,7 +17,7 @@ const groups = [
     altEn: [
       "Wang Linkai London concert group finale viewed across the audience.",
       "Wang Linkai performing under red stage lighting in London.",
-      "Wang Linkai photographed from the stage during the London concert."
+      "Wang Linkai on stage during the London concert."
     ],
     altZh: [
       "王琳凯伦敦演唱会全场合影与观众现场。",
@@ -98,7 +98,7 @@ const groups = [
     ],
     altEn: [
       "Beauty device product image with a model on a pink set.",
-      "Footwear product editorial photographed against a blue background.",
+      "Footwear displayed against a blue background.",
       "Lifestyle beauty portrait featuring cosmetic products.",
       "Makeup editorial portrait featuring a compact product.",
       "Skincare product portrait in an outdoor setting.",
