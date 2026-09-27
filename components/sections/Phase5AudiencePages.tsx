@@ -1,3 +1,5 @@
+import { TransactionEnablement } from "@/components/sections/TransactionEnablement";
+import { transactionEnablement } from "@/content/transaction-enablement";
 import { marketCredibility } from "@/content/market-credibility";
 import { ButtonLink } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -340,7 +342,11 @@ export function CompaniesJourney({ language }: { language: Language }) {
               </li>
             ))}
           </ol>
-          <div className="mt-16 grid gap-8 border-t border-ink/15 pt-10 lg:grid-cols-12">
+          <TransactionEnablement language={language} />
+          <div
+            data-local-team-capability
+            className="mt-16 grid gap-8 border-t border-ink/15 pt-10 lg:grid-cols-12"
+          >
             <div className="lg:col-span-7">
               <Eyebrow>{zh ? "本地团队能力" : "LOCAL TEAM CAPABILITY"}</Eyebrow>
               <h3 className="mt-5 max-w-[15ch] text-3xl font-medium leading-tight lg:text-4xl">
@@ -395,11 +401,11 @@ export function PartnersJourney({ language }: { language: Language }) {
   const zh = language === "zh";
   const credibility = marketCredibility[language];
   const types = zh
-    ? ["高校与研究人员", "行业专家", "专业服务机构", "创作者与人才", "场地与活动执行", "本地交付团队"]
+    ? ["高校与研究人员", "行业专家", "资本、法律与专业服务", "创作者与人才", "场地与活动执行", "本地交付团队"]
     : [
         "Universities & Researchers",
         "Industry Specialists",
-        "Professional Services",
+        "Capital, Legal & Professional Services",
         "Creators & Talent",
         "Venues & Event Operations",
         "Local Delivery Specialists"
@@ -503,6 +509,11 @@ export function PartnersJourney({ language }: { language: Language }) {
               >
                 <span className="text-xs text-champagne">{String(index + 1).padStart(2, "0")}</span>
                 <h3 className="mt-9 text-xl font-medium">{item}</h3>
+                {index === 2 && (
+                  <p className="mt-4 hidden text-sm leading-7 text-ink/65 md:block">
+                    {transactionEnablement[language].partnerDescription}
+                  </p>
+                )}
               </li>
             ))}
             <li

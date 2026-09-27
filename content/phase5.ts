@@ -124,7 +124,7 @@ const en = {
     types: [
       "Universities & Researchers",
       "Industry Specialists",
-      "Professional Services",
+      "Capital, Legal & Professional Services",
       "Creators & Talent",
       "Venues & Event Operations",
       "Local Delivery Specialists"
@@ -240,7 +240,14 @@ const zh = {
     eyebrow: "围绕目标配置能力",
     title: "由项目决定需要什么专业能力。",
     body: "Venus Bridge 保留商务与执行责任，仅在有助于结果时引入相应专业能力。",
-    types: ["高校与研究人员", "行业专家", "专业服务", "创作者与人才", "场地与活动执行", "本地交付团队"]
+    types: [
+      "高校与研究人员",
+      "行业专家",
+      "资本、法律与专业服务",
+      "创作者与人才",
+      "场地与活动执行",
+      "本地交付团队"
+    ]
   },
   work: {
     eyebrow: "从展会到商务跟进",

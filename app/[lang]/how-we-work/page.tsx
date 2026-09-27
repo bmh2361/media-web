@@ -251,8 +251,8 @@ export default async function HowWeWorkPage({ params }: { params: Promise<{ lang
           <div className="lg:col-span-5 lg:col-start-8">
             <p className="type-lede text-ink/65">
               {zh
-                ? "研究人员、行业专家、场地、创意团队、人才或本地后勤会在有助于商业结果时加入，并围绕同一份需求、排期与审批路径协作。"
-                : "Researchers, industry specialists, venues, creative teams, talent or local logistics join where they strengthen the commercial result, working to one brief, schedule and approval route."}
+                ? "研究人员、行业专家、资本与专业顾问、媒体平台、场地、创意团队、人才或本地执行能力，仅在有助于商业结果时加入，并围绕同一目标、范围与协调路径协作。"
+                : "Researchers, industry specialists, capital and professional advisers, editorial platforms, venues, creative teams, talent or local logistics join only where they strengthen the commercial result, working around the same objective, scope and coordination route."}
             </p>
           </div>
         </div>

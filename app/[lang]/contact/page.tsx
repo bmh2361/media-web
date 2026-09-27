@@ -58,13 +58,16 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
             {(zh
               ? [
                   ["市场", "英国、欧洲或具体城市。"],
-                  ["目标", "发布、合作、建立信誉、活动或本地执行。"],
+                  ["目标", "发布、合作、建立信誉、活动、本地执行或交易支持。"],
                   ["时间", "目标日期或决策窗口。"],
                   ["已有条件", "已确定的合作伙伴、场地、代理机构或资源。"]
                 ]
               : [
                   ["Market", "UK, Europe or a specific city."],
-                  ["Goal", "Launch, partnership, credibility, activation or local execution."],
+                  [
+                    "Goal",
+                    "Launch, partnership, credibility, activation, local execution or transaction support."
+                  ],
                   ["Timing", "Target date or decision window."],
                   ["Existing commitments", "Partners, venues, agencies or resources already involved."]
                 ]
